@@ -1,7 +1,7 @@
 /* Custom styles for Linguistic Data Analysis I */
 
 /* Color scheme */
-:root {
+/* :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
   --accent-color: #e74c3c;
@@ -10,7 +10,7 @@
   --info-color: #3498db;
   --light-bg: #ecf0f1;
   --dark-bg: #34495e;
-}
+} */
 
 /* Typography enhancements */
 .subtitle {
@@ -234,9 +234,9 @@ code {
 
 /* Main content column */
 .column-body {
-  max-width: 45rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  max-width: 60rem;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
 }
 
 /* Page main content area */
@@ -260,14 +260,24 @@ nav[role="doc-toc"] {
 
 /* Left sidebar navigation */
 #quarto-sidebar {
-  padding-right: 2rem;
-  width: 250px;
+  padding-right: 1rem;
+  width: 300px;
+  min-width: 250px;
+  max-width: 400px;
+  resize: horizontal;
+  /* overflow: auto; */
+  /* position: relative; */
 }
 
 /* Right sidebar (table of contents) */
 #quarto-margin-sidebar {
-  padding-left: 2rem;
-  width: 200px;
+  padding-left: 1rem;
+  width: 400px;
+  min-width: 250px;
+  max-width: 400px;
+  resize: horizontal;
+  /* overflow: auto;
+  position: relative; */
 }
 
 

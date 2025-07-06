@@ -219,7 +219,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics & Wrap-up",
       "Day 5: Advanced Topics and Final Project"
     ]
   },
@@ -232,7 +232,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics & Wrap-up",
       "Day 5: Advanced Topics and Final Project"
     ]
   },
@@ -245,7 +245,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics & Wrap-up",
       "Day 5: Advanced Topics and Final Project"
     ]
   },
@@ -258,7 +258,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics & Wrap-up",
       "Day 5: Advanced Topics and Final Project"
     ]
   },
@@ -271,7 +271,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics & Wrap-up",
       "Day 5: Advanced Topics and Final Project"
     ]
   },
@@ -284,7 +284,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics & Wrap-up",
       "Day 5: Advanced Topics and Final Project"
     ]
   },
@@ -297,7 +297,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics & Wrap-up",
       "Day 5: Advanced Topics and Final Project"
     ]
   },
@@ -310,7 +310,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 3: Learner Language Analysis",
+      "Day 3: Vocabulary and Multiword Units (2)",
       "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
     ]
   },
@@ -323,7 +323,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 3: Learner Language Analysis",
+      "Day 3: Vocabulary and Multiword Units (2)",
       "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
     ]
   },
@@ -336,7 +336,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 3: Learner Language Analysis",
+      "Day 3: Vocabulary and Multiword Units (2)",
       "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
     ]
   },
@@ -349,7 +349,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 3: Learner Language Analysis",
+      "Day 3: Vocabulary and Multiword Units (2)",
       "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
     ]
   },
@@ -362,7 +362,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 3: Learner Language Analysis",
+      "Day 3: Vocabulary and Multiword Units (2)",
       "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
     ]
   },
@@ -869,7 +869,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 4: Statistical Analysis",
+      "Day 4: Grammar",
       "Day 4: Analyzing grammar"
     ]
   },
@@ -882,7 +882,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 4: Statistical Analysis",
+      "Day 4: Grammar",
       "Day 4: Analyzing grammar"
     ]
   },
@@ -895,7 +895,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 4: Statistical Analysis",
+      "Day 4: Grammar",
       "Day 4: Analyzing grammar"
     ]
   },
@@ -908,7 +908,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 4: Statistical Analysis",
+      "Day 4: Grammar",
       "Day 4: Analyzing grammar"
     ]
   },
@@ -921,7 +921,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 4: Statistical Analysis",
+      "Day 4: Grammar",
       "Day 4: Analyzing grammar"
     ]
   },
@@ -934,7 +934,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Vocabulary and Multiword Units (1)",
       "Day 2: Analyzing Vocabulary and Multiword Units"
     ]
   },
@@ -947,7 +947,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Vocabulary and Multiword Units (1)",
       "Day 2: Analyzing Vocabulary and Multiword Units"
     ]
   },
@@ -960,7 +960,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Vocabulary and Multiword Units (1)",
       "Day 2: Analyzing Vocabulary and Multiword Units"
     ]
   },
@@ -973,7 +973,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Vocabulary and Multiword Units (1)",
       "Day 2: Analyzing Vocabulary and Multiword Units"
     ]
   },
@@ -986,7 +986,7 @@
     "crumbs": [
       "Home",
       "Sessions",
-      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Vocabulary and Multiword Units (1)",
       "Day 2: Analyzing Vocabulary and Multiword Units"
     ]
   },
@@ -1331,7 +1331,7 @@
     "href": "index.html#acknowledgments",
     "title": "Linguistic Data Analysis I",
     "section": "Acknowledgments",
-    "text": "Acknowledgments\nThis course builds on materials and approaches from:\n\nDr. Kris Kyle’s corpus linguistics/NLP classes from University of Hawai’i and Oregon.",
+    "text": "Acknowledgments\nThis course builds on materials and approaches from:\n\nDr. Kris Kyle (University of Oregon) for his previous corpus linguistics/NLP classes from University of Hawai’i and Oregon.\nDr. Andrew Heiss (Georgia State University) for his Quarto based materials and website settings.",
     "crumbs": [
       "Home",
       "Course Information",

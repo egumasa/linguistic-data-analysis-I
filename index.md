@@ -1,7 +1,7 @@
 ---
 title: "Linguistic Data Analysis I"
 subtitle: "Corpus Linguistics and Learner Language Analysis"
-toc: false
+toc: true
 ---
 
 ## Welcome to Linguistic Data Analysis I
@@ -101,4 +101,6 @@ The course is organized into **5 intensive days**:
 
 This course builds on materials and approaches from:
 
-- Dr. Kris Kyle's corpus linguistics/NLP classes from University of Hawai'i and Oregon.
+- Dr. Kris Kyle (University of Oregon) for his previous corpus linguistics/NLP classes from University of Hawai'i and Oregon.
+
+- Dr. Andrew Heiss (Georgia State University) for his Quarto based materials and website settings.

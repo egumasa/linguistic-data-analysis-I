@@ -75,7 +75,7 @@ website:
         aria-label: GitHub
 
   sidebar:
-    style: floating
+    style: docked
     search: true
     collapse-level: 2
     contents:
@@ -136,9 +136,10 @@ website:
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
-    css: css/styles.css
+      - litera
+      - css/style.scss
+
+    # css: css/styles.css
     toc: true
     toc-depth: 3
     toc-location: right
@@ -148,11 +149,7 @@ format:
     smooth-scroll: true
     link-external-icon: true
     link-external-newwindow: true
-    grid:
-      sidebar-width: 250px
-      body-width: 800px
-      margin-width: 200px
-      gutter-width: 2rem
+
 
 execute:
   freeze: auto
