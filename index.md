@@ -4,6 +4,11 @@ subtitle: "Corpus Linguistics and Learner Language Analysis"
 toc: true
 ---
 
+::: {.callout-warning}
+## Under Construction
+This course website is currently under construction and will be ready for the class starting **August 2nd, 2025**. Content is being actively developed and updated.
+:::
+
 ## Welcome to Linguistic Data Analysis I
 
 This intensive 5-day graduate course introduces students to corpus linguistics and learner language analysis. Through hands-on activities and practical applications, you'll learn to use computational tools to analyze linguistic data, with a special focus on learner corpora.
@@ -103,4 +108,4 @@ This course builds on materials and approaches from:
 
 - Dr. Kris Kyle (University of Oregon) for his previous corpus linguistics/NLP classes from University of Hawai'i and Oregon.
 
-- Dr. Andrew Heiss (Georgia State University) for his Quarto based materials and website settings.
+- Dr. Andrew Heiss (Georgia State University) for his Quarto-based materials and website settings, which significantly enhanced the accessibility of the course content.
