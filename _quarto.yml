@@ -28,7 +28,7 @@ website:
       - text: "Sessions"
         menu:
           - text: "All Sessions"
-            href: 2025/sessions/index.qmd
+            href: 2025/sessions/index.md
           - text: "---"
           - text: "Day 1"
             href: 2025/sessions/day1/index.md
@@ -91,7 +91,7 @@ website:
               - 2025/syllabus/policies.md
       - section: "Sessions"
         contents:
-          - 2025/sessions/index.qmd
+          - 2025/sessions/index.md
           - section: "Day 1: Introduction & Corpus Basics"
             contents:
               - 2025/sessions/day1/index.md
