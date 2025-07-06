@@ -95,16 +95,16 @@ website:
           - section: "Day 1: Introduction & Corpus Basics"
             contents:
               - 2025/sessions/day1/index.md
-          - section: "Day 2: Advanced Corpus Analysis"
+          - section: "Day 2: Vocabulary and Multiword Units (1)"
             contents:
               - 2025/sessions/day2/index.md
-          - section: "Day 3: Learner Language Analysis"
+          - section: "Day 3: Vocabulary and Multiword Units (2)"
             contents:
               - 2025/sessions/day3/index.md
-          - section: "Day 4: Statistical Analysis"
+          - section: "Day 4: Grammar"
             contents:
               - 2025/sessions/day4/index.md
-          - section: "Day 5: Advanced Topics & Projects"
+          - section: "Day 5: Advanced Topics & Wrap-up"
             contents:
               - 2025/sessions/day5/index.md
       - section: "Assignments"
