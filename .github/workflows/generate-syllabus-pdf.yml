@@ -1,0 +1,47 @@
+name: Generate Syllabus PDF
+on:
+  push:
+    paths:
+      - 'syllabus/*.md'
+      - 'syllabus/syllabus-style.css'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Create combined markdown
+        run: |
+          cd syllabus
+          echo "---" > combined.md
+          echo "title: 'Linguistic Data Analysis I - Syllabus'" >> combined.md
+          echo "---" >> combined.md
+          echo "" >> combined.md
+          cat README.md >> combined.md
+          echo -e "\n\n---\n\n" >> combined.md
+          cat schedule.md >> combined.md
+          echo -e "\n\n---\n\n" >> combined.md
+          cat readings.md >> combined.md
+          echo -e "\n\n---\n\n" >> combined.md
+          cat policies.md >> combined.md
+      
+      - name: Setup pandoc
+        uses: docker://pandoc/latex:latest
+        with:
+          args: >-
+            syllabus/combined.md
+            -o syllabus/Syllabus.pdf
+            --css=syllabus/syllabus-style.css
+            --pdf-engine=xelatex
+            --toc
+            --toc-depth=2
+      
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add syllabus/Syllabus.pdf
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update Syllabus PDF"
+          git push

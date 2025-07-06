@@ -1,0 +1,2062 @@
+[
+  {
+    "objectID": "GITHUB_PAGES_SETUP.html",
+    "href": "GITHUB_PAGES_SETUP.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "GITHUB_PAGES_SETUP.html#initial-setup",
+    "href": "GITHUB_PAGES_SETUP.html#initial-setup",
+    "title": "",
+    "section": "Initial Setup",
+    "text": "Initial Setup\n\nPush your repository to GitHub\ngit remote add origin https://github.com/YOUR_USERNAME/Linguistic_Data_Analysis_I.git\ngit push -u origin main\nEnable GitHub Pages\n\nGo to your repository on GitHub\nClick Settings (top menu)\nScroll down to Pages (left sidebar)\nUnder Source, select:\n\nDeploy from a branch\nBranch: main (or master)\nFolder: /docs\n\nClick Save\n\nWait for deployment\n\nTakes 2-10 minutes initially\nCheck Actions tab for progress\nGreen checkmark = deployed\n\nAccess your site\n\nURL: https://YOUR_USERNAME.github.io/Linguistic_Data_Analysis_I/\nAdd this URL to your repo’s About section"
+  },
+  {
+    "objectID": "GITHUB_PAGES_SETUP.html#how-the-hybrid-system-works",
+    "href": "GITHUB_PAGES_SETUP.html#how-the-hybrid-system-works",
+    "title": "",
+    "section": "How the Hybrid System Works",
+    "text": "How the Hybrid System Works\ngraph TD\n    A[Edit .md/.qmd files] --&gt; B{Choose workflow}\n    B --&gt;|Option 1| C[Run 'quarto render' locally]\n    B --&gt;|Option 2| D[Just commit source files]\n    \n    C --&gt; E[Commit source + docs/]\n    D --&gt; F[GitHub Actions detects change]\n    \n    E --&gt; G[Push to GitHub]\n    F --&gt; H[Actions runs 'quarto render']\n    \n    H --&gt; I[Actions commits docs/]\n    G --&gt; J[GitHub Pages serves from docs/]\n    I --&gt; J\n    \n    style C fill:#90EE90\n    style D fill:#FFE4B5"
+  },
+  {
+    "objectID": "GITHUB_PAGES_SETUP.html#verify-everything-works",
+    "href": "GITHUB_PAGES_SETUP.html#verify-everything-works",
+    "title": "",
+    "section": "Verify Everything Works",
+    "text": "Verify Everything Works\n\nCheck GitHub Actions\n\nGo to Actions tab\nYou should see workflows:\n\n“Auto-Render Quarto Site”\n“Verify and Update Site”\n\nGreen = working\n\nTest the fallback\n# Make a small edit\necho \"\\n\\nTest edit\" &gt;&gt; resources/tools/index.md\n\n# Commit WITHOUT rendering\ngit add resources/tools/index.md\ngit commit -m \"Test GitHub Actions rendering\"\ngit push\n\n# Watch Actions tab - should auto-render!\nCheck the site\n\nVisit your GitHub Pages URL\nShould see your content\nUpdates within minutes of pushing"
+  },
+  {
+    "objectID": "GITHUB_PAGES_SETUP.html#customization",
+    "href": "GITHUB_PAGES_SETUP.html#customization",
+    "title": "",
+    "section": "Customization",
+    "text": "Customization\n\nUpdate URLs in _quarto.yml\nwebsite:\n  site-url: \"https://YOUR_USERNAME.github.io/Linguistic_Data_Analysis_I/\"\n  repo-url: \"https://github.com/YOUR_USERNAME/Linguistic_Data_Analysis_I\"\n\n\nUpdate navbar GitHub link\nnavbar:\n  right:\n    - icon: github\n      href: \"https://github.com/YOUR_USERNAME/Linguistic_Data_Analysis_I\""
+  },
+  {
+    "objectID": "GITHUB_PAGES_SETUP.html#troubleshooting",
+    "href": "GITHUB_PAGES_SETUP.html#troubleshooting",
+    "title": "",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\nSite not appearing? - Check Settings → Pages → Source is set correctly - Verify docs/ folder exists and has index.html - Check Actions tab for errors - Wait 10 minutes (first deploy is slow)\nActions failing? - Check Actions tab → Click failed workflow → View logs - Common issues: - Syntax error in .qmd file - Missing file reference - YAML formatting error\nChanges not showing? - Hard refresh browser (Ctrl+Shift+R) - Check if docs/ was updated - Verify GitHub Pages deployed (green checkmark) - Clear browser cache"
+  },
+  {
+    "objectID": "GITHUB_PAGES_SETUP.html#tips",
+    "href": "GITHUB_PAGES_SETUP.html#tips",
+    "title": "",
+    "section": "Tips",
+    "text": "Tips\n\nRender locally for big changes\nUse Actions for quick fixes\nWatch the Actions tab to ensure builds succeed\nTag releases for each semester:\ngit tag -a v2025-summer -m \"Summer 2025 version\"\ngit push origin v2025-summer"
+  },
+  {
+    "objectID": "RENDERING.html",
+    "href": "RENDERING.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "RENDERING.html#how-it-works",
+    "href": "RENDERING.html#how-it-works",
+    "title": "",
+    "section": "How It Works",
+    "text": "How It Works\n\n1. Primary: Local Pre-rendering\n\nRun quarto render locally\nCommit both source files and docs/ folder\nPush to GitHub\nSite is immediately updated\n\n\n\n2. Fallback: GitHub Actions\n\nMonitors all source file changes\nAutomatically re-renders if you forget\nEnsures docs/ stays in sync with source\nAdds commit with updated files"
+  },
+  {
+    "objectID": "RENDERING.html#workflows",
+    "href": "RENDERING.html#workflows",
+    "title": "",
+    "section": "Workflows",
+    "text": "Workflows\n\nQuick Edit Workflow\n# Edit your content\nedit sessions/day1/index.md\n\n# Render locally (recommended)\nquarto render\n\n# Commit everything\ngit add .\ngit commit -m \"Update day 1 content\"\ngit push\n\n\nLazy Workflow (Let GitHub Do It)\n# Edit your content\nedit sessions/day1/index.md\n\n# Just commit source (GitHub will render)\ngit add sessions/day1/index.md\ngit commit -m \"Update day 1 content\"\ngit push\n\n# GitHub Actions will:\n# 1. Detect the change\n# 2. Run quarto render\n# 3. Commit updated docs/\n\n\nForce Rebuild\n# Via GitHub UI: Actions → Verify and Update Site → Run workflow → Force render ✓\n\n# Or trigger with empty commit\ngit commit --allow-empty -m \"Trigger rebuild\"\ngit push"
+  },
+  {
+    "objectID": "RENDERING.html#benefits",
+    "href": "RENDERING.html#benefits",
+    "title": "",
+    "section": "Benefits",
+    "text": "Benefits\n\nFast Updates: Pre-render locally for immediate deployment\nSafety Net: GitHub Actions catches forgotten renders\nConsistency: Ensures docs/ always matches source\nFlexibility: Work locally or through GitHub web editor\nVerification: PRs show what needs rendering"
+  },
+  {
+    "objectID": "RENDERING.html#configuration",
+    "href": "RENDERING.html#configuration",
+    "title": "",
+    "section": "Configuration",
+    "text": "Configuration\n\nFor Heavy Computations\nAdd to frontmatter of computation-heavy files:\n---\ntitle: \"Heavy Analysis\"\nexecute:\n  freeze: true  # Cache results\n---\n\n\nSkip Auto-render\nAdd [skip ci] to commit message:\ngit commit -m \"WIP: Draft content [skip ci]\""
+  },
+  {
+    "objectID": "RENDERING.html#monitoring",
+    "href": "RENDERING.html#monitoring",
+    "title": "",
+    "section": "Monitoring",
+    "text": "Monitoring\nCheck render status: 1. Go to Actions tab in GitHub 2. Look for ✓ or ✗ next to commits 3. Click for details if failed"
+  },
+  {
+    "objectID": "RENDERING.html#troubleshooting",
+    "href": "RENDERING.html#troubleshooting",
+    "title": "",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\nIf GitHub Actions fails: 1. Check the error in Actions tab 2. Fix the issue locally 3. Run quarto render locally 4. Commit and push both source and docs/\nIf docs/ gets out of sync: 1. Delete local docs/ folder 2. Run quarto render 3. Commit fresh docs/ folder 4. Push with message “Rebuild docs folder”"
+  },
+  {
+    "objectID": "RENDERING.html#best-practices",
+    "href": "RENDERING.html#best-practices",
+    "title": "",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nUsually: Render locally before pushing\nQuick fixes: Let GitHub handle small edits\nHeavy computation: Always pre-render locally\nCheck Actions: Monitor for failures\nKeep synced: Don’t edit docs/ directly"
+  },
+  {
+    "objectID": "resources/corpora/learner-corpora.html",
+    "href": "resources/corpora/learner-corpora.html",
+    "title": "Learner Corpora",
+    "section": "",
+    "text": "Content to be added.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Corpora",
+      "Learner Corpora"
+    ]
+  },
+  {
+    "objectID": "resources/corpora/learner-corpora.html#placeholder",
+    "href": "resources/corpora/learner-corpora.html#placeholder",
+    "title": "Learner Corpora",
+    "section": "",
+    "text": "Content to be added.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Corpora",
+      "Learner Corpora"
+    ]
+  },
+  {
+    "objectID": "resources/readings/index.html",
+    "href": "resources/readings/index.html",
+    "title": "Course Readings",
+    "section": "",
+    "text": "Links to course readings and additional references.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Readings"
+    ]
+  },
+  {
+    "objectID": "resources/readings/index.html#reading-resources",
+    "href": "resources/readings/index.html#reading-resources",
+    "title": "Course Readings",
+    "section": "",
+    "text": "Links to course readings and additional references.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Readings"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html",
+    "href": "resources/tools/python-setup.html",
+    "title": "Python Setup Guide",
+    "section": "",
+    "text": "In this course, we’ll use Python for text processing and analysis through Google Colab, a free cloud-based platform. This approach requires no local installation and provides a consistent environment for all students.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#overview",
+    "href": "resources/tools/python-setup.html#overview",
+    "title": "Python Setup Guide",
+    "section": "",
+    "text": "In this course, we’ll use Python for text processing and analysis through Google Colab, a free cloud-based platform. This approach requires no local installation and provides a consistent environment for all students.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#why-google-colab",
+    "href": "resources/tools/python-setup.html#why-google-colab",
+    "title": "Python Setup Guide",
+    "section": "Why Google Colab?",
+    "text": "Why Google Colab?\n\nAdvantages\n\n✅ No installation required\n✅ Free GPU/TPU access\n✅ Pre-installed libraries\n✅ Easy sharing and collaboration\n✅ Works on any device with internet\n✅ Automatic saving to Google Drive\n\n\n\nLimitations\n\n⚠️ Requires internet connection\n⚠️ Session timeouts (12 hours max)\n⚠️ Limited storage (Google Drive)",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#getting-started",
+    "href": "resources/tools/python-setup.html#getting-started",
+    "title": "Python Setup Guide",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nPrerequisites\n\nGoogle account (free)\nWeb browser (Chrome recommended)\nStable internet connection\n\n\n\nFirst Steps\n\nVisit colab.research.google.com\nSign in with Google account\nClick “New notebook”\nRename your notebook",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#colab-basics",
+    "href": "resources/tools/python-setup.html#colab-basics",
+    "title": "Python Setup Guide",
+    "section": "Colab Basics",
+    "text": "Colab Basics\n\nInterface Overview\n\nMenu Bar: File operations, runtime controls\nToolbar: Common actions and settings\nCode Cells: Write and execute Python code\nText Cells: Markdown documentation\nOutput Area: Results and visualizations\n\n\n\nEssential Operations\n\nRunning Code\n\nClick play button or press Shift + Enter\nRun all cells: Runtime → Run all\nClear outputs: Edit → Clear all outputs\n\n\n\nAdding Cells\n\nCode cell: + Code button\nText cell: + Text button\nKeyboard shortcuts: Ctrl+M then B (below) or A (above)",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#course-specific-setup",
+    "href": "resources/tools/python-setup.html#course-specific-setup",
+    "title": "Python Setup Guide",
+    "section": "Course-Specific Setup",
+    "text": "Course-Specific Setup\n\nRequired Libraries\n# Run this cell at the beginning of each notebook\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom collections import Counter, defaultdict\nimport re\nimport nltk\nnltk.download('punkt')\nnltk.download('stopwords')\n\n\nMounting Google Drive\nfrom google.colab import drive\ndrive.mount('/content/drive')\n\n\nLoading Course Data\n# Example: Load a text file\nwith open('/content/drive/MyDrive/course_data/corpus.txt', 'r', encoding='utf-8') as f:\n    text = f.read()",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#python-basics-for-corpus-analysis",
+    "href": "resources/tools/python-setup.html#python-basics-for-corpus-analysis",
+    "title": "Python Setup Guide",
+    "section": "Python Basics for Corpus Analysis",
+    "text": "Python Basics for Corpus Analysis\n\nText Processing Essentials\n\nReading Files\n# Read single file\nwith open('filename.txt', 'r', encoding='utf-8') as f:\n    text = f.read()\n\n# Read multiple files\nimport glob\nfiles = glob.glob('*.txt')\ntexts = []\nfor file in files:\n    with open(file, 'r', encoding='utf-8') as f:\n        texts.append(f.read())\n\n\nBasic Text Operations\n# Tokenization\nwords = text.split()\n\n# Lowercase conversion\nwords_lower = [word.lower() for word in words]\n\n# Remove punctuation\nimport string\nwords_clean = [word.translate(str.maketrans('', '', string.punctuation)) \n               for word in words]\n\n\nFrequency Analysis\nfrom collections import Counter\n\n# Word frequency\nword_freq = Counter(words_lower)\nprint(word_freq.most_common(20))\n\n# N-gram extraction\nfrom nltk import ngrams\nbigrams = list(ngrams(words, 2))\nbigram_freq = Counter(bigrams)",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#session-activities",
+    "href": "resources/tools/python-setup.html#session-activities",
+    "title": "Python Setup Guide",
+    "section": "Session Activities",
+    "text": "Session Activities\n\nDay 2: Collocation Analysis\n[Link to notebook: session2_collocations.ipynb]\n\n\nDay 3: Learner Error Patterns\n[Link to notebook: session3_errors.ipynb]\n\n\nDay 4: Statistical Analysis\n[Link to notebook: session4_statistics.ipynb]",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#troubleshooting",
+    "href": "resources/tools/python-setup.html#troubleshooting",
+    "title": "Python Setup Guide",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nCommon Issues\nRuntime disconnected - Save your work frequently - Use Runtime → Reconnect - Check internet connection\nOut of memory - Clear unnecessary variables: del variable_name - Restart runtime: Runtime → Restart runtime - Process data in chunks\nImport errors - Install missing packages: !pip install package_name - Check package name spelling - Restart runtime after installation\nFile not found - Verify Google Drive is mounted - Check file path - Ensure file exists in Drive",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#best-practices",
+    "href": "resources/tools/python-setup.html#best-practices",
+    "title": "Python Setup Guide",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nCode Organization\n\nClear section headers\nComment your code\nUse meaningful variable names\nTest incrementally\n\n\n\nData Management\n\nOrganize files in Drive folders\nUse consistent naming conventions\nKeep backups\nDocument data sources\n\n\n\nCollaboration\n\nShare notebooks via link\nUse version control (File → Revision history)\nAdd collaborators (Share button)\nComment on code cells",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#useful-code-snippets",
+    "href": "resources/tools/python-setup.html#useful-code-snippets",
+    "title": "Python Setup Guide",
+    "section": "Useful Code Snippets",
+    "text": "Useful Code Snippets\n\nConcordance Function\ndef concordance(text, word, window=30):\n    \"\"\"Simple KWIC concordance\"\"\"\n    word_lower = word.lower()\n    text_lower = text.lower()\n    \n    results = []\n    index = 0\n    while True:\n        index = text_lower.find(word_lower, index)\n        if index == -1:\n            break\n        start = max(0, index - window)\n        end = min(len(text), index + len(word) + window)\n        \n        left = text[start:index]\n        node = text[index:index + len(word)]\n        right = text[index + len(word):end]\n        \n        results.append((left, node, right))\n        index += 1\n    \n    return results\n\n\nCollocation Finder\ndef find_collocations(text, target_word, window=5):\n    \"\"\"Find collocates within window\"\"\"\n    words = text.lower().split()\n    target_lower = target_word.lower()\n    collocates = []\n    \n    for i, word in enumerate(words):\n        if word == target_lower:\n            start = max(0, i - window)\n            end = min(len(words), i + window + 1)\n            context = words[start:i] + words[i+1:end]\n            collocates.extend(context)\n    \n    return Counter(collocates)",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#additional-resources",
+    "href": "resources/tools/python-setup.html#additional-resources",
+    "title": "Python Setup Guide",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPython Learning\n\nPython for Linguists\nNLTK Book\nPandas Documentation\n\n\n\nColab-Specific\n\nColab FAQ\nColab Tips\nKeyboard Shortcuts",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/python-setup.html#next-steps",
+    "href": "resources/tools/python-setup.html#next-steps",
+    "title": "Python Setup Guide",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nComplete the Colab Tutorial\nPractice with sample notebooks\nExplore course notebooks\nExperiment with your own data\n\n\nFor Python help during class, please ask! No programming experience is assumed.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Python Setup Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html",
+    "href": "resources/tools/byu-corpora-guide.html",
+    "title": "BYU Corpora Guide",
+    "section": "",
+    "text": "The BYU (Brigham Young University) corpora, created by Mark Davies, provide web-based interfaces to some of the largest and most widely-used corpora in the world. These include COCA (Corpus of Contemporary American English), BNC (British National Corpus), and many others.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#overview",
+    "href": "resources/tools/byu-corpora-guide.html#overview",
+    "title": "BYU Corpora Guide",
+    "section": "",
+    "text": "The BYU (Brigham Young University) corpora, created by Mark Davies, provide web-based interfaces to some of the largest and most widely-used corpora in the world. These include COCA (Corpus of Contemporary American English), BNC (British National Corpus), and many others.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#available-corpora",
+    "href": "resources/tools/byu-corpora-guide.html#available-corpora",
+    "title": "BYU Corpora Guide",
+    "section": "Available Corpora",
+    "text": "Available Corpora\n\nMajor English Corpora\n\nCOCA (Corpus of Contemporary American English): 1 billion words, 1990-2019\nBNC (British National Corpus): 100 million words\nGloWbE (Global Web-Based English): 1.9 billion words\nNOW (News on the Web): 14+ billion words, updated daily\nCOHA (Corpus of Historical American English): 400 million words, 1810-2009\n\n\n\nSpecialized Corpora\n\nSOAP (Corpus of American Soap Operas): 100 million words\nTIME (TIME Magazine Corpus): 100 million words, 1920s-2000s\nWikipedia Corpus: 1.9 billion words",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#registration-and-access",
+    "href": "resources/tools/byu-corpora-guide.html#registration-and-access",
+    "title": "BYU Corpora Guide",
+    "section": "Registration and Access",
+    "text": "Registration and Access\n\nFree Access\n\nVisit english-corpora.org\nClick on desired corpus\nRegister for free account\nLimited to 20 queries per day\n\n\n\nAcademic License\n\nExtended query limits\nDownload capabilities\nAvailable through institution",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#basic-interface-navigation",
+    "href": "resources/tools/byu-corpora-guide.html#basic-interface-navigation",
+    "title": "BYU Corpora Guide",
+    "section": "Basic Interface Navigation",
+    "text": "Basic Interface Navigation\n\nSearch Types\n\nList: Find all forms of a word\nChart: See frequency over time\nCollocates: Find co-occurring words\nCompare: Compare two corpora\nKWIC: Keywords in context\n\n\n\nQuery Syntax\n\nBasic Searches\n\nSingle word: corpus\nPhrase: \"corpus linguistics\"\nWildcard: analyz* (analyze, analyzed, analyzing)\n\n\n\nAdvanced Searches\n\nPart of speech: [run].[v*] (run as verb)\nLemma: [run] (all forms of run)\nSynonyms: [=beautiful]",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#course-specific-applications",
+    "href": "resources/tools/byu-corpora-guide.html#course-specific-applications",
+    "title": "BYU Corpora Guide",
+    "section": "Course-Specific Applications",
+    "text": "Course-Specific Applications\n\nSession Activities\n\nDay 1: Basic Searches\n\nWord frequency comparisons\nRegional variations\nContext examination\n\n\n\nDay 2: Collocation Analysis\n\nFinding collocates\nMutual information scores\nComparing across registers\n\n\n\nDay 3: Genre Analysis\n\nRegister comparisons\nAcademic vs. spoken language\nDiscipline-specific language",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#tips-for-effective-use",
+    "href": "resources/tools/byu-corpora-guide.html#tips-for-effective-use",
+    "title": "BYU Corpora Guide",
+    "section": "Tips for Effective Use",
+    "text": "Tips for Effective Use\n\nQuery Optimization\n\nStart with simple searches\nUse wildcards carefully\nLimit by genre/time when needed\nSave useful queries\n\n\n\nData Export\n\nCopy KWIC lines\nExport frequency lists\nSave collocation data\nDocument sources properly",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#common-research-applications",
+    "href": "resources/tools/byu-corpora-guide.html#common-research-applications",
+    "title": "BYU Corpora Guide",
+    "section": "Common Research Applications",
+    "text": "Common Research Applications\n\nLanguage Teaching\n\nAuthentic examples\nFrequency information\nRegister awareness\nError correction evidence\n\n\n\nLinguistic Research\n\nVariation studies\nHistorical change\nGenre analysis\nCollocation patterns",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#comparison-with-antconc",
+    "href": "resources/tools/byu-corpora-guide.html#comparison-with-antconc",
+    "title": "BYU Corpora Guide",
+    "section": "Comparison with AntConc",
+    "text": "Comparison with AntConc\n\n\n\nFeature\nBYU Corpora\nAntConc\n\n\n\n\nCorpus size\nVery large\nUser-defined\n\n\nInterface\nWeb-based\nDesktop\n\n\nQuery speed\nFast\nDepends on size\n\n\nCustomization\nLimited\nFull control\n\n\nCost\nFree/Subscription\nFree",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#troubleshooting",
+    "href": "resources/tools/byu-corpora-guide.html#troubleshooting",
+    "title": "BYU Corpora Guide",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nLogin Issues\n\nClear browser cookies\nTry different browser\nCheck registration email\n\n\n\nQuery Problems\n\nVerify syntax\nCheck corpus availability\nReduce complexity\n\n\n\nSlow Performance\n\nSimplify queries\nTry off-peak hours\nUse smaller corpus first",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#best-practices",
+    "href": "resources/tools/byu-corpora-guide.html#best-practices",
+    "title": "BYU Corpora Guide",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nCitation\n\nAlways cite corpus used\nInclude access date\nNote query parameters\n\nResearch Ethics\n\nRespect query limits\nDon’t share login credentials\nAcknowledge corpus creators\n\nPedagogical Use\n\nPrepare queries in advance\nHave backup examples\nGuide student exploration",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#additional-resources",
+    "href": "resources/tools/byu-corpora-guide.html#additional-resources",
+    "title": "BYU Corpora Guide",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nBYU Corpora Help\nVideo Tutorials\nQuery Syntax Guide\nDavies, M. (2008-). The Corpus of Contemporary American English (COCA)\n\n\nFor help with BYU corpora in class activities, see session-specific guides.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "BYU Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html",
+    "href": "resources/tools/antconc-guide.html",
+    "title": "AntConc Guide",
+    "section": "",
+    "text": "AntConc is a freeware corpus analysis toolkit for concordancing and text analysis developed by Laurence Anthony. It’s the primary tool we’ll use throughout this course for analyzing corpora.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#overview",
+    "href": "resources/tools/antconc-guide.html#overview",
+    "title": "AntConc Guide",
+    "section": "",
+    "text": "AntConc is a freeware corpus analysis toolkit for concordancing and text analysis developed by Laurence Anthony. It’s the primary tool we’ll use throughout this course for analyzing corpora.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#system-requirements",
+    "href": "resources/tools/antconc-guide.html#system-requirements",
+    "title": "AntConc Guide",
+    "section": "System Requirements",
+    "text": "System Requirements\n\nOperating System: Windows, macOS, or Linux\nMemory: 512MB RAM minimum (2GB+ recommended for large corpora)\nStorage: 50MB for software installation\nDisplay: 1024x768 resolution minimum",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#installation",
+    "href": "resources/tools/antconc-guide.html#installation",
+    "title": "AntConc Guide",
+    "section": "Installation",
+    "text": "Installation\n\nWindows\n\nVisit AntConc website\nDownload the Windows installer (.exe file)\nDouble-click the downloaded file\nFollow installation prompts\n\n\n\nmacOS\n\nVisit AntConc website\nDownload the macOS package (.dmg file)\nOpen the .dmg file\nDrag AntConc to Applications folder\n\n\n\nLinux\n\nVisit AntConc website\nDownload the Linux version (.tar.gz)\nExtract and run from terminal",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#getting-started",
+    "href": "resources/tools/antconc-guide.html#getting-started",
+    "title": "AntConc Guide",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nInterface Overview\n\nMenu Bar: File operations and settings\nTool Tabs: Different analysis functions\nResults Window: Display area for analysis results\nStatus Bar: Information about current operations\n\n\n\nLoading Your First Corpus\n\nClick “File” → “Open File(s)”\nSelect your text file(s)\nClick “OK” to load",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#key-features-for-this-course",
+    "href": "resources/tools/antconc-guide.html#key-features-for-this-course",
+    "title": "AntConc Guide",
+    "section": "Key Features for This Course",
+    "text": "Key Features for This Course\n\n1. Concordance (KWIC)\n\nFind words in context\nSort by left/right context\nExport results\n\n\n\n2. Word List\n\nGenerate frequency lists\nSort by frequency or alphabetically\nIdentify most common words\n\n\n\n3. Clusters/N-grams\n\nFind multi-word units\nSet cluster size (2-5 words)\nAnalyze formulaic language\n\n\n\n4. Collocates\n\nFind words that co-occur\nSet span size\nCalculate statistical measures",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#course-specific-tutorials",
+    "href": "resources/tools/antconc-guide.html#course-specific-tutorials",
+    "title": "AntConc Guide",
+    "section": "Course-Specific Tutorials",
+    "text": "Course-Specific Tutorials\n\nSession 1: Basic Concordancing\n[Step-by-step instructions for Day 1 activities]\n\n\nSession 2: Frequency Analysis\n[Step-by-step instructions for frequency activities]\n\n\nSession 3: Collocation Analysis\n[Step-by-step instructions for Day 2 collocations]",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#troubleshooting",
+    "href": "resources/tools/antconc-guide.html#troubleshooting",
+    "title": "AntConc Guide",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nCommon Issues\nAntConc won’t start - Check Java installation - Try running as administrator - Verify system compatibility\nFile encoding problems - Convert files to UTF-8 - Use “File” → “Open File(s)” → “Encoding” option\nLarge corpus crashes - Split corpus into smaller files - Increase memory allocation - Close other applications",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#tips-and-tricks",
+    "href": "resources/tools/antconc-guide.html#tips-and-tricks",
+    "title": "AntConc Guide",
+    "section": "Tips and Tricks",
+    "text": "Tips and Tricks\n\nKeyboard Shortcuts\n\nCtrl+O: Open files\nCtrl+S: Save results\nCtrl+F: Find in results\n\nRegular Expressions\n\nEnable in Global Settings\nUse for pattern matching\nExamples provided in sessions\n\nSaving Settings\n\nSave tool preferences\nExport for sharing\nLoad for consistency",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#additional-resources",
+    "href": "resources/tools/antconc-guide.html#additional-resources",
+    "title": "AntConc Guide",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nOfficial AntConc Tutorials\nAntConc YouTube Channel\nAntConc User Guide (PDF)\n\n\nFor course-specific questions about AntConc, please contact the instructor.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/code-examples/python/index.html",
+    "href": "resources/code-examples/python/index.html",
+    "title": "Python Notebooks",
+    "section": "",
+    "text": "Python notebooks for corpus analysis tasks."
+  },
+  {
+    "objectID": "resources/code-examples/python/index.html#available-notebooks",
+    "href": "resources/code-examples/python/index.html#available-notebooks",
+    "title": "Python Notebooks",
+    "section": "",
+    "text": "Python notebooks for corpus analysis tasks."
+  },
+  {
+    "objectID": "resources/code-examples/python/index.html#how-to-use",
+    "href": "resources/code-examples/python/index.html#how-to-use",
+    "title": "Python Notebooks",
+    "section": "How to Use",
+    "text": "How to Use\n\nClick on any notebook link\nOpen in Google Colab\nMake a copy to your Google Drive\nRun cells sequentially"
+  },
+  {
+    "objectID": "2025/sessions/day1/session1-intro/links.html",
+    "href": "2025/sessions/day1/session1-intro/links.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "2025/sessions/day1/session1-intro/links.html#intro-resources",
+    "href": "2025/sessions/day1/session1-intro/links.html#intro-resources",
+    "title": "",
+    "section": "Introduction to Corpus Linguistics",
+    "text": "Introduction to Corpus Linguistics\n\nVideos\n\nWhat is Corpus Linguistics? (YouTube)\nIntroduction to Language Corpora\n\n\n\nArticles\n\nMcEnery & Wilson (2001) - Corpus Linguistics Overview\nBiber et al. (1998) - Chapter 1: Introduction\n\n\n\nWebsites\n\nCorpus Linguistics: A Practical Introduction\nLancaster University Corpus Linguistics"
+  },
+  {
+    "objectID": "2025/sessions/day1/session1-intro/links.html#course-tools",
+    "href": "2025/sessions/day1/session1-intro/links.html#course-tools",
+    "title": "",
+    "section": "Course Tools",
+    "text": "Course Tools\n\nAntConc\n\nOfficial AntConc Website\nAntConc Tutorial Videos\n\n\n\nJASP\n\nJASP Official Site\nGetting Started with JASP"
+  },
+  {
+    "objectID": "2025/sessions/day1/session1-intro/links.html#learner-corpora",
+    "href": "2025/sessions/day1/session1-intro/links.html#learner-corpora",
+    "title": "",
+    "section": "Learner Corpora",
+    "text": "Learner Corpora\n\nMajor Learner Corpora\n\nInternational Corpus of Learner English (ICLE)\nLINDSEI Corpus\n\n\n\nJapanese Learner Corpora\n\nNICT JLE Corpus\nJ-CAT Corpus"
+  },
+  {
+    "objectID": "2025/sessions/day1/session1-intro/links.html#related-courses-and-moocs",
+    "href": "2025/sessions/day1/session1-intro/links.html#related-courses-and-moocs",
+    "title": "",
+    "section": "Related Courses and MOOCs",
+    "text": "Related Courses and MOOCs\n\nCorpus Linguistics: Method, Analysis, Interpretation\nText Mining with R"
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html",
+    "href": "2025/sessions/day5/index.html",
+    "title": "Day 5: Advanced Topics and Integration",
+    "section": "",
+    "text": "Advanced applications and project work.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics and Integration"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#overview",
+    "href": "2025/sessions/day5/index.html#overview",
+    "title": "Day 5: Advanced Topics and Integration",
+    "section": "",
+    "text": "Advanced applications and project work.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics and Integration"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#sessions",
+    "href": "2025/sessions/day5/index.html#sessions",
+    "title": "Day 5: Advanced Topics and Integration",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 1: Multi-word Units\nSession 2: Project Workshop\nSession 3: Future Directions",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 5: Advanced Topics & Projects",
+      "Day 5: Advanced Topics and Integration"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html",
+    "href": "2025/sessions/day3/index.html",
+    "title": "Day 3: Learner Language Analysis",
+    "section": "",
+    "text": "Focus on learner corpora and error analysis.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 3: Learner Language Analysis",
+      "Day 3: Learner Language Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#overview",
+    "href": "2025/sessions/day3/index.html#overview",
+    "title": "Day 3: Learner Language Analysis",
+    "section": "",
+    "text": "Focus on learner corpora and error analysis.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 3: Learner Language Analysis",
+      "Day 3: Learner Language Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#sessions",
+    "href": "2025/sessions/day3/index.html#sessions",
+    "title": "Day 3: Learner Language Analysis",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 1: Learner Corpora\nSession 2: Error Analysis\nSession 3: Interlanguage Features",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 3: Learner Language Analysis",
+      "Day 3: Learner Language Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html",
+    "href": "2025/syllabus/index.html",
+    "title": "Course Syllabus",
+    "section": "",
+    "text": "Course Title: Linguistic Data Analysis I\nCredits: 2\nFormat: Intensive 5-day course\nLanguage: English\nPrerequisites: Graduate standing; no programming experience required",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#course-information",
+    "href": "2025/syllabus/index.html#course-information",
+    "title": "Course Syllabus",
+    "section": "",
+    "text": "Course Title: Linguistic Data Analysis I\nCredits: 2\nFormat: Intensive 5-day course\nLanguage: English\nPrerequisites: Graduate standing; no programming experience required",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#course-description",
+    "href": "2025/syllabus/index.html#course-description",
+    "title": "Course Syllabus",
+    "section": "Course Description",
+    "text": "Course Description\nThis intensive graduate course provides hands-on training in corpus linguistics and learner language analysis. Students will gain practical experience with industry-standard tools for analyzing linguistic data, with special emphasis on learner corpora and their applications in language teaching and research.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#learning-objectives",
+    "href": "2025/syllabus/index.html#learning-objectives",
+    "title": "Course Syllabus",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this course, students will be able to:\n\nUnderstand fundamental concepts in corpus linguistics\nApply corpus analysis tools to investigate linguistic phenomena\nAnalyze learner language using corpus methods\nEvaluate corpus-based research critically\nDesign small-scale corpus studies\nInterpret statistical results from corpus data",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#course-components",
+    "href": "2025/syllabus/index.html#course-components",
+    "title": "Course Syllabus",
+    "section": "Course Components",
+    "text": "Course Components\n\n\n\n\n\n\nNavigation\n\n\n\n\n📅 Detailed Schedule\n📚 Required Readings\n📋 Course Policies\n📄 Download PDF Syllabus",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#assessment",
+    "href": "2025/syllabus/index.html#assessment",
+    "title": "Course Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\n\n\n\nComponent\nWeight\nDue Date\n\n\n\n\nClass Participation\n10%\nThroughout\n\n\nHands-on Assignment 1\n15%\nDay 2\n\n\nHands-on Assignment 2\n15%\nDay 3\n\n\nHands-on Assignment 3\n15%\nDay 4\n\n\nHands-on Assignment 4\n15%\nDay 5\n\n\nFinal Project\n30%\n2 weeks after course",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#required-materials",
+    "href": "2025/syllabus/index.html#required-materials",
+    "title": "Course Syllabus",
+    "section": "Required Materials",
+    "text": "Required Materials\n\nSoftware (Free)\n\nAntConc: Corpus analysis toolkit\nJASP: Statistical analysis software\nGoogle Account: For Colab notebooks\nText Editor: VS Code recommended\n\n\n\nTextbook\nNo required textbook. All readings will be provided or freely available online.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#daily-structure",
+    "href": "2025/syllabus/index.html#daily-structure",
+    "title": "Course Syllabus",
+    "section": "Daily Structure",
+    "text": "Daily Structure\nEach day follows this general pattern:\n\n\n\nTime\nActivity\n\n\n\n\n9:00-10:30\nSession 1: Lecture & Discussion\n\n\n10:30-10:45\nBreak\n\n\n10:45-12:15\nSession 2: Hands-on Workshop\n\n\n12:15-13:15\nLunch Break\n\n\n13:15-14:45\nSession 3: Lab & Practice\n\n\n14:45-15:00\nBreak\n\n\n15:00-16:00\nReview & Assignment Work",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#topics-by-day",
+    "href": "2025/syllabus/index.html#topics-by-day",
+    "title": "Course Syllabus",
+    "section": "Topics by Day",
+    "text": "Topics by Day\n\nDay 1: Foundations\n\nIntroduction to corpus linguistics\nTypes of corpora\nBasic corpus analysis with AntConc\n\n\n\nDay 2: Advanced Analysis\n\nCollocation and keywords\nAdvanced AntConc features\nWorking with tagged corpora\n\n\n\nDay 3: Learner Language\n\nIntroduction to learner corpora\nError analysis methodology\nInterlanguage features\n\n\n\nDay 4: Statistical Methods\n\nDescriptive statistics for corpus data\nSignificance testing\nData visualization with JASP\n\n\n\nDay 5: Integration\n\nMulti-word units and formulaic language\nProject presentations\nFuture directions in corpus linguistics",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#communication",
+    "href": "2025/syllabus/index.html#communication",
+    "title": "Course Syllabus",
+    "section": "Communication",
+    "text": "Communication\n\nOffice Hours: By appointment\nEmail Response: Within 24 hours on weekdays\nCourse Platform: [Specify platform]",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#academic-integrity",
+    "href": "2025/syllabus/index.html#academic-integrity",
+    "title": "Course Syllabus",
+    "section": "Academic Integrity",
+    "text": "Academic Integrity\nAll work submitted must be your own. Proper citation of sources is required. See the policies page for details on academic integrity and collaboration guidelines.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#accommodations",
+    "href": "2025/syllabus/index.html#accommodations",
+    "title": "Course Syllabus",
+    "section": "Accommodations",
+    "text": "Accommodations\nStudents requiring accommodations should contact the instructor as early as possible to discuss their needs. All discussions will remain confidential.\n\nThis syllabus is subject to change. Students will be notified of any modifications.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html",
+    "href": "2025/syllabus/policies.html",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Attendance is mandatory for this intensive course\nMissing more than one session may result in course failure\nIf you must miss a session due to illness or emergency, contact the instructor immediately\nMake-up work may be assigned for excused absences\n\n\n\n\n\n\n\nAll assignments are due at 9:00 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies\n\n\n\n\n\nSubmit all assignments via the course management system\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)\n\n\n\n\n\n\n\n\nAll work must be your own\nProperly cite all sources\nPlagiarism detection software will be used\nViolations will result in course failure\n\n\n\n\n\nDiscussion with classmates is encouraged\nHowever, all submitted work must be completed individually\nClearly indicate if you received help from others\nGroup work is only permitted when explicitly stated\n\n\n\n\n\n\n\n\nBring a laptop to every session\nEnsure all required software is installed before Day 1\nHave a backup plan (USB drive, cloud storage)\nTest your setup before the course begins\n\n\n\n\n\nLaptops should be used for course activities only\nSilence mobile phones\nNo recording without permission\nBe respectful during online activities\n\n\n\n\n\n\n\n\nHands-on Assignments (4 × 10%): 40%\nClass Participation: 20%\nFinal Project: 40%\n\n\n\n\n\nA: 90-100%\nB: 80-89%\nC: 70-79%\nD: 60-69%\nF: Below 60%\n\n\n\n\n\nActive engagement in discussions\nCompletion of in-class activities\nHelping classmates when appropriate\nAsking thoughtful questions\n\n\n\n\n\n\n\n\nEmail: [instructor email]\nResponse time: Within 24 hours on weekdays\nOffice hours: By appointment\nEmergency contact: [if applicable]\n\n\n\n\n\nCheck email daily during the course\nImportant updates will be posted on the course website\nJoin the course Slack/Discord channel [if applicable]\n\n\n\n\n\n\n\n\nStudents with documented disabilities should contact the instructor on Day 1\nAccommodations will be made according to university policy\nDocumentation should be provided to [Office Name]\n\n\n\n\n\nThis course is conducted in English\nInternational students may use translation tools for understanding\nHowever, all submissions must be in English\nExtra time may be granted for non-native speakers (discuss with instructor)\n\n\n\n\n\n\n\n\nFollow current university guidelines\nMasks optional/required based on university policy\nOnline participation available if quarantined\nNotify instructor immediately if you test positive\n\n\n\n\n\nThis is an intensive course; take care of yourself\nUniversity counseling services: [Contact Info]\nDon’t hesitate to reach out if you’re struggling\n\n\n\n\n\n\n\n\nOriginal research using course methods\n3,000-5,000 words\nMust include corpus analysis component\nDetailed guidelines in Final Project\n\n\n\n\n\nProposal due: Day 5 (in class)\nFinal submission: 2 weeks after course ends\nFeedback provided: Within 1 week of submission\n\n\n\n\n\n\nAnonymous course evaluations will be distributed on Day 5\nYour feedback helps improve the course\nEvaluations do not affect your grade\nBoth numerical ratings and written comments are valuable\n\n\n\n\n\n\n\nCourse sessions may not be recorded without permission\nInstructor may record sessions for absent students\nRecordings are for personal use only\n\n\n\n\n\nTreat guest speakers with respect\nPrepare questions in advance\nGuest speaker materials are confidential unless otherwise stated\n\n\n\n\n\nAny research involving human subjects requires ethics approval\nCorpus data must be used according to license agreements\nRespect copyright and intellectual property\n\n\n\n\n\nIf you have questions about any policy, please don’t hesitate to ask. The goal is to create a productive and supportive learning environment for everyone.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#attendance-policy",
+    "href": "2025/syllabus/policies.html#attendance-policy",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Attendance is mandatory for this intensive course\nMissing more than one session may result in course failure\nIf you must miss a session due to illness or emergency, contact the instructor immediately\nMake-up work may be assigned for excused absences",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#assignment-submission",
+    "href": "2025/syllabus/policies.html#assignment-submission",
+    "title": "Course Policies",
+    "section": "",
+    "text": "All assignments are due at 9:00 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies\n\n\n\n\n\nSubmit all assignments via the course management system\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#academic-integrity",
+    "href": "2025/syllabus/policies.html#academic-integrity",
+    "title": "Course Policies",
+    "section": "",
+    "text": "All work must be your own\nProperly cite all sources\nPlagiarism detection software will be used\nViolations will result in course failure\n\n\n\n\n\nDiscussion with classmates is encouraged\nHowever, all submitted work must be completed individually\nClearly indicate if you received help from others\nGroup work is only permitted when explicitly stated",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#technology-policy",
+    "href": "2025/syllabus/policies.html#technology-policy",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Bring a laptop to every session\nEnsure all required software is installed before Day 1\nHave a backup plan (USB drive, cloud storage)\nTest your setup before the course begins\n\n\n\n\n\nLaptops should be used for course activities only\nSilence mobile phones\nNo recording without permission\nBe respectful during online activities",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#grading",
+    "href": "2025/syllabus/policies.html#grading",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Hands-on Assignments (4 × 10%): 40%\nClass Participation: 20%\nFinal Project: 40%\n\n\n\n\n\nA: 90-100%\nB: 80-89%\nC: 70-79%\nD: 60-69%\nF: Below 60%\n\n\n\n\n\nActive engagement in discussions\nCompletion of in-class activities\nHelping classmates when appropriate\nAsking thoughtful questions",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#communication",
+    "href": "2025/syllabus/policies.html#communication",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Email: [instructor email]\nResponse time: Within 24 hours on weekdays\nOffice hours: By appointment\nEmergency contact: [if applicable]\n\n\n\n\n\nCheck email daily during the course\nImportant updates will be posted on the course website\nJoin the course Slack/Discord channel [if applicable]",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#accommodations",
+    "href": "2025/syllabus/policies.html#accommodations",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Students with documented disabilities should contact the instructor on Day 1\nAccommodations will be made according to university policy\nDocumentation should be provided to [Office Name]\n\n\n\n\n\nThis course is conducted in English\nInternational students may use translation tools for understanding\nHowever, all submissions must be in English\nExtra time may be granted for non-native speakers (discuss with instructor)",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#health-and-safety",
+    "href": "2025/syllabus/policies.html#health-and-safety",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Follow current university guidelines\nMasks optional/required based on university policy\nOnline participation available if quarantined\nNotify instructor immediately if you test positive\n\n\n\n\n\nThis is an intensive course; take care of yourself\nUniversity counseling services: [Contact Info]\nDon’t hesitate to reach out if you’re struggling",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#final-project",
+    "href": "2025/syllabus/policies.html#final-project",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Original research using course methods\n3,000-5,000 words\nMust include corpus analysis component\nDetailed guidelines in Final Project\n\n\n\n\n\nProposal due: Day 5 (in class)\nFinal submission: 2 weeks after course ends\nFeedback provided: Within 1 week of submission",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#course-evaluation",
+    "href": "2025/syllabus/policies.html#course-evaluation",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Anonymous course evaluations will be distributed on Day 5\nYour feedback helps improve the course\nEvaluations do not affect your grade\nBoth numerical ratings and written comments are valuable",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#additional-policies",
+    "href": "2025/syllabus/policies.html#additional-policies",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Course sessions may not be recorded without permission\nInstructor may record sessions for absent students\nRecordings are for personal use only\n\n\n\n\n\nTreat guest speakers with respect\nPrepare questions in advance\nGuest speaker materials are confidential unless otherwise stated\n\n\n\n\n\nAny research involving human subjects requires ethics approval\nCorpus data must be used according to license agreements\nRespect copyright and intellectual property",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#questions",
+    "href": "2025/syllabus/policies.html#questions",
+    "title": "Course Policies",
+    "section": "",
+    "text": "If you have questions about any policy, please don’t hesitate to ask. The goal is to create a productive and supportive learning environment for everyone.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-4/index.html",
+    "href": "2025/assignments/hands-on-4/index.html",
+    "title": "Hands-on Assignment 4",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 4"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-4/index.html#assignment-details",
+    "href": "2025/assignments/hands-on-4/index.html#assignment-details",
+    "title": "Hands-on Assignment 4",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 4"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-2/index.html",
+    "href": "2025/assignments/hands-on-2/index.html",
+    "title": "Hands-on Assignment 2",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 2"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-2/index.html#assignment-details",
+    "href": "2025/assignments/hands-on-2/index.html#assignment-details",
+    "title": "Hands-on Assignment 2",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 2"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/index.html",
+    "href": "2025/assignments/hands-on-1/index.html",
+    "title": "Hands-on Assignment 1",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 1"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/index.html#assignment-details",
+    "href": "2025/assignments/hands-on-1/index.html#assignment-details",
+    "title": "Hands-on Assignment 1",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 1"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html",
+    "href": "2025/assignments/final-project/index.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "Final project instructions and requirements.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html#project-guidelines",
+    "href": "2025/assignments/final-project/index.html#project-guidelines",
+    "title": "Final Project",
+    "section": "",
+    "text": "Final project instructions and requirements.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/index.html",
+    "href": "2025/assignments/index.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "This section contains all course assignments and the final project.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/index.html#overview",
+    "href": "2025/assignments/index.html#overview",
+    "title": "Assignments",
+    "section": "",
+    "text": "This section contains all course assignments and the final project.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/index.html#assignments",
+    "href": "2025/assignments/index.html#assignments",
+    "title": "Assignments",
+    "section": "Assignments",
+    "text": "Assignments\n\nHands-on Assignment 1\nHands-on Assignment 2\nHands-on Assignment 3\nHands-on Assignment 4\nFinal Project",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/index.html",
+    "href": "2025/assignments/hands-on-3/index.html",
+    "title": "Hands-on Assignment 3",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 3"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/index.html#assignment-details",
+    "href": "2025/assignments/hands-on-3/index.html#assignment-details",
+    "title": "Hands-on Assignment 3",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Hands-on Assignment 3"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html",
+    "href": "2025/syllabus/readings.html",
+    "title": "Required Readings",
+    "section": "",
+    "text": "Required:\nRecommended:\n\n\n\nRequired:\nRecommended:\n\n\n\nRequired:\nRecommended:\n\n\n\nRequired:\nRecommended:\n\n\n\nRequired:\nRecommended:\n\n\n\n\n\n\n\nCECL Learner Corpus Bibliography\nCorpus Linguistics: Method, Analysis, Interpretation - Free online course\n\n\n\n\n\nInternational Journal of Learner Corpus Research\nInternational Journal of Corpus Linguistics\nCorpus Linguistics and Linguistic Theory\n\n\n\n\n\n\nCore textbooks are available at the university library\nJournal articles can be accessed through the university database\nOpen-access materials are linked directly\nAdditional PDFs will be shared via the course management system\n\n\n\n\n\nComplete required readings before each day’s sessions\nTake notes on key concepts and questions\nBe prepared to discuss readings in class\nRecommended readings provide deeper understanding but are optional",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Required Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#readings-by-day",
+    "href": "2025/syllabus/readings.html#readings-by-day",
+    "title": "Required Readings",
+    "section": "",
+    "text": "Required:\nRecommended:\n\n\n\nRequired:\nRecommended:\n\n\n\nRequired:\nRecommended:\n\n\n\nRequired:\nRecommended:\n\n\n\nRequired:\nRecommended:",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Required Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#additional-resources",
+    "href": "2025/syllabus/readings.html#additional-resources",
+    "title": "Required Readings",
+    "section": "",
+    "text": "CECL Learner Corpus Bibliography\nCorpus Linguistics: Method, Analysis, Interpretation - Free online course\n\n\n\n\n\nInternational Journal of Learner Corpus Research\nInternational Journal of Corpus Linguistics\nCorpus Linguistics and Linguistic Theory",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Required Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#access-to-readings",
+    "href": "2025/syllabus/readings.html#access-to-readings",
+    "title": "Required Readings",
+    "section": "",
+    "text": "Core textbooks are available at the university library\nJournal articles can be accessed through the university database\nOpen-access materials are linked directly\nAdditional PDFs will be shared via the course management system",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Required Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#reading-guidelines",
+    "href": "2025/syllabus/readings.html#reading-guidelines",
+    "title": "Required Readings",
+    "section": "",
+    "text": "Complete required readings before each day’s sessions\nTake notes on key concepts and questions\nBe prepared to discuss readings in class\nRecommended readings provide deeper understanding but are optional",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Required Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html",
+    "href": "2025/syllabus/schedule.html",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "This intensive course meets for 5 days with 3 sessions per day.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#overview",
+    "href": "2025/syllabus/schedule.html#overview",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "This intensive course meets for 5 days with 3 sessions per day.",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-1-introduction-to-corpus-linguistics",
+    "href": "2025/syllabus/schedule.html#day-1-introduction-to-corpus-linguistics",
+    "title": "Course Schedule",
+    "section": "Day 1: Introduction to Corpus Linguistics",
+    "text": "Day 1: Introduction to Corpus Linguistics\n\nSession 1: Course Introduction (9:00-10:30)\n\nCourse overview\nWhat is corpus linguistics?\nIntroduction to learner corpora\nSession Materials\n\n\n\nSession 2: Corpus Tools Overview (10:45-12:15)\n\nIntroduction to AntConc\nBasic corpus searches\nHands-on practice\nSession Materials\n\n\n\nSession 3: Working with Corpora (13:30-15:00)\n\nTypes of corpora\nCorpus design principles\nPractice activities\nSession Materials\n\nAssignment: Hands-on Assignment 1 due Day 2",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-2-frequency-and-concordance-analysis",
+    "href": "2025/syllabus/schedule.html#day-2-frequency-and-concordance-analysis",
+    "title": "Course Schedule",
+    "section": "Day 2: Frequency and Concordance Analysis",
+    "text": "Day 2: Frequency and Concordance Analysis\n\nSession 4: Frequency Analysis (9:00-10:30)\n\nWord lists and keywords\nN-grams and clusters\nSession Materials\n\n\n\nSession 5: Concordance Analysis (10:45-12:15)\n\nKWIC displays\nCollocation analysis\nSession Materials\n\n\n\nSession 6: Learner Language Features (13:30-15:00)\n\nError analysis in corpora\nLearner corpus annotation\nSession Materials\n\nAssignment: Hands-on Assignment 2 due Day 3",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-3-statistical-analysis",
+    "href": "2025/syllabus/schedule.html#day-3-statistical-analysis",
+    "title": "Course Schedule",
+    "section": "Day 3: Statistical Analysis",
+    "text": "Day 3: Statistical Analysis\n\nSession 7: Descriptive Statistics (9:00-10:30)\n\nBasic statistics for corpus data\nUsing JASP\nSession Materials\n\n\n\nSession 8: Comparative Analysis (10:45-12:15)\n\nComparing corpora\nStatistical tests\nSession Materials\n\n\n\nSession 9: Visualization (13:30-15:00)\n\nCreating graphs and charts\nPresenting corpus data\nSession Materials\n\nAssignment: Hands-on Assignment 3 due Day 4",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-4-introduction-to-python",
+    "href": "2025/syllabus/schedule.html#day-4-introduction-to-python",
+    "title": "Course Schedule",
+    "section": "Day 4: Introduction to Python",
+    "text": "Day 4: Introduction to Python\n\nSession 10: Python Basics (9:00-10:30)\n\nIntroduction to Google Colab\nBasic Python syntax\nSession Materials\n\n\n\nSession 11: Text Processing (10:45-12:15)\n\nWorking with text files\nBasic text analysis\nSession Materials\n\n\n\nSession 12: Corpus Analysis with Python (13:30-15:00)\n\nNLTK basics\nSimple corpus queries\nSession Materials\n\nAssignment: Hands-on Assignment 4 due Day 5",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-5-research-applications",
+    "href": "2025/syllabus/schedule.html#day-5-research-applications",
+    "title": "Course Schedule",
+    "section": "Day 5: Research Applications",
+    "text": "Day 5: Research Applications\n\nSession 13: Research Design (9:00-10:30)\n\nDesigning corpus studies\nResearch questions\nSession Materials\n\n\n\nSession 14: Case Studies (10:45-12:15)\n\nExample research projects\nDiscussion\nSession Materials\n\n\n\nSession 15: Final Presentations (13:30-15:00)\n\nStudent project proposals\nPeer feedback\nCourse wrap-up\nSession Materials\n\nFinal Project: Guidelines - Due 2 weeks after course",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#important-notes",
+    "href": "2025/syllabus/schedule.html#important-notes",
+    "title": "Course Schedule",
+    "section": "Important Notes",
+    "text": "Important Notes\n\nAll times are Japan Standard Time (JST)\nBreaks: 15 minutes between morning sessions, 75 minutes for lunch\nBring your laptop to all sessions\nComplete readings before each day (see Readings)",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html",
+    "href": "2025/sessions/day4/index.html",
+    "title": "Day 4: Statistical Analysis",
+    "section": "",
+    "text": "Statistical methods for corpus linguistics.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 4: Statistical Analysis",
+      "Day 4: Statistical Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#overview",
+    "href": "2025/sessions/day4/index.html#overview",
+    "title": "Day 4: Statistical Analysis",
+    "section": "",
+    "text": "Statistical methods for corpus linguistics.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 4: Statistical Analysis",
+      "Day 4: Statistical Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#sessions",
+    "href": "2025/sessions/day4/index.html#sessions",
+    "title": "Day 4: Statistical Analysis",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 1: Descriptive Statistics\nSession 2: Inferential Statistics\nSession 3: Data Visualization",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 4: Statistical Analysis",
+      "Day 4: Statistical Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html",
+    "href": "2025/sessions/day2/index.html",
+    "title": "Day 2: Advanced Corpus Analysis",
+    "section": "",
+    "text": "Advanced corpus analysis techniques.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Advanced Corpus Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#overview",
+    "href": "2025/sessions/day2/index.html#overview",
+    "title": "Day 2: Advanced Corpus Analysis",
+    "section": "",
+    "text": "Advanced corpus analysis techniques.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Advanced Corpus Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#sessions",
+    "href": "2025/sessions/day2/index.html#sessions",
+    "title": "Day 2: Advanced Corpus Analysis",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 1: Collocations\nSession 2: Keywords\nSession 3: Advanced Features",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 2: Advanced Corpus Analysis",
+      "Day 2: Advanced Corpus Analysis"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html",
+    "href": "2025/sessions/index.html",
+    "title": "Course Sessions",
+    "section": "",
+    "text": "This page provides access to all course sessions organized by day. Each session includes lecture materials, hands-on activities, and additional resources.\n\n\n\n\n\n\nNavigation Tips\n\n\n\n\nClick on any day to see all sessions\nEach session page includes downloadable materials\nActivities have step-by-step instructions\nCheck “Pre-class” sections for preparation requirements",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#overview",
+    "href": "2025/sessions/index.html#overview",
+    "title": "Course Sessions",
+    "section": "",
+    "text": "This page provides access to all course sessions organized by day. Each session includes lecture materials, hands-on activities, and additional resources.\n\n\n\n\n\n\nNavigation Tips\n\n\n\n\nClick on any day to see all sessions\nEach session page includes downloadable materials\nActivities have step-by-step instructions\nCheck “Pre-class” sections for preparation requirements",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#course-schedule-at-a-glance",
+    "href": "2025/sessions/index.html#course-schedule-at-a-glance",
+    "title": "Course Sessions",
+    "section": "Course Schedule at a Glance",
+    "text": "Course Schedule at a Glance\n\n\n\n\n\ngantt\n    title 5-Day Intensive Course Schedule\n    dateFormat  DD\n    section Day 1\n    Introduction           :01, 1\n    Corpus Basics         :01, 1  \n    Basic Analysis        :01, 1\n    section Day 2\n    Collocations          :02, 1\n    Keywords              :02, 1\n    Advanced Features     :02, 1\n    section Day 3\n    Learner Corpora       :03, 1\n    Error Analysis        :03, 1\n    Interlanguage         :03, 1\n    section Day 4\n    Descriptive Stats     :04, 1\n    Inferential Stats     :04, 1\n    Visualization         :04, 1\n    section Day 5\n    Multi-word Units      :05, 1\n    Project Workshop      :05, 1\n    Future Directions     :05, 1",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#day-by-day-overview",
+    "href": "2025/sessions/index.html#day-by-day-overview",
+    "title": "Course Sessions",
+    "section": "Day-by-Day Overview",
+    "text": "Day-by-Day Overview\n\nDay 1: Introduction and Foundations\nBuild a solid foundation in corpus linguistics concepts and basic tools.\n\n\nMorning Sessions - Course introduction and overview - What is corpus linguistics? - Types of corpora\n\nAfternoon Sessions - Hands-on with AntConc - Basic corpus searches - Frequency analysis\n\n\nKey Skills: AntConc basics, concordance reading, frequency lists\n\n\n\nDay 2: Advanced Corpus Analysis\nExplore sophisticated analysis techniques for deeper linguistic insights.\n\n\nMorning Sessions - Collocation analysis - Statistical measures - Keyword analysis\n\nAfternoon Sessions - Regular expressions - N-grams and clusters - Tagged corpus work\n\n\nKey Skills: Collocation statistics, keyword extraction, pattern searching\n\n\n\nDay 3: Learner Language Analysis\nFocus on analyzing non-native speaker language and learner corpora.\n\n\nMorning Sessions - Learner corpus design - Available resources - Research applications\n\nAfternoon Sessions - Error annotation - Interlanguage features - L1 influence detection\n\n\nKey Skills: Error analysis, contrastive analysis, developmental patterns\n\n\n\nDay 4: Statistical Analysis\nApply statistical methods to validate corpus findings.\n\n\nMorning Sessions - Descriptive statistics - Distribution analysis - Effect sizes\n\nAfternoon Sessions - Hypothesis testing - Chi-square tests - Data visualization\n\n\nKey Skills: JASP usage, statistical testing, creating visualizations\n\n\n\nDay 5: Advanced Topics and Integration\nSynthesize learning and explore cutting-edge applications.\n\n\nMorning Sessions - Formulaic language - Multi-word units - Pedagogical applications\n\nAfternoon Sessions - Project presentations - Peer feedback - Future resources\n\n\nKey Skills: Project design, presentation skills, independent research",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#session-resources",
+    "href": "2025/sessions/index.html#session-resources",
+    "title": "Course Sessions",
+    "section": "Session Resources",
+    "text": "Session Resources\n\nStandard Session Materials\nEach session typically includes:\n\nSlides - Main presentation materials (PDF format)\nActivities - Hands-on exercises with instructions\nData Files - Corpora and datasets for practice\nReadings - Session-specific articles or chapters\nLinks - Additional online resources\n\n\n\nTechnical Requirements by Day\n\n\n\nDay\nRequired Software\nData Files\n\n\n\n\nDay 1-3\nAntConc\nProvided corpora\n\n\nDay 4\nJASP, Excel/Sheets\nStatistical datasets\n\n\nDay 5\nAll previous tools\nStudent choice",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#how-to-use-session-materials",
+    "href": "2025/sessions/index.html#how-to-use-session-materials",
+    "title": "Course Sessions",
+    "section": "How to Use Session Materials",
+    "text": "How to Use Session Materials\n\n\n\n\n\n\nBest Practices\n\n\n\n\nBefore Class\n\nReview session objectives\nComplete required readings\nDownload necessary files\nTest software functionality\n\nDuring Class\n\nFollow along with demonstrations\nComplete activities in real-time\nAsk questions as they arise\nTake notes on modifications\n\nAfter Class\n\nReview completed activities\nTry additional practice exercises\nPrepare assignments\nExplore supplementary resources",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#troubleshooting-common-issues",
+    "href": "2025/sessions/index.html#troubleshooting-common-issues",
+    "title": "Course Sessions",
+    "section": "Troubleshooting Common Issues",
+    "text": "Troubleshooting Common Issues\n\nSoftware Problems\n\nAntConc won’t open:\nJASP crashes: Ensure you have latest version\nFiles won’t load: Verify file encoding (UTF-8)\n\n\n\nData Issues\n\nCorpus too large: Use provided samples first\nCharacter encoding: Convert to UTF-8\nMissing files: Check course repository",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#session-recordings",
+    "href": "2025/sessions/index.html#session-recordings",
+    "title": "Course Sessions",
+    "section": "Session Recordings",
+    "text": "Session Recordings\n\n\n\n\n\n\nRecording Policy\n\n\n\nSessions may be recorded for: - Students who miss class due to illness - Review purposes - Future course development\nRecordings are not a substitute for attendance!",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/index.html#quick-links-to-all-sessions",
+    "href": "2025/sessions/index.html#quick-links-to-all-sessions",
+    "title": "Course Sessions",
+    "section": "Quick Links to All Sessions",
+    "text": "Quick Links to All Sessions\n\nDay 1\n\nSession 1: Introduction\nSession 2: Corpus Basics\nSession 3: Basic Analysis\n\n\n\nDay 2\n\nSession 1: Collocations\nSession 2: Keywords\nSession 3: Advanced Features\n\n\n\nDay 3\n\nSession 1: Learner Corpora\nSession 2: Error Analysis\nSession 3: Interlanguage\n\n\n\nDay 4\n\nSession 1: Descriptive Statistics\nSession 2: Inferential Statistics\nSession 3: Visualization\n\n\n\nDay 5\n\nSession 1: Multi-word Units\nSession 2: Project Workshop\nSession 3: Future Directions\n\n\nFor questions about session materials, contact the instructor.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Course Sessions"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html",
+    "href": "2025/sessions/day1/index.html",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "",
+    "text": "Introduction to corpus linguistics concepts and basic tools.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 1: Introduction & Corpus Basics",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#overview",
+    "href": "2025/sessions/day1/index.html#overview",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "",
+    "text": "Introduction to corpus linguistics concepts and basic tools.",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 1: Introduction & Corpus Basics",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#sessions",
+    "href": "2025/sessions/day1/index.html#sessions",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 1: Course Introduction\nSession 2: Corpus Basics\nSession 3: Basic Analysis",
+    "crumbs": [
+      "Home",
+      "Sessions",
+      "Day 1: Introduction & Corpus Basics",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "resources/code-examples/index.html",
+    "href": "resources/code-examples/index.html",
+    "title": "Code Examples",
+    "section": "",
+    "text": "Python Notebooks\nSpreadsheet Templates",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Code Examples"
+    ]
+  },
+  {
+    "objectID": "resources/code-examples/index.html#available-resources",
+    "href": "resources/code-examples/index.html#available-resources",
+    "title": "Code Examples",
+    "section": "",
+    "text": "Python Notebooks\nSpreadsheet Templates",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Code Examples"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html",
+    "href": "resources/tools/jasp-guide.html",
+    "title": "JASP Statistical Software Guide",
+    "section": "",
+    "text": "JASP (Jeffreys’s Amazing Statistics Program) is a free, open-source statistics program with a user-friendly interface. It’s designed to be intuitive for users familiar with SPSS while incorporating modern statistical methods including Bayesian analyses.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#overview",
+    "href": "resources/tools/jasp-guide.html#overview",
+    "title": "JASP Statistical Software Guide",
+    "section": "",
+    "text": "JASP (Jeffreys’s Amazing Statistics Program) is a free, open-source statistics program with a user-friendly interface. It’s designed to be intuitive for users familiar with SPSS while incorporating modern statistical methods including Bayesian analyses.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#why-jasp-for-this-course",
+    "href": "resources/tools/jasp-guide.html#why-jasp-for-this-course",
+    "title": "JASP Statistical Software Guide",
+    "section": "Why JASP for This Course?",
+    "text": "Why JASP for This Course?\n\nFree and open-source: No license fees\nUser-friendly: Drag-and-drop interface\nReal-time results: See analyses update as you work\nPublication-ready output: APA-formatted tables\nReproducible: Save complete analyses\nModern statistics: Includes effect sizes and Bayesian options",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#system-requirements",
+    "href": "resources/tools/jasp-guide.html#system-requirements",
+    "title": "JASP Statistical Software Guide",
+    "section": "System Requirements",
+    "text": "System Requirements\n\nMinimum Requirements\n\nWindows: Windows 7 or higher, 64-bit\nmacOS: macOS 10.12 (Sierra) or higher\nLinux: Ubuntu 16.04 or higher\nRAM: 4GB (8GB recommended)\nStorage: 500MB free space",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#installation",
+    "href": "resources/tools/jasp-guide.html#installation",
+    "title": "JASP Statistical Software Guide",
+    "section": "Installation",
+    "text": "Installation\n\nWindows\n\nVisit jasp-stats.org\nClick “Download” → Windows\nRun the installer (.exe file)\nFollow installation wizard\nLaunch JASP from Start Menu\n\n\n\nmacOS\n\nVisit jasp-stats.org\nClick “Download” → macOS\nOpen the .dmg file\nDrag JASP to Applications\nFirst launch: Right-click → Open (security)\n\n\n\nLinux\n\nVisit jasp-stats.org\nDownload AppImage or use flatpak\nMake AppImage executable\nRun from terminal or file manager",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#getting-started",
+    "href": "resources/tools/jasp-guide.html#getting-started",
+    "title": "JASP Statistical Software Guide",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nInterface Overview\n\nThree Main Panels\n\nData View: Spreadsheet for data\nAnalysis Panel: Available analyses\nResults Panel: Output and visualizations\n\n\n\nRibbon Menu\n\nFile operations\nEdit functions\nCommon analyses shortcuts\n\n\n\n\nLoading Data\n\nSupported Formats\n\nCSV files (recommended)\nExcel files (.xlsx)\nSPSS files (.sav)\nCopy/paste from clipboard\n\n\n\nImport Steps\n\nFile → Open → Computer\nBrowse to file location\nSelect file\nVerify variable types",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#course-specific-analyses",
+    "href": "resources/tools/jasp-guide.html#course-specific-analyses",
+    "title": "JASP Statistical Software Guide",
+    "section": "Course-Specific Analyses",
+    "text": "Course-Specific Analyses\n\nDay 4, Session 1: Descriptive Statistics\n\nFrequency Analysis\n\nDescriptives → Descriptive Statistics\nSelect variables\nChoose statistics:\n\nMean, median, mode\nStandard deviation\nRange, min, max\n\nEnable plots:\n\nDistribution plots\nBox plots\n\n\n\n\nExample: Corpus Word Length\nVariables: word_length\nStatistics: mean, SD, histogram\nSplit by: text_type\n\n\n\nDay 4, Session 2: Group Comparisons\n\nIndependent Samples T-Test\n\nT-Tests → Independent Samples T-Test\nDependent Variable: frequency_score\nGrouping Variable: learner_level\nAdditional Statistics:\n\nEffect size (Cohen’s d)\nConfidence intervals\nAssumption checks\n\n\n\n\nChi-Square Test\n\nFrequencies → Contingency Tables\nRows: error_type\nColumns: proficiency_level\nStatistics:\n\nChi-square test\nCramér’s V\nExpected counts\n\n\n\n\n\nDay 4, Session 3: Correlation and Regression\n\nCorrelation Analysis\n\nRegression → Correlation Matrix\nSelect variables\nOptions:\n\nPearson’s r\nSpearman’s rho\nConfidence intervals\n\n\n\n\nLinear Regression\n\nRegression → Linear Regression\nDependent: accuracy_score\nPredictors: study_hours, vocabulary_size\nStatistics:\n\nR-squared\nCoefficients\nAssumption checks",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#data-preparation-tips",
+    "href": "resources/tools/jasp-guide.html#data-preparation-tips",
+    "title": "JASP Statistical Software Guide",
+    "section": "Data Preparation Tips",
+    "text": "Data Preparation Tips\n\nVariable Types\n\nNominal: Categories (e.g., L1_language)\nOrdinal: Ordered categories (e.g., proficiency_level)\nScale: Continuous (e.g., test_scores)\n\n\n\nData Cleaning\n\nCheck for missing values\nVerify variable types\nLook for outliers\nCreate new variables if needed",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#common-analyses-for-linguistics",
+    "href": "resources/tools/jasp-guide.html#common-analyses-for-linguistics",
+    "title": "JASP Statistical Software Guide",
+    "section": "Common Analyses for Linguistics",
+    "text": "Common Analyses for Linguistics\n\nComparing Groups\n\nT-tests: Two groups\nANOVA: Multiple groups\nChi-square: Categorical data\n\n\n\nRelationships\n\nCorrelation: Linear relationships\nRegression: Prediction models\nLogistic regression: Binary outcomes\n\n\n\nDescriptive Summaries\n\nFrequencies: Count data\nDescriptives: Continuous data\nExplore: Detailed examination",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#output-and-reporting",
+    "href": "resources/tools/jasp-guide.html#output-and-reporting",
+    "title": "JASP Statistical Software Guide",
+    "section": "Output and Reporting",
+    "text": "Output and Reporting\n\nTables\n\nRight-click → Copy\nPaste into Word/Google Docs\nAPA format ready\n\n\n\nPlots\n\nRight-click → Save as\nHigh resolution for publications\nCustomizable appearance\n\n\n\nComplete Analysis\n\nFile → Export Results\nHTML or PDF format\nIncludes all output",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#troubleshooting",
+    "href": "resources/tools/jasp-guide.html#troubleshooting",
+    "title": "JASP Statistical Software Guide",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nCommon Issues\nJASP won’t open - Check system requirements - Update operating system - Try compatibility mode (Windows)\nData import fails - Check file encoding (UTF-8) - Remove special characters - Save as CSV and retry\nAnalysis grayed out - Check variable types - Ensure data is selected - Verify analysis requirements\nSlow performance - Close other applications - Reduce data size for practice - Update JASP version",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#best-practices",
+    "href": "resources/tools/jasp-guide.html#best-practices",
+    "title": "JASP Statistical Software Guide",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nBefore Analysis\n\nUnderstand your data\n\nVariable types\nSample sizes\nMissing values\n\nPlan analyses\n\nResearch questions\nAppropriate tests\nAssumptions to check\n\n\n\n\nDuring Analysis\n\nStart simple\n\nDescriptive statistics first\nBuild complexity gradually\nCheck assumptions\n\nDocument steps\n\nSave JASP file (.jasp)\nNote decisions made\nKeep analysis log\n\n\n\n\nAfter Analysis\n\nInterpret carefully\n\nEffect sizes matter\nConsider practical significance\nReport limitations",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#integration-with-course",
+    "href": "resources/tools/jasp-guide.html#integration-with-course",
+    "title": "JASP Statistical Software Guide",
+    "section": "Integration with Course",
+    "text": "Integration with Course\n\nWorkflow Example\n\nExport data from AntConc\nFormat in Excel/Sheets\nImport to JASP\nRun analyses\nInterpret for linguistics\n\n\n\nSample Datasets\n\nlearner_errors.csv: Error analysis data\ncorpus_frequencies.csv: Word frequency data\ncollocation_strength.csv: Collocation measures",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#additional-resources",
+    "href": "resources/tools/jasp-guide.html#additional-resources",
+    "title": "JASP Statistical Software Guide",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nJASP Resources\n\nOfficial Tutorials\nYouTube Channel\nJASP Data Library\n\n\n\nStatistical Guidance\n\nStatistics for Linguistics with R\nHow to Do Linguistics with R\n\n\n\nCourse Materials\n\nSession slides with JASP examples\nPractice datasets\nStep-by-step tutorials",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/jasp-guide.html#quick-reference",
+    "href": "resources/tools/jasp-guide.html#quick-reference",
+    "title": "JASP Statistical Software Guide",
+    "section": "Quick Reference",
+    "text": "Quick Reference\n\nKey Shortcuts\n\nCtrl+O: Open file\nCtrl+S: Save analysis\nCtrl+C/V: Copy/paste data\nF5: Refresh analyses\n\n\n\nAnalysis Decision Tree\nComparing groups?\n├─ Yes\n│  ├─ 2 groups → T-test\n│  └─ 3+ groups → ANOVA\n└─ No\n   ├─ Relationship? → Correlation/Regression\n   └─ Categories? → Chi-square\n\nRemember: JASP makes statistics accessible. Don’t hesitate to explore!",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "JASP Statistical Software Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/index.html",
+    "href": "resources/tools/index.html",
+    "title": "Tools and Software",
+    "section": "",
+    "text": "AntConc Guide\nBYU Corpora Guide\nPython Setup\nJASP Guide",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Tools and Software"
+    ]
+  },
+  {
+    "objectID": "resources/tools/index.html#available-guides",
+    "href": "resources/tools/index.html#available-guides",
+    "title": "Tools and Software",
+    "section": "",
+    "text": "AntConc Guide\nBYU Corpora Guide\nPython Setup\nJASP Guide",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Tools",
+      "Tools and Software"
+    ]
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Course resources organized by category.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#overview",
+    "href": "resources/index.html#overview",
+    "title": "Resources",
+    "section": "",
+    "text": "Course resources organized by category.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#categories",
+    "href": "resources/index.html#categories",
+    "title": "Resources",
+    "section": "Categories",
+    "text": "Categories\n\nTools and Software\nCorpora\nCode Examples\nCourse Readings",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/corpora/index.html",
+    "href": "resources/corpora/index.html",
+    "title": "Corpora Resources",
+    "section": "",
+    "text": "Available Corpora\nLearner Corpora",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Corpora",
+      "Corpora Resources"
+    ]
+  },
+  {
+    "objectID": "resources/corpora/index.html#resources",
+    "href": "resources/corpora/index.html#resources",
+    "title": "Corpora Resources",
+    "section": "",
+    "text": "Available Corpora\nLearner Corpora",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Corpora",
+      "Corpora Resources"
+    ]
+  },
+  {
+    "objectID": "resources/corpora/available-corpora.html",
+    "href": "resources/corpora/available-corpora.html",
+    "title": "Available Corpora",
+    "section": "",
+    "text": "Content to be added.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Corpora",
+      "Available Corpora"
+    ]
+  },
+  {
+    "objectID": "resources/corpora/available-corpora.html#placeholder",
+    "href": "resources/corpora/available-corpora.html#placeholder",
+    "title": "Available Corpora",
+    "section": "",
+    "text": "Content to be added.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Corpora",
+      "Available Corpora"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Linguistic Data Analysis I",
+    "section": "",
+    "text": "This intensive 5-day graduate course introduces students to corpus linguistics and learner language analysis. Through hands-on activities and practical applications, you’ll learn to use computational tools to analyze linguistic data, with a special focus on learner corpora.\n\n\n\n\n\n\nQuick Links\n\n\n\n\n📋 Course Syllabus\n📅 Schedule\n💻 Sessions\n📝 Assignments\n🔧 Resources",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome-to-linguistic-data-analysis-i",
+    "href": "index.html#welcome-to-linguistic-data-analysis-i",
+    "title": "Linguistic Data Analysis I",
+    "section": "",
+    "text": "This intensive 5-day graduate course introduces students to corpus linguistics and learner language analysis. Through hands-on activities and practical applications, you’ll learn to use computational tools to analyze linguistic data, with a special focus on learner corpora.\n\n\n\n\n\n\nQuick Links\n\n\n\n\n📋 Course Syllabus\n📅 Schedule\n💻 Sessions\n📝 Assignments\n🔧 Resources",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "Linguistic Data Analysis I",
+    "section": "Course Overview",
+    "text": "Course Overview\n\n\n\nWhat You’ll Learn\n\nCorpus analysis techniques\nLearner language analysis methods\nStatistical approaches to linguistic data\nPractical applications with real corpora\nResearch methodology in corpus linguistics\n\n\n\n\nKey Tools\n\nAntConc - Corpus analysis software\nJASP - Statistical analysis\nPython - Text processing (via Google Colab)\nBYU Corpora - Online corpus interfaces\nExcel/Google Sheets - Data management",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "Linguistic Data Analysis I",
+    "section": "Course Structure",
+    "text": "Course Structure\nThe course is organized into 5 intensive days:\n\n\n\n\n\n\n\n\nDay\nTheme\nSessions\n\n\n\n\nDay 1\nIntroduction & Corpus Basics\nIntroduction to course, corpus linguistics fundamentals, AntConc basics\n\n\nDay 2\nAdvanced Corpus Analysis\nAdvanced AntConc features, collocation analysis, keyword analysis\n\n\nDay 3\nLearner Language Analysis\nLearner corpora, error analysis, interlanguage features\n\n\nDay 4\nStatistical Analysis\nDescriptive statistics, significance testing, data visualization\n\n\nDay 5\nAdvanced Topics & Projects\nMulti-word units, project presentations, future directions",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Linguistic Data Analysis I",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\n\n\n\n\n\nBefore the Course\n\n\n\n\nTechnical Requirements\n\nComputer with internet connection\n4GB RAM minimum (8GB recommended)\n2GB free storage space\n\nSoftware to Install\n\nAntConc (free)\nJASP (free)\nText editor (e.g., VS Code, Notepad++)\nGoogle account for Colab\n\nBackground Knowledge\n\nBasic familiarity with Excel/Google Sheets\nNo programming experience required\nInterest in language analysis",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Linguistic Data Analysis I",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nReview the syllabus for course policies and expectations\nCheck the detailed schedule for session timings\nInstall required software using our setup guides\nBrowse the resources section for helpful materials",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor-information",
+    "href": "index.html#instructor-information",
+    "title": "Linguistic Data Analysis I",
+    "section": "Instructor Information",
+    "text": "Instructor Information\nInstructor: [Your Name]\nEmail: [instructor.email@tohoku.ac.jp]\nOffice: [Building, Room Number]\nOffice Hours: [Days and Times]",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-communication",
+    "href": "index.html#course-communication",
+    "title": "Linguistic Data Analysis I",
+    "section": "Course Communication",
+    "text": "Course Communication\n\n\n\n\n\n\nStay Connected\n\n\n\n\nCourse Website: This site\nCommunication: [Platform details]\nAssignment Submission: [Details]\nQuestions: [How to get help]",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Linguistic Data Analysis I",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis course builds on materials and approaches from: - [List key influences/sources] - [Previous iterations] - [Collaborators]",
+    "crumbs": [
+      "Home",
+      "Course Information",
+      "Home"
+    ]
+  }
+]

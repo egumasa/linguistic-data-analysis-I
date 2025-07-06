@@ -1,0 +1,39 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Large files
+*.mp4
+*.mov
+*.zip
+*.tar.gz
+
+# Private materials
+private/
+solutions/
+grades/
+
+# Generated files
+*.log
+*.aux
+*.out
+.ipynb_checkpoints/
+
+# Sensitive data
+*.csv
+!sample-data/*.csv
+
+# Auto-generated syllabus files
+syllabus/combined.md
+
+# Quarto
+/.quarto/
+_freeze/
+_site/
+*.qmd~
+
+*/.DS_Store

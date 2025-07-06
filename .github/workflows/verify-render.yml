@@ -1,0 +1,172 @@
+name: Verify and Update Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      force_render:
+        description: 'Force re-render all files'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  verify-and-render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Full history for better comparison
+      
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 'latest'
+          
+      - name: Check which files need rendering
+        id: check_files
+        run: |
+          echo "Checking for out-of-date files..."
+          
+          # Initialize arrays for tracking
+          declare -a FILES_TO_RENDER
+          NEED_RENDER=false
+          
+          # Force render if requested
+          if [[ "${{ github.event.inputs.force_render }}" == "true" ]]; then
+            echo "Force render requested"
+            NEED_RENDER=true
+            echo "need_full_render=true" >> $GITHUB_OUTPUT
+          else
+            # Check each source file
+            for source in $(find . -name "*.qmd" -o -name "*.md" | grep -v "^./docs/" | grep -v README.md); do
+              # Get corresponding HTML file
+              html_file="./docs/${source#./}"
+              html_file="${html_file%.qmd}.html"
+              html_file="${html_file%.md}.html"
+              
+              # Check if HTML exists and is older than source
+              if [[ ! -f "$html_file" ]] || [[ "$source" -nt "$html_file" ]]; then
+                echo "Need to render: $source"
+                FILES_TO_RENDER+=("$source")
+                NEED_RENDER=true
+              fi
+            done
+            
+            # Check if _quarto.yml changed
+            if git diff HEAD^ HEAD --name-only | grep -q "_quarto.yml"; then
+              echo "_quarto.yml changed, need full render"
+              echo "need_full_render=true" >> $GITHUB_OUTPUT
+              NEED_RENDER=true
+            else
+              echo "need_full_render=false" >> $GITHUB_OUTPUT
+            fi
+          fi
+          
+          echo "need_render=$NEED_RENDER" >> $GITHUB_OUTPUT
+          
+          # Save list of files to render
+          if [[ ${#FILES_TO_RENDER[@]} -gt 0 ]]; then
+            printf '%s\n' "${FILES_TO_RENDER[@]}" > files_to_render.txt
+          fi
+          
+      - name: Create status comment (PR only)
+        if: github.event_name == 'pull_request' && steps.check_files.outputs.need_render == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const files = require('fs').existsSync('files_to_render.txt') 
+              ? require('fs').readFileSync('files_to_render.txt', 'utf8').trim().split('\n')
+              : [];
+            
+            const body = `## 🔄 Render Status
+            
+            The following files need to be rendered:
+            ${files.map(f => `- \`${f}\``).join('\n')}
+            
+            The workflow will automatically update the \`docs/\` folder.`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+      
+      - name: Render project
+        if: steps.check_files.outputs.need_render == 'true'
+        run: |
+          if [[ "${{ steps.check_files.outputs.need_full_render }}" == "true" ]]; then
+            echo "Running full render..."
+            quarto render
+          else
+            echo "Running partial render..."
+            # Quarto will intelligently render only what's needed
+            quarto render
+          fi
+      
+      - name: Check for changes in docs/
+        if: steps.check_files.outputs.need_render == 'true'
+        id: docs_changes
+        run: |
+          if [[ -n $(git status docs/ --porcelain) ]]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in docs/"
+            git status docs/ --short
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes in docs/"
+          fi
+      
+      - name: Commit and push changes
+        if: |
+          steps.check_files.outputs.need_render == 'true' && 
+          steps.docs_changes.outputs.changed == 'true' &&
+          github.event_name == 'push'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Add all changes in docs/
+          git add docs/
+          
+          # Create informative commit message
+          if [[ -f files_to_render.txt ]]; then
+            FILES_LIST=$(cat files_to_render.txt | xargs -I {} basename {} | paste -sd, -)
+            git commit -m "Auto-render: Update docs/ for changed files
+
+            Updated: $FILES_LIST
+            
+            [skip ci]"
+          else
+            git commit -m "Auto-render: Full site rebuild
+            
+            [skip ci]"
+          fi
+          
+          git push
+          
+      - name: Create PR comment with results
+        if: github.event_name == 'pull_request' && steps.docs_changes.outputs.changed == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `✅ **Docs automatically updated!** The \`docs/\` folder has been rendered with your latest changes.`
+            });
+            
+      - name: Set up monitoring (Optional)
+        if: steps.check_files.outputs.need_render == 'false'
+        run: |
+          echo "::notice::All docs are up to date! 🎉"

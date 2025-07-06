@@ -1,0 +1,78 @@
+name: Auto-Render Quarto Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      # Monitor source files for changes
+      - '**.qmd'
+      - '**.md'
+      - '_quarto.yml'
+      - 'styles.css'
+      - '!docs/**'  # Ignore changes in docs folder
+      - '!README.md'  # Optionally ignore README
+  workflow_dispatch:  # Manual trigger option
+
+jobs:
+  check-and-render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2  # Need history to check what changed
+      
+      - name: Check if source files changed
+        id: changes
+        run: |
+          # Get list of changed files
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD || echo "")
+          echo "Changed files: $CHANGED_FILES"
+          
+          # Check if any source files (not in docs/) were modified
+          if echo "$CHANGED_FILES" | grep -E '\.(qmd|md)$|_quarto\.yml|styles\.css' | grep -v '^docs/' | grep -v 'README.md'; then
+            echo "Source files changed, need to render"
+            echo "need_render=true" >> $GITHUB_OUTPUT
+          else
+            echo "No source files changed, skipping render"
+            echo "need_render=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Set up Quarto
+        if: steps.changes.outputs.need_render == 'true'
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 'latest'
+      
+      - name: Render Quarto Project
+        if: steps.changes.outputs.need_render == 'true'
+        run: |
+          echo "Rendering Quarto project..."
+          quarto render
+      
+      - name: Check if docs changed
+        if: steps.changes.outputs.need_render == 'true'
+        id: docs_changes
+        run: |
+          if [[ -n $(git status docs/ --porcelain) ]]; then
+            echo "docs_changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "docs_changed=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push if docs updated
+        if: steps.changes.outputs.need_render == 'true' && steps.docs_changes.outputs.docs_changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/
+          git commit -m "Auto-render: Update docs/ after source changes"
+          git push
+          
+      - name: Notify if render failed
+        if: failure() && steps.changes.outputs.need_render == 'true'
+        run: |
+          echo "::error::Quarto render failed! Please check the source files and render locally."

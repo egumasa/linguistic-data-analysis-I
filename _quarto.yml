@@ -1,0 +1,161 @@
+project:
+  type: website
+  title: "Linguistic Data Analysis I (Summer 2025)"
+  output-dir: docs
+
+website:
+  title: "Linguistic Data Analysis I (Summer 2025)"
+  description: "Graduate course on corpus linguistics and learner language analysis at Tohoku University"
+  site-url: "https://egumasa.github.io/Linguistic_Data_Analysis_I/"
+  repo-url: "https://github.com/egumasa/Linguistic_Data_Analysis_I"
+  repo-actions: [edit, issue]
+  
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.md
+      - text: "Syllabus"
+        menu:
+          - text: "Overview"
+            href: 2025/syllabus/index.md
+          - text: "Schedule"
+            href: 2025/syllabus/schedule.md
+          - text: "Readings"
+            href: 2025/syllabus/readings.md
+          - text: "Policies"
+            href: 2025/syllabus/policies.md
+      - text: "Sessions"
+        menu:
+          - text: "All Sessions"
+            href: 2025/sessions/index.qmd
+          - text: "---"
+          - text: "Day 1"
+            href: 2025/sessions/day1/index.md
+          - text: "Day 2"
+            href: 2025/sessions/day2/index.md
+          - text: "Day 3"
+            href: 2025/sessions/day3/index.md
+          - text: "Day 4"
+            href: 2025/sessions/day4/index.md
+          - text: "Day 5"
+            href: 2025/sessions/day5/index.md
+      - text: "Assignments"
+        menu:
+          - text: "Overview"
+            href: 2025/assignments/index.md
+          - text: "---"
+          - text: "Hands-on 1"
+            href: 2025/assignments/hands-on-1/index.md
+          - text: "Hands-on 2"
+            href: 2025/assignments/hands-on-2/index.md
+          - text: "Hands-on 3"
+            href: 2025/assignments/hands-on-3/index.md
+          - text: "Hands-on 4"
+            href: 2025/assignments/hands-on-4/index.md
+          - text: "---"
+          - text: "Final Project"
+            href: 2025/assignments/final-project/index.md
+      - text: "Resources"
+        menu:
+          - text: "All Resources"
+            href: resources/index.md
+          - text: "---"
+          - text: "Tools"
+            href: resources/tools/index.md
+          - text: "Corpora"
+            href: resources/corpora/index.md
+          - text: "Code Examples"
+            href: resources/code-examples/index.md
+          - text: "Readings"
+            href: resources/readings/index.md
+    right:
+      - icon: github
+        href: "https://github.com/[username]/Linguistic_Data_Analysis_I"
+        aria-label: GitHub
+
+  sidebar:
+    style: floating
+    search: true
+    collapse-level: 2
+    contents:
+      - section: "Course Information"
+        contents:
+          - text: "Home"
+            href: index.md
+          - section: "Syllabus"
+            contents:
+              - 2025/syllabus/index.md
+              - 2025/syllabus/schedule.md
+              - 2025/syllabus/readings.md
+              - 2025/syllabus/policies.md
+      - section: "Sessions"
+        contents:
+          - 2025/sessions/index.qmd
+          - section: "Day 1: Introduction & Corpus Basics"
+            contents:
+              - 2025/sessions/day1/index.md
+          - section: "Day 2: Advanced Corpus Analysis"
+            contents:
+              - 2025/sessions/day2/index.md
+          - section: "Day 3: Learner Language Analysis"
+            contents:
+              - 2025/sessions/day3/index.md
+          - section: "Day 4: Statistical Analysis"
+            contents:
+              - 2025/sessions/day4/index.md
+          - section: "Day 5: Advanced Topics & Projects"
+            contents:
+              - 2025/sessions/day5/index.md
+      - section: "Assignments"
+        contents:
+          - 2025/assignments/index.md
+          - 2025/assignments/hands-on-1/index.md
+          - 2025/assignments/hands-on-2/index.md
+          - 2025/assignments/hands-on-3/index.md
+          - 2025/assignments/hands-on-4/index.md
+          - 2025/assignments/final-project/index.md
+      - section: "Resources"
+        contents:
+          - resources/index.md
+          - section: "Tools"
+            contents:
+              - resources/tools/index.md
+              - resources/tools/antconc-guide.md
+              - resources/tools/byu-corpora-guide.md
+              - resources/tools/python-setup.md
+              - resources/tools/jasp-guide.md
+          - section: "Corpora"
+            contents:
+              - resources/corpora/index.md
+              - resources/corpora/available-corpora.md
+              - resources/corpora/learner-corpora.md
+          - resources/code-examples/index.md
+          - resources/readings/index.md
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: css/styles.css
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    code-fold: true
+    code-summary: "Show code"
+    code-tools: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    grid:
+      sidebar-width: 250px
+      body-width: 800px
+      margin-width: 200px
+      gutter-width: 2rem
+
+execute:
+  freeze: auto
+  
+metadata-files:
+  - _metadata.yml

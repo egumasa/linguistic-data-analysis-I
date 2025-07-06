@@ -1,0 +1,23 @@
+title: Linguistic Data Analysis I
+description: Graduate course on corpus linguistics and learner language analysis
+theme: minima
+baseurl: "/test-course-B"
+url: "https://[username].github.io"
+
+# Navigation
+header_pages:
+  - index.md
+  - syllabus/README.md
+  - sessions/README.md
+  - assignments/README.md
+  - resources/README.md
+
+# Exclude files from processing
+exclude:
+  - Planning/
+  - scripts/
+  - "*.sh"
+  - README.md  # Use index.md for the home page instead
+  - student-work/
+  - private/
+  - solutions/
