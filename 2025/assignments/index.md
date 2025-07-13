@@ -7,6 +7,8 @@ subtitle: "Course Assignments and Projects"
 
 This section contains all course assignments and the final project.
 
+
+
 ## Assignments
 
 - [Hands-on Assignment 1](hands-on-1/)

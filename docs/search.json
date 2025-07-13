@@ -1,108 +1,59 @@
 [
   {
-    "objectID": "GITHUB_PAGES_SETUP.html",
-    "href": "GITHUB_PAGES_SETUP.html",
-    "title": "",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Linguistic Data Analysis I",
     "section": "",
-    "text": "Code"
+    "text": "Under Construction\n\n\n\nThis course website is currently under construction and will be ready for the class starting August 2nd, 2025. Content is being actively developed and updated."
   },
   {
-    "objectID": "GITHUB_PAGES_SETUP.html#initial-setup",
-    "href": "GITHUB_PAGES_SETUP.html#initial-setup",
-    "title": "",
-    "section": "Initial Setup",
-    "text": "Initial Setup\n\nPush your repository to GitHub\ngit remote add origin https://github.com/YOUR_USERNAME/Linguistic_Data_Analysis_I.git\ngit push -u origin main\nEnable GitHub Pages\n\nGo to your repository on GitHub\nClick Settings (top menu)\nScroll down to Pages (left sidebar)\nUnder Source, select:\n\nDeploy from a branch\nBranch: main (or master)\nFolder: /docs\n\nClick Save\n\nWait for deployment\n\nTakes 2-10 minutes initially\nCheck Actions tab for progress\nGreen checkmark = deployed\n\nAccess your site\n\nURL: https://YOUR_USERNAME.github.io/Linguistic_Data_Analysis_I/\nAdd this URL to your repo’s About section"
+    "objectID": "index.html#welcome-to-linguistic-data-analysis-i",
+    "href": "index.html#welcome-to-linguistic-data-analysis-i",
+    "title": "Linguistic Data Analysis I",
+    "section": "Welcome to Linguistic Data Analysis I",
+    "text": "Welcome to Linguistic Data Analysis I\nThis intensive 5-day graduate course introduces students to corpus linguistics and learner language analysis. Through hands-on activities and practical applications, you’ll learn to use computational tools to analyze linguistic data, with a special focus on learner corpora.\n\n\n\n\n\n\nQuick Links\n\n\n\n\n📋 Course Syllabus\n📅 Schedule\n💻 Sessions\n📝 Assignments\n🔧 Resources"
   },
   {
-    "objectID": "GITHUB_PAGES_SETUP.html#how-the-hybrid-system-works",
-    "href": "GITHUB_PAGES_SETUP.html#how-the-hybrid-system-works",
-    "title": "",
-    "section": "How the Hybrid System Works",
-    "text": "How the Hybrid System Works\ngraph TD\n    A[Edit .md/.qmd files] --&gt; B{Choose workflow}\n    B --&gt;|Option 1| C[Run 'quarto render' locally]\n    B --&gt;|Option 2| D[Just commit source files]\n    \n    C --&gt; E[Commit source + docs/]\n    D --&gt; F[GitHub Actions detects change]\n    \n    E --&gt; G[Push to GitHub]\n    F --&gt; H[Actions runs 'quarto render']\n    \n    H --&gt; I[Actions commits docs/]\n    G --&gt; J[GitHub Pages serves from docs/]\n    I --&gt; J\n    \n    style C fill:#90EE90\n    style D fill:#FFE4B5"
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "Linguistic Data Analysis I",
+    "section": "Course Overview",
+    "text": "Course Overview\n\n\n\nWhat You’ll Learn\n\nCorpus analysis techniques\nLearner language analysis methods\nPractical applications with real corpora\nResearch methodology in corpus linguistics\n\n\n\n\nKey Tools\n\nAntConc - Corpus analysis software\nBYU Corpora - Online corpus interfaces\nPython - Text processing (via Google Colab)\nJASP - Statistical analysis"
   },
   {
-    "objectID": "GITHUB_PAGES_SETUP.html#verify-everything-works",
-    "href": "GITHUB_PAGES_SETUP.html#verify-everything-works",
-    "title": "",
-    "section": "Verify Everything Works",
-    "text": "Verify Everything Works\n\nCheck GitHub Actions\n\nGo to Actions tab\nYou should see workflows:\n\n“Auto-Render Quarto Site”\n“Verify and Update Site”\n\nGreen = working\n\nTest the fallback\n# Make a small edit\necho \"\\n\\nTest edit\" &gt;&gt; resources/tools/index.md\n\n# Commit WITHOUT rendering\ngit add resources/tools/index.md\ngit commit -m \"Test GitHub Actions rendering\"\ngit push\n\n# Watch Actions tab - should auto-render!\nCheck the site\n\nVisit your GitHub Pages URL\nShould see your content\nUpdates within minutes of pushing"
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "Linguistic Data Analysis I",
+    "section": "Course Structure",
+    "text": "Course Structure\nThe course is organized into 5 intensive days:\n\n\n\nDay\nTheme\nSessions\n\n\n\n\nDay 1\nIntroduction & Corpus Basics\n\n\n\nDay 2\nAnalysis of Vocabulary & Multiword Units (1)\n\n\n\nDay 3\nAnalysis of Vocabulary & Multiword Units (2)\n\n\n\nDay 4\nAnalysis of Grammar\n\n\n\nDay 5\nAdvanced Topics & Projects"
   },
   {
-    "objectID": "GITHUB_PAGES_SETUP.html#customization",
-    "href": "GITHUB_PAGES_SETUP.html#customization",
-    "title": "",
-    "section": "Customization",
-    "text": "Customization\n\nUpdate URLs in _quarto.yml\nwebsite:\n  site-url: \"https://YOUR_USERNAME.github.io/Linguistic_Data_Analysis_I/\"\n  repo-url: \"https://github.com/YOUR_USERNAME/Linguistic_Data_Analysis_I\"\n\n\nUpdate navbar GitHub link\nnavbar:\n  right:\n    - icon: github\n      href: \"https://github.com/YOUR_USERNAME/Linguistic_Data_Analysis_I\""
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Linguistic Data Analysis I",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nReview the syllabus for course policies and expectations\nCheck the detailed schedule for session timings\nInstall required software using our setup guides\nBrowse the resources section for helpful materials"
   },
   {
-    "objectID": "GITHUB_PAGES_SETUP.html#troubleshooting",
-    "href": "GITHUB_PAGES_SETUP.html#troubleshooting",
-    "title": "",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\nSite not appearing? - Check Settings → Pages → Source is set correctly - Verify docs/ folder exists and has index.html - Check Actions tab for errors - Wait 10 minutes (first deploy is slow)\nActions failing? - Check Actions tab → Click failed workflow → View logs - Common issues: - Syntax error in .qmd file - Missing file reference - YAML formatting error\nChanges not showing? - Hard refresh browser (Ctrl+Shift+R) - Check if docs/ was updated - Verify GitHub Pages deployed (green checkmark) - Clear browser cache"
+    "objectID": "index.html#instructor-information",
+    "href": "index.html#instructor-information",
+    "title": "Linguistic Data Analysis I",
+    "section": "Instructor Information",
+    "text": "Instructor Information\nInstructor: Masaki Eguchi, Ph.D.\nEmail: [instructor.email@tohoku.ac.jp]\nOffice: [Building, Room Number]\nOffice Hours: [Days and Times]"
   },
   {
-    "objectID": "GITHUB_PAGES_SETUP.html#tips",
-    "href": "GITHUB_PAGES_SETUP.html#tips",
-    "title": "",
-    "section": "Tips",
-    "text": "Tips\n\nRender locally for big changes\nUse Actions for quick fixes\nWatch the Actions tab to ensure builds succeed\nTag releases for each semester:\ngit tag -a v2025-summer -m \"Summer 2025 version\"\ngit push origin v2025-summer"
+    "objectID": "index.html#course-communication",
+    "href": "index.html#course-communication",
+    "title": "Linguistic Data Analysis I",
+    "section": "Course Communication",
+    "text": "Course Communication\n\n\n\n\n\n\nStay Connected\n\n\n\n\nCourse Website: This site\nCommunication: Google Classroom\nAssignment Submission: Google Classroom"
   },
   {
-    "objectID": "RENDERING.html",
-    "href": "RENDERING.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "RENDERING.html#how-it-works",
-    "href": "RENDERING.html#how-it-works",
-    "title": "",
-    "section": "How It Works",
-    "text": "How It Works\n\n1. Primary: Local Pre-rendering\n\nRun quarto render locally\nCommit both source files and docs/ folder\nPush to GitHub\nSite is immediately updated\n\n\n\n2. Fallback: GitHub Actions\n\nMonitors all source file changes\nAutomatically re-renders if you forget\nEnsures docs/ stays in sync with source\nAdds commit with updated files"
-  },
-  {
-    "objectID": "RENDERING.html#workflows",
-    "href": "RENDERING.html#workflows",
-    "title": "",
-    "section": "Workflows",
-    "text": "Workflows\n\nQuick Edit Workflow\n# Edit your content\nedit sessions/day1/index.md\n\n# Render locally (recommended)\nquarto render\n\n# Commit everything\ngit add .\ngit commit -m \"Update day 1 content\"\ngit push\n\n\nLazy Workflow (Let GitHub Do It)\n# Edit your content\nedit sessions/day1/index.md\n\n# Just commit source (GitHub will render)\ngit add sessions/day1/index.md\ngit commit -m \"Update day 1 content\"\ngit push\n\n# GitHub Actions will:\n# 1. Detect the change\n# 2. Run quarto render\n# 3. Commit updated docs/\n\n\nForce Rebuild\n# Via GitHub UI: Actions → Verify and Update Site → Run workflow → Force render ✓\n\n# Or trigger with empty commit\ngit commit --allow-empty -m \"Trigger rebuild\"\ngit push"
-  },
-  {
-    "objectID": "RENDERING.html#benefits",
-    "href": "RENDERING.html#benefits",
-    "title": "",
-    "section": "Benefits",
-    "text": "Benefits\n\nFast Updates: Pre-render locally for immediate deployment\nSafety Net: GitHub Actions catches forgotten renders\nConsistency: Ensures docs/ always matches source\nFlexibility: Work locally or through GitHub web editor\nVerification: PRs show what needs rendering"
-  },
-  {
-    "objectID": "RENDERING.html#configuration",
-    "href": "RENDERING.html#configuration",
-    "title": "",
-    "section": "Configuration",
-    "text": "Configuration\n\nFor Heavy Computations\nAdd to frontmatter of computation-heavy files:\n---\ntitle: \"Heavy Analysis\"\nexecute:\n  freeze: true  # Cache results\n---\n\n\nSkip Auto-render\nAdd [skip ci] to commit message:\ngit commit -m \"WIP: Draft content [skip ci]\""
-  },
-  {
-    "objectID": "RENDERING.html#monitoring",
-    "href": "RENDERING.html#monitoring",
-    "title": "",
-    "section": "Monitoring",
-    "text": "Monitoring\nCheck render status: 1. Go to Actions tab in GitHub 2. Look for ✓ or ✗ next to commits 3. Click for details if failed"
-  },
-  {
-    "objectID": "RENDERING.html#troubleshooting",
-    "href": "RENDERING.html#troubleshooting",
-    "title": "",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\nIf GitHub Actions fails: 1. Check the error in Actions tab 2. Fix the issue locally 3. Run quarto render locally 4. Commit and push both source and docs/\nIf docs/ gets out of sync: 1. Delete local docs/ folder 2. Run quarto render 3. Commit fresh docs/ folder 4. Push with message “Rebuild docs folder”"
-  },
-  {
-    "objectID": "RENDERING.html#best-practices",
-    "href": "RENDERING.html#best-practices",
-    "title": "",
-    "section": "Best Practices",
-    "text": "Best Practices\n\nUsually: Render locally before pushing\nQuick fixes: Let GitHub handle small edits\nHeavy computation: Always pre-render locally\nCheck Actions: Monitor for failures\nKeep synced: Don’t edit docs/ directly"
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Linguistic Data Analysis I",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis course builds on materials and approaches from:\n\nDr. Kris Kyle (University of Oregon) for his previous corpus linguistics/NLP classes from University of Hawai’i and Oregon.\nDr. Andrew Heiss (Georgia State University) for his Quarto-based materials and website settings, which significantly enhanced the accessibility of the course content."
   },
   {
     "objectID": "resources/corpora/learner-corpora.html",
@@ -111,7 +62,6 @@
     "section": "",
     "text": "Content to be added.",
     "crumbs": [
-      "Home",
       "Resources",
       "Corpora",
       "Learner Corpora"
@@ -124,34 +74,2344 @@
     "section": "",
     "text": "Content to be added.",
     "crumbs": [
-      "Home",
       "Resources",
       "Corpora",
       "Learner Corpora"
     ]
   },
   {
-    "objectID": "resources/readings/index.html",
-    "href": "resources/readings/index.html",
-    "title": "Course Readings",
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
     "section": "",
-    "text": "Links to course readings and additional references.",
+    "text": "Course resources organized by category.",
     "crumbs": [
-      "Home",
       "Resources",
-      "Course Readings"
+      "Resources"
     ]
   },
   {
-    "objectID": "resources/readings/index.html#reading-resources",
-    "href": "resources/readings/index.html#reading-resources",
-    "title": "Course Readings",
+    "objectID": "resources/index.html#overview",
+    "href": "resources/index.html#overview",
+    "title": "Resources",
     "section": "",
-    "text": "Links to course readings and additional references.",
+    "text": "Course resources organized by category.",
     "crumbs": [
-      "Home",
       "Resources",
-      "Course Readings"
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#categories",
+    "href": "resources/index.html#categories",
+    "title": "Resources",
+    "section": "Categories",
+    "text": "Categories\n\nTools and Software\nCorpora\nCode Examples",
+    "crumbs": [
+      "Resources",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/tools/index.html",
+    "href": "resources/tools/index.html",
+    "title": "Tools and Software",
+    "section": "",
+    "text": "AntConc Guide\nBYU Corpora Guide\nPython Setup\nJASP Guide",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "Tools and Software"
+    ]
+  },
+  {
+    "objectID": "resources/tools/index.html#available-guides",
+    "href": "resources/tools/index.html#available-guides",
+    "title": "Tools and Software",
+    "section": "",
+    "text": "AntConc Guide\nBYU Corpora Guide\nPython Setup\nJASP Guide",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "Tools and Software"
+    ]
+  },
+  {
+    "objectID": "resources/code-examples/index.html",
+    "href": "resources/code-examples/index.html",
+    "title": "Code Examples",
+    "section": "",
+    "text": "Python Notebooks\nSpreadsheet Templates",
+    "crumbs": [
+      "Resources",
+      "Code Examples"
+    ]
+  },
+  {
+    "objectID": "resources/code-examples/index.html#available-resources",
+    "href": "resources/code-examples/index.html#available-resources",
+    "title": "Code Examples",
+    "section": "",
+    "text": "Python Notebooks\nSpreadsheet Templates",
+    "crumbs": [
+      "Resources",
+      "Code Examples"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html#learning-objectives",
+    "href": "2025/sessions/day1/session2.html#learning-objectives",
+    "title": "Session 2:",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\nBy the end of this session, you will be able to:\n\nExplain why linguistic intuition is not adequate evidence for language research\nExplain how corpus lingusitics can help linguistic research\nDescribe how corpus linguistic help address scientific hypothesis about language\nList areas that corpus linguistics may not tell us about language",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 2:"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html#key-concepts",
+    "href": "2025/sessions/day1/session2.html#key-concepts",
+    "title": "Session 2:",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nlinguistic intuition\nscientific hypothesis vs data",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 2:"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html#materials",
+    "href": "2025/sessions/day1/session2.html#materials",
+    "title": "Session 2:",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 2:"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html#reflection",
+    "href": "2025/sessions/day1/session2.html#reflection",
+    "title": "Session 2:",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 2:"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html",
+    "href": "2025/sessions/day1/index.html",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "",
+    "text": "Day 1 introduces",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#overview",
+    "href": "2025/sessions/day1/index.html#overview",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "",
+    "text": "Day 1 introduces",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#key-concepts",
+    "href": "2025/sessions/day1/index.html#key-concepts",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nlinguistic intuition\nscientific hypothesis and data\nKWIC\nConcordancing",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#preparation",
+    "href": "2025/sessions/day1/index.html#preparation",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Preparation",
+    "text": "Preparation\nBefore Day 1:\n\nRead:\n\nStefanowitsch (2020) Ch. 1. Freely available online\nStefanowitsch (2020) Ch. 2. Freely available online\n\nSkim:\n\nDurrant (2023) Ch. 1.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#schedule",
+    "href": "2025/sessions/day1/index.html#schedule",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1: Introduction\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 2:\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3: First Hands-on Activity",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#assignments",
+    "href": "2025/sessions/day1/index.html#assignments",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Assignments",
+    "text": "Assignments\n\nDue Tomorrow: Hands-on Assignment 1\nComplete basic corpus search exercise",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#reflection",
+    "href": "2025/sessions/day1/index.html#reflection",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/outline.html",
+    "href": "2025/sessions/outline.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nSession 1\n\n\nSession 2\n\n\nSession 3"
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html",
+    "href": "2025/sessions/day5/index.html",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "",
+    "text": "Day 5 focuses on\n\n\n\nBy the end of Day 5, you will be able to:\n\n\n\nInsert table\n\n\n\n\nResearch question formulation\nMethodology selection\nCorpus compilation\nData analysis planning\nResults interpretation\nAcademic presentation skills\n\n\n\n\n\nFinal Project Guidelines\nProposal presentations today\nFinal submission in 2 weeks\n\n\n\n\n\nResearch Design Template\nPresentation Guidelines\nExample Projects",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#overview",
+    "href": "2025/sessions/day5/index.html#overview",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "",
+    "text": "Day 5 focuses on",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#learning-objectives",
+    "href": "2025/sessions/day5/index.html#learning-objectives",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "",
+    "text": "By the end of Day 5, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#schedule",
+    "href": "2025/sessions/day5/index.html#schedule",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "",
+    "text": "Insert table",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#key-concepts",
+    "href": "2025/sessions/day5/index.html#key-concepts",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "",
+    "text": "Research question formulation\nMethodology selection\nCorpus compilation\nData analysis planning\nResults interpretation\nAcademic presentation skills",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#final-project",
+    "href": "2025/sessions/day5/index.html#final-project",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "",
+    "text": "Final Project Guidelines\nProposal presentations today\nFinal submission in 2 weeks",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#resources",
+    "href": "2025/sessions/day5/index.html#resources",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "",
+    "text": "Research Design Template\nPresentation Guidelines\nExample Projects",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session14.html#learning-objectives",
+    "href": "2025/sessions/day5/session14.html#learning-objectives",
+    "title": "Session 14",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 14"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session14.html#key-concepts",
+    "href": "2025/sessions/day5/session14.html#key-concepts",
+    "title": "Session 14",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nlinguistic intuition\nscientific hypothesis vs data",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 14"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session14.html#materials",
+    "href": "2025/sessions/day5/session14.html#materials",
+    "title": "Session 14",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 14"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session14.html#reflection",
+    "href": "2025/sessions/day5/session14.html#reflection",
+    "title": "Session 14",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 14"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html",
+    "href": "2025/sessions/day2/index.html",
+    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
+    "section": "",
+    "text": "Day 2 introduces\n\n\n\nBy the end of Day 2, you will be able to:\n\n\n\n\n\n\nTable\n\n\n\nBefore Day 2:",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#overview",
+    "href": "2025/sessions/day2/index.html#overview",
+    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
+    "section": "",
+    "text": "Day 2 introduces",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#learning-objectives",
+    "href": "2025/sessions/day2/index.html#learning-objectives",
+    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
+    "section": "",
+    "text": "By the end of Day 2, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#schedule",
+    "href": "2025/sessions/day2/index.html#schedule",
+    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
+    "section": "",
+    "text": "Table",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#preparation",
+    "href": "2025/sessions/day2/index.html#preparation",
+    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
+    "section": "",
+    "text": "Before Day 2:",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#learning-objectives",
+    "href": "2025/sessions/day2/session5.html#learning-objectives",
+    "title": "Session 5",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:\n\nDerive vocabulary frequency list from a web-corpus or concordancing software (e.g., AntConc)\nConduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)\n(Optional) Calculate frequency of a word using provided Python script; Plot frequency to understand Zipf law",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#key-concepts",
+    "href": "2025/sessions/day2/session5.html#key-concepts",
+    "title": "Session 5",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nLexical profiling\nFrequency Lists\nZipf law",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#tools-used",
+    "href": "2025/sessions/day2/session5.html#tools-used",
+    "title": "Session 5",
+    "section": "Tools used",
+    "text": "Tools used\n\nAntWordProfiler\nNew Word Levels Checker\nLexTutor",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#materials",
+    "href": "2025/sessions/day2/session5.html#materials",
+    "title": "Session 5",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#reflection",
+    "href": "2025/sessions/day2/session5.html#reflection",
+    "title": "Session 5",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#frequency-list",
+    "href": "2025/sessions/day2/session5.html#frequency-list",
+    "title": "Session 5",
+    "section": "Frequency list",
+    "text": "Frequency list",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#lexical-profiling",
+    "href": "2025/sessions/day2/session5.html#lexical-profiling",
+    "title": "Session 5",
+    "section": "Lexical Profiling",
+    "text": "Lexical Profiling",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session5.html#keyness-analysis",
+    "href": "2025/sessions/day2/session5.html#keyness-analysis",
+    "title": "Session 5",
+    "section": "Keyness Analysis",
+    "text": "Keyness Analysis",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session8.html#learning-objectives",
+    "href": "2025/sessions/day3/session8.html#learning-objectives",
+    "title": "Session 8",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\nSearch for window-based collocations and n-grams in AntConc and/or\nCalculate commonly used strengths of association measures by hand using spreadsheet software\nDiscuss benefits and drawbacks of different strength of association measures\n(Optional) Calculate",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 8"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session8.html#key-concepts",
+    "href": "2025/sessions/day3/session8.html#key-concepts",
+    "title": "Session 8",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nn-gram search\nWindow-based collocation search\nStrengths of Association measures — T-score, Mutual Information, LogDice",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 8"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session8.html#materials",
+    "href": "2025/sessions/day3/session8.html#materials",
+    "title": "Session 8",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 8"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session8.html#required-readings",
+    "href": "2025/sessions/day3/session8.html#required-readings",
+    "title": "Session 8",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\nGablasova et al (2017)",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 8"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session8.html#reflection",
+    "href": "2025/sessions/day3/session8.html#reflection",
+    "title": "Session 8",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 8"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html",
+    "href": "2025/sessions/day3/index.html",
+    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
+    "section": "",
+    "text": "Day 3 introduces\n\n\n\nBy the end of Day 3, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 3:",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#overview",
+    "href": "2025/sessions/day3/index.html#overview",
+    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
+    "section": "",
+    "text": "Day 3 introduces",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#learning-objectives",
+    "href": "2025/sessions/day3/index.html#learning-objectives",
+    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
+    "section": "",
+    "text": "By the end of Day 3, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#schedule",
+    "href": "2025/sessions/day3/index.html#schedule",
+    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
+    "section": "",
+    "text": "Table",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#preparation",
+    "href": "2025/sessions/day3/index.html#preparation",
+    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
+    "section": "",
+    "text": "Before Day 3:",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session12.html#learning-objectives",
+    "href": "2025/sessions/day4/session12.html#learning-objectives",
+    "title": "Session 12",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct linguistic complexity analysis using a template Python code provided by the instructor.\nIdentify",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 12"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session12.html#required-readings",
+    "href": "2025/sessions/day4/session12.html#required-readings",
+    "title": "Session 12",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nKyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349. https://doi.org/10.1111/modl.12468",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 12"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session12.html#recommended-readings",
+    "href": "2025/sessions/day4/session12.html#recommended-readings",
+    "title": "Session 12",
+    "section": "Recommended Readings",
+    "text": "Recommended Readings\n\nKyle, K., & Crossley, S. (2017). Assessing syntactic sophistication in L2 writing: A usage-based approach. Language Testing, 34(4), 513–535. https://doi.org/10.1177/0265532217712554\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 12"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session12.html#materials",
+    "href": "2025/sessions/day4/session12.html#materials",
+    "title": "Session 12",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 12"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session12.html#reflection",
+    "href": "2025/sessions/day4/session12.html#reflection",
+    "title": "Session 12",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 12"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session10.html#learning-objectives",
+    "href": "2025/sessions/day4/session10.html#learning-objectives",
+    "title": "Session 10",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 10"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session10.html#key-concepts",
+    "href": "2025/sessions/day4/session10.html#key-concepts",
+    "title": "Session 10",
+    "section": "Key Concepts",
+    "text": "Key Concepts",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 10"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session10.html#materials",
+    "href": "2025/sessions/day4/session10.html#materials",
+    "title": "Session 10",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 10"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session10.html#reflection",
+    "href": "2025/sessions/day4/session10.html#reflection",
+    "title": "Session 10",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 10"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html",
+    "href": "2025/syllabus/schedule.html",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "This course covers foundational concepts in corpus linguistics, corpus analysis methods, and their research applications across the following four areas: vocabulary, multiword units, and grammar.",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#overview",
+    "href": "2025/syllabus/schedule.html#overview",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "This course covers foundational concepts in corpus linguistics, corpus analysis methods, and their research applications across the following four areas: vocabulary, multiword units, and grammar.",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-1-introduction-to-corpus-linguistics",
+    "href": "2025/syllabus/schedule.html#day-1-introduction-to-corpus-linguistics",
+    "title": "Course Schedule",
+    "section": "📅 Day 1: Introduction to Corpus Linguistics",
+    "text": "📅 Day 1: Introduction to Corpus Linguistics\n\nSession 1\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nOverview the content of the current course\nExplain key success criteria in this course\nConduct the very first corpus search\nExplain different types of corpus linguistic analysis for different focus: frequency analysis, concordance analysis, collocation analysis, Part-Of-Speech Tagging, etc.\n\n\n\n\n🔑 Key Concepts\n\nConceptual Overview of the corpus linguistic methods\n\nFrequency\nConcordance\nCollocation analysis\nPart-Of-Speech Tagging\nDependency Parsing\n\n\n\n\n📚 Required Readings\n\n(Skim) Davies (2015) Available through Google Classroom\n\n\n\n📝 Notes\nNeeds analysis (After giving overview) is conducted at the end of this session.\n\n\n\n\nSession 2:\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nDefine corpus linguistics as an empirical methodology\nExplain key limitations of introspection in linguistic research\nDescribe the role of frequency data and patterns in corpus analysis\nIdentify and explain the basic steps in corpus-based research\nReflect on their own stance toward data, intuition, and linguistic evidence\n\n\n\n\n🔑 Key Concepts\n\nCorpus linguistics\nBalanced Corpus\nReference Corpus\nLearner Corpus\nCorpus representativeness\n\n\n\n📚 Required Readings\n\nStefanowitsch (2020) Ch. 1 Freely available online\nStefanowitsch (2020) Ch. 2 Freely available online\n(Skim) Durrant (2023) Ch. 1\n\n\n\n\n\nSession 3: Conducting the first corpus search!\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct the KWIC search based on chosen corpus\nRun frequency analysis on a Web Corpus\n\n\n\n\n🔑 Key Concepts\n\nKey Words In Context (KWIC)\nLexical Counting unit:\n\nToken\nLemma\nType\n\nRegular Expressions\n\n\n\n🛠️ Tools Used\n\nEnglish-Corpora.org\nAntConc\n\n\n\n📋 First Mini Assignment\n\nConduct KWIC search and make some observation on how a word is used.",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-2-analyzing-vocabulary",
+    "href": "2025/syllabus/schedule.html#day-2-analyzing-vocabulary",
+    "title": "Course Schedule",
+    "section": "📅 Day 2: Analyzing Vocabulary",
+    "text": "📅 Day 2: Analyzing Vocabulary\n\nSession 4: Analyzing vocabulary (1) — Conceptual overview\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nUnderstand historical overview of lexical richness measurement\nArticulate definitions and examples of commonly used lexical measures\nExplain how lexical measures are normally calculated\n\n\n\n\n🔑 Key Concepts\n\nLexical sophistication\nLexical diversity\n\n\n\n📚 Required Readings\n\nDurrant Ch. 3\nEguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637\n\n\n\n\n\nSession 5: Analyzing vocabulary (2) — Hands-on activity 1\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nCompute frequency of a single-word lexical item in reference corpora\nUse AntConc/Web corpus to extract frequency data from a chosen corpus\nConduct lexical profiles using LexTutor and/or AntWordProfiler\n\n\n\n\n🔑 Key Concepts\n\nGenerating frequency lists based on reference corpora\nConduct lexical profiling\nLexical coverage\n\n\n\n🛠️ Tools Used\n\nEnglish-Corpora.org\nAntConc\n\n\n\n\n\nSession 6: Analyzing vocabulary (3) — Hands-on activity 2\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nExamine differences between two or more groups of texts by computing a selected set of lexical richness indices\nCalculate lexical diversity measures using a spreadsheet software\nCalculate simple lexical sophistication measures using dedicated web application\n\n\n\n\n🔑 Key Concepts\n\nLexical diversity\nLexical sophistication\nLearner corpus research\n\n\n\n📚 Required Readings\n\n(Skim) Durrant Ch. 4 (Ignore R codes if you are not familiar)\n\n\n\nRecommended Readings\n\nKyle, K., Crossley, S., & Berger, C. (2018). The tool for the automatic analysis of lexical sophistication (TAALES): Version 2.0. Behavior Research Methods, 50(3), 1030–1046. https://doi.org/10.3758/s13428-017-0924-4",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-3-analyzing-multiword-units",
+    "href": "2025/syllabus/schedule.html#day-3-analyzing-multiword-units",
+    "title": "Course Schedule",
+    "section": "📅 Day 3: Analyzing Multiword Units",
+    "text": "📅 Day 3: Analyzing Multiword Units\n\nSession 7: Analyzing multiword units (1) — Conceptual overview\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nExplain different types of multiword units: collocation, n-grams, lexical bundles\nDemonstrate how major association strengths measures (t-score, Mutual Information, and LogDice) are calculated using examples\n\n\n\n\n🔑 Key Concepts\n\nTypes of multiword units\nAssociation strengths\nThree approaches:\n\nContext window\nDependency bigram\n\n\n\n\n📚 Required Readings\n\nDurrant (2023) Ch. 7\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225\n\n\n\n\n\nSession 8: Analyzing multiword units (2) — Hands-on activity\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nSearch for window-based collocations and n-grams in AntConc and/or BNC/COCA\nCalculate commonly used strengths of association measures by hand using spreadsheet software\nDiscuss benefits and drawbacks of different strength of association measures\n\n\n\n\n🔑 Key Concepts\n\nN-gram search\nStrengths of Association measures — T-score, Mutual Information, LogDice\n\n\n\n📚 Required Readings\n\n(Skim) Durrant (2023) Ch. 8 (Ignore R codes if you are not familiar)\n\n\n\n\n\nSession 9: Research Application — Lexical measures & In-class mini-project (1)\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct a simple statistical analysis of selected corpus on small sets of lexical measures using JASP software\nArticulate their mini-project research topic in group\nArticulate their research questions and hypotheses in a 3-minute brief presentation\n\n\n\n\n🔑 Key Concepts\n\nLinear regression analysis (group comparison or prediction)\nIntroduction to in-class mini-project\n\n\n\n📚 Required Readings\n\nNone! (But please re-read Eguchi & Kyle, 2020)\n\n\n\nRecommended Readings\n\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221\nEguchi, M., & Kyle, K. (2023). L2 collocation profiles and their relationship with vocabulary proficiency: A learner corpus approach. Journal of Second Language Writing, 60, 100975. https://doi.org/10.1016/j.jslw.2023.100975",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-4-analyzing-grammar",
+    "href": "2025/syllabus/schedule.html#day-4-analyzing-grammar",
+    "title": "Course Schedule",
+    "section": "📅 Day 4: Analyzing Grammar",
+    "text": "📅 Day 4: Analyzing Grammar\n\nSession 10: Analyzing grammar (1) — Conceptual overview\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nUnderstand different approaches to grammatical features:\n\nGrammatical complexity research\nDescriptive approaches\n\nUnderstand historical overview of the syntactic complexity research\nUnderstand NLP tasks such as POS tagging and dependency parsing\nUnderstand how automated parsing works\nUnderstand current trends of syntactic complexity research\n\n\n\n\n📚 Required Readings\n\nDurrant Ch. 5.\n\n\n\nRecommended Readings\n\nBiber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869\n\n\n\n\n\nSession 11: Analyzing grammar (2) — Hands-on activity\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct POS tagging using spaCy library in Python (through Google Colab)\nConduct Dependency parsing using spaCy library in Python (through Google Colab)\nConduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt\n\n\n\n\n🔑 Key Concepts\n\nPOS tagging\nDependency parsing\n\n\n\n📚 Required Readings\n\nSkim Durrant Ch 6 (Ignore R codes if you are not familiar)\n\n\n\nRecommended Readings\n\nKyle, K., & Eguchi, M. (2024). Evaluating NLP models with written and spoken L2 samples. Research Methods in Applied Linguistics, 3(2), 100120. https://doi.org/10.1016/j.rmal.2024.100120\n\n\n\n📝 Notes\n\nAll the python codes are prepared by the instructor and shared with the students. This session does not require ability to code.\nThe decision to use Python programming language rather than already available software is based on consideration that there is very little tools which provide stable access to the language analysis described here.\n\n\n\n\n\nSession 12: Analyzing grammar (3) — Hands-on activity\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct linguistic complexity analysis using a template Python code provided by the instructor.\nIdentify\n\n\n\n\n📚 Required Readings\n\nKyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349. https://doi.org/10.1111/modl.12468\n\n\n\nRecommended Readings\n\nKyle, K., & Crossley, S. (2017). Assessing syntactic sophistication in L2 writing: A usage-based approach. Language Testing, 34(4), 513–535. https://doi.org/10.1177/0265532217712554\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#day-5-advanced-topics-wrap-up",
+    "href": "2025/syllabus/schedule.html#day-5-advanced-topics-wrap-up",
+    "title": "Course Schedule",
+    "section": "📅 Day 5: Advanced Topics & Wrap-up",
+    "text": "📅 Day 5: Advanced Topics & Wrap-up\n\nSession 13: Using Large Language Models (LLMs) for linguistic annotation\n\n🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nDescribe what LLMs are and how they are trained\nDescribe the current applications of LLMs in applied linguistic research\nProvide definition of analysis tasks for LLMs supported linguistic analysis\nWrite a structured prompt to control LLM behavior\n\n\n\n\n📚 Required Readings\n\nKim, M., & Lu, X. (2024). Exploring the potential of using ChatGPT for rhetorical move-step analysis: The impact of prompt refinement, few-shot learning, and fine-tuning. Journal of English for Academic Purposes, 71, 101422. https://doi.org/10.1016/j.jeap.2024.101422\nMizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116. https://doi.org/10.1016/j.rmal.2024.100116\n\n\n\nRecommended Readings\n\nMizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934\nYu, D., Li, L., Su, H., & Fuoli, M. (2024). Assessing the potential of LLM-assisted annotation for corpus-based pragmatics and discourse analysis: The case of apology. International Journal of Corpus Linguistics, 29(4), 534–561. https://doi.org/10.1075/ijcl.23087.yu\n\n\n\n\n\nSession 14: In-class mini-project (2)\n\n📝 Session Focus\nGroup project time. Please use the time wisely.\n\n\n\n\nSession 15: In-class mini-project (3) & Wrap-up\n\n📝 Session Focus\nFinal presentation on group project.",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#final-project",
+    "href": "2025/syllabus/schedule.html#final-project",
+    "title": "Course Schedule",
+    "section": "Final Project",
+    "text": "Final Project\nFinal Project: Guidelines - Due 2 weeks after course",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/schedule.html#important-notes",
+    "href": "2025/syllabus/schedule.html#important-notes",
+    "title": "Course Schedule",
+    "section": "Important Notes",
+    "text": "Important Notes\n\nAll times are Japan Standard Time (JST)\nBring your laptop to all sessions\nComplete readings before each day (see Readings)\n\nFinal Project: Guidelines - Due 2 weeks after course",
+    "crumbs": [
+      "Syllabus",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html",
+    "href": "2025/syllabus/readings.html",
+    "title": "Readings",
+    "section": "",
+    "text": "Durrant, P. (2023). Corpus linguistics for writing development: A guide for research. Routledge. https://doi.org/10.4324/9781003152682\nStefanowitsch, A. (2020). Corpus linguistics: A guide to the methodology. Zenodo. https://doi.org/10.5281/ZENODO.3735822\n\nOther readings are provided through Google Classroom.\n\n\n\n\n\n\nStefanowitsch (2020) Ch. 1.\nStefanowitsch (2020) Ch. 2.\nDurrant (2023) Ch. 1.\n\n\n\n\n\n\n\n\n\n\n\nDurrant Ch. 3\nSkim Durrant Ch. 4 (Ignore R codes if you are not familiar)\nEguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637\n\n\n\n\n\n\n\nBestgen, Y. (2025). Estimating lexical diversity using the moving average type-token ratio (MATTR): Pros and cons. Research Methods in Applied Linguistics, 4(1), 100168. https://doi.org/10.1016/j.rmal.2024.100168\nKyle, K., Crossley, S. A., & Jarvis, S. (2021). Assessing the Validity of Lexical Diversity Indices Using Direct Judgements. Language Assessment Quarterly, 18(2), 154–170. https://doi.org/10.1080/15434303.2020.1844205\nKyle, K., Sung, H., Eguchi, M., & Zenker, F. (2024). Evaluating evidence for the reliability and validity of lexical diversity indices in L2 oral task responses. Studies in Second Language Acquisition, 46(1), 278–299. https://doi.org/10.1017/S0272263123000402\n\n\n\n\n\n\n\n\n\nDurrant (2023) Ch. 7\nSkim Durrant (2023) Ch. 8 (Ignore R codes if you are not familiar)\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225\n\n\n\n\n\n\n\n\n\n\n\nDurrant Ch 5.\nBiber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329\n\n\n\n\n\nKyle, K., & Eguchi, M. (2024). Evaluating NLP models with written and spoken L2 samples. Research Methods in Applied Linguistics, 3(2), 100120. https://doi.org/10.1016/j.rmal.2024.100120\n\n\n\n\n\n\n\n\nMizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116. https://doi.org/10.1016/j.rmal.2024.100116\nMizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934\n\n\n\n\n\n\n\n\n\nEgbert, J., Larsson, T., & Biber, D. (2020). Doing Linguistics with a Corpus: Methodological Considerations for the Everyday User (1st ed.). Cambridge University Press. https://doi.org/10.1017/9781108888790\nBrezina, V., & Gablasova, D. (2015). Is There a Core General Vocabulary? Introducing the New General Service List. Applied Linguistics, 36(1), 1–22. https://doi.org/10.1093/applin/amt018\nGablasova, D., Brezina, V., & McEnery, T. (2017). Exploring Learner Language Through Corpora: Comparing and Interpreting Corpus Frequency Information. Language Learning, 67(S1), 130–154. https://doi.org/10.1111/lang.12226\n\n\n\n\n\n\n\nCECL Learner Corpus Bibliography\nCorpus Linguistics: Method, Analysis, Interpretation - Free online course\n\n\n\n\n\nInternational Journal of Learner Corpus Research\nInternational Journal of Corpus Linguistics\nCorpus Linguistics and Linguistic Theory\n\n\n\n\n\n\nJournal articles can be accessed through the university database\nOpen-access materials are linked directly\nAdditional PDFs will be shared via the course management system\n\n\n\n\n\nComplete required readings before each day’s sessions\nTake notes on key concepts and questions\nBe prepared to discuss readings in class\nRecommended readings provide deeper understanding but are optional",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#core-textbooks",
+    "href": "2025/syllabus/readings.html#core-textbooks",
+    "title": "Readings",
+    "section": "",
+    "text": "Durrant, P. (2023). Corpus linguistics for writing development: A guide for research. Routledge. https://doi.org/10.4324/9781003152682\nStefanowitsch, A. (2020). Corpus linguistics: A guide to the methodology. Zenodo. https://doi.org/10.5281/ZENODO.3735822\n\nOther readings are provided through Google Classroom.",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#day-1",
+    "href": "2025/syllabus/readings.html#day-1",
+    "title": "Readings",
+    "section": "",
+    "text": "Stefanowitsch (2020) Ch. 1.\nStefanowitsch (2020) Ch. 2.\nDurrant (2023) Ch. 1.",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#day-2",
+    "href": "2025/syllabus/readings.html#day-2",
+    "title": "Readings",
+    "section": "",
+    "text": "Durrant Ch. 3\nSkim Durrant Ch. 4 (Ignore R codes if you are not familiar)\nEguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637\n\n\n\n\n\n\n\nBestgen, Y. (2025). Estimating lexical diversity using the moving average type-token ratio (MATTR): Pros and cons. Research Methods in Applied Linguistics, 4(1), 100168. https://doi.org/10.1016/j.rmal.2024.100168\nKyle, K., Crossley, S. A., & Jarvis, S. (2021). Assessing the Validity of Lexical Diversity Indices Using Direct Judgements. Language Assessment Quarterly, 18(2), 154–170. https://doi.org/10.1080/15434303.2020.1844205\nKyle, K., Sung, H., Eguchi, M., & Zenker, F. (2024). Evaluating evidence for the reliability and validity of lexical diversity indices in L2 oral task responses. Studies in Second Language Acquisition, 46(1), 278–299. https://doi.org/10.1017/S0272263123000402",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#day-3",
+    "href": "2025/syllabus/readings.html#day-3",
+    "title": "Readings",
+    "section": "",
+    "text": "Durrant (2023) Ch. 7\nSkim Durrant (2023) Ch. 8 (Ignore R codes if you are not familiar)\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#day-4",
+    "href": "2025/syllabus/readings.html#day-4",
+    "title": "Readings",
+    "section": "",
+    "text": "Durrant Ch 5.\nBiber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329\n\n\n\n\n\nKyle, K., & Eguchi, M. (2024). Evaluating NLP models with written and spoken L2 samples. Research Methods in Applied Linguistics, 3(2), 100120. https://doi.org/10.1016/j.rmal.2024.100120",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#day-5",
+    "href": "2025/syllabus/readings.html#day-5",
+    "title": "Readings",
+    "section": "",
+    "text": "Mizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116. https://doi.org/10.1016/j.rmal.2024.100116\nMizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#other-recommended-readings-for-self-study",
+    "href": "2025/syllabus/readings.html#other-recommended-readings-for-self-study",
+    "title": "Readings",
+    "section": "",
+    "text": "Egbert, J., Larsson, T., & Biber, D. (2020). Doing Linguistics with a Corpus: Methodological Considerations for the Everyday User (1st ed.). Cambridge University Press. https://doi.org/10.1017/9781108888790\nBrezina, V., & Gablasova, D. (2015). Is There a Core General Vocabulary? Introducing the New General Service List. Applied Linguistics, 36(1), 1–22. https://doi.org/10.1093/applin/amt018\nGablasova, D., Brezina, V., & McEnery, T. (2017). Exploring Learner Language Through Corpora: Comparing and Interpreting Corpus Frequency Information. Language Learning, 67(S1), 130–154. https://doi.org/10.1111/lang.12226",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#additional-resources",
+    "href": "2025/syllabus/readings.html#additional-resources",
+    "title": "Readings",
+    "section": "",
+    "text": "CECL Learner Corpus Bibliography\nCorpus Linguistics: Method, Analysis, Interpretation - Free online course\n\n\n\n\n\nInternational Journal of Learner Corpus Research\nInternational Journal of Corpus Linguistics\nCorpus Linguistics and Linguistic Theory",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#access-to-readings",
+    "href": "2025/syllabus/readings.html#access-to-readings",
+    "title": "Readings",
+    "section": "",
+    "text": "Journal articles can be accessed through the university database\nOpen-access materials are linked directly\nAdditional PDFs will be shared via the course management system",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/readings.html#reading-guidelines",
+    "href": "2025/syllabus/readings.html#reading-guidelines",
+    "title": "Readings",
+    "section": "",
+    "text": "Complete required readings before each day’s sessions\nTake notes on key concepts and questions\nBe prepared to discuss readings in class\nRecommended readings provide deeper understanding but are optional",
+    "crumbs": [
+      "Syllabus",
+      "Readings"
+    ]
+  },
+  {
+    "objectID": "2025/slides/session-7.html#objectives",
+    "href": "2025/slides/session-7.html#objectives",
+    "title": "Session 7: Multiword Units",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#objectives",
+    "href": "2025/slides/session-5.html#objectives",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#instructor",
+    "href": "2025/slides/session-1.html#instructor",
+    "title": "Session 1: Introduction",
+    "section": "Instructor",
+    "text": "Instructor"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#session-1-agenda",
+    "href": "2025/slides/session-1.html#session-1-agenda",
+    "title": "Session 1: Introduction",
+    "section": "Session 1 Agenda",
+    "text": "Session 1 Agenda\n\nIntroduction to Corpus Linguistics\n\nWhat is a corpus?\nWhy use corpora in linguistics?\nTypes of linguistic corpora\n\nGetting Started\n\nCourse tools and resources\nFirst hands-on activity"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#session-1-agenda-contd",
+    "href": "2025/slides/session-1.html#session-1-agenda-contd",
+    "title": "Session 1: Introduction",
+    "section": "Session 1 Agenda (Cont’d)",
+    "text": "Session 1 Agenda (Cont’d)\n\nCourse Introduction\n\nObjectives and learning outcomes\nCourse structure and expectations"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-linguistics",
+    "href": "2025/slides/session-1.html#corpus-linguistics",
+    "title": "Session 1: Introduction",
+    "section": "Corpus linguistics",
+    "text": "Corpus linguistics\nCorpus linguistics = the investigation of linguistic research question that have been framed in terms of the conditional distribution of linguisitc phenomena in a linguistic corpus.\n(Stefanowitsch, 2020, p. 56)"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#what-does-it-mean",
+    "href": "2025/slides/session-1.html#what-does-it-mean",
+    "title": "Session 1: Introduction",
+    "section": "What does it mean?",
+    "text": "What does it mean?"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-linguistics-1",
+    "href": "2025/slides/session-1.html#corpus-linguistics-1",
+    "title": "Session 1: Introduction",
+    "section": "Corpus linguistics =",
+    "text": "Corpus linguistics =\n\nthe investigation of linguistic research question\nthat have been framed in terms of the conditional distribution of linguisitc phenomena\nin a linguistic corpus.\n\n(Stefanowitsch, 2020, p. 56)"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus",
+    "href": "2025/slides/session-1.html#corpus",
+    "title": "Session 1: Introduction",
+    "section": "Corpus",
+    "text": "Corpus"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#linguistic-corpus",
+    "href": "2025/slides/session-1.html#linguistic-corpus",
+    "title": "Session 1: Introduction",
+    "section": "Linguistic Corpus",
+    "text": "Linguistic Corpus\n(Linguistic) Corpus =\n\n“a collection of samples of language use” that is:\n\nauthentic\nrepresentative\nlarge\n\n\n(To be explored more in session 2)"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#what-do-corpora-contain",
+    "href": "2025/slides/session-1.html#what-do-corpora-contain",
+    "title": "Session 1: Introduction",
+    "section": "What do corpora contain?",
+    "text": "What do corpora contain?\n\n\nlanguage samples produced in the wild for specific communicative purposes\n\nWritten language:\n\nMagazines\nNews Paper\nBlog\n\nSpoken language:\n\ntranscriptions of spoken exchanges\n\nTV or radio shows\nConversations"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#examples",
+    "href": "2025/slides/session-1.html#examples",
+    "title": "Session 1: Introduction",
+    "section": "Examples",
+    "text": "Examples"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#section",
+    "href": "2025/slides/session-1.html#section",
+    "title": "Session 1: Introduction",
+    "section": "",
+    "text": "COCA example"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#section-1",
+    "href": "2025/slides/session-1.html#section-1",
+    "title": "Session 1: Introduction",
+    "section": "",
+    "text": "COCA example"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#examples-1",
+    "href": "2025/slides/session-1.html#examples-1",
+    "title": "Session 1: Introduction",
+    "section": "Examples",
+    "text": "Examples"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-of-contemporary-american-coca",
+    "href": "2025/slides/session-1.html#corpus-of-contemporary-american-coca",
+    "title": "Session 1: Introduction",
+    "section": "Corpus Of Contemporary American (COCA)",
+    "text": "Corpus Of Contemporary American (COCA)\n\n\n\n\n\n\n\n\n\n\nGenre\n# texts\n# words\nExplanation\n\n\n\n\nSpoken\n44,803\n127,396,932\nTranscripts of unscripted conversation from more than 150 different TV and radio programs (examples: All Things Considered (NPR), Newshour (PBS), Good Morning America (ABC), Oprah)\n\n\nFiction\n25,992\n119,505,305\nShort stories and plays from literary magazines, children’s magazines, popular magazines, first chapters of first edition books 1990-present, and fan fiction.\n\n\nMagazines\n86,292\n127,352,030\nNearly 100 different magazines, with a good mix between specific domains like news, health, home and gardening, women, financial, religion, sports, etc.\n\n\nNewspapers\n90,243\n122,958,016\nNewspapers from across the US, including: USA Today, New York Times, Atlanta Journal Constitution, San Francisco Chronicle, etc. Good mix between different sections of the newspaper, such as local news, opinion, sports, financial, etc.\n\n\nAcademic\n26,137\n120,988,361\nMore than 200 different peer-reviewed journals. These cover the full range of academic disciplines, with a good balance among education, social sciences, history, humanities, law, medicine, philosophy/religion, science/technology, and business"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-of-contemporary-american-coca-1",
+    "href": "2025/slides/session-1.html#corpus-of-contemporary-american-coca-1",
+    "title": "Session 1: Introduction",
+    "section": "Corpus of Contemporary American (COCA)",
+    "text": "Corpus of Contemporary American (COCA)\n\n\n\n\n\n\n\n\n\n\nGenre\n# texts\n# words\nExplanation\n\n\n\n\nWeb (Genl)\n88,989\n129,899,427\nClassified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages (by Serge Sharoff). Taken from the US portion of the GloWbE corpus.\n\n\nWeb (Blog)\n98,748\n125,496,216\nTexts that were classified by Google as being blogs. Further classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages. Taken from the US portion of the GloWbE corpus.\n\n\nTV/Movies\n23,975\n129,293,467\nSubtitles from OpenSubtitles.org, and later the TV and Movies corpora. Studies have shown that the language from these shows and movies is even more colloquial / core than the data in actual “spoken corpora”.\n\n\nTotal\n485,179\n1,002,889,754\n\n\n\n\n\nsee more details"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#examples-2",
+    "href": "2025/slides/session-1.html#examples-2",
+    "title": "Session 1: Introduction",
+    "section": "Examples",
+    "text": "Examples\nInsert another example"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-linguistics-2",
+    "href": "2025/slides/session-1.html#corpus-linguistics-2",
+    "title": "Session 1: Introduction",
+    "section": "Corpus linguistics =",
+    "text": "Corpus linguistics =\n\nthe investigation of linguistic research question\nthat have been framed in terms of the conditional distribution of linguisitc phenomena\n\n\n\nin a linguistic corpus.\n\n\n(Stefanowitsch, 2020, p. 56)"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#the-conditional-distribution-of-linguistic-phenomena",
+    "href": "2025/slides/session-1.html#the-conditional-distribution-of-linguistic-phenomena",
+    "title": "Session 1: Introduction",
+    "section": "The conditional distribution of linguistic phenomena",
+    "text": "The conditional distribution of linguistic phenomena"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-linguistics-looks-into-conditional-distribution",
+    "href": "2025/slides/session-1.html#corpus-linguistics-looks-into-conditional-distribution",
+    "title": "Session 1: Introduction",
+    "section": "Corpus linguistics looks into (conditional) distribution",
+    "text": "Corpus linguistics looks into (conditional) distribution\n\n(roughly speaking) frequency (= occurrence) of a phenomena\n→ How many times X occurs?\nconditional\n→ How does X occur given Y?"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#examples-3",
+    "href": "2025/slides/session-1.html#examples-3",
+    "title": "Session 1: Introduction",
+    "section": "Examples",
+    "text": "Examples\n\nFrequency of Dog"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#more-about-conditional-distribution",
+    "href": "2025/slides/session-1.html#more-about-conditional-distribution",
+    "title": "Session 1: Introduction",
+    "section": "More about conditional distribution",
+    "text": "More about conditional distribution\nSegment corpus and calculate occurrences by:\n\ngenres (written vs spoken)\nyear (1970s vs 2000s)\ngeographical region (British vs American)\netc."
+  },
+  {
+    "objectID": "2025/slides/session-1.html#conditional-distribution-of-dog-across-genre-and-year",
+    "href": "2025/slides/session-1.html#conditional-distribution-of-dog-across-genre-and-year",
+    "title": "Session 1: Introduction",
+    "section": "Conditional distribution of Dog across genre and year",
+    "text": "Conditional distribution of Dog across genre and year\n\nDog by section"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#linguistic-phenomena",
+    "href": "2025/slides/session-1.html#linguistic-phenomena",
+    "title": "Session 1: Introduction",
+    "section": "Linguistic phenomena",
+    "text": "Linguistic phenomena\n\nWe have mostly talked about word.\nHowever, corpus linguists are interested in more than words.\n\nExamples:\n\nMultiword Units\nGrammar\nDiscourse"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#multiword-units-more-on-day-3",
+    "href": "2025/slides/session-1.html#multiword-units-more-on-day-3",
+    "title": "Session 1: Introduction",
+    "section": "Multiword Units (More on Day 3)",
+    "text": "Multiword Units (More on Day 3)\nWith corpus methods, we can investigate how two or more words co-occur together.\n\nWhat does the word “dog” occur together in English?\nAny guesses?"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#collocates",
+    "href": "2025/slides/session-1.html#collocates",
+    "title": "Session 1: Introduction",
+    "section": "Collocates",
+    "text": "Collocates\nIn COCA, the following word co-occur with “dog”: (Collocates = words that frequently co-occur with the node word.)"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#fill-in-the-blank",
+    "href": "2025/slides/session-1.html#fill-in-the-blank",
+    "title": "Session 1: Introduction",
+    "section": "Fill in the blank",
+    "text": "Fill in the blank\n\n“On the other _____”\nHow do you know?"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-gives-you-some-ideas",
+    "href": "2025/slides/session-1.html#corpus-gives-you-some-ideas",
+    "title": "Session 1: Introduction",
+    "section": "Corpus gives you some ideas",
+    "text": "Corpus gives you some ideas\n\nSimple answer: They are used together so often.\nCorpus answer: Given the sequence “on the other”, the probability of seeing the word “hand” next is very high. → Their Strengths Of Association (SOA) is high.\n\n\n\nWe will cover how to calculate simple SOA measures on Day 3."
+  },
+  {
+    "objectID": "2025/slides/session-1.html#grammar-more-on-day-4",
+    "href": "2025/slides/session-1.html#grammar-more-on-day-4",
+    "title": "Session 1: Introduction",
+    "section": "Grammar (More on Day 4)",
+    "text": "Grammar (More on Day 4)\nWe can do similar with grammar (or morpho-syntax).\n\nHow often do we expect “by X” construction in passive construction."
+  },
+  {
+    "objectID": "2025/slides/session-1.html#frequency-of-by-x-in-passive-construction",
+    "href": "2025/slides/session-1.html#frequency-of-by-x-in-passive-construction",
+    "title": "Session 1: Introduction",
+    "section": "Frequency of “by X” in passive construction",
+    "text": "Frequency of “by X” in passive construction"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#corpus-linguistics-3",
+    "href": "2025/slides/session-1.html#corpus-linguistics-3",
+    "title": "Session 1: Introduction",
+    "section": "Corpus linguistics =",
+    "text": "Corpus linguistics =\n\nthe investigation of linguistic research question\nthat have been framed in terms of the conditional distribution of linguisitc phenomena\nin a linguistic corpus."
+  },
+  {
+    "objectID": "2025/slides/session-1.html#linguistic-research-questions",
+    "href": "2025/slides/session-1.html#linguistic-research-questions",
+    "title": "Session 1: Introduction",
+    "section": "Linguistic Research Questions",
+    "text": "Linguistic Research Questions\nExamples:\nBasic corpus research\n\nWhat are relationships between processing speed and language frequency\n\nLearner Corpus Research:\n\nWhat kind of vocabulary do second-language learners with varying proficiency levels produce?"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#course-description",
+    "href": "2025/slides/session-1.html#course-description",
+    "title": "Session 1: Introduction",
+    "section": "Course description",
+    "text": "Course description\n\nThis 5-day introduction:\n\ncovers key concepts in corpus linguistics and learner corpus research\nteaches you how to conduct simple corpus searches using Concordance software\ngives you an overview of methods to investigate conditional distributions (e.g., frequency, co-occurrences) of vocabulary, multiword units, and grammatical items.\nintroduces foundational methods to identify linguisitic phenomena using corpus and how to know about their distribution\ndiscusses important applications of corpus methods in applied linguistic (second language) research"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#about-the-course-website",
+    "href": "2025/slides/session-1.html#about-the-course-website",
+    "title": "Session 1: Introduction",
+    "section": "About the course website",
+    "text": "About the course website\n\nThe course materials are available through the following two:\n\nCourse website\n\nWe use the website to communicate course schedules, plans, and slides.\n\nGoogle Classroom\n\nWe use Google Classroom for assignment submission, discussion forum, and distributing other materials (e.g., Readings)."
+  },
+  {
+    "objectID": "2025/slides/session-1.html#session-overview",
+    "href": "2025/slides/session-1.html#session-overview",
+    "title": "Session 1: Introduction",
+    "section": "Session overview",
+    "text": "Session overview\n\n\n\n\nDay\nTheme\nSessions\n\n\n\n\nDay 1\nIntroduction & Corpus Basics\n\n\n\nDay 2\nAnalysis of Vocabulary & Multiword Units (1)\n\n\n\nDay 3\nAnalysis of Vocabulary & Multiword Units (2)\n\n\n\nDay 4\nAnalysis of Grammar\n\n\n\nDay 5\nAdvanced Topics & Projects"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#daily-schedule",
+    "href": "2025/slides/session-1.html#daily-schedule",
+    "title": "Session 1: Introduction",
+    "section": "Daily schedule",
+    "text": "Daily schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1\n\n\n12:00-13:00\nLunch break\n\n\n13:00-14:30\nSession 2\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#if-we-have-time",
+    "href": "2025/slides/session-1.html#if-we-have-time",
+    "title": "Session 1: Introduction",
+    "section": "If we have time…",
+    "text": "If we have time…\nMove to the next part."
+  },
+  {
+    "objectID": "2025/slides/session-2.html#objectives",
+    "href": "2025/slides/session-2.html#objectives",
+    "title": "Session 2: Corpus as a scientific method",
+    "section": "Objectives",
+    "text": "Objectives\n\nDefine corpus linguistics as an empirical methodology\nExplain key limitations of introspection in linguistic research\nDescribe the role of frequency data and patterns in corpus analysis\nIdentify and explain the basic steps in corpus-based research\nReflect on their own stance toward data, intuition, and linguistic evidence"
+  },
+  {
+    "objectID": "2025/slides/session-2.html#common-criticism",
+    "href": "2025/slides/session-2.html#common-criticism",
+    "title": "Session 2: Corpus as a scientific method",
+    "section": "Common criticism",
+    "text": "Common criticism\n\ncorpora are usage data and thus of no use in studying linguistic knowledge;\n\ncorpora and the data derived from them are necessarily incomplete;\ncorpora contain only linguistic forms (represented as graphemic strings), but no information about the semantics, pragmatics, etc. of these forms; and\n\ncorpora do not contain negative evidence, i.e., they can only tell us what is possible in a given language, but not what is not possible."
+  },
+  {
+    "objectID": "2025/slides/session-12.html#objectives",
+    "href": "2025/slides/session-12.html#objectives",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#objectives",
+    "href": "2025/slides/session-11.html#objectives",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#objectives",
+    "href": "2025/slides/session-8.html#objectives",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/index.html",
+    "href": "2025/assignments/hands-on-3/index.html",
+    "title": "Hands-on Assignment 3",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 3"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/index.html#assignment-details",
+    "href": "2025/assignments/hands-on-3/index.html#assignment-details",
+    "title": "Hands-on Assignment 3",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 3"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/index.html",
+    "href": "2025/assignments/index.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "This section contains all course assignments and the final project.",
+    "crumbs": [
+      "Assignments",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/index.html#overview",
+    "href": "2025/assignments/index.html#overview",
+    "title": "Assignments",
+    "section": "",
+    "text": "This section contains all course assignments and the final project.",
+    "crumbs": [
+      "Assignments",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/index.html#assignments",
+    "href": "2025/assignments/index.html#assignments",
+    "title": "Assignments",
+    "section": "Assignments",
+    "text": "Assignments\n\nHands-on Assignment 1\nHands-on Assignment 2\nHands-on Assignment 3\nHands-on Assignment 4\nFinal Project",
+    "crumbs": [
+      "Assignments",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html",
+    "href": "2025/assignments/final-project/index.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "Final project instructions and requirements.",
+    "crumbs": [
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html#project-guidelines",
+    "href": "2025/assignments/final-project/index.html#project-guidelines",
+    "title": "Final Project",
+    "section": "",
+    "text": "Final project instructions and requirements.",
+    "crumbs": [
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/index.html",
+    "href": "2025/assignments/hands-on-1/index.html",
+    "title": "Hands-on Assignment 1",
+    "section": "",
+    "text": "Assignment Details\nAssignment instructions and materials.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 1"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-2/index.html",
+    "href": "2025/assignments/hands-on-2/index.html",
+    "title": "Hands-on Assignment 2",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 2"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-2/index.html#assignment-details",
+    "href": "2025/assignments/hands-on-2/index.html#assignment-details",
+    "title": "Hands-on Assignment 2",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 2"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-4/index.html",
+    "href": "2025/assignments/hands-on-4/index.html",
+    "title": "Hands-on Assignment 4",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 4"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-4/index.html#assignment-details",
+    "href": "2025/assignments/hands-on-4/index.html#assignment-details",
+    "title": "Hands-on Assignment 4",
+    "section": "",
+    "text": "Assignment instructions and materials.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 4"
+    ]
+  },
+  {
+    "objectID": "2025/slides/session-9.html#objectives",
+    "href": "2025/slides/session-9.html#objectives",
+    "title": "Session 9: Research Application",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#objectives",
+    "href": "2025/slides/session-10.html#objectives",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-13.html#objectives",
+    "href": "2025/slides/session-13.html#objectives",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#objectives",
+    "href": "2025/slides/session-3.html#objectives",
+    "title": "Session 3: Hands-on #1",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#task-a---simple-word-search",
+    "href": "2025/slides/session-3.html#task-a---simple-word-search",
+    "title": "Session 3: Hands-on #1",
+    "section": "Task A - Simple word search",
+    "text": "Task A - Simple word search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#first-corpus-search",
+    "href": "2025/slides/session-3.html#first-corpus-search",
+    "title": "Session 3: Hands-on #1",
+    "section": "First corpus search",
+    "text": "First corpus search\n\nLet’s start our journey.\nFirst of all, let’s search the following word in COCA.\n\nrun"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#result-of-dog",
+    "href": "2025/slides/session-3.html#result-of-dog",
+    "title": "Session 3: Hands-on #1",
+    "section": "Result of dog",
+    "text": "Result of dog\n\nYou might get slightly different results."
+  },
+  {
+    "objectID": "2025/slides/session-3.html#result-of-run",
+    "href": "2025/slides/session-3.html#result-of-run",
+    "title": "Session 3: Hands-on #1",
+    "section": "Result of run",
+    "text": "Result of run\n\nSearch - run\nYou might get slightly different results."
+  },
+  {
+    "objectID": "2025/slides/session-3.html#lemma-search",
+    "href": "2025/slides/session-3.html#lemma-search",
+    "title": "Session 3: Hands-on #1",
+    "section": "LEMMA search",
+    "text": "LEMMA search\n\nLemma is a group of word form for the head-word with grammatical inflection.\nYou can search LEMMA in English-Corpora.org through Capital letters.\nThe search methods will depend on the corpus tool you use."
+  },
+  {
+    "objectID": "2025/slides/session-3.html#lemma-search-1",
+    "href": "2025/slides/session-3.html#lemma-search-1",
+    "title": "Session 3: Hands-on #1",
+    "section": "LEMMA search",
+    "text": "LEMMA search\n\nSearch - consider"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#concordances-or-kwic",
+    "href": "2025/slides/session-3.html#concordances-or-kwic",
+    "title": "Session 3: Hands-on #1",
+    "section": "Concordances (or KWIC)",
+    "text": "Concordances (or KWIC)\n\nNow you know how many times XX occurs in COCA, you want to see the context in which XX occur.\nThis goal can be accomplished with KWIC search."
+  },
+  {
+    "objectID": "2025/slides/session-3.html#kwic-view",
+    "href": "2025/slides/session-3.html#kwic-view",
+    "title": "Session 3: Hands-on #1",
+    "section": "KWIC view",
+    "text": "KWIC view\n\nGo back to SEARCH window.\n\n\nKWIC search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#kwic-view-1",
+    "href": "2025/slides/session-3.html#kwic-view-1",
+    "title": "Session 3: Hands-on #1",
+    "section": "KWIC view",
+    "text": "KWIC view\n\nClick on the + button in the search menu and enter your search word.\n\n\nKWIC search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#kwic-view-2",
+    "href": "2025/slides/session-3.html#kwic-view-2",
+    "title": "Session 3: Hands-on #1",
+    "section": "KWIC view",
+    "text": "KWIC view\n\nThe result is displayed. Default sort : R1 &gt; R2 &gt; R3\n\n\nKWIC search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#sorting-kwic-window",
+    "href": "2025/slides/session-3.html#sorting-kwic-window",
+    "title": "Session 3: Hands-on #1",
+    "section": "Sorting KWIC window",
+    "text": "Sorting KWIC window\n\nNow let’s sort the results according to the position in context.\n\n\nKWIC search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#sorting-words",
+    "href": "2025/slides/session-3.html#sorting-words",
+    "title": "Session 3: Hands-on #1",
+    "section": "Sorting words",
+    "text": "Sorting words\nYou can sort the words.\n\nKWIC search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#lets-try-kwic",
+    "href": "2025/slides/session-3.html#lets-try-kwic",
+    "title": "Session 3: Hands-on #1",
+    "section": "Let’s Try: KWIC",
+    "text": "Let’s Try: KWIC\n\nChoose a word that you want to see the context for.\nSearch the word with KWIC.\nSort the word in the following way.\n\nDefault: R1 &gt; R2 &gt; R3\nCustom 1: L1 &gt; L2 &gt; L3\nCustom 2: L1 &gt; R1 &gt; R2"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#how-to-get-custom-1-and-2",
+    "href": "2025/slides/session-3.html#how-to-get-custom-1-and-2",
+    "title": "Session 3: Hands-on #1",
+    "section": "How to get Custom 1 and 2",
+    "text": "How to get Custom 1 and 2\n\nKWIC search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#chart-function",
+    "href": "2025/slides/session-3.html#chart-function",
+    "title": "Session 3: Hands-on #1",
+    "section": "Chart function",
+    "text": "Chart function\n\nNow that we learned how to conduct concordance search, let’s experiment with some CHART function.\nThis allows you to return frequency by sections of of COCA (= conditional frequency)."
+  },
+  {
+    "objectID": "2025/slides/session-3.html#search-radio-using-chart",
+    "href": "2025/slides/session-3.html#search-radio-using-chart",
+    "title": "Session 3: Hands-on #1",
+    "section": "Search radio using CHART",
+    "text": "Search radio using CHART\n\nGo to Search Tab, select, CHART and enter radio\n\n\nChart search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#search-radio-using-chart-1",
+    "href": "2025/slides/session-3.html#search-radio-using-chart-1",
+    "title": "Session 3: Hands-on #1",
+    "section": "Search radio using CHART",
+    "text": "Search radio using CHART\n\nYou will get the following:"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#regular-expressions",
+    "href": "2025/slides/session-3.html#regular-expressions",
+    "title": "Session 3: Hands-on #1",
+    "section": "Regular expressions",
+    "text": "Regular expressions\nRegular expression (正規表現) allows you to search corpus through “pattern matching”.\n\nHave you ever used (*) asterisk in your web search?\nThis is one of the regular expression (= wild card)"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#using-wild-card-in-search",
+    "href": "2025/slides/session-3.html#using-wild-card-in-search",
+    "title": "Session 3: Hands-on #1",
+    "section": "Using wild card in search",
+    "text": "Using wild card in search\n\nLet’s go back to List search.\nEnter “a * of the”\nWhat result do you expect with this search?\nDon’t turn to the next page YET!!!"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#result-with-a-of-the",
+    "href": "2025/slides/session-3.html#result-with-a-of-the",
+    "title": "Session 3: Hands-on #1",
+    "section": "Result with a * of the",
+    "text": "Result with a * of the"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#more-search-methods",
+    "href": "2025/slides/session-3.html#more-search-methods",
+    "title": "Session 3: Hands-on #1",
+    "section": "More search methods",
+    "text": "More search methods\n\nYou can check how to use other search methods in English-Corpora.org here"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#collocation-search",
+    "href": "2025/slides/session-3.html#collocation-search",
+    "title": "Session 3: Hands-on #1",
+    "section": "Collocation search",
+    "text": "Collocation search\n\nThis is main topic for Day 3.\nBriefly, collocates search allows us to search for co-occurring words within specified window."
+  },
+  {
+    "objectID": "2025/slides/session-3.html#collocation-search-1",
+    "href": "2025/slides/session-3.html#collocation-search-1",
+    "title": "Session 3: Hands-on #1",
+    "section": "Collocation search",
+    "text": "Collocation search\n\nSelect Collocates"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#collocation-search-2",
+    "href": "2025/slides/session-3.html#collocation-search-2",
+    "title": "Session 3: Hands-on #1",
+    "section": "Collocation search",
+    "text": "Collocation search\n\nEnter search word"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#collocation-search-3",
+    "href": "2025/slides/session-3.html#collocation-search-3",
+    "title": "Session 3: Hands-on #1",
+    "section": "Collocation search",
+    "text": "Collocation search\n\nOptional enter the word to look for"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#collocation-search-4",
+    "href": "2025/slides/session-3.html#collocation-search-4",
+    "title": "Session 3: Hands-on #1",
+    "section": "Collocation search",
+    "text": "Collocation search\n\nSpecify window\n\n\nHow distant do you search for the collocates"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#objectives",
+    "href": "2025/slides/session-4.html#objectives",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/slides/coca_table.html",
+    "href": "2025/slides/coca_table.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenre\n# texts\n# words\nExplanation\n\n\n\n\nSpoken\n44,803\n127,396,932\nTranscripts of unscripted conversation from more than 150 different TV and radio programs (examples: All Things Considered (NPR), Newshour (PBS), Good Morning America (ABC), Oprah)\n\n\nFiction\n25,992\n119,505,305\nShort stories and plays from literary magazines, children’s magazines, popular magazines, first chapters of first edition books 1990-present, and fan fiction.\n\n\nMagazines\n86,292\n127,352,030\nNearly 100 different magazines, with a good mix between specific domains like news, health, home and gardening, women, financial, religion, sports, etc.\n\n\nNewspapers\n90,243\n122,958,016\nNewspapers from across the US, including: USA Today, New York Times, Atlanta Journal Constitution, San Francisco Chronicle, etc. Good mix between different sections of the newspaper, such as local news, opinion, sports, financial, etc.\n\n\nAcademic\n26,137\n120,988,361\nMore than 200 different peer-reviewed journals. These cover the full range of academic disciplines, with a good balance among education, social sciences, history, humanities, law, medicine, philosophy/religion, science/technology, and business\n\n\nWeb (Genl)\n88,989\n129,899,427\nClassified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages (by Serge Sharoff). Taken from the US portion of the GloWbE corpus.\n\n\nWeb (Blog)\n98,748\n125,496,216\nTexts that were classified by Google as being blogs. Further classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages. Taken from the US portion of the GloWbE corpus.\n\n\nTV/Movies\n23,975\n129,293,467\nSubtitles from OpenSubtitles.org, and later the TV and Movies corpora. Studies have shown that the language from these shows and movies is even more colloquial / core than the data in actual “spoken corpora”.\n\n\nTotal\n485,179\n1,002,889,754"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#objectives",
+    "href": "2025/slides/session-6.html#objectives",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Objectives",
+    "text": "Objectives"
+  },
+  {
+    "objectID": "2025/syllabus/policies.html",
+    "href": "2025/syllabus/policies.html",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Hands-on Assignments (4 × 10%): 40%\nClass Participation: 20%\nFinal Project: 40%\n\n\n\n\n\nA: 90-100%\nB: 80-89%\nC: 70-79%\nD: 60-69%\nF: Below 60%\n\n\n\n\n\n\nAttendance is mandatory for this intensive course\n\n\n\n\n\n\n\nAll assignments are due at 10:30 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies\n\n\n\n\n\nSubmit all assignments via the course management system (google classroom?)\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBring a laptop to every session\nEnsure all required software is installed\n\n\n\n\n\nLaptops should be used for course activities only\n\n\n\n\n\n\n\n\nCourse announcements are made through Google Classroom.\n\n\n\n\n\nMaterials (e.g., slides) are shared through this website.",
+    "crumbs": [
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#grading",
+    "href": "2025/syllabus/policies.html#grading",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Hands-on Assignments (4 × 10%): 40%\nClass Participation: 20%\nFinal Project: 40%\n\n\n\n\n\nA: 90-100%\nB: 80-89%\nC: 70-79%\nD: 60-69%\nF: Below 60%",
+    "crumbs": [
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#attendance-policy",
+    "href": "2025/syllabus/policies.html#attendance-policy",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Attendance is mandatory for this intensive course",
+    "crumbs": [
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#assignment-submission",
+    "href": "2025/syllabus/policies.html#assignment-submission",
+    "title": "Course Policies",
+    "section": "",
+    "text": "All assignments are due at 10:30 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies\n\n\n\n\n\nSubmit all assignments via the course management system (google classroom?)\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)",
+    "crumbs": [
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#technology-policy",
+    "href": "2025/syllabus/policies.html#technology-policy",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Bring a laptop to every session\nEnsure all required software is installed\n\n\n\n\n\nLaptops should be used for course activities only",
+    "crumbs": [
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/policies.html#communication",
+    "href": "2025/syllabus/policies.html#communication",
+    "title": "Course Policies",
+    "section": "",
+    "text": "Course announcements are made through Google Classroom.\n\n\n\n\n\nMaterials (e.g., slides) are shared through this website.",
+    "crumbs": [
+      "Syllabus",
+      "Course Policies"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html",
+    "href": "2025/syllabus/index.html",
+    "title": "Course Syllabus",
+    "section": "",
+    "text": "Course Title: Linguistic Data Analysis I\nCredits: 2\nFormat: Intensive 5-day course\nLanguage: English\nPrerequisites: Graduate standing; no programming experience required",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#course-information",
+    "href": "2025/syllabus/index.html#course-information",
+    "title": "Course Syllabus",
+    "section": "",
+    "text": "Course Title: Linguistic Data Analysis I\nCredits: 2\nFormat: Intensive 5-day course\nLanguage: English\nPrerequisites: Graduate standing; no programming experience required",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#instructor-information",
+    "href": "2025/syllabus/index.html#instructor-information",
+    "title": "Course Syllabus",
+    "section": "Instructor Information",
+    "text": "Instructor Information\nInstructor: Masaki Eguchi, Ph.D.  Email:",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#course-description",
+    "href": "2025/syllabus/index.html#course-description",
+    "title": "Course Syllabus",
+    "section": "Course Description",
+    "text": "Course Description\nThis course introduces the foundations of corpus linguistics and the analysis of learner language through corpus linguistic approaches. It covers key concepts in corpus linguistics, including what corpora are, how they are used to answer (applied) linguistic research questions, and how to design corpus-based analyses to address substantive research questions in second language research. The primary language of analysis in this course is English, but students are encouraged to apply the concepts introduced to the languages they work with in their own research.",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#learning-objectives",
+    "href": "2025/syllabus/index.html#learning-objectives",
+    "title": "Course Syllabus",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this course, students will be able to:\n\nExplain what corpus linguistics is and how corpus linguistics can help learn linguistic phenomena\nSearch for and select available corpora relevant to their own research\nDiscuss design issues related to language corpora for specific research purposes\nApply introductory corpus linguistic analyses (e.g., frequency analysis, concordancing, POS tagging) to preprocessed corpora\nEvaluate the benefits and drawbacks of a corpus linguistic approach to linguistic analysis",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#course-components",
+    "href": "2025/syllabus/index.html#course-components",
+    "title": "Course Syllabus",
+    "section": "Course Components",
+    "text": "Course Components\n\n\n\n\n\n\nNavigation\n\n\n\n\n📅 Detailed Schedule\n📚 Required Readings\n📋 Course Policies\n📄 Download PDF Syllabus",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#assessment",
+    "href": "2025/syllabus/index.html#assessment",
+    "title": "Course Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\n\n\n\nComponent\nWeight\nDue Date\n\n\n\n\nParticipation\n20%\nThroughout\n\n\nHands-on Corpus Activity\n40%\nFrom Day 2-5\n\n\nFinal Project\n20%\nFrom Day 2-5",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#required-materials",
+    "href": "2025/syllabus/index.html#required-materials",
+    "title": "Course Syllabus",
+    "section": "Required Materials",
+    "text": "Required Materials\n\nTextbook\n\nDurrant, P. (2023). Corpus linguistics for writing development: A guide for research. Routledge. https://doi.org/10.4324/9781003152682\nStefanowitsch, A. (2020). Corpus linguistics: A guide to the methodology. Zenodo. https://doi.org/10.5281/ZENODO.3735822 (This is an open source textbook, so it’s freely available online)\n\nOther required/Optional readings are provided through Google Classroom.\n\n\nSoftwares (Free)\n\nConcordancing Software\n\nAntConc: Corpus analysis toolkit for Concordancing\n\n\n\nLexical Profiling Software\n\nAntWordProfiler: Corpus analysis toolkit for Lexical Profiling\nLexTutor: Corpus analysis toolkit online\n\n\n\nStatistics\n\nJASP: Statistical analysis software\n\n\n\nOthers\n\nGoogle Account: For Colab notebooks (insert link here)\nText Editor: VS Code recommended",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/syllabus/index.html#daily-structure",
+    "href": "2025/syllabus/index.html#daily-structure",
+    "title": "Course Syllabus",
+    "section": "Daily Structure",
+    "text": "Daily Structure\nEach day follows this general pattern:\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1\n\n\n12:00-13:00\nLunch break\n\n\n13:00-14:30\nSession 2\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3",
+    "crumbs": [
+      "Syllabus",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session11.html#learning-objectives",
+    "href": "2025/sessions/day4/session11.html#learning-objectives",
+    "title": "Session 11",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct POS tagging using spaCy library in Python (through Google Colab)\nConduct Dependency parsing using spaCy library in Python (through Google Colab)\nConduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session11.html#key-concepts",
+    "href": "2025/sessions/day4/session11.html#key-concepts",
+    "title": "Session 11",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nPOS tagging\nDependency parsing",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session11.html#required-readings",
+    "href": "2025/sessions/day4/session11.html#required-readings",
+    "title": "Session 11",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nSkim Durrant Ch 6 (Ignore R codes if you are not familiar)",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session11.html#recommended-readings",
+    "href": "2025/sessions/day4/session11.html#recommended-readings",
+    "title": "Session 11",
+    "section": "Recommended Readings",
+    "text": "Recommended Readings\n\nKyle, K., & Eguchi, M. (2024). Evaluating NLP models with written and spoken L2 samples. Research Methods in Applied Linguistics, 3(2), 100120. https://doi.org/10.1016/j.rmal.2024.100120\n\n\n📝 Notes\n\nAll the python codes are prepared by the instructor and shared with the students. This session does not require ability to code.\nThe decision to use Python programming language rather than already available software is based on consideration that there is very little tools which provide stable access to the language analysis described here.",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session11.html#tools",
+    "href": "2025/sessions/day4/session11.html#tools",
+    "title": "Session 11",
+    "section": "Tools",
+    "text": "Tools\n\nGoogle Colaboratory\nTagAnt",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session11.html#materials",
+    "href": "2025/sessions/day4/session11.html#materials",
+    "title": "Session 11",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session11.html#reflection",
+    "href": "2025/sessions/day4/session11.html#reflection",
+    "title": "Session 11",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html",
+    "href": "2025/sessions/day4/index.html",
+    "title": "Day 4: Analyzing grammar",
+    "section": "",
+    "text": "Day 4 introduces\n\n\n\nBy the end of Day 4, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 4:",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#overview",
+    "href": "2025/sessions/day4/index.html#overview",
+    "title": "Day 4: Analyzing grammar",
+    "section": "",
+    "text": "Day 4 introduces",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#learning-objectives",
+    "href": "2025/sessions/day4/index.html#learning-objectives",
+    "title": "Day 4: Analyzing grammar",
+    "section": "",
+    "text": "By the end of Day 4, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#schedule",
+    "href": "2025/sessions/day4/index.html#schedule",
+    "title": "Day 4: Analyzing grammar",
+    "section": "",
+    "text": "Table",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#preparation",
+    "href": "2025/sessions/day4/index.html#preparation",
+    "title": "Day 4: Analyzing grammar",
+    "section": "",
+    "text": "Before Day 4:",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session9.html#learning-objectives",
+    "href": "2025/sessions/day3/session9.html#learning-objectives",
+    "title": "Session 9",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 9"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session9.html#key-concepts",
+    "href": "2025/sessions/day3/session9.html#key-concepts",
+    "title": "Session 9",
+    "section": "Key Concepts",
+    "text": "Key Concepts",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 9"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session9.html#materials",
+    "href": "2025/sessions/day3/session9.html#materials",
+    "title": "Session 9",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 9"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session9.html#reflection",
+    "href": "2025/sessions/day3/session9.html#reflection",
+    "title": "Session 9",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 9"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session7.html#learning-objectives",
+    "href": "2025/sessions/day3/session7.html#learning-objectives",
+    "title": "Session 7",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\nExplain different types of multiword units: collocation, n-grams, lexical bundles\nDemonstrate how major association strengths measures (t-score, Mutual Information, and LogDice) are calculated using examples",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 7"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session7.html#key-concepts",
+    "href": "2025/sessions/day3/session7.html#key-concepts",
+    "title": "Session 7",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nTypes of multiword units\nAssociation strengths\nThree approaches:\n\nContext window\nDependency bigram",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 7"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session7.html#materials",
+    "href": "2025/sessions/day3/session7.html#materials",
+    "title": "Session 7",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 7"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session7.html#reflection",
+    "href": "2025/sessions/day3/session7.html#reflection",
+    "title": "Session 7",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 7"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session4.html#learning-objectives",
+    "href": "2025/sessions/day2/session4.html#learning-objectives",
+    "title": "Session 4",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:\n\nExplain the purposes of linguistic measures and when they are typically used\nList commonly used lexical measures in second language acquisition research\nExplain sub-constructs of lexical richness measures\n\nLexical Diversity\nLexical Sophistication",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 4"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session4.html#key-concepts",
+    "href": "2025/sessions/day2/session4.html#key-concepts",
+    "title": "Session 4",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nLexical Richness\n\nDistinction between text internal vs external measures\n\nLexical Diversity\n\nType-Token Ratio\nMeasure of Textual Lexical Diversity (MTLD)\n\nLexical Sophistication\n\nFrequency\nConcreteness\nPhonological neighbors",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 4"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session4.html#materials",
+    "href": "2025/sessions/day2/session4.html#materials",
+    "title": "Session 4",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 4"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session4.html#reflection",
+    "href": "2025/sessions/day2/session4.html#reflection",
+    "title": "Session 4",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 4"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session6.html#learning-objectives",
+    "href": "2025/sessions/day2/session6.html#learning-objectives",
+    "title": "Session 6",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:\n\nCompute simple lexical diversity measures using spreadsheet software\nExplain how modern lexical diversity measures are calculated\nCompute simple lexical sophistication measures",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 6"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session6.html#key-concepts",
+    "href": "2025/sessions/day2/session6.html#key-concepts",
+    "title": "Session 6",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nlexical diversity\nlexical sophistication",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 6"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session6.html#materials",
+    "href": "2025/sessions/day2/session6.html#materials",
+    "title": "Session 6",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 6"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session6.html#reflection",
+    "href": "2025/sessions/day2/session6.html#reflection",
+    "title": "Session 6",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 6"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session15.html#learning-objectives",
+    "href": "2025/sessions/day5/session15.html#learning-objectives",
+    "title": "Session 15",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 15"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session15.html#key-concepts",
+    "href": "2025/sessions/day5/session15.html#key-concepts",
+    "title": "Session 15",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nlinguistic intuition\nscientific hypothesis vs data",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 15"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session15.html#materials",
+    "href": "2025/sessions/day5/session15.html#materials",
+    "title": "Session 15",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 15"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session15.html#reflection",
+    "href": "2025/sessions/day5/session15.html#reflection",
+    "title": "Session 15",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 15"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session13.html#learning-objectives",
+    "href": "2025/sessions/day5/session13.html#learning-objectives",
+    "title": "Session 13",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this session, you will be able to:",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 13"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session13.html#key-concepts",
+    "href": "2025/sessions/day5/session13.html#key-concepts",
+    "title": "Session 13",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nLarge Language Models (LLMs)",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 13"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session13.html#materials",
+    "href": "2025/sessions/day5/session13.html#materials",
+    "title": "Session 13",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)\nPost by Mark Davies on how similar LLM’s “introspections” are to corpus data",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 13"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/session13.html#reflection",
+    "href": "2025/sessions/day5/session13.html#reflection",
+    "title": "Session 13",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Session 13"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#learning-objectives",
+    "href": "2025/sessions/day1/session1.html#learning-objectives",
+    "title": "Session 1",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\nBy the end of this session, you will be able to:\n\nOverview the content of the current course\nExplain key success criteria in this course\nConduct the very first corpus search",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#key-concepts",
+    "href": "2025/sessions/day1/session1.html#key-concepts",
+    "title": "Session 1",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nCorpus/Corpora\nCorpus linguistics\nLearner Corpus Research",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#materials",
+    "href": "2025/sessions/day1/session1.html#materials",
+    "title": "Session 1",
+    "section": "Materials",
+    "text": "Materials\n\nView slides in fullscreen",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#reflection",
+    "href": "2025/sessions/day1/session1.html#reflection",
+    "title": "Session 1",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html",
+    "href": "2025/sessions/day1/session3.html",
+    "title": "Session 3: Hands-on #1",
+    "section": "",
+    "text": "You will learn how to conduct basic corpus search.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on #1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html#one-liner",
+    "href": "2025/sessions/day1/session3.html#one-liner",
+    "title": "Session 3: Hands-on #1",
+    "section": "",
+    "text": "You will learn how to conduct basic corpus search.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on #1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html#learning-objectives",
+    "href": "2025/sessions/day1/session3.html#learning-objectives",
+    "title": "Session 3: Hands-on #1",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\nBy the end of this session, you will be able to:\n\nConduct KWIC search\nSort KWIC search results to obtain qualitative observation about language use\nUse regular expression to fine-tune the search results",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on #1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html#key-concepts",
+    "href": "2025/sessions/day1/session3.html#key-concepts",
+    "title": "Session 3: Hands-on #1",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nKey Word In Context (KWIC)\nConcordancing Software",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on #1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html#materials",
+    "href": "2025/sessions/day1/session3.html#materials",
+    "title": "Session 3: Hands-on #1",
+    "section": "Materials",
+    "text": "Materials\n\nSlides (Under construction)",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on #1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html#reflection",
+    "href": "2025/sessions/day1/session3.html#reflection",
+    "title": "Session 3: Hands-on #1",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on #1"
     ]
   },
   {
@@ -176,1006 +2436,147 @@
     "text": "How to Use\n\nClick on any notebook link\nOpen in Google Colab\nMake a copy to your Google Drive\nRun cells sequentially"
   },
   {
-    "objectID": "2025/sessions/day1/session1-intro/links.html",
-    "href": "2025/sessions/day1/session1-intro/links.html",
-    "title": "",
+    "objectID": "resources/tools/byu-corpora-guide.html",
+    "href": "resources/tools/byu-corpora-guide.html",
+    "title": "English Corpora Guide",
     "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "2025/sessions/day1/session1-intro/links.html#intro-resources",
-    "href": "2025/sessions/day1/session1-intro/links.html#intro-resources",
-    "title": "",
-    "section": "Introduction to Corpus Linguistics",
-    "text": "Introduction to Corpus Linguistics\n\nVideos\n\nWhat is Corpus Linguistics? (YouTube)\nIntroduction to Language Corpora\n\n\n\nArticles\n\nMcEnery & Wilson (2001) - Corpus Linguistics Overview\nBiber et al. (1998) - Chapter 1: Introduction\n\n\n\nWebsites\n\nCorpus Linguistics: A Practical Introduction\nLancaster University Corpus Linguistics"
-  },
-  {
-    "objectID": "2025/sessions/day1/session1-intro/links.html#course-tools",
-    "href": "2025/sessions/day1/session1-intro/links.html#course-tools",
-    "title": "",
-    "section": "Course Tools",
-    "text": "Course Tools\n\nAntConc\n\nOfficial AntConc Website\nAntConc Tutorial Videos\n\n\n\nJASP\n\nJASP Official Site\nGetting Started with JASP"
-  },
-  {
-    "objectID": "2025/sessions/day1/session1-intro/links.html#learner-corpora",
-    "href": "2025/sessions/day1/session1-intro/links.html#learner-corpora",
-    "title": "",
-    "section": "Learner Corpora",
-    "text": "Learner Corpora\n\nMajor Learner Corpora\n\nInternational Corpus of Learner English (ICLE)\nLINDSEI Corpus\n\n\n\nJapanese Learner Corpora\n\nNICT JLE Corpus\nJ-CAT Corpus"
-  },
-  {
-    "objectID": "2025/sessions/day1/session1-intro/links.html#related-courses-and-moocs",
-    "href": "2025/sessions/day1/session1-intro/links.html#related-courses-and-moocs",
-    "title": "",
-    "section": "Related Courses and MOOCs",
-    "text": "Related Courses and MOOCs\n\nCorpus Linguistics: Method, Analysis, Interpretation\nText Mining with R"
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html",
-    "href": "2025/sessions/day5/index.html",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Day 5 focuses on\n\n\n\nBy the end of Day 5, you will be able to:\n\n\n\nInsert table\n\n\n\n\nResearch question formulation\nMethodology selection\nCorpus compilation\nData analysis planning\nResults interpretation\nAcademic presentation skills\n\n\n\n\n\nFinal Project Guidelines\nProposal presentations today\nFinal submission in 2 weeks\n\n\n\n\n\nResearch Design Template\nPresentation Guidelines\nExample Projects",
+    "text": "The EnglishCorpora.org, formally BYU (Brigham Young University) corpora, provide web-based interfaces to some of the largest and most widely-used corpora in the world. These include COCA (Corpus of Contemporary American English), BNC (British National Corpus), and many others.",
     "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 5: Advanced Topics & Wrap-up",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#overview",
-    "href": "2025/sessions/day5/index.html#overview",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Day 5 focuses on",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 5: Advanced Topics & Wrap-up",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#learning-objectives",
-    "href": "2025/sessions/day5/index.html#learning-objectives",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "By the end of Day 5, you will be able to:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 5: Advanced Topics & Wrap-up",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#schedule",
-    "href": "2025/sessions/day5/index.html#schedule",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Insert table",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 5: Advanced Topics & Wrap-up",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#key-concepts",
-    "href": "2025/sessions/day5/index.html#key-concepts",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Research question formulation\nMethodology selection\nCorpus compilation\nData analysis planning\nResults interpretation\nAcademic presentation skills",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 5: Advanced Topics & Wrap-up",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#final-project",
-    "href": "2025/sessions/day5/index.html#final-project",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Final Project Guidelines\nProposal presentations today\nFinal submission in 2 weeks",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 5: Advanced Topics & Wrap-up",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#resources",
-    "href": "2025/sessions/day5/index.html#resources",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Research Design Template\nPresentation Guidelines\nExample Projects",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 5: Advanced Topics & Wrap-up",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day3/index.html",
-    "href": "2025/sessions/day3/index.html",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (Cont’d)",
-    "section": "",
-    "text": "Day 3 introduces\n\n\n\nBy the end of Day 3, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 3:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 3: Vocabulary and Multiword Units (2)",
-      "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day3/index.html#overview",
-    "href": "2025/sessions/day3/index.html#overview",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (Cont’d)",
-    "section": "",
-    "text": "Day 3 introduces",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 3: Vocabulary and Multiword Units (2)",
-      "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day3/index.html#learning-objectives",
-    "href": "2025/sessions/day3/index.html#learning-objectives",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (Cont’d)",
-    "section": "",
-    "text": "By the end of Day 3, you will be able to:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 3: Vocabulary and Multiword Units (2)",
-      "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day3/index.html#schedule",
-    "href": "2025/sessions/day3/index.html#schedule",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (Cont’d)",
-    "section": "",
-    "text": "Table",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 3: Vocabulary and Multiword Units (2)",
-      "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day3/index.html#preparation",
-    "href": "2025/sessions/day3/index.html#preparation",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (Cont’d)",
-    "section": "",
-    "text": "Before Day 3:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 3: Vocabulary and Multiword Units (2)",
-      "Day 3: Analyzing Vocabulary and Multiword Units (Cont'd)"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html",
-    "href": "2025/syllabus/index.html",
-    "title": "Course Syllabus",
-    "section": "",
-    "text": "Course Title: Linguistic Data Analysis I\nCredits: 2\nFormat: Intensive 5-day course\nLanguage: English\nPrerequisites: Graduate standing; no programming experience required",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#course-information",
-    "href": "2025/syllabus/index.html#course-information",
-    "title": "Course Syllabus",
-    "section": "",
-    "text": "Course Title: Linguistic Data Analysis I\nCredits: 2\nFormat: Intensive 5-day course\nLanguage: English\nPrerequisites: Graduate standing; no programming experience required",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#course-description",
-    "href": "2025/syllabus/index.html#course-description",
-    "title": "Course Syllabus",
-    "section": "Course Description",
-    "text": "Course Description\nThis intensive graduate course provides hands-on training in corpus linguistics and learner language analysis. Students will gain practical experience with industry-standard tools for analyzing linguistic data, with special emphasis on learner corpora and their applications in language teaching and research.",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#learning-objectives",
-    "href": "2025/syllabus/index.html#learning-objectives",
-    "title": "Course Syllabus",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this course, students will be able to:",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#course-components",
-    "href": "2025/syllabus/index.html#course-components",
-    "title": "Course Syllabus",
-    "section": "Course Components",
-    "text": "Course Components\n\n\n\n\n\n\nNavigation\n\n\n\n\n📅 Detailed Schedule\n📚 Required Readings\n📋 Course Policies\n📄 Download PDF Syllabus",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#assessment",
-    "href": "2025/syllabus/index.html#assessment",
-    "title": "Course Syllabus",
-    "section": "Assessment",
-    "text": "Assessment\n\n\n\nComponent\nWeight\nDue Date",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#required-materials",
-    "href": "2025/syllabus/index.html#required-materials",
-    "title": "Course Syllabus",
-    "section": "Required Materials",
-    "text": "Required Materials\n\nSoftware (Free)\n\nAntConc: Corpus analysis toolkit (insert link here)\nAntWordProfiler: Corpus analysis toolkit (insert link here)\nJASP: Statistical analysis software (insert link here)\nGoogle Account: For Colab notebooks (insert link here)\nText Editor: VS Code recommended\n\n\n\nTextbook\nNo required textbook. All readings will be provided or freely available online.",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#daily-structure",
-    "href": "2025/syllabus/index.html#daily-structure",
-    "title": "Course Syllabus",
-    "section": "Daily Structure",
-    "text": "Daily Structure\nEach day follows this general pattern:\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 2\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/index.html#communication",
-    "href": "2025/syllabus/index.html#communication",
-    "title": "Course Syllabus",
-    "section": "Communication",
-    "text": "Communication\n\nOffice Hours: By appointment\nEmail Response: Within 24 hours on weekdays",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/policies.html",
-    "href": "2025/syllabus/policies.html",
-    "title": "Course Policies",
-    "section": "",
-    "text": "Attendance is mandatory for this intensive course\n\n\n\n\n\n\n\nAll assignments are due at 10:30 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies\n\n\n\n\n\nSubmit all assignments via the course management system (google classroom?)\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBring a laptop to every session\nEnsure all required software is installed\n\n\n\n\n\nLaptops should be used for course activities only\n\n\n\n\n\n\n\n\nHands-on Assignments (4 × 10%): 40%\nClass Participation: 20%\nFinal Project: 40%\n\n\n\n\n\nA: 90-100%\nB: 80-89%\nC: 70-79%\nD: 60-69%\nF: Below 60%\n\n\n\n\n\n\n\n\n\n\n\nEmail:\nResponse time: Within 24 hours on weekdays",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Policies"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/policies.html#attendance-policy",
-    "href": "2025/syllabus/policies.html#attendance-policy",
-    "title": "Course Policies",
-    "section": "",
-    "text": "Attendance is mandatory for this intensive course",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Policies"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/policies.html#assignment-submission",
-    "href": "2025/syllabus/policies.html#assignment-submission",
-    "title": "Course Policies",
-    "section": "",
-    "text": "All assignments are due at 10:30 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies\n\n\n\n\n\nSubmit all assignments via the course management system (google classroom?)\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Policies"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/policies.html#technology-policy",
-    "href": "2025/syllabus/policies.html#technology-policy",
-    "title": "Course Policies",
-    "section": "",
-    "text": "Bring a laptop to every session\nEnsure all required software is installed\n\n\n\n\n\nLaptops should be used for course activities only",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Policies"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/policies.html#grading",
-    "href": "2025/syllabus/policies.html#grading",
-    "title": "Course Policies",
-    "section": "",
-    "text": "Hands-on Assignments (4 × 10%): 40%\nClass Participation: 20%\nFinal Project: 40%\n\n\n\n\n\nA: 90-100%\nB: 80-89%\nC: 70-79%\nD: 60-69%\nF: Below 60%",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Policies"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/policies.html#communication",
-    "href": "2025/syllabus/policies.html#communication",
-    "title": "Course Policies",
-    "section": "",
-    "text": "Email:\nResponse time: Within 24 hours on weekdays",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Policies"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-4/index.html",
-    "href": "2025/assignments/hands-on-4/index.html",
-    "title": "Hands-on Assignment 4",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 4"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-4/index.html#assignment-details",
-    "href": "2025/assignments/hands-on-4/index.html#assignment-details",
-    "title": "Hands-on Assignment 4",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 4"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-2/index.html",
-    "href": "2025/assignments/hands-on-2/index.html",
-    "title": "Hands-on Assignment 2",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 2"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-2/index.html#assignment-details",
-    "href": "2025/assignments/hands-on-2/index.html#assignment-details",
-    "title": "Hands-on Assignment 2",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 2"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-1/index.html",
-    "href": "2025/assignments/hands-on-1/index.html",
-    "title": "Hands-on Assignment 1",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 1"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-1/index.html#assignment-details",
-    "href": "2025/assignments/hands-on-1/index.html#assignment-details",
-    "title": "Hands-on Assignment 1",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 1"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/final-project/index.html",
-    "href": "2025/assignments/final-project/index.html",
-    "title": "Final Project",
-    "section": "",
-    "text": "Final project instructions and requirements.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/final-project/index.html#project-guidelines",
-    "href": "2025/assignments/final-project/index.html#project-guidelines",
-    "title": "Final Project",
-    "section": "",
-    "text": "Final project instructions and requirements.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/index.html",
-    "href": "2025/assignments/index.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "This section contains all course assignments and the final project.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Assignments"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/index.html#overview",
-    "href": "2025/assignments/index.html#overview",
-    "title": "Assignments",
-    "section": "",
-    "text": "This section contains all course assignments and the final project.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Assignments"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/index.html#assignments",
-    "href": "2025/assignments/index.html#assignments",
-    "title": "Assignments",
-    "section": "Assignments",
-    "text": "Assignments\n\nHands-on Assignment 1\nHands-on Assignment 2\nHands-on Assignment 3\nHands-on Assignment 4\nFinal Project",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Assignments"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-3/index.html",
-    "href": "2025/assignments/hands-on-3/index.html",
-    "title": "Hands-on Assignment 3",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 3"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-3/index.html#assignment-details",
-    "href": "2025/assignments/hands-on-3/index.html#assignment-details",
-    "title": "Hands-on Assignment 3",
-    "section": "",
-    "text": "Assignment instructions and materials.",
-    "crumbs": [
-      "Home",
-      "Assignments",
-      "Hands-on Assignment 3"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/readings.html",
-    "href": "2025/syllabus/readings.html",
-    "title": "Required Readings",
-    "section": "",
-    "text": "Durrant, P. (2023). Corpus linguistics for writing development: A guide for research. Routledge. https://doi.org/10.4324/9781003152682\nStefanowitsch, A. (2020). Corpus linguistics: A guide to the methodology. Zenodo. https://doi.org/10.5281/ZENODO.3735822\n\nOther readings are provided through Google Classroom.\n\n\n\n\nEgbert, J., Larsson, T., & Biber, D. (2020). Doing Linguistics with a Corpus: Methodological Considerations for the Everyday User (1st ed.). Cambridge University Press. https://doi.org/10.1017/9781108888790\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225\nKyle, K., & Eguchi, M. (2024). Evaluating NLP models with written and spoken L2 samples. Research Methods in Applied Linguistics, 3(2), 100120. https://doi.org/10.1016/j.rmal.2024.100120\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329\nMizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116. https://doi.org/10.1016/j.rmal.2024.100116\nMizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934\n\n\n\n\n\nBrezina, V., & Gablasova, D. (2015). Is There a Core General Vocabulary? Introducing the New General Service List. Applied Linguistics, 36(1), 1–22. https://doi.org/10.1093/applin/amt018\nGablasova, D., Brezina, V., & McEnery, T. (2017). Exploring Learner Language Through Corpora: Comparing and Interpreting Corpus Frequency Information. Language Learning, 67(S1), 130–154. https://doi.org/10.1111/lang.12226\n\n\n\n\n\n\n\nCECL Learner Corpus Bibliography\nCorpus Linguistics: Method, Analysis, Interpretation - Free online course\n\n\n\n\n\nInternational Journal of Learner Corpus Research\nInternational Journal of Corpus Linguistics\nCorpus Linguistics and Linguistic Theory\n\n\n\n\n\n\nJournal articles can be accessed through the university database\nOpen-access materials are linked directly\nAdditional PDFs will be shared via the course management system\n\n\n\n\n\nComplete required readings before each day’s sessions\nTake notes on key concepts and questions\nBe prepared to discuss readings in class\nRecommended readings provide deeper understanding but are optional",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Required Readings"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/readings.html#core-textbooks",
-    "href": "2025/syllabus/readings.html#core-textbooks",
-    "title": "Required Readings",
-    "section": "",
-    "text": "Durrant, P. (2023). Corpus linguistics for writing development: A guide for research. Routledge. https://doi.org/10.4324/9781003152682\nStefanowitsch, A. (2020). Corpus linguistics: A guide to the methodology. Zenodo. https://doi.org/10.5281/ZENODO.3735822\n\nOther readings are provided through Google Classroom.",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Required Readings"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/readings.html#required-readings",
-    "href": "2025/syllabus/readings.html#required-readings",
-    "title": "Required Readings",
-    "section": "",
-    "text": "Egbert, J., Larsson, T., & Biber, D. (2020). Doing Linguistics with a Corpus: Methodological Considerations for the Everyday User (1st ed.). Cambridge University Press. https://doi.org/10.1017/9781108888790\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225\nKyle, K., & Eguchi, M. (2024). Evaluating NLP models with written and spoken L2 samples. Research Methods in Applied Linguistics, 3(2), 100120. https://doi.org/10.1016/j.rmal.2024.100120\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329\nMizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116. https://doi.org/10.1016/j.rmal.2024.100116\nMizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Required Readings"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/readings.html#recommended-readings-optional",
-    "href": "2025/syllabus/readings.html#recommended-readings-optional",
-    "title": "Required Readings",
-    "section": "",
-    "text": "Brezina, V., & Gablasova, D. (2015). Is There a Core General Vocabulary? Introducing the New General Service List. Applied Linguistics, 36(1), 1–22. https://doi.org/10.1093/applin/amt018\nGablasova, D., Brezina, V., & McEnery, T. (2017). Exploring Learner Language Through Corpora: Comparing and Interpreting Corpus Frequency Information. Language Learning, 67(S1), 130–154. https://doi.org/10.1111/lang.12226",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Required Readings"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/readings.html#additional-resources",
-    "href": "2025/syllabus/readings.html#additional-resources",
-    "title": "Required Readings",
-    "section": "",
-    "text": "CECL Learner Corpus Bibliography\nCorpus Linguistics: Method, Analysis, Interpretation - Free online course\n\n\n\n\n\nInternational Journal of Learner Corpus Research\nInternational Journal of Corpus Linguistics\nCorpus Linguistics and Linguistic Theory",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Required Readings"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/readings.html#access-to-readings",
-    "href": "2025/syllabus/readings.html#access-to-readings",
-    "title": "Required Readings",
-    "section": "",
-    "text": "Journal articles can be accessed through the university database\nOpen-access materials are linked directly\nAdditional PDFs will be shared via the course management system",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Required Readings"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/readings.html#reading-guidelines",
-    "href": "2025/syllabus/readings.html#reading-guidelines",
-    "title": "Required Readings",
-    "section": "",
-    "text": "Complete required readings before each day’s sessions\nTake notes on key concepts and questions\nBe prepared to discuss readings in class\nRecommended readings provide deeper understanding but are optional",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Required Readings"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/schedule.html",
-    "href": "2025/syllabus/schedule.html",
-    "title": "Course Schedule",
-    "section": "",
-    "text": "This intensive course meets for 5 days with 3 sessions per day.",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Schedule"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/schedule.html#overview",
-    "href": "2025/syllabus/schedule.html#overview",
-    "title": "Course Schedule",
-    "section": "",
-    "text": "This intensive course meets for 5 days with 3 sessions per day.",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Schedule"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/schedule.html#course-schedule",
-    "href": "2025/syllabus/schedule.html#course-schedule",
-    "title": "Course Schedule",
-    "section": "Course Schedule",
-    "text": "Course Schedule\nThis course covers foundational concepts in corpus linguistics, corpus analysis methods, and their research applications across the following four areas: vocabulary, multiword units, and grammar.\n\nDay1–Session 1: Introduction to corpus linguistics and learner corpus research (1)\nObjectives: By the end of this session, students will be able to: - Define corpus linguistics as an empirical methodology - Explain key limitations of introspection in linguistic research - Describe the role of frequency data and patterns in corpus analysis - Identify and explain the basic steps in corpus-based research - Reflect on their own stance toward data, intuition, and linguistic evidence\nConcepts covered: - Corpus linguistics - Balanced Corpus, Reference Corpus, Learner Corpus - Corpus representativeness\nRequired Readings: - Stefanowitsch (2020) Ch. 1. - Stefanowitsch (2020) Ch. 2. - Skim Durrant (2023) Ch. 1.\n\n\nDay1–Session 2: Overview of corpus linguistic methods\n\nObjectives:\nBy the end of this session, students will be able to: - Explain how corpus linguistic approach is used in investigating the learner language development. - Describe key methods to examine corpus data qualitatively. - Explain different types of corpus linguistic analysis for different focus: frequency analysis, concordance analysis, collocation analysis, Part-Of-Speech Tagging, etc.\n\n\nConcepts covered:\n\nConceptual Overview of the corpus linguistic methods\nTokenization\nTagging and Parsing\n\n\n\nOptional Readings:\n\nDavies (2015)\n\n\n\nNotes:\n\nNeeds analysis (After giving overview) is conducted at the end of this session.\n\n\n\n\nDay1–Session 3: Conducting the first corpus search!\nObjectives: By the end of this session, students will be able to: - Conduct the KWIC search based on chosen corpus - Run frequency analysis on a Web Corpus\n\nConcepts covered:\n\nKey Words In Context (KWIC)\nCounting unit: Token, lemma, type\n\n\n\nTools used:\n\nBYU corpora\n\n\n\nFirst mini assignment:\n\nConduct KWIC search and make some observation on how a word is used.\n\n\n\n\nDay2–Session 4: Analyzing vocabulary (1) — Conceptual overview\nObjectives: By the end of this session, students will be able to: - Understand historical overview of lexical richness measurement. - Articulate definitions and examples of commonly used lexical measures. - Explain how lexical measures are normally calculated.\n\nConcepts covered:\n\nLexical sophistication\nLexical diversity\n\n\n\nReading:\n\nDurrant Ch. 3.\nSkim Durrant Ch. 4. (Ignore R codes if you are not familiar.)\n\n\n\n\nDay2–Session 5: Analyzing vocabulary (2) — Hands-on activity 1\n\nObjectives:\nBy the end of this session, students will be able to: - Compute frequency of a single-word lexical item in reference corpora. - Use AntConc/Web corpus to extract frequency data from a small corpus. - Conduct lexical profiles using LexTutor and/or AntWordProfiler.\n\n\nConcepts covered:\n\nGenerating frequency lists based on reference corpora.\nConduct lexical profiling\n\n\n\nTools used:\n\nAntConc\nBYU corpora\n\n\n\nOptional Reading:\n\nDavies (2015)\n\n\n\n\nDay2–Session 6: Analyzing vocabulary (3) — Hands-on activity 2\n\nObjectives:\nBy the end of this session, students will be able to: - Examine differences between two or more groups of texts by computing a selected set of lexical richness indices - Calculate lexical diversity measures using a spreadsheet software. - Calculate simple lexical sophistication measures using dedicated web application.\n\n\nConcepts covered:\n\nlexical diversity\nlexical sophistication\nlearner corpus research\n\n\n\nReading:\n\nEguchi & Kyle (2020).\n\n\n\n\nDay3–Session 7: Analyzing multiword units (1) — Conceptual overview\nObjectives: By the end of this session, students will be able to: - Explain different types of multiword units: collocation, n-grams, lexical bundles. - Demonstrate how major association strengths measures (t-score, Mutual Information, and LogDice) are calculated using examples.\n\nConcepts covered:\n\nTypes of multiword units\nAssociation strengths\nThree approaches:\n\nContext window\nDependency bigram\n\n\n\n\nReading:\n\nDurrant (2023) Ch. 7.\nSkim Durrant (2023) Ch. 8. (Ignore R codes if you are not familiar.)\n\n\n\n\nDay3–Session 8: Analyzing multiword units (2) — Hands-on activity\nObjectives: By the end of this session, students will be able to: - Search for window-based collocations and n-grams in AntConc and/or BNC/COCA. - Calculate commonly used strengths of association measures by hand using spreadsheet software. - Discuss benefits and drawbacks of different strength of association measures.\n\nConcepts covered:\n\nn-gram search\nStrengths of Association measures — T-score, Mutual Information, LogDice\n\n\n\nReading:\n\nGablasova et al (2017)\n\n\n\n\nDay3–Session 9: Research Application — Lexical measures & In-class mini-project (1)\nObjectives: By the end of this session, students will be able to: - Conduct a simple statistical analysis of selected corpus on small sets of lexical measures using JASP software. - Articulate their mini-project research topic in group. - Articulate their research questions and hypotheses in a 3-minute brief presentation.\n\nConcepts covered:\n\nLinear regression analysis (group comparison or prediction)\nIntroduction to in-class mini-project\n\n\n\n\nDay4–Session 10: Analyzing grammar (1) — Conceptual overview\nObjectives: By the end of this session, students will be able to: - Understand different approaches to grammatical features. - Grammatical complexity research - Descriptive approaches - Understand historical overview of the syntactic complexity research. - Understand NLP tasks such as POS tagging and dependency parsing. - Understand how automated parsing works. - Understand current trends of syntactic complexity research.\n\nReading:\n\nDurrant Ch 5.\nBiber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869\n\n\n\n\nDay4–Session 11: Analyzing grammar (2) — Hands-on activity\nObjectives: By the end of this session, students will be able to: - Conduct POS tagging with spaCy library in Python (through Google Colab). - Conduct Dependency parsing with spaCy library in Python (through Google Colab). - Conduct simple collostructional analysis.\nNote ^1: All the python codes are prepared by the instructor and shared with the students. This session does not require ability to code.\nNote ^2: The decision to use Python programming language rather than already available software is based on consideration that there is very little tools which provide stable access to the language analysis described here.\n\nConcepts covered:\n\nPOS tagging\nDependency parsing\n\n\n\nReading:\n\nSkim Durrant Ch 6. (Ignore R codes if you are not familiar.)\nSkim Kyle & Eguchi (2023)\n\n\n\n\nDay4–Session 12: Analyzing grammar (3) — Hands-on activity\nObjectives: By the end of this session, students will be able to: - Conduct linguistic complexity analysis using available tools such as TAASSC.\n\nReadings:\n\nKyle et al. (2021). ETS Research Report Series.\n\n\n\n\nDay5–Session 13: Using Large Language Models (LLMs) for linguistic annotation\nObjectives: By the end of this session, students will be able to: - Describe what LLMs are and how they are trained. - Describe the current applications of LLMs in applied linguistic research. - Provide definition of analysis tasks for LLMs supported linguistic analysis. - Write a structured prompt to control LLM behavior.\n\nReadings:\n\nMizumoto (2025)\nMizumoto et al. (2024)\n\n\n\n\nDay5–Session 14: In-class mini-project (2)\n\nGroup project time.\nPlease use the time wisely.\n\n\n\nDay5–Session 15: In-class mini-project (3) & Wrap-up\n\nFinal presentation on group project\n\nFinal Project: Guidelines - Due 2 weeks after course",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Schedule"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/schedule.html#important-notes",
-    "href": "2025/syllabus/schedule.html#important-notes",
-    "title": "Course Schedule",
-    "section": "Important Notes",
-    "text": "Important Notes\n\nAll times are Japan Standard Time (JST)\nBring your laptop to all sessions\nComplete readings before each day (see Readings)",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Syllabus",
-      "Course Schedule"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day4/index.html",
-    "href": "2025/sessions/day4/index.html",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "Day 4 introduces\n\n\n\nBy the end of Day 4, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 4:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 4: Grammar",
-      "Day 4: Analyzing grammar"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day4/index.html#overview",
-    "href": "2025/sessions/day4/index.html#overview",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "Day 4 introduces",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 4: Grammar",
-      "Day 4: Analyzing grammar"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day4/index.html#learning-objectives",
-    "href": "2025/sessions/day4/index.html#learning-objectives",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "By the end of Day 4, you will be able to:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 4: Grammar",
-      "Day 4: Analyzing grammar"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day4/index.html#schedule",
-    "href": "2025/sessions/day4/index.html#schedule",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "Table",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 4: Grammar",
-      "Day 4: Analyzing grammar"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day4/index.html#preparation",
-    "href": "2025/sessions/day4/index.html#preparation",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "Before Day 4:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 4: Grammar",
-      "Day 4: Analyzing grammar"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day2/index.html",
-    "href": "2025/sessions/day2/index.html",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units",
-    "section": "",
-    "text": "Day 2 introduces\n\n\n\nBy the end of Day 2, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 2:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 2: Vocabulary and Multiword Units (1)",
-      "Day 2: Analyzing Vocabulary and Multiword Units"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day2/index.html#overview",
-    "href": "2025/sessions/day2/index.html#overview",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units",
-    "section": "",
-    "text": "Day 2 introduces",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 2: Vocabulary and Multiword Units (1)",
-      "Day 2: Analyzing Vocabulary and Multiword Units"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day2/index.html#learning-objectives",
-    "href": "2025/sessions/day2/index.html#learning-objectives",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units",
-    "section": "",
-    "text": "By the end of Day 2, you will be able to:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 2: Vocabulary and Multiword Units (1)",
-      "Day 2: Analyzing Vocabulary and Multiword Units"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day2/index.html#schedule",
-    "href": "2025/sessions/day2/index.html#schedule",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units",
-    "section": "",
-    "text": "Table",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 2: Vocabulary and Multiword Units (1)",
-      "Day 2: Analyzing Vocabulary and Multiword Units"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day2/index.html#preparation",
-    "href": "2025/sessions/day2/index.html#preparation",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units",
-    "section": "",
-    "text": "Before Day 2:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 2: Vocabulary and Multiword Units (1)",
-      "Day 2: Analyzing Vocabulary and Multiword Units"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/index.html",
-    "href": "2025/sessions/index.html",
-    "title": "Course Sessions",
-    "section": "",
-    "text": "Under construction …",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Course Sessions"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/index.html#overview",
-    "href": "2025/sessions/index.html#overview",
-    "title": "Course Sessions",
-    "section": "",
-    "text": "Under construction …",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Course Sessions"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html",
-    "href": "2025/sessions/day1/index.html",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "Day 1 introduces\n\n\n\nBy the end of Day 1, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 1:\n\n\n\n\nDue Tomorrow: Hands-on Assignment 1\nComplete basic corpus search exercise",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 1: Introduction & Corpus Basics",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#overview",
-    "href": "2025/sessions/day1/index.html#overview",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "Day 1 introduces",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 1: Introduction & Corpus Basics",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#learning-objectives",
-    "href": "2025/sessions/day1/index.html#learning-objectives",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "By the end of Day 1, you will be able to:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 1: Introduction & Corpus Basics",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#schedule",
-    "href": "2025/sessions/day1/index.html#schedule",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "Table",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 1: Introduction & Corpus Basics",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#preparation",
-    "href": "2025/sessions/day1/index.html#preparation",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "Before Day 1:",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 1: Introduction & Corpus Basics",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#assignments",
-    "href": "2025/sessions/day1/index.html#assignments",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "Due Tomorrow: Hands-on Assignment 1\nComplete basic corpus search exercise",
-    "crumbs": [
-      "Home",
-      "Sessions",
-      "Day 1: Introduction & Corpus Basics",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "resources/code-examples/index.html",
-    "href": "resources/code-examples/index.html",
-    "title": "Code Examples",
-    "section": "",
-    "text": "Python Notebooks\nSpreadsheet Templates",
-    "crumbs": [
-      "Home",
-      "Resources",
-      "Code Examples"
-    ]
-  },
-  {
-    "objectID": "resources/code-examples/index.html#available-resources",
-    "href": "resources/code-examples/index.html#available-resources",
-    "title": "Code Examples",
-    "section": "",
-    "text": "Python Notebooks\nSpreadsheet Templates",
-    "crumbs": [
-      "Home",
-      "Resources",
-      "Code Examples"
-    ]
-  },
-  {
-    "objectID": "resources/tools/index.html",
-    "href": "resources/tools/index.html",
-    "title": "Tools and Software",
-    "section": "",
-    "text": "AntConc Guide\nBYU Corpora Guide\nPython Setup\nJASP Guide",
-    "crumbs": [
-      "Home",
       "Resources",
       "Tools",
-      "Tools and Software"
+      "English Corpora Guide"
     ]
   },
   {
-    "objectID": "resources/tools/index.html#available-guides",
-    "href": "resources/tools/index.html#available-guides",
-    "title": "Tools and Software",
+    "objectID": "resources/tools/byu-corpora-guide.html#overview",
+    "href": "resources/tools/byu-corpora-guide.html#overview",
+    "title": "English Corpora Guide",
     "section": "",
-    "text": "AntConc Guide\nBYU Corpora Guide\nPython Setup\nJASP Guide",
+    "text": "The EnglishCorpora.org, formally BYU (Brigham Young University) corpora, provide web-based interfaces to some of the largest and most widely-used corpora in the world. These include COCA (Corpus of Contemporary American English), BNC (British National Corpus), and many others.",
     "crumbs": [
-      "Home",
       "Resources",
       "Tools",
-      "Tools and Software"
+      "English Corpora Guide"
     ]
   },
   {
-    "objectID": "resources/index.html",
-    "href": "resources/index.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Course resources organized by category.",
+    "objectID": "resources/tools/byu-corpora-guide.html#available-corpora",
+    "href": "resources/tools/byu-corpora-guide.html#available-corpora",
+    "title": "English Corpora Guide",
+    "section": "Available Corpora",
+    "text": "Available Corpora\n\nMajor English Corpora\n\nCOCA (Corpus of Contemporary American English): 1 billion words, 1990-2019\nBNC (British National Corpus): 100 million words\nGloWbE (Global Web-Based English): 1.9 billion words\nNOW (News on the Web): 14+ billion words, updated daily\nCOHA (Corpus of Historical American English): 400 million words, 1810-2009\n\n\n\nSpecialized Corpora\n\nSOAP (Corpus of American Soap Operas): 100 million words\nTIME (TIME Magazine Corpus): 100 million words, 1920s-2000s\nWikipedia Corpus: 1.9 billion words",
     "crumbs": [
-      "Home",
       "Resources",
-      "Resources"
+      "Tools",
+      "English Corpora Guide"
     ]
   },
   {
-    "objectID": "resources/index.html#overview",
-    "href": "resources/index.html#overview",
-    "title": "Resources",
-    "section": "",
-    "text": "Course resources organized by category.",
+    "objectID": "resources/tools/byu-corpora-guide.html#registration-and-access",
+    "href": "resources/tools/byu-corpora-guide.html#registration-and-access",
+    "title": "English Corpora Guide",
+    "section": "Registration and Access",
+    "text": "Registration and Access\n\nFree Access\n\nVisit english-corpora.org\nClick on desired corpus\nRegister for free account\nLimited to 20 queries per day\n\n\n\nAcademic License (or through purchase)\n\nExtended query limits\nDownload capabilities\nAvailable through institution",
     "crumbs": [
-      "Home",
       "Resources",
-      "Resources"
+      "Tools",
+      "English Corpora Guide"
     ]
   },
   {
-    "objectID": "resources/index.html#categories",
-    "href": "resources/index.html#categories",
-    "title": "Resources",
-    "section": "Categories",
-    "text": "Categories\n\nTools and Software\nCorpora\nCode Examples\nCourse Readings",
+    "objectID": "resources/tools/byu-corpora-guide.html#basic-interface-navigation",
+    "href": "resources/tools/byu-corpora-guide.html#basic-interface-navigation",
+    "title": "English Corpora Guide",
+    "section": "Basic Interface Navigation",
+    "text": "Basic Interface Navigation\n\nSearch Types\n\nList: Find all forms of a word\nChart: See frequency over time\nCollocates: Find co-occurring words\nCompare: Compare two corpora\nKWIC: Keywords in context\n\n\n\nQuery Syntax\n\nBasic Searches\n\nSingle word: corpus\nPhrase: \"corpus linguistics\"\nWildcard: analyz* (analyze, analyzed, analyzing)\n\n\n\nAdvanced Searches\n\nPart of speech: [run].[v*] (run as verb)\nLemma: [run] (all forms of run)\nSynonyms: [=beautiful]",
     "crumbs": [
-      "Home",
       "Resources",
-      "Resources"
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#course-specific-applications",
+    "href": "resources/tools/byu-corpora-guide.html#course-specific-applications",
+    "title": "English Corpora Guide",
+    "section": "Course-Specific Applications",
+    "text": "Course-Specific Applications\n\nSession Activities\n\nDay 1: Basic Searches\n\nWord frequency comparisons\nRegional variations\nContext examination\n\n\n\nDay 2: Collocation Analysis\n\nFinding collocates\nMutual information scores\nComparing across registers\n\n\n\nDay 3: Genre Analysis\n\nRegister comparisons\nAcademic vs. spoken language\nDiscipline-specific language",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#tips-for-effective-use",
+    "href": "resources/tools/byu-corpora-guide.html#tips-for-effective-use",
+    "title": "English Corpora Guide",
+    "section": "Tips for Effective Use",
+    "text": "Tips for Effective Use\n\nQuery Optimization\n\nStart with simple searches\nUse wildcards carefully\nLimit by genre/time when needed\nSave useful queries\n\n\n\nData Export\n\nCopy KWIC lines\nExport frequency lists\nSave collocation data\nDocument sources properly",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#common-research-applications",
+    "href": "resources/tools/byu-corpora-guide.html#common-research-applications",
+    "title": "English Corpora Guide",
+    "section": "Common Research Applications",
+    "text": "Common Research Applications\n\nLanguage Teaching\n\nAuthentic examples\nFrequency information\nRegister awareness\nError correction evidence\n\n\n\nLinguistic Research\n\nVariation studies\nHistorical change\nGenre analysis\nCollocation patterns",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#comparison-with-antconc",
+    "href": "resources/tools/byu-corpora-guide.html#comparison-with-antconc",
+    "title": "English Corpora Guide",
+    "section": "Comparison with AntConc",
+    "text": "Comparison with AntConc\n\n\n\nFeature\nBYU Corpora\nAntConc\n\n\n\n\nCorpus size\nVery large\nUser-defined\n\n\nInterface\nWeb-based\nDesktop\n\n\nQuery speed\nFast\nDepends on size\n\n\nCustomization\nLimited\nFull control\n\n\nCost\nFree/Subscription\nFree",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#troubleshooting",
+    "href": "resources/tools/byu-corpora-guide.html#troubleshooting",
+    "title": "English Corpora Guide",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nLogin Issues\n\nClear browser cookies\nTry different browser\nCheck registration email\n\n\n\nQuery Problems\n\nVerify syntax\nCheck corpus availability\nReduce complexity\n\n\n\nSlow Performance\n\nSimplify queries\nTry off-peak hours\nUse smaller corpus first",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#best-practices",
+    "href": "resources/tools/byu-corpora-guide.html#best-practices",
+    "title": "English Corpora Guide",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nCitation\n\nAlways cite corpus used\nInclude access date\nNote query parameters\n\nResearch Ethics\n\nRespect query limits\nDon’t share login credentials\nAcknowledge corpus creators\n\nPedagogical Use\n\nPrepare queries in advance\nHave backup examples\nGuide student exploration",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#additional-resources",
+    "href": "resources/tools/byu-corpora-guide.html#additional-resources",
+    "title": "English Corpora Guide",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nBYU Corpora Help\nVideo Tutorials\nQuery Syntax Guide\nDavies, M. (2008-). The Corpus of Contemporary American English (COCA)\n\n\nFor help with BYU corpora in class activities, see session-specific guides.",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
     ]
   },
   {
@@ -1185,7 +2586,6 @@
     "section": "",
     "text": "Available Corpora\nLearner Corpora",
     "crumbs": [
-      "Home",
       "Resources",
       "Corpora",
       "Corpora Resources"
@@ -1198,7 +2598,6 @@
     "section": "",
     "text": "Available Corpora\nLearner Corpora",
     "crumbs": [
-      "Home",
       "Resources",
       "Corpora",
       "Corpora Resources"
@@ -1209,9 +2608,8 @@
     "href": "resources/corpora/available-corpora.html",
     "title": "Available Corpora",
     "section": "",
-    "text": "Content to be added.",
+    "text": "Content to be added.\n\nCorpusMate\nMontclair State University - CORAL lab",
     "crumbs": [
-      "Home",
       "Resources",
       "Corpora",
       "Available Corpora"
@@ -1222,120 +2620,11 @@
     "href": "resources/corpora/available-corpora.html#placeholder",
     "title": "Available Corpora",
     "section": "",
-    "text": "Content to be added.",
+    "text": "Content to be added.\n\nCorpusMate\nMontclair State University - CORAL lab",
     "crumbs": [
-      "Home",
       "Resources",
       "Corpora",
       "Available Corpora"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Linguistic Data Analysis I",
-    "section": "",
-    "text": "This intensive 5-day graduate course introduces students to corpus linguistics and learner language analysis. Through hands-on activities and practical applications, you’ll learn to use computational tools to analyze linguistic data, with a special focus on learner corpora.\n\n\n\n\n\n\nQuick Links\n\n\n\n\n📋 Course Syllabus\n📅 Schedule\n💻 Sessions\n📝 Assignments\n🔧 Resources",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#welcome-to-linguistic-data-analysis-i",
-    "href": "index.html#welcome-to-linguistic-data-analysis-i",
-    "title": "Linguistic Data Analysis I",
-    "section": "",
-    "text": "This intensive 5-day graduate course introduces students to corpus linguistics and learner language analysis. Through hands-on activities and practical applications, you’ll learn to use computational tools to analyze linguistic data, with a special focus on learner corpora.\n\n\n\n\n\n\nQuick Links\n\n\n\n\n📋 Course Syllabus\n📅 Schedule\n💻 Sessions\n📝 Assignments\n🔧 Resources",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#course-overview",
-    "href": "index.html#course-overview",
-    "title": "Linguistic Data Analysis I",
-    "section": "Course Overview",
-    "text": "Course Overview\n\n\n\nWhat You’ll Learn\n\nCorpus analysis techniques\nLearner language analysis methods\nPractical applications with real corpora\nResearch methodology in corpus linguistics\n\n\n\n\nKey Tools\n\nAntConc - Corpus analysis software\nJASP - Statistical analysis\nPython - Text processing (via Google Colab)\nBYU Corpora - Online corpus interfaces\nExcel/Google Sheets - Data management",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#course-structure",
-    "href": "index.html#course-structure",
-    "title": "Linguistic Data Analysis I",
-    "section": "Course Structure",
-    "text": "Course Structure\nThe course is organized into 5 intensive days:\n\n\n\nDay\nTheme\nSessions\n\n\n\n\nDay 1\nIntroduction & Corpus Basics\n\n\n\nDay 2\nAnalysis of Vocabulary\n\n\n\nDay 3\nAnalysis of Multiword Units\n\n\n\nDay 4\nAnalysis of Grammar\n\n\n\nDay 5\nAdvanced Topics & Projects",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#prerequisites",
-    "href": "index.html#prerequisites",
-    "title": "Linguistic Data Analysis I",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\n\n\n\n\n\nBefore the Course\n\n\n\n\nTechnical Requirements\n\nComputer with internet connection\n4GB RAM minimum (8GB recommended)\n2GB free storage space\n\nSoftware to Install\n\nAntConc (free)\nJASP (free)\nText editor (e.g., VS Code, Notepad++)\nGoogle account for Colab\n\nBackground Knowledge\n\nBasic familiarity with Excel/Google Sheets\nNo programming experience required\nInterest in language analysis",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#getting-started",
-    "href": "index.html#getting-started",
-    "title": "Linguistic Data Analysis I",
-    "section": "Getting Started",
-    "text": "Getting Started\n\nReview the syllabus for course policies and expectations\nCheck the detailed schedule for session timings\nInstall required software using our setup guides\nBrowse the resources section for helpful materials",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#instructor-information",
-    "href": "index.html#instructor-information",
-    "title": "Linguistic Data Analysis I",
-    "section": "Instructor Information",
-    "text": "Instructor Information\nInstructor: Masaki Eguchi, Ph.D.\nEmail: [instructor.email@tohoku.ac.jp]\nOffice: [Building, Room Number]\nOffice Hours: [Days and Times]",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#course-communication",
-    "href": "index.html#course-communication",
-    "title": "Linguistic Data Analysis I",
-    "section": "Course Communication",
-    "text": "Course Communication\n\n\n\n\n\n\nStay Connected\n\n\n\n\nCourse Website: This site\nCommunication: [Platform details]\nAssignment Submission: [Details]\nQuestions: [How to get help]",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#acknowledgments",
-    "href": "index.html#acknowledgments",
-    "title": "Linguistic Data Analysis I",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nThis course builds on materials and approaches from:\n\nDr. Kris Kyle (University of Oregon) for his previous corpus linguistics/NLP classes from University of Hawai’i and Oregon.\nDr. Andrew Heiss (Georgia State University) for his Quarto based materials and website settings.",
-    "crumbs": [
-      "Home",
-      "Course Information",
-      "Home"
     ]
   }
 ]

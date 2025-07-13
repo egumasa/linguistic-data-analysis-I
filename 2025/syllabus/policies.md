@@ -7,38 +7,6 @@ nav_order: 3
 
 # Course Policies
 
-## Attendance Policy
-
-- **Attendance is mandatory** for this intensive course
-
-## Assignment Submission
-
-### Deadlines
-- All assignments are due at 10:30 AM on the specified day
-- Late submissions will receive a 10% penalty per day
-- Extensions may be granted for documented emergencies
-
-### Submission Format
-- Submit all assignments via the course management system (google classroom?)
-- Use the provided templates when available
-- File naming convention: `LastName_Assignment#.ext`
-- Acceptable formats: .docx, .pdf, .ipynb (for Python notebooks)
-
-## Academic Integrity
-
-### Plagiarism
-
-### Collaboration
-
-## Technology Policy
-
-### Required Technology
-- Bring a laptop to every session
-- Ensure all required software is installed 
-
-### Classroom Etiquette
-- Laptops should be used for course activities only
-
 ## Grading
 
 ### Grade Distribution
@@ -53,33 +21,55 @@ nav_order: 3
 - D: 60-69%
 - F: Below 60%
 
-### Participation Grade Criteria
+
+## Attendance Policy
+
+- **Attendance is mandatory** for this intensive course
+
+
+
+## Assignment Submission
+
+### Deadlines
+- All assignments are due at 10:30 AM on the specified day
+- Late submissions will receive a 10% penalty per day
+- Extensions may be granted for documented emergencies
+
+### Submission Format
+- Submit all assignments via the course management system (google classroom?)
+- Use the provided templates when available
+- File naming convention: `LastName_Assignment#.ext`
+- Acceptable formats: .docx, .pdf, .ipynb (for Python notebooks)
+
+### Plagiarism
+
+### Collaboration
+
+## Technology Policy
+
+### Required Technology
+- Bring a laptop to every session
+- Ensure all required software is installed 
+
+### Classroom Etiquette
+- Laptops should be used for course activities only
 
 
 ## Communication
 
-### Contacting the Instructor
-- Email: 
-- Response time: Within 24 hours on weekdays
-
 
 ### Course Announcements
 
+- Course announcements are made through Google Classroom.
+
+### Materials Sharing
+
+- Materials (e.g., slides) are shared through this website.
 
 ## Accommodations
 
 ### Language Support
 
-
-
-## Final Project
-
-### Requirements
-
-
-### Timeline
-
-## Course Evaluation
 
 ## Additional Policies
 

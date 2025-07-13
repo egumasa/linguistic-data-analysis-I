@@ -12,4 +12,3 @@ Course resources organized by category.
 - [Tools and Software](tools/)
 - [Corpora](corpora/)
 - [Code Examples](code-examples/)
-- [Course Readings](readings/)

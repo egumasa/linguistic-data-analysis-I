@@ -1,0 +1,140 @@
+---
+title: "Session 2: Corpus as a scientific method"
+format: 
+  revealjs:
+    theme: ["default", "../../css/slides.scss"]
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+    controls: true
+    progress: true
+    hash: true
+    history: false
+    keyboard: true
+    overview: true
+    center: true
+    touch: true
+    loop: false
+    rtl: false
+    fragments: true
+    embedded: false
+    help: true
+    showNotes: false
+    autoSlide: 0
+    autoSlideStoppable: true
+    mouseWheel: false
+    hideAddressBar: true
+    previewLinks: false
+    transitionSpeed: default
+    backgroundTransition: fade
+    parallaxBackgroundImage: ""
+    parallaxBackgroundSize: ""
+    parallaxBackgroundHorizontal: ""
+    parallaxBackgroundVertical: ""
+  # html:
+  #   theme: 
+  #     - litera
+  #     - ../../css/style.scss
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-location: left
+  #   toc-title: "Contents"
+  #   number-sections: true
+  #   embed-resources: true
+  #   standalone: true
+  #   code-fold: true
+  #   code-summary: "Show code"
+  #   code-tools: true
+  #   smooth-scroll: true
+  #   link-external-icon: true
+  #   link-external-newwindow: true
+  #   date-format: "MMMM D, YYYY"
+  #   css-min: true
+  #   html-math-method: katex
+  #   highlight-style: github
+  #   anchor-sections: true
+  #   fig-cap-location: bottom
+  #   tbl-cap-location: top
+---
+
+# Housekeeping
+
+
+# Session overview
+
+
+## Objectives
+
+- Define corpus linguistics as an empirical methodology
+- Explain key limitations of introspection in linguistic research
+- Describe the role of frequency data and patterns in corpus analysis
+- Identify and explain the basic steps in corpus-based research
+- Reflect on their own stance toward data, intuition, and linguistic evidence
+
+---
+
+# What corpus is
+
+- Searchable digital collection
+- Collection of real-world language use
+- Often accompanied by meta-data describing the contextual parameters
+
+
+---
+
+# Common criticism to corpus linguistics
+
+## Common criticism
+
+1. corpora are usage data and thus of no use in studying linguistic knowledge;  
+2. corpora and the data derived from them are necessarily incomplete;
+3. corpora contain only linguistic forms (represented as graphemic strings), but no information about the semantics, pragmatics, etc. of these forms; and  
+4. corpora do not contain negative evidence, i.e., they can only tell us what is possible in a given language, but not what is not possible.
+
+---
+
+# 
+
+- Intuition data is not as reliable or valid as corpus data.
+- However, intuition can provide a hypothesis to test
+
+
+---
+
+# Test our intuitions
+
+List the following words in order of the frequency in English
+
+
+- <List 5 words here; with high, mid, low frequency band>
+
+---
+
+- Corpus is at least gives you the same answer
+
+
+---
+
+# Limitations of corpus
+
+- provides distributional information, but not interpretation
+
+- 
+
+- Limited contextual information
+
+- 
+
+
+---
+
+# Summary
+
+
+# Reflection
+
+- How is the use of speaker knowledge differ in generative linguistic tradition vs the corpus linguistics? Use intuition and interpretation.
+
+
+
+# Next step

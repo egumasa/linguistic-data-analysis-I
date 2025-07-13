@@ -1,0 +1,379 @@
+---
+title: "Session 1: Introduction"
+format: 
+  revealjs:
+    theme: ["default", "../../css/slides.scss"]
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+    controls: true
+    progress: true
+    hash: true
+    history: false
+    keyboard: true
+    overview: true
+    center: true
+    touch: true
+    loop: false
+    rtl: false
+    fragments: true
+    embedded: false
+    help: true
+    showNotes: false
+    autoSlide: 0
+    autoSlideStoppable: true
+    mouseWheel: false
+    hideAddressBar: true
+    previewLinks: false
+    transitionSpeed: default
+    backgroundTransition: fade
+    parallaxBackgroundImage: ""
+    parallaxBackgroundSize: ""
+    parallaxBackgroundHorizontal: ""
+    parallaxBackgroundVertical: ""
+  # html:
+  #   theme: 
+  #     - litera
+  #     - ../../css/style.scss
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-location: left
+  #   toc-title: "Contents"
+  #   number-sections: true
+  #   embed-resources: true
+  #   standalone: true
+  #   code-fold: true
+  #   code-summary: "Show code"
+  #   code-tools: true
+  #   smooth-scroll: true
+  #   link-external-icon: true
+  #   link-external-newwindow: true
+  #   date-format: "MMMM D, YYYY"
+  #   css-min: true
+  #   html-math-method: katex
+  #   highlight-style: github
+  #   anchor-sections: true
+  #   fig-cap-location: bottom
+  #   tbl-cap-location: top
+---
+
+# Welcome to Linguistic Data Analysis I
+
+## Instructor
+
+
+---
+
+# What We'll Cover Today
+
+## Session 1 Agenda
+
+1. **Introduction to Corpus Linguistics**
+   - What is a corpus?
+   - Why use corpora in linguistics?
+   - Types of linguistic corpora
+
+2. **Getting Started**
+   - Course tools and resources
+   - First hands-on activity
+
+## Session 1 Agenda (Cont'd)
+
+3. **Course Introduction**
+   - Objectives and learning outcomes
+   - Course structure and expectations
+
+
+---
+
+# Introduction to Corpus linguistics
+
+## Corpus linguistics
+
+**Corpus linguistics** = the investigation of linguistic research question that have been framed _in terms of the conditional distribution of linguisitc phenomena_ in a _linguistic corpus_.
+
+(Stefanowitsch, 2020, p. 56)
+
+## What does it mean?
+
+## Corpus linguistics =
+
+- the investigation of **linguistic research question**
+- that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
+- in a _**linguistic corpus**_.
+
+(Stefanowitsch, 2020, p. 56)
+
+---
+
+## Corpus
+
+## Linguistic Corpus
+
+(Linguistic) Corpus = 
+
+- "a collection of samples of language use" that is:
+  - authentic
+  - representative
+  - large
+
+(To be explored more in session 2)
+
+## What do corpora contain?
+
+::: {style="font-size: 75%;"}
+
+- language samples produced in the **wild** for specific communicative purposes
+  - **Written language**: 
+    - Magazines
+    - News Paper
+    - Blog
+  - **Spoken language**:
+    - *transcriptions* of spoken exchanges
+      - TV or radio shows
+      - Conversations
+
+:::
+
+## Examples
+
+## 
+
+![COCA example](../../assets/session-1/COCA-context.png)
+
+##
+
+![COCA example](../../assets/session-1/COCA-context.png)
+
+
+## Examples
+
+## Corpus Of Contemporary American (COCA)
+
+::: {style="font-size: 50%;"}
+
+| Genre | # texts | # words | Explanation |
+|---|---|----|-------------|
+| Spoken | 44,803 | 127,396,932 | Transcripts of unscripted conversation from more than 150 different TV and radio programs (examples: All Things Considered (NPR), Newshour (PBS), Good Morning America (ABC), Oprah) |
+| Fiction | 25,992 | 119,505,305 | Short stories and plays from literary magazines, children's magazines, popular magazines, first chapters of first edition books 1990-present, and fan fiction. |
+| Magazines | 86,292 | 127,352,030 | Nearly 100 different magazines, with a good mix between specific domains like news, health, home and gardening, women, financial, religion, sports, etc. |
+| Newspapers | 90,243 | 122,958,016 | Newspapers from across the US, including: USA Today, New York Times, Atlanta Journal Constitution, San Francisco Chronicle, etc. Good mix between different sections of the newspaper, such as local news, opinion, sports, financial, etc. |
+| Academic | 26,137 | 120,988,361 | More than 200 different peer-reviewed journals. These cover the full range of academic disciplines, with a good balance among education, social sciences, history, humanities, law, medicine, philosophy/religion, science/technology, and business |
+
+:::
+
+## Corpus of Contemporary American (COCA)
+
+::: {style="font-size: 50%;"}
+
+| Genre | # texts | # words | Explanation |
+|---|---|----|-------------|
+| Web (Genl) | 88,989 | 129,899,427 | Classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages (by Serge Sharoff). Taken from the US portion of the GloWbE corpus. |
+| Web (Blog) | 98,748 | 125,496,216 | Texts that were classified by Google as being blogs. Further classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages. Taken from the US portion of the GloWbE corpus. |
+| TV/Movies | 23,975 | 129,293,467 | Subtitles from OpenSubtitles.org, and later the TV and Movies corpora. Studies have shown that the language from these shows and movies is even more colloquial / core than the data in actual "spoken corpora". |
+| **Total** | **485,179** | **1,002,889,754** | |
+
+- [see more details](https://www.english-corpora.org/coca/help/coca2020_overview.pdf)
+:::
+
+
+## Examples
+
+Insert another example
+
+
+## Corpus linguistics =
+
+- the investigation of **linguistic research question**
+
+- that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
+
+::: {style="color: gray"}
+- in a _**linguistic corpus**_.
+:::
+
+(Stefanowitsch, 2020, p. 56)
+
+---
+
+## The conditional distribution of linguistic phenomena
+
+## Corpus linguistics looks into **(conditional) distribution** 
+
+- (roughly speaking) frequency (= occurrence) of a phenomena
+  
+  → How many times X occurs?
+
+- **conditional** 
+
+  → How does X occur given Y?
+
+
+## Examples
+
+![Frequency of Dog](../../assets/session-1/DOG.png)
+
+
+## More about conditional distribution
+
+Segment corpus and calculate occurrences by: 
+
+- genres (written vs spoken)
+- year (1970s vs 2000s)
+- geographical region (British vs American)
+- etc.
+
+## Conditional distribution of Dog across genre and year
+
+![Dog by section](../../assets/session-1/conditional-DOG.png)
+
+---
+
+## Linguistic phenomena
+
+- We have mostly talked about *word*.
+- However, corpus linguists are interested in more than words.
+
+Examples: 
+
+- Multiword Units
+- Grammar
+- Discourse
+
+## Multiword Units (More on Day 3)
+
+With corpus methods, we can investigate how two or more words co-occur together.
+
+- What does the word "dog" occur together in English?
+
+- Any guesses?
+
+## Collocates
+
+In COCA, the following word co-occur with "dog":
+(Collocates = words that frequently co-occur with the node word.)
+
+<insert table>
+
+
+## Fill in the blank
+
+- "On the other _____"
+
+- How do you know?
+
+
+## Corpus gives you some ideas
+
+- **Simple answer**: They are used together so often.
+- **Corpus answer**: Given the sequence "on the other", the probability of seeing the word "hand" next is very high.
+  → Their **Strengths Of Association (SOA)** is high.
+
+<insert >
+
+- We will cover how to calculate simple SOA measures on Day 3.
+
+
+## Grammar (More on Day 4)
+
+We can do similar with grammar (or morpho-syntax).
+
+- How often do we expect "by X" construction in passive construction.
+
+## Frequency of "by X" in passive construction
+
+<insert>
+
+
+## Corpus linguistics =
+
+- the investigation of **linguistic research question**
+
+- that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
+
+- in a _**linguistic corpus**_.
+
+## Linguistic Research Questions
+
+Examples: 
+
+Basic corpus research
+
+- What are relationships between processing speed and language frequency
+
+Learner Corpus Research:
+
+- What kind of vocabulary do second-language learners with varying proficiency levels produce?
+
+
+---
+
+# About this course
+
+## Course description
+
+::: {style="font-size: 75%;"}
+
+This 5-day introduction:
+
+- covers key concepts in corpus linguistics and learner corpus research
+
+- teaches you how to conduct simple corpus searches using Concordance software
+
+- gives you an overview of methods to investigate conditional distributions (e.g., frequency, co-occurrences) of vocabulary, multiword units, and grammatical items.
+
+- introduces foundational methods to identify linguisitic phenomena using corpus and how to know about their distribution
+
+- discusses important applications of corpus methods in applied linguistic (second language) research
+
+:::
+
+## About the course website
+
+::: {style="font-size: 75%;"}
+
+The course materials are available through the following two:
+
+- Course website
+  - We use the website to communicate course schedules, plans, and slides.
+
+- Google Classroom
+  - We use Google Classroom for assignment submission, discussion forum, and distributing other materials (e.g., Readings). 
+
+:::
+
+## Session overview
+
+::: {style="font-size: 75%;"}
+
+| Day | Theme | Sessions |
+|-----|-------|----------|
+| **Day 1** | Introduction & Corpus Basics |  |
+| **Day 2** | Analysis of Vocabulary & Multiword Units (1) |  |
+| **Day 3** | Analysis of Vocabulary & Multiword Units (2) | |
+| **Day 4** | Analysis of Grammar |  |
+| **Day 5** | Advanced Topics & Projects |  |
+
+:::
+
+## Daily schedule
+
+
+
+| Time | Activity |
+|------|----------|
+| 10:30-12:00 | Session 1 |
+| 12:00-13:00 | Lunch break |
+| 13:00-14:30 | Session 2 |
+| 14:30-14:40 | Break |
+| 14:40-16:10 | Session 3 |
+
+
+# Next session
+
+We talk more about why we care about corpus.
+
+
+## If we have time...
+
+Move to the next part.

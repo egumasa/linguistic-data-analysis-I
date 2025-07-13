@@ -1,0 +1,81 @@
+---
+title: "Session 4: Analyzing Vocabulary"
+format: 
+  revealjs:
+    theme: ["default", "../../css/slides.scss"]
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+    controls: true
+    progress: true
+    hash: true
+    history: false
+    keyboard: true
+    overview: true
+    center: true
+    touch: true
+    loop: false
+    rtl: false
+    fragments: true
+    embedded: false
+    help: true
+    showNotes: false
+    autoSlide: 0
+    autoSlideStoppable: true
+    mouseWheel: false
+    hideAddressBar: true
+    previewLinks: false
+    transitionSpeed: default
+    backgroundTransition: fade
+    parallaxBackgroundImage: ""
+    parallaxBackgroundSize: ""
+    parallaxBackgroundHorizontal: ""
+    parallaxBackgroundVertical: ""
+  # html:
+  #   theme: 
+  #     - litera
+  #     - ../../css/style.scss
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-location: left
+  #   toc-title: "Contents"
+  #   number-sections: true
+  #   embed-resources: true
+  #   standalone: true
+  #   code-fold: true
+  #   code-summary: "Show code"
+  #   code-tools: true
+  #   smooth-scroll: true
+  #   link-external-icon: true
+  #   link-external-newwindow: true
+  #   date-format: "MMMM D, YYYY"
+  #   css-min: true
+  #   html-math-method: katex
+  #   highlight-style: github
+  #   anchor-sections: true
+  #   fig-cap-location: bottom
+  #   tbl-cap-location: top
+---
+
+# Housekeeping
+
+
+# Session overview
+
+
+## Objectives
+
+---
+
+---
+
+# Summary
+
+
+# Reflection
+
+- How is the use of speaker knowledge differ in generative linguistic tradition vs the corpus linguistics? Use intuition and interpretation.
+
+
+
+# Next step

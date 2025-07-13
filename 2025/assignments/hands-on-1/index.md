@@ -1,8 +1,16 @@
 ---
 title: "Hands-on Assignment 1"
-subtitle: "Basic Corpus Analysis"
+subtitle: "Basic Concordancing"
 ---
 
-## Assignment Details
+# Assignment Details
 
 Assignment instructions and materials.
+
+
+
+
+
+
+
+

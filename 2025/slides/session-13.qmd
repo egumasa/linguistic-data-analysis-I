@@ -1,0 +1,60 @@
+---
+title: "Session 12: Hands-on Activity"
+format: 
+  revealjs:
+    theme: ["default", "../../css/slides.scss"]
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+    controls: true
+    progress: true
+    hash: true
+    history: false
+    keyboard: true
+    overview: true
+    center: true
+    touch: true
+    loop: false
+    rtl: false
+    fragments: true
+    embedded: false
+    help: true
+    showNotes: false
+    autoSlide: 0
+    autoSlideStoppable: true
+    mouseWheel: false
+    hideAddressBar: true
+    previewLinks: false
+    transitionSpeed: default
+    backgroundTransition: fade
+    parallaxBackgroundImage: ""
+    parallaxBackgroundSize: ""
+    parallaxBackgroundHorizontal: ""
+    parallaxBackgroundVertical: ""
+
+---
+
+# Housekeeping
+
+
+# Session overview
+
+
+## Objectives
+
+- 
+
+---
+
+
+---
+
+# Hands-on Activity
+
+
+
+# Reflection
+
+
+
+# Next step
