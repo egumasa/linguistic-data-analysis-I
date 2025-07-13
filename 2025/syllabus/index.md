@@ -38,7 +38,7 @@ By the end of this course, students will be able to:
 ## Navigation
 - 📅 [Detailed Schedule](schedule.md)
 - 📚 [Required Readings](readings.md)
-- 📋 [Course Policies](policies.md)
+<!-- - 📋 [Course Policies](policies.md) -->
 - 📄 [Download PDF Syllabus](Syllabus.pdf)
 :::
 
