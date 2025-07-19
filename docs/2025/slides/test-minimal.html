@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
-  <title>Linguistic Data Analysis I (Summer 2025) – Session 3: Hands-on #1</title>
+  <title>Linguistic Data Analysis I (Summer 2025) – Test Slide</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,12 +29,10 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-79b191b313bbcfec1e9f80e586a04ab3.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
@@ -129,8 +127,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Session 3: Hands-on #1</h1>
-  <p class="subtitle">Basic Concordancing</p>
+  <h1 class="title">Test Slide</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -141,249 +138,9 @@ Masaki EGUCHI, Ph.D.
 </div>
 
 </section>
-<section id="housekeeping" class="title-slide slide level1 center">
-<h1>Housekeeping</h1>
-
-</section>
-
-<section>
-<section id="session-overview" class="title-slide slide level1 center">
-<h1>Session overview</h1>
-
-</section>
-<section id="objectives" class="slide level2 center">
-<h2>Objectives</h2>
-<p>By the end of this session, you will be able to:</p>
-<ul>
-<li>Conduct Basic Corpus search, including KWIC.</li>
-<li>Sort KWIC search results to obtain qualitative observation about language use</li>
-<li>Use advanced search strings such as regular expression to fine-tune the search results</li>
-</ul>
-</section>
-<section id="task-a---simple-word-search" class="slide level2 center">
-<h2>Task A - Simple word search</h2>
-</section>
-<section id="first-corpus-search" class="slide level2 center">
-<h2>First corpus search</h2>
-<ul>
-<li><p>Let’s start our journey.</p></li>
-<li><p>First of all, let’s search the following word in COCA.</p>
-<ul>
-<li>run</li>
-</ul></li>
-</ul>
-</section>
-<section id="result-of-dog" class="slide level2 center">
-<h2>Result of dog</h2>
-<ul>
-<li>You might get slightly different results.</li>
-</ul>
-</section>
-<section id="result-of-run" class="slide level2 center">
-<h2>Result of run</h2>
-
-<img data-src="../../assets/session-3/simple-search-run.png" class="r-stretch quarto-figure-center"><p class="caption">Search - run</p><ul>
-<li>You might get slightly different results.</li>
-</ul>
-</section></section>
-<section>
-<section id="task-a.2---lemma-search" class="title-slide slide level1 center">
-<h1>Task A.2 - LEMMA search</h1>
-
-</section>
-<section id="lemma-search" class="slide level2 center">
-<h2>LEMMA search</h2>
-<ul>
-<li>Lemma is a group of word form for the head-word with grammatical inflection.</li>
-<li>You can search LEMMA in English-Corpora.org through Capital letters.</li>
-<li>The search methods will depend on the corpus tool you use.</li>
-</ul>
-</section>
-<section id="lemma-search-1" class="slide level2 center">
-<h2>LEMMA search</h2>
-
-<img data-src="../../assets/session-3/lemma-consider.png" class="r-stretch quarto-figure-center"><p class="caption">Search - consider</p></section></section>
-<section>
-<section id="task-b---basic-kwic" class="title-slide slide level1 center">
-<h1>Task B - Basic KWIC</h1>
-
-</section>
-<section id="concordances-or-kwic" class="slide level2 center">
-<h2>Concordances (or KWIC)</h2>
-<ul>
-<li><p>Now you know how many times XX occurs in COCA, you want to see the context in which XX occur.</p></li>
-<li><p>This goal can be accomplished with KWIC search.</p></li>
-</ul>
-</section>
-<section id="kwic-view" class="slide level2 center">
-<h2>KWIC view</h2>
-<ol type="1">
-<li>Go back to <code>SEARCH</code> window.</li>
-</ol>
-
-<img data-src="../../assets/session-3/SearchView.png" class="r-stretch quarto-figure-center"><p class="caption">KWIC search</p></section>
-<section id="kwic-view-1" class="slide level2 center">
-<h2>KWIC view</h2>
-<ol start="2" type="1">
-<li>Click on the + button in the search menu and enter your search word.</li>
-</ol>
-
-<img data-src="../../assets/session-3/coffee-KWIC.png" class="r-stretch quarto-figure-center"><p class="caption">KWIC search</p></section>
-<section id="kwic-view-2" class="slide level2 center">
-<h2>KWIC view</h2>
-<ol start="3" type="1">
-<li>The result is displayed. Default sort : R1 &gt; R2 &gt; R3</li>
-</ol>
-
-<img data-src="../../assets/session-3/KWIC-basic.png" class="r-stretch quarto-figure-center"><p class="caption">KWIC search</p></section>
-<section id="sorting-kwic-window" class="slide level2 center">
-<h2>Sorting KWIC window</h2>
-<ul>
-<li>Now let’s sort the results according to the position in context.</li>
-</ul>
-
-<img data-src="../../assets/session-3/KWIC-sort.png" class="r-stretch quarto-figure-center"><p class="caption">KWIC search</p></section>
-<section id="sorting-words" class="slide level2 center">
-<h2>Sorting words</h2>
-<p>You can sort the words.</p>
-
-<img data-src="../../assets/session-3/KWIC-sorting.gif" class="r-stretch quarto-figure-center"><p class="caption">KWIC search</p></section>
-<section id="lets-try-kwic" class="slide level2 center">
-<h2>Let’s Try: KWIC</h2>
-<ul>
-<li><p>Choose a word that you want to see the context for.</p></li>
-<li><p>Search the word with <code>KWIC</code>.</p></li>
-<li><p>Sort the word in the following way.</p>
-<ul>
-<li>Default: R1 &gt; R2 &gt; R3</li>
-<li>Custom 1: L1 &gt; L2 &gt; L3</li>
-<li>Custom 2: L1 &gt; R1 &gt; R2</li>
-</ul></li>
-</ul>
-</section>
-<section id="how-to-get-custom-1-and-2" class="slide level2 center">
-<h2>How to get Custom 1 and 2</h2>
-
-<img data-src="../../assets/session-3/sorting-options.gif" class="r-stretch quarto-figure-center"><p class="caption">KWIC search</p></section></section>
-<section>
-<section id="task-c---chart-function" class="title-slide slide level1 center">
-<h1>Task C - Chart function</h1>
-
-</section>
-<section id="chart-function" class="slide level2 center">
-<h2>Chart function</h2>
-<ul>
-<li><p>Now that we learned how to conduct concordance search, let’s experiment with some <code>CHART</code> function.</p></li>
-<li><p>This allows you to return frequency by sections of of COCA (= conditional frequency).</p></li>
-</ul>
-</section>
-<section id="search-radio-using-chart" class="slide level2 center">
-<h2>Search <code>radio</code> using CHART</h2>
-<ul>
-<li>Go to Search Tab, select, <code>CHART</code> and enter <code>radio</code></li>
-</ul>
-
-<img data-src="../../assets/session-3/Chart-radio.png" class="r-stretch quarto-figure-center"><p class="caption">Chart search</p></section>
-<section id="search-radio-using-chart-1" class="slide level2 center">
-<h2>Search <code>radio</code> using CHART</h2>
-<ul>
-<li>You will get the following:</li>
-</ul>
-
-<img data-src="../../assets/session-3/radio-results.png" class="r-stretch"></section></section>
-<section>
-<section id="task-d---basic-regular-expressions" class="title-slide slide level1 center">
-<h1>Task D - Basic Regular Expressions</h1>
-
-</section>
-<section id="regular-expressions" class="slide level2 center">
-<h2>Regular expressions</h2>
-<p>Regular expression (正規表現) allows you to search corpus through “pattern matching”.</p>
-<ul>
-<li>Have you ever used (*) asterisk in your web search?</li>
-<li>This is one of the regular expression (= wild card)</li>
-</ul>
-</section>
-<section id="using-wild-card-in-search" class="slide level2 center">
-<h2>Using wild card in search</h2>
-<ul>
-<li><p>Let’s go back to <code>List</code> search.</p></li>
-<li><p>Enter “a * of the”</p></li>
-<li><p>What result do you expect with this search?</p></li>
-<li><p>Don’t turn to the next page YET!!!</p></li>
-</ul>
-</section>
-<section id="result-with-a-of-the" class="slide level2 center">
-<h2>Result with <code>a * of the</code></h2>
-<ul>
-<li><img data-src="../../assets/session-3/search-with-wild-card.png"></li>
-</ul>
-</section>
-<section id="more-search-methods" class="slide level2 center">
-<h2>More search methods</h2>
-<ul>
-<li>You can check how to use other search methods in English-Corpora.org <a href="https://www.english-corpora.org/help/word-phrase.asp">here</a></li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section id="supplementary-if-there-is-still-time" class="title-slide slide level1 center">
-<h1>Supplementary (If there is still time …)</h1>
-
-</section>
-
-<section>
-<section id="task-e---collocation" class="title-slide slide level1 center">
-<h1>Task E - Collocation</h1>
-
-</section>
-<section id="collocation-search" class="slide level2 center">
-<h2>Collocation search</h2>
-<ul>
-<li>This is main topic for Day 3.</li>
-<li>Briefly, <code>collocates</code> search allows us to search for co-occurring words within specified window.</li>
-</ul>
-</section>
-<section id="collocation-search-1" class="slide level2 center">
-<h2>Collocation search</h2>
-<ol type="1">
-<li>Select <code>Collocates</code></li>
-</ol>
-
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section>
-<section id="collocation-search-2" class="slide level2 center">
-<h2>Collocation search</h2>
-<ol start="2" type="1">
-<li>Enter search word</li>
-</ol>
-
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section>
-<section id="collocation-search-3" class="slide level2 center">
-<h2>Collocation search</h2>
-<ul>
-<li>Optional enter the word to look for</li>
-</ul>
-
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section>
-<section id="collocation-search-4" class="slide level2 center">
-<h2>Collocation search</h2>
-<ol start="3" type="1">
-<li>Specify window</li>
-</ol>
-<ul>
-<li>How distant do you search for the collocates</li>
-</ul>
-
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section></section>
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
-
-</section>
-
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
-
+<section id="test-content" class="title-slide slide level1 center">
+<h1>Test Content</h1>
+<p>This is a test slide.</p>
 
 
 </section>
@@ -401,7 +158,6 @@ Masaki EGUCHI, Ph.D.
   <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -416,19 +172,18 @@ Masaki EGUCHI, Ph.D.
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': false,
+'controlsAuto': true,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: true,
+        controls: false,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
@@ -445,7 +200,7 @@ Masaki EGUCHI, Ph.D.
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: false,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -461,7 +216,7 @@ Masaki EGUCHI, Ph.D.
         respondToHashChanges: true,
 
         // Push each slide change to the browser history
-        history: false,
+        history: true,
 
         // Enable keyboard shortcuts for navigation
         keyboard: true,
@@ -474,7 +229,7 @@ Masaki EGUCHI, Ph.D.
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
@@ -500,7 +255,7 @@ Masaki EGUCHI, Ph.D.
 
         // Flags if the presentation is running in an embedded mode,
         // i.e. contained within a limited portion of the screen
-        embedded: true,
+        embedded: false,
 
         // Flags if we should show a help overlay when the questionmark
         // key is pressed
@@ -557,7 +312,7 @@ Masaki EGUCHI, Ph.D.
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'fade',
+        backgroundTransition: 'none',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
@@ -595,7 +350,7 @@ Masaki EGUCHI, Ph.D.
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,

@@ -130,6 +130,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Session 5: Hands-on activity #2</h1>
+  <p class="subtitle">Frequency list</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -140,61 +141,182 @@ Masaki EGUCHI, Ph.D.
 </div>
 
 </section>
+<section>
 <section id="housekeeping" class="title-slide slide level1 center">
 <h1>Housekeeping</h1>
 
 </section>
-
-<section>
-<section id="session-overview" class="title-slide slide level1 center">
-<h1>Session overview</h1>
-
+<section id="session-overview" class="slide level2">
+<h2>Session overview</h2>
 </section>
-<section id="objectives" class="slide level2 center">
+<section id="objectives" class="slide level2">
 <h2>Objectives</h2>
 <ul>
 <li>Compute frequency of a single-word lexical item in reference corpora</li>
 <li>Derive vocabulary frequency list using concordancing software (e.g., AntConc)</li>
+<li>Apply tokenization on the Japanese language corpus for frequency analysis</li>
 <li>Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="introduction" class="title-slide slide level1 center">
-<h1>Introduction</h1>
-
-</section>
-<section id="antconc" class="slide level2 center">
-<h2>AntConc</h2>
+<section id="introduction" class="slide level2">
+<h2>Introduction</h2>
 <ul>
 <li>AntConc is free concordancing tool.</li>
 <li>Developed by Laurence ANTHONY.</li>
 </ul>
 </section>
-<section id="task-2-creating-a-frequency-list" class="slide level2 center">
-<h2>Task 2: Creating a frequency list</h2>
+<section id="hands-on-activity" class="slide level2">
+<h2>Hands-on Activity</h2>
 </section>
-<section id="task-3-vocabulary-profiling-through-lextutor" class="slide level2 center">
-<h2>Task 3: Vocabulary Profiling through LexTutor</h2>
+<section id="task-1-loading-a-corpus-to-antconc" class="slide level2">
+<h2>Task 1: Loading a corpus to AntConc</h2>
 </section>
-<section id="task-4-vocabulary-profiling-through-antwordprofiler" class="slide level2 center">
-<h2>Task 4: Vocabulary Profiling through AntWordProfiler</h2>
+<section id="open-antconc" class="slide level2">
+<h2>Open AntConc</h2>
+
+<img data-src="../../assets/session-5/AntConc-Landing.png" class="r-stretch quarto-figure-center"><p class="caption">AntConc</p></section>
+<section id="antconc-window" class="slide level2">
+<h2>AntConc window</h2>
+
+<img data-src="../../assets/session-5/AntConc-menu.png" class="r-stretch quarto-figure-center"><p class="caption">AntConc2</p></section>
+<section id="load-a-corpus" class="slide level2">
+<h2>Load a corpus</h2>
+<p>Now, let’s load a corpus.</p>
+
+<img data-src="../../assets/session-5/Loading-corpus.gif" class="r-stretch quarto-figure-center"><p class="caption">Load-corpus</p></section>
+<section id="task-1-creating-a-frequency-list" class="slide level2">
+<h2>Task 1: Creating a frequency list</h2>
 </section>
-<section id="task-5-tokenizing-non-english-language-using-tagant" class="slide level2 center">
-<h2>Task 5: Tokenizing Non-English language using TagAnt</h2>
+<section id="word" class="slide level2">
+<h2>Word</h2>
+<p>Let’s now create a frequency list</p>
+<ol type="1">
+<li><p>Select <code>Word</code> analysis option</p></li>
+<li><p>Set <code>Min. Freq</code> and <code>Min. Range</code></p></li>
+</ol>
+<ul>
+<li>Min. Freq = the number of times the word should occur in the corpus</li>
+<li>Min. Range = the number of files in which the word should occur</li>
+</ul>
+<ol start="3" type="1">
+<li>Hit <code>Start</code></li>
+</ol>
+</section>
+<section id="lets-try" class="slide level2">
+<h2>Let’s try</h2>
+<ul>
+<li>Set min. frequency = 3; min. range = 3 <img data-src="../../assets/session-5/Word-list.gif" alt="Load-corpus"></li>
+</ul>
+</section>
+<section id="saving-the-frequency-list" class="slide level2">
+<h2>Saving the frequency list</h2>
+<ul>
+<li>From <code>File</code> hit <code>save the current results</code></li>
+</ul>
+
+<img data-src="../../assets/session-5/save-freq-list.gif" class="r-stretch quarto-figure-center"><p class="caption">save-list</p></section>
+<section id="frequency-list" class="slide level2">
+<h2>Frequency list</h2>
+<ul>
+<li>We will use the BROWN frequency list in the next session.</li>
+</ul>
+
+<img data-src="../../assets/session-5/Freq-list.png" class="r-stretch quarto-figure-center"><p class="caption">save-list</p></section>
+<section id="task-2-plot-frequencies" class="slide level2">
+<h2>Task 2: Plot frequencies</h2>
+<ul>
+<li>Let’s now understand the distributions of words in language.</li>
+<li>Visit our <a href="">simple-text-analyzer tool</a>.</li>
+<li>Hit Frequency analysis and upload the frequency list.</li>
+<li>What did you notice?</li>
+</ul>
+</section>
+<section id="frequency-plot" class="slide level2">
+<h2>Frequency Plot</h2>
+<ul>
+<li>Very few words occupy most of the corpus.</li>
+</ul>
+
+<img data-src="../../assets/session-5/Frequency-plot.png" class="r-stretch quarto-figure-center"><p class="caption">BROWN frequency</p></section>
+<section id="implication-of-frequency-on-learning-teaching-and-assessment" class="slide level2">
+<h2>Implication of frequency on learning, teaching, and assessment</h2>
+</section>
+<section id="task-3-lexical-profiling" class="slide level2">
+<h2>Task 3: Lexical profiling</h2>
+<p>Now that we understand an important property of language (Zipf’s law), let’s conduct lexical profiling.</p>
+</section>
+<section id="task-5-tokenizing-non-english-languages-for-frequency-analysis" class="slide level2">
+<h2>Task 5: Tokenizing non-English languages for frequency analysis</h2>
+<ul>
+<li><p>Up to this point, we only dealt with English.</p></li>
+<li><p>English is very convenient in corpus analysis because of the white spaces.</p></li>
+<li><p>Asian languages have completely different writing system from Indo-European language, and it makes it difficult to <code>tokenize</code> texts in to words.</p>
+<pre><code>I am planning to eat Oysters after this intensive course.</code></pre>
+<pre><code>この短期集中講座が終わったら、カキを食べたいと思っています。</code></pre></li>
+</ul>
+</section>
+<section id="tagant" class="slide level2">
+<h2>TagAnt</h2>
+<ul>
+<li><code>Tokenization</code> (segmenting running text into words) needs more advanced statistical algorithms.</li>
+<li>TagAnt is a free tool (again developped by Laurence ANTHONY).</li>
+<li>It uses modern natural language processing tool (called spaCy) to tokenize input texts.</li>
+</ul>
+</section>
+<section id="tokenizing-japanese" class="slide level2">
+<h2>Tokenizing Japanese</h2>
+<ul>
+<li>Download and open <code>TagAnt</code>.</li>
+<li>Copy and paste a sample text into <code>Input Text</code>.</li>
+<li>Select language.</li>
+<li>Select Output format.</li>
+</ul>
+</section>
+<section id="result-of-tagant-segmentation" class="slide level2">
+<h2>Result of TagAnt segmentation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-5/TagAnt-Horizontal.png"></p>
+<figcaption>Horizontal display</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-5/TagAnt-vertical.png"></p>
+<figcaption>Vertical display</figcaption>
+</figure>
+</div>
+</div></div>
 </section></section>
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
+<section>
+<section id="hands-on-activity-1" class="title-slide slide level1 center">
+<h1>Hands-on Activity</h1>
 
 </section>
-
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
-
-
+<section id="activity-instruction" class="slide level2">
+<h2>Activity instruction</h2>
+<h3 id="task">Task</h3>
+<p>Compile a Japanese frequency list based on corpus.</p>
+<h3 id="resource">Resource</h3>
+<ul>
+<li>Download a Japanese texts from Google Drive.</li>
+<li>Use AntConc and TagAnt.</li>
+</ul>
+<h3 id="submission">Submission</h3>
+<ul>
+<li>Submit a frequency list</li>
+<li>Description</li>
+</ul>
 </section>
+<section id="optional-task-4-vocabulary-profiling-through-antwordprofiler" class="slide level2">
+<h2>(Optional) Task 4: Vocabulary Profiling through AntWordProfiler</h2>
+
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -282,7 +404,7 @@ Masaki EGUCHI, Ph.D.
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,

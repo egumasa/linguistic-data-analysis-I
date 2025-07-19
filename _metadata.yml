@@ -5,8 +5,7 @@ lang: en
 highlight-style: github
 code-annotations: hover
 
-# Custom variables
-last-modified: "{{< meta date-modified >}}"
+# # Custom variables
 course-title: "Linguistic Data Analysis I"
 institution: "Tohoku University"
-term: "2025"
+

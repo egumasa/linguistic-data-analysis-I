@@ -1,0 +1,31 @@
+format:
+  revealjs:
+    theme: 
+      - default
+      - ../../css/slides.scss
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+    controls: true
+    progress: true
+    hash: true
+    history: false
+    keyboard: true
+    overview: true
+    # center: true
+    touch: true
+    loop: false
+    rtl: false
+    fragments: true
+    # embedded: true
+    resource-embed: true
+    help: true
+    showNotes: false
+    autoSlide: 0
+    autoSlideStoppable: true
+    mouseWheel: false
+    hideAddressBar: true
+    previewLinks: false
+    math:
+      method: mathjax
+      url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS_HTML-full"

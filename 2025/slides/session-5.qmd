@@ -1,95 +1,192 @@
 ---
 title: "Session 5: Hands-on activity #2"
-format: 
-  revealjs:
-    theme: ["default", "../../css/slides.scss"]
-    background-transition: fade
-    slide-number: true
-    chalkboard: true
-    controls: true
-    progress: true
-    hash: true
-    history: false
-    keyboard: true
-    overview: true
-    center: true
-    touch: true
-    loop: false
-    rtl: false
-    fragments: true
-    embedded: false
-    help: true
-    showNotes: false
-    autoSlide: 0
-    autoSlideStoppable: true
-    mouseWheel: false
-    hideAddressBar: true
-    previewLinks: false
-    transitionSpeed: default
-    backgroundTransition: fade
-    parallaxBackgroundImage: ""
-    parallaxBackgroundSize: ""
-    parallaxBackgroundHorizontal: ""
-    parallaxBackgroundVertical: ""
-    resource-embed: true
-
+subtitle: "Frequency list"
+format: revealjs
+metadata-files:
+  - _slides.yml
+  - ../../_metadata.yml
 ---
+
 
 # Housekeeping
 
 
-# Session overview
+---
+
+## Session overview
+
+
+
 
 
 ## Objectives
 
 - Compute frequency of a single-word lexical item in reference corpora
 - Derive vocabulary frequency list using concordancing software (e.g., AntConc)
+- Apply tokenization on the Japanese language corpus for frequency analysis
 - Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
 
 ---
 
-# Introduction
-
-## AntConc
+## Introduction
 
 - AntConc is free concordancing tool.
 - Developed by Laurence ANTHONY.
+ 
+
+---
+
+## Hands-on Activity 
+
+## Task 1: Loading a corpus to AntConc
+
+## Open AntConc
+
+![AntConc](../../assets/session-5/AntConc-Landing.png)
+
+## AntConc window
+
+
+![AntConc2](../../assets/session-5/AntConc-menu.png)
+
+
+## Load a corpus
+
+Now, let's load a corpus.
+
+![Load-corpus](../../assets/session-5/Loading-corpus.gif)
+
 
 
 ---
+
+## Task 1: Creating a frequency list
+
+## Word
+Let's now create a frequency list 
+
+1. Select `Word` analysis option
+
+2. Set `Min. Freq` and `Min. Range`
+  - Min. Freq = the number of times the word should occur in the corpus
+  - Min. Range = the number of files in which the word should occur
+
+3. Hit `Start`
+
+## Let's try
+
+- Set min. frequency = 3; min. range = 3
+![Load-corpus](../../assets/session-5/Word-list.gif)
+
+## Saving the frequency list
+
+- From `File` hit `save the current results`
+
+![save-list](../../assets/session-5/save-freq-list.gif)
+
+## Frequency list
+
+- We will use the BROWN frequency list in the next session.
+
+![save-list](../../assets/session-5/Freq-list.png)
+
+
+## Task 2: Plot frequencies
+
+- Let's now understand the distributions of words in language.
+- Visit our [simple-text-analyzer tool]().
+- Hit Frequency analysis and upload the frequency list.
+- What did you notice?
+
+## Frequency Plot
+
+- Very few words occupy most of the corpus.
+
+![BROWN frequency](../../assets/session-5/Frequency-plot.png)
+
+
+---
+
+## Implication of frequency on learning, teaching, and assessment
+
+
+
+## Task 3: Lexical profiling
+
+Now that we understand an important property of language (Zipf's law), let's conduct lexical profiling.
+
+
+---
+
+## Task 5: Tokenizing non-English languages for frequency analysis
+
+- Up to this point, we only dealt with English.
+- English is very convenient in corpus analysis because of the white spaces.
+- Asian languages have completely different writing system from Indo-European language, and it makes it difficult to `tokenize` texts in to words.
+  ```
+  I am planning to eat Oysters after this intensive course.
+  ```
+  ```
+  この短期集中講座が終わったら、カキを食べたいと思っています。
+  ```
+
+
+## TagAnt
+
+- `Tokenization` (segmenting running text into words) needs more advanced statistical algorithms.
+- TagAnt is a free tool (again developped by Laurence ANTHONY).
+- It uses modern natural language processing tool (called spaCy) to tokenize input texts.
+
+
+## Tokenizing Japanese
+
+- Download and open `TagAnt`.
+- Copy and paste a sample text into `Input Text`.
+- Select language.
+- Select Output format.
+
+
+## Result of TagAnt segmentation
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Horizontal display](../../assets/session-5/TagAnt-Horizontal.png)
+:::
+
+::: {.column width="50%"}
+![Vertical display](../../assets/session-5/TagAnt-vertical.png)
+:::
+
+::::
+
+
 # Hands-on Activity
 
-## Task 1: Opening AntConc
+## Activity instruction
 
+### Task
+Compile a Japanese frequency list based on corpus.
 
+### Resource
+- Download a Japanese texts from Google Drive.
+- Use AntConc and TagAnt.
 
----
+### Submission
 
-## Task 2: Creating a frequency list
-
-
----
-
-## Task 3: Vocabulary Profiling through LexTutor
-
-
----
-
-## Task 4: Vocabulary Profiling through AntWordProfiler
-
+- Submit a frequency list
+- Description
 
 
 ---
 
-## Task 5: Tokenizing Non-English language using TagAnt
+## (Optional) Task 4: Vocabulary Profiling through AntWordProfiler
 
 
 
 
 
-# Reflection
 
 
 
-# Next step

@@ -1,7 +1,7 @@
 ---
 title: "Session 3: Hands-on #1"
 subtitle: "Basic Concordancing"
-format: 
+format:
   revealjs:
     theme: ["default", "../../css/slides.scss"]
     background-transition: fade
@@ -24,6 +24,7 @@ format:
     showNotes: false
     autoSlide: 0
     autoSlideStoppable: true
+    # auto-stretch: false
     mouseWheel: false
     hideAddressBar: true
     previewLinks: false
@@ -33,39 +34,18 @@ format:
     parallaxBackgroundSize: ""
     parallaxBackgroundHorizontal: ""
     parallaxBackgroundVertical: ""
-
-  # html:
-  #   theme: 
-  #     - litera
-  #     - ../../css/style.scss
-  #   toc: true
-  #   toc-depth: 3
-  #   toc-location: left
-  #   toc-title: "Contents"
-  #   number-sections: true
-  #   embed-resources: true
-  #   standalone: true
-  #   code-fold: true
-  #   code-summary: "Show code"
-  #   code-tools: true
-  #   smooth-scroll: true
-  #   link-external-icon: true
-  #   link-external-newwindow: true
-  #   date-format: "MMMM D, YYYY"
-  #   css-min: true
-  #   html-math-method: katex
-  #   highlight-style: github
-  #   anchor-sections: true
-  #   fig-cap-location: bottom
-  #   tbl-cap-location: top
+    math:
+      method: mathjax
+      url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS_HTML-full"
 ---
+
 
 # Housekeeping
 
 
 # Session overview
 
-
+ 
 ## Objectives
 
 By the end of this session, you will be able to:
@@ -75,7 +55,7 @@ By the end of this session, you will be able to:
 - Use advanced search strings such as regular expression to fine-tune the search results
 
 ---
-
+ 
 ## Task A - Simple word search
 
 ## First corpus search
