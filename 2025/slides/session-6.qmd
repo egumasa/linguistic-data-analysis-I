@@ -1,38 +1,9 @@
 ---
 title: "Session 6: Hands-on activity #3"
-format: 
-  revealjs:
-    theme: ["default", "../../css/slides.scss"]
-    background-transition: fade
-    slide-number: true
-    chalkboard: true
-    controls: true
-    progress: true
-    hash: true
-    history: false
-    keyboard: true
-    overview: true
-    center: true
-    touch: true
-    loop: false
-    rtl: false
-    fragments: true
-    embedded: false
-    help: true
-    showNotes: false
-    autoSlide: 0
-    autoSlideStoppable: true
-    mouseWheel: false
-    hideAddressBar: true
-    previewLinks: false
-    transitionSpeed: default
-    backgroundTransition: fade
-    parallaxBackgroundImage: ""
-    parallaxBackgroundSize: ""
-    parallaxBackgroundHorizontal: ""
-    parallaxBackgroundVertical: ""
-    resource-embed: true
-
+format: revealjs
+metadata-files:
+  - _slides.yml
+  - ../../_metadata.yml
 ---
 
 # Housekeeping
@@ -226,7 +197,6 @@ W_JPN_SMK0_015_B1_2_ORIG.txt,302,138,129,82,173,56,0.5942028985507246,0.42715231
 - You can open csv file in Excel (or any other spreadsheet software)
 
 
-
 ## Questions?
 
 
@@ -272,12 +242,8 @@ There are a number of lexical sophistication measures for English (+ 300).
 
 # Submission
 
-
-- The Google Spreadsheet with calculation of indices (5 points)
-- 
-
-# Reflection
+- Japanese Word Frequency List and small write-up (5 points)
+- The Google Spreadsheet with calculation of lexical diversity indices (5 points)
+- Write up of Japanese lexical sophistication analysis (5 points)
 
 
-
-# Next step
