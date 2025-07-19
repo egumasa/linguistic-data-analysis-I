@@ -691,61 +691,85 @@
   {
     "objectID": "2025/sessions/day4/index.html",
     "href": "2025/sessions/day4/index.html",
-    "title": "Day 4: Analyzing grammar",
+    "title": "Day 4: Analyzing Grammar",
     "section": "",
-    "text": "Day 4 introduces\n\n\n\nBy the end of Day 4, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 4:",
+    "text": "Day 4 introduces grammatical analysis in corpus linguistics, exploring complexity measures and computational tools for parsing and analysis.",
     "crumbs": [
       "Sessions",
       "Day 4",
-      "Day 4: Analyzing grammar"
+      "Day 4: Analyzing Grammar"
     ]
   },
   {
     "objectID": "2025/sessions/day4/index.html#overview",
     "href": "2025/sessions/day4/index.html#overview",
-    "title": "Day 4: Analyzing grammar",
+    "title": "Day 4: Analyzing Grammar",
     "section": "",
-    "text": "Day 4 introduces",
+    "text": "Day 4 introduces grammatical analysis in corpus linguistics, exploring complexity measures and computational tools for parsing and analysis.",
     "crumbs": [
       "Sessions",
       "Day 4",
-      "Day 4: Analyzing grammar"
+      "Day 4: Analyzing Grammar"
     ]
   },
   {
-    "objectID": "2025/sessions/day4/index.html#learning-objectives",
-    "href": "2025/sessions/day4/index.html#learning-objectives",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "By the end of Day 4, you will be able to:",
+    "objectID": "2025/sessions/day4/index.html#key-concepts",
+    "href": "2025/sessions/day4/index.html#key-concepts",
+    "title": "Day 4: Analyzing Grammar",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nGrammatical complexity\nPredictive measures versus Descriptive measures\nPOS tagging\nDependency parsing\nPrecision, Recall, and F1 score\nSyntactic sophistication and fine-grained measures",
     "crumbs": [
       "Sessions",
       "Day 4",
-      "Day 4: Analyzing grammar"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day4/index.html#schedule",
-    "href": "2025/sessions/day4/index.html#schedule",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "Table",
-    "crumbs": [
-      "Sessions",
-      "Day 4",
-      "Day 4: Analyzing grammar"
+      "Day 4: Analyzing Grammar"
     ]
   },
   {
     "objectID": "2025/sessions/day4/index.html#preparation",
     "href": "2025/sessions/day4/index.html#preparation",
-    "title": "Day 4: Analyzing grammar",
-    "section": "",
-    "text": "Before Day 4:",
+    "title": "Day 4: Analyzing Grammar",
+    "section": "Preparation",
+    "text": "Preparation\nBefore Day 4:\n\nRead:\n\nDurrant Ch. 5\nKyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349.\n\nSkim:\n\nDurrant Ch. 6 (Ignore R codes if you are not familiar)",
     "crumbs": [
       "Sessions",
       "Day 4",
-      "Day 4: Analyzing grammar"
+      "Day 4: Analyzing Grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#schedule",
+    "href": "2025/sessions/day4/index.html#schedule",
+    "title": "Day 4: Analyzing Grammar",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 10: Grammar — Overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 11: POS Tagging and Parsing\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 12: Linguistic Complexity Analysis",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing Grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#assignments",
+    "href": "2025/sessions/day4/index.html#assignments",
+    "title": "Day 4: Analyzing Grammar",
+    "section": "Assignments",
+    "text": "Assignments\n\nDue Tomorrow: Hands-on Assignment 4\nComplete grammatical analysis exercises using Python notebooks and TagAnt",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing Grammar"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/index.html#reflection",
+    "href": "2025/sessions/day4/index.html#reflection",
+    "title": "Day 4: Analyzing Grammar",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Day 4: Analyzing Grammar"
     ]
   },
   {
@@ -2020,61 +2044,85 @@
   {
     "objectID": "2025/sessions/day3/index.html",
     "href": "2025/sessions/day3/index.html",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
+    "title": "Day 3: Multiword Units and Collocations",
     "section": "",
-    "text": "Day 3 introduces\n\n\n\nBy the end of Day 3, you will be able to:\n\n\n\nTable\n\n\n\nBefore Day 3:",
+    "text": "Day 3 explores multiword units, collocations, and statistical measures for analyzing word combinations in corpus linguistics.",
     "crumbs": [
       "Sessions",
       "Day 3",
-      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+      "Day 3: Multiword Units and Collocations"
     ]
   },
   {
     "objectID": "2025/sessions/day3/index.html#overview",
     "href": "2025/sessions/day3/index.html#overview",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
+    "title": "Day 3: Multiword Units and Collocations",
     "section": "",
-    "text": "Day 3 introduces",
+    "text": "Day 3 explores multiword units, collocations, and statistical measures for analyzing word combinations in corpus linguistics.",
     "crumbs": [
       "Sessions",
       "Day 3",
-      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+      "Day 3: Multiword Units and Collocations"
     ]
   },
   {
-    "objectID": "2025/sessions/day3/index.html#learning-objectives",
-    "href": "2025/sessions/day3/index.html#learning-objectives",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
-    "section": "",
-    "text": "By the end of Day 3, you will be able to:",
+    "objectID": "2025/sessions/day3/index.html#key-concepts",
+    "href": "2025/sessions/day3/index.html#key-concepts",
+    "title": "Day 3: Multiword Units and Collocations",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nTypes of multiword units (collocation, n-grams, lexical bundles)\nAssociation strengths (t-score, Mutual Information, LogDice)\nContext window vs dependency bigram approaches\nn-gram search and window-based collocation search\nLinear regression analysis for corpus data",
     "crumbs": [
       "Sessions",
       "Day 3",
-      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day3/index.html#schedule",
-    "href": "2025/sessions/day3/index.html#schedule",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
-    "section": "",
-    "text": "Table",
-    "crumbs": [
-      "Sessions",
-      "Day 3",
-      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+      "Day 3: Multiword Units and Collocations"
     ]
   },
   {
     "objectID": "2025/sessions/day3/index.html#preparation",
     "href": "2025/sessions/day3/index.html#preparation",
-    "title": "Day 3: Analyzing Vocabulary and Multiword Units (2)",
-    "section": "",
-    "text": "Before Day 3:",
+    "title": "Day 3: Multiword Units and Collocations",
+    "section": "Preparation",
+    "text": "Preparation\nBefore Day 3:\n\nRead:\n\nDurrant (2023) Ch. 7\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research. Language Learning, 67(S1), 155–179.\n\nSkim:\n\nDurrant (2023) Ch. 8 (Ignore R codes if you are not familiar)\nEguchi & Kyle (2020) - review if needed",
     "crumbs": [
       "Sessions",
       "Day 3",
-      "Day 3: Analyzing Vocabulary and Multiword Units (2)"
+      "Day 3: Multiword Units and Collocations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#schedule",
+    "href": "2025/sessions/day3/index.html#schedule",
+    "title": "Day 3: Multiword Units and Collocations",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 7: Multiword Units — Conceptual Overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 8: Hands-on Collocation Analysis\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 9: Learner Corpus Mini-Research",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Multiword Units and Collocations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#assignments",
+    "href": "2025/sessions/day3/index.html#assignments",
+    "title": "Day 3: Multiword Units and Collocations",
+    "section": "Assignments",
+    "text": "Assignments\n\nDue Tomorrow: Hands-on Assignment 3\nPrepare mini-project research topic and questions for presentation",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Multiword Units and Collocations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/index.html#reflection",
+    "href": "2025/sessions/day3/index.html#reflection",
+    "title": "Day 3: Multiword Units and Collocations",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Day 3: Multiword Units and Collocations"
     ]
   },
   {
@@ -2236,61 +2284,85 @@
   {
     "objectID": "2025/sessions/day2/index.html",
     "href": "2025/sessions/day2/index.html",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
+    "title": "Day 2: Analyzing Vocabulary",
     "section": "",
-    "text": "Day 2 introduces\n\n\n\nBy the end of Day 2, you will be able to:\n\n\n\n\n\n\nTable\n\n\n\nBefore Day 1:",
+    "text": "Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, diversity, and sophistication.",
     "crumbs": [
       "Sessions",
       "Day 2",
-      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+      "Day 2: Analyzing Vocabulary"
     ]
   },
   {
     "objectID": "2025/sessions/day2/index.html#overview",
     "href": "2025/sessions/day2/index.html#overview",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
+    "title": "Day 2: Analyzing Vocabulary",
     "section": "",
-    "text": "Day 2 introduces",
+    "text": "Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, diversity, and sophistication.",
     "crumbs": [
       "Sessions",
       "Day 2",
-      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+      "Day 2: Analyzing Vocabulary"
     ]
   },
   {
-    "objectID": "2025/sessions/day2/index.html#learning-objectives",
-    "href": "2025/sessions/day2/index.html#learning-objectives",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
-    "section": "",
-    "text": "By the end of Day 2, you will be able to:",
+    "objectID": "2025/sessions/day2/index.html#key-concepts",
+    "href": "2025/sessions/day2/index.html#key-concepts",
+    "title": "Day 2: Analyzing Vocabulary",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nLexical Richness (text internal vs external measures)\nLexical Diversity (Type-Token Ratio, MTLD)\nLexical Sophistication (frequency, concreteness, phonological neighbors)\nLexical profiling\nFrequency Lists and Zipf law",
     "crumbs": [
       "Sessions",
       "Day 2",
-      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day2/index.html#schedule",
-    "href": "2025/sessions/day2/index.html#schedule",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
-    "section": "",
-    "text": "Table",
-    "crumbs": [
-      "Sessions",
-      "Day 2",
-      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+      "Day 2: Analyzing Vocabulary"
     ]
   },
   {
     "objectID": "2025/sessions/day2/index.html#preparation",
     "href": "2025/sessions/day2/index.html#preparation",
-    "title": "Day 2: Analyzing Vocabulary and Multiword Units (1)",
-    "section": "",
-    "text": "Before Day 1:",
+    "title": "Day 2: Analyzing Vocabulary",
+    "section": "Preparation",
+    "text": "Preparation\nBefore Day 2:\n\nRead:\n\nDurrant Ch. 3\n(Skim) Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication. The Modern Language Journal, 104(2), 381–400.\n\nSkim:\n\nDurrant Ch. 4 (Ignore R codes if you are not familiar)",
     "crumbs": [
       "Sessions",
       "Day 2",
-      "Day 2: Analyzing Vocabulary and Multiword Units (1)"
+      "Day 2: Analyzing Vocabulary"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#schedule",
+    "href": "2025/sessions/day2/index.html#schedule",
+    "title": "Day 2: Analyzing Vocabulary",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 4: Analyzing vocabulary (1) — Conceptual overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 5: Frequency Analysis and Lexical Profiling\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 6: Computing Lexical Measures",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#assignments",
+    "href": "2025/sessions/day2/index.html#assignments",
+    "title": "Day 2: Analyzing Vocabulary",
+    "section": "Assignments",
+    "text": "Assignments\n\nDue Tomorrow: Hands-on Assignment 2\nComplete lexical analysis exercises using AntConc and web applications",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/index.html#reflection",
+    "href": "2025/sessions/day2/index.html#reflection",
+    "title": "Day 2: Analyzing Vocabulary",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Day 2: Analyzing Vocabulary"
     ]
   },
   {
@@ -2334,7 +2406,7 @@
     "href": "2025/sessions/day5/index.html",
     "title": "Day 5: Advanced Topics and Final Project",
     "section": "",
-    "text": "Day 5 focuses on\n\n\n\nBy the end of Day 5, you will be able to:\n\n\n\nInsert table\n\n\n\n\nResearch question formulation\nMethodology selection\nCorpus compilation\nData analysis planning\nResults interpretation\nAcademic presentation skills\n\n\n\n\n\nFinal Project Guidelines\nProposal presentations today\nFinal submission in 2 weeks\n\n\n\n\n\nResearch Design Template\nPresentation Guidelines\nExample Projects",
+    "text": "Day 5 explores cutting-edge applications of Large Language Models in corpus linguistics and provides dedicated time for final project development.",
     "crumbs": [
       "Sessions",
       "Day 5",
@@ -2346,31 +2418,7 @@
     "href": "2025/sessions/day5/index.html#overview",
     "title": "Day 5: Advanced Topics and Final Project",
     "section": "",
-    "text": "Day 5 focuses on",
-    "crumbs": [
-      "Sessions",
-      "Day 5",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#learning-objectives",
-    "href": "2025/sessions/day5/index.html#learning-objectives",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "By the end of Day 5, you will be able to:",
-    "crumbs": [
-      "Sessions",
-      "Day 5",
-      "Day 5: Advanced Topics and Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day5/index.html#schedule",
-    "href": "2025/sessions/day5/index.html#schedule",
-    "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Insert table",
+    "text": "Day 5 explores cutting-edge applications of Large Language Models in corpus linguistics and provides dedicated time for final project development.",
     "crumbs": [
       "Sessions",
       "Day 5",
@@ -2381,8 +2429,8 @@
     "objectID": "2025/sessions/day5/index.html#key-concepts",
     "href": "2025/sessions/day5/index.html#key-concepts",
     "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Research question formulation\nMethodology selection\nCorpus compilation\nData analysis planning\nResults interpretation\nAcademic presentation skills",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nLarge Language Models (LLMs) and Language Generation\nPrompt engineering\nFine-tuning\nLLM-assisted linguistic annotation\nResearch design and methodology\nProject presentation skills",
     "crumbs": [
       "Sessions",
       "Day 5",
@@ -2390,11 +2438,11 @@
     ]
   },
   {
-    "objectID": "2025/sessions/day5/index.html#final-project",
-    "href": "2025/sessions/day5/index.html#final-project",
+    "objectID": "2025/sessions/day5/index.html#preparation",
+    "href": "2025/sessions/day5/index.html#preparation",
     "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Final Project Guidelines\nProposal presentations today\nFinal submission in 2 weeks",
+    "section": "Preparation",
+    "text": "Preparation\nBefore Day 5:\n\nRead:\n\nMizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116.\n\nSkim:\n\nKim, M., & Lu, X. (2024). Exploring the potential of using ChatGPT for rhetorical move-step analysis. Journal of English for Academic Purposes, 71, 101422.",
     "crumbs": [
       "Sessions",
       "Day 5",
@@ -2402,11 +2450,35 @@
     ]
   },
   {
-    "objectID": "2025/sessions/day5/index.html#resources",
-    "href": "2025/sessions/day5/index.html#resources",
+    "objectID": "2025/sessions/day5/index.html#schedule",
+    "href": "2025/sessions/day5/index.html#schedule",
     "title": "Day 5: Advanced Topics and Final Project",
-    "section": "",
-    "text": "Research Design Template\nPresentation Guidelines\nExample Projects",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 13: LLMs in Linguistic Analysis\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 14: Group Project Time\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 15: Project Presentations and Wrap-up",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#assignments",
+    "href": "2025/sessions/day5/index.html#assignments",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "Assignments",
+    "text": "Assignments\n\nFinal Project: Final Project Guidelines\nGroup presentations today\nFinal submission deadline: [Check syllabus]",
+    "crumbs": [
+      "Sessions",
+      "Day 5",
+      "Day 5: Advanced Topics and Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day5/index.html#reflection",
+    "href": "2025/sessions/day5/index.html#reflection",
+    "title": "Day 5: Advanced Topics and Final Project",
+    "section": "Reflection",
+    "text": "Reflection",
     "crumbs": [
       "Sessions",
       "Day 5",

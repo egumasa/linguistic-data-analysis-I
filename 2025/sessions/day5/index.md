@@ -1,37 +1,52 @@
 ---
 title: "Day 5: Advanced Topics and Final Project"
-subtitle: "Synthesis and Future Directions"
+subtitle: "LLMs in Corpus Linguistics and Project Work"
 ---
-
-# Day 5: Advanced Topics and Final Project
 
 ## Overview
 
-Day 5 focuses on 
+Day 5 explores cutting-edge applications of Large Language Models in corpus linguistics and provides dedicated time for final project development.
 
-## Learning Objectives
+## Key Concepts
 
-By the end of Day 5, you will be able to:
+- Large Language Models (LLMs) and Language Generation
+- Prompt engineering
+- Fine-tuning
+- LLM-assisted linguistic annotation
+- Research design and methodology
+- Project presentation skills
 
+## Preparation
+
+Before Day 5:
+
+- Read:
+    - Mizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116.
+- Skim:
+    - Kim, M., & Lu, X. (2024). Exploring the potential of using ChatGPT for rhetorical move-step analysis. Journal of English for Academic Purposes, 71, 101422.
 
 ## Schedule
 
-Insert table
+| Time | Activity |
+|------|----------|
+| 10:30-12:00 | Session 13: LLMs in Linguistic Analysis |
+| 12:00-13:00 | Lunch |
+| 13:00-14:30 | Session 14: Group Project Time |
+| 14:30-14:40 | Break |
+| 14:40-16:10 | Session 15: Project Presentations and Wrap-up |
 
-## Key Concepts
-- Research question formulation
-- Methodology selection
-- Corpus compilation
-- Data analysis planning
-- Results interpretation
-- Academic presentation skills
 
-## Final Project
-- [Final Project Guidelines](../../assignments/final-project/)
-- Proposal presentations today
-- Final submission in 2 weeks
+## Assignments
 
-## Resources
-- [Research Design Template](../../resources/templates/research-design)
-- [Presentation Guidelines](../../resources/guides/presentations)
-- [Example Projects](../../resources/examples/projects)
+- **Final Project**: [Final Project Guidelines](../../assignments/final-project/)
+- Group presentations today
+- Final submission deadline: [Check syllabus]
+
+
+## Reflection
+
+
+<!-- 
+<iframe src="session1-intro/slides/slides.html" width="100%" height="600px" frameborder="0"></iframe>
+
+[View slides in fullscreen](session1-intro/slides/slides.html){target="_blank"} -->
