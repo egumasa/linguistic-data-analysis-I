@@ -5,19 +5,8 @@ subtitle: ""
 
 ## One-liner
 
+Group project time. Please use the time wisely.
 
-## Learning Objectives
-
-By the end of this session, you will be able to:
-
-## Key Concepts
-
-- linguistic intuition
-- scientific hypothesis vs data
-
-## Materials
-
-- Slides (Under construction)
 
 ## Reflection
 

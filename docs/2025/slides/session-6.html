@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-79b191b313bbcfec1e9f80e586a04ab3.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -152,19 +218,327 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section id="objectives" class="slide level2 center">
 <h2>Objectives</h2>
+<p>By the end of this session, you will be able to:</p>
 <ul>
-<li></li>
+<li>Compute simple lexical diversity measures using spreadsheet software and dedicated tool</li>
+<li>Explain how modern lexical diversity measures are calculated</li>
+<li>Compute simple lexical sophistication measures</li>
 </ul>
 </section>
 <section class="slide level2 center">
 
+</section></section>
+<section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
+
+</section>
+<section id="terminology" class="slide level2 center">
+<h2>Terminology</h2>
+<p>In this presentation, I will use the following terms:</p>
+<ul>
+<li><strong>Input text</strong>: The text you want to analyze (e.g., learner produce text).</li>
+</ul>
+</section>
+<section id="lexical-diversity" class="slide level2 center">
+<h2>Lexical Diversity</h2>
+<ul>
+<li>Lexical Diversity is computed internally to text.</li>
+<li>e.g., Type-Token Ratio:
+<ol type="1">
+<li>Count the number of unique word (Type) in the input text</li>
+<li>Count the number of total word (Token) in the input text</li>
+<li>Devide Type by token.</li>
+</ol></li>
+</ul>
+</section>
+<section id="lexical-sophistication" class="slide level2 center">
+<h2>Lexical Sophistication</h2>
+<ul>
+<li>Lexical Sophistication requires external resources to compute.</li>
+<li>To derive a frequency index:
+<ol type="1">
+<li>Compile a frequency list</li>
+<li>For each word in the input text, retrieve <code>frequency score</code> from the list
+<ul>
+<li>e.g., tree –&gt; 1,0000</li>
+</ul></li>
+<li>Average the frequency scores (out of item awarded the score)</li>
+</ol></li>
+</ul>
+</section></section>
+<section>
+<section id="hands-on-activity" class="title-slide slide level1 center">
+<h1>Hands-on Activity</h1>
+
+</section>
+<section id="computing-simple-lexical-diversity-measures-by-hand" class="slide level2 center">
+<h2>Computing simple Lexical Diversity measures by hand</h2>
+</section>
+<section id="simple-text-example" class="slide level2 center">
+<h2>Simple Text Example</h2>
+<p>Cound the type and token of the following texts.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Text 1</strong></td>
+<td>“The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.”</td>
+</tr>
+<tr class="even">
+<td><strong>Text 2</strong></td>
+<td>“A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.”</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note</em> : Texts were generated by GPT for illustration purposes.</p>
+</section>
+<section id="simple-text-example-1" class="slide level2 center">
+<h2>Simple Text Example</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 57%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Text</th>
+<th>Token</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Text 1</strong></td>
+<td>“The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.”</td>
+<td>19</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td><strong>Text 2</strong></td>
+<td>“A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.”</td>
+<td>19</td>
+<td>19</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note</em> : Texts were generated by GPT for illustration purposes.</p>
+</section>
+<section id="impact-of-text-lengths" class="slide level2 center">
+<h2>Impact of Text lengths</h2>
+<div style="font-size: 65%">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 57%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Text</th>
+<th>Token</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Text 1a</strong></td>
+<td>“The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.”</td>
+<td>19</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td><strong>Text 1b</strong></td>
+<td>“The dog ran. The dog jumped. The dog barked. The dog played. The dog ran quickly. The dog jumped so high. The dog barked very loudly. The dog played, sat, and rolled. The dog sneezed. The dog ate the food.”</td>
+<td>40</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td><strong>Text 1c</strong></td>
+<td>“The parrot squawked loudly. The parrot chirped again. A toucan perched nearby. The parrot fluttered. Wings flapped softly. The parrot chirped again. Feathers shimmered under sunlight. The crow cawed. The parrot glided low. The air shimmered. The owl blinked slowly. The parrot perched again. The owl blinked slowly. The parrot shrieked. The parrot chirped nearby again. The parrot squawked again.”</td>
+<td>60</td>
+<td>27</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note</em> : Texts were generated by GPT for illustration purposes.</p>
+</div>
+</section>
+<section id="lets-calculate-some-classical-lexical-diversity-indices" class="slide level2 center">
+<h2>Let’s calculate some classical Lexical Diversity indices</h2>
+<ul>
+<li><p>Open Google Spreadsheet</p></li>
+<li><p>Calculate the lexical diversity indices on the next page.</p></li>
+</ul>
+</section>
+<section id="some-classic-lexical-diversity" class="slide level2 center">
+<h2>Some classic lexical diversity</h2>
+<p>We calculate this for illustration but <strong>NEVER use these in your study</strong>.</p>
+<ul>
+<li><span class="math inline">\(TTR = {nType \over nToken}\)</span></li>
+<li><span class="math inline">\(RootTTR = {nType \over \sqrt{nToken}}\)</span></li>
+<li><span class="math inline">\(LogTTR = {\log(nType) \over \log(nToken)}\)</span></li>
+<li><span class="math inline">\(Maas = {\log(nTokens) - \log(nTypes) \over \log(nToken)^2}\)</span></li>
+</ul>
+</section>
+<section id="what-should-we-actually-use-then" class="slide level2 center">
+<h2>What should we actually use then?</h2>
+<ul>
+<li>The Measure of Textual Lexical Diversity (MTLD)</li>
+<li>Moving-Average Type Token Ratio (MATTR)</li>
+</ul>
+<p>→ These are shown as more robust indices of LD.</p>
+</section>
+<section id="using-taaled-desktop-version" class="slide level2 center">
+<h2>Using TAALED desktop version</h2>
+<ul>
+<li>We can use <a href="https://www.linguisticanalysistools.org/taaled.html">Tool for the Automatic Analysis of Lexical Diversity (TAALED)</a></li>
+<li>Download it to your computer and we will use it to compute modern LD measures</li>
+</ul>
+
+<img data-src="../../assets/session-6/taaled_orig.png" class="r-stretch quarto-figure-center"><p class="caption">TAALED</p></section>
+<section id="setting-up" class="slide level2 center">
+<h2>Setting up</h2>
+<ul>
+<li><p>Click the software icon after download</p></li>
+<li><p>For mac users, the system will issue warning, you must follow the following step:</p>
+<ul>
+<li>Go to <code>setting</code> and select <code>Privacy &amp; Security</code></li>
+<li>If you have already attempted to open the software, there will be <code>Open Anyway</code> button.</li>
+<li>Click <code>Open Anyway</code> and that will allow Mac to open the software.</li>
+</ul></li>
+</ul>
+</section>
+<section id="selecting-indics" class="slide level2 center">
+<h2>Selecting indics</h2>
+<p>You can then wait for the TAALED app to start up.</p>
+
+<img data-src="../../assets/session-6/TAALED-landing.png" class="r-stretch quarto-figure-center"><p class="caption">TAALED</p></section>
+<section id="options" class="slide level2 center">
+<h2>Options</h2>
+<h3 id="word-analysis-options">Word analysis options</h3>
+<ul>
+<li>All words: Conduct analysis including all words.</li>
+<li>Content words: Conduct analysis with content words only.</li>
+<li>Function words: Conduct analysis with function words only.</li>
+</ul>
+</section>
+<section id="options-1" class="slide level2 center">
+<h2>Options</h2>
+<h3 id="index-selection">Index selection</h3>
+<p>Select the indices you need in the results. Three variants of MTLD are available.</p>
+<ul>
+<li><strong>MTLD Original</strong>:</li>
+<li><strong>MTLD MA Bi</strong>: Moving Average Bidirectional</li>
+<li><strong>MTLD MA Wrap</strong>: If there is words left in the final <code>factor</code>, come back to the first part and complete the analysis.</li>
+</ul>
+</section>
+<section id="options-2" class="slide level2 center">
+<h2>Options</h2>
+<h3 id="input-and-output-options">Input and output options</h3>
+<ul>
+<li>You can choose the input folder by selection</li>
+</ul>
+<h3 id="output-option">Output option</h3>
+<ul>
+<li>Ticking the <code>Individual Item Output</code> button allows you to have POS analysis</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>parent_cw_nn</span>
+<span id="cb1-2"><a></a>and_fw</span>
+<span id="cb1-3"><a></a>teacher_cw_nn</span>
+<span id="cb1-4"><a></a>disagree_cw_vb</span>
+<span id="cb1-5"><a></a>that_fw</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="run-the-analysis" class="slide level2 center">
+<h2>Run the analysis</h2>
+<ul>
+<li>Press <code>Process Texts</code> and wait the following display.</li>
+</ul>
+
+<img data-src="../../assets/session-6/TAALED-endmessage.png" class="r-stretch quarto-figure-center"><p class="caption">Analysis complete</p></section>
+<section id="lets-take-a-look-at-the-csv-file" class="slide level2 center">
+<h2>Let’s take a look at the <code>csv</code> file</h2>
+<ul>
+<li>What’s CSV?
+<ul>
+<li>CSV (Comma Separated Values) file is a file extension like others (txt, docx).</li>
+<li>It allows table like representation of data (like excel) separated by comma.</li>
+</ul></li>
+</ul>
+<p>The Raw data (if you open it with text editor) should look like the following:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a>filename,basic_ntokens,basic_ntypes,basic_ncontent_tokens,basic_ncontent_types,basic_nfunction_tokens,basic_nfunction_types,lexical_density_types,lexical_density_tokens,maas_ttr_aw,mattr50_aw,hdd42_aw,mtld_original_aw,mtld_ma_bi_aw,mtld_ma_wrap_aw</span>
+<span id="cb2-2"><a></a>W_CHN_PTJ0_004_B1_2_ORIG.txt,267,124,135,75,132,49,0.6048387096774194,0.5056179775280899,0.056571333957257205,0.7793577981651377,0.7981161136859327,68.68659119235562,65.84622666144406,61.50561797752809</span>
+<span id="cb2-3"><a></a>W_JPN_SMK0_015_B1_2_ORIG.txt,302,138,129,82,173,56,0.5942028985507246,0.4271523178807947,0.05530143602594381,0.777865612648221,0.7974803670481457,68.38677597714803,67.6645170484911,65.22185430463576</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="opening-csv-file-in-a-spreadsheet-software" class="slide level2 center">
+<h2>Opening csv file in a spreadsheet software</h2>
+<ul>
+<li>You can open csv file in Excel (or any other spreadsheet software)</li>
+</ul>
+</section>
+<section id="questions" class="slide level2 center">
+<h2>Questions?</h2>
+</section>
+<section id="lemmatize" class="slide level2 center">
+<h2>Lemmatize?</h2>
+<ul>
+<li>What do you think is the effect of lemmatization on the lexical diversity measures?</li>
+<li>Should we lemmatize? Why or why not?</li>
+</ul>
+</section>
+<section id="computing-simple-lexical-sophisitcation-measures" class="slide level2 center">
+<h2>Computing simple Lexical Sophisitcation measures</h2>
+</section>
+<section id="lexical-sophistication-1" class="slide level2 center">
+<h2>Lexical sophistication</h2>
+<p>There are a number of lexical sophistication measures for English (+ 300).</p>
+<ul>
+<li>12 categories of measures (Eguchi &amp; Kyle, 2020)
+<ul>
+<li>Frequency</li>
+<li>Range</li>
+<li>Psycholinguistic Norm</li>
+</ul></li>
+</ul>
+</section>
+<section id="typical-operationalization" class="slide level2 center">
+<h2>Typical operationalization</h2>
+<ul>
+<li><p><strong>Operationalization</strong> means</p></li>
+<li><p>Typically, lexical sophistication (LS) is calculated as an average:</p>
+<p>Typical LS score = <span class="math display">\[Total \; LS \; score \over nToken \; with \; LS \; score\]</span></p></li>
+<li><p>Average is just a convenient choice.</p></li>
+</ul>
+</section>
+<section id="using-an-emulation-of-taales" class="slide level2 center">
+<h2>Using an emulation of TAALES</h2>
+<ul>
+<li>Since the desktop version of TAALES is unstable these days, we will use a simple web application.</li>
+</ul>
 </section>
 <section class="slide level2 center">
 
 </section></section>
-<section id="hands-on-activity" class="title-slide slide level1 center">
-<h1>Hands-on Activity</h1>
-
+<section id="submission" class="title-slide slide level1 center">
+<h1>Submission</h1>
+<ul>
+<li>The Google Spreadsheet with calculation of indices (5 points)</li>
+<li></li>
+</ul>
 </section>
 
 <section id="reflection" class="title-slide slide level1 center">

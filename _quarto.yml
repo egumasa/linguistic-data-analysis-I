@@ -21,10 +21,6 @@ website:
             href: 2025/syllabus/index.md
           - text: "Schedule"
             href: 2025/syllabus/schedule.md
-          - text: "Readings"
-            href: 2025/syllabus/readings.md
-          # - text: "Policies"
-          #   href: 2025/syllabus/policies.md
       - text: "Sessions"
         menu:
           - text: "Day 1"
@@ -77,9 +73,7 @@ website:
         - section: "Syllabus"
           contents:
             - 2025/syllabus/index.md
-            # - 2025/syllabus/policies.md
             - 2025/syllabus/schedule.md
-            - 2025/syllabus/readings.md
         - section: "Sessions"
           collapsed: true
           contents:
@@ -147,11 +141,10 @@ website:
       collapse-level: 1
       contents:
         - section: "Syllabus"
+          collapsed: true
           contents:
             - 2025/syllabus/index.md
-            # - 2025/syllabus/policies.md
             - 2025/syllabus/schedule.md
-            - 2025/syllabus/readings.md
         - section: "Sessions"
           collapsed: true
           contents:
@@ -208,9 +201,7 @@ website:
           collapsed: true
           contents:
             - 2025/syllabus/index.md
-            # - 2025/syllabus/policies.md
             - 2025/syllabus/schedule.md
-            - 2025/syllabus/readings.md
         - section: "Sessions"
           contents:
             - 2025/syllabus/schedule.md
@@ -267,9 +258,7 @@ website:
           collapsed: true
           contents:
             - 2025/syllabus/index.md
-            # - 2025/syllabus/policies.md
             - 2025/syllabus/schedule.md
-            - 2025/syllabus/readings.md
         - section: "Sessions"
           collapsed: true
           contents:
@@ -338,6 +327,8 @@ format:
 
 execute:
   freeze: auto
-  
+  engine: jupyter  # or python
+  python: uv run python  # This tells Quarto to use uv's Python
+
 metadata-files:
   - _metadata.yml

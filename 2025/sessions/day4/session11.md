@@ -9,15 +9,17 @@ subtitle: ""
 
 > By the end of this session, students will be able to:
 > 
+> - Understand NLP tasks such as POS tagging and dependency parsing
+> - Understand how automated parsing works
 > - Conduct POS tagging using spaCy library in Python (through Google Colab)
 > - Conduct Dependency parsing using spaCy library in Python (through Google Colab)
 > - Conduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt
-
 
 ## 🔑 Key Concepts
 
 - POS tagging
 - Dependency parsing
+- Precision, Recall, and F1 score
 
 ## 📚 Required Readings
 
@@ -28,7 +30,7 @@ subtitle: ""
 - Kyle, K., & Eguchi, M. (2024). Evaluating NLP models with written and spoken L2 samples. Research Methods in Applied Linguistics, 3(2), 100120. https://doi.org/10.1016/j.rmal.2024.100120
  
 
-#### 📝 Notes
+## 📝 Notes
 
 - All the python codes are prepared by the instructor and shared with the students. This session does not require ability to code.
 - The decision to use Python programming language rather than already available software is based on consideration that there is very little tools which provide stable access to the language analysis described here.

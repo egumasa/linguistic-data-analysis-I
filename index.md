@@ -66,9 +66,7 @@ The course is organized into **5 intensive days**:
 ## Instructor Information
 
 **Instructor**: Masaki Eguchi, Ph.D.  
-**Email**: [instructor.email@tohoku.ac.jp]  
-**Office**: [Building, Room Number]  
-**Office Hours**: [Days and Times]
+**Email**: You can contact me through Google Classroom
 
 ## Course Communication
 

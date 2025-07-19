@@ -1,0 +1,15 @@
+[project]
+name = "linguistic-data-analysis-i"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.3",
+    "numpy>=2.3.1",
+    "pandas>=2.3.1",
+    "pip>=25.1.1",
+    "spacy>=3.8.7",
+    "taaled>=0.32",
+]

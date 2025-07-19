@@ -6,33 +6,35 @@ subtitle: ""
 ## One-liner
 
 
-## Learning Objectives
+## 🎯 Learning Objectives
 
 By the end of this session, you will be able to:
 
-- Derive vocabulary frequency list from a web-corpus or concordancing software (e.g., AntConc)
+- Compute frequency of a single-word lexical item in reference corpora
+- Derive vocabulary frequency list using concordancing software (e.g., AntConc)
 - Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
-- (Optional) Calculate frequency of a word using provided Python script; Plot frequency to understand Zipf law
+
 
 ## 🔑 Key Concepts
 
 - Lexical profiling
 - Frequency Lists
 - Zipf law
+- Lexical coverage
 
-## Tools used
 
-- AntWordProfiler
-- New Word Levels Checker
-- LexTutor
+##  🛠️ Tools Used
 
+- **[AntConc](https://www.laurenceanthony.net/software/antconc/)**
+- **[AntWordProfiler](https://www.laurenceanthony.net/software/antwordprofiler/)**
+- **[New Word Levels Checker](https://nwlc.pythonanywhere.com/)**
+- **[LexTutor](https://www.lextutor.ca/)**
 
 ## Materials
 
 - Slides (Under construction)
 
 ## Reflection
-
 
 
 <!-- 

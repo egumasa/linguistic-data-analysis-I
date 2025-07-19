@@ -22,7 +22,10 @@ Table
 
 ## Preparation
 
-Before Day 2:
+Before Day 1: 
+
+
+
 
 ## Assignments
 

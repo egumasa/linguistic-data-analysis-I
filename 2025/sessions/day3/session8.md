@@ -7,13 +7,13 @@ subtitle: ""
 
 
 ## 🎯 Learning Objectives
-By the end of this session, students will be able to:
 
-- Search for window-based collocations and n-grams in AntConc and/or 
-- Calculate commonly used strengths of association measures by hand using spreadsheet software
-- Discuss benefits and drawbacks of different strength of association measures
+> By the end of this session, students will be able to:
+> 
+> - Search for window-based collocations and n-grams in AntConc 
+> - Calculate commonly used strengths of association measures by hand using spreadsheet software
+> - Discuss benefits and drawbacks of different strength of association measures
 
-- (Optional) Calculate
 
 ## 🔑 Key Concepts
 
@@ -21,12 +21,14 @@ By the end of this session, students will be able to:
 - Window-based collocation search
 - Strengths of Association measures — T-score, Mutual Information, LogDice
 
+## 📚 Required Readings
+
+- (**Skim**) Durrant (2023) Ch. 8 (Ignore R codes if you are not familiar)
+
+
 ## Materials
 
 - Slides (Under construction)
-
-## 📚 Required Readings
-Gablasova et al (2017)
 
 
 ## Reflection

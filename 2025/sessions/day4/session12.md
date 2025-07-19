@@ -11,7 +11,8 @@ subtitle: ""
 > By the end of this session, students will be able to:
 > 
 > - Conduct linguistic complexity analysis using a template Python code provided by the instructor.
-> - Identify 
+> - (Optional) Apply the concept of linguistic complexity to the Japanese language.
+
 
 ## 📚 Required Readings
 
@@ -23,6 +24,7 @@ subtitle: ""
 - Kyle, K., & Crossley, S. (2017). Assessing syntactic sophistication in L2 writing: A usage-based approach. Language Testing, 34(4), 513–535. https://doi.org/10.1177/0265532217712554
 
 - Kyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329
+
 
 
 ## Materials

@@ -4,7 +4,7 @@ subtitle: "Basic Concordancing"
 format: 
   revealjs:
     theme: ["default", "../../css/slides.scss"]
-    # output-file: session-3-slides.html
+    output-file: session-3.html
     background-transition: fade
     slide-number: true
     chalkboard: true
@@ -19,7 +19,8 @@ format:
     loop: false
     rtl: false
     fragments: true
-    embedded: false
+    embedded: true
+    # resource-embed: true
     help: true
     showNotes: false
     autoSlide: 0
@@ -33,6 +34,7 @@ format:
     parallaxBackgroundSize: ""
     parallaxBackgroundHorizontal: ""
     parallaxBackgroundVertical: ""
+
   # html:
   #   theme: 
   #     - litera
@@ -67,7 +69,11 @@ format:
 
 ## Objectives
 
-- 
+By the end of this session, you will be able to:
+
+- Conduct Basic Corpus search, including KWIC.
+- Sort KWIC search results to obtain qualitative observation about language use
+- Use advanced search strings such as regular expression to fine-tune the search results
 
 ---
 
@@ -98,6 +104,7 @@ format:
 # Task A.2 - LEMMA search
 
 ## LEMMA search
+
 - Lemma is a group of word form for the head-word with grammatical inflection.
 - You can search LEMMA in English-Corpora.org through Capital letters.
 - The search methods will depend on the corpus tool you use.
@@ -133,7 +140,7 @@ format:
 
 3. The result is displayed. Default sort : R1 > R2 > R3
 
-![KWIC search](../../assets/session-3/KWIC-basic.png)
+![KWIC search](../../assets/session-3/KWIC-basic.png) 
 
 ## Sorting KWIC window
 
@@ -250,9 +257,6 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 - How distant do you search for the collocates
 
 ![](../../assets/session-3/collocation-search.png)
-
-
-# Hands-on Activity
 
 
 

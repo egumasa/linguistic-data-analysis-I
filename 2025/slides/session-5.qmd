@@ -31,6 +31,7 @@ format:
     parallaxBackgroundSize: ""
     parallaxBackgroundHorizontal: ""
     parallaxBackgroundVertical: ""
+    resource-embed: true
 
 ---
 
@@ -42,15 +43,42 @@ format:
 
 ## Objectives
 
-- 
+- Derive vocabulary frequency list using concordancing software (e.g., AntConc)
+- Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
 
 ---
 
+# Introduction
+
+## AntConc
+
+- AntConc is free concordancing tool.
+- Developed by Laurence ANTHONY.
+
 
 ---
-
 # Hands-on Activity
 
+## Task 1: Loading a corpus
+
+
+---
+
+## Task 2: Creating a frequency list
+
+
+---
+
+## Task 3: Vocabulary Profiling through LexTutor
+
+
+---
+
+## Task 4: Vocabulary Profiling through AntWordProfiler
+
+
+
+---
 
 
 # Reflection

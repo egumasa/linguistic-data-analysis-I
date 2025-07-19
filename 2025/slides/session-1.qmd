@@ -31,6 +31,8 @@ format:
     parallaxBackgroundSize: ""
     parallaxBackgroundHorizontal: ""
     parallaxBackgroundVertical: ""
+    resource-embed: true
+
   # html:
   #   theme: 
   #     - litera

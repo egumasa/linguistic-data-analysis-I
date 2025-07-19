@@ -5,8 +5,7 @@ subtitle: "Getting Started with Corpus Linguistics"
 
 ## Overview
 
-Day 1 introduces 
-
+Day 1 introduces basic concepts of corpus linguistics.
 
 ## Key Concepts
 
@@ -24,7 +23,6 @@ Before Day 1:
     - Stefanowitsch (2020) Ch. 2. [Freely available online](https://langsci-press.org/catalog/book/148)
 - Skim:
     - Durrant (2023) Ch. 1.
-
 
 ## Schedule
 

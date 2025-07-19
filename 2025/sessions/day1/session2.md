@@ -5,20 +5,32 @@ subtitle: ""
 
 ## One-liner
 
+Session 2 covers foundational concepts of corpus linguistics.
 
 ## 🎯 Learning Objectives
 
-By the end of this session, you will be able to:
-
-- Explain why linguistic intuition is not adequate evidence for language research
-- Explain how corpus lingusitics can help linguistic research
-- Describe how corpus linguistic help address scientific hypothesis about language
-- List areas that corpus linguistics may not tell us about language
+> By the end of this session, students will be able to:
+> 
+> - Define corpus linguistics as an empirical methodology
+> - Explain key limitations of introspection in linguistic research
+> - Describe the role of frequency data and patterns in corpus analysis
+> - Identify and explain the basic steps in corpus-based research
+> - Reflect on their own stance toward data, intuition, and linguistic evidence
 
 ## 🔑 Key Concepts
 
-- linguistic intuition
-- scientific hypothesis vs data
+- Corpus linguistics
+- Balanced Corpus
+- Reference Corpus
+- Learner Corpus
+- Corpus representativeness
+
+## 📚 Required Readings
+
+- Stefanowitsch (2020) Ch. 1 [Freely available online](https://langsci-press.org/catalog/book/148)
+- Stefanowitsch (2020) Ch. 2 [Freely available online](https://langsci-press.org/catalog/book/148)
+- (**Skim**)  Durrant (2023) Ch. 1
+
 
 ## Materials
 
