@@ -43,6 +43,7 @@ format:
 
 ## Objectives
 
+- Compute frequency of a single-word lexical item in reference corpora
 - Derive vocabulary frequency list using concordancing software (e.g., AntConc)
 - Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
 
@@ -59,7 +60,8 @@ format:
 ---
 # Hands-on Activity
 
-## Task 1: Loading a corpus
+## Task 1: Opening AntConc
+
 
 
 ---
@@ -79,6 +81,11 @@ format:
 
 
 ---
+
+## Task 5: Tokenizing Non-English language using TagAnt
+
+
+
 
 
 # Reflection

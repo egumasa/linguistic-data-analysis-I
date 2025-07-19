@@ -25,6 +25,14 @@ Before Day 2:
 - Skim:
     - Durrant Ch. 4 (Ignore R codes if you are not familiar)
 
+- Watch:
+    - Laurence Anthony's intro to AntConc
+        - [Getting started (10 mins)](https://youtu.be/_GSlwIO5QZE?feature=shared)
+        - [Corpus manager Basics (18 mins)](https://youtu.be/yDSa1rp8Bqs?feature=shared)
+        <!-- - [KWIC tool basics](https://youtu.be/2tW2c5zf4oQ?feature=shared) -->
+        - [Word list tool basics (7 mins)](https://youtu.be/MSl4WjM9Mw4?feature=shared)
+
+
 ## Schedule
 
 | Time | Activity |

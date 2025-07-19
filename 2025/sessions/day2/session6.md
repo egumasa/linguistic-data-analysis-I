@@ -27,6 +27,7 @@ By the end of this session, you will be able to:
 
 - **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you.
 
+
 ## 📚 Required Readings
 
 - (**Skim**) Durrant Ch. 4 (Ignore R codes if you are not familiar)

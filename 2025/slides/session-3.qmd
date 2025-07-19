@@ -4,7 +4,6 @@ subtitle: "Basic Concordancing"
 format: 
   revealjs:
     theme: ["default", "../../css/slides.scss"]
-    output-file: session-3.html
     background-transition: fade
     slide-number: true
     chalkboard: true
@@ -20,7 +19,7 @@ format:
     rtl: false
     fragments: true
     embedded: true
-    # resource-embed: true
+    resource-embed: true
     help: true
     showNotes: false
     autoSlide: 0
