@@ -71,6 +71,7 @@ Other required/Optional readings are provided through Google Classroom.
 #### Others
 - **Google Account**: For Colab notebooks (insert link here)
 - **Text Editor**: VS Code recommended
+- **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you.
 
 ## Assignments and Grading
 

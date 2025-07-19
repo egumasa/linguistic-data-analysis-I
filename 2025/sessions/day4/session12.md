@@ -25,7 +25,10 @@ subtitle: ""
 
 - Kyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329
 
+##  🛠️ Tools Used
 
+- [TagAnt](https://www.laurenceanthony.net/software/tagant/)
+- **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you.
 
 ## Materials
 

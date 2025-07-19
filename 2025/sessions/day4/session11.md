@@ -35,10 +35,12 @@ subtitle: ""
 - All the python codes are prepared by the instructor and shared with the students. This session does not require ability to code.
 - The decision to use Python programming language rather than already available software is based on consideration that there is very little tools which provide stable access to the language analysis described here.
 
-## Tools
 
-- Google Colaboratory
+##  🛠️ Tools Used
+
 - [TagAnt](https://www.laurenceanthony.net/software/tagant/)
+- **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you.
+- Google Colaboratory
 
 ## Materials
 
