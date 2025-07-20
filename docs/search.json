@@ -137,26 +137,49 @@
     ]
   },
   {
-    "objectID": "resources/code-examples/index.html",
-    "href": "resources/code-examples/index.html",
-    "title": "Code Examples",
+    "objectID": "resources/tools/antconc-guide.html",
+    "href": "resources/tools/antconc-guide.html",
+    "title": "AntConc Guide",
     "section": "",
-    "text": "Python Notebooks\nSpreadsheet Templates",
+    "text": "We will use AntConc, a one of the most widely used corpus tool developed by Laurence ANTHONY (Waseda University).\nThanksfully, Laurence has shared tutorials on basic features of AntConc on Youtube.\nYou will need AntConc on Day 2 and 3.\nPlease complete the following steps before Day 2.\n\nDownload AntConc\n\n\nVisit AntConc Website; download the software to your computer.\n\n\nWatch the following tutorial videos\n\n\nLaurence Anthony’s intro to AntConc\n\nGetting started (10 mins)\nCorpus manager Basics (18 mins)\nKWIC tool basics (17 mins)\n\n\nIf you are unsure about these steps, do not hesitate to reach out to me through google classroom or through email.",
     "crumbs": [
       "Resources",
-      "Code Examples"
+      "Tools",
+      "AntConc Guide"
     ]
   },
   {
-    "objectID": "resources/code-examples/index.html#available-resources",
-    "href": "resources/code-examples/index.html#available-resources",
-    "title": "Code Examples",
+    "objectID": "resources/tools/antconc-guide.html#overview",
+    "href": "resources/tools/antconc-guide.html#overview",
+    "title": "AntConc Guide",
     "section": "",
-    "text": "Python Notebooks\nSpreadsheet Templates",
+    "text": "We will use AntConc, a one of the most widely used corpus tool developed by Laurence ANTHONY (Waseda University).\nThanksfully, Laurence has shared tutorials on basic features of AntConc on Youtube.\nYou will need AntConc on Day 2 and 3.\nPlease complete the following steps before Day 2.\n\nDownload AntConc\n\n\nVisit AntConc Website; download the software to your computer.\n\n\nWatch the following tutorial videos\n\n\nLaurence Anthony’s intro to AntConc\n\nGetting started (10 mins)\nCorpus manager Basics (18 mins)\nKWIC tool basics (17 mins)\n\n\nIf you are unsure about these steps, do not hesitate to reach out to me through google classroom or through email.",
     "crumbs": [
       "Resources",
-      "Code Examples"
+      "Tools",
+      "AntConc Guide"
     ]
+  },
+  {
+    "objectID": "resources/code-examples/python/index.html",
+    "href": "resources/code-examples/python/index.html",
+    "title": "Python Notebooks",
+    "section": "",
+    "text": "Python notebooks for corpus analysis tasks."
+  },
+  {
+    "objectID": "resources/code-examples/python/index.html#available-notebooks",
+    "href": "resources/code-examples/python/index.html#available-notebooks",
+    "title": "Python Notebooks",
+    "section": "",
+    "text": "Python notebooks for corpus analysis tasks."
+  },
+  {
+    "objectID": "resources/code-examples/python/index.html#how-to-use",
+    "href": "resources/code-examples/python/index.html#how-to-use",
+    "title": "Python Notebooks",
+    "section": "How to Use",
+    "text": "How to Use\n\nClick on any notebook link\nOpen in Google Colab\nMake a copy to your Google Drive\nRun cells sequentially"
   },
   {
     "objectID": "2025/notebooks/session-5.html",
@@ -2835,49 +2858,75 @@
     "text": "Using Lexical Diversity package\nThere is a package called TAALED maintained by Dr. Kris Kyle.\n\n\nShow code\nfrom taaled import ld\nfrom pylats import lats"
   },
   {
-    "objectID": "resources/code-examples/python/index.html",
-    "href": "resources/code-examples/python/index.html",
-    "title": "Python Notebooks",
+    "objectID": "2025/notebooks/japanese-nlp-test.html",
+    "href": "2025/notebooks/japanese-nlp-test.html",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
     "section": "",
-    "text": "Python notebooks for corpus analysis tasks."
+    "text": "This notebook implements and compares two approaches for Japanese morphological analysis with BCCWJ frequency matching:\nEach approach is designed for reproducible setup, implementation, validation, and operational use."
   },
   {
-    "objectID": "resources/code-examples/python/index.html#available-notebooks",
-    "href": "resources/code-examples/python/index.html#available-notebooks",
-    "title": "Python Notebooks",
-    "section": "",
-    "text": "Python notebooks for corpus analysis tasks."
+    "objectID": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
+    "href": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "1. Environment Setup & Verification",
+    "text": "1. Environment Setup & Verification\nFirst, let’s verify and set up our environment with all required packages.\n\n\nShow code\n# Environment verification and setup\nimport sys\nimport subprocess\nfrom pathlib import Path\n\nprint(f\"Python version: {sys.version}\")\nprint(f\"Working directory: {Path.cwd()}\")\n\n# Required packages\nrequired_packages = [\n    'fugashi', 'unidic', 'unidic-lite', 'spacy', 'ginza', \n    'ja-ginza', 'sudachipy', 'pandas', 'numpy', 'matplotlib', 'collections'\n]\n\nprint(\"\\nChecking package availability:\")\nfor package in required_packages:\n    try:\n        if package == 'collections':\n            import collections\n            print(f\"✓ {package} (built-in)\")\n        else:\n            __import__(package)\n            print(f\"✓ {package}\")\n    except ImportError:\n        print(f\"✗ {package} - NOT FOUND\")\n\n\nPython version: 3.12.2 (main, Feb 25 2024, 03:55:42) [Clang 17.0.6 ]\nWorking directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/2025/notebooks\n\nChecking package availability:\n✓ fugashi\n✓ unidic\n✗ unidic-lite - NOT FOUND\n✓ spacy\n✓ ginza\n✗ ja-ginza - NOT FOUND\n✓ sudachipy\n✓ pandas\n✓ numpy\n✓ matplotlib\n✓ collections (built-in)\n\n\n\n\nShow code\n# Import all necessary libraries\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter, defaultdict\nimport time\nimport warnings\nfrom typing import List, Tuple, Dict, Optional\n\n# Japanese NLP libraries\nimport fugashi\nimport unidic\nimport spacy\nfrom spacy.tokens import Token, Doc\n\n# Statistical analysis\ntry:\n    from scipy.stats import spearmanr\n    scipy_available = True\nexcept ImportError:\n    print(\"scipy not available - will use numpy for correlation\")\n    scipy_available = False\n\nprint(\"All imports successful!\")\nwarnings.filterwarnings('ignore')\n\n\nscipy not available - will use numpy for correlation\nAll imports successful!\n\n\n\n\nShow code\n# Check UniDic installation and download if needed\ntry:\n    print(f\"UniDic directory: {unidic.DICDIR}\")\n    print(\"UniDic is properly installed\")\nexcept Exception as e:\n    print(f\"UniDic issue: {e}\")\n    print(\"You may need to run: python -m unidic download\")\n\n# Test basic fugashi functionality\ntry:\n    tagger = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\n    test_result = list(tagger(\"テスト\"))\n    print(f\"Fugashi + UniDic test successful: {test_result[0].surface}\")\nexcept Exception as e:\n    print(f\"Fugashi test failed: {e}\")\n\n\nUniDic directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\nUniDic is properly installed\nFugashi + UniDic test successful: テスト"
   },
   {
-    "objectID": "resources/code-examples/python/index.html#how-to-use",
-    "href": "resources/code-examples/python/index.html#how-to-use",
-    "title": "Python Notebooks",
-    "section": "How to Use",
-    "text": "How to Use\n\nClick on any notebook link\nOpen in Google Colab\nMake a copy to your Google Drive\nRun cells sequentially"
+    "objectID": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
+    "href": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "2. Sample Data Preparation",
+    "text": "2. Sample Data Preparation\nLet’s create realistic Japanese text samples for testing our pipelines.\n\n\nShow code\n# Sample Japanese texts for testing\nsample_texts = [\n    \"彼は日ごろから本を読むのが好きです。\",\n    \"ひごろの勉強が大切だと思います。\",\n    \"日頃の努力が実を結ぶでしょう。\",\n    \"彼女は書きあらわすことが得意です。\",\n    \"その問題を書き表すのは難しい。\",\n    \"今日は東京オリンピックについて話しましょう。\",\n    \"コーヒーを飲んで、呑み込んで、また飲んでしまった。\",\n    \"国際的な協力が必要不可欠です。\",\n    \"機械学習の技術が進歩している。\",\n    \"自然言語処理は興味深い分野だ。\"\n]\n\nprint(\"Sample texts prepared:\")\nfor i, text in enumerate(sample_texts, 1):\n    print(f\"{i:2d}. {text}\")\n\n# Create a larger corpus by repeating and slightly modifying texts\nextended_corpus = sample_texts * 3  # Simulate frequency variations\nprint(f\"\\nExtended corpus: {len(extended_corpus)} texts\")\n\n\nSample texts prepared:\n 1. 彼は日ごろから本を読むのが好きです。\n 2. ひごろの勉強が大切だと思います。\n 3. 日頃の努力が実を結ぶでしょう。\n 4. 彼女は書きあらわすことが得意です。\n 5. その問題を書き表すのは難しい。\n 6. 今日は東京オリンピックについて話しましょう。\n 7. コーヒーを飲んで、呑み込んで、また飲んでしまった。\n 8. 国際的な協力が必要不可欠です。\n 9. 機械学習の技術が進歩している。\n10. 自然言語処理は興味深い分野だ。\n\nExtended corpus: 30 texts\n\n\n\n\nShow code\n# Create mock BCCWJ frequency data for testing\n# In real usage, this would be loaded from an actual BCCWJ frequency file\n\nmock_bccwj_data = [\n    ('日頃', 'ヒゴロ', '名詞', 1250),\n    ('本', 'ホン', '名詞', 8500),\n    ('読む', 'ヨム', '動詞', 3200),\n    ('好き', 'スキ', '形容動詞', 2100),\n    ('勉強', 'ベンキョウ', '名詞', 4200),\n    ('大切', 'タイセツ', '形容動詞', 1800),\n    ('思う', 'オモウ', '動詞', 9500),\n    ('努力', 'ドリョク', '名詞', 2200),\n    ('実', 'ミ', '名詞', 1100),\n    ('結ぶ', 'ムスブ', '動詞', 800),\n    ('書く', 'カク', '動詞', 4100),\n    ('表す', 'アラワス', '動詞', 1500),\n    ('得意', 'トクイ', '形容動詞', 1300),\n    ('問題', 'モンダイ', '名詞', 6200),\n    ('難しい', 'ムズカシイ', '形容詞', 3800),\n    ('今日', 'キョウ', '名詞', 5500),\n    ('東京', 'トウキョウ', '名詞', 4800),\n    ('話す', 'ハナス', '動詞', 3600),\n    ('飲む', 'ノム', '動詞', 2400),\n    ('呑む', 'ノム', '動詞', 150),\n    ('国際', 'コクサイ', '名詞', 2800),\n    ('協力', 'キョウリョク', '名詞', 1900),\n    ('必要', 'ヒツヨウ', '形容動詞', 4500),\n    ('技術', 'ギジュツ', '名詞', 3900),\n    ('進歩', 'シンポ', '名詞', 1100)\n]\n\n# Create DataFrame\ndf_bccwj = pd.DataFrame(mock_bccwj_data, columns=['lemma', 'reading', 'pos', 'freq_bccwj'])\ndf_bccwj['key'] = list(zip(df_bccwj.lemma, df_bccwj.reading, df_bccwj.pos))\n\nprint(\"Mock BCCWJ frequency data:\")\nprint(df_bccwj.head(10))\nprint(f\"\\nTotal entries: {len(df_bccwj)}\")\n\n\nMock BCCWJ frequency data:\n  lemma reading   pos  freq_bccwj               key\n0    日頃     ヒゴロ    名詞        1250     (日頃, ヒゴロ, 名詞)\n1     本      ホン    名詞        8500       (本, ホン, 名詞)\n2    読む      ヨム    動詞        3200      (読む, ヨム, 動詞)\n3    好き      スキ  形容動詞        2100    (好き, スキ, 形容動詞)\n4    勉強   ベンキョウ    名詞        4200   (勉強, ベンキョウ, 名詞)\n5    大切    タイセツ  形容動詞        1800  (大切, タイセツ, 形容動詞)\n6    思う     オモウ    動詞        9500     (思う, オモウ, 動詞)\n7    努力    ドリョク    名詞        2200    (努力, ドリョク, 名詞)\n8     実       ミ    名詞        1100        (実, ミ, 名詞)\n9    結ぶ     ムスブ    動詞         800     (結ぶ, ムスブ, 動詞)\n\nTotal entries: 25"
   },
   {
-    "objectID": "resources/tools/antconc-guide.html",
-    "href": "resources/tools/antconc-guide.html",
-    "title": "AntConc Guide",
+    "objectID": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
+    "href": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline",
+    "text": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline\n\nA-1 to A-3: Setup and Configuration\nUniDic provides the morphological analysis system used in BCCWJ, making it ideal for frequency matching.\n\n\nShow code\n# A-3: Initialize fugashi with UniDic\nprint(\"Initializing Plan A: fugashi + UniDic pipeline\")\n\n# Initialize tagger with explicit UniDic path\ntagger_a = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\nprint(f\"Tagger initialized with UniDic dictionary: {unidic.DICDIR}\")\n\n# Test the tagger\ntest_text = \"日ごろから勉強している。\"\ntokens = list(tagger_a(test_text))\nprint(f\"\\nTest analysis of '{test_text}':\")\nfor token in tokens:\n    print(f\"  {token.surface} -&gt; {token.feature.lemma} [{','.join(token.pos)}]\")\n\n\nInitializing Plan A: fugashi + UniDic pipeline\nTagger initialized with UniDic dictionary: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\n\nTest analysis of '日ごろから勉強している。':\n  日ごろ -&gt; 日頃 [名,詞,,,普,通,名,詞,,,副,詞,可,能,,,*]\n  から -&gt; から [助,詞,,,格,助,詞,,,*,,,*]\n  勉強 -&gt; 勉強 [名,詞,,,普,通,名,詞,,,サ,変,可,能,,,*]\n  し -&gt; 為る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  て -&gt; て [助,詞,,,接,続,助,詞,,,*,,,*]\n  いる -&gt; 居る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  。 -&gt; 。 [補,助,記,号,,,句,点,,,*,,,*]\n\n\n\n\nShow code\n# A-4: Morphological field extraction function\ndef iter_lemma_keys_plan_a(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    \n    Args:\n        text: Input Japanese text\n        tagger: fugashi Tagger instance\n    \n    Returns:\n        List of (dictionary_form, reading, pos_major) tuples\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            lemma = m.feature[10] if m.feature[10] else m.surface\n            reading = m.feature[11] if m.feature[11] else ''\n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Test the extraction function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}':\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。':\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, スル, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# Fixed version with proper fugashi/UniDic attribute handling\ndef iter_lemma_keys_fixed(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    Fixed version that handles fugashi attribute variations.\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            \n            # Handle different attribute names for lemma\n            try:\n                lemma = m.lemma if hasattr(m, 'lemma') else m.feature[10]\n            except:\n                lemma = m.surface  # fallback\n            \n            # Handle different attribute names for reading\n            try:\n                reading = m.feature[9] if len(m.feature) &gt; 9 else ''\n            except:\n                reading = ''  # fallback\n            \n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Use the fixed function\niter_lemma_keys_plan_a = iter_lemma_keys_fixed\n\n# Test the fixed function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}' (fixed version):\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。' (fixed version):\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, シ, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# A-5: Frequency analysis with BCCWJ matching\ndef analyze_corpus_plan_a(corpus: List[str], tagger, bccwj_df: pd.DataFrame) -&gt; pd.DataFrame:\n    \"\"\"Analyze corpus using Plan A and match with BCCWJ frequencies.\"\"\"\n    freq = Counter()\n    \n    print(f\"Analyzing {len(corpus)} texts with Plan A...\")\n    for text in corpus:\n        for key in iter_lemma_keys_plan_a(text, tagger):\n            freq[key] += 1\n    \n    # Convert to DataFrame\n    rows = []\n    for (lemma, reading, pos), count in freq.items():\n        rows.append((lemma, reading, pos, count))\n    \n    df_local = pd.DataFrame(rows, columns=['lemma', 'reading', 'pos', 'freq_local'])\n    df_local['key'] = list(zip(df_local.lemma, df_local.reading, df_local.pos))\n    \n    # Merge with BCCWJ data\n    merged = df_local.merge(bccwj_df[['key', 'freq_bccwj']], on='key', how='left')\n    \n    return merged.sort_values('freq_local', ascending=False)\n\n# Run Plan A analysis\nresults_a = analyze_corpus_plan_a(extended_corpus, tagger_a, df_bccwj)\nprint(f\"\\nPlan A Results (top 15):\")\nprint(results_a.head(15)[['lemma', 'reading', 'pos', 'freq_local', 'freq_bccwj']])\n\n\nAnalyzing 30 texts with Plan A...\n\nPlan A Results (top 15):\n   lemma reading pos  freq_local  freq_bccwj\n11     。       *   補          30         NaN\n8      が       ガ   助          18         NaN\n1      は       ワ   助          15         NaN\n7      の       ノ   助          15         NaN\n5      を       オ   助          12         NaN\n10    です      デス   助           9         NaN\n42     で       デ   助           9         NaN\n15     だ       ダ   助           6         NaN\n37     て       テ   助           6         NaN\n41    飲む      ノン   動           6         NaN\n43     、       *   補           6         NaN\n48    国際    コクサイ   名           3         NaN\n47     た       タ   助           3         NaN\n46   しまう     シマッ   動           3         NaN\n0      彼      カレ   代           3         NaN\n\n\n\n\nShow code\n# A-6: Evaluation metrics for Plan A\ndef calculate_metrics(df: pd.DataFrame) -&gt; Dict[str, float]:\n    \"\"\"Calculate coverage and correlation metrics.\"\"\"\n    # Coverage: percentage of local tokens found in BCCWJ\n    matched = df.dropna(subset=['freq_bccwj'])\n    coverage = len(matched) / len(df) * 100\n    \n    # Token coverage (by frequency)\n    total_tokens = df['freq_local'].sum()\n    matched_tokens = matched['freq_local'].sum()\n    token_coverage = matched_tokens / total_tokens * 100\n    \n    # Spearman correlation for matched items\n    if len(matched) &gt; 1:\n        if scipy_available:\n            correlation, p_value = spearmanr(matched['freq_local'], matched['freq_bccwj'])\n        else:\n            correlation = np.corrcoef(matched['freq_local'].rank(), matched['freq_bccwj'].rank())[0,1]\n            p_value = None\n    else:\n        correlation, p_value = None, None\n    \n    return {\n        'type_coverage': coverage,\n        'token_coverage': token_coverage,\n        'correlation': correlation,\n        'p_value': p_value,\n        'total_types': len(df),\n        'matched_types': len(matched),\n        'total_tokens': total_tokens,\n        'matched_tokens': matched_tokens\n    }\n\nmetrics_a = calculate_metrics(results_a)\nprint(\"Plan A Evaluation Metrics:\")\nfor key, value in metrics_a.items():\n    if isinstance(value, float) and value is not None:\n        print(f\"  {key}: {value:.3f}\")\n    else:\n        print(f\"  {key}: {value}\")\n\n\nPlan A Evaluation Metrics:\n  type_coverage: 0.000\n  token_coverage: 0.000\n  correlation: None\n  p_value: None\n  total_types: 66\n  matched_types: 0\n  total_tokens: 297\n  matched_tokens: 0"
+  },
+  {
+    "objectID": "resources/code-examples/index.html",
+    "href": "resources/code-examples/index.html",
+    "title": "Code Examples",
     "section": "",
-    "text": "We will use AntConc, a one of the most widely used corpus tool developed by Laurence ANTHONY (Waseda University).\nThanksfully, Laurence has shared tutorials on basic features of AntConc on Youtube.\nYou will need AntConc on Day 2 and 3.\nPlease complete the following steps before Day 2.\n\nDownload AntConc\n\n\nVisit AntConc Website; download the software to your computer.\n\n\nWatch the following tutorial videos\n\n\nLaurence Anthony’s intro to AntConc\n\nGetting started (10 mins)\nCorpus manager Basics (18 mins)\nKWIC tool basics (17 mins)\n\n\nIf you are unsure about these steps, do not hesitate to reach out to me through google classroom or through email.",
+    "text": "Python Notebooks\nSpreadsheet Templates",
     "crumbs": [
       "Resources",
-      "Tools",
-      "AntConc Guide"
+      "Code Examples"
     ]
   },
   {
-    "objectID": "resources/tools/antconc-guide.html#overview",
-    "href": "resources/tools/antconc-guide.html#overview",
-    "title": "AntConc Guide",
+    "objectID": "resources/code-examples/index.html#available-resources",
+    "href": "resources/code-examples/index.html#available-resources",
+    "title": "Code Examples",
     "section": "",
-    "text": "We will use AntConc, a one of the most widely used corpus tool developed by Laurence ANTHONY (Waseda University).\nThanksfully, Laurence has shared tutorials on basic features of AntConc on Youtube.\nYou will need AntConc on Day 2 and 3.\nPlease complete the following steps before Day 2.\n\nDownload AntConc\n\n\nVisit AntConc Website; download the software to your computer.\n\n\nWatch the following tutorial videos\n\n\nLaurence Anthony’s intro to AntConc\n\nGetting started (10 mins)\nCorpus manager Basics (18 mins)\nKWIC tool basics (17 mins)\n\n\nIf you are unsure about these steps, do not hesitate to reach out to me through google classroom or through email.",
+    "text": "Python Notebooks\nSpreadsheet Templates",
     "crumbs": [
       "Resources",
-      "Tools",
-      "AntConc Guide"
+      "Code Examples"
     ]
+  },
+  {
+    "objectID": "resources/tools/japanese-nlp.html",
+    "href": "resources/tools/japanese-nlp.html",
+    "title": "Japanese NLP",
+    "section": "",
+    "text": "This page provides some advanced resources on Japanese NLP."
+  },
+  {
+    "objectID": "resources/tools/japanese-nlp.html#demo-pages",
+    "href": "resources/tools/japanese-nlp.html#demo-pages",
+    "title": "Japanese NLP",
+    "section": "Demo pages",
+    "text": "Demo pages\n\nSpacy GiNZA morphological analysis\nWeb app for UniDic morphological analysis"
+  },
+  {
+    "objectID": "resources/tools/japanese-nlp.html#using-unidic-with-fugashi",
+    "href": "resources/tools/japanese-nlp.html#using-unidic-with-fugashi",
+    "title": "Japanese NLP",
+    "section": "Using Unidic with Fugashi",
+    "text": "Using Unidic with Fugashi\n\n\nFugashi\n\n# Core tools\npip install fugashi unidic-lite  # quick start (smaller)\n# OR for full UniDic (larger, closer to BCCWJ)\npip install fugashi unidic\npython -m unidic download  # downloads the full UniDic dictionary"
   },
   {
     "objectID": "resources/tools/byu-corpora-guide.html",
