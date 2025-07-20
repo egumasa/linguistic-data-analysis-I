@@ -14,9 +14,18 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- 
+By the end of this session, students will be able to:
+ 
+> - Provide historical overview of the syntactic complexity research
+> - Describe different approaches to grammatical features:
+>   - Grammatical complexity strand
+>   - Fine-grained grammatical complexity strand
+>   - Descriptive (register-based analysis) strand
+>   - Verb Argument Construction (VAC) strand
+> - Understand current trends of syntactic complexity research
+
 
 ---
 

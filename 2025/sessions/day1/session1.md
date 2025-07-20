@@ -12,7 +12,11 @@ subtitle: "Welcome to Linguistic Data Analysis I"
 > - Overview the content of the current course
 > - Explain key success criteria in this course
 > - Conduct the very first corpus search
-> - Explain different types of corpus linguistic analysis for different focus: frequency analysis, concordance analysis, collocation analysis, Part-Of-Speech Tagging, etc.
+> - Explain different types of corpus linguistic analysis for different focus: 
+>   - frequency analysis, 
+>   - concordance analysis, 
+>   - collocation analysis, 
+>   - Part-Of-Speech Tagging, etc.
 
 ## 🔑 Key Concepts 
 
@@ -25,7 +29,7 @@ subtitle: "Welcome to Linguistic Data Analysis I"
 
 ## 📚 Required Readings
 
-- (**Skim**) Davies (2015) Available through Google Classroom
+- (**Skim**) Davies (2015) Available through the shared drive.
 
 ## 📝 Notes
 
@@ -34,7 +38,15 @@ Needs analysis (After giving overview) is conducted at the end of this session.
 
 ## Materials
 
-- [View slides in fullscreen](.../docs/2025/slides/session-1.html){target="_blank"}
+
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-1.html){target="_blank"} 
+
+<iframe src="../../slides/session-1.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
+
+
 
 
 ## Reflection

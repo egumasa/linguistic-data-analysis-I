@@ -4,7 +4,6 @@ format: revealjs
 metadata-files:
   - _slides.yml
   - ../../_metadata.yml
-
 ---
 
 # Housekeeping
@@ -13,11 +12,24 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- 
+By the end of this session, students will be able to:
+
+> - Search for window-based collocations and n-grams in AntConc 
+> - Calculate commonly used strengths of association measures by hand using spreadsheet software
+> - Discuss benefits and drawbacks of different strength of association measures
 
 ---
+
+# Generating N-gram list on AntConc
+
+
+# Searching collocations on AntConc
+
+
+# Calculating Strengths of Association (SOA) measures
+
 
 
 ---
@@ -28,6 +40,10 @@ metadata-files:
 
 # Reflection
 
+- You can now do the followings:
+  - Generate lists of n-grams using AntConc.
+  - Search for collocates with AntConc.
+  - Calculate major Strengths of Association (SOA) measures by hand.
 
 
 # Next step

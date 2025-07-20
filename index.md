@@ -46,7 +46,7 @@ This intensive 5-day graduate course introduces students to corpus linguistics a
 
 ## Course Structure
 
-The course is organized into **5 intensive days**:
+The course is organized into **5 days**:
 
 | Day | Theme | Sessions |
 |-----|-------|----------|

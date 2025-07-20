@@ -24,6 +24,7 @@ Session 2 covers foundational concepts of corpus linguistics.
 - Reference Corpus
 - Learner Corpus
 - Corpus representativeness
+- Linguistic intuition vs data
 
 ## 📚 Required Readings
 
@@ -34,7 +35,12 @@ Session 2 covers foundational concepts of corpus linguistics.
 
 ## Materials
 
-- Slides (Under construction)
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-2.html){target="_blank"} 
+
+<iframe src="../../slides/session-2.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
 
 
 

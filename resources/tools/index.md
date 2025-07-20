@@ -5,7 +5,11 @@ subtitle: "Installation and Usage Guides"
 
 ## Available Guides
 
-- [AntConc Guide](antconc-guide.md)
 - [BYU Corpora Guide](byu-corpora-guide.md)
-- [Python Setup](python-setup.md)
+
+- [AntConc Guide](antconc-guide.md)
+
+- [Python (google colab) Setup](python-setup.md)
+
 - [JASP Guide](jasp-guide.md)
+

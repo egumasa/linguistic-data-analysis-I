@@ -16,12 +16,14 @@ metadata-files:
 
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- Compute frequency of a single-word lexical item in reference corpora
-- Derive vocabulary frequency list using concordancing software (e.g., AntConc)
-- Apply tokenization on the Japanese language corpus for frequency analysis
-- Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
+By the end of this session, you will be able to:
+
+> - Compute frequency of a single-word lexical item in reference corpora
+> - Derive vocabulary frequency list using concordancing software (e.g., AntConc)
+> - Apply tokenization on the Japanese language corpus for frequency analysis
+> - Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
 
 ---
 

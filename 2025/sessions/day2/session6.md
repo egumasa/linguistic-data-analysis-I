@@ -11,8 +11,8 @@ subtitle: ""
 By the end of this session, you will be able to:
 
 > - Compute simple lexical diversity measures using spreadsheet software
-> - Explain how modern lexical diversity measures are calculated 
-> - Compute simple lexical sophistication measures
+> - Compute advanced lexical diversity measures using TAALED
+> - Explain how modern lexical diversity measures are calculated
 > - Calculate simple lexical sophistication measures using dedicated web application
 > - Describe how lexical sophistication measures behave on a single input text.
 > - Discuss benefits and drawbacks of lexical richness measures.
@@ -42,7 +42,13 @@ By the end of this session, you will be able to:
 
 ## Materials
 
-- Slides (Under construction)
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-6.html){target="_blank"} 
+
+<iframe src="../../slides/session-6.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
+
 
 ## Reflection
 

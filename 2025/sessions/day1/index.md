@@ -28,11 +28,11 @@ Before Day 1:
 
 | Time | Activity |
 |------|----------|
-| 10:30-12:00 | Session 1: Introduction |
+| 10:30-12:00 | [Session 1: Introduction](session1.md) |
 | 12:00-13:00 | Lunch |
-| 13:00-14:30 | Session 2:  |
+| 13:00-14:30 | [Session 2: Corpus foundation](session2.md) |
 | 14:30-14:40 | Break |
-| 14:40-16:10 | Session 3: First Hands-on Activity |
+| 14:40-16:10 | [Session 3: First Hands-on Activity](session3.md) |
 
 
 ## Assignments

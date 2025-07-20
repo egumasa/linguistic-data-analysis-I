@@ -10,8 +10,9 @@ We will use AntConc, a one of the most widely used corpus tool developed by Laur
 
 Thanksfully, Laurence has shared tutorials on basic features of AntConc on Youtube. 
 
-Before Day 1, I would like you to do the followings.
+You will need AntConc **on Day 2 and 3**.
 
+Please complete the following steps **before Day 2**.
 
 1. **Download AntConc**
 

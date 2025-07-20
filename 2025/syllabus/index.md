@@ -35,6 +35,11 @@ By the end of this course, students will be able to:
 
 ## Course Components
 
+- Lectures and tutorials
+- Daily Hands-on activities
+- Mini-corpus labs
+- Final project
+
 ::: {.callout-note}
 ## Navigation
 
@@ -58,6 +63,10 @@ Other required/Optional readings are provided through Google Classroom.
 
 ### Softwares (Free)
 
+#### Web application for simple text analyses
+
+- **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you. 
+
 #### Concordancing Software
 - **[AntConc](https://www.laurenceanthony.net/software/antconc/)**: Corpus analysis toolkit for Concordancing
 
@@ -69,9 +78,8 @@ Other required/Optional readings are provided through Google Classroom.
 - **[JASP](https://jasp-stats.org/)**: Statistical analysis software
 
 #### Others
-- **Google Account**: For Colab notebooks (insert link here)
+- **Google Colaboratory**: Follow the instruction [here to enable the tool](../../resources/tools/python-setup.md). 
 - **Text Editor**: VS Code recommended
-- **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you.
 
 ## Assignments and Grading
 

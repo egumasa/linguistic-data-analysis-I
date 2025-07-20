@@ -1,26 +1,26 @@
 ---
 title: "Session 13"
-subtitle: ""
+subtitle: "Large Language Models for linguistic annotation"
 ---
 
 ## One-liner
 
+We will explore how powerful and limited Large Language Models (LLMs) can be at the same time.
 
-
-## Learning Objectives
+## 🎯 Learning Objectives
 
 > By the end of this session, students will be able to:
 > 
 > - Describe how LLMs are trained generally and what LLMs do to produce language.
-> - Demonstrate/discuss potential impacts of prompts on the LLMs performance on linguistic annotation.
 > - Explain the benefits and drawbacks of using LLMs for linguistic annotation.
+> - Demonstrate/discuss potential impacts of prompts on the LLMs performance on linguistic annotation.
 > - Design an experiment to investigate LLMs output accuracy on a given annotation task.
 
 
-## Key Concepts
+## 🔑 Key Concepts
 
 - Large Language Models (LLMs) and Language Generation
-- Propt engineering
+- Prompt engineering
 - Fine-tuning
 
 
@@ -39,12 +39,24 @@ subtitle: ""
 
 ## Materials
 
-- Slides (Under construction)
 
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-13.html){target="_blank"} 
+
+<iframe src="../../slides/session-13.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
+
+### Other resources
+
+- [Prompting engineering guide](https://www.promptingguide.ai/)
 - [Post by Mark Davies on how similar LLM's "introspections" are to corpus data](https://www.english-corpora.org/ai-llms/corpora-vs-llms.html)
 
 
 ## Reflection
+
+You can now:
+
 
 <!-- 
 <iframe src="session1-intro/slides/slides.html" width="100%" height="600px" frameborder="0"></iframe>

@@ -16,8 +16,7 @@ subtitle: ""
 
 ## 📚 Required Readings
 
-- Kyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349. https://doi.org/10.1111/modl.12468
-
+- Reread Kyle & Crossley (2018) again.
 
 ## Recommended Readings
 
@@ -32,9 +31,15 @@ subtitle: ""
 
 ## Materials
 
-- Slides (Under construction)
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-12.html){target="_blank"} 
+
+<iframe src="../../slides/session-12.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
 
 ## Reflection
+
 
 
 <!-- 

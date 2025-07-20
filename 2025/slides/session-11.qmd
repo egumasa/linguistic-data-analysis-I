@@ -13,9 +13,15 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- 
+By the end of this session, students will be able to:
+ 
+> - Understand NLP tasks such as POS tagging and dependency parsing
+> - Understand how automated parsing works
+> - Conduct POS tagging using spaCy library in Python (through Google Colab)
+> - Conduct Dependency parsing using spaCy library in Python (through Google Colab)
+> - Conduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt
 
 ---
 

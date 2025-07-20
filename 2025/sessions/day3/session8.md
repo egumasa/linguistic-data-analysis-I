@@ -28,12 +28,21 @@ subtitle: ""
 
 ## Materials
 
-- Slides (Under construction)
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-8.html){target="_blank"} 
+
+<iframe src="../../slides/session-8.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
+
 
 
 ## Reflection
 
-
+- You can now do the followings:
+  - Generate lists of n-grams using AntConc.
+  - Search for collocates with AntConc.
+  - Calculate major Strengths of Association (SOA) measures by hand.
 
 <!-- 
 <iframe src="session1-intro/slides/slides.html" width="100%" height="600px" frameborder="0"></iframe>

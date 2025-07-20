@@ -35,13 +35,15 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- Define corpus linguistics as an empirical methodology
-- Explain key limitations of introspection in linguistic research
-- Describe the role of frequency data and patterns in corpus analysis
-- Identify and explain the basic steps in corpus-based research
-- Reflect on their own stance toward data, intuition, and linguistic evidence
+> By the end of this session, students will be able to:
+> 
+> - Define corpus linguistics as an empirical methodology
+> - Explain key limitations of introspection in linguistic research
+> - Describe the role of frequency data and patterns in corpus analysis
+> - Identify and explain the basic steps in corpus-based research
+> - Reflect on their own stance toward data, intuition, and linguistic evidence
 
 ---
 

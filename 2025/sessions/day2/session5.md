@@ -10,16 +10,17 @@ subtitle: ""
 
 By the end of this session, you will be able to:
 
-- Compute frequency of a single-word lexical item in reference corpora
-- Derive vocabulary frequency list using concordancing software (e.g., AntConc)
-- Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
+> - Compute frequency of a single-word lexical item in reference corpora
+> - Derive vocabulary frequency list using concordancing software (e.g., AntConc)
+> - Apply tokenization on the Japanese language corpus for frequency analysis
+> - Conduct Lexical Profiling using a web-application or desktop application (e.g., AntWordProfiler)
 
 
 ## 🔑 Key Concepts
 
 - Lexical profiling
 - Frequency Lists
-- Zipf law
+- Zipf's law
 - Lexical coverage
 
 
@@ -32,7 +33,13 @@ By the end of this session, you will be able to:
 
 ## Materials
 
-- Slides (Under construction)
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-5.html){target="_blank"} 
+
+<iframe src="../../slides/session-5.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
+
 
 ## Reflection
 

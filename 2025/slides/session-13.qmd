@@ -14,9 +14,14 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- 
+By the end of this session, students will be able to:
+ 
+> - Describe how LLMs are trained generally and what LLMs do to produce language.
+> - Explain the benefits and drawbacks of using LLMs for linguistic annotation.
+> - Demonstrate/discuss potential impacts of prompts on the LLMs performance on linguistic annotation.
+> - Design an experiment to investigate LLMs output accuracy on a given annotation task.
 
 ---
 

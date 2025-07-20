@@ -8,6 +8,8 @@ toc: true
 
 The EnglishCorpora.org, formally BYU (Brigham Young University) corpora, provide web-based interfaces to some of the largest and most widely-used corpora in the world. These include COCA (Corpus of Contemporary American English), BNC (British National Corpus), and many others.
 
+You will need a usable account for [english-corpora.org](https://www.english-corpora.org/) on **on Day 1**.
+
 ## Available Corpora
 
 ### Major English Corpora
@@ -30,7 +32,7 @@ The EnglishCorpora.org, formally BYU (Brigham Young University) corpora, provide
 3. Register for free account
 4. Limited to 20 queries per day
 
-### Academic License (or through purchase)
+### Academic License (Do not purchase for this class)
 - Extended query limits
 - Download capabilities
 - Available through institution

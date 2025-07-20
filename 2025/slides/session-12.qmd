@@ -13,9 +13,13 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- 
+By the end of this session, students will be able to:
+ 
+> - Conduct linguistic complexity analysis using a template Python code provided by the instructor.
+> - (Optional) Apply the concept of linguistic complexity to the Japanese language.
+
 
 ---
 

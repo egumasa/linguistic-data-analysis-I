@@ -10,10 +10,12 @@ subtitle: "Grammar - Overview"
 
 > By the end of this session, students will be able to:
 > 
-> - Understand different approaches to grammatical features:
->   - Grammatical complexity research
->   - Descriptive approaches
-> - Understand historical overview of the syntactic complexity research
+> - Provide historical overview of the syntactic complexity research
+> - Describe different approaches to grammatical features:
+>   - Grammatical complexity strand
+>   - Fine-grained grammatical complexity strand
+>   - Descriptive (register-based analysis) strand
+>   - Verb Argument Construction (VAC) strand
 > - Understand current trends of syntactic complexity research
 
 
@@ -26,17 +28,35 @@ subtitle: "Grammar - Overview"
 
 - Durrant Ch. 5.
 
+- Kyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349. https://doi.org/10.1111/modl.12468
+
+
 #### Recommended Readings
+
+- Norris, J. M., & Ortega, L. (2009). Towards an Organic Approach to Investigating CAF in Instructed SLA: The Case of Complexity. Applied Linguistics, 30(4), 555–578. https://doi.org/10.1093/applin/amp044
 
 - Biber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869
 
 
+
 ## Materials
 
-- Slides (Under construction)
+### Slides for the session (Under construction)
+
+<!-- [View slides in fullscreen](../../slides/session-10.html){target="_blank"} 
+
+<iframe src="../../slides/session-10.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
+
 
 
 ## Reflection
+
+- You can now:
+  - Describe classic linguistic complexity measures
+  - Describe how 
+
+
 
 <!-- 
 <iframe src="session1-intro/slides/slides.html" width="100%" height="600px" frameborder="0"></iframe>

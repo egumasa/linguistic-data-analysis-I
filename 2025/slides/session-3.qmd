@@ -14,13 +14,13 @@ metadata-files:
 # Session overview
 
  
-## Objectives
+## 🎯 Learning Objectives
 
-By the end of this session, you will be able to:
-
-- Conduct Basic Corpus search, including KWIC.
-- Sort KWIC search results to obtain qualitative observation about language use
-- Use advanced search strings such as regular expression to fine-tune the search results
+> By the end of this session, students will be able to:
+> 
+> - Conduct KWIC searches on [English-Corpora.org](https://www.english-corpora.org/)
+> - Sort KWIC search results to obtain qualitative observation about language use
+> - Use advanced search strings such as regular expression to fine-tune the search results
 
 ---
  

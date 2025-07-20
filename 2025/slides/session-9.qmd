@@ -10,12 +10,13 @@ metadata-files:
 # Housekeeping
 
 
-# Session overview
+## 🎯 Learning Objectives
 
+By the end of this session, students will be able to:
 
-## Objectives
+> - Justify choices of lexical richness measures to investigate a research questions
+> - Conduct a simple statistical analysis of selected corpus on small sets of lexical measures using JASP software
 
-- 
 
 ---
 
@@ -27,6 +28,11 @@ metadata-files:
 
 
 # Reflection
+
+- You can now:
+  - Provide reasons for your choice of lexical richness measures.
+  - Conduct preliminary analysis to understand how text differ from one aother in relation to learner's proficiency, learner groups, etc.
+  - Brainstorm your ideas for your final project.
 
 
 

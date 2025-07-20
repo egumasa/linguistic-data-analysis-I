@@ -12,9 +12,13 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
 
-- 
+By the end of this session, students will be able to:
+
+> - Explain different types of multiword units: collocation, n-grams, lexical bundles
+> - Demonstrate how major association strengths measures (t-score, Mutual Information, and LogDice) are calculated using examples
+
 
 ---
 

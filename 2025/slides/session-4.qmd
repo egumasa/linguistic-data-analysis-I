@@ -36,7 +36,15 @@ metadata-files:
 # Session overview
 
 
-## Objectives
+## 🎯 Learning Objectives
+
+> By the end of this session, students will be able to:
+> 
+> - Explain the purposes of linguistic measures 
+> - List commonly used lexical measures in second language acquisition research
+> - Explain sub-constructs of lexical richness measures
+>    - Lexical Diversity
+>    - Lexical Sophistication
 
 ---
 

@@ -5,14 +5,15 @@ subtitle: "Basic Corpus Search"
 
 ## One-liner
 
-You will learn how to conduct basic corpus search.
+You will learn how to conduct basic corpus searches.
 
 ## 🎯 Learning Objectives
 
 > By the end of this session, students will be able to:
 > 
-> - Conduct the KWIC search based on chosen corpus
-> - Run frequency analysis on a Web Corpus
+> - Conduct KWIC searches on [English-Corpora.org](https://www.english-corpora.org/)
+> - Sort KWIC search results to obtain qualitative observation about language use
+> - Use advanced search strings such as regular expression to fine-tune the search results
 
 ## 🔑 Key Concepts
 
@@ -32,10 +33,8 @@ You will learn how to conduct basic corpus search.
 
 ## Materials
 
-- [Slides](../../slides/session-3.html){target="_blank"} (Opens in new window)
-<!-- - [Download PDF](../../slides/session-3.pdf){target="_blank"} -->
+### Slides for the session
 
-### Embedded Slides
 
 <iframe src="../../slides/session-3.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
 
