@@ -5,8 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "fugashi>=1.5.1",
+    "ginza>=5.2.0",
     "ipykernel>=6.29.5",
     "ipython>=9.4.0",
+    "ja-ginza>=5.2.0",
+    "ja-ginza-electra>=5.2.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.3",
     "numpy>=2.3.1",
@@ -15,4 +19,7 @@ dependencies = [
     "spacy>=3.8.7",
     "sudachipy>=0.6.10",
     "taaled>=0.32",
+    "tokenizers>=0.14.0",
+    "unidic>=1.1.0",
+    "unidic-lite>=1.0.8",
 ]

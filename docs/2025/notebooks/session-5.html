@@ -313,7 +313,7 @@ ALT tokens (mode A): ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '�
 STD POS: ['PRON', 'ADP', 'NOUN', 'PROPN', 'ADP', 'VERB', 'SCONJ', 'VERB', 'VERB', 'AUX', 'AUX', 'PUNCT']</code></pre>
 </div>
 </div>
-<div id="a93cf5d4" class="cell" data-execution_count="6">
+<div id="a93cf5d4" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spacy</span>
@@ -333,13 +333,190 @@ STD POS: ['PRON', 'ADP', 'NOUN', 'PROPN', 'ADP', 'VERB', 'SCONJ', 'VERB', 'VERB'
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># nlp.tokenizer = sudachi_tokenizer_func</span></span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(<span class="st">"夏が過ぎると御香典の時間。"</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(<span class="st">"今年の干支は庚子です。東京オリンピックたのしみだなあ。"</span>)</span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>([t.text <span class="cf">for</span> t <span class="kw">in</span> doc])</span>
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>([(t.norm_, t.pos_, t.tag_) <span class="cf">for</span> t <span class="kw">in</span> doc])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>['夏', 'が', '過ぎる', 'と', '御', '香典', 'の', '時間', '。']
-[('夏', 'NOUN', '名詞-普通名詞-副詞可能'), ('が', 'ADP', '助詞-格助詞'), ('過ぎる', 'VERB', '動詞-非自立可能'), ('と', 'SCONJ', '助詞-接続助詞'), ('御', 'NOUN', '接頭辞'), ('香典', 'NOUN', '名詞-普通名詞-一般'), ('の', 'ADP', '助詞-格助詞'), ('時間', 'NOUN', '名詞-普通名詞-助数詞可能'), ('。', 'PUNCT', '補助記号-句点')]</code></pre>
+<pre><code>['今年', 'の', '干支', 'は', '庚子', 'です', '。', '東京', 'オリンピック', 'たのし', 'み', 'だ', 'なあ', '。']
+[('今年', 'NOUN', '名詞-普通名詞-副詞可能'), ('の', 'ADP', '助詞-格助詞'), ('干支', 'NOUN', '名詞-普通名詞-一般'), ('は', 'ADP', '助詞-係助詞'), ('庚子', 'NOUN', '名詞-普通名詞-一般'), ('です', 'AUX', '助動詞'), ('。', 'PUNCT', '補助記号-句点'), ('東京', 'PROPN', '名詞-固有名詞-地名-一般'), ('オリンピック', 'NOUN', '名詞-普通名詞-一般'), ('楽しい', 'ADJ', '形容詞-一般'), ('味', 'PART', '接尾辞-名詞的-一般'), ('だ', 'AUX', '助動詞'), ('な', 'PART', '助詞-終助詞'), ('。', 'PUNCT', '補助記号-句点')]</code></pre>
+</div>
+</div>
+<div id="4487d1de" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spacy</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.load(<span class="st">"ja_ginza"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(<span class="st">"ひごろ 日ごろ 日頃 呑み 呑んで 飲んで 書きあらわす"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tok <span class="kw">in</span> doc:</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(tok.text, tok.lemma_)  <span class="co"># lemma_ ~ Sudachi dictionary form</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:75: SyntaxWarning: invalid escape sequence '\s'
+  relative_imports = re.findall("^\s*import\s+\.(\S+)\s*$", content, flags=re.MULTILINE)
+/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:77: SyntaxWarning: invalid escape sequence '\s'
+  relative_imports += re.findall("^\s*from\s+\.(\S+)\s+import", content, flags=re.MULTILINE)
+/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:119: SyntaxWarning: invalid escape sequence '\s'
+  imports = re.findall("^\s*import\s+(\S+)\s*$", content, flags=re.MULTILINE)
+/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:121: SyntaxWarning: invalid escape sequence '\s'
+  imports += re.findall("^\s*from\s+(\S+)\s+import", content, flags=re.MULTILINE)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>ひごろ ひごろ
+日ごろ 日ごろ
+日頃 日頃
+呑み 呑む
+呑ん 呑む
+で で
+飲ん 飲む
+で で
+書きあらわす 書きあらわす</code></pre>
+</div>
+</div>
+<div id="e2a4131f" class="cell" data-execution_count="15">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spacy</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spacy.tokens <span class="im">import</span> Doc</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fugashi <span class="im">import</span> Tagger</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize UniDic Tagger</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>tagger <span class="op">=</span> Tagger()   <span class="co"># fugashi auto-loads UniDic if installed</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.blank(<span class="st">"ja"</span>)        <span class="co"># blank Japanese pipeline</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Register custom token extensions</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spacy.tokens <span class="im">import</span> Token</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>Token.set_extension(<span class="st">"unidic_lemma"</span>, default<span class="op">=</span><span class="va">None</span>, force<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>Token.set_extension(<span class="st">"unidic_reading"</span>, default<span class="op">=</span><span class="va">None</span>, force<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>Token.set_extension(<span class="st">"unidic_pos"</span>, default<span class="op">=</span><span class="va">None</span>, force<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>Token.set_extension(<span class="st">"unidic_feats"</span>, default<span class="op">=</span><span class="va">None</span>, force<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mecab_tokenizer(text):</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    words <span class="op">=</span> []</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    spaces <span class="op">=</span> []</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    lemmas <span class="op">=</span> []</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    analyses <span class="op">=</span> tagger(text)</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> m <span class="kw">in</span> analyses:</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>        surface <span class="op">=</span> m.surface</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>        words.append(surface)</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>        spaces.append(<span class="va">False</span>)  <span class="co"># Japanese generally no spaces</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    doc <span class="op">=</span> Doc(nlp.vocab, words<span class="op">=</span>words, spaces<span class="op">=</span>spaces)</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Attach UniDic info</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> tok, m <span class="kw">in</span> <span class="bu">zip</span>(doc, analyses):</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>        <span class="co"># m.feature: tuple with UniDic columns. Structure depends on UniDic version.</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Typical indices (verify!) e.g. lemma at feature[10], reading at feature[9].</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>        feats <span class="op">=</span> m.feature</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Safer: use fugashi attribute helpers</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>        tok._.unidic_lemma <span class="op">=</span> m.feature[<span class="dv">10</span>]  <span class="co"># or m.feature[10]</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>        tok._.unidic_reading <span class="op">=</span> m.feature[<span class="dv">10</span>]  <span class="co"># unified katakana reading</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>        tok._.unidic_pos <span class="op">=</span> <span class="st">","</span>.join(m.feature[:<span class="dv">4</span>])  <span class="co"># hierarchical POS tuple</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>        tok._.unidic_feats <span class="op">=</span> feats</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> doc</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>nlp.tokenizer <span class="op">=</span> mecab_tokenizer</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a><span class="co"># (Optionally add your own components after this, e.g. a statistical tagger trained on this segmentation)</span></span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(<span class="st">"日ごろ ひごろ 日頃 居る いる 書きあらわす"</span>)</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t <span class="kw">in</span> doc:</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(t.text, t._.unidic_lemma, t._.unidic_reading, t._.unidic_pos)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>日ごろ 日ごろ 日ごろ 名詞,普通名詞,副詞可能,*
+ひごろ ひごろ ひごろ 名詞,普通名詞,副詞可能,*
+日頃 日頃 日頃 名詞,普通名詞,副詞可能,*
+居る 居る 居る 動詞,非自立可能,*,*
+いる いる いる 動詞,非自立可能,*,*
+書きあらわす 書きあらわす 書きあらわす 動詞,一般,*,*</code></pre>
+</div>
+</div>
+<div id="45b9aa05" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">dir</span>(m))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[9]</span><span class="ansi-green-fg">, line 1</span>
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span style="color:rgb(0,135,0)">print</span>(<span style="color:rgb(0,135,0)">dir</span>(<span class="ansi-yellow-bg">m</span>))
+
+<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
+</div>
+</div>
+</div>
+<div id="bc13e1fc" class="cell" data-execution_count="16">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spacy</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fugashi <span class="im">import</span> Tagger</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.load(<span class="st">"ja_ginza"</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>tagger <span class="op">=</span> Tagger()</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Register extension fields (only if not already)</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spacy.tokens <span class="im">import</span> Token</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> field <span class="kw">in</span> [<span class="st">"unidic_lemma"</span>,<span class="st">"unidic_reading"</span>,<span class="st">"unidic_pos"</span>]:</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> Token.has_extension(field):</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>        Token.set_extension(field, default<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> unicdic_enricher(doc):</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> doc.text</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Build a char-&gt;token index map (start offsets)</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    char2token <span class="op">=</span> {}</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, tok <span class="kw">in</span> <span class="bu">enumerate</span>(doc):</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> pos <span class="kw">in</span> <span class="bu">range</span>(tok.idx, tok.idx <span class="op">+</span> <span class="bu">len</span>(tok.text)):</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>            char2token.setdefault(pos, i)</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Collect MeCab tokens with offsets</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>    cursor <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> m <span class="kw">in</span> tagger(text):</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>        surf <span class="op">=</span> m.surface</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>        start <span class="op">=</span> text.find(surf, cursor)</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>        cursor <span class="op">=</span> start <span class="op">+</span> <span class="bu">len</span>(surf)</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Find spaCy token that *starts* here (approx.)</span></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> start <span class="kw">in</span> char2token:</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>            i <span class="op">=</span> char2token[start]</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Only annotate if exact surface match (avoid mid-token)</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> doc[i].text.startswith(surf):</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>                doc[i]._.unidic_lemma <span class="op">=</span> m.dictionary_form</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>                doc[i]._.unidic_reading <span class="op">=</span> m.reading</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>                doc[i]._.unidic_pos <span class="op">=</span> <span class="st">","</span>.join(m.pos)</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> doc</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>nlp.add_pipe(unicdic_enricher, name<span class="op">=</span><span class="st">"unidic_enricher"</span>, last<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(<span class="st">"日ごろ ひごろ 日頃 居る いる 書きあらわす"</span>)</span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t <span class="kw">in</span> doc:</span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(t.text, t.lemma_, t._.unidic_lemma)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[16]</span><span class="ansi-green-fg">, line 36</span>
+<span class="ansi-green-fg">     33</span>                 doc[i]._.unidic_pos = <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">,</span><span class="ansi-yellow-fg">"</span>.join(m.pos)
+<span class="ansi-green-fg">     34</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> doc
+<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">36</span> <span class="ansi-yellow-bg">nlp</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">add_pipe</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">unicdic_enricher</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">=</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">unidic_enricher</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">last</span><span class="ansi-yellow-bg">=</span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">True</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">     38</span> doc = nlp(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">日ごろ ひごろ 日頃 居る いる 書きあらわす</span><span class="ansi-yellow-fg">"</span>)
+<span class="ansi-green-fg">     39</span> <span style="font-weight:bold;color:rgb(0,135,0)">for</span> t <span style="font-weight:bold;color:rgb(175,0,255)">in</span> doc:
+
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">~/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/spacy/language.py:811</span>, in <span class="ansi-cyan-fg">Language.add_pipe</span><span class="ansi-blue-fg">(self, factory_name, name, before, after, first, last, source, config, raw_config, validate)</span>
+<span class="ansi-green-fg">    809</span>     bad_val = <span style="color:rgb(0,135,0)">repr</span>(factory_name)
+<span class="ansi-green-fg">    810</span>     err = Errors.E966.format(component=bad_val, name=name)
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">811</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">ValueError</span>(err)
+<span class="ansi-green-fg">    812</span> name = name <span style="font-weight:bold;color:rgb(0,135,0)">if</span> name <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(175,0,255)">not</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span> factory_name
+<span class="ansi-green-fg">    813</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> name <span style="font-weight:bold;color:rgb(175,0,255)">in</span> <span style="color:rgb(0,135,0)">self</span>.component_names:
+
+<span class="ansi-red-fg">ValueError</span>: [E966] `nlp.add_pipe` now takes the string name of the registered component factory, not a callable component. Expected string, but got &lt;function unicdic_enricher at 0x13ca313a0&gt; (name: 'unidic_enricher').
+
+- If you created your component with `nlp.create_pipe('name')`: remove nlp.create_pipe and call `nlp.add_pipe('name')` instead.
+
+- If you passed in a component like `TextCategorizer()`: call `nlp.add_pipe` with the string name instead, e.g. `nlp.add_pipe('textcat')`.
+
+- If you're using a custom component: Add the decorator `@Language.component` (for function components) or `@Language.factory` (for class components / factories) to your custom component and assign it a name, e.g. `@Language.component('your_name')`. You can then run `nlp.add_pipe('your_name')` to add it to the pipeline.</pre>
+</div>
 </div>
 </div>
 
