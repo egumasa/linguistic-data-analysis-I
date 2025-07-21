@@ -1,6 +1,6 @@
 ---
 title: "Linguistic Data Analysis I"
-subtitle: "Corpus Linguistics and Learner Language Analysis"
+subtitle: "Corpus Linguistics and Natural Language Professing for Learner Language Analysis"
 toc: true
 ---
 
