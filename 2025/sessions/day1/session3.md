@@ -1,5 +1,5 @@
 ---
-title: "Session 3: Hands-on 1"
+title: "Session 3"
 subtitle: "Basic Corpus Search"
 ---
 
@@ -28,7 +28,6 @@ You will learn how to conduct basic corpus searches.
 
 - [English-Corpora.org](https://www.english-corpora.org/)
 - [AntConc](https://www.laurenceanthony.net/software/antconc/)
-
 
 
 ## Materials

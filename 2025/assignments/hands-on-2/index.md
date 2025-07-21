@@ -36,6 +36,15 @@ Submit the finished assignment through Google Classroom.
 
 :::
 
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] 
+
+:::
+
 ## Task 2: Hand-calculated lexical diversity scores and TAALED results
 
 **Submission**: 
@@ -45,8 +54,12 @@ Submit the finished assignment through Google Classroom.
 - Descriptive paragraphs explaining the trends of lexical diversity (200-300 words).
 
 ::: {.callout-important}
-## Success Criteria
-- To be updated.
+# Success Criteria
+
+Your submission ...
+
+- [ ] 
+
 :::
 
 ## Task 3: Qualitative analysis of lexical sophistication
@@ -58,6 +71,10 @@ Submit the finished assignment through Google Classroom.
 - Descriptive paragraphs explaining the trends of lexical sophistication (200-300 words).
 
 ::: {.callout-important}
-## Success Criteria
-- To be updated.
+# Success Criteria
+
+Your submission ...
+
+- [ ] 
+
 :::

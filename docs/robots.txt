@@ -1,1 +1,1 @@
-Sitemap: https://egumasa.github.io/Linguistic_Data_Analysis_I/sitemap.xml
+Sitemap: https://egumasa.github.io/Linguistic-Data-Analysis-I/sitemap.xml

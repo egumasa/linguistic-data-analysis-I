@@ -42,6 +42,17 @@ In the first task, I would like you to select two corpus (or two clearly definab
 
 :::
 
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] 
+
+:::
+
+
 ## Task 2 & 3: Mini-research project (8 points altogether)
 
 
@@ -69,3 +80,13 @@ In this assignment, please choose one of the following corpora:
 **Methods**:
 
 **Results**: 
+
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] 
+
+:::

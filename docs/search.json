@@ -217,85 +217,85 @@
   {
     "objectID": "2025/sessions/day1/session3.html",
     "href": "2025/sessions/day1/session3.html",
-    "title": "Session 3: Hands-on 1",
+    "title": "Session 3",
     "section": "",
     "text": "You will learn how to conduct basic corpus searches.",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 3: Hands-on 1"
+      "Session 3"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session3.html#one-liner",
     "href": "2025/sessions/day1/session3.html#one-liner",
-    "title": "Session 3: Hands-on 1",
+    "title": "Session 3",
     "section": "",
     "text": "You will learn how to conduct basic corpus searches.",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 3: Hands-on 1"
+      "Session 3"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session3.html#learning-objectives",
     "href": "2025/sessions/day1/session3.html#learning-objectives",
-    "title": "Session 3: Hands-on 1",
+    "title": "Session 3",
     "section": "🎯 Learning Objectives",
     "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct KWIC searches on English-Corpora.org\nSort KWIC search results to obtain qualitative observation about language use\nUse advanced search strings such as regular expression to fine-tune the search results",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 3: Hands-on 1"
+      "Session 3"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session3.html#key-concepts",
     "href": "2025/sessions/day1/session3.html#key-concepts",
-    "title": "Session 3: Hands-on 1",
+    "title": "Session 3",
     "section": "🔑 Key Concepts",
     "text": "🔑 Key Concepts\n\nKey Words In Context (KWIC)\nLexical Counting unit:\n\nToken\nLemma\nType\n\nRegular Expressions",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 3: Hands-on 1"
+      "Session 3"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session3.html#tools-used",
     "href": "2025/sessions/day1/session3.html#tools-used",
-    "title": "Session 3: Hands-on 1",
+    "title": "Session 3",
     "section": "🛠️ Tools Used",
     "text": "🛠️ Tools Used\n\nEnglish-Corpora.org\nAntConc",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 3: Hands-on 1"
+      "Session 3"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session3.html#materials",
     "href": "2025/sessions/day1/session3.html#materials",
-    "title": "Session 3: Hands-on 1",
+    "title": "Session 3",
     "section": "Materials",
     "text": "Materials\n\nSlides for the session\n\n\nView slides in fullscreen",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 3: Hands-on 1"
+      "Session 3"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session3.html#reflection",
     "href": "2025/sessions/day1/session3.html#reflection",
-    "title": "Session 3: Hands-on 1",
+    "title": "Session 3",
     "section": "Reflection",
     "text": "Reflection",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 3: Hands-on 1"
+      "Session 3"
     ]
   },
   {
@@ -1452,7 +1452,7 @@
     "href": "2025/assignments/hands-on-1/index.html#task-1-constructing-corpus-search-research-question-and-hypothesis",
     "title": "Hands-on Assignment 1",
     "section": "Task 1: Constructing corpus-search research question and hypothesis",
-    "text": "Task 1: Constructing corpus-search research question and hypothesis\nIn this task, you are asked to articulate your research question and hypothesis.\n\nResearch question:\n\n\nHypothesis:",
+    "text": "Task 1: Constructing corpus-search research question and hypothesis\nIn this task, you are asked to articulate your research question and hypothesis for your first corpus assignment. Use the following information as guideline.\n\nResearch question:\n\nResearch questions should be answerable. Follow the class material to construct a intruiging research question that you can answer with basic corpus search skills you learned.\nWrite one or two research questions you would like to answer through this assignment.\n\n\n\nHypothesis:\n\nOnce you decided on research question, state your hypothesis.\nUse the course material to help you articulate research hypothesis.\nWrite a short paragraph stating your hypothesis and why you think your research hypotheses may be true.",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 1"
@@ -1463,7 +1463,7 @@
     "href": "2025/assignments/hands-on-1/index.html#task-2-methods",
     "title": "Hands-on Assignment 1",
     "section": "Task 2: Methods",
-    "text": "Task 2: Methods\nIn this task, you are asked to describe the methods choice of your corpus search. This should include justifications for the corpora used, type of corpus search used.\n\nCorpora\n\n\nSearch Methods and Plan",
+    "text": "Task 2: Methods\nIn this task, you are asked to describe the methods choice of your corpus search. This should include justifications for the corpora used, type of corpus search used.\n\nCorpora\n\nWhich corpora or sub-section of a corpus would you conduct a search on? Why? Justify your choice in a paragraph.\n\n\n\nSearch Methods and Plan\n\nWhat corpus search methods would you choose and why? In this assignment, search methods mainly include methods available through English-Corpora.org, including LIST, Chart, Collocates, Compare and KWIC.\nIn what way are you planning to conduct the search and what kind of information are you expecting from it?",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 1"
@@ -1474,7 +1474,7 @@
     "href": "2025/assignments/hands-on-1/index.html#task-3-result",
     "title": "Hands-on Assignment 1",
     "section": "Task 3: Result",
-    "text": "Task 3: Result\nIn this part of the assignment, you are asked to describe the search results and provide interpretations on the findings.",
+    "text": "Task 3: Result\nIn this part of the assignment, you are asked to describe the search results and provide interpretations on the findings.\n\nCorpus search results: Provide some numbers or discourse samples based on your corpus search. This can be frequency list, table with frequency counts, or a copy of KWIC results.\nInterpretation: Write a paragraph, providing some interpretations of your findings.\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes one or two research questions\narticulates hypotheses\ninclude a list of corpora used\njustifies the selection of corpus\noutlines the search plan (key phrase, regular expression, sorting, filtering, etc.)\nincludes results of your search\nprovides interpretation of the findings.",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 1"
@@ -1714,7 +1714,7 @@
     "href": "2025/assignments/hands-on-2/index.html#task-1-a-japanese-word-frequency-list",
     "title": "Hands-on Assignment 2",
     "section": "Task 1: A Japanese word frequency List",
-    "text": "Task 1: A Japanese word frequency List\n\nConstruct a Japanese word frequency list.\nState a purpose for which you are creating a Japanese word frequency list\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nA Japanese word frequency list (.txt or .tsv format)\nDescriptive paragraphs explaining the frequency distributions of Japanese language.",
+    "text": "Task 1: A Japanese word frequency List\n\nConstruct a Japanese word frequency list.\nState a purpose for which you are creating a Japanese word frequency list\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nA Japanese word frequency list (.txt or .tsv format)\nDescriptive paragraphs explaining the frequency distributions of Japanese language.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
@@ -1725,7 +1725,7 @@
     "href": "2025/assignments/hands-on-2/index.html#task-2-hand-calculated-lexical-diversity-scores-and-taaled-results",
     "title": "Hands-on Assignment 2",
     "section": "Task 2: Hand-calculated lexical diversity scores and TAALED results",
-    "text": "Task 2: Hand-calculated lexical diversity scores and TAALED results\nSubmission:\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nPlots that contains results of the lexical diversity analysis.\nDescriptive paragraphs explaining the trends of lexical diversity (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\n\nTo be updated.",
+    "text": "Task 2: Hand-calculated lexical diversity scores and TAALED results\nSubmission:\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nPlots that contains results of the lexical diversity analysis.\nDescriptive paragraphs explaining the trends of lexical diversity (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
@@ -1736,7 +1736,7 @@
     "href": "2025/assignments/hands-on-2/index.html#task-3-qualitative-analysis-of-lexical-sophistication",
     "title": "Hands-on Assignment 2",
     "section": "Task 3: Qualitative analysis of lexical sophistication",
-    "text": "Task 3: Qualitative analysis of lexical sophistication\nSubmission:\n\nDescriptive paragraph(s) explaining the index of your choice.\nPlots that contains results of the lexical sophistication analysis.\nDescriptive paragraphs explaining the trends of lexical sophistication (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\n\nTo be updated.",
+    "text": "Task 3: Qualitative analysis of lexical sophistication\nSubmission:\n\nDescriptive paragraph(s) explaining the index of your choice.\nPlots that contains results of the lexical sophistication analysis.\nDescriptive paragraphs explaining the trends of lexical sophistication (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
@@ -1758,7 +1758,7 @@
     "href": "2025/assignments/hands-on-3/index.html#task-1-comparing-two-lists-of-formulaic-language-4-points",
     "title": "Hands-on Assignment 3",
     "section": "Task 1: Comparing two lists of formulaic language (4 points)",
-    "text": "Task 1: Comparing two lists of formulaic language (4 points)\nIn the first task, I would like you to select two corpus (or two clearly definable sections of a corpus) and compare and formulaic language that occur in the two (sub-sections of the) corpora.\nResearch questions:\nMethods:\nResults:\n\n\n\n\n\n\nSubmission\n\n\n\n\nA text file (.txt or .tsv) for generated n-grams or collocations\nA word file (.docx) for prose descriptions.",
+    "text": "Task 1: Comparing two lists of formulaic language (4 points)\nIn the first task, I would like you to select two corpus (or two clearly definable sections of a corpus) and compare and formulaic language that occur in the two (sub-sections of the) corpora.\nResearch questions:\nMethods:\nResults:\n\n\n\n\n\n\nSubmission\n\n\n\n\nA text file (.txt or .tsv) for generated n-grams or collocations\nA word file (.docx) for prose descriptions.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 3"
@@ -1769,7 +1769,7 @@
     "href": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether",
     "title": "Hands-on Assignment 3",
     "section": "Task 2 & 3: Mini-research project (8 points altogether)",
-    "text": "Task 2 & 3: Mini-research project (8 points altogether)\nThe task 2 and 3 are related to the mini-research project.\nIn this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.\nSpecifically, you will:\n\nselect lexical richness or phraseological sophistication indices to answer a set of research questions\nanalyze the chosen corpus with the selected indices\npresent the results and interpretation in a written prose\n\n\nCorpus choice\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant)\nBritish Academic Written English\nSome Japanese corpus here.\n\nResearch questions:\nMethods:\nResults:",
+    "text": "Task 2 & 3: Mini-research project (8 points altogether)\nThe task 2 and 3 are related to the mini-research project.\nIn this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.\nSpecifically, you will:\n\nselect lexical richness or phraseological sophistication indices to answer a set of research questions\nanalyze the chosen corpus with the selected indices\npresent the results and interpretation in a written prose\n\n\nCorpus choice\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant)\nBritish Academic Written English\nSome Japanese corpus here.\n\nResearch questions:\nMethods:\nResults:\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 3"
@@ -1791,7 +1791,7 @@
     "href": "2025/assignments/hands-on-4/index.html#task-1-research-questions-hypotheses-and-methods",
     "title": "Hands-on Assignment 4",
     "section": "Task 1: Research questions, Hypotheses and Methods",
-    "text": "Task 1: Research questions, Hypotheses and Methods\n\nResearch questions\n\n\nHypothesis\n\n\nDefinitions of grammatical features to extract\n\nClausal features\nNominal complexity",
+    "text": "Task 1: Research questions, Hypotheses and Methods\nIn this task you will describe research questions, hypothesis, and methods.\n\nResearch questions\n\nResearch questions should include:\n\ntype of features you are looking at (e.g., adverbial clauses)\nfactors that defines your sub-corpora (e.g., grade)\n\n\n\n\nHypothesis\n\nYour research hypothesis should:\n\ndescribe your predictions in terms of:\n\nquantitative trends of the feature in relation to the factor you are interested in.\n\n\n\n\n\nDefinitions of grammatical features to extract\n\nYou must describe the specific grammatical features that you plan to extract.\nFor example, for clausal features you need to specify if:\n\nyou are interested in subordinate clauses or embedded clauses\nyou are interested in particular type of clauses",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 4"
@@ -1802,7 +1802,7 @@
     "href": "2025/assignments/hands-on-4/index.html#task-2-fine-grained-descriptive-grammatical-features",
     "title": "Hands-on Assignment 4",
     "section": "Task 2: Fine-grained Descriptive grammatical features",
-    "text": "Task 2: Fine-grained Descriptive grammatical features\n\n\n\n\n\n\nSubmission\n\n\n\n\nGoogle Colab note (.ipynb file) with extraction code and results.",
+    "text": "Task 2: Fine-grained Descriptive grammatical features\n\nOnce you articulated the information above, you will now conduct a search over the corpus.\nYou should use either simple text analyzer or your own Colab Notebook.\n\nI will specify which option should be used by the time we start working on this assignment (that is, this depends on your progress as a group.)\n\nDescription of rules to identify desirable linguistic feature.\n\nFor example, you will need to specify amod for dependency label to extract adjective + noun phrase.",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 4"
@@ -1813,7 +1813,7 @@
     "href": "2025/assignments/hands-on-4/index.html#task-3-results-and-interpretation",
     "title": "Hands-on Assignment 4",
     "section": "Task 3: Results and interpretation",
-    "text": "Task 3: Results and interpretation",
+    "text": "Task 3: Results and interpretation\n\nProvide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.\nProvide descriptive paragraphs to walk the reader through the results and how to interprete that results.\n\n\n\n\n\n\n\nSubmission\n\n\n\n\nA word file (.docx file) that addresses requirements in a written format (one or two pages depending on your analysis results.).\n\nScreenshots of your search settings on the simple text analyzer tool.\n\nIF you use colab, Google Colab notebook (.ipynb file) with extraction code and results.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\noutlines research questions and hypotheses\nprovide description of your approach (algorithms and rules) to identify the desired linguistic structure.\nprovides analysis results and their interpretations in relation to the research questions",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 4"
@@ -3042,85 +3042,85 @@
   {
     "objectID": "2025/sessions/day1/session2.html",
     "href": "2025/sessions/day1/session2.html",
-    "title": "Session 2:",
+    "title": "Session 2",
     "section": "",
     "text": "Session 2 covers foundational concepts of corpus linguistics.",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 2"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session2.html#one-liner",
     "href": "2025/sessions/day1/session2.html#one-liner",
-    "title": "Session 2:",
+    "title": "Session 2",
     "section": "",
     "text": "Session 2 covers foundational concepts of corpus linguistics.",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 2"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session2.html#learning-objectives",
     "href": "2025/sessions/day1/session2.html#learning-objectives",
-    "title": "Session 2:",
+    "title": "Session 2",
     "section": "🎯 Learning Objectives",
     "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nDefine corpus linguistics as an empirical methodology\nExplain key limitations of introspection in linguistic research\nDescribe the role of frequency data and patterns in corpus analysis\nIdentify and explain the basic steps in corpus-based research\nReflect on their own stance toward data, intuition, and linguistic evidence",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 2"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session2.html#key-concepts",
     "href": "2025/sessions/day1/session2.html#key-concepts",
-    "title": "Session 2:",
+    "title": "Session 2",
     "section": "🔑 Key Concepts",
     "text": "🔑 Key Concepts\n\nCorpus linguistics\nBalanced Corpus\nReference Corpus\nLearner Corpus\nCorpus representativeness\nLinguistic intuition vs data",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 2"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session2.html#required-readings",
     "href": "2025/sessions/day1/session2.html#required-readings",
-    "title": "Session 2:",
+    "title": "Session 2",
     "section": "📚 Required Readings",
     "text": "📚 Required Readings\n\nStefanowitsch (2020) Ch. 1 Freely available online\nStefanowitsch (2020) Ch. 2 Freely available online\n(Skim) Durrant (2023) Ch. 1",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 2"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session2.html#materials",
     "href": "2025/sessions/day1/session2.html#materials",
-    "title": "Session 2:",
+    "title": "Session 2",
     "section": "Materials",
     "text": "Materials\n\nSlides for the session (Under construction)",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 2"
     ]
   },
   {
     "objectID": "2025/sessions/day1/session2.html#reflection",
     "href": "2025/sessions/day1/session2.html#reflection",
-    "title": "Session 2:",
+    "title": "Session 2",
     "section": "Reflection",
     "text": "Reflection",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 2"
     ]
   },
   {

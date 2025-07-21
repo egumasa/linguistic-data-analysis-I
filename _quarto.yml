@@ -6,8 +6,8 @@ project:
 website:
   title: "Linguistic Data Analysis I (Summer 2025)"
   description: "Graduate course on corpus linguistics and learner language analysis at Tohoku University"
-  site-url: "https://egumasa.github.io/Linguistic_Data_Analysis_I/"
-  repo-url: "https://github.com/egumasa/Linguistic_Data_Analysis_I"
+  site-url: "https://egumasa.github.io/Linguistic-Data-Analysis-I/"
+  repo-url: "https://github.com/egumasa/Linguistic-Data-Analysis-I"
   repo-actions: [edit, issue]
   
   navbar:
