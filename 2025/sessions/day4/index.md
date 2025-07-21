@@ -35,7 +35,7 @@ Before Day 4:
 | 13:00-14:30 | Session 11: POS Tagging and Parsing |
 | 14:30-14:40 | Break |
 | 14:40-16:10 | Session 12: Linguistic Complexity Analysis |
-
+| 16:10-17:00 | Office Hour (You can ask questions.) |
 
 ## Assignments
 

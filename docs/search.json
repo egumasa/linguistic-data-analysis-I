@@ -137,6 +137,18 @@
     ]
   },
   {
+    "objectID": "resources/tools/index.html#other-useful-corpus-resources",
+    "href": "resources/tools/index.html#other-useful-corpus-resources",
+    "title": "Tools and Software",
+    "section": "Other useful corpus resources",
+    "text": "Other useful corpus resources\n\nCIABATTTA\nCorpus and Repository of Writing",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "Tools and Software"
+    ]
+  },
+  {
     "objectID": "resources/tools/antconc-guide.html",
     "href": "resources/tools/antconc-guide.html",
     "title": "AntConc Guide",
@@ -161,207 +173,202 @@
     ]
   },
   {
-    "objectID": "resources/code-examples/python/index.html",
-    "href": "resources/code-examples/python/index.html",
-    "title": "Python Notebooks",
+    "objectID": "2025/notebooks/japanese-nlp-test.html",
+    "href": "2025/notebooks/japanese-nlp-test.html",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
     "section": "",
-    "text": "Python notebooks for corpus analysis tasks."
+    "text": "This notebook implements and compares two approaches for Japanese morphological analysis with BCCWJ frequency matching:\nEach approach is designed for reproducible setup, implementation, validation, and operational use."
   },
   {
-    "objectID": "resources/code-examples/python/index.html#available-notebooks",
-    "href": "resources/code-examples/python/index.html#available-notebooks",
-    "title": "Python Notebooks",
-    "section": "",
-    "text": "Python notebooks for corpus analysis tasks."
+    "objectID": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
+    "href": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "1. Environment Setup & Verification",
+    "text": "1. Environment Setup & Verification\nFirst, let’s verify and set up our environment with all required packages.\n\n\nShow code\n# Environment verification and setup\nimport sys\nimport subprocess\nfrom pathlib import Path\n\nprint(f\"Python version: {sys.version}\")\nprint(f\"Working directory: {Path.cwd()}\")\n\n# Required packages\nrequired_packages = [\n    'fugashi', 'unidic', 'unidic-lite', 'spacy', 'ginza', \n    'ja-ginza', 'sudachipy', 'pandas', 'numpy', 'matplotlib', 'collections'\n]\n\nprint(\"\\nChecking package availability:\")\nfor package in required_packages:\n    try:\n        if package == 'collections':\n            import collections\n            print(f\"✓ {package} (built-in)\")\n        else:\n            __import__(package)\n            print(f\"✓ {package}\")\n    except ImportError:\n        print(f\"✗ {package} - NOT FOUND\")\n\n\nPython version: 3.12.2 (main, Feb 25 2024, 03:55:42) [Clang 17.0.6 ]\nWorking directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/2025/notebooks\n\nChecking package availability:\n✓ fugashi\n✓ unidic\n✗ unidic-lite - NOT FOUND\n✓ spacy\n✓ ginza\n✗ ja-ginza - NOT FOUND\n✓ sudachipy\n✓ pandas\n✓ numpy\n✓ matplotlib\n✓ collections (built-in)\n\n\n\n\nShow code\n# Import all necessary libraries\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter, defaultdict\nimport time\nimport warnings\nfrom typing import List, Tuple, Dict, Optional\n\n# Japanese NLP libraries\nimport fugashi\nimport unidic\nimport spacy\nfrom spacy.tokens import Token, Doc\n\n# Statistical analysis\ntry:\n    from scipy.stats import spearmanr\n    scipy_available = True\nexcept ImportError:\n    print(\"scipy not available - will use numpy for correlation\")\n    scipy_available = False\n\nprint(\"All imports successful!\")\nwarnings.filterwarnings('ignore')\n\n\nscipy not available - will use numpy for correlation\nAll imports successful!\n\n\n\n\nShow code\n# Check UniDic installation and download if needed\ntry:\n    print(f\"UniDic directory: {unidic.DICDIR}\")\n    print(\"UniDic is properly installed\")\nexcept Exception as e:\n    print(f\"UniDic issue: {e}\")\n    print(\"You may need to run: python -m unidic download\")\n\n# Test basic fugashi functionality\ntry:\n    tagger = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\n    test_result = list(tagger(\"テスト\"))\n    print(f\"Fugashi + UniDic test successful: {test_result[0].surface}\")\nexcept Exception as e:\n    print(f\"Fugashi test failed: {e}\")\n\n\nUniDic directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\nUniDic is properly installed\nFugashi + UniDic test successful: テスト"
   },
   {
-    "objectID": "resources/code-examples/python/index.html#how-to-use",
-    "href": "resources/code-examples/python/index.html#how-to-use",
-    "title": "Python Notebooks",
-    "section": "How to Use",
-    "text": "How to Use\n\nClick on any notebook link\nOpen in Google Colab\nMake a copy to your Google Drive\nRun cells sequentially"
+    "objectID": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
+    "href": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "2. Sample Data Preparation",
+    "text": "2. Sample Data Preparation\nLet’s create realistic Japanese text samples for testing our pipelines.\n\n\nShow code\n# Sample Japanese texts for testing\nsample_texts = [\n    \"彼は日ごろから本を読むのが好きです。\",\n    \"ひごろの勉強が大切だと思います。\",\n    \"日頃の努力が実を結ぶでしょう。\",\n    \"彼女は書きあらわすことが得意です。\",\n    \"その問題を書き表すのは難しい。\",\n    \"今日は東京オリンピックについて話しましょう。\",\n    \"コーヒーを飲んで、呑み込んで、また飲んでしまった。\",\n    \"国際的な協力が必要不可欠です。\",\n    \"機械学習の技術が進歩している。\",\n    \"自然言語処理は興味深い分野だ。\"\n]\n\nprint(\"Sample texts prepared:\")\nfor i, text in enumerate(sample_texts, 1):\n    print(f\"{i:2d}. {text}\")\n\n# Create a larger corpus by repeating and slightly modifying texts\nextended_corpus = sample_texts * 3  # Simulate frequency variations\nprint(f\"\\nExtended corpus: {len(extended_corpus)} texts\")\n\n\nSample texts prepared:\n 1. 彼は日ごろから本を読むのが好きです。\n 2. ひごろの勉強が大切だと思います。\n 3. 日頃の努力が実を結ぶでしょう。\n 4. 彼女は書きあらわすことが得意です。\n 5. その問題を書き表すのは難しい。\n 6. 今日は東京オリンピックについて話しましょう。\n 7. コーヒーを飲んで、呑み込んで、また飲んでしまった。\n 8. 国際的な協力が必要不可欠です。\n 9. 機械学習の技術が進歩している。\n10. 自然言語処理は興味深い分野だ。\n\nExtended corpus: 30 texts\n\n\n\n\nShow code\n# Create mock BCCWJ frequency data for testing\n# In real usage, this would be loaded from an actual BCCWJ frequency file\n\nmock_bccwj_data = [\n    ('日頃', 'ヒゴロ', '名詞', 1250),\n    ('本', 'ホン', '名詞', 8500),\n    ('読む', 'ヨム', '動詞', 3200),\n    ('好き', 'スキ', '形容動詞', 2100),\n    ('勉強', 'ベンキョウ', '名詞', 4200),\n    ('大切', 'タイセツ', '形容動詞', 1800),\n    ('思う', 'オモウ', '動詞', 9500),\n    ('努力', 'ドリョク', '名詞', 2200),\n    ('実', 'ミ', '名詞', 1100),\n    ('結ぶ', 'ムスブ', '動詞', 800),\n    ('書く', 'カク', '動詞', 4100),\n    ('表す', 'アラワス', '動詞', 1500),\n    ('得意', 'トクイ', '形容動詞', 1300),\n    ('問題', 'モンダイ', '名詞', 6200),\n    ('難しい', 'ムズカシイ', '形容詞', 3800),\n    ('今日', 'キョウ', '名詞', 5500),\n    ('東京', 'トウキョウ', '名詞', 4800),\n    ('話す', 'ハナス', '動詞', 3600),\n    ('飲む', 'ノム', '動詞', 2400),\n    ('呑む', 'ノム', '動詞', 150),\n    ('国際', 'コクサイ', '名詞', 2800),\n    ('協力', 'キョウリョク', '名詞', 1900),\n    ('必要', 'ヒツヨウ', '形容動詞', 4500),\n    ('技術', 'ギジュツ', '名詞', 3900),\n    ('進歩', 'シンポ', '名詞', 1100)\n]\n\n# Create DataFrame\ndf_bccwj = pd.DataFrame(mock_bccwj_data, columns=['lemma', 'reading', 'pos', 'freq_bccwj'])\ndf_bccwj['key'] = list(zip(df_bccwj.lemma, df_bccwj.reading, df_bccwj.pos))\n\nprint(\"Mock BCCWJ frequency data:\")\nprint(df_bccwj.head(10))\nprint(f\"\\nTotal entries: {len(df_bccwj)}\")\n\n\nMock BCCWJ frequency data:\n  lemma reading   pos  freq_bccwj               key\n0    日頃     ヒゴロ    名詞        1250     (日頃, ヒゴロ, 名詞)\n1     本      ホン    名詞        8500       (本, ホン, 名詞)\n2    読む      ヨム    動詞        3200      (読む, ヨム, 動詞)\n3    好き      スキ  形容動詞        2100    (好き, スキ, 形容動詞)\n4    勉強   ベンキョウ    名詞        4200   (勉強, ベンキョウ, 名詞)\n5    大切    タイセツ  形容動詞        1800  (大切, タイセツ, 形容動詞)\n6    思う     オモウ    動詞        9500     (思う, オモウ, 動詞)\n7    努力    ドリョク    名詞        2200    (努力, ドリョク, 名詞)\n8     実       ミ    名詞        1100        (実, ミ, 名詞)\n9    結ぶ     ムスブ    動詞         800     (結ぶ, ムスブ, 動詞)\n\nTotal entries: 25"
   },
   {
-    "objectID": "2025/notebooks/session-5.html",
-    "href": "2025/notebooks/session-5.html",
-    "title": "",
-    "section": "",
-    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import dictionary, tokenizer\nfrom spacy.tokens import Doc\n\n# 1. Standard pipeline (for reliable POS/DEP):\nstd_nlp = spacy.load(\"ja_core_news_sm\")\n\n# 2. Alternate segmentation pipeline (no tagging):\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.A  # A=short, C=long\n\nalt_nlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    ms = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in ms]\n    spaces = [False]*len(words)\n    return Doc(alt_nlp.vocab, words=words, spaces=spaces)\n\nalt_nlp.tokenizer = sudachi_tokenizer_func\n\ntext = \"彼は昨日本を買って読み始めました。\"\ndoc_std = std_nlp(text)\ndoc_alt = alt_nlp(text)\n\nprint(\"STD tokens:\", [t.text for t in doc_std])\nprint(\"ALT tokens (mode A):\", [t.text for t in doc_alt])\nprint(\"STD POS:\", [t.pos_ for t in doc_std])\n\n\nSTD tokens: ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nALT tokens (mode A): ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nSTD POS: ['PRON', 'ADP', 'NOUN', 'PROPN', 'ADP', 'VERB', 'SCONJ', 'VERB', 'VERB', 'AUX', 'AUX', 'PUNCT']\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import tokenizer, dictionary\nfrom spacy.tokens import Doc\n\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.C  # change to A for short proxy\n\nnlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    sudachi_tokens = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in sudachi_tokens]\n    spaces = [False]*len(words)\n    return Doc(nlp.vocab, words=words, spaces=spaces)\n\n# nlp.tokenizer = sudachi_tokenizer_func\n\ndoc = nlp(\"今年の干支は庚子です。東京オリンピックたのしみだなあ。\")\nprint([t.text for t in doc])\nprint([(t.norm_, t.pos_, t.tag_) for t in doc])\n\n\n['今年', 'の', '干支', 'は', '庚子', 'です', '。', '東京', 'オリンピック', 'たのし', 'み', 'だ', 'なあ', '。']\n[('今年', 'NOUN', '名詞-普通名詞-副詞可能'), ('の', 'ADP', '助詞-格助詞'), ('干支', 'NOUN', '名詞-普通名詞-一般'), ('は', 'ADP', '助詞-係助詞'), ('庚子', 'NOUN', '名詞-普通名詞-一般'), ('です', 'AUX', '助動詞'), ('。', 'PUNCT', '補助記号-句点'), ('東京', 'PROPN', '名詞-固有名詞-地名-一般'), ('オリンピック', 'NOUN', '名詞-普通名詞-一般'), ('楽しい', 'ADJ', '形容詞-一般'), ('味', 'PART', '接尾辞-名詞的-一般'), ('だ', 'AUX', '助動詞'), ('な', 'PART', '助詞-終助詞'), ('。', 'PUNCT', '補助記号-句点')]\n\n\n\n\nShow code\nimport spacy\nnlp = spacy.load(\"ja_ginza\")\ndoc = nlp(\"ひごろ 日ごろ 日頃 呑み 呑んで 飲んで 書きあらわす\")\nfor tok in doc:\n    print(tok.text, tok.lemma_)  # lemma_ ~ Sudachi dictionary form\n\n\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:75: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports = re.findall(\"^\\s*import\\s+\\.(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:77: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports += re.findall(\"^\\s*from\\s+\\.(\\S+)\\s+import\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:119: SyntaxWarning: invalid escape sequence '\\s'\n  imports = re.findall(\"^\\s*import\\s+(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:121: SyntaxWarning: invalid escape sequence '\\s'\n  imports += re.findall(\"^\\s*from\\s+(\\S+)\\s+import\", content, flags=re.MULTILINE)\n\n\nひごろ ひごろ\n日ごろ 日ごろ\n日頃 日頃\n呑み 呑む\n呑ん 呑む\nで で\n飲ん 飲む\nで で\n書きあらわす 書きあらわす\n\n\n\n\nShow code\nimport spacy\nfrom spacy.tokens import Doc\nfrom fugashi import Tagger\n\n# Initialize UniDic Tagger\ntagger = Tagger()   # fugashi auto-loads UniDic if installed\n\nnlp = spacy.blank(\"ja\")        # blank Japanese pipeline\n\n# Register custom token extensions\nfrom spacy.tokens import Token\nToken.set_extension(\"unidic_lemma\", default=None, force=True)\nToken.set_extension(\"unidic_reading\", default=None, force=True)\nToken.set_extension(\"unidic_pos\", default=None, force=True)\nToken.set_extension(\"unidic_feats\", default=None, force=True)\n\ndef mecab_tokenizer(text):\n    words = []\n    spaces = []\n    lemmas = []\n    analyses = tagger(text)\n    for m in analyses:\n        surface = m.surface\n        words.append(surface)\n        spaces.append(False)  # Japanese generally no spaces\n    doc = Doc(nlp.vocab, words=words, spaces=spaces)\n    # Attach UniDic info\n    for tok, m in zip(doc, analyses):\n        # m.feature: tuple with UniDic columns. Structure depends on UniDic version.\n        # Typical indices (verify!) e.g. lemma at feature[10], reading at feature[9].\n        \n        feats = m.feature\n        # Safer: use fugashi attribute helpers\n        tok._.unidic_lemma = m.feature[10]  # or m.feature[10]\n        tok._.unidic_reading = m.feature[10]  # unified katakana reading\n        tok._.unidic_pos = \",\".join(m.feature[:4])  # hierarchical POS tuple\n        tok._.unidic_feats = feats\n    return doc\n\nnlp.tokenizer = mecab_tokenizer\n\n# (Optionally add your own components after this, e.g. a statistical tagger trained on this segmentation)\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t._.unidic_lemma, t._.unidic_reading, t._.unidic_pos)\n\n\n日ごろ 日ごろ 日ごろ 名詞,普通名詞,副詞可能,*\nひごろ ひごろ ひごろ 名詞,普通名詞,副詞可能,*\n日頃 日頃 日頃 名詞,普通名詞,副詞可能,*\n居る 居る 居る 動詞,非自立可能,*,*\nいる いる いる 動詞,非自立可能,*,*\n書きあらわす 書きあらわす 書きあらわす 動詞,一般,*,*\n\n\n\n\nShow code\nprint(dir(m))\n\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nCell In[9], line 1\n----&gt; 1 print(dir(m))\n\nNameError: name 'm' is not defined\n\n\n\n\n\nShow code\nimport spacy\nfrom fugashi import Tagger\n\nnlp = spacy.load(\"ja_ginza\")\ntagger = Tagger()\n\n# Register extension fields (only if not already)\nfrom spacy.tokens import Token\nfor field in [\"unidic_lemma\",\"unidic_reading\",\"unidic_pos\"]:\n    if not Token.has_extension(field):\n        Token.set_extension(field, default=None)\n\ndef unicdic_enricher(doc):\n    text = doc.text\n    # Build a char-&gt;token index map (start offsets)\n    char2token = {}\n    for i, tok in enumerate(doc):\n        for pos in range(tok.idx, tok.idx + len(tok.text)):\n            char2token.setdefault(pos, i)\n    # Collect MeCab tokens with offsets\n    cursor = 0\n    for m in tagger(text):\n        surf = m.surface\n        start = text.find(surf, cursor)\n        cursor = start + len(surf)\n        # Find spaCy token that *starts* here (approx.)\n        if start in char2token:\n            i = char2token[start]\n            # Only annotate if exact surface match (avoid mid-token)\n            if doc[i].text.startswith(surf):\n                doc[i]._.unidic_lemma = m.dictionary_form\n                doc[i]._.unidic_reading = m.reading\n                doc[i]._.unidic_pos = \",\".join(m.pos)\n    return doc\n\nnlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t.lemma_, t._.unidic_lemma)\n\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\nCell In[16], line 36\n     33                 doc[i]._.unidic_pos = \",\".join(m.pos)\n     34     return doc\n---&gt; 36 nlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n     38 doc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\n     39 for t in doc:\n\nFile ~/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/spacy/language.py:811, in Language.add_pipe(self, factory_name, name, before, after, first, last, source, config, raw_config, validate)\n    809     bad_val = repr(factory_name)\n    810     err = Errors.E966.format(component=bad_val, name=name)\n--&gt; 811     raise ValueError(err)\n    812 name = name if name is not None else factory_name\n    813 if name in self.component_names:\n\nValueError: [E966] `nlp.add_pipe` now takes the string name of the registered component factory, not a callable component. Expected string, but got &lt;function unicdic_enricher at 0x13ca313a0&gt; (name: 'unidic_enricher').\n\n- If you created your component with `nlp.create_pipe('name')`: remove nlp.create_pipe and call `nlp.add_pipe('name')` instead.\n\n- If you passed in a component like `TextCategorizer()`: call `nlp.add_pipe` with the string name instead, e.g. `nlp.add_pipe('textcat')`.\n\n- If you're using a custom component: Add the decorator `@Language.component` (for function components) or `@Language.factory` (for class components / factories) to your custom component and assign it a name, e.g. `@Language.component('your_name')`. You can then run `nlp.add_pipe('your_name')` to add it to the pipeline."
+    "objectID": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
+    "href": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline",
+    "text": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline\n\nA-1 to A-3: Setup and Configuration\nUniDic provides the morphological analysis system used in BCCWJ, making it ideal for frequency matching.\n\n\nShow code\n# A-3: Initialize fugashi with UniDic\nprint(\"Initializing Plan A: fugashi + UniDic pipeline\")\n\n# Initialize tagger with explicit UniDic path\ntagger_a = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\nprint(f\"Tagger initialized with UniDic dictionary: {unidic.DICDIR}\")\n\n# Test the tagger\ntest_text = \"日ごろから勉強している。\"\ntokens = list(tagger_a(test_text))\nprint(f\"\\nTest analysis of '{test_text}':\")\nfor token in tokens:\n    print(f\"  {token.surface} -&gt; {token.feature.lemma} [{','.join(token.pos)}]\")\n\n\nInitializing Plan A: fugashi + UniDic pipeline\nTagger initialized with UniDic dictionary: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\n\nTest analysis of '日ごろから勉強している。':\n  日ごろ -&gt; 日頃 [名,詞,,,普,通,名,詞,,,副,詞,可,能,,,*]\n  から -&gt; から [助,詞,,,格,助,詞,,,*,,,*]\n  勉強 -&gt; 勉強 [名,詞,,,普,通,名,詞,,,サ,変,可,能,,,*]\n  し -&gt; 為る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  て -&gt; て [助,詞,,,接,続,助,詞,,,*,,,*]\n  いる -&gt; 居る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  。 -&gt; 。 [補,助,記,号,,,句,点,,,*,,,*]\n\n\n\n\nShow code\n# A-4: Morphological field extraction function\ndef iter_lemma_keys_plan_a(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    \n    Args:\n        text: Input Japanese text\n        tagger: fugashi Tagger instance\n    \n    Returns:\n        List of (dictionary_form, reading, pos_major) tuples\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            lemma = m.feature[10] if m.feature[10] else m.surface\n            reading = m.feature[11] if m.feature[11] else ''\n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Test the extraction function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}':\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。':\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, スル, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# Fixed version with proper fugashi/UniDic attribute handling\ndef iter_lemma_keys_fixed(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    Fixed version that handles fugashi attribute variations.\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            \n            # Handle different attribute names for lemma\n            try:\n                lemma = m.lemma if hasattr(m, 'lemma') else m.feature[10]\n            except:\n                lemma = m.surface  # fallback\n            \n            # Handle different attribute names for reading\n            try:\n                reading = m.feature[9] if len(m.feature) &gt; 9 else ''\n            except:\n                reading = ''  # fallback\n            \n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Use the fixed function\niter_lemma_keys_plan_a = iter_lemma_keys_fixed\n\n# Test the fixed function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}' (fixed version):\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。' (fixed version):\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, シ, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# A-5: Frequency analysis with BCCWJ matching\ndef analyze_corpus_plan_a(corpus: List[str], tagger, bccwj_df: pd.DataFrame) -&gt; pd.DataFrame:\n    \"\"\"Analyze corpus using Plan A and match with BCCWJ frequencies.\"\"\"\n    freq = Counter()\n    \n    print(f\"Analyzing {len(corpus)} texts with Plan A...\")\n    for text in corpus:\n        for key in iter_lemma_keys_plan_a(text, tagger):\n            freq[key] += 1\n    \n    # Convert to DataFrame\n    rows = []\n    for (lemma, reading, pos), count in freq.items():\n        rows.append((lemma, reading, pos, count))\n    \n    df_local = pd.DataFrame(rows, columns=['lemma', 'reading', 'pos', 'freq_local'])\n    df_local['key'] = list(zip(df_local.lemma, df_local.reading, df_local.pos))\n    \n    # Merge with BCCWJ data\n    merged = df_local.merge(bccwj_df[['key', 'freq_bccwj']], on='key', how='left')\n    \n    return merged.sort_values('freq_local', ascending=False)\n\n# Run Plan A analysis\nresults_a = analyze_corpus_plan_a(extended_corpus, tagger_a, df_bccwj)\nprint(f\"\\nPlan A Results (top 15):\")\nprint(results_a.head(15)[['lemma', 'reading', 'pos', 'freq_local', 'freq_bccwj']])\n\n\nAnalyzing 30 texts with Plan A...\n\nPlan A Results (top 15):\n   lemma reading pos  freq_local  freq_bccwj\n11     。       *   補          30         NaN\n8      が       ガ   助          18         NaN\n1      は       ワ   助          15         NaN\n7      の       ノ   助          15         NaN\n5      を       オ   助          12         NaN\n10    です      デス   助           9         NaN\n42     で       デ   助           9         NaN\n15     だ       ダ   助           6         NaN\n37     て       テ   助           6         NaN\n41    飲む      ノン   動           6         NaN\n43     、       *   補           6         NaN\n48    国際    コクサイ   名           3         NaN\n47     た       タ   助           3         NaN\n46   しまう     シマッ   動           3         NaN\n0      彼      カレ   代           3         NaN\n\n\n\n\nShow code\n# A-6: Evaluation metrics for Plan A\ndef calculate_metrics(df: pd.DataFrame) -&gt; Dict[str, float]:\n    \"\"\"Calculate coverage and correlation metrics.\"\"\"\n    # Coverage: percentage of local tokens found in BCCWJ\n    matched = df.dropna(subset=['freq_bccwj'])\n    coverage = len(matched) / len(df) * 100\n    \n    # Token coverage (by frequency)\n    total_tokens = df['freq_local'].sum()\n    matched_tokens = matched['freq_local'].sum()\n    token_coverage = matched_tokens / total_tokens * 100\n    \n    # Spearman correlation for matched items\n    if len(matched) &gt; 1:\n        if scipy_available:\n            correlation, p_value = spearmanr(matched['freq_local'], matched['freq_bccwj'])\n        else:\n            correlation = np.corrcoef(matched['freq_local'].rank(), matched['freq_bccwj'].rank())[0,1]\n            p_value = None\n    else:\n        correlation, p_value = None, None\n    \n    return {\n        'type_coverage': coverage,\n        'token_coverage': token_coverage,\n        'correlation': correlation,\n        'p_value': p_value,\n        'total_types': len(df),\n        'matched_types': len(matched),\n        'total_tokens': total_tokens,\n        'matched_tokens': matched_tokens\n    }\n\nmetrics_a = calculate_metrics(results_a)\nprint(\"Plan A Evaluation Metrics:\")\nfor key, value in metrics_a.items():\n    if isinstance(value, float) and value is not None:\n        print(f\"  {key}: {value:.3f}\")\n    else:\n        print(f\"  {key}: {value}\")\n\n\nPlan A Evaluation Metrics:\n  type_coverage: 0.000\n  token_coverage: 0.000\n  correlation: None\n  p_value: None\n  total_types: 66\n  matched_types: 0\n  total_tokens: 297\n  matched_tokens: 0"
   },
   {
-    "objectID": "2025/sessions/day1/session2.html",
-    "href": "2025/sessions/day1/session2.html",
-    "title": "Session 2:",
+    "objectID": "2025/notebooks/session-6.html",
+    "href": "2025/notebooks/session-6.html",
+    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
     "section": "",
-    "text": "Session 2 covers foundational concepts of corpus linguistics.",
+    "text": "Show code\nlow_diversity = \"The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.\"\nShow code\n\nhigh_diversity = \"A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.\"\nShow code\ndef count_token_type(text: str):\n    # delete punctuation\n    text = text.replace(\".\", \"\")\n    text = text.replace(\",\", \"\")\n    text = text.replace(\"?\", \"\")\n\n    \n    token_list = text.strip()\n    token_list = text.split(\" \")\n\n    token = len(token_list)\n    type = len(set(token_list))\n    return (token, type)\nShow code\ncount_token_type(low_diversity)\n\n\n(19, 8)\nShow code\ncount_token_type(high_diversity)\n\n\n(19, 19)\nShow code\nlow_diversity2 = \"The dog ran. The dog jumped. The dog barked. The dog played. The dog ran quickly. The dog jumped so high. The dog barked very loudly. The dog played, sat, and rolled. The dog sneezed. The dog ate the food.\"\nShow code\ncount_token_type(low_diversity2)\n\n\n(40, 18)\nShow code\nlow_diversity3 = \"The parrot squawked loudly. The parrot chirped again. A toucan perched nearby. The parrot fluttered. Wings flapped softly. The parrot chirped again. Feathers shimmered under sunlight. The crow cawed. The parrot glided low. The air shimmered. The owl blinked slowly. The parrot perched again. The owl blinked slowly. The parrot shrieked. The parrot chirped nearby again. The parrot squawked again.\"\nShow code\ncount_token_type(low_diversity3)\n\n\n(60, 27)"
+  },
+  {
+    "objectID": "2025/notebooks/session-6.html#using-lexical-diversity-package",
+    "href": "2025/notebooks/session-6.html#using-lexical-diversity-package",
+    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
+    "section": "Using Lexical Diversity package",
+    "text": "Using Lexical Diversity package\nThere is a package called TAALED maintained by Dr. Kris Kyle.\n\n\nShow code\nfrom taaled import ld\nfrom pylats import lats"
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html",
+    "href": "2025/sessions/day1/session3.html",
+    "title": "Session 3: Hands-on 1",
+    "section": "",
+    "text": "You will learn how to conduct basic corpus searches.",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 3: Hands-on 1"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session2.html#one-liner",
-    "href": "2025/sessions/day1/session2.html#one-liner",
-    "title": "Session 2:",
+    "objectID": "2025/sessions/day1/session3.html#one-liner",
+    "href": "2025/sessions/day1/session3.html#one-liner",
+    "title": "Session 3: Hands-on 1",
     "section": "",
-    "text": "Session 2 covers foundational concepts of corpus linguistics.",
+    "text": "You will learn how to conduct basic corpus searches.",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 3: Hands-on 1"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session2.html#learning-objectives",
-    "href": "2025/sessions/day1/session2.html#learning-objectives",
-    "title": "Session 2:",
+    "objectID": "2025/sessions/day1/session3.html#learning-objectives",
+    "href": "2025/sessions/day1/session3.html#learning-objectives",
+    "title": "Session 3: Hands-on 1",
     "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nDefine corpus linguistics as an empirical methodology\nExplain key limitations of introspection in linguistic research\nDescribe the role of frequency data and patterns in corpus analysis\nIdentify and explain the basic steps in corpus-based research\nReflect on their own stance toward data, intuition, and linguistic evidence",
+    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct KWIC searches on English-Corpora.org\nSort KWIC search results to obtain qualitative observation about language use\nUse advanced search strings such as regular expression to fine-tune the search results",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 3: Hands-on 1"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session2.html#key-concepts",
-    "href": "2025/sessions/day1/session2.html#key-concepts",
-    "title": "Session 2:",
+    "objectID": "2025/sessions/day1/session3.html#key-concepts",
+    "href": "2025/sessions/day1/session3.html#key-concepts",
+    "title": "Session 3: Hands-on 1",
     "section": "🔑 Key Concepts",
-    "text": "🔑 Key Concepts\n\nCorpus linguistics\nBalanced Corpus\nReference Corpus\nLearner Corpus\nCorpus representativeness\nLinguistic intuition vs data",
+    "text": "🔑 Key Concepts\n\nKey Words In Context (KWIC)\nLexical Counting unit:\n\nToken\nLemma\nType\n\nRegular Expressions",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 3: Hands-on 1"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session2.html#required-readings",
-    "href": "2025/sessions/day1/session2.html#required-readings",
-    "title": "Session 2:",
+    "objectID": "2025/sessions/day1/session3.html#tools-used",
+    "href": "2025/sessions/day1/session3.html#tools-used",
+    "title": "Session 3: Hands-on 1",
+    "section": "🛠️ Tools Used",
+    "text": "🛠️ Tools Used\n\nEnglish-Corpora.org\nAntConc",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html#materials",
+    "href": "2025/sessions/day1/session3.html#materials",
+    "title": "Session 3: Hands-on 1",
+    "section": "Materials",
+    "text": "Materials\n\nSlides for the session\n\n\nView slides in fullscreen",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session3.html#reflection",
+    "href": "2025/sessions/day1/session3.html#reflection",
+    "title": "Session 3: Hands-on 1",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3: Hands-on 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#learning-objectives",
+    "href": "2025/sessions/day1/session1.html#learning-objectives",
+    "title": "Session 1",
+    "section": "🎯 Learning Objectives",
+    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nOverview the content of the current course\nExplain key success criteria in this course\nConduct the very first corpus search\nExplain different types of corpus linguistic analysis for different focus:\n\nfrequency analysis,\nconcordance analysis,\ncollocation analysis,\nPart-Of-Speech Tagging, etc.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#key-concepts",
+    "href": "2025/sessions/day1/session1.html#key-concepts",
+    "title": "Session 1",
+    "section": "🔑 Key Concepts",
+    "text": "🔑 Key Concepts\n\nConceptual Overview of the corpus linguistic methods\n\nFrequency\nConcordance\nCollocation analysis\nPart-Of-Speech Tagging\nDependency Parsing",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#required-readings",
+    "href": "2025/sessions/day1/session1.html#required-readings",
+    "title": "Session 1",
     "section": "📚 Required Readings",
-    "text": "📚 Required Readings\n\nStefanowitsch (2020) Ch. 1 Freely available online\nStefanowitsch (2020) Ch. 2 Freely available online\n(Skim) Durrant (2023) Ch. 1",
+    "text": "📚 Required Readings\n\n(Skim) Davies (2015) Available through the shared drive.",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 1"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session2.html#materials",
-    "href": "2025/sessions/day1/session2.html#materials",
-    "title": "Session 2:",
+    "objectID": "2025/sessions/day1/session1.html#notes",
+    "href": "2025/sessions/day1/session1.html#notes",
+    "title": "Session 1",
+    "section": "📝 Notes",
+    "text": "📝 Notes\nNeeds analysis (After giving overview) is conducted at the end of this session.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 1"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session1.html#materials",
+    "href": "2025/sessions/day1/session1.html#materials",
+    "title": "Session 1",
     "section": "Materials",
     "text": "Materials\n\nSlides for the session (Under construction)",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 1"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session2.html#reflection",
-    "href": "2025/sessions/day1/session2.html#reflection",
-    "title": "Session 2:",
+    "objectID": "2025/sessions/day1/session1.html#reflection",
+    "href": "2025/sessions/day1/session1.html#reflection",
+    "title": "Session 1",
     "section": "Reflection",
     "text": "Reflection",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 2:"
+      "Session 1"
     ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html",
-    "href": "2025/sessions/day1/index.html",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "Day 1 introduces basic concepts of corpus linguistics.",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#overview",
-    "href": "2025/sessions/day1/index.html#overview",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "",
-    "text": "Day 1 introduces basic concepts of corpus linguistics.",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#key-concepts",
-    "href": "2025/sessions/day1/index.html#key-concepts",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "Key Concepts",
-    "text": "Key Concepts\n\nlinguistic intuition\nscientific hypothesis and data\nKWIC\nConcordancing",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#preparation",
-    "href": "2025/sessions/day1/index.html#preparation",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "Preparation",
-    "text": "Preparation\nBefore Day 1:\n\nRead:\n\nStefanowitsch (2020) Ch. 1. Freely available online\nStefanowitsch (2020) Ch. 2. Freely available online\n\nSkim:\n\nDurrant (2023) Ch. 1.",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#schedule",
-    "href": "2025/sessions/day1/index.html#schedule",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "Schedule",
-    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1: Introduction\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 2: Corpus foundation\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3: First Hands-on Activity",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#assignments",
-    "href": "2025/sessions/day1/index.html#assignments",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "Assignments",
-    "text": "Assignments\n\nDue Tomorrow: Hands-on Assignment 1\nComplete basic corpus search exercise",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/index.html#reflection",
-    "href": "2025/sessions/day1/index.html#reflection",
-    "title": "Day 1: Introduction and Foundations",
-    "section": "Reflection",
-    "text": "Reflection",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Day 1: Introduction and Foundations"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/outline.html",
-    "href": "2025/sessions/outline.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\nSession 1\n\n\nSession 2\n\n\nSession 3"
   },
   {
     "objectID": "2025/sessions/day5/index.html",
@@ -416,7 +423,7 @@
     "href": "2025/sessions/day5/index.html#schedule",
     "title": "Day 5: Advanced Topics and Final Project",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 13: LLMs in Linguistic Analysis\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 14: Group Project Time\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 15: Project Presentations and Wrap-up",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 13: LLMs in Linguistic Analysis\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 14: Group Project Time\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 15: Project Presentations and Wrap-up\n\n\n16:10-17:00\nOffice Hour (You can ask questions.)",
     "crumbs": [
       "Sessions",
       "Day 5",
@@ -488,7 +495,7 @@
     "href": "2025/sessions/day2/index.html",
     "title": "Day 2: Analyzing Vocabulary",
     "section": "",
-    "text": "Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, diversity, and sophistication.",
+    "text": "Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, particularly diversity and sophistication.",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -500,7 +507,7 @@
     "href": "2025/sessions/day2/index.html#overview",
     "title": "Day 2: Analyzing Vocabulary",
     "section": "",
-    "text": "Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, diversity, and sophistication.",
+    "text": "Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, particularly diversity and sophistication.",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -524,7 +531,7 @@
     "href": "2025/sessions/day2/index.html#preparation",
     "title": "Day 2: Analyzing Vocabulary",
     "section": "Preparation",
-    "text": "Preparation\nBefore Day 2:\n\nRead:\n\nDurrant Ch. 3\n(Skim) Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication. The Modern Language Journal, 104(2), 381–400.\n\nSkim:\n\nDurrant Ch. 4 (Ignore R codes if you are not familiar)\n\nWatch:\n\nLaurence Anthony’s intro to AntConc\n\nGetting started (10 mins)\nCorpus manager Basics (18 mins) \nWord list tool basics (7 mins)",
+    "text": "Preparation\nBefore Day 2:\n\nRead:\n\nDurrant Ch. 3\n\nSkim:\n\nDurrant Ch. 4 (Ignore R codes if you are not familiar)\nEguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication. The Modern Language Journal, 104(2), 381–400.\n\nWatch:\n\nLaurence Anthony’s intro to AntConc\n\nGetting started (10 mins)\nCorpus manager Basics (18 mins) \nWord list tool basics (7 mins)",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -536,7 +543,7 @@
     "href": "2025/sessions/day2/index.html#schedule",
     "title": "Day 2: Analyzing Vocabulary",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 4: Analyzing vocabulary (1) — Conceptual overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 5: Frequency Analysis and Lexical Profiling\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 6: Computing Lexical Measures",
+    "text": "Schedule\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 4: Analyzing vocabulary (1) — Conceptual overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 5: Frequency Analysis and Lexical Profiling\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 6: Computing Lexical Measures\n\n\n16:10-17:00\nOffice Hour (You can ask questions.)",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -776,7 +783,7 @@
     "href": "2025/sessions/day3/index.html#schedule",
     "title": "Day 3: Multiword Units and Collocations",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 7: Multiword Units — Conceptual Overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 8: Hands-on Collocation Analysis\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 9: Learner Corpus Mini-Research",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 7: Multiword Units — Conceptual Overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 8: Hands-on Collocation Analysis\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 9: Learner Corpus Mini-Research\n\n\n16:10-17:00\nOffice Hour (You can ask questions.)",
     "crumbs": [
       "Sessions",
       "Day 3",
@@ -932,7 +939,7 @@
     "href": "2025/syllabus/schedule.html",
     "title": "Course Schedule",
     "section": "",
-    "text": "This course covers foundational concepts in corpus linguistics, corpus analysis methods, and their research applications across the following four areas: vocabulary, multiword units, and grammar.\n\n\n\nDay\nSession No.\nSession title\n\n\n\n\nDay 1 (Aug. 2nd, Sat)\n\nIntroduction to Corpus Linguistics\n\n\n\nSession 1\nGetting Started with Corpus Linguistics\n\n\n\nSession 2\nFoundations of Corpus Linguistics\n\n\n\nSession 3\nBasic Corpus Search\n\n\nDay 2 (Aug. 4th, Mon)\n\nAnalyzing Vocabulary\n\n\n\nSession 4\nConceptual overview\n\n\n\nSession 5\nFrequency lists & Lexical profiling\n\n\n\nSession 6\nLexical diversity & Sophistication\n\n\nDay 3 (Aug. 5th, Tue)\n\nAnalyzing Multiword Units\n\n\n\nSession 7\nConceptual overview\n\n\n\nSession 8\nCollocations & N-grams\n\n\n\nSession 9\nMini-research & Final project overview\n\n\nDay 4 (Aug. 6th, Wed)\n\nAnalyzing Grammar\n\n\n\nSession 10\nConceptual overview\n\n\n\nSession 11\nPOS-tagging and Dependency Parsing\n\n\n\nSession 12\nSyntactic Complexity\n\n\nDay 5 (Aug. 7th, Thu)\n\nAdvanced Topics & Wrap-up\n\n\n\nSession 13\nUsing large language models for language annotation\n\n\n\nSession 14\nFinal project preparation time\n\n\n\nSession 15\nFinal project presentation",
+    "text": "This course covers foundational concepts in corpus linguistics, corpus analysis methods, and their research applications across the following four areas: vocabulary, multiword units, and grammar.\n\n\n\nDay\nSession No.\nSession title\n\n\n\n\nDay 1 (Aug. 2nd, Sat)\n\nIntroduction to Linguistic Data Analysis\n\n\n\nSession 1\nGetting Started with Corpus Linguistics\n\n\n\nSession 2\nFoundations of Corpus Linguistics\n\n\n\nSession 3\nBasic Corpus Search\n\n\nDay 2 (Aug. 4th, Mon)\n\nAnalyzing Vocabulary\n\n\n\nSession 4\nConceptual overview\n\n\n\nSession 5\nFrequency lists & Lexical profiling\n\n\n\nSession 6\nLexical diversity & Sophistication\n\n\nDay 3 (Aug. 5th, Tue)\n\nAnalyzing Multiword Units\n\n\n\nSession 7\nConceptual overview\n\n\n\nSession 8\nCollocations & N-grams\n\n\n\nSession 9\nMini-research & Final project overview\n\n\nDay 4 (Aug. 6th, Wed)\n\nAnalyzing Grammar\n\n\n\nSession 10\nConceptual overview\n\n\n\nSession 11\nPOS-tagging and Dependency Parsing\n\n\n\nSession 12\nSyntactic Complexity\n\n\nDay 5 (Aug. 7th, Thu)\n\nAdvanced Topics & Wrap-up\n\n\n\nSession 13\nUsing large language models for language annotation\n\n\n\nSession 14\nFinal project preparation time\n\n\n\nSession 15\nFinal project presentation",
     "crumbs": [
       "Syllabus",
       "Course Schedule"
@@ -943,18 +950,7 @@
     "href": "2025/syllabus/schedule.html#overview",
     "title": "Course Schedule",
     "section": "",
-    "text": "This course covers foundational concepts in corpus linguistics, corpus analysis methods, and their research applications across the following four areas: vocabulary, multiword units, and grammar.\n\n\n\nDay\nSession No.\nSession title\n\n\n\n\nDay 1 (Aug. 2nd, Sat)\n\nIntroduction to Corpus Linguistics\n\n\n\nSession 1\nGetting Started with Corpus Linguistics\n\n\n\nSession 2\nFoundations of Corpus Linguistics\n\n\n\nSession 3\nBasic Corpus Search\n\n\nDay 2 (Aug. 4th, Mon)\n\nAnalyzing Vocabulary\n\n\n\nSession 4\nConceptual overview\n\n\n\nSession 5\nFrequency lists & Lexical profiling\n\n\n\nSession 6\nLexical diversity & Sophistication\n\n\nDay 3 (Aug. 5th, Tue)\n\nAnalyzing Multiword Units\n\n\n\nSession 7\nConceptual overview\n\n\n\nSession 8\nCollocations & N-grams\n\n\n\nSession 9\nMini-research & Final project overview\n\n\nDay 4 (Aug. 6th, Wed)\n\nAnalyzing Grammar\n\n\n\nSession 10\nConceptual overview\n\n\n\nSession 11\nPOS-tagging and Dependency Parsing\n\n\n\nSession 12\nSyntactic Complexity\n\n\nDay 5 (Aug. 7th, Thu)\n\nAdvanced Topics & Wrap-up\n\n\n\nSession 13\nUsing large language models for language annotation\n\n\n\nSession 14\nFinal project preparation time\n\n\n\nSession 15\nFinal project presentation",
-    "crumbs": [
-      "Syllabus",
-      "Course Schedule"
-    ]
-  },
-  {
-    "objectID": "2025/syllabus/schedule.html#final-project",
-    "href": "2025/syllabus/schedule.html#final-project",
-    "title": "Course Schedule",
-    "section": "Final Project",
-    "text": "Final Project\nFinal Project: Guidelines - Due 2 weeks after course",
+    "text": "This course covers foundational concepts in corpus linguistics, corpus analysis methods, and their research applications across the following four areas: vocabulary, multiword units, and grammar.\n\n\n\nDay\nSession No.\nSession title\n\n\n\n\nDay 1 (Aug. 2nd, Sat)\n\nIntroduction to Linguistic Data Analysis\n\n\n\nSession 1\nGetting Started with Corpus Linguistics\n\n\n\nSession 2\nFoundations of Corpus Linguistics\n\n\n\nSession 3\nBasic Corpus Search\n\n\nDay 2 (Aug. 4th, Mon)\n\nAnalyzing Vocabulary\n\n\n\nSession 4\nConceptual overview\n\n\n\nSession 5\nFrequency lists & Lexical profiling\n\n\n\nSession 6\nLexical diversity & Sophistication\n\n\nDay 3 (Aug. 5th, Tue)\n\nAnalyzing Multiword Units\n\n\n\nSession 7\nConceptual overview\n\n\n\nSession 8\nCollocations & N-grams\n\n\n\nSession 9\nMini-research & Final project overview\n\n\nDay 4 (Aug. 6th, Wed)\n\nAnalyzing Grammar\n\n\n\nSession 10\nConceptual overview\n\n\n\nSession 11\nPOS-tagging and Dependency Parsing\n\n\n\nSession 12\nSyntactic Complexity\n\n\nDay 5 (Aug. 7th, Thu)\n\nAdvanced Topics & Wrap-up\n\n\n\nSession 13\nUsing large language models for language annotation\n\n\n\nSession 14\nFinal project preparation time\n\n\n\nSession 15\nFinal project presentation",
     "crumbs": [
       "Syllabus",
       "Course Schedule"
@@ -965,7 +961,7 @@
     "href": "2025/syllabus/schedule.html#important-notes",
     "title": "Course Schedule",
     "section": "Important Notes",
-    "text": "Important Notes\n\nAll times are Japan Standard Time (JST)\nBring your laptop to all sessions\nComplete readings before each day (see Readings)\n\nFinal Project: Guidelines - Due 2 weeks after course",
+    "text": "Important Notes\n\nAll times are Japan Standard Time (JST)\nBring your laptop to all sessions\nComplete readings before each day",
     "crumbs": [
       "Syllabus",
       "Course Schedule"
@@ -1420,26 +1416,232 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nSearch for window-based collocations and n-grams in AntConc\nCalculate commonly used strengths of association measures by hand using spreadsheet software\nDiscuss benefits and drawbacks of different strength of association measures"
   },
   {
-    "objectID": "2025/assignments/hands-on-3/index.html",
-    "href": "2025/assignments/hands-on-3/index.html",
-    "title": "Hands-on Assignment 3",
+    "objectID": "2025/assignments/hands-on-4/draft.html",
+    "href": "2025/assignments/hands-on-4/draft.html",
+    "title": "",
     "section": "",
-    "text": "Assignment instructions and materials.",
+    "text": "Code"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/draft.html",
+    "href": "2025/assignments/hands-on-3/draft.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-2/draft.html",
+    "href": "2025/assignments/hands-on-2/draft.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/index.html",
+    "href": "2025/assignments/hands-on-1/index.html",
+    "title": "Hands-on Assignment 1",
+    "section": "",
+    "text": "Under Construction\n\n\n\nThis course website is currently under construction and will be ready for the class starting August 2nd, 2025. Content is being actively developed and updated.",
     "crumbs": [
       "Assignments",
-      "Hands-on Assignment 3"
+      "Hands-on Assignment 1"
     ]
   },
   {
-    "objectID": "2025/assignments/hands-on-3/index.html#assignment-details",
-    "href": "2025/assignments/hands-on-3/index.html#assignment-details",
-    "title": "Hands-on Assignment 3",
-    "section": "",
-    "text": "Assignment instructions and materials.",
+    "objectID": "2025/assignments/hands-on-1/index.html#task-1-constructing-corpus-search-research-question-and-hypothesis",
+    "href": "2025/assignments/hands-on-1/index.html#task-1-constructing-corpus-search-research-question-and-hypothesis",
+    "title": "Hands-on Assignment 1",
+    "section": "Task 1: Constructing corpus-search research question and hypothesis",
+    "text": "Task 1: Constructing corpus-search research question and hypothesis\nIn this task, you are asked to articulate your research question and hypothesis.\n\nResearch question:\n\n\nHypothesis:",
     "crumbs": [
       "Assignments",
-      "Hands-on Assignment 3"
+      "Hands-on Assignment 1"
     ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/index.html#task-2-methods",
+    "href": "2025/assignments/hands-on-1/index.html#task-2-methods",
+    "title": "Hands-on Assignment 1",
+    "section": "Task 2: Methods",
+    "text": "Task 2: Methods\nIn this task, you are asked to describe the methods choice of your corpus search. This should include justifications for the corpora used, type of corpus search used.\n\nCorpora\n\n\nSearch Methods and Plan",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 1"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/index.html#task-3-result",
+    "href": "2025/assignments/hands-on-1/index.html#task-3-result",
+    "title": "Hands-on Assignment 1",
+    "section": "Task 3: Result",
+    "text": "Task 3: Result\nIn this part of the assignment, you are asked to describe the search results and provide interpretations on the findings.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 1"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html",
+    "href": "2025/assignments/hands-on-1/draft.html",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "",
+    "text": "How does the frequency of word X change over time, and what do the concordance lines reveal about changes in usage?\nHow does the frequency of word X differ across text types Z, and what patterns appear in the KWIC display?\nWhat is the frequency distribution of grammatical pattern X across different text types, and what contexts does KWIC reveal?\nHow has the usage of word X evolved in the past Y years based on frequency trends and concordance evidence?\nWhat are the typical contexts in which expression X appears based on concordance analysis?\nHow do different varieties of language Y (e.g., British vs. American English) differ in frequency and contexts of feature X?\nWhat patterns emerge when comparing the frequency and KWIC results for synonyms X and Y?\nHow does register (formal/informal) affect both the frequency and typical contexts of linguistic feature X?\nWhich words frequently appear near word X based on manual analysis of concordance lines?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-how-does-the-frequency-of-word-x-change-over-time-and-what-do-the-concordance-lines-reveal-about-changes-in-usage",
+    "href": "2025/assignments/hands-on-1/draft.html#template-how-does-the-frequency-of-word-x-change-over-time-and-what-do-the-concordance-lines-reveal-about-changes-in-usage",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: How does the frequency of word X change over time, and what do the concordance lines reveal about changes in usage?",
+    "text": "Template: How does the frequency of word X change over time, and what do the concordance lines reveal about changes in usage?\n\nExample Questions:\n\nHow does the frequency of “email” change from 1990-2020, and what do concordance lines reveal about its usage evolution?\nHow has the frequency of “global warming” vs “climate change” shifted over decades, and what contexts show this shift?\nHow does the frequency of “shall” change over time in American English, and what do KWIC results show about its declining contexts?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-how-does-the-frequency-of-word-x-differ-across-text-types-z-and-what-patterns-appear-in-the-kwic-display",
+    "href": "2025/assignments/hands-on-1/draft.html#template-how-does-the-frequency-of-word-x-differ-across-text-types-z-and-what-patterns-appear-in-the-kwic-display",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: How does the frequency of word X differ across text types Z, and what patterns appear in the KWIC display?",
+    "text": "Template: How does the frequency of word X differ across text types Z, and what patterns appear in the KWIC display?\n\nExample Questions:\n\nHow does the frequency of “therefore” differ between academic and newspaper texts, and what sentence positions does it occupy in each?\nHow does the frequency of contractions (e.g., “don’t”) vary between spoken and written corpora, and what patterns emerge in KWIC?\nHow does the frequency of “get” differ across fiction vs. academic writing, and what meanings predominate in each genre?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-what-is-the-frequency-distribution-of-grammatical-pattern-x-across-different-text-types-and-what-contexts-does-kwic-reveal",
+    "href": "2025/assignments/hands-on-1/draft.html#template-what-is-the-frequency-distribution-of-grammatical-pattern-x-across-different-text-types-and-what-contexts-does-kwic-reveal",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: What is the frequency distribution of grammatical pattern X across different text types, and what contexts does KWIC reveal?",
+    "text": "Template: What is the frequency distribution of grammatical pattern X across different text types, and what contexts does KWIC reveal?\n\nExample Questions:\n\nWhat is the frequency of “there is/are” constructions in spoken vs. written English, and what follows this pattern in each?\nHow frequent is the “not only…but also” construction across different registers, and what types of elements does it connect?\nWhat is the distribution of passive voice (“was/were + past participle”) in news vs. academic texts, and what verbs commonly appear?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-how-has-the-usage-of-word-x-evolved-in-the-past-y-years-based-on-frequency-trends-and-concordance-evidence",
+    "href": "2025/assignments/hands-on-1/draft.html#template-how-has-the-usage-of-word-x-evolved-in-the-past-y-years-based-on-frequency-trends-and-concordance-evidence",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: How has the usage of word X evolved in the past Y years based on frequency trends and concordance evidence?",
+    "text": "Template: How has the usage of word X evolved in the past Y years based on frequency trends and concordance evidence?\n\nExample Questions:\n\nHow has the usage of “gay” evolved from 1950-2020 based on frequency and changing contexts in concordance lines?\nHow has “literally” changed in frequency and usage patterns over the past 30 years?\nHow has the word “viral” evolved in meaning from 1990-2020 based on concordance evidence?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-what-are-the-typical-contexts-in-which-expression-x-appears-based-on-concordance-analysis",
+    "href": "2025/assignments/hands-on-1/draft.html#template-what-are-the-typical-contexts-in-which-expression-x-appears-based-on-concordance-analysis",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: What are the typical contexts in which expression X appears based on concordance analysis?",
+    "text": "Template: What are the typical contexts in which expression X appears based on concordance analysis?\n\nExample Questions:\n\nIn what contexts does the phrase “at the end of the day” typically appear, and is it more common in spoken or written English?\nWhat are the typical contexts for “on the other hand” and what usually precedes it?\nIn what contexts does “frankly speaking” appear, and what types of statements follow it?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-how-do-different-varieties-of-language-y-differ-in-frequency-and-contexts-of-feature-x",
+    "href": "2025/assignments/hands-on-1/draft.html#template-how-do-different-varieties-of-language-y-differ-in-frequency-and-contexts-of-feature-x",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: How do different varieties of language Y differ in frequency and contexts of feature X?",
+    "text": "Template: How do different varieties of language Y differ in frequency and contexts of feature X?\n\nExample Questions:\n\nHow do British and American English differ in the frequency and contexts of “quite”?\nWhat is the frequency difference of “shall” between British and American English, and in what contexts does each variety use it?\nHow do British and American English differ in using “at the weekend” vs. “on the weekend”?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-what-patterns-emerge-when-comparing-the-frequency-and-kwic-results-for-synonyms-x-and-y",
+    "href": "2025/assignments/hands-on-1/draft.html#template-what-patterns-emerge-when-comparing-the-frequency-and-kwic-results-for-synonyms-x-and-y",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: What patterns emerge when comparing the frequency and KWIC results for synonyms X and Y?",
+    "text": "Template: What patterns emerge when comparing the frequency and KWIC results for synonyms X and Y?\n\nExample Questions:\n\nWhat patterns emerge when comparing “big” vs. “large” in terms of frequency and the nouns they modify?\nHow do “begin” and “start” differ in frequency and grammatical patterns (begin to/begin -ing)?\nWhat differences appear between “buy” and “purchase” in frequency across registers and typical objects?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-how-does-register-affect-both-the-frequency-and-typical-contexts-of-linguistic-feature-x",
+    "href": "2025/assignments/hands-on-1/draft.html#template-how-does-register-affect-both-the-frequency-and-typical-contexts-of-linguistic-feature-x",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: How does register affect both the frequency and typical contexts of linguistic feature X?",
+    "text": "Template: How does register affect both the frequency and typical contexts of linguistic feature X?\n\nExample Questions:\n\nHow does register (academic vs. conversational) affect the frequency and contexts of “however”?\nHow do formal and informal registers differ in the frequency and usage of phrasal verbs like “find out” vs. “discover”?\nHow does register influence the frequency and positioning of “moreover” and “besides”?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#template-which-words-frequently-appear-near-word-x-based-on-manual-analysis-of-concordance-lines",
+    "href": "2025/assignments/hands-on-1/draft.html#template-which-words-frequently-appear-near-word-x-based-on-manual-analysis-of-concordance-lines",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Template: Which words frequently appear near word X based on manual analysis of concordance lines?",
+    "text": "Template: Which words frequently appear near word X based on manual analysis of concordance lines?\n\nExample Questions:\n\nWhich words frequently appear immediately before and after “decision” in business English?\nWhat words commonly appear within 3 words of “absolutely” in spoken English?\nWhich adjectives most frequently appear before “consequences” in news texts?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#social-media-and-internet-language",
+    "href": "2025/assignments/hands-on-1/draft.html#social-media-and-internet-language",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Social Media and Internet Language",
+    "text": "Social Media and Internet Language\n\nExample Questions:\n\nHow has the frequency of “lol” changed from 2000-2020, and in what contexts does it appear beyond informal communication?\nWhat is the frequency difference of “selfie” before and after 2010, and what verbs commonly appear with it?\nHow do “emoji” and “emoticon” differ in frequency over time, and what contexts show their usage patterns?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#pop-culture-and-entertainment",
+    "href": "2025/assignments/hands-on-1/draft.html#pop-culture-and-entertainment",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Pop Culture and Entertainment",
+    "text": "Pop Culture and Entertainment\n\nExample Questions:\n\nHow does the frequency of “binge-watch” compare to “marathon” (in TV context) and when did each term become popular?\nWhat patterns emerge when comparing “K-pop” mentions across different text types and time periods?\nHow has “anime” increased in frequency in English corpora, and what words commonly co-occur with it?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#technology-and-gaming",
+    "href": "2025/assignments/hands-on-1/draft.html#technology-and-gaming",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Technology and Gaming",
+    "text": "Technology and Gaming\n\nExample Questions:\n\nHow do “app” and “application” differ in frequency across registers, and which one dominates in informal contexts?\nWhat is the frequency evolution of “Google” as a verb from 2000-2020, and what objects follow it?\nHow has “stream/streaming” changed in meaning from 2000-2020 based on concordance contexts?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#language-learning-and-education",
+    "href": "2025/assignments/hands-on-1/draft.html#language-learning-and-education",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Language Learning and Education",
+    "text": "Language Learning and Education\n\nExample Questions:\n\nHow do native speakers use “actually” vs how it appears in academic writing by non-native speakers?\nWhat is the frequency of “I think” vs “In my opinion” across spoken and written English?\nHow do apologetic expressions like “sorry” and “excuse me” differ in frequency and contexts?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#food-and-lifestyle",
+    "href": "2025/assignments/hands-on-1/draft.html#food-and-lifestyle",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Food and Lifestyle",
+    "text": "Food and Lifestyle\n\nExample Questions:\n\nHow has “bubble tea” entered English usage, and what verbs are associated with it?\nWhat is the frequency difference between “sushi” in the 1990s vs 2010s, and how have its contexts changed?\nHow do “ramen” and “noodles” compare in frequency and what adjectives modify each?"
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/draft.html#common-efl-learner-interests",
+    "href": "2025/assignments/hands-on-1/draft.html#common-efl-learner-interests",
+    "title": "Hands-on Assignment 1 - Answer Key",
+    "section": "Common EFL Learner Interests",
+    "text": "Common EFL Learner Interests\n\nExample Questions:\n\nHow does “deadline” appear in different registers, and what verbs commonly precede it (meet/miss/extend)?\nWhat patterns show the difference between “take a test” vs “take an exam” in various English varieties?\nHow do “part-time job” and “internship” differ in frequency and contexts across text types?"
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html",
+    "href": "2025/assignments/final-project/index.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "For the final assignment of the current 5-day intensive course, I have two possible plans we can discuss and decide together.\nLet’s decide by the end of Day 2.",
+    "crumbs": [
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html#project-guidelines",
+    "href": "2025/assignments/final-project/index.html#project-guidelines",
+    "title": "Final Project",
+    "section": "",
+    "text": "For the final assignment of the current 5-day intensive course, I have two possible plans we can discuss and decide together.\nLet’s decide by the end of Day 2.",
+    "crumbs": [
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html#option-a---conducting-a-separate-mini-project",
+    "href": "2025/assignments/final-project/index.html#option-a---conducting-a-separate-mini-project",
+    "title": "Final Project",
+    "section": "Option A - Conducting a separate mini-project",
+    "text": "Option A - Conducting a separate mini-project\n\nOption A is more extensive in that you will be asked to conduct a new mini-project using the toolkit you have learned throughout the course.\nGiven the limited time, however, this plan requires a lot of commitment to the present course and may not be feasible, (but we can try if you’d like!).\nWe will discuss possible alternatives (like Option B below)",
+    "crumbs": [
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/final-project/index.html#option-b---revisiting-one-of-the-completed-hands-on-assignments",
+    "href": "2025/assignments/final-project/index.html#option-b---revisiting-one-of-the-completed-hands-on-assignments",
+    "title": "Final Project",
+    "section": "Option B - Revisiting one of the completed hands-on assignments",
+    "text": "Option B - Revisiting one of the completed hands-on assignments\n\nAs this 5-day intensive course teaches you a lot of new techniques and approaches to analyze lingusitic data, it is important for us to revisit the already completed assignments and consolidate our skills.\nIn Option B, you will be asked to make a presentation on one of your previously completed hands-on assignments, clearly articulating the thinking process as well as potential extension of your approach.\nMore details will be provided on the first day of the course.",
+    "crumbs": [
+      "Assignments",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-1/answer-key.html",
+    "href": "2025/assignments/hands-on-1/answer-key.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
   },
   {
     "objectID": "2025/assignments/index.html",
@@ -1475,36 +1677,25 @@
     ]
   },
   {
-    "objectID": "2025/assignments/final-project/index.html",
-    "href": "2025/assignments/final-project/index.html",
-    "title": "Final Project",
-    "section": "",
-    "text": "Final project instructions and requirements.",
+    "objectID": "2025/assignments/index.html#hands-on-activities",
+    "href": "2025/assignments/index.html#hands-on-activities",
+    "title": "Assignments",
+    "section": "Hands-on activities",
+    "text": "Hands-on activities\nEach of the four hands-on assignments are evaluated by two criteria: Submission and Quality.\n\n\n\n\n\n\n\n\nGrading Criteria\nDetails\nScore\n\n\n\n\nSubmission on time\nThe first submission is recieved in time.\n3 points\n\n\nQuality\nThe submission meets criteria. You can resubmit your work by resubmission deadlines.\n4 points × 3 questions",
     "crumbs": [
       "Assignments",
-      "Final Project"
+      "Assignments"
     ]
   },
   {
-    "objectID": "2025/assignments/final-project/index.html#project-guidelines",
-    "href": "2025/assignments/final-project/index.html#project-guidelines",
-    "title": "Final Project",
-    "section": "",
-    "text": "Final project instructions and requirements.",
+    "objectID": "2025/assignments/index.html#hands-on-activity-grading-rubrics",
+    "href": "2025/assignments/index.html#hands-on-activity-grading-rubrics",
+    "title": "Assignments",
+    "section": "Hands-on activity grading rubrics",
+    "text": "Hands-on activity grading rubrics\n\n\n\n\n\n\n\nScore\nDescriptor\n\n\n\n\n4\n- All the required/essential components are addressed;  - The write-up is complete and easy to follow.\n\n\n3\n- One or two required/essential components are missing;  - The write-up lacks elaboration.\n\n\n2\n- Half of the required/essential components are missing;  - The write-up lacks critical information.\n\n\n1\n- Most of the required/essential components are missing;  - The write-up is outline based",
     "crumbs": [
       "Assignments",
-      "Final Project"
-    ]
-  },
-  {
-    "objectID": "2025/assignments/hands-on-1/index.html",
-    "href": "2025/assignments/hands-on-1/index.html",
-    "title": "Hands-on Assignment 1",
-    "section": "",
-    "text": "Assignment Details\nAssignment instructions and materials.",
-    "crumbs": [
-      "Assignments",
-      "Hands-on Assignment 1"
+      "Assignments"
     ]
   },
   {
@@ -1512,21 +1703,76 @@
     "href": "2025/assignments/hands-on-2/index.html",
     "title": "Hands-on Assignment 2",
     "section": "",
-    "text": "Assignment instructions and materials.",
+    "text": "Under Construction\n\n\n\nThis course website is currently under construction and will be ready for the class starting August 2nd, 2025. Content is being actively developed and updated.",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
     ]
   },
   {
-    "objectID": "2025/assignments/hands-on-2/index.html#assignment-details",
-    "href": "2025/assignments/hands-on-2/index.html#assignment-details",
+    "objectID": "2025/assignments/hands-on-2/index.html#task-1-a-japanese-word-frequency-list",
+    "href": "2025/assignments/hands-on-2/index.html#task-1-a-japanese-word-frequency-list",
     "title": "Hands-on Assignment 2",
-    "section": "",
-    "text": "Assignment instructions and materials.",
+    "section": "Task 1: A Japanese word frequency List",
+    "text": "Task 1: A Japanese word frequency List\n\nConstruct a Japanese word frequency list.\nState a purpose for which you are creating a Japanese word frequency list\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nA Japanese word frequency list (.txt or .tsv format)\nDescriptive paragraphs explaining the frequency distributions of Japanese language.",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-2/index.html#task-2-hand-calculated-lexical-diversity-scores-and-taaled-results",
+    "href": "2025/assignments/hands-on-2/index.html#task-2-hand-calculated-lexical-diversity-scores-and-taaled-results",
+    "title": "Hands-on Assignment 2",
+    "section": "Task 2: Hand-calculated lexical diversity scores and TAALED results",
+    "text": "Task 2: Hand-calculated lexical diversity scores and TAALED results\nSubmission:\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nPlots that contains results of the lexical diversity analysis.\nDescriptive paragraphs explaining the trends of lexical diversity (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\n\nTo be updated.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 2"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-2/index.html#task-3-qualitative-analysis-of-lexical-sophistication",
+    "href": "2025/assignments/hands-on-2/index.html#task-3-qualitative-analysis-of-lexical-sophistication",
+    "title": "Hands-on Assignment 2",
+    "section": "Task 3: Qualitative analysis of lexical sophistication",
+    "text": "Task 3: Qualitative analysis of lexical sophistication\nSubmission:\n\nDescriptive paragraph(s) explaining the index of your choice.\nPlots that contains results of the lexical sophistication analysis.\nDescriptive paragraphs explaining the trends of lexical sophistication (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\n\nTo be updated.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 2"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/index.html",
+    "href": "2025/assignments/hands-on-3/index.html",
+    "title": "Hands-on Assignment 3",
+    "section": "",
+    "text": "Under Construction\n\n\n\nThis course website is currently under construction and will be ready for the class starting August 2nd, 2025. Content is being actively developed and updated.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 3"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/index.html#task-1-comparing-two-lists-of-formulaic-language-4-points",
+    "href": "2025/assignments/hands-on-3/index.html#task-1-comparing-two-lists-of-formulaic-language-4-points",
+    "title": "Hands-on Assignment 3",
+    "section": "Task 1: Comparing two lists of formulaic language (4 points)",
+    "text": "Task 1: Comparing two lists of formulaic language (4 points)\nIn the first task, I would like you to select two corpus (or two clearly definable sections of a corpus) and compare and formulaic language that occur in the two (sub-sections of the) corpora.\nResearch questions:\nMethods:\nResults:\n\n\n\n\n\n\nSubmission\n\n\n\n\nA text file (.txt or .tsv) for generated n-grams or collocations\nA word file (.docx) for prose descriptions.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 3"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether",
+    "href": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether",
+    "title": "Hands-on Assignment 3",
+    "section": "Task 2 & 3: Mini-research project (8 points altogether)",
+    "text": "Task 2 & 3: Mini-research project (8 points altogether)\nThe task 2 and 3 are related to the mini-research project.\nIn this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.\nSpecifically, you will:\n\nselect lexical richness or phraseological sophistication indices to answer a set of research questions\nanalyze the chosen corpus with the selected indices\npresent the results and interpretation in a written prose\n\n\nCorpus choice\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant)\nBritish Academic Written English\nSome Japanese corpus here.\n\nResearch questions:\nMethods:\nResults:",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 3"
     ]
   },
   {
@@ -1534,18 +1780,40 @@
     "href": "2025/assignments/hands-on-4/index.html",
     "title": "Hands-on Assignment 4",
     "section": "",
-    "text": "Assignment instructions and materials.",
+    "text": "Under Construction\n\n\n\nThis course website is currently under construction and will be ready for the class starting August 2nd, 2025. Content is being actively developed and updated.",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 4"
     ]
   },
   {
-    "objectID": "2025/assignments/hands-on-4/index.html#assignment-details",
-    "href": "2025/assignments/hands-on-4/index.html#assignment-details",
+    "objectID": "2025/assignments/hands-on-4/index.html#task-1-research-questions-hypotheses-and-methods",
+    "href": "2025/assignments/hands-on-4/index.html#task-1-research-questions-hypotheses-and-methods",
     "title": "Hands-on Assignment 4",
-    "section": "",
-    "text": "Assignment instructions and materials.",
+    "section": "Task 1: Research questions, Hypotheses and Methods",
+    "text": "Task 1: Research questions, Hypotheses and Methods\n\nResearch questions\n\n\nHypothesis\n\n\nDefinitions of grammatical features to extract\n\nClausal features\nNominal complexity",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 4"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-4/index.html#task-2-fine-grained-descriptive-grammatical-features",
+    "href": "2025/assignments/hands-on-4/index.html#task-2-fine-grained-descriptive-grammatical-features",
+    "title": "Hands-on Assignment 4",
+    "section": "Task 2: Fine-grained Descriptive grammatical features",
+    "text": "Task 2: Fine-grained Descriptive grammatical features\n\n\n\n\n\n\nSubmission\n\n\n\n\nGoogle Colab note (.ipynb file) with extraction code and results.",
+    "crumbs": [
+      "Assignments",
+      "Hands-on Assignment 4"
+    ]
+  },
+  {
+    "objectID": "2025/assignments/hands-on-4/index.html#task-3-results-and-interpretation",
+    "href": "2025/assignments/hands-on-4/index.html#task-3-results-and-interpretation",
+    "title": "Hands-on Assignment 4",
+    "section": "Task 3: Results and interpretation",
+    "text": "Task 3: Results and interpretation",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 4"
@@ -2039,7 +2307,7 @@
     "href": "2025/syllabus/index.html#assignments-and-grading",
     "title": "Course Syllabus",
     "section": "Assignments and Grading",
-    "text": "Assignments and Grading\nYou can find detailed information about each assignment in assignments page (under construction).\n\nGrade Distribution\n\n\n\nAssignment\n\nPercent\n\n\n\n\nHands-on Assignments\n(4 × 15%)\n60%\n\n\nClass Participation\n\n20%\n\n\nFinal Project\n\n20%\n\n\n\n\n\nGrading Scale\nWe follow the grading system at Tohoku University.\n\n\n\nGrade\nRange\nGrade Point\n\n\n\n\nAA\n100-90%\n4.0\n\n\nA\n89-80%\n3.0\n\n\nB\n79-70%\n2.0\n\n\nC\n69-60%\n1.0\n\n\nD\n59-0%\n0.0",
+    "text": "Assignments and Grading\nYou can find detailed information about each assignment in assignments page (under construction).\nWe have two possible choices for the grade distribution for this course. I will explain the details of each choice in the first day of the course. The class as a whole decides which one we will incorporate in this course. Once decided, all students will follow the decided plan.\n\nGrade Distribution – Option A\n\nFor option A, pairs of students will develop their own mini-research and present their final project on the final day.\n\n\n\n\nAssignment\n\nPercent\n\n\n\n\nHands-on Assignments\n(4 × 15%)\n60%\n\n\nClass Participation\n\n20%\n\n\nFinal Project\n\n20%\n\n\n\n\n\nGrade Distribution – Option B\n\nFor option B, pairs of students will present on hands-on assignments on the final day.\n\n\n\n\nAssignment\n\nPercent\n\n\n\n\nHands-on Assignments\n(4 × 15%)\n60%\n\n\nClass Participation\n\n20%\n\n\nFinal Presentation on Selected Hands-on Assignment\n\n20%\n\n\n\n\n\nGrading Scale\nWe follow the grading system at Tohoku University.\n\n\n\nGrade\nRange\nGrade Point\n\n\n\n\nAA\n100-90%\n4.0\n\n\nA\n89-80%\n3.0\n\n\nB\n79-70%\n2.0\n\n\nC\n69-60%\n1.0\n\n\nD\n59-0%\n0.0",
     "crumbs": [
       "Syllabus",
       "Course Syllabus"
@@ -2050,7 +2318,7 @@
     "href": "2025/syllabus/index.html#daily-structure",
     "title": "Course Syllabus",
     "section": "Daily Structure",
-    "text": "Daily Structure\nEach day follows this general pattern:\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1\n\n\n12:00-13:00\nLunch break\n\n\n13:00-14:30\nSession 2\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3",
+    "text": "Daily Structure\nEach day follows this general pattern:\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1\n\n\n12:00-13:00\nLunch break\n\n\n13:00-14:30\nSession 2\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3\n\n\n16:10-17:00\nOffice Hour (You can ask questions.)",
     "crumbs": [
       "Syllabus",
       "Course Syllabus"
@@ -2260,7 +2528,7 @@
     "href": "2025/sessions/day4/index.html#schedule",
     "title": "Day 4: Analyzing Grammar",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 10: Grammar — Overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 11: POS Tagging and Parsing\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 12: Linguistic Complexity Analysis",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 10: Grammar — Overview\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 11: POS Tagging and Parsing\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 12: Linguistic Complexity Analysis\n\n\n16:10-17:00\nOffice Hour (You can ask questions.)",
     "crumbs": [
       "Sessions",
       "Day 4",
@@ -2688,202 +2956,200 @@
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session1.html#learning-objectives",
-    "href": "2025/sessions/day1/session1.html#learning-objectives",
-    "title": "Session 1",
+    "objectID": "2025/sessions/day1/index.html",
+    "href": "2025/sessions/day1/index.html",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "",
+    "text": "Day 1 introduces basic concepts of corpus linguistics.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#overview",
+    "href": "2025/sessions/day1/index.html#overview",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "",
+    "text": "Day 1 introduces basic concepts of corpus linguistics.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#key-concepts",
+    "href": "2025/sessions/day1/index.html#key-concepts",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nlinguistic intuition\nscientific hypothesis and data\nKWIC\nConcordancing",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#preparation",
+    "href": "2025/sessions/day1/index.html#preparation",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Preparation",
+    "text": "Preparation\nBefore Day 1:\n\nRead:\n\nStefanowitsch (2020) Ch. 1. Freely available online\nStefanowitsch (2020) Ch. 2. Freely available online\n\nSkim:\n\nDurrant (2023) Ch. 1.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#schedule",
+    "href": "2025/sessions/day1/index.html#schedule",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1: Introduction\n\n\n12:00-13:00\nLunch\n\n\n13:00-14:30\nSession 2: Corpus foundation\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3: First Hands-on Activity\n\n\n16:10-17:00\nOffice Hour (You can ask questions.)",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#assignments",
+    "href": "2025/sessions/day1/index.html#assignments",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Assignments",
+    "text": "Assignments\n\nDue Tomorrow: Hands-on Assignment 1\nComplete basic corpus search exercise",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/index.html#reflection",
+    "href": "2025/sessions/day1/index.html#reflection",
+    "title": "Day 1: Introduction and Foundations",
+    "section": "Reflection",
+    "text": "Reflection",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Day 1: Introduction and Foundations"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html",
+    "href": "2025/sessions/day1/session2.html",
+    "title": "Session 2:",
+    "section": "",
+    "text": "Session 2 covers foundational concepts of corpus linguistics.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 2:"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html#one-liner",
+    "href": "2025/sessions/day1/session2.html#one-liner",
+    "title": "Session 2:",
+    "section": "",
+    "text": "Session 2 covers foundational concepts of corpus linguistics.",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 2:"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html#learning-objectives",
+    "href": "2025/sessions/day1/session2.html#learning-objectives",
+    "title": "Session 2:",
     "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nOverview the content of the current course\nExplain key success criteria in this course\nConduct the very first corpus search\nExplain different types of corpus linguistic analysis for different focus:\n\nfrequency analysis,\nconcordance analysis,\ncollocation analysis,\nPart-Of-Speech Tagging, etc.",
+    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nDefine corpus linguistics as an empirical methodology\nExplain key limitations of introspection in linguistic research\nDescribe the role of frequency data and patterns in corpus analysis\nIdentify and explain the basic steps in corpus-based research\nReflect on their own stance toward data, intuition, and linguistic evidence",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 1"
+      "Session 2:"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session1.html#key-concepts",
-    "href": "2025/sessions/day1/session1.html#key-concepts",
-    "title": "Session 1",
+    "objectID": "2025/sessions/day1/session2.html#key-concepts",
+    "href": "2025/sessions/day1/session2.html#key-concepts",
+    "title": "Session 2:",
     "section": "🔑 Key Concepts",
-    "text": "🔑 Key Concepts\n\nConceptual Overview of the corpus linguistic methods\n\nFrequency\nConcordance\nCollocation analysis\nPart-Of-Speech Tagging\nDependency Parsing",
+    "text": "🔑 Key Concepts\n\nCorpus linguistics\nBalanced Corpus\nReference Corpus\nLearner Corpus\nCorpus representativeness\nLinguistic intuition vs data",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 1"
+      "Session 2:"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session1.html#required-readings",
-    "href": "2025/sessions/day1/session1.html#required-readings",
-    "title": "Session 1",
+    "objectID": "2025/sessions/day1/session2.html#required-readings",
+    "href": "2025/sessions/day1/session2.html#required-readings",
+    "title": "Session 2:",
     "section": "📚 Required Readings",
-    "text": "📚 Required Readings\n\n(Skim) Davies (2015) Available through the shared drive.",
+    "text": "📚 Required Readings\n\nStefanowitsch (2020) Ch. 1 Freely available online\nStefanowitsch (2020) Ch. 2 Freely available online\n(Skim) Durrant (2023) Ch. 1",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 1"
+      "Session 2:"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session1.html#notes",
-    "href": "2025/sessions/day1/session1.html#notes",
-    "title": "Session 1",
-    "section": "📝 Notes",
-    "text": "📝 Notes\nNeeds analysis (After giving overview) is conducted at the end of this session.",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 1"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/session1.html#materials",
-    "href": "2025/sessions/day1/session1.html#materials",
-    "title": "Session 1",
+    "objectID": "2025/sessions/day1/session2.html#materials",
+    "href": "2025/sessions/day1/session2.html#materials",
+    "title": "Session 2:",
     "section": "Materials",
     "text": "Materials\n\nSlides for the session (Under construction)",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 1"
+      "Session 2:"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session1.html#reflection",
-    "href": "2025/sessions/day1/session1.html#reflection",
-    "title": "Session 1",
+    "objectID": "2025/sessions/day1/session2.html#reflection",
+    "href": "2025/sessions/day1/session2.html#reflection",
+    "title": "Session 2:",
     "section": "Reflection",
     "text": "Reflection",
     "crumbs": [
       "Sessions",
       "Day 1",
-      "Session 1"
+      "Session 2:"
     ]
   },
   {
-    "objectID": "2025/sessions/day1/session3.html",
-    "href": "2025/sessions/day1/session3.html",
-    "title": "Session 3: Hands-on 1",
+    "objectID": "2025/notebooks/session-5.html",
+    "href": "2025/notebooks/session-5.html",
+    "title": "",
     "section": "",
-    "text": "You will learn how to conduct basic corpus searches.",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 3: Hands-on 1"
-    ]
+    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import dictionary, tokenizer\nfrom spacy.tokens import Doc\n\n# 1. Standard pipeline (for reliable POS/DEP):\nstd_nlp = spacy.load(\"ja_core_news_sm\")\n\n# 2. Alternate segmentation pipeline (no tagging):\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.A  # A=short, C=long\n\nalt_nlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    ms = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in ms]\n    spaces = [False]*len(words)\n    return Doc(alt_nlp.vocab, words=words, spaces=spaces)\n\nalt_nlp.tokenizer = sudachi_tokenizer_func\n\ntext = \"彼は昨日本を買って読み始めました。\"\ndoc_std = std_nlp(text)\ndoc_alt = alt_nlp(text)\n\nprint(\"STD tokens:\", [t.text for t in doc_std])\nprint(\"ALT tokens (mode A):\", [t.text for t in doc_alt])\nprint(\"STD POS:\", [t.pos_ for t in doc_std])\n\n\nSTD tokens: ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nALT tokens (mode A): ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nSTD POS: ['PRON', 'ADP', 'NOUN', 'PROPN', 'ADP', 'VERB', 'SCONJ', 'VERB', 'VERB', 'AUX', 'AUX', 'PUNCT']\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import tokenizer, dictionary\nfrom spacy.tokens import Doc\n\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.C  # change to A for short proxy\n\nnlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    sudachi_tokens = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in sudachi_tokens]\n    spaces = [False]*len(words)\n    return Doc(nlp.vocab, words=words, spaces=spaces)\n\n# nlp.tokenizer = sudachi_tokenizer_func\n\ndoc = nlp(\"今年の干支は庚子です。東京オリンピックたのしみだなあ。\")\nprint([t.text for t in doc])\nprint([(t.norm_, t.pos_, t.tag_) for t in doc])\n\n\n['今年', 'の', '干支', 'は', '庚子', 'です', '。', '東京', 'オリンピック', 'たのし', 'み', 'だ', 'なあ', '。']\n[('今年', 'NOUN', '名詞-普通名詞-副詞可能'), ('の', 'ADP', '助詞-格助詞'), ('干支', 'NOUN', '名詞-普通名詞-一般'), ('は', 'ADP', '助詞-係助詞'), ('庚子', 'NOUN', '名詞-普通名詞-一般'), ('です', 'AUX', '助動詞'), ('。', 'PUNCT', '補助記号-句点'), ('東京', 'PROPN', '名詞-固有名詞-地名-一般'), ('オリンピック', 'NOUN', '名詞-普通名詞-一般'), ('楽しい', 'ADJ', '形容詞-一般'), ('味', 'PART', '接尾辞-名詞的-一般'), ('だ', 'AUX', '助動詞'), ('な', 'PART', '助詞-終助詞'), ('。', 'PUNCT', '補助記号-句点')]\n\n\n\n\nShow code\nimport spacy\nnlp = spacy.load(\"ja_ginza\")\ndoc = nlp(\"ひごろ 日ごろ 日頃 呑み 呑んで 飲んで 書きあらわす\")\nfor tok in doc:\n    print(tok.text, tok.lemma_)  # lemma_ ~ Sudachi dictionary form\n\n\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:75: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports = re.findall(\"^\\s*import\\s+\\.(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:77: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports += re.findall(\"^\\s*from\\s+\\.(\\S+)\\s+import\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:119: SyntaxWarning: invalid escape sequence '\\s'\n  imports = re.findall(\"^\\s*import\\s+(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:121: SyntaxWarning: invalid escape sequence '\\s'\n  imports += re.findall(\"^\\s*from\\s+(\\S+)\\s+import\", content, flags=re.MULTILINE)\n\n\nひごろ ひごろ\n日ごろ 日ごろ\n日頃 日頃\n呑み 呑む\n呑ん 呑む\nで で\n飲ん 飲む\nで で\n書きあらわす 書きあらわす\n\n\n\n\nShow code\nimport spacy\nfrom spacy.tokens import Doc\nfrom fugashi import Tagger\n\n# Initialize UniDic Tagger\ntagger = Tagger()   # fugashi auto-loads UniDic if installed\n\nnlp = spacy.blank(\"ja\")        # blank Japanese pipeline\n\n# Register custom token extensions\nfrom spacy.tokens import Token\nToken.set_extension(\"unidic_lemma\", default=None, force=True)\nToken.set_extension(\"unidic_reading\", default=None, force=True)\nToken.set_extension(\"unidic_pos\", default=None, force=True)\nToken.set_extension(\"unidic_feats\", default=None, force=True)\n\ndef mecab_tokenizer(text):\n    words = []\n    spaces = []\n    lemmas = []\n    analyses = tagger(text)\n    for m in analyses:\n        surface = m.surface\n        words.append(surface)\n        spaces.append(False)  # Japanese generally no spaces\n    doc = Doc(nlp.vocab, words=words, spaces=spaces)\n    # Attach UniDic info\n    for tok, m in zip(doc, analyses):\n        # m.feature: tuple with UniDic columns. Structure depends on UniDic version.\n        # Typical indices (verify!) e.g. lemma at feature[10], reading at feature[9].\n        \n        feats = m.feature\n        # Safer: use fugashi attribute helpers\n        tok._.unidic_lemma = m.feature[10]  # or m.feature[10]\n        tok._.unidic_reading = m.feature[10]  # unified katakana reading\n        tok._.unidic_pos = \",\".join(m.feature[:4])  # hierarchical POS tuple\n        tok._.unidic_feats = feats\n    return doc\n\nnlp.tokenizer = mecab_tokenizer\n\n# (Optionally add your own components after this, e.g. a statistical tagger trained on this segmentation)\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t._.unidic_lemma, t._.unidic_reading, t._.unidic_pos)\n\n\n日ごろ 日ごろ 日ごろ 名詞,普通名詞,副詞可能,*\nひごろ ひごろ ひごろ 名詞,普通名詞,副詞可能,*\n日頃 日頃 日頃 名詞,普通名詞,副詞可能,*\n居る 居る 居る 動詞,非自立可能,*,*\nいる いる いる 動詞,非自立可能,*,*\n書きあらわす 書きあらわす 書きあらわす 動詞,一般,*,*\n\n\n\n\nShow code\nprint(dir(m))\n\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nCell In[9], line 1\n----&gt; 1 print(dir(m))\n\nNameError: name 'm' is not defined\n\n\n\n\n\nShow code\nimport spacy\nfrom fugashi import Tagger\n\nnlp = spacy.load(\"ja_ginza\")\ntagger = Tagger()\n\n# Register extension fields (only if not already)\nfrom spacy.tokens import Token\nfor field in [\"unidic_lemma\",\"unidic_reading\",\"unidic_pos\"]:\n    if not Token.has_extension(field):\n        Token.set_extension(field, default=None)\n\ndef unicdic_enricher(doc):\n    text = doc.text\n    # Build a char-&gt;token index map (start offsets)\n    char2token = {}\n    for i, tok in enumerate(doc):\n        for pos in range(tok.idx, tok.idx + len(tok.text)):\n            char2token.setdefault(pos, i)\n    # Collect MeCab tokens with offsets\n    cursor = 0\n    for m in tagger(text):\n        surf = m.surface\n        start = text.find(surf, cursor)\n        cursor = start + len(surf)\n        # Find spaCy token that *starts* here (approx.)\n        if start in char2token:\n            i = char2token[start]\n            # Only annotate if exact surface match (avoid mid-token)\n            if doc[i].text.startswith(surf):\n                doc[i]._.unidic_lemma = m.dictionary_form\n                doc[i]._.unidic_reading = m.reading\n                doc[i]._.unidic_pos = \",\".join(m.pos)\n    return doc\n\nnlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t.lemma_, t._.unidic_lemma)\n\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\nCell In[16], line 36\n     33                 doc[i]._.unidic_pos = \",\".join(m.pos)\n     34     return doc\n---&gt; 36 nlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n     38 doc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\n     39 for t in doc:\n\nFile ~/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/spacy/language.py:811, in Language.add_pipe(self, factory_name, name, before, after, first, last, source, config, raw_config, validate)\n    809     bad_val = repr(factory_name)\n    810     err = Errors.E966.format(component=bad_val, name=name)\n--&gt; 811     raise ValueError(err)\n    812 name = name if name is not None else factory_name\n    813 if name in self.component_names:\n\nValueError: [E966] `nlp.add_pipe` now takes the string name of the registered component factory, not a callable component. Expected string, but got &lt;function unicdic_enricher at 0x13ca313a0&gt; (name: 'unidic_enricher').\n\n- If you created your component with `nlp.create_pipe('name')`: remove nlp.create_pipe and call `nlp.add_pipe('name')` instead.\n\n- If you passed in a component like `TextCategorizer()`: call `nlp.add_pipe` with the string name instead, e.g. `nlp.add_pipe('textcat')`.\n\n- If you're using a custom component: Add the decorator `@Language.component` (for function components) or `@Language.factory` (for class components / factories) to your custom component and assign it a name, e.g. `@Language.component('your_name')`. You can then run `nlp.add_pipe('your_name')` to add it to the pipeline."
   },
   {
-    "objectID": "2025/sessions/day1/session3.html#one-liner",
-    "href": "2025/sessions/day1/session3.html#one-liner",
-    "title": "Session 3: Hands-on 1",
+    "objectID": "resources/code-examples/python/index.html",
+    "href": "resources/code-examples/python/index.html",
+    "title": "Python Notebooks",
     "section": "",
-    "text": "You will learn how to conduct basic corpus searches.",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 3: Hands-on 1"
-    ]
+    "text": "Python notebooks for corpus analysis tasks."
   },
   {
-    "objectID": "2025/sessions/day1/session3.html#learning-objectives",
-    "href": "2025/sessions/day1/session3.html#learning-objectives",
-    "title": "Session 3: Hands-on 1",
-    "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nConduct KWIC searches on English-Corpora.org\nSort KWIC search results to obtain qualitative observation about language use\nUse advanced search strings such as regular expression to fine-tune the search results",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 3: Hands-on 1"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/session3.html#key-concepts",
-    "href": "2025/sessions/day1/session3.html#key-concepts",
-    "title": "Session 3: Hands-on 1",
-    "section": "🔑 Key Concepts",
-    "text": "🔑 Key Concepts\n\nKey Words In Context (KWIC)\nLexical Counting unit:\n\nToken\nLemma\nType\n\nRegular Expressions",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 3: Hands-on 1"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/session3.html#tools-used",
-    "href": "2025/sessions/day1/session3.html#tools-used",
-    "title": "Session 3: Hands-on 1",
-    "section": "🛠️ Tools Used",
-    "text": "🛠️ Tools Used\n\nEnglish-Corpora.org\nAntConc",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 3: Hands-on 1"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/session3.html#materials",
-    "href": "2025/sessions/day1/session3.html#materials",
-    "title": "Session 3: Hands-on 1",
-    "section": "Materials",
-    "text": "Materials\n\nSlides for the session\n\n\nView slides in fullscreen",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 3: Hands-on 1"
-    ]
-  },
-  {
-    "objectID": "2025/sessions/day1/session3.html#reflection",
-    "href": "2025/sessions/day1/session3.html#reflection",
-    "title": "Session 3: Hands-on 1",
-    "section": "Reflection",
-    "text": "Reflection",
-    "crumbs": [
-      "Sessions",
-      "Day 1",
-      "Session 3: Hands-on 1"
-    ]
-  },
-  {
-    "objectID": "2025/notebooks/session-6.html",
-    "href": "2025/notebooks/session-6.html",
-    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
+    "objectID": "resources/code-examples/python/index.html#available-notebooks",
+    "href": "resources/code-examples/python/index.html#available-notebooks",
+    "title": "Python Notebooks",
     "section": "",
-    "text": "Show code\nlow_diversity = \"The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.\"\nShow code\n\nhigh_diversity = \"A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.\"\nShow code\ndef count_token_type(text: str):\n    # delete punctuation\n    text = text.replace(\".\", \"\")\n    text = text.replace(\",\", \"\")\n    text = text.replace(\"?\", \"\")\n\n    \n    token_list = text.strip()\n    token_list = text.split(\" \")\n\n    token = len(token_list)\n    type = len(set(token_list))\n    return (token, type)\nShow code\ncount_token_type(low_diversity)\n\n\n(19, 8)\nShow code\ncount_token_type(high_diversity)\n\n\n(19, 19)\nShow code\nlow_diversity2 = \"The dog ran. The dog jumped. The dog barked. The dog played. The dog ran quickly. The dog jumped so high. The dog barked very loudly. The dog played, sat, and rolled. The dog sneezed. The dog ate the food.\"\nShow code\ncount_token_type(low_diversity2)\n\n\n(40, 18)\nShow code\nlow_diversity3 = \"The parrot squawked loudly. The parrot chirped again. A toucan perched nearby. The parrot fluttered. Wings flapped softly. The parrot chirped again. Feathers shimmered under sunlight. The crow cawed. The parrot glided low. The air shimmered. The owl blinked slowly. The parrot perched again. The owl blinked slowly. The parrot shrieked. The parrot chirped nearby again. The parrot squawked again.\"\nShow code\ncount_token_type(low_diversity3)\n\n\n(60, 27)"
+    "text": "Python notebooks for corpus analysis tasks."
   },
   {
-    "objectID": "2025/notebooks/session-6.html#using-lexical-diversity-package",
-    "href": "2025/notebooks/session-6.html#using-lexical-diversity-package",
-    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
-    "section": "Using Lexical Diversity package",
-    "text": "Using Lexical Diversity package\nThere is a package called TAALED maintained by Dr. Kris Kyle.\n\n\nShow code\nfrom taaled import ld\nfrom pylats import lats"
-  },
-  {
-    "objectID": "2025/notebooks/japanese-nlp-test.html",
-    "href": "2025/notebooks/japanese-nlp-test.html",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
-    "section": "",
-    "text": "This notebook implements and compares two approaches for Japanese morphological analysis with BCCWJ frequency matching:\nEach approach is designed for reproducible setup, implementation, validation, and operational use."
-  },
-  {
-    "objectID": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
-    "href": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
-    "section": "1. Environment Setup & Verification",
-    "text": "1. Environment Setup & Verification\nFirst, let’s verify and set up our environment with all required packages.\n\n\nShow code\n# Environment verification and setup\nimport sys\nimport subprocess\nfrom pathlib import Path\n\nprint(f\"Python version: {sys.version}\")\nprint(f\"Working directory: {Path.cwd()}\")\n\n# Required packages\nrequired_packages = [\n    'fugashi', 'unidic', 'unidic-lite', 'spacy', 'ginza', \n    'ja-ginza', 'sudachipy', 'pandas', 'numpy', 'matplotlib', 'collections'\n]\n\nprint(\"\\nChecking package availability:\")\nfor package in required_packages:\n    try:\n        if package == 'collections':\n            import collections\n            print(f\"✓ {package} (built-in)\")\n        else:\n            __import__(package)\n            print(f\"✓ {package}\")\n    except ImportError:\n        print(f\"✗ {package} - NOT FOUND\")\n\n\nPython version: 3.12.2 (main, Feb 25 2024, 03:55:42) [Clang 17.0.6 ]\nWorking directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/2025/notebooks\n\nChecking package availability:\n✓ fugashi\n✓ unidic\n✗ unidic-lite - NOT FOUND\n✓ spacy\n✓ ginza\n✗ ja-ginza - NOT FOUND\n✓ sudachipy\n✓ pandas\n✓ numpy\n✓ matplotlib\n✓ collections (built-in)\n\n\n\n\nShow code\n# Import all necessary libraries\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter, defaultdict\nimport time\nimport warnings\nfrom typing import List, Tuple, Dict, Optional\n\n# Japanese NLP libraries\nimport fugashi\nimport unidic\nimport spacy\nfrom spacy.tokens import Token, Doc\n\n# Statistical analysis\ntry:\n    from scipy.stats import spearmanr\n    scipy_available = True\nexcept ImportError:\n    print(\"scipy not available - will use numpy for correlation\")\n    scipy_available = False\n\nprint(\"All imports successful!\")\nwarnings.filterwarnings('ignore')\n\n\nscipy not available - will use numpy for correlation\nAll imports successful!\n\n\n\n\nShow code\n# Check UniDic installation and download if needed\ntry:\n    print(f\"UniDic directory: {unidic.DICDIR}\")\n    print(\"UniDic is properly installed\")\nexcept Exception as e:\n    print(f\"UniDic issue: {e}\")\n    print(\"You may need to run: python -m unidic download\")\n\n# Test basic fugashi functionality\ntry:\n    tagger = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\n    test_result = list(tagger(\"テスト\"))\n    print(f\"Fugashi + UniDic test successful: {test_result[0].surface}\")\nexcept Exception as e:\n    print(f\"Fugashi test failed: {e}\")\n\n\nUniDic directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\nUniDic is properly installed\nFugashi + UniDic test successful: テスト"
-  },
-  {
-    "objectID": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
-    "href": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
-    "section": "2. Sample Data Preparation",
-    "text": "2. Sample Data Preparation\nLet’s create realistic Japanese text samples for testing our pipelines.\n\n\nShow code\n# Sample Japanese texts for testing\nsample_texts = [\n    \"彼は日ごろから本を読むのが好きです。\",\n    \"ひごろの勉強が大切だと思います。\",\n    \"日頃の努力が実を結ぶでしょう。\",\n    \"彼女は書きあらわすことが得意です。\",\n    \"その問題を書き表すのは難しい。\",\n    \"今日は東京オリンピックについて話しましょう。\",\n    \"コーヒーを飲んで、呑み込んで、また飲んでしまった。\",\n    \"国際的な協力が必要不可欠です。\",\n    \"機械学習の技術が進歩している。\",\n    \"自然言語処理は興味深い分野だ。\"\n]\n\nprint(\"Sample texts prepared:\")\nfor i, text in enumerate(sample_texts, 1):\n    print(f\"{i:2d}. {text}\")\n\n# Create a larger corpus by repeating and slightly modifying texts\nextended_corpus = sample_texts * 3  # Simulate frequency variations\nprint(f\"\\nExtended corpus: {len(extended_corpus)} texts\")\n\n\nSample texts prepared:\n 1. 彼は日ごろから本を読むのが好きです。\n 2. ひごろの勉強が大切だと思います。\n 3. 日頃の努力が実を結ぶでしょう。\n 4. 彼女は書きあらわすことが得意です。\n 5. その問題を書き表すのは難しい。\n 6. 今日は東京オリンピックについて話しましょう。\n 7. コーヒーを飲んで、呑み込んで、また飲んでしまった。\n 8. 国際的な協力が必要不可欠です。\n 9. 機械学習の技術が進歩している。\n10. 自然言語処理は興味深い分野だ。\n\nExtended corpus: 30 texts\n\n\n\n\nShow code\n# Create mock BCCWJ frequency data for testing\n# In real usage, this would be loaded from an actual BCCWJ frequency file\n\nmock_bccwj_data = [\n    ('日頃', 'ヒゴロ', '名詞', 1250),\n    ('本', 'ホン', '名詞', 8500),\n    ('読む', 'ヨム', '動詞', 3200),\n    ('好き', 'スキ', '形容動詞', 2100),\n    ('勉強', 'ベンキョウ', '名詞', 4200),\n    ('大切', 'タイセツ', '形容動詞', 1800),\n    ('思う', 'オモウ', '動詞', 9500),\n    ('努力', 'ドリョク', '名詞', 2200),\n    ('実', 'ミ', '名詞', 1100),\n    ('結ぶ', 'ムスブ', '動詞', 800),\n    ('書く', 'カク', '動詞', 4100),\n    ('表す', 'アラワス', '動詞', 1500),\n    ('得意', 'トクイ', '形容動詞', 1300),\n    ('問題', 'モンダイ', '名詞', 6200),\n    ('難しい', 'ムズカシイ', '形容詞', 3800),\n    ('今日', 'キョウ', '名詞', 5500),\n    ('東京', 'トウキョウ', '名詞', 4800),\n    ('話す', 'ハナス', '動詞', 3600),\n    ('飲む', 'ノム', '動詞', 2400),\n    ('呑む', 'ノム', '動詞', 150),\n    ('国際', 'コクサイ', '名詞', 2800),\n    ('協力', 'キョウリョク', '名詞', 1900),\n    ('必要', 'ヒツヨウ', '形容動詞', 4500),\n    ('技術', 'ギジュツ', '名詞', 3900),\n    ('進歩', 'シンポ', '名詞', 1100)\n]\n\n# Create DataFrame\ndf_bccwj = pd.DataFrame(mock_bccwj_data, columns=['lemma', 'reading', 'pos', 'freq_bccwj'])\ndf_bccwj['key'] = list(zip(df_bccwj.lemma, df_bccwj.reading, df_bccwj.pos))\n\nprint(\"Mock BCCWJ frequency data:\")\nprint(df_bccwj.head(10))\nprint(f\"\\nTotal entries: {len(df_bccwj)}\")\n\n\nMock BCCWJ frequency data:\n  lemma reading   pos  freq_bccwj               key\n0    日頃     ヒゴロ    名詞        1250     (日頃, ヒゴロ, 名詞)\n1     本      ホン    名詞        8500       (本, ホン, 名詞)\n2    読む      ヨム    動詞        3200      (読む, ヨム, 動詞)\n3    好き      スキ  形容動詞        2100    (好き, スキ, 形容動詞)\n4    勉強   ベンキョウ    名詞        4200   (勉強, ベンキョウ, 名詞)\n5    大切    タイセツ  形容動詞        1800  (大切, タイセツ, 形容動詞)\n6    思う     オモウ    動詞        9500     (思う, オモウ, 動詞)\n7    努力    ドリョク    名詞        2200    (努力, ドリョク, 名詞)\n8     実       ミ    名詞        1100        (実, ミ, 名詞)\n9    結ぶ     ムスブ    動詞         800     (結ぶ, ムスブ, 動詞)\n\nTotal entries: 25"
-  },
-  {
-    "objectID": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
-    "href": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
-    "section": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline",
-    "text": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline\n\nA-1 to A-3: Setup and Configuration\nUniDic provides the morphological analysis system used in BCCWJ, making it ideal for frequency matching.\n\n\nShow code\n# A-3: Initialize fugashi with UniDic\nprint(\"Initializing Plan A: fugashi + UniDic pipeline\")\n\n# Initialize tagger with explicit UniDic path\ntagger_a = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\nprint(f\"Tagger initialized with UniDic dictionary: {unidic.DICDIR}\")\n\n# Test the tagger\ntest_text = \"日ごろから勉強している。\"\ntokens = list(tagger_a(test_text))\nprint(f\"\\nTest analysis of '{test_text}':\")\nfor token in tokens:\n    print(f\"  {token.surface} -&gt; {token.feature.lemma} [{','.join(token.pos)}]\")\n\n\nInitializing Plan A: fugashi + UniDic pipeline\nTagger initialized with UniDic dictionary: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\n\nTest analysis of '日ごろから勉強している。':\n  日ごろ -&gt; 日頃 [名,詞,,,普,通,名,詞,,,副,詞,可,能,,,*]\n  から -&gt; から [助,詞,,,格,助,詞,,,*,,,*]\n  勉強 -&gt; 勉強 [名,詞,,,普,通,名,詞,,,サ,変,可,能,,,*]\n  し -&gt; 為る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  て -&gt; て [助,詞,,,接,続,助,詞,,,*,,,*]\n  いる -&gt; 居る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  。 -&gt; 。 [補,助,記,号,,,句,点,,,*,,,*]\n\n\n\n\nShow code\n# A-4: Morphological field extraction function\ndef iter_lemma_keys_plan_a(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    \n    Args:\n        text: Input Japanese text\n        tagger: fugashi Tagger instance\n    \n    Returns:\n        List of (dictionary_form, reading, pos_major) tuples\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            lemma = m.feature[10] if m.feature[10] else m.surface\n            reading = m.feature[11] if m.feature[11] else ''\n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Test the extraction function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}':\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。':\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, スル, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# Fixed version with proper fugashi/UniDic attribute handling\ndef iter_lemma_keys_fixed(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    Fixed version that handles fugashi attribute variations.\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            \n            # Handle different attribute names for lemma\n            try:\n                lemma = m.lemma if hasattr(m, 'lemma') else m.feature[10]\n            except:\n                lemma = m.surface  # fallback\n            \n            # Handle different attribute names for reading\n            try:\n                reading = m.feature[9] if len(m.feature) &gt; 9 else ''\n            except:\n                reading = ''  # fallback\n            \n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Use the fixed function\niter_lemma_keys_plan_a = iter_lemma_keys_fixed\n\n# Test the fixed function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}' (fixed version):\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。' (fixed version):\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, シ, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# A-5: Frequency analysis with BCCWJ matching\ndef analyze_corpus_plan_a(corpus: List[str], tagger, bccwj_df: pd.DataFrame) -&gt; pd.DataFrame:\n    \"\"\"Analyze corpus using Plan A and match with BCCWJ frequencies.\"\"\"\n    freq = Counter()\n    \n    print(f\"Analyzing {len(corpus)} texts with Plan A...\")\n    for text in corpus:\n        for key in iter_lemma_keys_plan_a(text, tagger):\n            freq[key] += 1\n    \n    # Convert to DataFrame\n    rows = []\n    for (lemma, reading, pos), count in freq.items():\n        rows.append((lemma, reading, pos, count))\n    \n    df_local = pd.DataFrame(rows, columns=['lemma', 'reading', 'pos', 'freq_local'])\n    df_local['key'] = list(zip(df_local.lemma, df_local.reading, df_local.pos))\n    \n    # Merge with BCCWJ data\n    merged = df_local.merge(bccwj_df[['key', 'freq_bccwj']], on='key', how='left')\n    \n    return merged.sort_values('freq_local', ascending=False)\n\n# Run Plan A analysis\nresults_a = analyze_corpus_plan_a(extended_corpus, tagger_a, df_bccwj)\nprint(f\"\\nPlan A Results (top 15):\")\nprint(results_a.head(15)[['lemma', 'reading', 'pos', 'freq_local', 'freq_bccwj']])\n\n\nAnalyzing 30 texts with Plan A...\n\nPlan A Results (top 15):\n   lemma reading pos  freq_local  freq_bccwj\n11     。       *   補          30         NaN\n8      が       ガ   助          18         NaN\n1      は       ワ   助          15         NaN\n7      の       ノ   助          15         NaN\n5      を       オ   助          12         NaN\n10    です      デス   助           9         NaN\n42     で       デ   助           9         NaN\n15     だ       ダ   助           6         NaN\n37     て       テ   助           6         NaN\n41    飲む      ノン   動           6         NaN\n43     、       *   補           6         NaN\n48    国際    コクサイ   名           3         NaN\n47     た       タ   助           3         NaN\n46   しまう     シマッ   動           3         NaN\n0      彼      カレ   代           3         NaN\n\n\n\n\nShow code\n# A-6: Evaluation metrics for Plan A\ndef calculate_metrics(df: pd.DataFrame) -&gt; Dict[str, float]:\n    \"\"\"Calculate coverage and correlation metrics.\"\"\"\n    # Coverage: percentage of local tokens found in BCCWJ\n    matched = df.dropna(subset=['freq_bccwj'])\n    coverage = len(matched) / len(df) * 100\n    \n    # Token coverage (by frequency)\n    total_tokens = df['freq_local'].sum()\n    matched_tokens = matched['freq_local'].sum()\n    token_coverage = matched_tokens / total_tokens * 100\n    \n    # Spearman correlation for matched items\n    if len(matched) &gt; 1:\n        if scipy_available:\n            correlation, p_value = spearmanr(matched['freq_local'], matched['freq_bccwj'])\n        else:\n            correlation = np.corrcoef(matched['freq_local'].rank(), matched['freq_bccwj'].rank())[0,1]\n            p_value = None\n    else:\n        correlation, p_value = None, None\n    \n    return {\n        'type_coverage': coverage,\n        'token_coverage': token_coverage,\n        'correlation': correlation,\n        'p_value': p_value,\n        'total_types': len(df),\n        'matched_types': len(matched),\n        'total_tokens': total_tokens,\n        'matched_tokens': matched_tokens\n    }\n\nmetrics_a = calculate_metrics(results_a)\nprint(\"Plan A Evaluation Metrics:\")\nfor key, value in metrics_a.items():\n    if isinstance(value, float) and value is not None:\n        print(f\"  {key}: {value:.3f}\")\n    else:\n        print(f\"  {key}: {value}\")\n\n\nPlan A Evaluation Metrics:\n  type_coverage: 0.000\n  token_coverage: 0.000\n  correlation: None\n  p_value: None\n  total_types: 66\n  matched_types: 0\n  total_tokens: 297\n  matched_tokens: 0"
+    "objectID": "resources/code-examples/python/index.html#how-to-use",
+    "href": "resources/code-examples/python/index.html#how-to-use",
+    "title": "Python Notebooks",
+    "section": "How to Use",
+    "text": "How to Use\n\nClick on any notebook link\nOpen in Google Colab\nMake a copy to your Google Drive\nRun cells sequentially"
   },
   {
     "objectID": "resources/code-examples/index.html",

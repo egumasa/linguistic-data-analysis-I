@@ -1,11 +1,11 @@
 ---
 title: "Day 2: Analyzing Vocabulary"
-subtitle: "Exploring Lexical Richness and Sophistication"
+subtitle: "Exploring Lexical Richness – Diversity and Sophistication"
 ---
 
 ## Overview
 
-Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, diversity, and sophistication.
+Day 2 focuses on analyzing vocabulary in corpus linguistics, introducing concepts of lexical richness, particularly diversity and sophistication.
 
 ## Key Concepts
 
@@ -21,9 +21,9 @@ Before Day 2:
 
 - Read:
     - Durrant Ch. 3
-    - (**Skim**) Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication. _The Modern Language Journal, 104_(2), 381–400.
 - Skim:
     - Durrant Ch. 4 (Ignore R codes if you are not familiar)
+    - Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication. _The Modern Language Journal, 104_(2), 381–400.
 
 - Watch:
     - Laurence Anthony's intro to AntConc
@@ -42,7 +42,7 @@ Before Day 2:
 | 13:00-14:30 | Session 5: Frequency Analysis and Lexical Profiling |
 | 14:30-14:40 | Break |
 | 14:40-16:10 | Session 6: Computing Lexical Measures |
-
+| 16:10-17:00 | Office Hour (You can ask questions.) |
 
 ## Assignments
 

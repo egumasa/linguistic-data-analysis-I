@@ -1,6 +1,6 @@
 ---
 title: "Day 1: Introduction and Foundations"
-subtitle: "Getting Started with Corpus Linguistics"
+subtitle: "Getting Started with Linguistic Data Analysis"
 ---
 
 ## Overview
@@ -33,7 +33,7 @@ Before Day 1:
 | 13:00-14:30 | [Session 2: Corpus foundation](session2.md) |
 | 14:30-14:40 | Break |
 | 14:40-16:10 | [Session 3: First Hands-on Activity](session3.md) |
-
+| 16:10-17:00 | Office Hour (You can ask questions.) |
 
 ## Assignments
 

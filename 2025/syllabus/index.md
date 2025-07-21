@@ -85,13 +85,28 @@ Other required/Optional readings are provided through Google Classroom.
 
 You can find detailed information about each assignment in assignments page (under construction).
 
-### Grade Distribution
+We have two possible choices for the grade distribution for this course. I will explain the details of each choice in the first day of the course. The class as a whole decides which one we will incorporate in this course. Once decided, all students will follow the decided plan.
+
+### Grade Distribution – Option A
+
+- For option A, pairs of students will develop their own mini-research and present their final project **on the final day**.
 
 | Assignment |   | Percent  |
 |-------|----|----|
 | Hands-on Assignments | (4 × 15%) | 60% |
 | Class Participation |   | 20% |
 | Final Project | | 20%|
+
+### Grade Distribution – Option B
+
+- For option B, pairs of students will present on hands-on assignments **on the final day**.
+
+| Assignment |   | Percent  |
+|-------|----|----|
+| Hands-on Assignments | (4 × 15%) | 60% |
+| Class Participation |   | 20% |
+| Final Presentation on Selected Hands-on Assignment | | 20%|
+
 
 ### Grading Scale
 
@@ -117,6 +132,7 @@ Each day follows this general pattern:
 | 13:00-14:30 | Session 2 |
 | 14:30-14:40 | Break |
 | 14:40-16:10 | Session 3 |
+| 16:10-17:00 | Office Hour (You can ask questions.) |
 
 ## Attendance Policy
 

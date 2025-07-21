@@ -13,3 +13,9 @@ subtitle: "Installation and Usage Guides"
 
 - [JASP Guide](jasp-guide.md)
 
+
+## Other useful corpus resources
+
+
+- [CIABATTTA](https://github.com/writecrow/ciabatta/wiki)
+- [Corpus and Repository of Writing](https://crow.corporaproject.org/)

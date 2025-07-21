@@ -1,6 +1,6 @@
 ---
 title: "Day 3: Multiword Units and Collocations"
-subtitle: "Exploring Word Combinations and Statistical Analysis"
+subtitle: "Exploring formulaic language"
 ---
 
 ## Overview
@@ -35,7 +35,7 @@ Before Day 3:
 | 13:00-14:30 | Session 8: Hands-on Collocation Analysis |
 | 14:30-14:40 | Break |
 | 14:40-16:10 | Session 9: Learner Corpus Mini-Research |
-
+| 16:10-17:00 | Office Hour (You can ask questions.) |
 
 ## Assignments
 

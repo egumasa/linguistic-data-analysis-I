@@ -13,7 +13,7 @@ This course covers foundational concepts in corpus linguistics, corpus analysis 
 
 | Day                   | Session No. | Session title                                        |
 |-----------------------|-------------|------------------------------------------------------|
-| Day 1 (Aug. 2nd, Sat) |             | [**Introduction to Corpus Linguistics**](../sessions/day1/index.md)               |
+| Day 1 (Aug. 2nd, Sat) |             | [**Introduction to Linguistic Data Analysis**](../sessions/day1/index.md)               |
 |                       | Session 1   | [Getting Started with Corpus Linguistics](../sessions/day1/session1.md)              |
 |                       | Session 2   | [Foundations of Corpus Linguistics](../sessions/day1/session2.md)                    |
 |                       | Session 3   | [Basic Corpus Search](../sessions/day1/session3.md)                                  |
@@ -38,14 +38,8 @@ This course covers foundational concepts in corpus linguistics, corpus analysis 
 
 ---
 
-## Final Project
-
-**Final Project**: [Guidelines](../assignments/final-project/) - Due 2 weeks after course
-
 ## Important Notes
 
 - All times are Japan Standard Time (JST)
 - Bring your laptop to all sessions
-- Complete readings before each day (see [Readings](readings))
-
-**Final Project**: [Guidelines](../assignments/final-project/) - Due 2 weeks after course
+- Complete readings before each day
