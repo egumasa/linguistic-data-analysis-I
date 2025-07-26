@@ -37,10 +37,12 @@ You will learn how to conduct basic corpus searches.
 
 ### Slides for the session
 
+<div class="d-flex gap-2 mb-3">
+  
+[📊 View Interactive Slides (Under construction)](../../slides/session-3.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-<iframe src="../../slides/session-3.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+</div> 
 
-[View slides in fullscreen](../../slides/session-3.html){target="_blank"} 
 
 ## Reflection
 

@@ -4,7 +4,6 @@ format: revealjs
 metadata-files:
   - _slides.yml
   - ../../_metadata.yml
-
 ---
 
 # Housekeeping

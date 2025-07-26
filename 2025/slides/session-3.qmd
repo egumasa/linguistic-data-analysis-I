@@ -4,7 +4,7 @@ subtitle: "Basic Concordancing"
 format: revealjs
 metadata-files:
   - _slides.yml
-  # - ../../_metadata.yml
+  - ../../_metadata.yml
 ---
 
 

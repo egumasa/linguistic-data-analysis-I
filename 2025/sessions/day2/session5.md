@@ -35,11 +35,13 @@ By the end of this session, you will be able to:
 
 ## Materials
 
-### Slides for the session (Under construction)
+### Slides for the session
 
-<!-- [View slides in fullscreen](../../slides/session-5.html){target="_blank"} 
+<div class="d-flex gap-2 mb-3">
+  
+[📊 View Interactive Slides (Under construction)](../../slides/session-5.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-<iframe src="../../slides/session-5.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+</div> 
 
 
 

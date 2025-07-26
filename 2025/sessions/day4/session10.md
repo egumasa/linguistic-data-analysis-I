@@ -44,12 +44,13 @@ subtitle: "Grammar - Overview"
 
 ## Materials
 
-### Slides for the session (Under construction)
+### Slides for the session
 
-<!-- [View slides in fullscreen](../../slides/session-10.html){target="_blank"} 
+<div class="d-flex gap-2 mb-3">
+  
+[📊 View Interactive Slides (Under construction)](../../slides/session-10.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-<iframe src="../../slides/session-10.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
-
+</div> 
 
 
 
@@ -65,5 +66,3 @@ subtitle: "Grammar - Overview"
 <iframe src="session1-intro/slides/slides.html" width="100%" height="600px" frameborder="0"></iframe>
 
 [View slides in fullscreen](session1-intro/slides/slides.html){target="_blank"} -->
-
-

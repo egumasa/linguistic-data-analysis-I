@@ -1,5 +1,6 @@
 ---
-title: "Session 1: Introduction"
+title: "Session 1: \nIntroduction"
+
 format: revealjs
 metadata-files:
   - _slides.yml
@@ -33,10 +34,11 @@ metadata-files:
 
 # Welcome to Linguistic Data Analysis I
 
-## Instructor
-
+## Instructor  
+  
 
 ---
+  
 
 # What We'll Cover Today
 

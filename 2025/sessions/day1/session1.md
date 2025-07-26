@@ -38,12 +38,24 @@ Needs analysis (After giving overview) is conducted at the end of this session.
 
 ## Materials
 
+### Slides for the session
 
-### Slides for the session (Under construction)
+<div class="d-flex gap-2 mb-3">
+  
+[📊 View Interactive Slides (Under construction)](../../slides/session-1.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-<!-- [View slides in fullscreen](../../slides/session-1.html){target="_blank"} 
+</div> 
 
-<iframe src="../../slides/session-1.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe> -->
+
+
+<!-- 
+<iframe src="../../slides/session-1.html" 
+        width="100%" 
+        height="700px" 
+        frameborder="0" 
+        allowfullscreen
+        loading="lazy"
+        sandbox="allow-scripts allow-same-origin allow-presentation"></iframe> -->
 
 
 

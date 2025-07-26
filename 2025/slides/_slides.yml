@@ -1,9 +1,10 @@
+footer: "Linguistic Data Analysis I"
 format:
   revealjs:
     theme: 
       - default
       - ../../css/slides.scss
-    background-transition: fade
+    background-transition: none
     slide-number: true
     chalkboard: true
     controls: true
@@ -29,3 +30,4 @@ format:
     math:
       method: mathjax
       url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS_HTML-full"
+
