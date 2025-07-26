@@ -40,11 +40,11 @@ Session 2 covers foundational concepts of corpus linguistics.
 
 ### Slides for the session
 
-<div class="d-flex gap-2 mb-3">
+<!-- <div class="d-flex gap-2 mb-3">
   
 [📊 View Interactive Slides (Under construction)](../../slides/session-2.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-</div> 
+</div>  -->
 
 
 

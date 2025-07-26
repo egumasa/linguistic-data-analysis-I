@@ -49,11 +49,11 @@ subtitle: ""
 
 ### Slides for the session
 
-<div class="d-flex gap-2 mb-3">
+<!-- <div class="d-flex gap-2 mb-3">
   
 [📊 View Interactive Slides (Under construction)](../../slides/session-11.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-</div> 
+</div>  -->
 
 
 
