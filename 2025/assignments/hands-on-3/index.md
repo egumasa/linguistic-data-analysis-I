@@ -19,26 +19,21 @@ This assignment aims to help you practice the following skills:
 
 # Assignment Details
 
-In a word file, complete the following three tasks.
-Submit the finished assignment through Google Classroom.
 
-## Task 1: Comparing two lists of formulaic language (4 points)
+## Task 1: Describing statistical characteristics of collocations (4 points)
 
-In the first task, I would like you to select two corpus (or two clearly definable sections of a corpus) and compare and formulaic language that occur in the two (sub-sections of the) corpora.
+In the first task, I would like you to calculate major Strengths Of Association (SOA) measures to quantify the association between two words (`node words` and `their collocates`.)
 
-**Research questions**: 
+The frequency of node words, their collocates and entire corpus size will be given to you.
 
-**Methods**:
-
-**Results**: 
-
+Your task is to calculate T-score, MI, MI^2, and LogDice.
 
 ::: {.callout-note}
 
 ## Submission
 
-- A text file (`.txt` or `.tsv`) for generated n-grams or collocations
-- A word file (`.docx`) for prose descriptions.
+- A spreadsheet file with SOA values.
+- A word file (`.docx`) for plots and prose descriptions.
 
 :::
 
@@ -48,7 +43,9 @@ In the first task, I would like you to select two corpus (or two clearly definab
 
 Your submission ...
 
-- [ ] 
+- [ ] contains accurate T-score, MI, MI^2 and LogDice scores
+- [ ] provides visualization of the relations between SOA indices
+- [ ] describe the relationships among SOA indices and typical collocations
 
 :::
 
@@ -70,17 +67,23 @@ Specifically, you will:
 
 In this assignment, please choose one of the following corpora:
 
-1. *Growth in Grammar (GiG) corpus* (Durrant)
+1. *Growth in Grammar (GiG) corpus* (Durrant, 2023)
 2. *British Academic Written English*
-3. Some Japanese corpus here.
+3. Some Japanese corpus here (Ask Masaki about availability).
 
 
-**Research questions**: 
+::: {.callout-note}
 
-**Methods**:
+## Submission
 
-**Results**: 
+- A word file which 
+  - describe the selected lexical richness and phraseological indices;
+  - briefly explain the content of the corpus you investigated;
+  - provides analysis procesure
+  - provides results of the analysis (e.g., visualization and/or statistical tests)
+  - discusses implication of your analysis 
 
+:::
 
 ::: {.callout-important}
 # Success Criteria

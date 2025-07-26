@@ -34,31 +34,66 @@ metadata-files:
 
   - run
 
-
-## Result of dog
-
+## Result of run
 
 * You might get slightly different results.
 
-## Result of run
 
 ![Search - run](../../assets/session-3/simple-search-run.png)
 
-
-* You might get slightly different results.
 
 
 # Task A.2 - LEMMA search
 
 ## LEMMA search
 
-- Lemma is a group of word form for the head-word with grammatical inflection.
+- Lemma is a group of word form for the headword with grammatical inflection.
 - You can search LEMMA in English-Corpora.org through Capital letters.
 - The search methods will depend on the corpus tool you use.
 
 ## LEMMA search
 
 ![Search - consider](../../assets/session-3/lemma-consider.png)
+
+
+## Task A.2 - POS search
+
+## Specifying Part Of Speech (POS)
+
+- When you want to specify POS, you will need to add the following tags.
+
+
+| Category | Simple tag | Symbol | Example |
+|----|----|----|----|
+| Common noun   | NOUN | N | sun |
+| Proper Nouns  | NAME | NP | Sendai |
+| All nouns  | NOUN+ | N+ | sun, Sendai |
+| Lexical verbs | VERB | V | run |
+| All verbs | VERB+ | V | run, do |
+
+## Specifying Part Of Speech (POS)
+
+
+| Category | Simple tag | Symbol | Example |
+|----|----|----|----|
+| Adjectives | ADJ | J | simple |
+| Adverbs | ADV | R | clear |
+| Preposition | PREP | - | in |
+| Articles | ART | - | her | 
+| Determiners | DET | - | these |
+| Conjunctions | CONJ | - | these |
+| Conjunctions | CONJ | - | these |
+
+
+## the word `run` used as noun
+
+- Search occurrences of `run` that are used as nouns.
+  
+## the word `run` used as noun
+
+- Search occurrences of `run` that are used as nouns.
+  
+![run - as noun](../../assets/session-3/run-noun.png)
 
 
 # Task B - Basic KWIC
@@ -127,16 +162,17 @@ You can sort the words.
 
 - This allows you to return frequency by sections of of COCA (= conditional frequency).
 
-## Search `radio` using CHART
 
-- Go to Search Tab, select, `CHART` and enter `radio`
+## Search `lol` using CHART
 
-![Chart search](../../assets/session-3/Chart-radio.png)
+- Go to Search Tab, select, `CHART` and enter `lol`
 
-## Search `radio` using CHART
+
+## Search `lol` using CHART
+
 - You will get the following:
 
-![](../../assets/session-3/radio-results.png)
+![Search - lol](../../assets/session-3/lol_overview.png)
 
 
 # Task D - Basic Regular Expressions
@@ -159,13 +195,30 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 
 ## Result with `a * of the`
 
-- ![](../../assets/session-3/search-with-wild-card.png)
+- ![a * of the](../../assets/session-3/search-with-wild-card.png)
 
 ## More search methods
 
 
 - You can check how to use other search methods in English-Corpora.org 
   [here](https://www.english-corpora.org/help/word-phrase.asp)
+
+
+## Examples
+
+- Which of the following adjectives are more frequent — `exciting` or `excited`? 
+- Is there any reletitive phrase with three adjectives?
+
+## ADJ x 3
+
+![three adjectives](../../assets/session-3/three-adjectives.png)
+
+- *Note*: Sometimes the search results will contain parsing errors. (We will come back to this topic on Day 4.)
+
+## Constructing questions
+
+Are there any questions you would like to conduct?
+
 
 
 ---
@@ -181,21 +234,21 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 
 ## Collocation search
 
-1. Select `Collocates`
+1. Select `collocates`
 
-![](../../assets/session-3/collocation-search.png)
+![collocation](../../assets/session-3/collocation-search.png)
 
 ## Collocation search
 
 2. Enter search word
 
-![](../../assets/session-3/collocation-search.png)
+![entering words](../../assets/session-3/collocation-search.png)
 
 ## Collocation search
 
 - Optional enter the word to look for
 
-![](../../assets/session-3/collocation-search.png)
+![enter collocates](../../assets/session-3/collocation-search.png)
 
 ## Collocation search
 
@@ -203,12 +256,5 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 
 - How distant do you search for the collocates
 
-![](../../assets/session-3/collocation-search.png)
+![window](../../assets/session-3/collocation-search.png)
 
-
-
-# Reflection
-
-
-
-# Next step

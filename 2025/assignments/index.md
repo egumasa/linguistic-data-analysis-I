@@ -39,3 +39,7 @@ Each of the four hands-on assignments are evaluated by two criteria: **Submissio
 | 2  | - Half of the required/essential components are missing; <br> - The write-up lacks critical information. |
 | 1  | - Most of the required/essential components are missing; <br> - The write-up is outline based |
 
+
+# Final deadline for all assignments
+
+**18th August (Mon) 10:00 am**

@@ -37,3 +37,6 @@ _site/
 *.qmd~
 
 */.DS_Store
+
+# resources
+corpus_data/

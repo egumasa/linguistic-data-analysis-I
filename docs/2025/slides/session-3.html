@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -175,19 +175,13 @@ Masaki EGUCHI, Ph.D.
 </ul></li>
 </ul>
 </section>
-<section id="result-of-dog" class="slide level2">
-<h2>Result of dog</h2>
+<section id="result-of-run" class="slide level2">
+<h2>Result of run</h2>
 <ul>
 <li>You might get slightly different results.</li>
 </ul>
-</section>
-<section id="result-of-run" class="slide level2">
-<h2>Result of run</h2>
 
-<img data-src="../../assets/session-3/simple-search-run.png" class="r-stretch quarto-figure-center"><p class="caption">Search - run</p><ul>
-<li>You might get slightly different results.</li>
-</ul>
-</section></section>
+<img data-src="../../assets/session-3/simple-search-run.png" class="r-stretch quarto-figure-center"><p class="caption">Search - run</p></section></section>
 <section>
 <section id="task-a.2---lemma-search" class="title-slide slide level1 center">
 <h1>Task A.2 - LEMMA search</h1>
@@ -196,7 +190,7 @@ Masaki EGUCHI, Ph.D.
 <section id="lemma-search" class="slide level2">
 <h2>LEMMA search</h2>
 <ul>
-<li>Lemma is a group of word form for the head-word with grammatical inflection.</li>
+<li>Lemma is a group of word form for the headword with grammatical inflection.</li>
 <li>You can search LEMMA in English-Corpora.org through Capital letters.</li>
 <li>The search methods will depend on the corpus tool you use.</li>
 </ul>
@@ -204,7 +198,128 @@ Masaki EGUCHI, Ph.D.
 <section id="lemma-search-1" class="slide level2">
 <h2>LEMMA search</h2>
 
-<img data-src="../../assets/session-3/lemma-consider.png" class="r-stretch quarto-figure-center"><p class="caption">Search - consider</p></section></section>
+<img data-src="../../assets/session-3/lemma-consider.png" class="r-stretch quarto-figure-center"><p class="caption">Search - consider</p></section>
+<section id="task-a.2---pos-search" class="slide level2">
+<h2>Task A.2 - POS search</h2>
+</section>
+<section id="specifying-part-of-speech-pos" class="slide level2">
+<h2>Specifying Part Of Speech (POS)</h2>
+<ul>
+<li>When you want to specify POS, you will need to add the following tags.</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Simple tag</th>
+<th>Symbol</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Common noun</td>
+<td>NOUN</td>
+<td>N</td>
+<td>sun</td>
+</tr>
+<tr class="even">
+<td>Proper Nouns</td>
+<td>NAME</td>
+<td>NP</td>
+<td>Sendai</td>
+</tr>
+<tr class="odd">
+<td>All nouns</td>
+<td>NOUN+</td>
+<td>N+</td>
+<td>sun, Sendai</td>
+</tr>
+<tr class="even">
+<td>Lexical verbs</td>
+<td>VERB</td>
+<td>V</td>
+<td>run</td>
+</tr>
+<tr class="odd">
+<td>All verbs</td>
+<td>VERB+</td>
+<td>V</td>
+<td>run, do</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="specifying-part-of-speech-pos-1" class="slide level2">
+<h2>Specifying Part Of Speech (POS)</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Simple tag</th>
+<th>Symbol</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adjectives</td>
+<td>ADJ</td>
+<td>J</td>
+<td>simple</td>
+</tr>
+<tr class="even">
+<td>Adverbs</td>
+<td>ADV</td>
+<td>R</td>
+<td>clear</td>
+</tr>
+<tr class="odd">
+<td>Preposition</td>
+<td>PREP</td>
+<td>-</td>
+<td>in</td>
+</tr>
+<tr class="even">
+<td>Articles</td>
+<td>ART</td>
+<td>-</td>
+<td>her</td>
+</tr>
+<tr class="odd">
+<td>Determiners</td>
+<td>DET</td>
+<td>-</td>
+<td>these</td>
+</tr>
+<tr class="even">
+<td>Conjunctions</td>
+<td>CONJ</td>
+<td>-</td>
+<td>these</td>
+</tr>
+<tr class="odd">
+<td>Conjunctions</td>
+<td>CONJ</td>
+<td>-</td>
+<td>these</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-word-run-used-as-noun" class="slide level2">
+<h2>the word <code>run</code> used as noun</h2>
+<ul>
+<li>Search occurrences of <code>run</code> that are used as nouns.</li>
+</ul>
+</section>
+<section id="the-word-run-used-as-noun-1" class="slide level2">
+<h2>the word <code>run</code> used as noun</h2>
+<ul>
+<li>Search occurrences of <code>run</code> that are used as nouns.</li>
+</ul>
+
+<img data-src="../../assets/session-3/run-noun.png" class="r-stretch quarto-figure-center"><p class="caption">run - as noun</p></section></section>
 <section>
 <section id="task-b---basic-kwic" class="title-slide slide level1 center">
 <h1>Task B - Basic KWIC</h1>
@@ -279,20 +394,19 @@ Masaki EGUCHI, Ph.D.
 <li><p>This allows you to return frequency by sections of of COCA (= conditional frequency).</p></li>
 </ul>
 </section>
-<section id="search-radio-using-chart" class="slide level2">
-<h2>Search <code>radio</code> using CHART</h2>
+<section id="search-lol-using-chart" class="slide level2">
+<h2>Search <code>lol</code> using CHART</h2>
 <ul>
-<li>Go to Search Tab, select, <code>CHART</code> and enter <code>radio</code></li>
+<li>Go to Search Tab, select, <code>CHART</code> and enter <code>lol</code></li>
 </ul>
-
-<img data-src="../../assets/session-3/Chart-radio.png" class="r-stretch quarto-figure-center"><p class="caption">Chart search</p></section>
-<section id="search-radio-using-chart-1" class="slide level2">
-<h2>Search <code>radio</code> using CHART</h2>
+</section>
+<section id="search-lol-using-chart-1" class="slide level2">
+<h2>Search <code>lol</code> using CHART</h2>
 <ul>
 <li>You will get the following:</li>
 </ul>
 
-<img data-src="../../assets/session-3/radio-results.png" class="r-stretch"></section></section>
+<img data-src="../../assets/session-3/lol_overview.png" class="r-stretch quarto-figure-center"><p class="caption">Search - lol</p></section></section>
 <section>
 <section id="task-d---basic-regular-expressions" class="title-slide slide level1 center">
 <h1>Task D - Basic Regular Expressions</h1>
@@ -318,7 +432,12 @@ Masaki EGUCHI, Ph.D.
 <section id="result-with-a-of-the" class="slide level2">
 <h2>Result with <code>a * of the</code></h2>
 <ul>
-<li><img data-src="../../assets/session-3/search-with-wild-card.png"></li>
+<li><div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-3/search-with-wild-card.png"></p>
+<figcaption>a * of the</figcaption>
+</figure>
+</div></li>
 </ul>
 </section>
 <section id="more-search-methods" class="slide level2">
@@ -326,6 +445,24 @@ Masaki EGUCHI, Ph.D.
 <ul>
 <li>You can check how to use other search methods in English-Corpora.org <a href="https://www.english-corpora.org/help/word-phrase.asp">here</a></li>
 </ul>
+</section>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
+<ul>
+<li>Which of the following adjectives are more frequent — <code>exciting</code> or <code>excited</code>?</li>
+<li>Is there any reletitive phrase with three adjectives?</li>
+</ul>
+</section>
+<section id="adj-x-3" class="slide level2">
+<h2>ADJ x 3</h2>
+
+<img data-src="../../assets/session-3/three-adjectives.png" class="r-stretch quarto-figure-center"><p class="caption">three adjectives</p><ul>
+<li><em>Note</em>: Sometimes the search results will contain parsing errors. (We will come back to this topic on Day 4.)</li>
+</ul>
+</section>
+<section id="constructing-questions" class="slide level2">
+<h2>Constructing questions</h2>
+<p>Are there any questions you would like to conduct?</p>
 </section>
 <section class="slide level2">
 
@@ -350,24 +487,24 @@ Masaki EGUCHI, Ph.D.
 <section id="collocation-search-1" class="slide level2">
 <h2>Collocation search</h2>
 <ol type="1">
-<li>Select <code>Collocates</code></li>
+<li>Select <code>collocates</code></li>
 </ol>
 
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section>
+<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch quarto-figure-center"><p class="caption">collocation</p></section>
 <section id="collocation-search-2" class="slide level2">
 <h2>Collocation search</h2>
 <ol start="2" type="1">
 <li>Enter search word</li>
 </ol>
 
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section>
+<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch quarto-figure-center"><p class="caption">entering words</p></section>
 <section id="collocation-search-3" class="slide level2">
 <h2>Collocation search</h2>
 <ul>
 <li>Optional enter the word to look for</li>
 </ul>
 
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section>
+<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch quarto-figure-center"><p class="caption">enter collocates</p></section>
 <section id="collocation-search-4" class="slide level2">
 <h2>Collocation search</h2>
 <ol start="3" type="1">
@@ -377,18 +514,10 @@ Masaki EGUCHI, Ph.D.
 <li>How distant do you search for the collocates</li>
 </ul>
 
-<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch"></section></section>
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
-
-</section>
-
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
+<img data-src="../../assets/session-3/collocation-search.png" class="r-stretch quarto-figure-center"><p class="caption">window</p>
 
 
-
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

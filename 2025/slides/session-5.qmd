@@ -14,8 +14,6 @@ metadata-files:
 ---
 
 
-
-
 ## 🎯 Learning Objectives
 
 By the end of this session, you will be able to:
@@ -44,7 +42,6 @@ By the end of this session, you will be able to:
 ![AntConc](../../assets/session-5/AntConc-Landing.png)
 
 ## AntConc window
-
 
 ![AntConc2](../../assets/session-5/AntConc-menu.png)
 
@@ -93,7 +90,7 @@ Let's now create a frequency list
 ## Task 2: Plot frequencies
 
 - Let's now understand the distributions of words in language.
-- Visit our [simple-text-analyzer tool]().
+- Visit our [simple-text-analyzer tool](https://huggingface.co/spaces/egumasa/simple-text-analyzer).
 - Hit Frequency analysis and upload the frequency list.
 - What did you notice?
 
@@ -104,24 +101,19 @@ Let's now create a frequency list
 ![BROWN frequency](../../assets/session-5/Frequency-plot.png)
 
 
----
+## Discussion 
 
-## Implication of frequency on learning, teaching, and assessment
-
-
-
-## Task 3: Lexical profiling
-
-Now that we understand an important property of language (Zipf's law), let's conduct lexical profiling.
-
+- What did you notice in the plot? What are the characteristics of words?
+- What are the characteristics of frequent words? What about infrequent words?
 
 ---
 
-## Task 5: Tokenizing non-English languages for frequency analysis
+## Task 3: Tokenizing non-English languages for frequency analysis
 
 - Up to this point, we only dealt with English.
 - English is very convenient in corpus analysis because of the white spaces.
 - Asian languages have completely different writing system from Indo-European language, and it makes it difficult to `tokenize` texts in to words.
+  
   ```
   I am planning to eat Oysters after this intensive course.
   ```
@@ -140,7 +132,11 @@ Now that we understand an important property of language (Zipf's law), let's con
 ## Tokenizing Japanese
 
 - Download and open `TagAnt`.
-- Copy and paste a sample text into `Input Text`.
+![TagAnt sections](../../assets/session-5/TagAnt-sections.png)
+
+## Tokenizing Japanese
+
+- Input text 
 - Select language.
 - Select Output format.
 
@@ -160,32 +156,51 @@ Now that we understand an important property of language (Zipf's law), let's con
 
 ::::
 
+- TagAnt can do more than this. 
+- We will come back to POS tagging on Day 4.
 
-# Hands-on Activity
 
-## Activity instruction
+## Activity instruction (20 mins)
 
 ### Task
-Compile a Japanese frequency list based on corpus.
+Compile a Japanese frequency list based on a corpus.
 
 ### Resource
-- Download a Japanese texts from Google Drive.
+- Download a Japanese text `Aozora 1000` from Google Drive.
 - Use AntConc and TagAnt.
 
 ### Submission
 
 - Submit a frequency list
-- Description
-
+- Description of word frequency pattern in Japanese.
 
 ---
 
-## (Optional) Task 4: Vocabulary Profiling through AntWordProfiler
+## Task 4: Vocabulary Profiling
+
+## Frequency information
+
+- We are familiar with the notion of frequency in language.
+- Frequency is one important driving force of human cognition and language processing.
+
+- Profiling text using corpus frequency information is one important approach to understand textual characteristics.
 
 
+## Vocabulary Profiling
+
+- Vocabulary profiling is a technique to use corpus frequency to understand characteristics of vocabulary use in the input text
+- For lexical sophistication measure
+  - How much of the learner produced vocabulary is e.g., beyond 2000 word level (LFP; Laufer and Nation, 1995) ?
+
+- For lexical coverage
+  - How many words do readers/listeners need to know in order to comprehend the text (90, 95, or 98% coverage)
+
+## Vocabulary Profiling tools
+
+- RANGE program
+- [VocabProfiler in LexTutor](https://www.lextutor.ca/vp/)
+- [New Word Levels Checker](https://nwlc.pythonanywhere.com/)
+- AntWordProfiler 
 
 
-
-
-
-
+## Task 

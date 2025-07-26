@@ -59,7 +59,6 @@ In this task you will describe research questions, hypothesis, and methods.
 
 
 
-
 ## Task 3: Results and interpretation
 
 - Provide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.

@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -228,7 +228,7 @@ Masaki EGUCHI, Ph.D.
 <h2>Task 2: Plot frequencies</h2>
 <ul>
 <li>Let’s now understand the distributions of words in language.</li>
-<li>Visit our <a href="">simple-text-analyzer tool</a>.</li>
+<li>Visit our <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">simple-text-analyzer tool</a>.</li>
 <li>Hit Frequency analysis and upload the frequency list.</li>
 <li>What did you notice?</li>
 </ul>
@@ -240,15 +240,15 @@ Masaki EGUCHI, Ph.D.
 </ul>
 
 <img data-src="../../assets/session-5/Frequency-plot.png" class="r-stretch quarto-figure-center"><p class="caption">BROWN frequency</p></section>
-<section id="implication-of-frequency-on-learning-teaching-and-assessment" class="slide level2">
-<h2>Implication of frequency on learning, teaching, and assessment</h2>
+<section id="discussion" class="slide level2">
+<h2>Discussion</h2>
+<ul>
+<li>What did you notice in the plot? What are the characteristics of words?</li>
+<li>What are the characteristics of frequent words? What about infrequent words?</li>
+</ul>
 </section>
-<section id="task-3-lexical-profiling" class="slide level2">
-<h2>Task 3: Lexical profiling</h2>
-<p>Now that we understand an important property of language (Zipf’s law), let’s conduct lexical profiling.</p>
-</section>
-<section id="task-5-tokenizing-non-english-languages-for-frequency-analysis" class="slide level2">
-<h2>Task 5: Tokenizing non-English languages for frequency analysis</h2>
+<section id="task-3-tokenizing-non-english-languages-for-frequency-analysis" class="slide level2">
+<h2>Task 3: Tokenizing non-English languages for frequency analysis</h2>
 <ul>
 <li><p>Up to this point, we only dealt with English.</p></li>
 <li><p>English is very convenient in corpus analysis because of the white spaces.</p></li>
@@ -268,8 +268,13 @@ Masaki EGUCHI, Ph.D.
 <section id="tokenizing-japanese" class="slide level2">
 <h2>Tokenizing Japanese</h2>
 <ul>
-<li>Download and open <code>TagAnt</code>.</li>
-<li>Copy and paste a sample text into <code>Input Text</code>.</li>
+<li>Download and open <code>TagAnt</code>. <img data-src="../../assets/session-5/TagAnt-sections.png" alt="TagAnt sections"></li>
+</ul>
+</section>
+<section id="tokenizing-japanese-1" class="slide level2">
+<h2>Tokenizing Japanese</h2>
+<ul>
+<li>Input text</li>
 <li>Select language.</li>
 <li>Select Output format.</li>
 </ul>
@@ -292,29 +297,62 @@ Masaki EGUCHI, Ph.D.
 </figure>
 </div>
 </div></div>
-</section></section>
-<section>
-<section id="hands-on-activity-1" class="title-slide slide level1 center">
-<h1>Hands-on Activity</h1>
-
+<ul>
+<li>TagAnt can do more than this.</li>
+<li>We will come back to POS tagging on Day 4.</li>
+</ul>
 </section>
-<section id="activity-instruction" class="slide level2">
-<h2>Activity instruction</h2>
+<section id="activity-instruction-20-mins" class="slide level2">
+<h2>Activity instruction (20 mins)</h2>
 <h3 id="task">Task</h3>
-<p>Compile a Japanese frequency list based on corpus.</p>
+<p>Compile a Japanese frequency list based on a corpus.</p>
 <h3 id="resource">Resource</h3>
 <ul>
-<li>Download a Japanese texts from Google Drive.</li>
+<li>Download a Japanese text <code>Aozora 1000</code> from Google Drive.</li>
 <li>Use AntConc and TagAnt.</li>
 </ul>
 <h3 id="submission">Submission</h3>
 <ul>
 <li>Submit a frequency list</li>
-<li>Description</li>
+<li>Description of word frequency pattern in Japanese.</li>
 </ul>
 </section>
-<section id="optional-task-4-vocabulary-profiling-through-antwordprofiler" class="slide level2">
-<h2>(Optional) Task 4: Vocabulary Profiling through AntWordProfiler</h2>
+<section id="task-4-vocabulary-profiling" class="slide level2">
+<h2>Task 4: Vocabulary Profiling</h2>
+</section>
+<section id="frequency-information" class="slide level2">
+<h2>Frequency information</h2>
+<ul>
+<li><p>We are familiar with the notion of frequency in language.</p></li>
+<li><p>Frequency is one important driving force of human cognition and language processing.</p></li>
+<li><p>Profiling text using corpus frequency information is one important approach to understand textual characteristics.</p></li>
+</ul>
+</section>
+<section id="vocabulary-profiling" class="slide level2">
+<h2>Vocabulary Profiling</h2>
+<ul>
+<li>Vocabulary profiling is a technique to use corpus frequency to understand characteristics of vocabulary use in the input text</li>
+<li>For lexical sophistication measure
+<ul>
+<li>How much of the learner produced vocabulary is e.g., beyond 2000 word level (LFP; Laufer and Nation, 1995) ?</li>
+</ul></li>
+<li>For lexical coverage
+<ul>
+<li>How many words do readers/listeners need to know in order to comprehend the text (90, 95, or 98% coverage)</li>
+</ul></li>
+</ul>
+</section>
+<section id="vocabulary-profiling-tools" class="slide level2">
+<h2>Vocabulary Profiling tools</h2>
+<ul>
+<li>RANGE program</li>
+<li><a href="https://www.lextutor.ca/vp/">VocabProfiler in LexTutor</a></li>
+<li><a href="https://nwlc.pythonanywhere.com/">New Word Levels Checker</a></li>
+<li>AntWordProfiler</li>
+</ul>
+</section>
+<section id="task-1" class="slide level2">
+<h2>Task</h2>
 
 
 

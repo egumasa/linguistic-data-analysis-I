@@ -22,20 +22,75 @@ By the end of this session, students will be able to:
 
 ---
 
-# Generating N-gram list on AntConc
+# Generating N-gram list with AntConc
+
+- Let's generate two list of n-grams.
+- You can use either English or Japanese. 
+  
+- For Japanese you can use `Aozora 1000` data we used.
+- For English you can use `Aozora 1000` data we used.
+
+
+# Generating P-frame list with AntConc
+
+- Let's now generate p-frame.
+- You can use either English or Japanese. When using Japanese you can use `Aozora 1000` data we used.
+
 
 
 # Searching collocations on AntConc
 
+## Recap: What is collocation?
+
+- Collocation 
+
+## Collocation in AntConc
+
+- explain
+
+
 
 # Calculating Strengths of Association (SOA) measures
+
+## Calculating SOA by hand
+
+- Open Google Sreadsheet.
+- Build function to calculate the following SOA measures
+  - T-score
+  - Mutual Information
+  - Mutual Information Squared ($MI^2$)
+  - LogDice
+
+
+## Understanding collocational characteristics by plotting
+
+- Let's make plots based on the calculated 
+
+- Plot 1: 
+  - X-Axis: T-score
+  - Y-Axis: MI
+- Plot 2:
+  - X-Axis: LogDice
+  - Y-Axis: MI
+
+
+## Discussion: Describe the characteristics of each index
+
+- What are the characteristics of SOA indices?
+  - T-score
+  - MI
+  - LogDice
+
+
+## (Advanced) how can I generate a collocation list?
+
+- Colab notebook
 
 
 
 ---
 
 # Hands-on Activity
-
 
 
 # Reflection

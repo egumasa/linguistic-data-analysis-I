@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -166,20 +166,91 @@ Masaki EGUCHI, Ph.D.
 <section class="slide level2">
 
 </section></section>
-<section id="generating-n-gram-list-on-antconc" class="title-slide slide level1 center">
-<h1>Generating N-gram list on AntConc</h1>
-
+<section id="generating-n-gram-list-with-antconc" class="title-slide slide level1 center">
+<h1>Generating N-gram list with AntConc</h1>
+<ul>
+<li><p>Let’s generate two list of n-grams.</p></li>
+<li><p>You can use either English or Japanese.</p></li>
+<li><p>For Japanese you can use <code>Aozora 1000</code> data we used.</p></li>
+<li><p>For English you can use <code>Aozora 1000</code> data we used.</p></li>
+</ul>
 </section>
 
+<section id="generating-p-frame-list-with-antconc" class="title-slide slide level1 center">
+<h1>Generating P-frame list with AntConc</h1>
+<ul>
+<li>Let’s now generate p-frame.</li>
+<li>You can use either English or Japanese. When using Japanese you can use <code>Aozora 1000</code> data we used.</li>
+</ul>
+</section>
+
+<section>
 <section id="searching-collocations-on-antconc" class="title-slide slide level1 center">
 <h1>Searching collocations on AntConc</h1>
 
 </section>
-
+<section id="recap-what-is-collocation" class="slide level2">
+<h2>Recap: What is collocation?</h2>
+<ul>
+<li>Collocation</li>
+</ul>
+</section>
+<section id="collocation-in-antconc" class="slide level2">
+<h2>Collocation in AntConc</h2>
+<ul>
+<li>explain</li>
+</ul>
+</section></section>
 <section>
 <section id="calculating-strengths-of-association-soa-measures" class="title-slide slide level1 center">
 <h1>Calculating Strengths of Association (SOA) measures</h1>
 
+</section>
+<section id="calculating-soa-by-hand" class="slide level2">
+<h2>Calculating SOA by hand</h2>
+<ul>
+<li>Open Google Sreadsheet.</li>
+<li>Build function to calculate the following SOA measures
+<ul>
+<li>T-score</li>
+<li>Mutual Information</li>
+<li>Mutual Information Squared (<span class="math inline">\(MI^2\)</span>)</li>
+<li>LogDice</li>
+</ul></li>
+</ul>
+</section>
+<section id="understanding-collocational-characteristics-by-plotting" class="slide level2">
+<h2>Understanding collocational characteristics by plotting</h2>
+<ul>
+<li><p>Let’s make plots based on the calculated</p></li>
+<li><p>Plot 1:</p>
+<ul>
+<li>X-Axis: T-score</li>
+<li>Y-Axis: MI</li>
+</ul></li>
+<li><p>Plot 2:</p>
+<ul>
+<li>X-Axis: LogDice</li>
+<li>Y-Axis: MI</li>
+</ul></li>
+</ul>
+</section>
+<section id="discussion-describe-the-characteristics-of-each-index" class="slide level2">
+<h2>Discussion: Describe the characteristics of each index</h2>
+<ul>
+<li>What are the characteristics of SOA indices?
+<ul>
+<li>T-score</li>
+<li>MI</li>
+<li>LogDice</li>
+</ul></li>
+</ul>
+</section>
+<section id="advanced-how-can-i-generate-a-collocation-list" class="slide level2">
+<h2>(Advanced) how can I generate a collocation list?</h2>
+<ul>
+<li>Colab notebook</li>
+</ul>
 </section>
 <section class="slide level2">
 

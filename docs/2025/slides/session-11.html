@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -158,24 +158,382 @@ Masaki EGUCHI, Ph.D.
 <ul>
 <li>Understand NLP tasks such as POS tagging and dependency parsing</li>
 <li>Understand how automated parsing works</li>
+<li>Conduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt</li>
 <li>Conduct POS tagging using spaCy library in Python (through Google Colab)</li>
 <li>Conduct Dependency parsing using spaCy library in Python (through Google Colab)</li>
-<li>Conduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt</li>
 </ul>
 
 </blockquote>
 </section>
-<section class="slide level2">
+<section id="hands-on-activity" class="slide level2">
+<h2>Hands-on Activity</h2>
+<p><strong>Task 1</strong>: POS tagging with TagAnt</p>
+<p><strong>Task 2</strong>: POS-sensitive frequency list</p>
+<p><strong>Task 3</strong>: Understanding dependency grammar through visualization</p>
+</section>
+<section id="pos-tagging-with-tagant" class="slide level2">
+<h2>POS tagging with TagAnt</h2>
+</section>
+<section id="tagging-with-tagant" class="slide level2">
+<h2>Tagging with TagAnt</h2>
+<ol type="1">
+<li>Open TagAnt</li>
+<li>Select <code>Input Files</code></li>
+<li>Select <code>Language</code></li>
+<li>Select Display information (see next)</li>
+</ol>
+</section>
+<section id="display-setting-info-in-tagant" class="slide level2">
+<h2>Display setting info in TagAnt</h2>
+<p>Followings are basic selection in TagAnt.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Menu</th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>word</td>
+<td>tokenization</td>
+<td>dogs, ran</td>
+</tr>
+<tr class="even">
+<td>pos</td>
+<td>POS tag (simple)</td>
+<td>NOUN, VERB</td>
+</tr>
+<tr class="odd">
+<td>pos_tag</td>
+<td>POS tag (detailed)</td>
+<td>NNS, VBD</td>
+</tr>
+<tr class="even">
+<td>lemma</td>
+<td>lemmatized word</td>
+<td>dog, run</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="other-diaplay-settings" class="slide level2">
+<h2>Other Diaplay settings</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Menu</th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>word+pos</td>
+<td>tokenization and POS</td>
+<td>dogs_NOUN, ran_VERB</td>
+</tr>
+<tr class="even">
+<td>word+lemma +pos_tag</td>
+<td>token+lemma+POS</td>
+<td>dogs_dog_NN, ran_run_VERB</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="task-1-annotating-japanese-text-10-mins" class="slide level2">
+<h2>Task 1: Annotating Japanese text (10 mins)</h2>
+<ul>
+<li>Annotate 50 Japanese text files with TagAnt.</li>
+<li>Create frequency list for <code>aozora_50</code></li>
+</ul>
+</section>
+<section id="task-1-answer" class="slide level2">
+<h2>Task 1: Answer</h2>
+<p><strong>Before</strong></p>
+<pre><code>「大溝」
 
+　僕は本所界隈のことをスケツチしろといふ社命を受け、同じ社のＯ君と一しよに久振りに本所へ出かけて行つた。</code></pre>
+<p><strong>After</strong></p>
+<pre><code>「_補助記号-括弧開_「 大溝_名詞-固有名詞-人名-姓_大溝 」_補助記号-括弧閉_」
+
+　_SPACE_　 僕_代名詞_僕 は_助詞-係助詞_は 本所_名詞-固有名詞-地名-一般_本所 界隈_名詞-普通名詞-一般_界隈 の_助詞-格助詞_の こと_名詞-普通名詞-一般_こと を_助詞-格助詞_を スケツチ_名詞-普通名詞-一般_スケツチ しろ_動詞-非自立可能_する と_助詞-格助詞_と いふ_動詞-一般_いふ 社命_名詞-普通名詞-一般_社命 を_助詞-格助詞_を 受け_動詞-一般_受ける 、_補助記号-読点_、 同じ_連体詞_同じ 社_名詞-普通名詞-助数詞可能_社 の_助詞-格助詞_の Ｏ_名詞-普通名詞-一般_o 君_接尾辞-名詞的-一般_君 と_助詞-格助詞_と 一しよ_名詞-普通名詞-サ変可能_一しよ に_助詞-格助詞_に 久_形容詞-一般_久い 振り_接尾辞-名詞的-一般_振り に_助詞-格助詞_に 本所_名詞-固有名詞-地名-一般_本所 へ_助詞-格助詞_へ 出_動詞-一般_出る かけ_動詞-非自立可能_かける て_助詞-接続助詞_て 行つ_動詞-一般_行ふ た_助動詞_た 。_補助記号-句点_。</code></pre>
+</section>
+<section id="task-2-frequency-list-by-pos-tags-10-mins" class="slide level2">
+<h2>Task 2: Frequency-list by POS tags (10 mins)</h2>
+<ul>
+<li>Using <code>AntConc</code>, create following frequency lists:
+<ul>
+<li>Create a frequency list of <code>動詞-非自立可能</code></li>
+</ul></li>
+<li>If you are done, please create another frequency list with different search terms.</li>
+</ul>
+</section>
+<section id="task-2-key" class="slide level2">
+<h2>Task 2: Key</h2>
+
+<img data-src="../../assets/session-11/非自立可能動詞.png" class="r-stretch quarto-figure-center"><p class="caption">非自立可能動詞</p></section>
+<section id="advanced-options-in-tagant" class="slide level2">
+<h2>Advanced options in TagAnt</h2>
+<ul>
+<li>In TagAnt, you can download models for other languages.</li>
+</ul>
+
+<img data-src="../../assets/session-11/tagant-advanced.gif" class="r-stretch quarto-figure-center"><p class="caption">loading other models</p></section>
+<section id="any-questions" class="slide level2">
+<h2>Any questions?</h2>
+<ul>
+<li>Now you can parse multilingual text with TagAnt.</li>
+</ul>
 </section>
 <section class="slide level2">
 
 </section></section>
-<section id="hands-on-activity" class="title-slide slide level1 center">
-<h1>Hands-on Activity</h1>
+<section>
+<section id="understanding-dependency-grammar" class="title-slide slide level1 center">
+<h1>Understanding dependency grammar</h1>
 
 </section>
+<section id="goals" class="slide level2">
+<h2>Goals</h2>
+<ul>
+<li>Describe grammatical structure of a simple sentence using terminology such as <code>ROOT</code>,<code>head</code>, <code>dependency type</code>, and <code>dependent</code>.</li>
+</ul>
+</section>
+<section id="dependency-grammar-係受け" class="slide level2">
+<h2>Dependency grammar (係受け)</h2>
+<ul>
+<li>Dependency grammar is particular type of syntactic tree.</li>
+<li>forms a tree by defining binary relations between running tokens.</li>
+<li>Each token in the sentence is governed by one token (i.e., <code>head</code>)</li>
+<li>The highest in the syntactic tree is termed as <code>ROOT</code></li>
+</ul>
+</section>
+<section id="dependency-grammar-係受け---2" class="slide level2">
+<h2>Dependency grammar (係受け) - 2</h2>
+<ul>
+<li>There are a few different approaches to formalize dependency
+<ul>
+<li>Universal Dependency</li>
+<li>Stanford Dependency</li>
+<li>ClearNLP</li>
+<li>etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="simple-example" class="slide level2">
+<h2>Simple example</h2>
+<p>The following is a dependency for <code>I play baseball</code>.</p>
 
+<img data-src="../../assets/session-11/dep-1.png" class="r-stretch quarto-figure-center"><p class="caption">simple-dependency</p></section>
+<section id="in-table-format" class="slide level2">
+<h2>In table format</h2>
+<p>The same sentence, <code>I play baseball</code> can be expressed in the following format</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>tid</th>
+<th>token</th>
+<th>dep</th>
+<th>head</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>I</td>
+<td>nsubj</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>play</td>
+<td>ROOT</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>baseball</td>
+<td>dobj</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>.</td>
+<td>punct</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>This type of vertical format is often used to represent multi-layered token information.</p>
+</section>
+<section id="some-excercise---problem-1" class="slide level2">
+<h2>Some excercise - Problem 1</h2>
+<p>Try filling in the gap in the following table.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>tid</th>
+<th>token</th>
+<th>dep</th>
+<th>head</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>I</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>love</td>
+<td>ROOT</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>beef</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>tongue</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>.</td>
+<td>punct</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="some-excercise---problem-2" class="slide level2">
+<h2>Some excercise - Problem 2</h2>
+<p>Try filling in the gap in the following table.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>tid</th>
+<th>token</th>
+<th>dep</th>
+<th>head</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>The</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>cat</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>sleeps</td>
+<td>ROOT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>on</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>the</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>mat</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>.</td>
+<td>punct</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="some-excercise---problem-3" class="slide level2">
+<h2>Some excercise - Problem 3</h2>
+<p>Try filling in the gap in the following table.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>tid</th>
+<th>token</th>
+<th>dep</th>
+<th>head</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>She</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>quickly</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>reads</td>
+<td>ROOT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>interesting</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>books</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>.</td>
+<td>punct</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lets-parse-the-sentence." class="slide level2">
+<h2>Let’s parse the sentence.</h2>
+<ul>
+<li><p>Visit our <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">webapp</a></p></li>
+<li><p>Try the sentences above and analyze their dependencies</p></li>
+</ul>
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions?</h2>
+</section></section>
 <section id="reflection" class="title-slide slide level1 center">
 <h1>Reflection</h1>
 

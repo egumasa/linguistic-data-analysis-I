@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -273,6 +273,9 @@ Masaki EGUCHI, Ph.D.
 <li>Average the frequency scores (out of item awarded the score)</li>
 </ol></li>
 </ul>
+</section>
+<section class="slide level2">
+
 </section></section>
 <section>
 <section id="hands-on-activity" class="title-slide slide level1 center">
@@ -396,10 +399,10 @@ Masaki EGUCHI, Ph.D.
 <h2>Some classic lexical diversity</h2>
 <p>We calculate this for illustration but <strong>NEVER use these in your study</strong>.</p>
 <ul>
-<li><span class="math inline">\(TTR = {nType \over nToken}\)</span></li>
-<li><span class="math inline">\(RootTTR = {nType \over \sqrt{nToken}}\)</span></li>
-<li><span class="math inline">\(LogTTR = {\log(nType) \over \log(nToken)}\)</span></li>
-<li><span class="math inline">\(Maas = {\log(nTokens) - \log(nTypes) \over \log(nToken)^2}\)</span></li>
+<li><p><span class="math inline">\(TTR = {nType \over nToken}\)</span></p></li>
+<li><p><span class="math inline">\(RootTTR = {nType \over \sqrt{nToken}}\)</span></p></li>
+<li><p><span class="math inline">\(LogTTR = {\log(nType) \over \log(nToken)}\)</span></p></li>
+<li><p><span class="math inline">\(Maas = {\log(nTokens) - \log(nTypes) \over \log(nToken)^2}\)</span></p></li>
 </ul>
 </section>
 <section id="what-should-we-actually-use-then" class="slide level2">
@@ -519,13 +522,15 @@ Masaki EGUCHI, Ph.D.
 <li>Frequency</li>
 <li>Range</li>
 <li>Psycholinguistic Norm</li>
+<li>Hypernymy</li>
+<li>N-gram Frequency/Range/SOA</li>
+<li>etc.</li>
 </ul></li>
 </ul>
 </section>
 <section id="typical-operationalization" class="slide level2">
 <h2>Typical operationalization</h2>
 <ul>
-<li><p><strong>Operationalization</strong> means</p></li>
 <li><p>Typically, lexical sophistication (LS) is calculated as an average:</p>
 <p>Typical LS score = <span class="math display">\[Total \; LS \; score \over nToken \; with \; LS \; score\]</span></p></li>
 <li><p>Average is just a convenient choice.</p></li>
@@ -535,7 +540,75 @@ Masaki EGUCHI, Ph.D.
 <h2>Using an emulation of TAALES</h2>
 <ul>
 <li>Since the desktop version of TAALES is unstable these days, we will use a simple web application.</li>
+<li>Let’s use <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">simple text analyzer</a></li>
 </ul>
+</section>
+<section id="simple-text-analyzer" class="slide level2">
+<h2>Simple Text Analyzer</h2>
+<p>!<img data-src="../../assets/session-6/Analyzer-landingpage.png" alt="simple text analyzer"></p>
+</section>
+<section id="analyzing-single-text-in-simple-text-analzer" class="slide level2">
+<h2>Analyzing single-text in simple text analzer</h2>
+<p>!<img data-src="../../assets/session-6/word-frequency-analysis.gif" alt="frequency analysis"></p>
+</section>
+<section id="analyzing-single-text-in-simple-text-analzer-1" class="slide level2">
+<h2>Analyzing single-text in simple text analzer</h2>
+<ol type="1">
+<li>Choose single text mode</li>
+<li>Choose <code>Paste text</code></li>
+<li>Choose Reference list (e.g., COCA Spoken Frequency)</li>
+<li>Choose if you apply log transformation to frequency values</li>
+<li>Hit <code>Analyze Text</code></li>
+</ol>
+</section>
+<section id="check-impact-of-log-transformation" class="slide level2">
+<h2>Check impact of log transformation</h2>
+<ul>
+<li>How would you explain the results of the log transformation?</li>
+<li>Which one do you recommend?</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-6/unigram-unlogged.png"></p>
+<figcaption>Not log Transformed</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-6/unigram-logged.png"></p>
+<figcaption>Log Transformed</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="on-log-transformation" class="slide level2">
+<h2>On log transformation</h2>
+<ul>
+<li>Log transformation allows the text-internal frequency distribution to approach normal distribution.</li>
+<li>This is generally recommended because the “mean” score behaves well on normally distributed data.</li>
+</ul>
+</section>
+<section id="comparing-two-texts" class="slide level2">
+<h2>Comparing two texts</h2>
+<p>We can also compare two texts in simple text analyzer.</p>
+<p>!<img data-src="../../assets/session-6/Two-text-comparison.png" alt="two-text"></p>
+</section>
+<section id="plots-that-compares-two-lists" class="slide level2">
+<h2>Plots that compares two lists</h2>
+<p>!<img data-src="../../assets/session-6/bigram-freq.png" alt="bigram-comparison"></p>
+</section>
+<section id="uploading-your-frequency-list" class="slide level2">
+<h2>Uploading your frequency list</h2>
+<p>The simple text analyzer can accept a word frequency list.</p>
+<p>!TODO</p>
+<p>[] fix the application then think about</p>
+</section>
+<section id="batch-analysis" class="slide level2">
+<h2>Batch analysis</h2>
+<p>[] fix the application</p>
 </section>
 <section class="slide level2">
 

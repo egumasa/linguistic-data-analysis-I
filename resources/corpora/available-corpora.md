@@ -16,6 +16,13 @@ Content to be added.
 
 # Japanese corpus resources
 
+## Japanese corpus 
+
+- [NINJAL-LWP for TWC](https://tsukubawebcorpus.jp/)
+- [名大会話コーパス](https://mmsrv.ninjal.ac.jp/nucc/)
+- [日本語対話コーパス一覧](https://individuality.jp/dialogue_corpus.html)
+- [関西弁コーパス](https://sites.google.com/view/kvjcorpus/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0)
+- [Aozorabunko-data](https://huggingface.co/datasets/globis-university/aozorabunko-clean)
 
 ## Vocabulary list
 

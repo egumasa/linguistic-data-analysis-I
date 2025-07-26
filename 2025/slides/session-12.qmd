@@ -23,6 +23,80 @@ By the end of this session, students will be able to:
 
 ---
 
+# Assignment 4
+
+- In assignment 4, you will be 
+
+
+
+
+## Thinking grammartically
+
+In group, come up with 3-5 grammatical constructions you would like to identify in learner language.
+
+- Explain why it is important
+- Give some examples that fall under teh grammatical construction.
+
+
+
+# Using dependency parsers to identify 
+
+## About Google Colab (5 mins)
+
+
+## Python basics (15 mins)
+
+
+
+## First text analysis
+
+1. First thing is to load the package.
+
+```python
+import spacy
+nlp = spacy.load("en_core_web_sm")
+
+```
+
+2. Then you will define a variable `example_text`
+
+```python
+example_text = "Hi. This is my first awesome sentence to analyze."
+```
+
+3. Analyze this using spacy
+
+```python
+doc = nlp(example_text)
+```
+
+## Result of your first text analysis
+
+
+4. Let's print analysis results
+
+```python
+for token in doc:
+    print(token.text, token.pos_, token.tag_, sep="\t")
+```
+
+## 
+
+
+## spaCy token information
+
+Some useful token information are following:
+
+| code | what it does | example |
+|----|------|----|
+| token.lemma_ | lemmatized form | be, child |
+| token.pos_ | simple POS (Universal Dependency) | NOUN, VERB |
+| token.tag_ | fine-grained POS (PennTag set) | NN, JJ, VB, BBZ |
+| token.dep_ | dependency type | amod, advmd |
+| token.head | token information of the head of the dependency | 
+
+
+
 
 ---
 

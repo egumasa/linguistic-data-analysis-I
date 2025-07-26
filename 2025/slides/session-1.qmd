@@ -333,7 +333,6 @@ The course materials are available through the following two:
 ## Daily schedule
 
 
-
 | Time | Activity |
 |------|----------|
 | 10:30-12:00 | Session 1 |

@@ -60,6 +60,9 @@ website:
             href: resources/corpora/index.md
           - text: "Code Examples"
             href: resources/code-examples/index.md
+      - text: "Analyzer"
+        href: "https://huggingface.co/spaces/egumasa/simple-text-analyzer"
+        aria-label: Analyzer
       - icon: github
         href: "https://github.com/[username]/Linguistic_Data_Analysis_I"
         aria-label: GitHub

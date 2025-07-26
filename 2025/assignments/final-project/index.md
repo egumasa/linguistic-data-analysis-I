@@ -20,3 +20,4 @@ Let's decide **by the end of Day 2**.
 - As this 5-day intensive course teaches you a lot of new techniques and approaches to analyze lingusitic data, it is important for us to revisit the already completed assignments and consolidate our skills.
 - In Option B, you will be asked to make a presentation on one of your previously completed hands-on assignments, clearly articulating the thinking process as well as potential extension of your approach.
 - More details will be provided on the first day of the course.
+

@@ -173,46 +173,53 @@
     ]
   },
   {
-    "objectID": "2025/notebooks/japanese-nlp-test.html",
-    "href": "2025/notebooks/japanese-nlp-test.html",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "objectID": "resources/code-examples/python/dl_aozorabunko.html#lets-download-the-data-from-huggingface",
+    "href": "resources/code-examples/python/dl_aozorabunko.html#lets-download-the-data-from-huggingface",
+    "title": "Downloading Aozorabunko data and make it a usable corpus",
+    "section": "Let’s download the data from Huggingface",
+    "text": "Let’s download the data from Huggingface\nWe will use the data from the following repository\n\n\nShow code\nimport pandas as pd\n\ndf = pd.read_json(\"hf://datasets/globis-university/aozorabunko-clean/aozorabunko-dedupe-clean.jsonl.gz\", lines=True)\n\n\n\n\nShow code\ndf\n\n\n\n\n\n\n\n\n\ntext\nfootnote\nmeta\n\n\n\n\n0\n深いおどろきにうたれて、\\n名高いウェストミンスターに\\n真鍮や石の記念碑となって\\nすべて...\n底本：「スケッチ・ブック」新潮文庫、新潮社\\n　　　1957（昭和32）年5月20日発行\\n...\n{'作品ID': '059898', '作品名': 'ウェストミンスター寺院', '作品名読...\n\n\n1\nいざ、これより樂しまむ、\\n仕置を受くる憂なく、\\n遊びたのしむ時ぞ來ぬ、\\n時ぞ來ぬれば、...\n底本：「スケッチ・ブック」岩波文庫、岩波書店\\n　　　1935（昭和10）年9月15日第1刷...\n{'作品ID': '056078', '作品名': '駅伝馬車', '作品名読み': 'えき...\n\n\n2\nすべてよし。\\n何して遊ぼと\\n叱られない。\\n時はきた。\\nさっさと\\n本など投げだそう。...\n底本：「スケッチ・ブック」新潮文庫、新潮社\\n　　　1957（昭和32）年5月20日発行\\n...\n{'作品ID': '060224', '作品名': '駅馬車', '作品名読み': 'えきば...\n\n\n3\n年老いた人をいたわりなさい。その銀髪は、\\n名誉と尊敬をつねに集めてきたのです。\\n――マー...\n底本：「スケッチ・ブック」新潮文庫、新潮社\\n　　　1957（昭和32）年5月20日発行\\n...\n{'作品ID': '060225', '作品名': '寡婦とその子', '作品名読み': '...\n\n\n4\nだが、あのなつかしい、思い出ふかいクリスマスのお爺さんはもう逝ってしまったのだろうか。あと...\n底本：「スケッチ・ブック」新潮文庫、新潮社\\n　　　1957（昭和32）年5月20日発行\\n...\n{'作品ID': '060231', '作品名': 'クリスマス', '作品名読み': 'ク...\n\n\n...\n...\n...\n...\n\n\n16946\n夢の話をするのはあまり気のきいたことではない。確か痴人夢を説くという言葉があったはずだ。そ...\n底本：「和辻哲郎全集　補遺」岩波書店\\n　　　1978（昭和53）年6月16日第1刷発行\\n...\n{'作品ID': '055622', '作品名': '夢', '作品名読み': 'ゆめ', ...\n\n\n16947\n自分は現代の画家中に岸田君ほど明らかな「成長」を示している人を知らない。誇張でなく岸田君は...\n底本：「和辻哲郎随筆集」岩波文庫、岩波書店\\n　　　1995（平成7）年9月18日第1刷発行...\n{'作品ID': '049876', '作品名': '『劉生画集及芸術観』について', '作...\n\n\n16948\n一\\n\\n　荒漠たる秋の野に立つ。星は月の御座を囲み月は清らかに地の花を輝らす。花は紅と咲き...\n底本：「偶像再興・面とペルソナ　和辻哲郎感想集」講談社文芸文庫、講談社\\n　　　2007（平...\n{'作品ID': '049913', '作品名': '霊的本能主義', '作品名読み': '...\n\n\n16949\n関東大震災の前数年の間、先輩たちにまじって露伴先生から俳諧の指導をうけたことがある。その時...\n底本：「和辻哲郎随筆集」岩波文庫、岩波書店\\n　　　1995（平成7）年9月18日第1刷発行...\n{'作品ID': '049914', '作品名': '露伴先生の思い出', '作品名読み':...\n\n\n16950\n訳者序\\n\\n　一九〇九年、レオン・ワルラスの七十五歳の齢を記念して、ローザンヌ大...\n底本：「純粹經濟學要論　上卷」岩波文庫、岩波書店\\n　　　1953（昭和28）年11月25日...\n{'作品ID': '045210', '作品名': '純粋経済学要論', '作品名読み': ...\n\n\n\n\n16951 rows × 3 columns\n\n\n\n\n\nShow code\ndf['meta'][1]\n\n\n{'作品ID': '056078',\n '作品名': '駅伝馬車',\n '作品名読み': 'えきでんばしゃ',\n 'ソート用読み': 'えきてんはしや',\n '副題': '',\n '副題読み': '',\n '原題': '',\n '初出': '',\n '分類番号': 'NDC 933',\n '文字遣い種別': '旧字旧仮名',\n '作品著作権フラグ': 'なし',\n '公開日': '2013-09-20',\n '最終更新日': '2014-09-16',\n '図書カードURL': 'https://www.aozora.gr.jp/cards/001257/card56078.html',\n '人物ID': '001257',\n '姓': 'アーヴィング',\n '名': 'ワシントン',\n '姓読み': 'アーヴィング',\n '名読み': 'ワシントン',\n '姓読みソート用': 'ああういんく',\n '名読みソート用': 'わしんとん',\n '姓ローマ字': 'Irving',\n '名ローマ字': 'Washington',\n '役割フラグ': '著者',\n '生年月日': '1783-04-03',\n '没年月日': '1859-11-28',\n '人物著作権フラグ': 'なし',\n '底本名1': 'スケッチ・ブック',\n '底本出版社名1': '岩波文庫、岩波書店',\n '底本初版発行年1': '1935（昭和10）年9月15日',\n '入力に使用した版1': '2010（平成22）年2月23日第31刷',\n '校正に使用した版1': '1992（平成4）年2月26日第30刷',\n '底本の親本名1': '',\n '底本の親本出版社名1': '',\n '底本の親本初版発行年1': '',\n '底本名2': '',\n '底本出版社名2': '',\n '底本初版発行年2': '',\n '入力に使用した版2': '',\n '校正に使用した版2': '',\n '底本の親本名2': '',\n '底本の親本出版社名2': '',\n '底本の親本初版発行年2': '',\n '入力者': '雀',\n '校正者': '小林繁雄',\n 'テキストファイルURL': 'https://www.aozora.gr.jp/cards/001257/files/56078_ruby_51155.zip',\n 'テキストファイル最終更新日': '2013-09-03',\n 'テキストファイル符号化方式': 'ShiftJIS',\n 'テキストファイル文字集合': 'JIS X 0208',\n 'テキストファイル修正回数': '0',\n 'XHTML/HTMLファイルURL': 'https://www.aozora.gr.jp/cards/001257/files/56078_51422.html',\n 'XHTML/HTMLファイル最終更新日': '2013-09-03',\n 'XHTML/HTMLファイル符号化方式': 'ShiftJIS',\n 'XHTML/HTMLファイル文字集合': 'JIS X 0208',\n 'XHTML/HTMLファイル修正回数': '0'}\n\n\n\n\nShow code\nimport os\n\n# Set random seed for reproducibility\nrandom_seed = 42\n\n# Sample 1000 files from the dataframe\ndf_sample = df.sample(n=1000, random_state=random_seed)\n\n# Create directory if it doesn't exist\noutput_dir = \"../../../corpus_data/aozora_1000\"\nos.makedirs(output_dir, exist_ok=True)\n\n# Save each text to a file named by 作品ID\nfor idx, (_, row) in enumerate(df_sample.iterrows()):\n    # Get the 作品ID from meta field\n    sakuhin_id = row['meta']['作品ID']\n    \n    # Get the text content\n    text_content = row['text']\n    \n    # Create filename based on 作品ID\n    filename = f\"{sakuhin_id}.txt\"\n    filepath = os.path.join(output_dir, filename)\n    \n    # Write text to file\n    with open(filepath, 'w', encoding='utf-8') as f:\n        f.write(text_content)\n    \n    # Print progress every 100 files\n    if (idx + 1) % 100 == 0:\n        print(f\"Processed {idx + 1} files...\")\n\nprint(f\"Completed! Saved {len(df_sample)} text files to {output_dir}\")\n\n\nProcessed 100 files...\nProcessed 200 files...\nProcessed 300 files...\nProcessed 400 files...\nProcessed 500 files...\nProcessed 600 files...\nProcessed 700 files...\nProcessed 800 files...\nProcessed 900 files...\nProcessed 1000 files...\nCompleted! Saved 1000 text files to ../../../corpus_data/aozora_1000\n\n\n\n\nShow code\n# Sample 1000 files from the dataframe\ndf_sample = df.sample(n=50, random_state=random_seed)\n\n# Create directory if it doesn't exist\noutput_dir = \"../../../corpus_data/aozora_50\"\nos.makedirs(output_dir, exist_ok=True)\n\n# Save each text to a file named by 作品ID\nfor idx, (_, row) in enumerate(df_sample.iterrows()):\n    # Get the 作品ID from meta field\n    sakuhin_id = row['meta']['作品ID']\n    \n    # Get the text content\n    text_content = row['text']\n    \n    # Create filename based on 作品ID\n    filename = f\"{sakuhin_id}.txt\"\n    filepath = os.path.join(output_dir, filename)\n    \n    # Write text to file\n    with open(filepath, 'w', encoding='utf-8') as f:\n        f.write(text_content)\n    \n    # Print progress every 100 files\n    if (idx + 1) % 100 == 0:\n        print(f\"Processed {idx + 1} files...\")\n\nprint(f\"Completed! Saved {len(df_sample)} text files to {output_dir}\")\n\n\nCompleted! Saved 50 text files to ../../../corpus_data/aozora_50"
+  },
+  {
+    "objectID": "2025/notebooks/session-5.html",
+    "href": "2025/notebooks/session-5.html",
+    "title": "",
     "section": "",
-    "text": "This notebook implements and compares two approaches for Japanese morphological analysis with BCCWJ frequency matching:\nEach approach is designed for reproducible setup, implementation, validation, and operational use."
+    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import dictionary, tokenizer\nfrom spacy.tokens import Doc\n\n# 1. Standard pipeline (for reliable POS/DEP):\nstd_nlp = spacy.load(\"ja_core_news_sm\")\n\n# 2. Alternate segmentation pipeline (no tagging):\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.A  # A=short, C=long\n\nalt_nlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    ms = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in ms]\n    spaces = [False]*len(words)\n    return Doc(alt_nlp.vocab, words=words, spaces=spaces)\n\nalt_nlp.tokenizer = sudachi_tokenizer_func\n\ntext = \"彼は昨日本を買って読み始めました。\"\ndoc_std = std_nlp(text)\ndoc_alt = alt_nlp(text)\n\nprint(\"STD tokens:\", [t.text for t in doc_std])\nprint(\"ALT tokens (mode A):\", [t.text for t in doc_alt])\nprint(\"STD POS:\", [t.pos_ for t in doc_std])\n\n\nSTD tokens: ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nALT tokens (mode A): ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nSTD POS: ['PRON', 'ADP', 'NOUN', 'PROPN', 'ADP', 'VERB', 'SCONJ', 'VERB', 'VERB', 'AUX', 'AUX', 'PUNCT']\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import tokenizer, dictionary\nfrom spacy.tokens import Doc\n\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.C  # change to A for short proxy\n\nnlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    sudachi_tokens = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in sudachi_tokens]\n    spaces = [False]*len(words)\n    return Doc(nlp.vocab, words=words, spaces=spaces)\n\n# nlp.tokenizer = sudachi_tokenizer_func\n\ndoc = nlp(\"今年の干支は庚子です。東京オリンピックたのしみだなあ。\")\nprint([t.text for t in doc])\nprint([(t.norm_, t.pos_, t.tag_) for t in doc])\n\n\n['今年', 'の', '干支', 'は', '庚子', 'です', '。', '東京', 'オリンピック', 'たのし', 'み', 'だ', 'なあ', '。']\n[('今年', 'NOUN', '名詞-普通名詞-副詞可能'), ('の', 'ADP', '助詞-格助詞'), ('干支', 'NOUN', '名詞-普通名詞-一般'), ('は', 'ADP', '助詞-係助詞'), ('庚子', 'NOUN', '名詞-普通名詞-一般'), ('です', 'AUX', '助動詞'), ('。', 'PUNCT', '補助記号-句点'), ('東京', 'PROPN', '名詞-固有名詞-地名-一般'), ('オリンピック', 'NOUN', '名詞-普通名詞-一般'), ('楽しい', 'ADJ', '形容詞-一般'), ('味', 'PART', '接尾辞-名詞的-一般'), ('だ', 'AUX', '助動詞'), ('な', 'PART', '助詞-終助詞'), ('。', 'PUNCT', '補助記号-句点')]\n\n\n\n\nShow code\nimport spacy\nnlp = spacy.load(\"ja_ginza\")\ndoc = nlp(\"ひごろ 日ごろ 日頃 呑み 呑んで 飲んで 書きあらわす\")\nfor tok in doc:\n    print(tok.text, tok.lemma_)  # lemma_ ~ Sudachi dictionary form\n\n\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:75: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports = re.findall(\"^\\s*import\\s+\\.(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:77: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports += re.findall(\"^\\s*from\\s+\\.(\\S+)\\s+import\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:119: SyntaxWarning: invalid escape sequence '\\s'\n  imports = re.findall(\"^\\s*import\\s+(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:121: SyntaxWarning: invalid escape sequence '\\s'\n  imports += re.findall(\"^\\s*from\\s+(\\S+)\\s+import\", content, flags=re.MULTILINE)\n\n\nひごろ ひごろ\n日ごろ 日ごろ\n日頃 日頃\n呑み 呑む\n呑ん 呑む\nで で\n飲ん 飲む\nで で\n書きあらわす 書きあらわす\n\n\n\n\nShow code\nimport spacy\nfrom spacy.tokens import Doc\nfrom fugashi import Tagger\n\n# Initialize UniDic Tagger\ntagger = Tagger()   # fugashi auto-loads UniDic if installed\n\nnlp = spacy.blank(\"ja\")        # blank Japanese pipeline\n\n# Register custom token extensions\nfrom spacy.tokens import Token\nToken.set_extension(\"unidic_lemma\", default=None, force=True)\nToken.set_extension(\"unidic_reading\", default=None, force=True)\nToken.set_extension(\"unidic_pos\", default=None, force=True)\nToken.set_extension(\"unidic_feats\", default=None, force=True)\n\ndef mecab_tokenizer(text):\n    words = []\n    spaces = []\n    lemmas = []\n    analyses = tagger(text)\n    for m in analyses:\n        surface = m.surface\n        words.append(surface)\n        spaces.append(False)  # Japanese generally no spaces\n    doc = Doc(nlp.vocab, words=words, spaces=spaces)\n    # Attach UniDic info\n    for tok, m in zip(doc, analyses):\n        # m.feature: tuple with UniDic columns. Structure depends on UniDic version.\n        # Typical indices (verify!) e.g. lemma at feature[10], reading at feature[9].\n        \n        feats = m.feature\n        # Safer: use fugashi attribute helpers\n        tok._.unidic_lemma = m.feature[10]  # or m.feature[10]\n        tok._.unidic_reading = m.feature[10]  # unified katakana reading\n        tok._.unidic_pos = \",\".join(m.feature[:4])  # hierarchical POS tuple\n        tok._.unidic_feats = feats\n    return doc\n\nnlp.tokenizer = mecab_tokenizer\n\n# (Optionally add your own components after this, e.g. a statistical tagger trained on this segmentation)\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t._.unidic_lemma, t._.unidic_reading, t._.unidic_pos)\n\n\n日ごろ 日ごろ 日ごろ 名詞,普通名詞,副詞可能,*\nひごろ ひごろ ひごろ 名詞,普通名詞,副詞可能,*\n日頃 日頃 日頃 名詞,普通名詞,副詞可能,*\n居る 居る 居る 動詞,非自立可能,*,*\nいる いる いる 動詞,非自立可能,*,*\n書きあらわす 書きあらわす 書きあらわす 動詞,一般,*,*\n\n\n\n\nShow code\nprint(dir(m))\n\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nCell In[9], line 1\n----&gt; 1 print(dir(m))\n\nNameError: name 'm' is not defined\n\n\n\n\n\nShow code\nimport spacy\nfrom fugashi import Tagger\n\nnlp = spacy.load(\"ja_ginza\")\ntagger = Tagger()\n\n# Register extension fields (only if not already)\nfrom spacy.tokens import Token\nfor field in [\"unidic_lemma\",\"unidic_reading\",\"unidic_pos\"]:\n    if not Token.has_extension(field):\n        Token.set_extension(field, default=None)\n\ndef unicdic_enricher(doc):\n    text = doc.text\n    # Build a char-&gt;token index map (start offsets)\n    char2token = {}\n    for i, tok in enumerate(doc):\n        for pos in range(tok.idx, tok.idx + len(tok.text)):\n            char2token.setdefault(pos, i)\n    # Collect MeCab tokens with offsets\n    cursor = 0\n    for m in tagger(text):\n        surf = m.surface\n        start = text.find(surf, cursor)\n        cursor = start + len(surf)\n        # Find spaCy token that *starts* here (approx.)\n        if start in char2token:\n            i = char2token[start]\n            # Only annotate if exact surface match (avoid mid-token)\n            if doc[i].text.startswith(surf):\n                doc[i]._.unidic_lemma = m.dictionary_form\n                doc[i]._.unidic_reading = m.reading\n                doc[i]._.unidic_pos = \",\".join(m.pos)\n    return doc\n\nnlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t.lemma_, t._.unidic_lemma)\n\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\nCell In[16], line 36\n     33                 doc[i]._.unidic_pos = \",\".join(m.pos)\n     34     return doc\n---&gt; 36 nlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n     38 doc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\n     39 for t in doc:\n\nFile ~/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/spacy/language.py:811, in Language.add_pipe(self, factory_name, name, before, after, first, last, source, config, raw_config, validate)\n    809     bad_val = repr(factory_name)\n    810     err = Errors.E966.format(component=bad_val, name=name)\n--&gt; 811     raise ValueError(err)\n    812 name = name if name is not None else factory_name\n    813 if name in self.component_names:\n\nValueError: [E966] `nlp.add_pipe` now takes the string name of the registered component factory, not a callable component. Expected string, but got &lt;function unicdic_enricher at 0x13ca313a0&gt; (name: 'unidic_enricher').\n\n- If you created your component with `nlp.create_pipe('name')`: remove nlp.create_pipe and call `nlp.add_pipe('name')` instead.\n\n- If you passed in a component like `TextCategorizer()`: call `nlp.add_pipe` with the string name instead, e.g. `nlp.add_pipe('textcat')`.\n\n- If you're using a custom component: Add the decorator `@Language.component` (for function components) or `@Language.factory` (for class components / factories) to your custom component and assign it a name, e.g. `@Language.component('your_name')`. You can then run `nlp.add_pipe('your_name')` to add it to the pipeline."
   },
   {
-    "objectID": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
-    "href": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
-    "section": "1. Environment Setup & Verification",
-    "text": "1. Environment Setup & Verification\nFirst, let’s verify and set up our environment with all required packages.\n\n\nShow code\n# Environment verification and setup\nimport sys\nimport subprocess\nfrom pathlib import Path\n\nprint(f\"Python version: {sys.version}\")\nprint(f\"Working directory: {Path.cwd()}\")\n\n# Required packages\nrequired_packages = [\n    'fugashi', 'unidic', 'unidic-lite', 'spacy', 'ginza', \n    'ja-ginza', 'sudachipy', 'pandas', 'numpy', 'matplotlib', 'collections'\n]\n\nprint(\"\\nChecking package availability:\")\nfor package in required_packages:\n    try:\n        if package == 'collections':\n            import collections\n            print(f\"✓ {package} (built-in)\")\n        else:\n            __import__(package)\n            print(f\"✓ {package}\")\n    except ImportError:\n        print(f\"✗ {package} - NOT FOUND\")\n\n\nPython version: 3.12.2 (main, Feb 25 2024, 03:55:42) [Clang 17.0.6 ]\nWorking directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/2025/notebooks\n\nChecking package availability:\n✓ fugashi\n✓ unidic\n✗ unidic-lite - NOT FOUND\n✓ spacy\n✓ ginza\n✗ ja-ginza - NOT FOUND\n✓ sudachipy\n✓ pandas\n✓ numpy\n✓ matplotlib\n✓ collections (built-in)\n\n\n\n\nShow code\n# Import all necessary libraries\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter, defaultdict\nimport time\nimport warnings\nfrom typing import List, Tuple, Dict, Optional\n\n# Japanese NLP libraries\nimport fugashi\nimport unidic\nimport spacy\nfrom spacy.tokens import Token, Doc\n\n# Statistical analysis\ntry:\n    from scipy.stats import spearmanr\n    scipy_available = True\nexcept ImportError:\n    print(\"scipy not available - will use numpy for correlation\")\n    scipy_available = False\n\nprint(\"All imports successful!\")\nwarnings.filterwarnings('ignore')\n\n\nscipy not available - will use numpy for correlation\nAll imports successful!\n\n\n\n\nShow code\n# Check UniDic installation and download if needed\ntry:\n    print(f\"UniDic directory: {unidic.DICDIR}\")\n    print(\"UniDic is properly installed\")\nexcept Exception as e:\n    print(f\"UniDic issue: {e}\")\n    print(\"You may need to run: python -m unidic download\")\n\n# Test basic fugashi functionality\ntry:\n    tagger = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\n    test_result = list(tagger(\"テスト\"))\n    print(f\"Fugashi + UniDic test successful: {test_result[0].surface}\")\nexcept Exception as e:\n    print(f\"Fugashi test failed: {e}\")\n\n\nUniDic directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\nUniDic is properly installed\nFugashi + UniDic test successful: テスト"
-  },
-  {
-    "objectID": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
-    "href": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
-    "section": "2. Sample Data Preparation",
-    "text": "2. Sample Data Preparation\nLet’s create realistic Japanese text samples for testing our pipelines.\n\n\nShow code\n# Sample Japanese texts for testing\nsample_texts = [\n    \"彼は日ごろから本を読むのが好きです。\",\n    \"ひごろの勉強が大切だと思います。\",\n    \"日頃の努力が実を結ぶでしょう。\",\n    \"彼女は書きあらわすことが得意です。\",\n    \"その問題を書き表すのは難しい。\",\n    \"今日は東京オリンピックについて話しましょう。\",\n    \"コーヒーを飲んで、呑み込んで、また飲んでしまった。\",\n    \"国際的な協力が必要不可欠です。\",\n    \"機械学習の技術が進歩している。\",\n    \"自然言語処理は興味深い分野だ。\"\n]\n\nprint(\"Sample texts prepared:\")\nfor i, text in enumerate(sample_texts, 1):\n    print(f\"{i:2d}. {text}\")\n\n# Create a larger corpus by repeating and slightly modifying texts\nextended_corpus = sample_texts * 3  # Simulate frequency variations\nprint(f\"\\nExtended corpus: {len(extended_corpus)} texts\")\n\n\nSample texts prepared:\n 1. 彼は日ごろから本を読むのが好きです。\n 2. ひごろの勉強が大切だと思います。\n 3. 日頃の努力が実を結ぶでしょう。\n 4. 彼女は書きあらわすことが得意です。\n 5. その問題を書き表すのは難しい。\n 6. 今日は東京オリンピックについて話しましょう。\n 7. コーヒーを飲んで、呑み込んで、また飲んでしまった。\n 8. 国際的な協力が必要不可欠です。\n 9. 機械学習の技術が進歩している。\n10. 自然言語処理は興味深い分野だ。\n\nExtended corpus: 30 texts\n\n\n\n\nShow code\n# Create mock BCCWJ frequency data for testing\n# In real usage, this would be loaded from an actual BCCWJ frequency file\n\nmock_bccwj_data = [\n    ('日頃', 'ヒゴロ', '名詞', 1250),\n    ('本', 'ホン', '名詞', 8500),\n    ('読む', 'ヨム', '動詞', 3200),\n    ('好き', 'スキ', '形容動詞', 2100),\n    ('勉強', 'ベンキョウ', '名詞', 4200),\n    ('大切', 'タイセツ', '形容動詞', 1800),\n    ('思う', 'オモウ', '動詞', 9500),\n    ('努力', 'ドリョク', '名詞', 2200),\n    ('実', 'ミ', '名詞', 1100),\n    ('結ぶ', 'ムスブ', '動詞', 800),\n    ('書く', 'カク', '動詞', 4100),\n    ('表す', 'アラワス', '動詞', 1500),\n    ('得意', 'トクイ', '形容動詞', 1300),\n    ('問題', 'モンダイ', '名詞', 6200),\n    ('難しい', 'ムズカシイ', '形容詞', 3800),\n    ('今日', 'キョウ', '名詞', 5500),\n    ('東京', 'トウキョウ', '名詞', 4800),\n    ('話す', 'ハナス', '動詞', 3600),\n    ('飲む', 'ノム', '動詞', 2400),\n    ('呑む', 'ノム', '動詞', 150),\n    ('国際', 'コクサイ', '名詞', 2800),\n    ('協力', 'キョウリョク', '名詞', 1900),\n    ('必要', 'ヒツヨウ', '形容動詞', 4500),\n    ('技術', 'ギジュツ', '名詞', 3900),\n    ('進歩', 'シンポ', '名詞', 1100)\n]\n\n# Create DataFrame\ndf_bccwj = pd.DataFrame(mock_bccwj_data, columns=['lemma', 'reading', 'pos', 'freq_bccwj'])\ndf_bccwj['key'] = list(zip(df_bccwj.lemma, df_bccwj.reading, df_bccwj.pos))\n\nprint(\"Mock BCCWJ frequency data:\")\nprint(df_bccwj.head(10))\nprint(f\"\\nTotal entries: {len(df_bccwj)}\")\n\n\nMock BCCWJ frequency data:\n  lemma reading   pos  freq_bccwj               key\n0    日頃     ヒゴロ    名詞        1250     (日頃, ヒゴロ, 名詞)\n1     本      ホン    名詞        8500       (本, ホン, 名詞)\n2    読む      ヨム    動詞        3200      (読む, ヨム, 動詞)\n3    好き      スキ  形容動詞        2100    (好き, スキ, 形容動詞)\n4    勉強   ベンキョウ    名詞        4200   (勉強, ベンキョウ, 名詞)\n5    大切    タイセツ  形容動詞        1800  (大切, タイセツ, 形容動詞)\n6    思う     オモウ    動詞        9500     (思う, オモウ, 動詞)\n7    努力    ドリョク    名詞        2200    (努力, ドリョク, 名詞)\n8     実       ミ    名詞        1100        (実, ミ, 名詞)\n9    結ぶ     ムスブ    動詞         800     (結ぶ, ムスブ, 動詞)\n\nTotal entries: 25"
-  },
-  {
-    "objectID": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
-    "href": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
-    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
-    "section": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline",
-    "text": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline\n\nA-1 to A-3: Setup and Configuration\nUniDic provides the morphological analysis system used in BCCWJ, making it ideal for frequency matching.\n\n\nShow code\n# A-3: Initialize fugashi with UniDic\nprint(\"Initializing Plan A: fugashi + UniDic pipeline\")\n\n# Initialize tagger with explicit UniDic path\ntagger_a = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\nprint(f\"Tagger initialized with UniDic dictionary: {unidic.DICDIR}\")\n\n# Test the tagger\ntest_text = \"日ごろから勉強している。\"\ntokens = list(tagger_a(test_text))\nprint(f\"\\nTest analysis of '{test_text}':\")\nfor token in tokens:\n    print(f\"  {token.surface} -&gt; {token.feature.lemma} [{','.join(token.pos)}]\")\n\n\nInitializing Plan A: fugashi + UniDic pipeline\nTagger initialized with UniDic dictionary: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\n\nTest analysis of '日ごろから勉強している。':\n  日ごろ -&gt; 日頃 [名,詞,,,普,通,名,詞,,,副,詞,可,能,,,*]\n  から -&gt; から [助,詞,,,格,助,詞,,,*,,,*]\n  勉強 -&gt; 勉強 [名,詞,,,普,通,名,詞,,,サ,変,可,能,,,*]\n  し -&gt; 為る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  て -&gt; て [助,詞,,,接,続,助,詞,,,*,,,*]\n  いる -&gt; 居る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  。 -&gt; 。 [補,助,記,号,,,句,点,,,*,,,*]\n\n\n\n\nShow code\n# A-4: Morphological field extraction function\ndef iter_lemma_keys_plan_a(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    \n    Args:\n        text: Input Japanese text\n        tagger: fugashi Tagger instance\n    \n    Returns:\n        List of (dictionary_form, reading, pos_major) tuples\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            lemma = m.feature[10] if m.feature[10] else m.surface\n            reading = m.feature[11] if m.feature[11] else ''\n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Test the extraction function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}':\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。':\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, スル, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# Fixed version with proper fugashi/UniDic attribute handling\ndef iter_lemma_keys_fixed(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    Fixed version that handles fugashi attribute variations.\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            \n            # Handle different attribute names for lemma\n            try:\n                lemma = m.lemma if hasattr(m, 'lemma') else m.feature[10]\n            except:\n                lemma = m.surface  # fallback\n            \n            # Handle different attribute names for reading\n            try:\n                reading = m.feature[9] if len(m.feature) &gt; 9 else ''\n            except:\n                reading = ''  # fallback\n            \n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Use the fixed function\niter_lemma_keys_plan_a = iter_lemma_keys_fixed\n\n# Test the fixed function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}' (fixed version):\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。' (fixed version):\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, シ, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# A-5: Frequency analysis with BCCWJ matching\ndef analyze_corpus_plan_a(corpus: List[str], tagger, bccwj_df: pd.DataFrame) -&gt; pd.DataFrame:\n    \"\"\"Analyze corpus using Plan A and match with BCCWJ frequencies.\"\"\"\n    freq = Counter()\n    \n    print(f\"Analyzing {len(corpus)} texts with Plan A...\")\n    for text in corpus:\n        for key in iter_lemma_keys_plan_a(text, tagger):\n            freq[key] += 1\n    \n    # Convert to DataFrame\n    rows = []\n    for (lemma, reading, pos), count in freq.items():\n        rows.append((lemma, reading, pos, count))\n    \n    df_local = pd.DataFrame(rows, columns=['lemma', 'reading', 'pos', 'freq_local'])\n    df_local['key'] = list(zip(df_local.lemma, df_local.reading, df_local.pos))\n    \n    # Merge with BCCWJ data\n    merged = df_local.merge(bccwj_df[['key', 'freq_bccwj']], on='key', how='left')\n    \n    return merged.sort_values('freq_local', ascending=False)\n\n# Run Plan A analysis\nresults_a = analyze_corpus_plan_a(extended_corpus, tagger_a, df_bccwj)\nprint(f\"\\nPlan A Results (top 15):\")\nprint(results_a.head(15)[['lemma', 'reading', 'pos', 'freq_local', 'freq_bccwj']])\n\n\nAnalyzing 30 texts with Plan A...\n\nPlan A Results (top 15):\n   lemma reading pos  freq_local  freq_bccwj\n11     。       *   補          30         NaN\n8      が       ガ   助          18         NaN\n1      は       ワ   助          15         NaN\n7      の       ノ   助          15         NaN\n5      を       オ   助          12         NaN\n10    です      デス   助           9         NaN\n42     で       デ   助           9         NaN\n15     だ       ダ   助           6         NaN\n37     て       テ   助           6         NaN\n41    飲む      ノン   動           6         NaN\n43     、       *   補           6         NaN\n48    国際    コクサイ   名           3         NaN\n47     た       タ   助           3         NaN\n46   しまう     シマッ   動           3         NaN\n0      彼      カレ   代           3         NaN\n\n\n\n\nShow code\n# A-6: Evaluation metrics for Plan A\ndef calculate_metrics(df: pd.DataFrame) -&gt; Dict[str, float]:\n    \"\"\"Calculate coverage and correlation metrics.\"\"\"\n    # Coverage: percentage of local tokens found in BCCWJ\n    matched = df.dropna(subset=['freq_bccwj'])\n    coverage = len(matched) / len(df) * 100\n    \n    # Token coverage (by frequency)\n    total_tokens = df['freq_local'].sum()\n    matched_tokens = matched['freq_local'].sum()\n    token_coverage = matched_tokens / total_tokens * 100\n    \n    # Spearman correlation for matched items\n    if len(matched) &gt; 1:\n        if scipy_available:\n            correlation, p_value = spearmanr(matched['freq_local'], matched['freq_bccwj'])\n        else:\n            correlation = np.corrcoef(matched['freq_local'].rank(), matched['freq_bccwj'].rank())[0,1]\n            p_value = None\n    else:\n        correlation, p_value = None, None\n    \n    return {\n        'type_coverage': coverage,\n        'token_coverage': token_coverage,\n        'correlation': correlation,\n        'p_value': p_value,\n        'total_types': len(df),\n        'matched_types': len(matched),\n        'total_tokens': total_tokens,\n        'matched_tokens': matched_tokens\n    }\n\nmetrics_a = calculate_metrics(results_a)\nprint(\"Plan A Evaluation Metrics:\")\nfor key, value in metrics_a.items():\n    if isinstance(value, float) and value is not None:\n        print(f\"  {key}: {value:.3f}\")\n    else:\n        print(f\"  {key}: {value}\")\n\n\nPlan A Evaluation Metrics:\n  type_coverage: 0.000\n  token_coverage: 0.000\n  correlation: None\n  p_value: None\n  total_types: 66\n  matched_types: 0\n  total_tokens: 297\n  matched_tokens: 0"
-  },
-  {
-    "objectID": "2025/notebooks/session-6.html",
-    "href": "2025/notebooks/session-6.html",
-    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
+    "objectID": "2025/notebooks/session-11.html",
+    "href": "2025/notebooks/session-11.html",
+    "title": "First text analysis with Python",
     "section": "",
-    "text": "Show code\nlow_diversity = \"The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.\"\nShow code\n\nhigh_diversity = \"A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.\"\nShow code\ndef count_token_type(text: str):\n    # delete punctuation\n    text = text.replace(\".\", \"\")\n    text = text.replace(\",\", \"\")\n    text = text.replace(\"?\", \"\")\n\n    \n    token_list = text.strip()\n    token_list = text.split(\" \")\n\n    token = len(token_list)\n    type = len(set(token_list))\n    return (token, type)\nShow code\ncount_token_type(low_diversity)\n\n\n(19, 8)\nShow code\ncount_token_type(high_diversity)\n\n\n(19, 19)\nShow code\nlow_diversity2 = \"The dog ran. The dog jumped. The dog barked. The dog played. The dog ran quickly. The dog jumped so high. The dog barked very loudly. The dog played, sat, and rolled. The dog sneezed. The dog ate the food.\"\nShow code\ncount_token_type(low_diversity2)\n\n\n(40, 18)\nShow code\nlow_diversity3 = \"The parrot squawked loudly. The parrot chirped again. A toucan perched nearby. The parrot fluttered. Wings flapped softly. The parrot chirped again. Feathers shimmered under sunlight. The crow cawed. The parrot glided low. The air shimmered. The owl blinked slowly. The parrot perched again. The owl blinked slowly. The parrot shrieked. The parrot chirped nearby again. The parrot squawked again.\"\nShow code\ncount_token_type(low_diversity3)\n\n\n(60, 27)"
+    "text": "In this notebook, I will show you how to run a simple text analysis with spaCy package in Python.\nShow code\nimport spacy\n\nnlp = spacy.load(\"en_core_web_sm\")\nShow code\nexample_text = \"Hi. This is my first awesome sentence to analyze.\"\nShow code\ndoc = nlp(example_text)"
   },
   {
-    "objectID": "2025/notebooks/session-6.html#using-lexical-diversity-package",
-    "href": "2025/notebooks/session-6.html#using-lexical-diversity-package",
-    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
-    "section": "Using Lexical Diversity package",
-    "text": "Using Lexical Diversity package\nThere is a package called TAALED maintained by Dr. Kris Kyle.\n\n\nShow code\nfrom taaled import ld\nfrom pylats import lats"
+    "objectID": "2025/notebooks/session-11.html#print-token",
+    "href": "2025/notebooks/session-11.html#print-token",
+    "title": "First text analysis with Python",
+    "section": "Print token",
+    "text": "Print token\nIn the following, you can iterate through the parsed doc and print each token in the doc object.\n\n\nShow code\nfor token in doc:\n    print(token)\n\n\nHi\n.\nThis\nis\nmy\nfirst\nawesome\nsentence\nto\nanalyze\n."
+  },
+  {
+    "objectID": "2025/notebooks/session-11.html#print-lemmatized-form",
+    "href": "2025/notebooks/session-11.html#print-lemmatized-form",
+    "title": "First text analysis with Python",
+    "section": "Print lemmatized form",
+    "text": "Print lemmatized form\nYou can print lemmatized form by token.lemma_ (do not forget _ at the end.)\n\n\nShow code\n# Lemmatize\nfor token in doc:\n    print(token.text, token.lemma_, sep=\"\\t\")\n\n\nHi  hi\n.   .\nThis    this\nis  be\nmy  my\nfirst   first\nawesome awesome\nsentence    sentence\nto  to\nanalyze analyze\n.   ."
+  },
+  {
+    "objectID": "2025/notebooks/session-11.html#print-part-of-speech-information",
+    "href": "2025/notebooks/session-11.html#print-part-of-speech-information",
+    "title": "First text analysis with Python",
+    "section": "Print Part of Speech information",
+    "text": "Print Part of Speech information\nYou can add more information, such as pos_\n\n\nShow code\nfor token in doc:\n    print(token.text, token.pos_, token.tag_, sep=\"\\t\")\n\n\nHi  INTJ    UH\n.   PUNCT   .\nThis    PRON    DT\nis  AUX VBZ\nmy  PRON    PRP$\nfirst   ADJ JJ\nawesome ADJ JJ\nsentence    NOUN    NN\nto  PART    TO\nanalyze VERB    VB\n.   PUNCT   ."
+  },
+  {
+    "objectID": "2025/notebooks/session-11.html#spacy-token-information",
+    "href": "2025/notebooks/session-11.html#spacy-token-information",
+    "title": "First text analysis with Python",
+    "section": "spaCy token information",
+    "text": "spaCy token information\nSome useful token information are following:\n\n\n\ncode\nwhat it does\nexample\n\n\n\n\ntoken.lemma_\nlemmatized form\nbe, child\n\n\ntoken.pos_\nsimple POS (Universal Dependency)\nNOUN, VERB\n\n\ntoken.tag_\nfine-grained POS (PennTag set)\nNN, JJ, VB, BBZ\n\n\ntoken.dep_\ndependency type\namod, advmd\n\n\ntoken.head\ntoken information of the head of the dependency"
   },
   {
     "objectID": "2025/sessions/day1/session3.html",
@@ -1073,25 +1080,18 @@
     "text": "Frequency Plot\n\nVery few words occupy most of the corpus.\n\n\nBROWN frequency"
   },
   {
-    "objectID": "2025/slides/session-5.html#implication-of-frequency-on-learning-teaching-and-assessment",
-    "href": "2025/slides/session-5.html#implication-of-frequency-on-learning-teaching-and-assessment",
+    "objectID": "2025/slides/session-5.html#discussion",
+    "href": "2025/slides/session-5.html#discussion",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Implication of frequency on learning, teaching, and assessment",
-    "text": "Implication of frequency on learning, teaching, and assessment"
+    "section": "Discussion",
+    "text": "Discussion\n\nWhat did you notice in the plot? What are the characteristics of words?\nWhat are the characteristics of frequent words? What about infrequent words?"
   },
   {
-    "objectID": "2025/slides/session-5.html#task-3-lexical-profiling",
-    "href": "2025/slides/session-5.html#task-3-lexical-profiling",
+    "objectID": "2025/slides/session-5.html#task-3-tokenizing-non-english-languages-for-frequency-analysis",
+    "href": "2025/slides/session-5.html#task-3-tokenizing-non-english-languages-for-frequency-analysis",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Task 3: Lexical profiling",
-    "text": "Task 3: Lexical profiling\nNow that we understand an important property of language (Zipf’s law), let’s conduct lexical profiling."
-  },
-  {
-    "objectID": "2025/slides/session-5.html#task-5-tokenizing-non-english-languages-for-frequency-analysis",
-    "href": "2025/slides/session-5.html#task-5-tokenizing-non-english-languages-for-frequency-analysis",
-    "title": "Session 5: Hands-on activity #2",
-    "section": "Task 5: Tokenizing non-English languages for frequency analysis",
-    "text": "Task 5: Tokenizing non-English languages for frequency analysis\n\nUp to this point, we only dealt with English.\nEnglish is very convenient in corpus analysis because of the white spaces.\nAsian languages have completely different writing system from Indo-European language, and it makes it difficult to tokenize texts in to words.\nI am planning to eat Oysters after this intensive course.\nこの短期集中講座が終わったら、カキを食べたいと思っています。"
+    "section": "Task 3: Tokenizing non-English languages for frequency analysis",
+    "text": "Task 3: Tokenizing non-English languages for frequency analysis\n\nUp to this point, we only dealt with English.\nEnglish is very convenient in corpus analysis because of the white spaces.\nAsian languages have completely different writing system from Indo-European language, and it makes it difficult to tokenize texts in to words.\nI am planning to eat Oysters after this intensive course.\nこの短期集中講座が終わったら、カキを食べたいと思っています。"
   },
   {
     "objectID": "2025/slides/session-5.html#tagant",
@@ -1105,28 +1105,63 @@
     "href": "2025/slides/session-5.html#tokenizing-japanese",
     "title": "Session 5: Hands-on activity #2",
     "section": "Tokenizing Japanese",
-    "text": "Tokenizing Japanese\n\nDownload and open TagAnt.\nCopy and paste a sample text into Input Text.\nSelect language.\nSelect Output format."
+    "text": "Tokenizing Japanese\n\nDownload and open TagAnt."
+  },
+  {
+    "objectID": "2025/slides/session-5.html#tokenizing-japanese-1",
+    "href": "2025/slides/session-5.html#tokenizing-japanese-1",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Tokenizing Japanese",
+    "text": "Tokenizing Japanese\n\nInput text\nSelect language.\nSelect Output format."
   },
   {
     "objectID": "2025/slides/session-5.html#result-of-tagant-segmentation",
     "href": "2025/slides/session-5.html#result-of-tagant-segmentation",
     "title": "Session 5: Hands-on activity #2",
     "section": "Result of TagAnt segmentation",
-    "text": "Result of TagAnt segmentation\n\n\n\n\n\nHorizontal display\n\n\n\n\n\n\nVertical display"
+    "text": "Result of TagAnt segmentation\n\n\n\n\n\nHorizontal display\n\n\n\n\n\n\nVertical display\n\n\n\n\nTagAnt can do more than this.\nWe will come back to POS tagging on Day 4."
   },
   {
-    "objectID": "2025/slides/session-5.html#activity-instruction",
-    "href": "2025/slides/session-5.html#activity-instruction",
+    "objectID": "2025/slides/session-5.html#activity-instruction-20-mins",
+    "href": "2025/slides/session-5.html#activity-instruction-20-mins",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Activity instruction",
-    "text": "Activity instruction\nTask\nCompile a Japanese frequency list based on corpus.\nResource\n\nDownload a Japanese texts from Google Drive.\nUse AntConc and TagAnt.\n\nSubmission\n\nSubmit a frequency list\nDescription"
+    "section": "Activity instruction (20 mins)",
+    "text": "Activity instruction (20 mins)\nTask\nCompile a Japanese frequency list based on a corpus.\nResource\n\nDownload a Japanese text Aozora 1000 from Google Drive.\nUse AntConc and TagAnt.\n\nSubmission\n\nSubmit a frequency list\nDescription of word frequency pattern in Japanese."
   },
   {
-    "objectID": "2025/slides/session-5.html#optional-task-4-vocabulary-profiling-through-antwordprofiler",
-    "href": "2025/slides/session-5.html#optional-task-4-vocabulary-profiling-through-antwordprofiler",
+    "objectID": "2025/slides/session-5.html#task-4-vocabulary-profiling",
+    "href": "2025/slides/session-5.html#task-4-vocabulary-profiling",
     "title": "Session 5: Hands-on activity #2",
-    "section": "(Optional) Task 4: Vocabulary Profiling through AntWordProfiler",
-    "text": "(Optional) Task 4: Vocabulary Profiling through AntWordProfiler"
+    "section": "Task 4: Vocabulary Profiling",
+    "text": "Task 4: Vocabulary Profiling"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#frequency-information",
+    "href": "2025/slides/session-5.html#frequency-information",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Frequency information",
+    "text": "Frequency information\n\nWe are familiar with the notion of frequency in language.\nFrequency is one important driving force of human cognition and language processing.\nProfiling text using corpus frequency information is one important approach to understand textual characteristics."
+  },
+  {
+    "objectID": "2025/slides/session-5.html#vocabulary-profiling",
+    "href": "2025/slides/session-5.html#vocabulary-profiling",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Vocabulary Profiling",
+    "text": "Vocabulary Profiling\n\nVocabulary profiling is a technique to use corpus frequency to understand characteristics of vocabulary use in the input text\nFor lexical sophistication measure\n\nHow much of the learner produced vocabulary is e.g., beyond 2000 word level (LFP; Laufer and Nation, 1995) ?\n\nFor lexical coverage\n\nHow many words do readers/listeners need to know in order to comprehend the text (90, 95, or 98% coverage)"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#vocabulary-profiling-tools",
+    "href": "2025/slides/session-5.html#vocabulary-profiling-tools",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Vocabulary Profiling tools",
+    "text": "Vocabulary Profiling tools\n\nRANGE program\nVocabProfiler in LexTutor\nNew Word Levels Checker\nAntWordProfiler"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#task-1",
+    "href": "2025/slides/session-5.html#task-1",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Task",
+    "text": "Task"
   },
   {
     "objectID": "2025/slides/session-1.html#instructor",
@@ -1402,11 +1437,200 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nConduct linguistic complexity analysis using a template Python code provided by the instructor.\n(Optional) Apply the concept of linguistic complexity to the Japanese language."
   },
   {
+    "objectID": "2025/slides/session-12.html#thinking-grammartically",
+    "href": "2025/slides/session-12.html#thinking-grammartically",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Thinking grammartically",
+    "text": "Thinking grammartically\nIn group, come up with 3-5 grammatical constructions you would like to identify in learner language.\n\nExplain why it is important\nGive some examples that fall under teh grammatical construction."
+  },
+  {
+    "objectID": "2025/slides/session-12.html#about-google-colab-5-mins",
+    "href": "2025/slides/session-12.html#about-google-colab-5-mins",
+    "title": "Session 12: Hands-on Activity",
+    "section": "About Google Colab (5 mins)",
+    "text": "About Google Colab (5 mins)"
+  },
+  {
+    "objectID": "2025/slides/session-12.html#python-basics-15-mins",
+    "href": "2025/slides/session-12.html#python-basics-15-mins",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Python basics (15 mins)",
+    "text": "Python basics (15 mins)"
+  },
+  {
+    "objectID": "2025/slides/session-12.html#first-text-analysis",
+    "href": "2025/slides/session-12.html#first-text-analysis",
+    "title": "Session 12: Hands-on Activity",
+    "section": "First text analysis",
+    "text": "First text analysis\n\nFirst thing is to load the package.\n\nimport spacy\nnlp = spacy.load(\"en_core_web_sm\")\n\nThen you will define a variable example_text\n\nexample_text = \"Hi. This is my first awesome sentence to analyze.\"\n\nAnalyze this using spacy\n\ndoc = nlp(example_text)"
+  },
+  {
+    "objectID": "2025/slides/session-12.html#result-of-your-first-text-analysis",
+    "href": "2025/slides/session-12.html#result-of-your-first-text-analysis",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Result of your first text analysis",
+    "text": "Result of your first text analysis\n\nLet’s print analysis results\n\nfor token in doc:\n    print(token.text, token.pos_, token.tag_, sep=\"\\t\")"
+  },
+  {
+    "objectID": "2025/slides/session-12.html#spacy-token-information",
+    "href": "2025/slides/session-12.html#spacy-token-information",
+    "title": "Session 12: Hands-on Activity",
+    "section": "spaCy token information",
+    "text": "spaCy token information\nSome useful token information are following:\n\n\n\ncode\nwhat it does\nexample\n\n\n\n\ntoken.lemma_\nlemmatized form\nbe, child\n\n\ntoken.pos_\nsimple POS (Universal Dependency)\nNOUN, VERB\n\n\ntoken.tag_\nfine-grained POS (PennTag set)\nNN, JJ, VB, BBZ\n\n\ntoken.dep_\ndependency type\namod, advmd\n\n\ntoken.head\ntoken information of the head of the dependency"
+  },
+  {
     "objectID": "2025/slides/session-11.html#learning-objectives",
     "href": "2025/slides/session-11.html#learning-objectives",
     "title": "Session 11: Hands-on Activity",
     "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nUnderstand NLP tasks such as POS tagging and dependency parsing\nUnderstand how automated parsing works\nConduct POS tagging using spaCy library in Python (through Google Colab)\nConduct Dependency parsing using spaCy library in Python (through Google Colab)\nConduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt"
+    "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nUnderstand NLP tasks such as POS tagging and dependency parsing\nUnderstand how automated parsing works\nConduct multi-lingual Part-Of-Speech (POS) tagging using TagAnt\nConduct POS tagging using spaCy library in Python (through Google Colab)\nConduct Dependency parsing using spaCy library in Python (through Google Colab)"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#hands-on-activity",
+    "href": "2025/slides/session-11.html#hands-on-activity",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Hands-on Activity",
+    "text": "Hands-on Activity\nTask 1: POS tagging with TagAnt\nTask 2: POS-sensitive frequency list\nTask 3: Understanding dependency grammar through visualization"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#pos-tagging-with-tagant",
+    "href": "2025/slides/session-11.html#pos-tagging-with-tagant",
+    "title": "Session 11: Hands-on Activity",
+    "section": "POS tagging with TagAnt",
+    "text": "POS tagging with TagAnt"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#tagging-with-tagant",
+    "href": "2025/slides/session-11.html#tagging-with-tagant",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Tagging with TagAnt",
+    "text": "Tagging with TagAnt\n\nOpen TagAnt\nSelect Input Files\nSelect Language\nSelect Display information (see next)"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#display-setting-info-in-tagant",
+    "href": "2025/slides/session-11.html#display-setting-info-in-tagant",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Display setting info in TagAnt",
+    "text": "Display setting info in TagAnt\nFollowings are basic selection in TagAnt.\n\n\n\nMenu\nFunction\nExample\n\n\n\n\nword\ntokenization\ndogs, ran\n\n\npos\nPOS tag (simple)\nNOUN, VERB\n\n\npos_tag\nPOS tag (detailed)\nNNS, VBD\n\n\nlemma\nlemmatized word\ndog, run"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#other-diaplay-settings",
+    "href": "2025/slides/session-11.html#other-diaplay-settings",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Other Diaplay settings",
+    "text": "Other Diaplay settings\n\n\n\nMenu\nFunction\nExample\n\n\n\n\nword+pos\ntokenization and POS\ndogs_NOUN, ran_VERB\n\n\nword+lemma +pos_tag\ntoken+lemma+POS\ndogs_dog_NN, ran_run_VERB"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#task-1-annotating-japanese-text-10-mins",
+    "href": "2025/slides/session-11.html#task-1-annotating-japanese-text-10-mins",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Task 1: Annotating Japanese text (10 mins)",
+    "text": "Task 1: Annotating Japanese text (10 mins)\n\nAnnotate 50 Japanese text files with TagAnt.\nCreate frequency list for aozora_50"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#task-1-answer",
+    "href": "2025/slides/session-11.html#task-1-answer",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Task 1: Answer",
+    "text": "Task 1: Answer\nBefore\n「大溝」\n\n　僕は本所界隈のことをスケツチしろといふ社命を受け、同じ社のＯ君と一しよに久振りに本所へ出かけて行つた。\nAfter\n「_補助記号-括弧開_「 大溝_名詞-固有名詞-人名-姓_大溝 」_補助記号-括弧閉_」\n\n　_SPACE_　 僕_代名詞_僕 は_助詞-係助詞_は 本所_名詞-固有名詞-地名-一般_本所 界隈_名詞-普通名詞-一般_界隈 の_助詞-格助詞_の こと_名詞-普通名詞-一般_こと を_助詞-格助詞_を スケツチ_名詞-普通名詞-一般_スケツチ しろ_動詞-非自立可能_する と_助詞-格助詞_と いふ_動詞-一般_いふ 社命_名詞-普通名詞-一般_社命 を_助詞-格助詞_を 受け_動詞-一般_受ける 、_補助記号-読点_、 同じ_連体詞_同じ 社_名詞-普通名詞-助数詞可能_社 の_助詞-格助詞_の Ｏ_名詞-普通名詞-一般_o 君_接尾辞-名詞的-一般_君 と_助詞-格助詞_と 一しよ_名詞-普通名詞-サ変可能_一しよ に_助詞-格助詞_に 久_形容詞-一般_久い 振り_接尾辞-名詞的-一般_振り に_助詞-格助詞_に 本所_名詞-固有名詞-地名-一般_本所 へ_助詞-格助詞_へ 出_動詞-一般_出る かけ_動詞-非自立可能_かける て_助詞-接続助詞_て 行つ_動詞-一般_行ふ た_助動詞_た 。_補助記号-句点_。"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#task-2-frequency-list-by-pos-tags-10-mins",
+    "href": "2025/slides/session-11.html#task-2-frequency-list-by-pos-tags-10-mins",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Task 2: Frequency-list by POS tags (10 mins)",
+    "text": "Task 2: Frequency-list by POS tags (10 mins)\n\nUsing AntConc, create following frequency lists:\n\nCreate a frequency list of 動詞-非自立可能\n\nIf you are done, please create another frequency list with different search terms."
+  },
+  {
+    "objectID": "2025/slides/session-11.html#task-2-key",
+    "href": "2025/slides/session-11.html#task-2-key",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Task 2: Key",
+    "text": "Task 2: Key\n\n非自立可能動詞"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#advanced-options-in-tagant",
+    "href": "2025/slides/session-11.html#advanced-options-in-tagant",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Advanced options in TagAnt",
+    "text": "Advanced options in TagAnt\n\nIn TagAnt, you can download models for other languages.\n\n\nloading other models"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#any-questions",
+    "href": "2025/slides/session-11.html#any-questions",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Any questions?",
+    "text": "Any questions?\n\nNow you can parse multilingual text with TagAnt."
+  },
+  {
+    "objectID": "2025/slides/session-11.html#goals",
+    "href": "2025/slides/session-11.html#goals",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Goals",
+    "text": "Goals\n\nDescribe grammatical structure of a simple sentence using terminology such as ROOT,head, dependency type, and dependent."
+  },
+  {
+    "objectID": "2025/slides/session-11.html#dependency-grammar-係受け",
+    "href": "2025/slides/session-11.html#dependency-grammar-係受け",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Dependency grammar (係受け)",
+    "text": "Dependency grammar (係受け)\n\nDependency grammar is particular type of syntactic tree.\nforms a tree by defining binary relations between running tokens.\nEach token in the sentence is governed by one token (i.e., head)\nThe highest in the syntactic tree is termed as ROOT"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#dependency-grammar-係受け---2",
+    "href": "2025/slides/session-11.html#dependency-grammar-係受け---2",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Dependency grammar (係受け) - 2",
+    "text": "Dependency grammar (係受け) - 2\n\nThere are a few different approaches to formalize dependency\n\nUniversal Dependency\nStanford Dependency\nClearNLP\netc."
+  },
+  {
+    "objectID": "2025/slides/session-11.html#simple-example",
+    "href": "2025/slides/session-11.html#simple-example",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Simple example",
+    "text": "Simple example\nThe following is a dependency for I play baseball.\n\nsimple-dependency"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#in-table-format",
+    "href": "2025/slides/session-11.html#in-table-format",
+    "title": "Session 11: Hands-on Activity",
+    "section": "In table format",
+    "text": "In table format\nThe same sentence, I play baseball can be expressed in the following format\n\n\n\ntid\ntoken\ndep\nhead\n\n\n\n\n1\nI\nnsubj\n2\n\n\n2\nplay\nROOT\n\n\n\n3\nbaseball\ndobj\n2\n\n\n4\n.\npunct\n2\n\n\n\nThis type of vertical format is often used to represent multi-layered token information."
+  },
+  {
+    "objectID": "2025/slides/session-11.html#some-excercise---problem-1",
+    "href": "2025/slides/session-11.html#some-excercise---problem-1",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Some excercise - Problem 1",
+    "text": "Some excercise - Problem 1\nTry filling in the gap in the following table.\n\n\n\ntid\ntoken\ndep\nhead\n\n\n\n\n1\nI\n\n\n\n\n2\nlove\nROOT\n\n\n\n3\nbeef\n\n\n\n\n4\ntongue\n\n\n\n\n5\n.\npunct\n2"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#some-excercise---problem-2",
+    "href": "2025/slides/session-11.html#some-excercise---problem-2",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Some excercise - Problem 2",
+    "text": "Some excercise - Problem 2\nTry filling in the gap in the following table.\n\n\n\ntid\ntoken\ndep\nhead\n\n\n\n\n1\nThe\n\n\n\n\n2\ncat\n\n\n\n\n3\nsleeps\nROOT\n\n\n\n4\non\n\n\n\n\n5\nthe\n\n\n\n\n6\nmat\n\n\n\n\n7\n.\npunct\n3"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#some-excercise---problem-3",
+    "href": "2025/slides/session-11.html#some-excercise---problem-3",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Some excercise - Problem 3",
+    "text": "Some excercise - Problem 3\nTry filling in the gap in the following table.\n\n\n\ntid\ntoken\ndep\nhead\n\n\n\n\n1\nShe\n\n\n\n\n2\nquickly\n\n\n\n\n3\nreads\nROOT\n\n\n\n4\ninteresting\n\n\n\n\n5\nbooks\n\n\n\n\n6\n.\npunct\n3"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#lets-parse-the-sentence.",
+    "href": "2025/slides/session-11.html#lets-parse-the-sentence.",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Let’s parse the sentence.",
+    "text": "Let’s parse the sentence.\n\nVisit our webapp\nTry the sentences above and analyze their dependencies"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#questions",
+    "href": "2025/slides/session-11.html#questions",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Questions?",
+    "text": "Questions?"
   },
   {
     "objectID": "2025/slides/session-8.html#learning-objectives",
@@ -1414,6 +1638,48 @@
     "title": "Session 8: Hands-on activity #4",
     "section": "🎯 Learning Objectives",
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nSearch for window-based collocations and n-grams in AntConc\nCalculate commonly used strengths of association measures by hand using spreadsheet software\nDiscuss benefits and drawbacks of different strength of association measures"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#recap-what-is-collocation",
+    "href": "2025/slides/session-8.html#recap-what-is-collocation",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Recap: What is collocation?",
+    "text": "Recap: What is collocation?\n\nCollocation"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#collocation-in-antconc",
+    "href": "2025/slides/session-8.html#collocation-in-antconc",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Collocation in AntConc",
+    "text": "Collocation in AntConc\n\nexplain"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#calculating-soa-by-hand",
+    "href": "2025/slides/session-8.html#calculating-soa-by-hand",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Calculating SOA by hand",
+    "text": "Calculating SOA by hand\n\nOpen Google Sreadsheet.\nBuild function to calculate the following SOA measures\n\nT-score\nMutual Information\nMutual Information Squared (\\(MI^2\\))\nLogDice"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#understanding-collocational-characteristics-by-plotting",
+    "href": "2025/slides/session-8.html#understanding-collocational-characteristics-by-plotting",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Understanding collocational characteristics by plotting",
+    "text": "Understanding collocational characteristics by plotting\n\nLet’s make plots based on the calculated\nPlot 1:\n\nX-Axis: T-score\nY-Axis: MI\n\nPlot 2:\n\nX-Axis: LogDice\nY-Axis: MI"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#discussion-describe-the-characteristics-of-each-index",
+    "href": "2025/slides/session-8.html#discussion-describe-the-characteristics-of-each-index",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Discussion: Describe the characteristics of each index",
+    "text": "Discussion: Describe the characteristics of each index\n\nWhat are the characteristics of SOA indices?\n\nT-score\nMI\nLogDice"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#advanced-how-can-i-generate-a-collocation-list",
+    "href": "2025/slides/session-8.html#advanced-how-can-i-generate-a-collocation-list",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "(Advanced) how can I generate a collocation list?",
+    "text": "(Advanced) how can I generate a collocation list?\n\nColab notebook"
   },
   {
     "objectID": "2025/assignments/hands-on-4/draft.html",
@@ -1714,7 +1980,7 @@
     "href": "2025/assignments/hands-on-2/index.html#task-1-a-japanese-word-frequency-list",
     "title": "Hands-on Assignment 2",
     "section": "Task 1: A Japanese word frequency List",
-    "text": "Task 1: A Japanese word frequency List\n\nConstruct a Japanese word frequency list.\nState a purpose for which you are creating a Japanese word frequency list\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nA Japanese word frequency list (.txt or .tsv format)\nDescriptive paragraphs explaining the frequency distributions of Japanese language.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
+    "text": "Task 1: A Japanese word frequency List\n\nGoals\nThe goal of this task is to: - Construct a Japanese word frequency list.\n\n\nInstruction\n\nUse Aozora 1000 corpus.\nCreate frequency list using TagAnt and AntConc\nUnderstand frequency distributions using simple text analyzer.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nA Japanese word frequency list (.txt or .tsv format)\nDescriptive paragraphs explaining the frequency distributions of Japanese language.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a frequency list of Japanese words based on Aozora 1000\nprovides a description of word-frequency patterns in Aozora 1000 using example words from each frequency bins",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
@@ -1725,7 +1991,7 @@
     "href": "2025/assignments/hands-on-2/index.html#task-2-hand-calculated-lexical-diversity-scores-and-taaled-results",
     "title": "Hands-on Assignment 2",
     "section": "Task 2: Hand-calculated lexical diversity scores and TAALED results",
-    "text": "Task 2: Hand-calculated lexical diversity scores and TAALED results\nSubmission:\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nPlots that contains results of the lexical diversity analysis.\nDescriptive paragraphs explaining the trends of lexical diversity (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
+    "text": "Task 2: Hand-calculated lexical diversity scores and TAALED results\n\nGoals\nThe goals of this task are: - to understand how classical lexical diversity scores behave given the simple textual examples - to compute more recent, robust alternatives to classical indices using TAALED. - to describe how texts from the GiG corpus behave in terms of lexical diversity.\n\n\nInstructions\n\nComplete the hand calculation of lexical diversity indices on the spreadsheet\nCompute recommended lexical diversity indices — MATTR and MTLD Original — using TAALED.\nReplicate Figure 4.19 in Durrant (2023, p. 72) with the two indices (i.e., MATTR and MTLD Original)\nDiscuss implication of the findings.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nPlots that contain results of the lexical diversity analysis.\nDescriptive paragraphs explaining the trends of lexical diversity (200-300 words).\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, CTTR, MAAS) scores for the sample texts\nincludes a csv file\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides comparison of the trends of lexical diversities you found against Figure 4.19 in Durrant (2023).",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
@@ -1736,7 +2002,7 @@
     "href": "2025/assignments/hands-on-2/index.html#task-3-qualitative-analysis-of-lexical-sophistication",
     "title": "Hands-on Assignment 2",
     "section": "Task 3: Qualitative analysis of lexical sophistication",
-    "text": "Task 3: Qualitative analysis of lexical sophistication\nSubmission:\n\nDescriptive paragraph(s) explaining the index of your choice.\nPlots that contains results of the lexical sophistication analysis.\nDescriptive paragraphs explaining the trends of lexical sophistication (200-300 words).\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
+    "text": "Task 3: Qualitative analysis of lexical sophistication\n\nGoal\nThe goals of this task are to:\n\ncompute several important lexical sophistication indices\ncompare and contrast two texts using the selected indices\ndescribe the use of vocabulary in the two text based on the quantitative and qualitative information\n\n\n\nInstructions\n\nTwo texts from\nUsing the simple text analyzer, compare two texts based on two indices that you select.\nSelect one frequency-based index and aother type of index.\nInterpret the results of the analysis and describe the difference in a (few) paragraph(s).\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nPlots that contains results of the lexical sophistication analysis.\nDescriptive paragraph(s) contrasting two texts based on lexical sophistication (200-300 words).\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes plots from one frequency index and one other type of index\nprovides desciption of how two texts differ in terms of the selected lexical sophistication indices.",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 2"
@@ -1754,11 +2020,11 @@
     ]
   },
   {
-    "objectID": "2025/assignments/hands-on-3/index.html#task-1-comparing-two-lists-of-formulaic-language-4-points",
-    "href": "2025/assignments/hands-on-3/index.html#task-1-comparing-two-lists-of-formulaic-language-4-points",
+    "objectID": "2025/assignments/hands-on-3/index.html#task-1-describing-statistical-characteristics-of-collocations-4-points",
+    "href": "2025/assignments/hands-on-3/index.html#task-1-describing-statistical-characteristics-of-collocations-4-points",
     "title": "Hands-on Assignment 3",
-    "section": "Task 1: Comparing two lists of formulaic language (4 points)",
-    "text": "Task 1: Comparing two lists of formulaic language (4 points)\nIn the first task, I would like you to select two corpus (or two clearly definable sections of a corpus) and compare and formulaic language that occur in the two (sub-sections of the) corpora.\nResearch questions:\nMethods:\nResults:\n\n\n\n\n\n\nSubmission\n\n\n\n\nA text file (.txt or .tsv) for generated n-grams or collocations\nA word file (.docx) for prose descriptions.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
+    "section": "Task 1: Describing statistical characteristics of collocations (4 points)",
+    "text": "Task 1: Describing statistical characteristics of collocations (4 points)\nIn the first task, I would like you to calculate major Strengths Of Association (SOA) measures to quantify the association between two words (node words and their collocates.)\nThe frequency of node words, their collocates and entire corpus size will be given to you.\nYour task is to calculate T-score, MI, MI^2, and LogDice.\n\n\n\n\n\n\nSubmission\n\n\n\n\nA spreadsheet file with SOA values.\nA word file (.docx) for plots and prose descriptions.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\ncontains accurate T-score, MI, MI^2 and LogDice scores\nprovides visualization of the relations between SOA indices\ndescribe the relationships among SOA indices and typical collocations",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 3"
@@ -1769,7 +2035,7 @@
     "href": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether",
     "title": "Hands-on Assignment 3",
     "section": "Task 2 & 3: Mini-research project (8 points altogether)",
-    "text": "Task 2 & 3: Mini-research project (8 points altogether)\nThe task 2 and 3 are related to the mini-research project.\nIn this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.\nSpecifically, you will:\n\nselect lexical richness or phraseological sophistication indices to answer a set of research questions\nanalyze the chosen corpus with the selected indices\npresent the results and interpretation in a written prose\n\n\nCorpus choice\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant)\nBritish Academic Written English\nSome Japanese corpus here.\n\nResearch questions:\nMethods:\nResults:\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
+    "text": "Task 2 & 3: Mini-research project (8 points altogether)\nThe task 2 and 3 are related to the mini-research project.\nIn this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.\nSpecifically, you will:\n\nselect lexical richness or phraseological sophistication indices to answer a set of research questions\nanalyze the chosen corpus with the selected indices\npresent the results and interpretation in a written prose\n\n\nCorpus choice\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant, 2023)\nBritish Academic Written English\nSome Japanese corpus here (Ask Masaki about availability).\n\n\n\n\n\n\n\nSubmission\n\n\n\n\nA word file which\n\ndescribe the selected lexical richness and phraseological indices;\nbriefly explain the content of the corpus you investigated;\nprovides analysis procesure\nprovides results of the analysis (e.g., visualization and/or statistical tests)\ndiscusses implication of your analysis\n\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\n[ ]",
     "crumbs": [
       "Assignments",
       "Hands-on Assignment 3"
@@ -1827,11 +2093,60 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nJustify choices of lexical richness measures to investigate a research questions\nConduct a simple statistical analysis of selected corpus on small sets of lexical measures using JASP software"
   },
   {
+    "objectID": "2025/slides/session-9.html#available-corpus",
+    "href": "2025/slides/session-9.html#available-corpus",
+    "title": "Session 9: Research Application",
+    "section": "Available corpus",
+    "text": "Available corpus\n\nLet’s use GiG corpus by Durrant (2023)."
+  },
+  {
     "objectID": "2025/slides/session-10.html#learning-objectives",
     "href": "2025/slides/session-10.html#learning-objectives",
     "title": "Session 10: Analyzing Grammar",
     "section": "🎯 Learning Objectives",
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nProvide historical overview of the syntactic complexity research\nDescribe different approaches to grammatical features:\n\nGrammatical complexity strand\nFine-grained grammatical complexity strand\nDescriptive (register-based analysis) strand\nVerb Argument Construction (VAC) strand\n\nUnderstand current trends of syntactic complexity research"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#grammatical-complexity-strand",
+    "href": "2025/slides/session-10.html#grammatical-complexity-strand",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Grammatical complexity strand",
+    "text": "Grammatical complexity strand"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#t-unit",
+    "href": "2025/slides/session-10.html#t-unit",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "T-unit",
+    "text": "T-unit"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#organic-approach-norris-ortega-2009",
+    "href": "2025/slides/session-10.html#organic-approach-norris-ortega-2009",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Organic approach (Norris & Ortega, 2009)",
+    "text": "Organic approach (Norris & Ortega, 2009)"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#fine-grained-grammatical-complexity-strand",
+    "href": "2025/slides/session-10.html#fine-grained-grammatical-complexity-strand",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Fine-grained grammatical complexity strand",
+    "text": "Fine-grained grammatical complexity strand"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#synntactic-sophistication-or-vac-strand",
+    "href": "2025/slides/session-10.html#synntactic-sophistication-or-vac-strand",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Synntactic sophistication (or VAC) strand",
+    "text": "Synntactic sophistication (or VAC) strand"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#descriptive-register-based-feature-strand",
+    "href": "2025/slides/session-10.html#descriptive-register-based-feature-strand",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Descriptive (register-based feature) strand",
+    "text": "Descriptive (register-based feature) strand"
   },
   {
     "objectID": "2025/slides/session-13.html#learning-objectives",
@@ -1862,25 +2177,18 @@
     "text": "First corpus search\n\nLet’s start our journey.\nFirst of all, let’s search the following word in COCA.\n\nrun"
   },
   {
-    "objectID": "2025/slides/session-3.html#result-of-dog",
-    "href": "2025/slides/session-3.html#result-of-dog",
-    "title": "Session 3: Hands-on #1",
-    "section": "Result of dog",
-    "text": "Result of dog\n\nYou might get slightly different results."
-  },
-  {
     "objectID": "2025/slides/session-3.html#result-of-run",
     "href": "2025/slides/session-3.html#result-of-run",
     "title": "Session 3: Hands-on #1",
     "section": "Result of run",
-    "text": "Result of run\n\nSearch - run\nYou might get slightly different results."
+    "text": "Result of run\n\nYou might get slightly different results.\n\n\nSearch - run"
   },
   {
     "objectID": "2025/slides/session-3.html#lemma-search",
     "href": "2025/slides/session-3.html#lemma-search",
     "title": "Session 3: Hands-on #1",
     "section": "LEMMA search",
-    "text": "LEMMA search\n\nLemma is a group of word form for the head-word with grammatical inflection.\nYou can search LEMMA in English-Corpora.org through Capital letters.\nThe search methods will depend on the corpus tool you use."
+    "text": "LEMMA search\n\nLemma is a group of word form for the headword with grammatical inflection.\nYou can search LEMMA in English-Corpora.org through Capital letters.\nThe search methods will depend on the corpus tool you use."
   },
   {
     "objectID": "2025/slides/session-3.html#lemma-search-1",
@@ -1888,6 +2196,41 @@
     "title": "Session 3: Hands-on #1",
     "section": "LEMMA search",
     "text": "LEMMA search\n\nSearch - consider"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#task-a.2---pos-search",
+    "href": "2025/slides/session-3.html#task-a.2---pos-search",
+    "title": "Session 3: Hands-on #1",
+    "section": "Task A.2 - POS search",
+    "text": "Task A.2 - POS search"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#specifying-part-of-speech-pos",
+    "href": "2025/slides/session-3.html#specifying-part-of-speech-pos",
+    "title": "Session 3: Hands-on #1",
+    "section": "Specifying Part Of Speech (POS)",
+    "text": "Specifying Part Of Speech (POS)\n\nWhen you want to specify POS, you will need to add the following tags.\n\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nCommon noun\nNOUN\nN\nsun\n\n\nProper Nouns\nNAME\nNP\nSendai\n\n\nAll nouns\nNOUN+\nN+\nsun, Sendai\n\n\nLexical verbs\nVERB\nV\nrun\n\n\nAll verbs\nVERB+\nV\nrun, do"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#specifying-part-of-speech-pos-1",
+    "href": "2025/slides/session-3.html#specifying-part-of-speech-pos-1",
+    "title": "Session 3: Hands-on #1",
+    "section": "Specifying Part Of Speech (POS)",
+    "text": "Specifying Part Of Speech (POS)\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nAdjectives\nADJ\nJ\nsimple\n\n\nAdverbs\nADV\nR\nclear\n\n\nPreposition\nPREP\n-\nin\n\n\nArticles\nART\n-\nher\n\n\nDeterminers\nDET\n-\nthese\n\n\nConjunctions\nCONJ\n-\nthese\n\n\nConjunctions\nCONJ\n-\nthese"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#the-word-run-used-as-noun",
+    "href": "2025/slides/session-3.html#the-word-run-used-as-noun",
+    "title": "Session 3: Hands-on #1",
+    "section": "the word run used as noun",
+    "text": "the word run used as noun\n\nSearch occurrences of run that are used as nouns."
+  },
+  {
+    "objectID": "2025/slides/session-3.html#the-word-run-used-as-noun-1",
+    "href": "2025/slides/session-3.html#the-word-run-used-as-noun-1",
+    "title": "Session 3: Hands-on #1",
+    "section": "the word run used as noun",
+    "text": "the word run used as noun\n\nSearch occurrences of run that are used as nouns.\n\n\nrun - as noun"
   },
   {
     "objectID": "2025/slides/session-3.html#concordances-or-kwic",
@@ -1953,18 +2296,18 @@
     "text": "Chart function\n\nNow that we learned how to conduct concordance search, let’s experiment with some CHART function.\nThis allows you to return frequency by sections of of COCA (= conditional frequency)."
   },
   {
-    "objectID": "2025/slides/session-3.html#search-radio-using-chart",
-    "href": "2025/slides/session-3.html#search-radio-using-chart",
+    "objectID": "2025/slides/session-3.html#search-lol-using-chart",
+    "href": "2025/slides/session-3.html#search-lol-using-chart",
     "title": "Session 3: Hands-on #1",
-    "section": "Search radio using CHART",
-    "text": "Search radio using CHART\n\nGo to Search Tab, select, CHART and enter radio\n\n\nChart search"
+    "section": "Search lol using CHART",
+    "text": "Search lol using CHART\n\nGo to Search Tab, select, CHART and enter lol"
   },
   {
-    "objectID": "2025/slides/session-3.html#search-radio-using-chart-1",
-    "href": "2025/slides/session-3.html#search-radio-using-chart-1",
+    "objectID": "2025/slides/session-3.html#search-lol-using-chart-1",
+    "href": "2025/slides/session-3.html#search-lol-using-chart-1",
     "title": "Session 3: Hands-on #1",
-    "section": "Search radio using CHART",
-    "text": "Search radio using CHART\n\nYou will get the following:"
+    "section": "Search lol using CHART",
+    "text": "Search lol using CHART\n\nYou will get the following:\n\n\nSearch - lol"
   },
   {
     "objectID": "2025/slides/session-3.html#regular-expressions",
@@ -1985,7 +2328,7 @@
     "href": "2025/slides/session-3.html#result-with-a-of-the",
     "title": "Session 3: Hands-on #1",
     "section": "Result with a * of the",
-    "text": "Result with a * of the"
+    "text": "Result with a * of the\n\n\n\n\na * of the"
   },
   {
     "objectID": "2025/slides/session-3.html#more-search-methods",
@@ -1993,6 +2336,27 @@
     "title": "Session 3: Hands-on #1",
     "section": "More search methods",
     "text": "More search methods\n\nYou can check how to use other search methods in English-Corpora.org here"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#examples",
+    "href": "2025/slides/session-3.html#examples",
+    "title": "Session 3: Hands-on #1",
+    "section": "Examples",
+    "text": "Examples\n\nWhich of the following adjectives are more frequent — exciting or excited?\nIs there any reletitive phrase with three adjectives?"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#adj-x-3",
+    "href": "2025/slides/session-3.html#adj-x-3",
+    "title": "Session 3: Hands-on #1",
+    "section": "ADJ x 3",
+    "text": "ADJ x 3\n\nthree adjectives\nNote: Sometimes the search results will contain parsing errors. (We will come back to this topic on Day 4.)"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#constructing-questions",
+    "href": "2025/slides/session-3.html#constructing-questions",
+    "title": "Session 3: Hands-on #1",
+    "section": "Constructing questions",
+    "text": "Constructing questions\nAre there any questions you would like to conduct?"
   },
   {
     "objectID": "2025/slides/session-3.html#collocation-search",
@@ -2006,28 +2370,28 @@
     "href": "2025/slides/session-3.html#collocation-search-1",
     "title": "Session 3: Hands-on #1",
     "section": "Collocation search",
-    "text": "Collocation search\n\nSelect Collocates"
+    "text": "Collocation search\n\nSelect collocates\n\n\ncollocation"
   },
   {
     "objectID": "2025/slides/session-3.html#collocation-search-2",
     "href": "2025/slides/session-3.html#collocation-search-2",
     "title": "Session 3: Hands-on #1",
     "section": "Collocation search",
-    "text": "Collocation search\n\nEnter search word"
+    "text": "Collocation search\n\nEnter search word\n\n\nentering words"
   },
   {
     "objectID": "2025/slides/session-3.html#collocation-search-3",
     "href": "2025/slides/session-3.html#collocation-search-3",
     "title": "Session 3: Hands-on #1",
     "section": "Collocation search",
-    "text": "Collocation search\n\nOptional enter the word to look for"
+    "text": "Collocation search\n\nOptional enter the word to look for\n\n\nenter collocates"
   },
   {
     "objectID": "2025/slides/session-3.html#collocation-search-4",
     "href": "2025/slides/session-3.html#collocation-search-4",
     "title": "Session 3: Hands-on #1",
     "section": "Collocation search",
-    "text": "Collocation search\n\nSpecify window\n\n\nHow distant do you search for the collocates"
+    "text": "Collocation search\n\nSpecify window\n\n\nHow distant do you search for the collocates\n\n\nwindow"
   },
   {
     "objectID": "2025/slides/session-4.html#learning-objectives",
@@ -2209,21 +2573,84 @@
     "href": "2025/slides/session-6.html#lexical-sophistication-1",
     "title": "Session 6: Hands-on activity #3",
     "section": "Lexical sophistication",
-    "text": "Lexical sophistication\nThere are a number of lexical sophistication measures for English (+ 300).\n\n12 categories of measures (Eguchi & Kyle, 2020)\n\nFrequency\nRange\nPsycholinguistic Norm"
+    "text": "Lexical sophistication\nThere are a number of lexical sophistication measures for English (+ 300).\n\n12 categories of measures (Eguchi & Kyle, 2020)\n\nFrequency\nRange\nPsycholinguistic Norm\nHypernymy\nN-gram Frequency/Range/SOA\netc."
   },
   {
     "objectID": "2025/slides/session-6.html#typical-operationalization",
     "href": "2025/slides/session-6.html#typical-operationalization",
     "title": "Session 6: Hands-on activity #3",
     "section": "Typical operationalization",
-    "text": "Typical operationalization\n\nOperationalization means\nTypically, lexical sophistication (LS) is calculated as an average:\nTypical LS score = \\[Total \\; LS \\; score \\over nToken \\; with \\; LS \\; score\\]\nAverage is just a convenient choice."
+    "text": "Typical operationalization\n\nTypically, lexical sophistication (LS) is calculated as an average:\nTypical LS score = \\[Total \\; LS \\; score \\over nToken \\; with \\; LS \\; score\\]\nAverage is just a convenient choice."
   },
   {
     "objectID": "2025/slides/session-6.html#using-an-emulation-of-taales",
     "href": "2025/slides/session-6.html#using-an-emulation-of-taales",
     "title": "Session 6: Hands-on activity #3",
     "section": "Using an emulation of TAALES",
-    "text": "Using an emulation of TAALES\n\nSince the desktop version of TAALES is unstable these days, we will use a simple web application."
+    "text": "Using an emulation of TAALES\n\nSince the desktop version of TAALES is unstable these days, we will use a simple web application.\nLet’s use simple text analyzer"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#simple-text-analyzer",
+    "href": "2025/slides/session-6.html#simple-text-analyzer",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Simple Text Analyzer",
+    "text": "Simple Text Analyzer\n!"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#analyzing-single-text-in-simple-text-analzer",
+    "href": "2025/slides/session-6.html#analyzing-single-text-in-simple-text-analzer",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Analyzing single-text in simple text analzer",
+    "text": "Analyzing single-text in simple text analzer\n!"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#analyzing-single-text-in-simple-text-analzer-1",
+    "href": "2025/slides/session-6.html#analyzing-single-text-in-simple-text-analzer-1",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Analyzing single-text in simple text analzer",
+    "text": "Analyzing single-text in simple text analzer\n\nChoose single text mode\nChoose Paste text\nChoose Reference list (e.g., COCA Spoken Frequency)\nChoose if you apply log transformation to frequency values\nHit Analyze Text"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#check-impact-of-log-transformation",
+    "href": "2025/slides/session-6.html#check-impact-of-log-transformation",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Check impact of log transformation",
+    "text": "Check impact of log transformation\n\nHow would you explain the results of the log transformation?\nWhich one do you recommend?\n\n\n\n\n\n\nNot log Transformed\n\n\n\n\n\n\nLog Transformed"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#on-log-transformation",
+    "href": "2025/slides/session-6.html#on-log-transformation",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "On log transformation",
+    "text": "On log transformation\n\nLog transformation allows the text-internal frequency distribution to approach normal distribution.\nThis is generally recommended because the “mean” score behaves well on normally distributed data."
+  },
+  {
+    "objectID": "2025/slides/session-6.html#comparing-two-texts",
+    "href": "2025/slides/session-6.html#comparing-two-texts",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Comparing two texts",
+    "text": "Comparing two texts\nWe can also compare two texts in simple text analyzer.\n!"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#plots-that-compares-two-lists",
+    "href": "2025/slides/session-6.html#plots-that-compares-two-lists",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Plots that compares two lists",
+    "text": "Plots that compares two lists\n!"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#uploading-your-frequency-list",
+    "href": "2025/slides/session-6.html#uploading-your-frequency-list",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Uploading your frequency list",
+    "text": "Uploading your frequency list\nThe simple text analyzer can accept a word frequency list.\n!TODO\n[] fix the application then think about"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#batch-analysis",
+    "href": "2025/slides/session-6.html#batch-analysis",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Batch analysis",
+    "text": "Batch analysis\n[] fix the application"
   },
   {
     "objectID": "2025/syllabus/index.html",
@@ -3124,11 +3551,46 @@
     ]
   },
   {
-    "objectID": "2025/notebooks/session-5.html",
-    "href": "2025/notebooks/session-5.html",
-    "title": "",
+    "objectID": "2025/notebooks/session-6.html",
+    "href": "2025/notebooks/session-6.html",
+    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
     "section": "",
-    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import dictionary, tokenizer\nfrom spacy.tokens import Doc\n\n# 1. Standard pipeline (for reliable POS/DEP):\nstd_nlp = spacy.load(\"ja_core_news_sm\")\n\n# 2. Alternate segmentation pipeline (no tagging):\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.A  # A=short, C=long\n\nalt_nlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    ms = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in ms]\n    spaces = [False]*len(words)\n    return Doc(alt_nlp.vocab, words=words, spaces=spaces)\n\nalt_nlp.tokenizer = sudachi_tokenizer_func\n\ntext = \"彼は昨日本を買って読み始めました。\"\ndoc_std = std_nlp(text)\ndoc_alt = alt_nlp(text)\n\nprint(\"STD tokens:\", [t.text for t in doc_std])\nprint(\"ALT tokens (mode A):\", [t.text for t in doc_alt])\nprint(\"STD POS:\", [t.pos_ for t in doc_std])\n\n\nSTD tokens: ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nALT tokens (mode A): ['彼', 'は', '昨', '日本', 'を', '買っ', 'て', '読み', '始め', 'まし', 'た', '。']\nSTD POS: ['PRON', 'ADP', 'NOUN', 'PROPN', 'ADP', 'VERB', 'SCONJ', 'VERB', 'VERB', 'AUX', 'AUX', 'PUNCT']\n\n\n\n\nShow code\nimport spacy\nfrom sudachipy import tokenizer, dictionary\nfrom spacy.tokens import Doc\n\nsudachi = dictionary.Dictionary().create()\nMODE = tokenizer.Tokenizer.SplitMode.C  # change to A for short proxy\n\nnlp = spacy.blank(\"ja\")\n\ndef sudachi_tokenizer_func(text):\n    sudachi_tokens = sudachi.tokenize(text, MODE)\n    words = [m.surface() for m in sudachi_tokens]\n    spaces = [False]*len(words)\n    return Doc(nlp.vocab, words=words, spaces=spaces)\n\n# nlp.tokenizer = sudachi_tokenizer_func\n\ndoc = nlp(\"今年の干支は庚子です。東京オリンピックたのしみだなあ。\")\nprint([t.text for t in doc])\nprint([(t.norm_, t.pos_, t.tag_) for t in doc])\n\n\n['今年', 'の', '干支', 'は', '庚子', 'です', '。', '東京', 'オリンピック', 'たのし', 'み', 'だ', 'なあ', '。']\n[('今年', 'NOUN', '名詞-普通名詞-副詞可能'), ('の', 'ADP', '助詞-格助詞'), ('干支', 'NOUN', '名詞-普通名詞-一般'), ('は', 'ADP', '助詞-係助詞'), ('庚子', 'NOUN', '名詞-普通名詞-一般'), ('です', 'AUX', '助動詞'), ('。', 'PUNCT', '補助記号-句点'), ('東京', 'PROPN', '名詞-固有名詞-地名-一般'), ('オリンピック', 'NOUN', '名詞-普通名詞-一般'), ('楽しい', 'ADJ', '形容詞-一般'), ('味', 'PART', '接尾辞-名詞的-一般'), ('だ', 'AUX', '助動詞'), ('な', 'PART', '助詞-終助詞'), ('。', 'PUNCT', '補助記号-句点')]\n\n\n\n\nShow code\nimport spacy\nnlp = spacy.load(\"ja_ginza\")\ndoc = nlp(\"ひごろ 日ごろ 日頃 呑み 呑んで 飲んで 書きあらわす\")\nfor tok in doc:\n    print(tok.text, tok.lemma_)  # lemma_ ~ Sudachi dictionary form\n\n\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:75: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports = re.findall(\"^\\s*import\\s+\\.(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:77: SyntaxWarning: invalid escape sequence '\\s'\n  relative_imports += re.findall(\"^\\s*from\\s+\\.(\\S+)\\s+import\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:119: SyntaxWarning: invalid escape sequence '\\s'\n  imports = re.findall(\"^\\s*import\\s+(\\S+)\\s*$\", content, flags=re.MULTILINE)\n/Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py:121: SyntaxWarning: invalid escape sequence '\\s'\n  imports += re.findall(\"^\\s*from\\s+(\\S+)\\s+import\", content, flags=re.MULTILINE)\n\n\nひごろ ひごろ\n日ごろ 日ごろ\n日頃 日頃\n呑み 呑む\n呑ん 呑む\nで で\n飲ん 飲む\nで で\n書きあらわす 書きあらわす\n\n\n\n\nShow code\nimport spacy\nfrom spacy.tokens import Doc\nfrom fugashi import Tagger\n\n# Initialize UniDic Tagger\ntagger = Tagger()   # fugashi auto-loads UniDic if installed\n\nnlp = spacy.blank(\"ja\")        # blank Japanese pipeline\n\n# Register custom token extensions\nfrom spacy.tokens import Token\nToken.set_extension(\"unidic_lemma\", default=None, force=True)\nToken.set_extension(\"unidic_reading\", default=None, force=True)\nToken.set_extension(\"unidic_pos\", default=None, force=True)\nToken.set_extension(\"unidic_feats\", default=None, force=True)\n\ndef mecab_tokenizer(text):\n    words = []\n    spaces = []\n    lemmas = []\n    analyses = tagger(text)\n    for m in analyses:\n        surface = m.surface\n        words.append(surface)\n        spaces.append(False)  # Japanese generally no spaces\n    doc = Doc(nlp.vocab, words=words, spaces=spaces)\n    # Attach UniDic info\n    for tok, m in zip(doc, analyses):\n        # m.feature: tuple with UniDic columns. Structure depends on UniDic version.\n        # Typical indices (verify!) e.g. lemma at feature[10], reading at feature[9].\n        \n        feats = m.feature\n        # Safer: use fugashi attribute helpers\n        tok._.unidic_lemma = m.feature[10]  # or m.feature[10]\n        tok._.unidic_reading = m.feature[10]  # unified katakana reading\n        tok._.unidic_pos = \",\".join(m.feature[:4])  # hierarchical POS tuple\n        tok._.unidic_feats = feats\n    return doc\n\nnlp.tokenizer = mecab_tokenizer\n\n# (Optionally add your own components after this, e.g. a statistical tagger trained on this segmentation)\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t._.unidic_lemma, t._.unidic_reading, t._.unidic_pos)\n\n\n日ごろ 日ごろ 日ごろ 名詞,普通名詞,副詞可能,*\nひごろ ひごろ ひごろ 名詞,普通名詞,副詞可能,*\n日頃 日頃 日頃 名詞,普通名詞,副詞可能,*\n居る 居る 居る 動詞,非自立可能,*,*\nいる いる いる 動詞,非自立可能,*,*\n書きあらわす 書きあらわす 書きあらわす 動詞,一般,*,*\n\n\n\n\nShow code\nprint(dir(m))\n\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nCell In[9], line 1\n----&gt; 1 print(dir(m))\n\nNameError: name 'm' is not defined\n\n\n\n\n\nShow code\nimport spacy\nfrom fugashi import Tagger\n\nnlp = spacy.load(\"ja_ginza\")\ntagger = Tagger()\n\n# Register extension fields (only if not already)\nfrom spacy.tokens import Token\nfor field in [\"unidic_lemma\",\"unidic_reading\",\"unidic_pos\"]:\n    if not Token.has_extension(field):\n        Token.set_extension(field, default=None)\n\ndef unicdic_enricher(doc):\n    text = doc.text\n    # Build a char-&gt;token index map (start offsets)\n    char2token = {}\n    for i, tok in enumerate(doc):\n        for pos in range(tok.idx, tok.idx + len(tok.text)):\n            char2token.setdefault(pos, i)\n    # Collect MeCab tokens with offsets\n    cursor = 0\n    for m in tagger(text):\n        surf = m.surface\n        start = text.find(surf, cursor)\n        cursor = start + len(surf)\n        # Find spaCy token that *starts* here (approx.)\n        if start in char2token:\n            i = char2token[start]\n            # Only annotate if exact surface match (avoid mid-token)\n            if doc[i].text.startswith(surf):\n                doc[i]._.unidic_lemma = m.dictionary_form\n                doc[i]._.unidic_reading = m.reading\n                doc[i]._.unidic_pos = \",\".join(m.pos)\n    return doc\n\nnlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n\ndoc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\nfor t in doc:\n    print(t.text, t.lemma_, t._.unidic_lemma)\n\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\nCell In[16], line 36\n     33                 doc[i]._.unidic_pos = \",\".join(m.pos)\n     34     return doc\n---&gt; 36 nlp.add_pipe(unicdic_enricher, name=\"unidic_enricher\", last=True)\n     38 doc = nlp(\"日ごろ ひごろ 日頃 居る いる 書きあらわす\")\n     39 for t in doc:\n\nFile ~/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/spacy/language.py:811, in Language.add_pipe(self, factory_name, name, before, after, first, last, source, config, raw_config, validate)\n    809     bad_val = repr(factory_name)\n    810     err = Errors.E966.format(component=bad_val, name=name)\n--&gt; 811     raise ValueError(err)\n    812 name = name if name is not None else factory_name\n    813 if name in self.component_names:\n\nValueError: [E966] `nlp.add_pipe` now takes the string name of the registered component factory, not a callable component. Expected string, but got &lt;function unicdic_enricher at 0x13ca313a0&gt; (name: 'unidic_enricher').\n\n- If you created your component with `nlp.create_pipe('name')`: remove nlp.create_pipe and call `nlp.add_pipe('name')` instead.\n\n- If you passed in a component like `TextCategorizer()`: call `nlp.add_pipe` with the string name instead, e.g. `nlp.add_pipe('textcat')`.\n\n- If you're using a custom component: Add the decorator `@Language.component` (for function components) or `@Language.factory` (for class components / factories) to your custom component and assign it a name, e.g. `@Language.component('your_name')`. You can then run `nlp.add_pipe('your_name')` to add it to the pipeline."
+    "text": "Show code\nlow_diversity = \"The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.\"\nShow code\n\nhigh_diversity = \"A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.\"\nShow code\ndef count_token_type(text: str):\n    # delete punctuation\n    text = text.replace(\".\", \"\")\n    text = text.replace(\",\", \"\")\n    text = text.replace(\"?\", \"\")\n\n    \n    token_list = text.strip()\n    token_list = text.split(\" \")\n\n    token = len(token_list)\n    type = len(set(token_list))\n    return (token, type)\nShow code\ncount_token_type(low_diversity)\n\n\n(19, 8)\nShow code\ncount_token_type(high_diversity)\n\n\n(19, 19)\nShow code\nlow_diversity2 = \"The dog ran. The dog jumped. The dog barked. The dog played. The dog ran quickly. The dog jumped so high. The dog barked very loudly. The dog played, sat, and rolled. The dog sneezed. The dog ate the food.\"\nShow code\ncount_token_type(low_diversity2)\n\n\n(40, 18)\nShow code\nlow_diversity3 = \"The parrot squawked loudly. The parrot chirped again. A toucan perched nearby. The parrot fluttered. Wings flapped softly. The parrot chirped again. Feathers shimmered under sunlight. The crow cawed. The parrot glided low. The air shimmered. The owl blinked slowly. The parrot perched again. The owl blinked slowly. The parrot shrieked. The parrot chirped nearby again. The parrot squawked again.\"\nShow code\ncount_token_type(low_diversity3)\n\n\n(60, 27)"
+  },
+  {
+    "objectID": "2025/notebooks/session-6.html#using-lexical-diversity-package",
+    "href": "2025/notebooks/session-6.html#using-lexical-diversity-package",
+    "title": "Session 6 — Computing simple lexical diversity and sophistication index",
+    "section": "Using Lexical Diversity package",
+    "text": "Using Lexical Diversity package\nThere is a package called TAALED maintained by Dr. Kris Kyle.\n\n\nShow code\nfrom taaled import ld\nfrom pylats import lats"
+  },
+  {
+    "objectID": "2025/notebooks/japanese-nlp-test.html",
+    "href": "2025/notebooks/japanese-nlp-test.html",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "",
+    "text": "This notebook implements and compares two approaches for Japanese morphological analysis with BCCWJ frequency matching:\nEach approach is designed for reproducible setup, implementation, validation, and operational use."
+  },
+  {
+    "objectID": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
+    "href": "2025/notebooks/japanese-nlp-test.html#environment-setup-verification",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "1. Environment Setup & Verification",
+    "text": "1. Environment Setup & Verification\nFirst, let’s verify and set up our environment with all required packages.\n\n\nShow code\n# Environment verification and setup\nimport sys\nimport subprocess\nfrom pathlib import Path\n\nprint(f\"Python version: {sys.version}\")\nprint(f\"Working directory: {Path.cwd()}\")\n\n# Required packages\nrequired_packages = [\n    'fugashi', 'unidic', 'unidic-lite', 'spacy', 'ginza', \n    'ja-ginza', 'sudachipy', 'pandas', 'numpy', 'matplotlib', 'collections'\n]\n\nprint(\"\\nChecking package availability:\")\nfor package in required_packages:\n    try:\n        if package == 'collections':\n            import collections\n            print(f\"✓ {package} (built-in)\")\n        else:\n            __import__(package)\n            print(f\"✓ {package}\")\n    except ImportError:\n        print(f\"✗ {package} - NOT FOUND\")\n\n\nPython version: 3.12.2 (main, Feb 25 2024, 03:55:42) [Clang 17.0.6 ]\nWorking directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/2025/notebooks\n\nChecking package availability:\n✓ fugashi\n✓ unidic\n✗ unidic-lite - NOT FOUND\n✓ spacy\n✓ ginza\n✗ ja-ginza - NOT FOUND\n✓ sudachipy\n✓ pandas\n✓ numpy\n✓ matplotlib\n✓ collections (built-in)\n\n\n\n\nShow code\n# Import all necessary libraries\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter, defaultdict\nimport time\nimport warnings\nfrom typing import List, Tuple, Dict, Optional\n\n# Japanese NLP libraries\nimport fugashi\nimport unidic\nimport spacy\nfrom spacy.tokens import Token, Doc\n\n# Statistical analysis\ntry:\n    from scipy.stats import spearmanr\n    scipy_available = True\nexcept ImportError:\n    print(\"scipy not available - will use numpy for correlation\")\n    scipy_available = False\n\nprint(\"All imports successful!\")\nwarnings.filterwarnings('ignore')\n\n\nscipy not available - will use numpy for correlation\nAll imports successful!\n\n\n\n\nShow code\n# Check UniDic installation and download if needed\ntry:\n    print(f\"UniDic directory: {unidic.DICDIR}\")\n    print(\"UniDic is properly installed\")\nexcept Exception as e:\n    print(f\"UniDic issue: {e}\")\n    print(\"You may need to run: python -m unidic download\")\n\n# Test basic fugashi functionality\ntry:\n    tagger = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\n    test_result = list(tagger(\"テスト\"))\n    print(f\"Fugashi + UniDic test successful: {test_result[0].surface}\")\nexcept Exception as e:\n    print(f\"Fugashi test failed: {e}\")\n\n\nUniDic directory: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\nUniDic is properly installed\nFugashi + UniDic test successful: テスト"
+  },
+  {
+    "objectID": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
+    "href": "2025/notebooks/japanese-nlp-test.html#sample-data-preparation",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "2. Sample Data Preparation",
+    "text": "2. Sample Data Preparation\nLet’s create realistic Japanese text samples for testing our pipelines.\n\n\nShow code\n# Sample Japanese texts for testing\nsample_texts = [\n    \"彼は日ごろから本を読むのが好きです。\",\n    \"ひごろの勉強が大切だと思います。\",\n    \"日頃の努力が実を結ぶでしょう。\",\n    \"彼女は書きあらわすことが得意です。\",\n    \"その問題を書き表すのは難しい。\",\n    \"今日は東京オリンピックについて話しましょう。\",\n    \"コーヒーを飲んで、呑み込んで、また飲んでしまった。\",\n    \"国際的な協力が必要不可欠です。\",\n    \"機械学習の技術が進歩している。\",\n    \"自然言語処理は興味深い分野だ。\"\n]\n\nprint(\"Sample texts prepared:\")\nfor i, text in enumerate(sample_texts, 1):\n    print(f\"{i:2d}. {text}\")\n\n# Create a larger corpus by repeating and slightly modifying texts\nextended_corpus = sample_texts * 3  # Simulate frequency variations\nprint(f\"\\nExtended corpus: {len(extended_corpus)} texts\")\n\n\nSample texts prepared:\n 1. 彼は日ごろから本を読むのが好きです。\n 2. ひごろの勉強が大切だと思います。\n 3. 日頃の努力が実を結ぶでしょう。\n 4. 彼女は書きあらわすことが得意です。\n 5. その問題を書き表すのは難しい。\n 6. 今日は東京オリンピックについて話しましょう。\n 7. コーヒーを飲んで、呑み込んで、また飲んでしまった。\n 8. 国際的な協力が必要不可欠です。\n 9. 機械学習の技術が進歩している。\n10. 自然言語処理は興味深い分野だ。\n\nExtended corpus: 30 texts\n\n\n\n\nShow code\n# Create mock BCCWJ frequency data for testing\n# In real usage, this would be loaded from an actual BCCWJ frequency file\n\nmock_bccwj_data = [\n    ('日頃', 'ヒゴロ', '名詞', 1250),\n    ('本', 'ホン', '名詞', 8500),\n    ('読む', 'ヨム', '動詞', 3200),\n    ('好き', 'スキ', '形容動詞', 2100),\n    ('勉強', 'ベンキョウ', '名詞', 4200),\n    ('大切', 'タイセツ', '形容動詞', 1800),\n    ('思う', 'オモウ', '動詞', 9500),\n    ('努力', 'ドリョク', '名詞', 2200),\n    ('実', 'ミ', '名詞', 1100),\n    ('結ぶ', 'ムスブ', '動詞', 800),\n    ('書く', 'カク', '動詞', 4100),\n    ('表す', 'アラワス', '動詞', 1500),\n    ('得意', 'トクイ', '形容動詞', 1300),\n    ('問題', 'モンダイ', '名詞', 6200),\n    ('難しい', 'ムズカシイ', '形容詞', 3800),\n    ('今日', 'キョウ', '名詞', 5500),\n    ('東京', 'トウキョウ', '名詞', 4800),\n    ('話す', 'ハナス', '動詞', 3600),\n    ('飲む', 'ノム', '動詞', 2400),\n    ('呑む', 'ノム', '動詞', 150),\n    ('国際', 'コクサイ', '名詞', 2800),\n    ('協力', 'キョウリョク', '名詞', 1900),\n    ('必要', 'ヒツヨウ', '形容動詞', 4500),\n    ('技術', 'ギジュツ', '名詞', 3900),\n    ('進歩', 'シンポ', '名詞', 1100)\n]\n\n# Create DataFrame\ndf_bccwj = pd.DataFrame(mock_bccwj_data, columns=['lemma', 'reading', 'pos', 'freq_bccwj'])\ndf_bccwj['key'] = list(zip(df_bccwj.lemma, df_bccwj.reading, df_bccwj.pos))\n\nprint(\"Mock BCCWJ frequency data:\")\nprint(df_bccwj.head(10))\nprint(f\"\\nTotal entries: {len(df_bccwj)}\")\n\n\nMock BCCWJ frequency data:\n  lemma reading   pos  freq_bccwj               key\n0    日頃     ヒゴロ    名詞        1250     (日頃, ヒゴロ, 名詞)\n1     本      ホン    名詞        8500       (本, ホン, 名詞)\n2    読む      ヨム    動詞        3200      (読む, ヨム, 動詞)\n3    好き      スキ  形容動詞        2100    (好き, スキ, 形容動詞)\n4    勉強   ベンキョウ    名詞        4200   (勉強, ベンキョウ, 名詞)\n5    大切    タイセツ  形容動詞        1800  (大切, タイセツ, 形容動詞)\n6    思う     オモウ    動詞        9500     (思う, オモウ, 動詞)\n7    努力    ドリョク    名詞        2200    (努力, ドリョク, 名詞)\n8     実       ミ    名詞        1100        (実, ミ, 名詞)\n9    結ぶ     ムスブ    動詞         800     (結ぶ, ムスブ, 動詞)\n\nTotal entries: 25"
+  },
+  {
+    "objectID": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
+    "href": "2025/notebooks/japanese-nlp-test.html#plan-a-mecab-fugashi-unidic-direct-pipeline",
+    "title": "Japanese NLP Analysis: Comparative Study of UniDic-based Approaches",
+    "section": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline",
+    "text": "3. Plan A: MeCab (fugashi) + UniDic Direct Pipeline\n\nA-1 to A-3: Setup and Configuration\nUniDic provides the morphological analysis system used in BCCWJ, making it ideal for frequency matching.\n\n\nShow code\n# A-3: Initialize fugashi with UniDic\nprint(\"Initializing Plan A: fugashi + UniDic pipeline\")\n\n# Initialize tagger with explicit UniDic path\ntagger_a = fugashi.Tagger(f'-d \"{unidic.DICDIR}\"')\nprint(f\"Tagger initialized with UniDic dictionary: {unidic.DICDIR}\")\n\n# Test the tagger\ntest_text = \"日ごろから勉強している。\"\ntokens = list(tagger_a(test_text))\nprint(f\"\\nTest analysis of '{test_text}':\")\nfor token in tokens:\n    print(f\"  {token.surface} -&gt; {token.feature.lemma} [{','.join(token.pos)}]\")\n\n\nInitializing Plan A: fugashi + UniDic pipeline\nTagger initialized with UniDic dictionary: /Users/eguchi/Dropbox/teaching/Tohoku-2025/linguistic-data-analysis-I/.venv/lib/python3.12/site-packages/unidic/dicdir\n\nTest analysis of '日ごろから勉強している。':\n  日ごろ -&gt; 日頃 [名,詞,,,普,通,名,詞,,,副,詞,可,能,,,*]\n  から -&gt; から [助,詞,,,格,助,詞,,,*,,,*]\n  勉強 -&gt; 勉強 [名,詞,,,普,通,名,詞,,,サ,変,可,能,,,*]\n  し -&gt; 為る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  て -&gt; て [助,詞,,,接,続,助,詞,,,*,,,*]\n  いる -&gt; 居る [動,詞,,,非,自,立,可,能,,,*,,,*]\n  。 -&gt; 。 [補,助,記,号,,,句,点,,,*,,,*]\n\n\n\n\nShow code\n# A-4: Morphological field extraction function\ndef iter_lemma_keys_plan_a(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    \n    Args:\n        text: Input Japanese text\n        tagger: fugashi Tagger instance\n    \n    Returns:\n        List of (dictionary_form, reading, pos_major) tuples\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            lemma = m.feature[10] if m.feature[10] else m.surface\n            reading = m.feature[11] if m.feature[11] else ''\n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Test the extraction function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}':\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。':\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, スル, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# Fixed version with proper fugashi/UniDic attribute handling\ndef iter_lemma_keys_fixed(text: str, tagger) -&gt; List[Tuple[str, str, str]]:\n    \"\"\"\n    Extract (lemma, reading, pos_major) tuples from text using UniDic.\n    Fixed version that handles fugashi attribute variations.\n    \"\"\"\n    keys = []\n    for m in tagger(text):\n        if m.surface.strip():  # Skip empty tokens\n            # UniDic POS is hierarchical; use major category (pos[0])\n            pos_major = m.pos[0] if m.pos else 'UNKNOWN'\n            \n            # Handle different attribute names for lemma\n            try:\n                lemma = m.lemma if hasattr(m, 'lemma') else m.feature[10]\n            except:\n                lemma = m.surface  # fallback\n            \n            # Handle different attribute names for reading\n            try:\n                reading = m.feature[9] if len(m.feature) &gt; 9 else ''\n            except:\n                reading = ''  # fallback\n            \n            keys.append((lemma, reading, pos_major))\n    return keys\n\n# Use the fixed function\niter_lemma_keys_plan_a = iter_lemma_keys_fixed\n\n# Test the fixed function\ntest_keys = iter_lemma_keys_plan_a(test_text, tagger_a)\nprint(f\"Extracted keys from '{test_text}' (fixed version):\")\nfor lemma, reading, pos in test_keys:\n    print(f\"  ({lemma}, {reading}, {pos})\")\n\n\nExtracted keys from '日ごろから勉強している。' (fixed version):\n  (日ごろ, ヒゴロ, 名)\n  (から, カラ, 助)\n  (勉強, ベンキョー, 名)\n  (する, シ, 動)\n  (て, テ, 助)\n  (いる, イル, 動)\n  (。, *, 補)\n\n\n\n\nShow code\n# A-5: Frequency analysis with BCCWJ matching\ndef analyze_corpus_plan_a(corpus: List[str], tagger, bccwj_df: pd.DataFrame) -&gt; pd.DataFrame:\n    \"\"\"Analyze corpus using Plan A and match with BCCWJ frequencies.\"\"\"\n    freq = Counter()\n    \n    print(f\"Analyzing {len(corpus)} texts with Plan A...\")\n    for text in corpus:\n        for key in iter_lemma_keys_plan_a(text, tagger):\n            freq[key] += 1\n    \n    # Convert to DataFrame\n    rows = []\n    for (lemma, reading, pos), count in freq.items():\n        rows.append((lemma, reading, pos, count))\n    \n    df_local = pd.DataFrame(rows, columns=['lemma', 'reading', 'pos', 'freq_local'])\n    df_local['key'] = list(zip(df_local.lemma, df_local.reading, df_local.pos))\n    \n    # Merge with BCCWJ data\n    merged = df_local.merge(bccwj_df[['key', 'freq_bccwj']], on='key', how='left')\n    \n    return merged.sort_values('freq_local', ascending=False)\n\n# Run Plan A analysis\nresults_a = analyze_corpus_plan_a(extended_corpus, tagger_a, df_bccwj)\nprint(f\"\\nPlan A Results (top 15):\")\nprint(results_a.head(15)[['lemma', 'reading', 'pos', 'freq_local', 'freq_bccwj']])\n\n\nAnalyzing 30 texts with Plan A...\n\nPlan A Results (top 15):\n   lemma reading pos  freq_local  freq_bccwj\n11     。       *   補          30         NaN\n8      が       ガ   助          18         NaN\n1      は       ワ   助          15         NaN\n7      の       ノ   助          15         NaN\n5      を       オ   助          12         NaN\n10    です      デス   助           9         NaN\n42     で       デ   助           9         NaN\n15     だ       ダ   助           6         NaN\n37     て       テ   助           6         NaN\n41    飲む      ノン   動           6         NaN\n43     、       *   補           6         NaN\n48    国際    コクサイ   名           3         NaN\n47     た       タ   助           3         NaN\n46   しまう     シマッ   動           3         NaN\n0      彼      カレ   代           3         NaN\n\n\n\n\nShow code\n# A-6: Evaluation metrics for Plan A\ndef calculate_metrics(df: pd.DataFrame) -&gt; Dict[str, float]:\n    \"\"\"Calculate coverage and correlation metrics.\"\"\"\n    # Coverage: percentage of local tokens found in BCCWJ\n    matched = df.dropna(subset=['freq_bccwj'])\n    coverage = len(matched) / len(df) * 100\n    \n    # Token coverage (by frequency)\n    total_tokens = df['freq_local'].sum()\n    matched_tokens = matched['freq_local'].sum()\n    token_coverage = matched_tokens / total_tokens * 100\n    \n    # Spearman correlation for matched items\n    if len(matched) &gt; 1:\n        if scipy_available:\n            correlation, p_value = spearmanr(matched['freq_local'], matched['freq_bccwj'])\n        else:\n            correlation = np.corrcoef(matched['freq_local'].rank(), matched['freq_bccwj'].rank())[0,1]\n            p_value = None\n    else:\n        correlation, p_value = None, None\n    \n    return {\n        'type_coverage': coverage,\n        'token_coverage': token_coverage,\n        'correlation': correlation,\n        'p_value': p_value,\n        'total_types': len(df),\n        'matched_types': len(matched),\n        'total_tokens': total_tokens,\n        'matched_tokens': matched_tokens\n    }\n\nmetrics_a = calculate_metrics(results_a)\nprint(\"Plan A Evaluation Metrics:\")\nfor key, value in metrics_a.items():\n    if isinstance(value, float) and value is not None:\n        print(f\"  {key}: {value:.3f}\")\n    else:\n        print(f\"  {key}: {value}\")\n\n\nPlan A Evaluation Metrics:\n  type_coverage: 0.000\n  token_coverage: 0.000\n  correlation: None\n  p_value: None\n  total_types: 66\n  matched_types: 0\n  total_tokens: 297\n  matched_tokens: 0"
   },
   {
     "objectID": "resources/code-examples/python/index.html",
@@ -3392,6 +3854,18 @@
     "title": "Available Corpora",
     "section": "",
     "text": "Content to be added.\n\nCorpusMate\nMontclair State University - CORAL lab",
+    "crumbs": [
+      "Resources",
+      "Corpora",
+      "Available Corpora"
+    ]
+  },
+  {
+    "objectID": "resources/corpora/available-corpora.html#japanese-corpus",
+    "href": "resources/corpora/available-corpora.html#japanese-corpus",
+    "title": "Available Corpora",
+    "section": "Japanese corpus",
+    "text": "Japanese corpus\n\nNINJAL-LWP for TWC\n名大会話コーパス\n日本語対話コーパス一覧\n関西弁コーパス\nAozorabunko-data",
     "crumbs": [
       "Resources",
       "Corpora",
