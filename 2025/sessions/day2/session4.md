@@ -5,7 +5,7 @@ subtitle: ""
 
 ## One-liner
 
-### Session 4: Analyzing vocabulary (1) — Conceptual overview
+We will overview the history and current state of lexical measurements.
 
 ## 🎯 Learning Objectives
 

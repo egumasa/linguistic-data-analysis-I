@@ -5,6 +5,8 @@ subtitle: ""
 
 ## One-liner
 
+You will learn how to conduct POS tagging and dependency parsing.
+
 ## 🎯 Learning Objectives
 
 > By the end of this session, students will be able to:

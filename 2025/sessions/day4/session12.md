@@ -5,6 +5,7 @@ subtitle: ""
 
 ## One-liner
 
+You will identify fine-grained grammatical features using dependency parser in a small-scale corpus.
 
 ## 🎯 Learning Objectives
 

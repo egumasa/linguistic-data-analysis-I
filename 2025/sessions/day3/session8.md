@@ -5,6 +5,7 @@ subtitle: ""
 
 ## One-liner
 
+You will learn how to calculate commonly used Strengths Of Association (SOA) measures.
 
 ## 🎯 Learning Objectives
 

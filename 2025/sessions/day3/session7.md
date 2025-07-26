@@ -5,6 +5,7 @@ subtitle: ""
 
 ## One-liner
 
+We will go over foundational concepts for multiword units measurements.
 
 ## 🎯 Learning Objectives
 

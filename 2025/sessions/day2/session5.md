@@ -5,6 +5,7 @@ subtitle: ""
 
 ## One-liner
 
+You will learn how to create frequency-lists for English and Japanese.
 
 ## 🎯 Learning Objectives
 

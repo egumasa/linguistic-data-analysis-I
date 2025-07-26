@@ -5,6 +5,7 @@ subtitle: "Learner Corpus Mini-Research"
 
 ## One-liner
 
+You will conduct learner corpus mini-research.
 
 ## 🎯 Learning Objectives
 

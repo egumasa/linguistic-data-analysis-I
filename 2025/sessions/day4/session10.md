@@ -5,6 +5,7 @@ subtitle: "Grammar - Overview"
 
 ## One-liner
 
+We will go over how people have measured grammar and what are the current states in grammatical complexity research.
 
 ## 🎯 Learning Objectives
 

@@ -5,6 +5,7 @@ subtitle: ""
 
 ## One-liner
 
+You will learn how to derive major lexical diversity and sophistication indices.
 
 ## 🎯 Learning Objectives
 
