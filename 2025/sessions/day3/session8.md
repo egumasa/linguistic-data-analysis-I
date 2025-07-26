@@ -25,6 +25,11 @@ subtitle: ""
 
 - (**Skim**) Durrant (2023) Ch. 8 (Ignore R codes if you are not familiar)
 
+- [Stephanie Evert's website on collocation measures](http://www.collocations.de/index.html)
+  - This webpage provides formulas to calculate various Strengths Of Association measures.
+
+## 🌊 Dive Deeper - Recommended Readings
+
 
 ## Materials
 

@@ -35,6 +35,8 @@ subtitle: ""
 - Durrant Ch. 3
 - (**Skim**) Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. _The Modern Language Journal, 104_(2), 381–400. [https://doi.org/10.1111/modl.12637](https://doi.org/10.1111/modl.12637)
 
+## 🌊 Dive Deeper - Recommended Readings
+
 
 ## Materials
 

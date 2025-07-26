@@ -30,7 +30,7 @@ We will explore how powerful and limited Large Language Models (LLMs) can be at 
 
 - (**Skim**) Kim, M., & Lu, X. (2024). Exploring the potential of using ChatGPT for rhetorical move-step analysis: The impact of prompt refinement, few-shot learning, and fine-tuning. Journal of English for Academic Purposes, 71, 101422. https://doi.org/10.1016/j.jeap.2024.101422
 
-## Recommended Readings
+## 🌊 Dive Deeper - Recommended Readings
 
 - Mizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934
 

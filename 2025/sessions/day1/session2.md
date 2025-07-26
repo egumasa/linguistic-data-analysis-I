@@ -32,6 +32,9 @@ Session 2 covers foundational concepts of corpus linguistics.
 - Stefanowitsch (2020) Ch. 2 [Freely available online](https://langsci-press.org/catalog/book/148)
 - (**Skim**)  Durrant (2023) Ch. 1
 
+## 🌊 Dive Deeper - Recommended Readings
+
+
 
 ## Materials
 

@@ -42,6 +42,9 @@ subtitle: ""
 - **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you.
 - Google Colaboratory
 
+
+## 🌊 Dive Deeper - Recommended Readings
+
 ## Materials
 
 ### Slides for the session (Under construction)

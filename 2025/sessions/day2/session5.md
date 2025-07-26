@@ -24,6 +24,8 @@ By the end of this session, you will be able to:
 - Lexical coverage
 
 
+## 🌊 Dive Deeper - Recommended Readings
+
 ##  🛠️ Tools Used
 
 - **[AntConc](https://www.laurenceanthony.net/software/antconc/)**

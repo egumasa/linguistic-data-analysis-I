@@ -24,11 +24,15 @@ By the end of this session, students will be able to:
 ## 📚 Required Readings
 
 - Durrant (2023) Ch. 7
+
 - Gablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225
 
-#### 🌊 Dive Deeper - Recommended Readings
+## 🌊 Dive Deeper - Recommended Readings
 
 - Paquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221
+
+- [Stephanie Evert's website on collocation measures](http://www.collocations.de/index.html)
+  - This webpage provides formulas to calculate various Strengths Of Association measures.
 
 ## Materials
 

@@ -282,6 +282,18 @@
     ]
   },
   {
+    "objectID": "2025/sessions/day1/session3.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day1/session3.html#dive-deeper---recommended-readings",
+    "title": "Session 3",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 3"
+    ]
+  },
+  {
     "objectID": "2025/sessions/day1/session3.html#materials",
     "href": "2025/sessions/day1/session3.html#materials",
     "title": "Session 3",
@@ -606,6 +618,18 @@
     ]
   },
   {
+    "objectID": "2025/sessions/day2/session5.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day2/session5.html#dive-deeper---recommended-readings",
+    "title": "Session 5",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 5"
+    ]
+  },
+  {
     "objectID": "2025/sessions/day2/session5.html#tools-used",
     "href": "2025/sessions/day2/session5.html#tools-used",
     "title": "Session 5",
@@ -706,7 +730,19 @@
     "href": "2025/sessions/day3/session8.html#required-readings",
     "title": "Session 8",
     "section": "📚 Required Readings",
-    "text": "📚 Required Readings\n\n(Skim) Durrant (2023) Ch. 8 (Ignore R codes if you are not familiar)",
+    "text": "📚 Required Readings\n\n(Skim) Durrant (2023) Ch. 8 (Ignore R codes if you are not familiar)\nStephanie Evert’s website on collocation measures\n\nThis webpage provides formulas to calculate various Strengths Of Association measures.",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 8"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session8.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day3/session8.html#dive-deeper---recommended-readings",
+    "title": "Session 8",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings",
     "crumbs": [
       "Sessions",
       "Day 3",
@@ -846,11 +882,11 @@
     ]
   },
   {
-    "objectID": "2025/sessions/day4/session12.html#recommended-readings",
-    "href": "2025/sessions/day4/session12.html#recommended-readings",
+    "objectID": "2025/sessions/day4/session12.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day4/session12.html#dive-deeper---recommended-readings",
     "title": "Session 12",
-    "section": "Recommended Readings",
-    "text": "Recommended Readings\n\nKyle, K., & Crossley, S. (2017). Assessing syntactic sophistication in L2 writing: A usage-based approach. Language Testing, 34(4), 513–535. https://doi.org/10.1177/0265532217712554\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings\n\nKyle, K., & Crossley, S. (2017). Assessing syntactic sophistication in L2 writing: A usage-based approach. Language Testing, 34(4), 513–535. https://doi.org/10.1177/0265532217712554\nKyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329",
     "crumbs": [
       "Sessions",
       "Day 4",
@@ -910,7 +946,31 @@
     "href": "2025/sessions/day4/session10.html#key-concepts",
     "title": "Session 10",
     "section": "🔑 Key Concepts",
-    "text": "🔑 Key Concepts\n\nGrammatical complexity\nPredictive measures versus Descriptive measures\n\n\n📚 Required Readings\n\nDurrant Ch. 5.\nKyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349. https://doi.org/10.1111/modl.12468\n\n\n\nRecommended Readings\n\nNorris, J. M., & Ortega, L. (2009). Towards an Organic Approach to Investigating CAF in Instructed SLA: The Case of Complexity. Applied Linguistics, 30(4), 555–578. https://doi.org/10.1093/applin/amp044\nBiber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869",
+    "text": "🔑 Key Concepts\n\nGrammatical complexity\nPredictive measures versus Descriptive measures",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 10"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session10.html#required-readings",
+    "href": "2025/sessions/day4/session10.html#required-readings",
+    "title": "Session 10",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nDurrant Ch. 5.\nKyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349. https://doi.org/10.1111/modl.12468",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 10"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day4/session10.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day4/session10.html#dive-deeper---recommended-readings",
+    "title": "Session 10",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings\n\nBiber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869\nBiber, D., Gray, B., & Poonpon, K. (2011). Should We Use Characteristics of Conversation to Measure Grammatical Complexity in L2 Writing Development? TESOL Quarterly, 45(1), 5–35. https://doi.org/10.5054/tq.2011.244483\nNorris, J. M., & Ortega, L. (2009). Towards an Organic Approach to Investigating CAF in Instructed SLA: The Case of Complexity. Applied Linguistics, 30(4), 555–578. https://doi.org/10.1093/applin/amp044\nLu, X. (2011). A Corpus‐Based Evaluation of Syntactic Complexity Measures as Indices of College‐Level ESL Writers’ Language Development. TESOL Quarterly, 45(1), 36–62. https://doi.org/10.5054/tq.2011.240859",
     "crumbs": [
       "Sessions",
       "Day 4",
@@ -2107,18 +2167,39 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nProvide historical overview of the syntactic complexity research\nDescribe different approaches to grammatical features:\n\nGrammatical complexity strand\nFine-grained grammatical complexity strand\nDescriptive (register-based analysis) strand\nVerb Argument Construction (VAC) strand\n\nUnderstand current trends of syntactic complexity research"
   },
   {
+    "objectID": "2025/slides/session-10.html#grammatical-complexity",
+    "href": "2025/slides/session-10.html#grammatical-complexity",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Grammatical complexity",
+    "text": "Grammatical complexity\n\nIndicators of\n\nproficiency\ndevelopment"
+  },
+  {
     "objectID": "2025/slides/session-10.html#grammatical-complexity-strand",
     "href": "2025/slides/session-10.html#grammatical-complexity-strand",
     "title": "Session 10: Analyzing Grammar",
     "section": "Grammatical complexity strand",
-    "text": "Grammatical complexity strand"
+    "text": "Grammatical complexity strand\n\nLength-based indices\n\nNumber of words per T-unit\n\nSubordination"
   },
   {
     "objectID": "2025/slides/session-10.html#t-unit",
     "href": "2025/slides/session-10.html#t-unit",
     "title": "Session 10: Analyzing Grammar",
     "section": "T-unit",
-    "text": "T-unit"
+    "text": "T-unit\n\nWhen it comes to measuring grammatical complexity, one important consideration is how to define linguistic unit.\nWriting researchers use T-Unit (Hunt, 1966)\n\nT-unit: “Independent clause plus any subordinate clauses attached to it”"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#typical-grammatical-complexity-measures",
+    "href": "2025/slides/session-10.html#typical-grammatical-complexity-measures",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Typical grammatical complexity measures",
+    "text": "Typical grammatical complexity measures\n\ncomplexity measures reported in Kyle & Crossley (2018)"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#findings",
+    "href": "2025/slides/session-10.html#findings",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Findings",
+    "text": "Findings"
   },
   {
     "objectID": "2025/slides/session-10.html#organic-approach-norris-ortega-2009",
@@ -2132,14 +2213,77 @@
     "href": "2025/slides/session-10.html#fine-grained-grammatical-complexity-strand",
     "title": "Session 10: Analyzing Grammar",
     "section": "Fine-grained grammatical complexity strand",
-    "text": "Fine-grained grammatical complexity strand"
+    "text": "Fine-grained grammatical complexity strand\nCriticism on the (largely) length-based grammatical complexity:\n\nDoes not tell us about how sentence structures are elaborated"
   },
   {
-    "objectID": "2025/slides/session-10.html#synntactic-sophistication-or-vac-strand",
-    "href": "2025/slides/session-10.html#synntactic-sophistication-or-vac-strand",
+    "objectID": "2025/slides/session-10.html#length-based-indices-does-not-tell-elaboration-strategy",
+    "href": "2025/slides/session-10.html#length-based-indices-does-not-tell-elaboration-strategy",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Synntactic sophistication (or VAC) strand",
-    "text": "Synntactic sophistication (or VAC) strand"
+    "section": "Length-based indices does not tell elaboration strategy",
+    "text": "Length-based indices does not tell elaboration strategy\n\n\nThe athletic man in the jersey kicked the ball over the fence.\n\n\nElaborated by phrases (adjectival modification; prepositional phrases)\n\n\nBecause he wanted to score a goal, the man kicked the ball.\n\n\nElaborated by subordinate clause.\n\n\nExample from Kyle & Crossley (2018)"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#kyle-crossley-2018",
+    "href": "2025/slides/session-10.html#kyle-crossley-2018",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Kyle & Crossley (2018)",
+    "text": "Kyle & Crossley (2018)\n\nKyle & Crossley (2018) proposed fine-grained clausal & phrasal complexity indices\nThey used dependency parsing to identify fine-grained features of grammar."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#clausal-indices",
+    "href": "2025/slides/session-10.html#clausal-indices",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Clausal indices",
+    "text": "Clausal indices\nThe followings are example:\n\n\n\n\nStructure\nDependency tag\nExample of Structure\n\n\n\n\nNominal subject\nnsubj\nThe athlete ran quickly.\n\n\nDirect object\ndobj\nHe plays soccer.\n\n\nIndirect object\niobj\nHe teaches me soccer.\n\n\nClausal complement\nccomp\nI am certain that he did it.\n\n\nAdjectival complement\nacomp\nHe looks fine.\n\n\nNominal complement\nncomp\nShe is a teacher."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#clausal-indices-oblique",
+    "href": "2025/slides/session-10.html#clausal-indices-oblique",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Clausal indices (Oblique)",
+    "text": "Clausal indices (Oblique)\nThe followings are example:\n\n\n\n\nStructure\nAbbreviation\nExample of Structure\n\n\n\n\nAdverbial modifier\nadvmod\nAccordingly, I ate pizza.\n\n\nPrepositional modifier\nprep\nThey went into the score.\n\n\nTemporal modifier\ntmod\nLast night, we had fun.\n\n\nAdverbial clause\nadvcl\nThe accident happened as night fell.\n\n\nOpen clausal complement\nxcomp\nI am ready to leave."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#phrasal-indices",
+    "href": "2025/slides/session-10.html#phrasal-indices",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Phrasal indices",
+    "text": "Phrasal indices\n\nPhrasal indices counts how many dependents there are for each of the following structure: nsubj, nsubj_pass, agent, ncomp, dobj, iobj, pobj.\n\n\n\n\n\nStructure\nAbbreviation\nExample of Structure\n\n\n\n\nDeterminers\ndet\nThe man went into the store.\n\n\nPrepositional phrases\nprep\nthe man in the red hat.\n\n\nAdjective modifier\namod\nThe man in the red hat\n\n\nPossessives\nposs\nTom’s store; his intention\n\n\nRelative clause modifiers\nrecmod\nthe plan I thought\n\n\nAdverbial modifiers\nadvmod\nIt’s a really good idea."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#kyle-crossley-2018-1",
+    "href": "2025/slides/session-10.html#kyle-crossley-2018-1",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Kyle & Crossley (2018)",
+    "text": "Kyle & Crossley (2018)\n\nThey counted fine-grained clausal and phrasal indices.\n# dependents per clause/phrase\nThey examined correlations between TOEFL score and the fine-grained indices"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#results",
+    "href": "2025/slides/session-10.html#results",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Results",
+    "text": "Results\n\nFinal regression model"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#example-sentences",
+    "href": "2025/slides/session-10.html#example-sentences",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Example sentences",
+    "text": "Example sentences\n\n\n\nExample from score 1 essay\n\n\n\n\n\n\n\nExample from score 5 essay\n\n\n\n\n\n\nExample from score 5 essay"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#kyle-crossley-2018-2",
+    "href": "2025/slides/session-10.html#kyle-crossley-2018-2",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Kyle & Crossley (2018)",
+    "text": "Kyle & Crossley (2018)\n\nThe fine-grained indices:\n\nexplained more variances (~ 20%) than traditional complexity measures (~ 5%)\nprovides more insights into what structure the learners tend to use\n\nIn hands-on activity, we will talk more about how to identify fine-grained grammatical features."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#syntactic-sophistication-or-vac-strand",
+    "href": "2025/slides/session-10.html#syntactic-sophistication-or-vac-strand",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Syntactic sophistication (or VAC) strand",
+    "text": "Syntactic sophistication (or VAC) strand\nAccording to construction grammar (Goldberg, 1995, 2006), grammatical construction (structure) convey abstract linguistic meaning.\nIn turn,\n\nIntransitive:\nTransitive:"
   },
   {
     "objectID": "2025/slides/session-10.html#descriptive-register-based-feature-strand",
@@ -2879,6 +3023,18 @@
     ]
   },
   {
+    "objectID": "2025/sessions/day4/session11.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day4/session11.html#dive-deeper---recommended-readings",
+    "title": "Session 11",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings",
+    "crumbs": [
+      "Sessions",
+      "Day 4",
+      "Session 11"
+    ]
+  },
+  {
     "objectID": "2025/sessions/day4/session11.html#materials",
     "href": "2025/sessions/day4/session11.html#materials",
     "title": "Session 11",
@@ -3087,7 +3243,19 @@
     "href": "2025/sessions/day3/session7.html#required-readings",
     "title": "Session 7",
     "section": "📚 Required Readings",
-    "text": "📚 Required Readings\n\nDurrant (2023) Ch. 7\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225\n\n\n🌊 Dive Deeper - Recommended Readings\n\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221",
+    "text": "📚 Required Readings\n\nDurrant (2023) Ch. 7\nGablasova, D., Brezina, V., & McEnery, T. (2017). Collocations in Corpus‐Based Language Learning Research: Identifying, Comparing, and Interpreting the Evidence. Language Learning, 67(S1), 155–179. https://doi.org/10.1111/lang.12225",
+    "crumbs": [
+      "Sessions",
+      "Day 3",
+      "Session 7"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day3/session7.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day3/session7.html#dive-deeper---recommended-readings",
+    "title": "Session 7",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings\n\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221\nStephanie Evert’s website on collocation measures\n\nThis webpage provides formulas to calculate various Strengths Of Association measures.",
     "crumbs": [
       "Sessions",
       "Day 3",
@@ -3148,6 +3316,18 @@
     "title": "Session 4",
     "section": "📚 Required Readings",
     "text": "📚 Required Readings\n\nDurrant Ch. 3\n(Skim) Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637",
+    "crumbs": [
+      "Sessions",
+      "Day 2",
+      "Session 4"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day2/session4.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day2/session4.html#dive-deeper---recommended-readings",
+    "title": "Session 4",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -3347,11 +3527,11 @@
     ]
   },
   {
-    "objectID": "2025/sessions/day5/session13.html#recommended-readings",
-    "href": "2025/sessions/day5/session13.html#recommended-readings",
+    "objectID": "2025/sessions/day5/session13.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day5/session13.html#dive-deeper---recommended-readings",
     "title": "Session 13",
-    "section": "Recommended Readings",
-    "text": "Recommended Readings\n\nMizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934\nYu, D., Li, L., Su, H., & Fuoli, M. (2024). Assessing the potential of LLM-assisted annotation for corpus-based pragmatics and discourse analysis: The case of apology. International Journal of Corpus Linguistics, 29(4), 534–561. https://doi.org/10.1075/ijcl.23087.yu",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings\n\nMizumoto, A. (2025). Automated analysis of common errors in L2 learner production: Prototype web application development. Studies in Second Language Acquisition, 1–18. https://doi.org/10.1017/S0272263125100934\nYu, D., Li, L., Su, H., & Fuoli, M. (2024). Assessing the potential of LLM-assisted annotation for corpus-based pragmatics and discourse analysis: The case of apology. International Journal of Corpus Linguistics, 29(4), 534–561. https://doi.org/10.1075/ijcl.23087.yu",
     "crumbs": [
       "Sessions",
       "Day 5",
@@ -3520,6 +3700,18 @@
     "title": "Session 2",
     "section": "📚 Required Readings",
     "text": "📚 Required Readings\n\nStefanowitsch (2020) Ch. 1 Freely available online\nStefanowitsch (2020) Ch. 2 Freely available online\n(Skim) Durrant (2023) Ch. 1",
+    "crumbs": [
+      "Sessions",
+      "Day 1",
+      "Session 2"
+    ]
+  },
+  {
+    "objectID": "2025/sessions/day1/session2.html#dive-deeper---recommended-readings",
+    "href": "2025/sessions/day1/session2.html#dive-deeper---recommended-readings",
+    "title": "Session 2",
+    "section": "🌊 Dive Deeper - Recommended Readings",
+    "text": "🌊 Dive Deeper - Recommended Readings",
     "crumbs": [
       "Sessions",
       "Day 1",

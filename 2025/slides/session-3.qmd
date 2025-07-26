@@ -220,7 +220,6 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 Are there any questions you would like to conduct?
 
 
-
 ---
 
 # Supplementary (If there is still time ...)

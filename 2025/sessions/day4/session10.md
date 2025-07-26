@@ -24,19 +24,22 @@ subtitle: "Grammar - Overview"
 - Grammatical complexity
 - Predictive measures versus Descriptive measures
 
-#### 📚 Required Readings
+## 📚 Required Readings
 
 - Durrant Ch. 5.
 
 - Kyle, K., & Crossley, S. A. (2018). Measuring Syntactic Complexity in L2 Writing Using Fine‐Grained Clausal and Phrasal Indices. The Modern Language Journal, 102(2), 333–349. https://doi.org/10.1111/modl.12468
 
 
-#### Recommended Readings
-
-- Norris, J. M., & Ortega, L. (2009). Towards an Organic Approach to Investigating CAF in Instructed SLA: The Case of Complexity. Applied Linguistics, 30(4), 555–578. https://doi.org/10.1093/applin/amp044
+## 🌊 Dive Deeper - Recommended Readings
 
 - Biber, D., Gray, B., Staples, S., & Egbert, J. (2020). Investigating grammatical complexity in L2 English writing research: Linguistic description versus predictive measurement. Journal of English for Academic Purposes, 46, 100869. https://doi.org/10.1016/j.jeap.2020.100869
 
+- Biber, D., Gray, B., & Poonpon, K. (2011). Should We Use Characteristics of Conversation to Measure Grammatical Complexity in L2 Writing Development? TESOL Quarterly, 45(1), 5–35. https://doi.org/10.5054/tq.2011.244483
+
+- Norris, J. M., & Ortega, L. (2009). Towards an Organic Approach to Investigating CAF in Instructed SLA: The Case of Complexity. Applied Linguistics, 30(4), 555–578. https://doi.org/10.1093/applin/amp044
+
+- Lu, X. (2011). A Corpus‐Based Evaluation of Syntactic Complexity Measures as Indices of College‐Level ESL Writers’ Language Development. TESOL Quarterly, 45(1), 36–62. https://doi.org/10.5054/tq.2011.240859
 
 
 ## Materials

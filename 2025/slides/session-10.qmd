@@ -26,13 +26,47 @@ By the end of this session, students will be able to:
 >   - Verb Argument Construction (VAC) strand
 > - Understand current trends of syntactic complexity research
 
-
 ---
+
+
+## Grammatical complexity
+
+- Indicators of 
+  - proficiency
+  - development
+
 
 ## Grammatical complexity strand
 
+- Length-based indices
+  - Number of words per T-unit
+- Subordination
+
 
 ## T-unit
+
+- When it comes to measuring grammatical complexity, one important consideration is how to define linguistic unit.
+- Writing researchers use T-Unit (Hunt, 1966)
+  - **T-unit**: "Independent clause plus any subordinate clauses attached to it"
+
+## Typical grammatical complexity measures
+
+![complexity measures reported in Kyle & Crossley (2018)](../../assets/session-10/complexity-list.png)
+
+
+## Findings
+
+
+<!-- ### Length-based measure
+
+### Phrasal complexity
+
+| Measure | Example |
+|------|------|
+| CN/N | complex nominals per clause |
+
+### Nominal complexity
+ -->
 
 
 ## Organic approach (Norris & Ortega, 2009)
@@ -40,11 +74,132 @@ By the end of this session, students will be able to:
 
 ## Fine-grained grammatical complexity strand
 
+Criticism on the (largely) length-based grammatical complexity:
 
-## Synntactic sophistication (or VAC) strand
+- Does not tell us about **how sentence structures are elaborated**
+
+## Length-based indices does not tell elaboration strategy
+
+- (a) The *athletic* man *in the jersey* kicked the ball *over the fence*.
+  - Elaborated by phrases (adjectival modification; prepositional phrases)
+- (b) **Because he wanted to score a goal**, the man kicked the ball.
+  - Elaborated by subordinate clause.
+
+Example from Kyle & Crossley (2018)
+
+## Kyle & Crossley (2018)
+
+- Kyle & Crossley (2018) proposed fine-grained clausal & phrasal complexity indices
+- They used `dependency` parsing to identify fine-grained features of grammar.
+
+## Clausal indices
+
+The followings are example: 
+
+::: {style="font-size: 75%;"}
+
+| Structure | Dependency tag | Example of Structure | 
+|-----|-----|-----|
+| Nominal subject | `nsubj` | The **athlete** ran quickly. | 
+| Direct object | `dobj` | He plays **soccer**. |
+| Indirect object | `iobj` | He teaches **me** soccer. | 
+| Clausal complement | `ccomp` | I am certain **that he did it**. | 
+| Adjectival complement | `acomp` | He looks **fine**. |
+| Nominal complement | `ncomp` | She is a **teacher**. |
+
+:::
+
+## Clausal indices (Oblique)
+
+The followings are example: 
+
+::: {style="font-size: 75%;"}
+
+
+| Structure | Abbreviation | Example of Structure | 
+|-----|-----|-----|
+| Adverbial modifier | `advmod` | **Accordingly**, I ate pizza. |
+| Prepositional modifier | `prep` | They went **into the score**. |
+| Temporal modifier | `tmod` | Last **night**, we had fun. |
+| Adverbial clause | `advcl` | The accident happened **as night fell**.|
+| Open clausal complement | `xcomp` | I am ready **to leave**. |
+
+
+:::
+
+
+## Phrasal indices
+
+- Phrasal indices counts how many dependents there are for each of the following structure: `nsubj`, `nsubj_pass`, `agent`, `ncomp`, `dobj`, `iobj`, `pobj`.
+
+::: {style="font-size: 75%;"}
+
+
+| Structure | Abbreviation | Example of Structure | 
+|-----|-----|-----|
+| Determiners | `det` | **The** man went into **the** store. |
+| Prepositional phrases | `prep` | the man **in the red hat**. |
+| Adjective modifier | `amod` | The man in the **red** hat |
+| Possessives | `poss` | **Tom's** store; **his** intention |
+| Relative clause modifiers | `recmod` | the plan **I thought** |
+| Adverbial modifiers | `advmod` | It's a **really** good idea. |
+
+
+:::
+
+## Kyle & Crossley (2018)
+
+- They counted fine-grained clausal and phrasal indices.
+- \# dependents per clause/phrase
+- They examined correlations between TOEFL score and the fine-grained indices
+
+## Results
+
+![Final regression model](../../assets/session-10/kyle-regression.png)
+
+## Example sentences
+
+![Example from score 1 essay](../../assets/session-10/score-1-example.png)
+
+:::: {.colmns}
+
+::: {.column width="50%"}
+
+![Example from score 5 essay](../../assets/session-10/score-5-1.png)
+
+:::
+
+::: {.column width="50%"}
+
+![Example from score 5 essay](../../assets/session-10/score-5-2.png)
+
+
+:::
+
+
+::::
+
+## Kyle & Crossley (2018)
+
+- The fine-grained indices:
+  - explained more variances (~ 20%) than traditional complexity measures (~ 5%)
+  - provides more insights into what structure the learners tend to use
+- In hands-on activity, we will talk more about how to identify fine-grained grammatical features.
+
+
+
+## Syntactic sophistication (or VAC) strand
+
+According to **construction grammar** (Goldberg, 1995, 2006), grammatical construction (structure) convey abstract linguistic meaning. 
+
+In turn, 
+
+- Intransitive: 
+- Transitive: 
 
 
 ## Descriptive (register-based feature) strand
+
 
 
 

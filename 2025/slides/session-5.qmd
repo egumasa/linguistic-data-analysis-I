@@ -148,10 +148,13 @@ Let's now create a frequency list
 ::: {.column width="50%"}
 
 ![Horizontal display](../../assets/session-5/TagAnt-Horizontal.png)
+
 :::
 
 ::: {.column width="50%"}
+
 ![Vertical display](../../assets/session-5/TagAnt-vertical.png)
+
 :::
 
 ::::
