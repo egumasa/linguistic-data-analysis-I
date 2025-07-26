@@ -52,7 +52,6 @@ Your submission ...
 
 ## Task 2 & 3: Mini-research project (8 points altogether)
 
-
 The task 2 and 3 are related to the mini-research project.
 
 In this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.
@@ -63,13 +62,54 @@ Specifically, you will:
 - analyze the chosen corpus with the selected indices
 - present the results and interpretation in a written prose
 
-### Corpus choice
+
+### Assignment Guideline
+
+### Step 1: Understand and choose the corpus
 
 In this assignment, please choose one of the following corpora:
 
 1. *Growth in Grammar (GiG) corpus* (Durrant, 2023)
-2. *British Academic Written English*
+2. *ICNALE corpus* (Edited Essay OR GRA)
 3. Some Japanese corpus here (Ask Masaki about availability).
+
+
+### Step 2: Construct research questions
+
+In this type of research, researchers typically set RQs about the relationships between lexical characteristncs and variables that defines subsection of the corpus (e.g., grade, genre, or proficieincy score).
+
+The following information is available through the GiG corpus:
+- 
+
+The following information is available through the ICNALE corpus:
+- Ratings performed by external raters
+
+
+#### Step 3: Construct hypothesis
+
+Based on what you've learned about the vocabulary use of learner, state several hypotheses that you expect as the findings for the research question.
+
+In other words, what do you expect as the relationship between lexical characteristics X and external variable Y?
+
+#### Step 4: Select index
+
+Based on the RQs and hypotheses, you will select indices that can capture the lexical characteristics X in your corpus.
+
+
+#### Step 5: Compute the index
+
+You will now use the tools we have covered in this course to derive lexical richness scores for the text.
+
+
+#### Step 6: Conduct analysis 
+
+To answer the research questions, you may want to do the followings:
+- Obtain descriptive statistics of the lexical richness indices
+- Visualize the relationship between variables
+- Optionally run statistical analyses 
+
+#### Step 7: Interpret and write-up the results
+
 
 
 ::: {.callout-note}
@@ -90,6 +130,8 @@ In this assignment, please choose one of the following corpora:
 
 Your submission ...
 
-- [ ] 
+- [ ] outlines research questions and hypotheses
+- [ ] provide description of lexical richness measures that you used and how you calculated the measures
+- [ ] provides analysis results and their interpretations in relation to the research questions
 
 :::

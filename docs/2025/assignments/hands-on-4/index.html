@@ -635,7 +635,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">Research questions</a></li>
   <li><a href="#hypothesis" id="toc-hypothesis" class="nav-link" data-scroll-target="#hypothesis">Hypothesis</a></li>
-  <li><a href="#definitions-of-grammatical-features-to-extract" id="toc-definitions-of-grammatical-features-to-extract" class="nav-link" data-scroll-target="#definitions-of-grammatical-features-to-extract">Definitions of grammatical features to extract</a></li>
+  <li><a href="#definitions-and-operationalization-of-grammatical-features-to-extract" id="toc-definitions-and-operationalization-of-grammatical-features-to-extract" class="nav-link" data-scroll-target="#definitions-and-operationalization-of-grammatical-features-to-extract">Definitions and operationalization of grammatical features to extract</a></li>
   </ul></li>
   <li><a href="#task-2-fine-grained-descriptive-grammatical-features" id="toc-task-2-fine-grained-descriptive-grammatical-features" class="nav-link" data-scroll-target="#task-2-fine-grained-descriptive-grammatical-features">Task 2: Fine-grained Descriptive grammatical features</a></li>
   <li><a href="#task-3-results-and-interpretation" id="toc-task-3-results-and-interpretation" class="nav-link" data-scroll-target="#task-3-results-and-interpretation">Task 3: Results and interpretation</a></li>
@@ -711,7 +711,7 @@ Under Construction
 <li>Research questions should include:
 <ul>
 <li>type of features you are looking at (e.g., adverbial clauses)</li>
-<li>factors that defines your sub-corpora (e.g., grade)</li>
+<li>situational variables that defines your sub-corpora (e.g., grade, genre, proficiency)</li>
 </ul></li>
 </ul>
 </section>
@@ -727,14 +727,18 @@ Under Construction
 </ul></li>
 </ul>
 </section>
-<section id="definitions-of-grammatical-features-to-extract" class="level3">
-<h3 class="anchored" data-anchor-id="definitions-of-grammatical-features-to-extract">Definitions of grammatical features to extract</h3>
+<section id="definitions-and-operationalization-of-grammatical-features-to-extract" class="level3">
+<h3 class="anchored" data-anchor-id="definitions-and-operationalization-of-grammatical-features-to-extract">Definitions and operationalization of grammatical features to extract</h3>
 <ul>
 <li>You must describe the specific grammatical features that you plan to extract.</li>
 <li>For example, for clausal features you need to specify if:
 <ul>
 <li>you are interested in subordinate clauses or embedded clauses</li>
 <li>you are interested in particular type of clauses</li>
+</ul></li>
+<li>Description of rules to identify desirable linguistic feature.
+<ul>
+<li>For example, you will need to specify <code>amod</code> for dependency label to extract <code>adjective + noun</code> phrase.</li>
 </ul></li>
 </ul>
 </section>
@@ -746,10 +750,6 @@ Under Construction
 <li><p>You should use either <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">simple text analyzer</a> or your own Colab Notebook.</p>
 <ul>
 <li>I will specify which option should be used <strong>by the time we start working on this assignment</strong> (that is, this depends on your progress as a group.)</li>
-</ul></li>
-<li><p>Description of rules to identify desirable linguistic feature.</p>
-<ul>
-<li>For example, you will need to specify <code>amod</code> for dependency label to extract <code>adjective + noun</code> phrase.</li>
 </ul></li>
 </ul>
 </section>
@@ -1332,7 +1332,7 @@ Success Criteria
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Research questions should include:</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>type of features you are looking at (e.g., adverbial clauses)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>factors that defines your sub-corpora (e.g., grade)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>situational variables that defines your sub-corpora (e.g., grade, genre, proficiency)</span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">### Hypothesis</span></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
@@ -1340,53 +1340,51 @@ Success Criteria
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>describe your predictions in terms of:</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>quantitative trends of the feature in relation to the factor you are interested in.</span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">### Definitions of grammatical features to extract </span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">### Definitions and operationalization of grammatical features to extract </span></span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You must describe the specific grammatical features that you plan to extract.</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For example, for clausal features you need to specify if:</span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>you are interested in subordinate clauses or embedded clauses</span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>you are interested in particular type of clauses</span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## Task 2: Fine-grained Descriptive grammatical features</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Description of rules to identify desirable linguistic feature.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>For example, you will need to specify <span class="in">`amod`</span> for dependency label to extract <span class="in">`adjective + noun`</span> phrase.</span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Once you articulated the information above, you will now conduct a search over the corpus.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You should use either <span class="co">[</span><span class="ot">simple text analyzer</span><span class="co">](https://huggingface.co/spaces/egumasa/simple-text-analyzer)</span> or your own Colab Notebook.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>I will specify which option should be used **by the time we start working on this assignment** (that is, this depends on your progress as a group.)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## Task 2: Fine-grained Descriptive grammatical features</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Once you articulated the information above, you will now conduct a search over the corpus.</span>
 <span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Description of rules to identify desirable linguistic feature.</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>For example, you will need to specify <span class="in">`amod`</span> for dependency label to extract <span class="in">`adjective + noun`</span> phrase.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You should use either <span class="co">[</span><span class="ot">simple text analyzer</span><span class="co">](https://huggingface.co/spaces/egumasa/simple-text-analyzer)</span> or your own Colab Notebook.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>I will specify which option should be used **by the time we start working on this assignment** (that is, this depends on your progress as a group.)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">## Task 3: Results and interpretation</span></span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## Task 3: Results and interpretation</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Provide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Provide descriptive paragraphs to walk the reader through the results and how to interprete that results.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Provide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Provide descriptive paragraphs to walk the reader through the results and how to interprete that results.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu">## Submission</span></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A word file (<span class="in">`.docx`</span> file) that addresses requirements in a written format (one or two pages depending on your analysis results.).</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Screenshots of your search settings on the <span class="co">[</span><span class="ot">simple text analyzer</span><span class="co">](https://huggingface.co/spaces/egumasa/simple-text-analyzer)</span> tool.</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**IF you use colab**, Google Colab notebook (<span class="in">`.ipynb`</span> file) with extraction code and results.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## Submission</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A word file (<span class="in">`.docx`</span> file) that addresses requirements in a written format (one or two pages depending on your analysis results.).</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Screenshots of your search settings on the <span class="co">[</span><span class="ot">simple text analyzer</span><span class="co">](https://huggingface.co/spaces/egumasa/simple-text-analyzer)</span> tool.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**IF you use colab**, Google Colab notebook (<span class="in">`.ipynb`</span> file) with extraction code and results.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="fu"># Success Criteria</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu"># Success Criteria</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>Your submission ...</span>
 <span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Your submission ...</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> outlines research questions and hypotheses</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> provide description of your approach (algorithms and rules) to identify the desired linguistic structure.</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> provides analysis results and their interpretations in relation to the research questions</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> outlines research questions and hypotheses</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> provide description of your approach (algorithms and rules) to identify the desired linguistic structure.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> provides analysis results and their interpretations in relation to the research questions</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

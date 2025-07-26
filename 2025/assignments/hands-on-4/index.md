@@ -30,7 +30,7 @@ In this task you will describe research questions, hypothesis, and methods.
 
 - Research questions should include:
   - type of features you are looking at (e.g., adverbial clauses)
-  - factors that defines your sub-corpora (e.g., grade)
+  - situational variables that defines your sub-corpora (e.g., grade, genre, proficiency)
 
 ### Hypothesis
 
@@ -38,12 +38,15 @@ In this task you will describe research questions, hypothesis, and methods.
   - describe your predictions in terms of:
     - quantitative trends of the feature in relation to the factor you are interested in.
 
-### Definitions of grammatical features to extract 
+### Definitions and operationalization of grammatical features to extract 
 
 - You must describe the specific grammatical features that you plan to extract.
 - For example, for clausal features you need to specify if:
   - you are interested in subordinate clauses or embedded clauses
   - you are interested in particular type of clauses
+
+- Description of rules to identify desirable linguistic feature.
+  - For example, you will need to specify `amod` for dependency label to extract `adjective + noun` phrase.
 
 
 ## Task 2: Fine-grained Descriptive grammatical features
@@ -52,11 +55,6 @@ In this task you will describe research questions, hypothesis, and methods.
 
 - You should use either [simple text analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer) or your own Colab Notebook.
   - I will specify which option should be used **by the time we start working on this assignment** (that is, this depends on your progress as a group.)
-
-
-- Description of rules to identify desirable linguistic feature.
-  - For example, you will need to specify `amod` for dependency label to extract `adjective + noun` phrase.
-
 
 
 ## Task 3: Results and interpretation
