@@ -150,6 +150,49 @@ Don't turn to next slide until you finish sorting!
 See the result [here](https://www.english-corpora.org/now/?c=now&q=126887345)
 
 
+## Corpus Size Comparison
+
+```{r}
+#| echo: false
+#| fig-width: 8
+#| fig-height: 5
+
+library(ggplot2)
+library(scales)
+
+# Create corpus data
+corpus_data <- data.frame(
+  corpus = c("BNC", "COCA", "GLOWBE", "iWeb", "NOW"),
+  size = c(0.1, 1.0, 1.9, 13.9, 16.2),  # Size in billions
+  stringsAsFactors = FALSE
+)
+
+# Order by size
+corpus_data$corpus <- factor(corpus_data$corpus, 
+                             levels = corpus_data$corpus[order(corpus_data$size)])
+
+# Create horizontal bar chart
+ggplot(corpus_data, aes(x = size, y = corpus)) +
+  geom_bar(stat = "identity", fill = "#4287f5", width = 0.7) +
+  geom_text(aes(label = paste0(size, "B")), 
+            hjust = -0.2, size = 4, fontface = "bold") +
+  scale_x_continuous(breaks = seq(0, 18, by = 3),
+                     labels = paste0(seq(0, 18, by = 3), "B"),
+                     limits = c(0, 18)) +
+  labs(title = "Corpus Sizes in Billions of Words",
+       x = "Size (Billions of Words)",
+       y = "Corpus") +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    axis.title = element_text(size = 12),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
+  )
+```
+
+
 ## Limitations of corpus
 
 - corpus is incomplete; impossible to reflect all the linguistic variations.
@@ -169,7 +212,6 @@ Corpus has to be selected in relation to the purpose of the study
   - Corpus data needs to be interpreted (but better than intuiting).
 
 # Any questions?
-
 
 ---
 
@@ -441,11 +483,13 @@ Additional variables such as:
 - Extensive rating data is also available for subset of the data (GRA)
 
 
+
+
 ## From Question to Corpus Choice
 
 Let's say you want to investigate the following question:
 
-- "Is 'my bad' more frequent in informal genres?"
+- "Is `passive construction` (be + past participle) more frequent in formal genres?"
 
 **What information do you need in the corpus?**
 
@@ -455,7 +499,7 @@ Try giving some answers in pairs.
 ## Typical answer
 
 - Has multiple genres (formal AND informal)
-- Recent enough to include 'my bad' 
+- Recent enough to include `passive construction` (be + past participle)
 - Large enough to compare 
 
 ## Corpora in English-Corpora.org
@@ -475,8 +519,55 @@ Try giving some answers in pairs.
 
 :::
 
+## Corpus Size Comparison
 
- 
+```{r}
+#| echo: false
+#| fig-width: 8
+#| fig-height: 5
+
+library(ggplot2)
+library(scales)
+
+# Create corpus data
+corpus_data <- data.frame(
+  corpus = c("BNC", "COCA", "GLOWBE", "iWeb", "NOW"),
+  size = c(0.1, 1.0, 1.9, 13.9, 16.2),  # Size in billions
+  stringsAsFactors = FALSE
+)
+
+# Order by size
+corpus_data$corpus <- factor(corpus_data$corpus, 
+                             levels = corpus_data$corpus[order(corpus_data$size)])
+
+# Create horizontal bar chart
+ggplot(corpus_data, aes(x = size, y = corpus)) +
+  geom_bar(stat = "identity", fill = "#4287f5", width = 0.7) +
+  geom_text(aes(label = paste0(size, "B")), 
+            hjust = -0.2, size = 4, fontface = "bold") +
+  scale_x_continuous(breaks = seq(0, 18, by = 3),
+                     labels = paste0(seq(0, 18, by = 3), "B"),
+                     limits = c(0, 18)) +
+  labs(title = "Corpus Sizes in Billions of Words",
+       x = "Size (Billions of Words)",
+       y = "Corpus") +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    axis.title = element_text(size = 12),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
+  )
+```
+
+## Gnowing Size - Good or bad?
+
+The corpus is becoming larger and larger.
+
+- Is this a good thing?
+- Any drawbacks we might foresee?
+
 
 ## Steps 4-6: In Session 3
 

@@ -342,6 +342,10 @@ Masaki EGUCHI, Ph.D.
 </ul>
 <p><img data-src="../../assets/session-2/it-doesnt-matter-the.png" alt="Frequency of the construction"> See the result <a href="https://www.english-corpora.org/now/?c=now&amp;q=126887345">here</a></p>
 </section>
+<section id="corpus-size-comparison" class="slide level2">
+<h2>Corpus Size Comparison</h2>
+
+<img data-src="session-2_files/figure-revealjs/unnamed-chunk-1-1.png" width="768" class="r-stretch"></section>
 <section id="limitations-of-corpus" class="slide level2">
 <h2>Limitations of corpus</h2>
 <ul>
@@ -959,7 +963,7 @@ Masaki EGUCHI, Ph.D.
 <h2>From Question to Corpus Choice</h2>
 <p>Let’s say you want to investigate the following question:</p>
 <ul>
-<li>“Is ‘my bad’ more frequent in informal genres?”</li>
+<li>“Is <code>passive construction</code> (be + past participle) more frequent in formal genres?”</li>
 </ul>
 <p><strong>What information do you need in the corpus?</strong></p>
 <p>Try giving some answers in pairs.</p>
@@ -968,7 +972,7 @@ Masaki EGUCHI, Ph.D.
 <h2>Typical answer</h2>
 <ul>
 <li>Has multiple genres (formal AND informal)</li>
-<li>Recent enough to include ‘my bad’</li>
+<li>Recent enough to include <code>passive construction</code> (be + past participle)</li>
 <li>Large enough to compare</li>
 </ul>
 </section>
@@ -1045,6 +1049,18 @@ Masaki EGUCHI, Ph.D.
 </tbody>
 </table>
 </div>
+</section>
+<section id="corpus-size-comparison-1" class="slide level2">
+<h2>Corpus Size Comparison</h2>
+
+<img data-src="session-2_files/figure-revealjs/unnamed-chunk-2-1.png" width="768" class="r-stretch"></section>
+<section id="gnowing-size---good-or-bad" class="slide level2">
+<h2>Gnowing Size - Good or bad?</h2>
+<p>The corpus is becoming larger and larger.</p>
+<ul>
+<li>Is this a good thing?</li>
+<li>Any drawbacks we might foresee?</li>
+</ul>
 </section>
 <section id="steps-4-6-in-session-3" class="slide level2">
 <h2>Steps 4-6: In Session 3</h2>
@@ -1355,6 +1371,44 @@ We can do similar with grammar (or morpho-syntax).
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

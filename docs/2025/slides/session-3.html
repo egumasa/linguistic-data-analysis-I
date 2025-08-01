@@ -566,7 +566,7 @@ Masaki EGUCHI, Ph.D.
 <img data-src="../../assets/session-3/sorting-options.gif" class="r-stretch quarto-figure-center"><p class="caption">KWIC search</p></section>
 <section id="practice-finding-patterns" class="slide level2">
 <h2>Practice: Finding patterns</h2>
-<p>Search “XXXX” (lemma) and sort by: 1. R1 (what follows “XXXX”?) 2. L1 (what precedes “XXXX”?)</p>
+<p>Search “prove” (lemma) and sort by: 1. R1 (what follows “prove”?) 2. L1 (what precedes “prove”?)</p>
 <p>What patterns do you notice?</p>
 </section></section>
 <section>
@@ -717,6 +717,94 @@ Masaki EGUCHI, Ph.D.
 </ul>
 
 <img data-src="../../assets/session-3/collocation-search.png" class="r-stretch quarto-figure-center"><p class="caption">window</p></section>
+<section id="search-methods-summary" class="slide level2">
+<h2>Search Methods Summary</h2>
+<div style="font-size:'60%'">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Purpose</th>
+<th>Example</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Simple Word</strong></td>
+<td>Find exact word forms</td>
+<td><code>run</code> → finds only “run”</td>
+<td>- Case sensitive<br>- Single form only</td>
+</tr>
+<tr class="even">
+<td><strong>LEMMA</strong></td>
+<td>Find all forms of a word</td>
+<td><code>RUN</code> → finds “run, runs, ran, running”</td>
+<td>- Use CAPITAL letters<br>- Includes all inflections</td>
+</tr>
+<tr class="odd">
+<td><strong>POS Tag</strong></td>
+<td>Find words by grammatical category</td>
+<td><code>run_N</code> (noun)<br><code>run_V</code> (verb)</td>
+<td>- Disambiguates word classes<br>- Use underscore + tag</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="search-methods-summary-1" class="slide level2">
+<h2>Search Methods Summary</h2>
+<div style="font-size:'60%'">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Purpose</th>
+<th>Example</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>KWIC</strong></td>
+<td>View words in context</td>
+<td>Any search term</td>
+<td>- Sort by L1, R1, etc.<br>- Find patterns in usage</td>
+</tr>
+<tr class="even">
+<td><strong>CHART</strong></td>
+<td>Track frequency across categories</td>
+<td><code>lol</code> across time/genres</td>
+<td>- Shows distribution<br>- Genre/time comparisons</td>
+</tr>
+<tr class="odd">
+<td><strong>Wildcards</strong></td>
+<td>Pattern matching</td>
+<td><code>*ness</code> → “happiness”<br><code>a * of the</code> → “a lot of the”</td>
+<td>- <code>*</code> = any characters<br>- Find lexical patterns</td>
+</tr>
+<tr class="even">
+<td><strong>Collocates</strong></td>
+<td>Find co-occurring words</td>
+<td>Words near target</td>
+<td>- Specify window size<br>- Statistical associations</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section class="slide level2">
 
 </section></section>

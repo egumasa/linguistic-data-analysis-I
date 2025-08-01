@@ -312,9 +312,9 @@ Sorting helps identify:
 
 ## Practice: Finding patterns
 
-Search "XXXX" (lemma) and sort by:
-1. R1 (what follows "XXXX"?)
-2. L1 (what precedes "XXXX"?)
+Search "prove" (lemma) and sort by:
+1. R1 (what follows "prove"?)
+2. L1 (what precedes "prove"?)
 
 What patterns do you notice?
 
@@ -454,6 +454,29 @@ Which is more frequent?
 
 ![window](../../assets/session-3/collocation-search.png)
 
+## Search Methods Summary
+
+::: {style = "font-size:'60%'"}
+
+| Method | Purpose | Example | Key Features |
+|--------|---------|---------|--------------|
+| **Simple Word** | Find exact word forms | `run` → finds only "run" | - Case sensitive<br>- Single form only |
+| **LEMMA** | Find all forms of a word | `RUN` → finds "run, runs, ran, running" | - Use CAPITAL letters<br>- Includes all inflections |
+| **POS Tag** | Find words by grammatical category | `run_N` (noun)<br>`run_V` (verb) | - Disambiguates word classes<br>- Use underscore + tag |
+
+:::
+
+## Search Methods Summary
+
+::: {style = "font-size:'60%'"}
+
+| Method | Purpose | Example | Key Features |
+|--------|---------|---------|--------------|
+| **KWIC** | View words in context | Any search term | - Sort by L1, R1, etc.<br>- Find patterns in usage |
+| **CHART** | Track frequency across categories | `lol` across time/genres | - Shows distribution<br>- Genre/time comparisons |
+| **Wildcards** | Pattern matching | `*ness` → "happiness"<br>`a * of the` → "a lot of the" | - `*` = any characters<br>- Find lexical patterns |
+| **Collocates** | Find co-occurring words | Words near target | - Specify window size<br>- Statistical associations |
+:::
 
 ---
 
@@ -534,6 +557,9 @@ Consider:
 - Grammar variations
 
 # Summary
+
+
+
 
 ## Today's achievement
 

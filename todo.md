@@ -2,7 +2,7 @@
 
 ## Day 1
 
-[ ] Session 1: 前日に最終調整
+[x] Session 1: 前日に最終調整
     - 
 [ ] Session 2: 
     - 

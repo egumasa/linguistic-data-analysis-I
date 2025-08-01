@@ -80,14 +80,35 @@ Second-language writing/speaking assessment using computational techniques
 :::
 :::: 
 
+## Recent work - Validating AI speaking test
 
-## Introduction
+:::: {.columns}
+::: {.column width = "45%"}
+
+![InteLLA CA](../../assets/session-1/CA.png)
+
+:::
+::: {.column}
+
+![Rasch](../../assets/session-1/Rasch.png)
+
+:::
+:::: 
+
+
+
+## Introduction 1st round
 
 - Briefly introduce yourself
-- Name 
-- Research interests/topic
-- Why you decided to take this course.
+- Name
+- Year/Department
+- Things you like to do during free time, OR
 - Favorite things to do in Sendai.
+
+## Introduction 2nd round
+
+- Research interests/topic
+- Why you are taking this course
 
 ---
 
@@ -320,6 +341,7 @@ This 5-day introduction:
 
 ## Learning Objectives
 
+::: {style="font-size: 75%;"}
 By the end of this course, students will be able to:
 
 - Explain what corpus linguistics is and how corpus linguistics can help learn linguistic phenomena
@@ -327,6 +349,7 @@ By the end of this course, students will be able to:
 - Discuss design issues related to language corpora for specific research purposes
 - Apply introductory corpus linguistic analyses (e.g., frequency analysis, concordancing, collocation analysis, POS tagging, and dependency parsing) to preprocessed corpora
 - Evaluate the benefits and drawbacks of a corpus linguistic approach to linguistic analysis
+:::
 
 ## Course Components
 
@@ -419,7 +442,7 @@ Other required/Optional readings are provided through Google Classroom.
 
 ## What We've Covered So Far
 
-- Corpora = searchable real language
+- Corpora = searchable digital collection of real-world language use
 - We can ask questions about patterns
 - Corpus gives us evidence-based answers
 

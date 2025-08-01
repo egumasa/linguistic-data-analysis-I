@@ -1974,11 +1974,25 @@
     "text": "My research\nSecond-language writing/speaking assessment using computational techniques\n\n\n\n\n\nEngagement Analyzer\n\n\n\n\n\n\nChatGPT for Essay Scoring"
   },
   {
-    "objectID": "2025/slides/session-1.html#introduction",
-    "href": "2025/slides/session-1.html#introduction",
+    "objectID": "2025/slides/session-1.html#recent-work---validating-ai-speaking-test",
+    "href": "2025/slides/session-1.html#recent-work---validating-ai-speaking-test",
     "title": "Session 1: Introduction",
-    "section": "Introduction",
-    "text": "Introduction\n\nBriefly introduce yourself\nName\nResearch interests/topic\nWhy you decided to take this course.\nFavorite things to do in Sendai."
+    "section": "Recent work - Validating AI speaking test",
+    "text": "Recent work - Validating AI speaking test\n\n\n\n\n\nInteLLA CA\n\n\n\n\n\n\nRasch"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#introduction-1st-round",
+    "href": "2025/slides/session-1.html#introduction-1st-round",
+    "title": "Session 1: Introduction",
+    "section": "Introduction 1st round",
+    "text": "Introduction 1st round\n\nBriefly introduce yourself\nName\nYear/Department\nThings you like to do during free time, OR\nFavorite things to do in Sendai."
+  },
+  {
+    "objectID": "2025/slides/session-1.html#introduction-2nd-round",
+    "href": "2025/slides/session-1.html#introduction-2nd-round",
+    "title": "Session 1: Introduction",
+    "section": "Introduction 2nd round",
+    "text": "Introduction 2nd round\n\nResearch interests/topic\nWhy you are taking this course"
   },
   {
     "objectID": "2025/slides/session-1.html#what-is-the-first-thing-that-come-to-your-mind-about-corpus",
@@ -2118,7 +2132,7 @@
     "href": "2025/slides/session-1.html#learning-objectives-1",
     "title": "Session 1: Introduction",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this course, students will be able to:\n\nExplain what corpus linguistics is and how corpus linguistics can help learn linguistic phenomena\nSearch for and select available corpora relevant to their own research\nDiscuss design issues related to language corpora for specific research purposes\nApply introductory corpus linguistic analyses (e.g., frequency analysis, concordancing, collocation analysis, POS tagging, and dependency parsing) to preprocessed corpora\nEvaluate the benefits and drawbacks of a corpus linguistic approach to linguistic analysis"
+    "text": "Learning Objectives\n\nBy the end of this course, students will be able to:\n\nExplain what corpus linguistics is and how corpus linguistics can help learn linguistic phenomena\nSearch for and select available corpora relevant to their own research\nDiscuss design issues related to language corpora for specific research purposes\nApply introductory corpus linguistic analyses (e.g., frequency analysis, concordancing, collocation analysis, POS tagging, and dependency parsing) to preprocessed corpora\nEvaluate the benefits and drawbacks of a corpus linguistic approach to linguistic analysis"
   },
   {
     "objectID": "2025/slides/session-1.html#course-components",
@@ -2195,7 +2209,7 @@
     "href": "2025/slides/session-1.html#what-weve-covered-so-far",
     "title": "Session 1: Introduction",
     "section": "What We’ve Covered So Far",
-    "text": "What We’ve Covered So Far\n\nCorpora = searchable real language\nWe can ask questions about patterns\nCorpus gives us evidence-based answers"
+    "text": "What We’ve Covered So Far\n\nCorpora = searchable digital collection of real-world language use\nWe can ask questions about patterns\nCorpus gives us evidence-based answers"
   },
   {
     "objectID": "2025/slides/session-1.html#assignment-1-preview",
@@ -2308,6 +2322,13 @@
     "title": "Session 2: Corpus as a scientific method",
     "section": "It doesn’t matter the N",
     "text": "It doesn’t matter the N\n\nI searched this construction over News on the web (NOW) corpus which is 22.5 billion+ corpus across 20 countries.\nIt is not actually exclusive to the British construction.\n\n See the result here"
+  },
+  {
+    "objectID": "2025/slides/session-2.html#corpus-size-comparison",
+    "href": "2025/slides/session-2.html#corpus-size-comparison",
+    "title": "Session 2: Corpus as a scientific method",
+    "section": "Corpus Size Comparison",
+    "text": "Corpus Size Comparison"
   },
   {
     "objectID": "2025/slides/session-2.html#limitations-of-corpus",
@@ -2524,14 +2545,14 @@
     "href": "2025/slides/session-2.html#from-question-to-corpus-choice",
     "title": "Session 2: Corpus as a scientific method",
     "section": "From Question to Corpus Choice",
-    "text": "From Question to Corpus Choice\nLet’s say you want to investigate the following question:\n\n“Is ‘my bad’ more frequent in informal genres?”\n\nWhat information do you need in the corpus?\nTry giving some answers in pairs."
+    "text": "From Question to Corpus Choice\nLet’s say you want to investigate the following question:\n\n“Is passive construction (be + past participle) more frequent in formal genres?”\n\nWhat information do you need in the corpus?\nTry giving some answers in pairs."
   },
   {
     "objectID": "2025/slides/session-2.html#typical-answer",
     "href": "2025/slides/session-2.html#typical-answer",
     "title": "Session 2: Corpus as a scientific method",
     "section": "Typical answer",
-    "text": "Typical answer\n\nHas multiple genres (formal AND informal)\nRecent enough to include ‘my bad’\nLarge enough to compare"
+    "text": "Typical answer\n\nHas multiple genres (formal AND informal)\nRecent enough to include passive construction (be + past participle)\nLarge enough to compare"
   },
   {
     "objectID": "2025/slides/session-2.html#corpora-in-english-corpora.org",
@@ -2539,6 +2560,20 @@
     "title": "Session 2: Corpus as a scientific method",
     "section": "Corpora in English-Corpora.org",
     "text": "Corpora in English-Corpora.org\n\n\n\n\nCorpus\nSize\nRegions\nTime\nGenre\n\n\n\n\nIWEB\n13.9b\n6\n2017\nWeb\n\n\nNOW\n16.2b\n20\n2010-now\nWeb: News\n\n\nCOCA\n1.0b\nAm\n1990-2019\nBalanced\n\n\nCOHA\n400m\nAm\n1810-2009\nBalanced\n\n\nTIME\n100m\nAm\n1923-2006\nMagazine\n\n\nBNC\n100m\nBr\n1980s-1993\nBalanced\n\n\nCAN\n50m\nCan\n1970s-2000s\nBalanced\n\n\nCORE\n50m\n6\n2014\nWeb"
+  },
+  {
+    "objectID": "2025/slides/session-2.html#corpus-size-comparison-1",
+    "href": "2025/slides/session-2.html#corpus-size-comparison-1",
+    "title": "Session 2: Corpus as a scientific method",
+    "section": "Corpus Size Comparison",
+    "text": "Corpus Size Comparison"
+  },
+  {
+    "objectID": "2025/slides/session-2.html#gnowing-size---good-or-bad",
+    "href": "2025/slides/session-2.html#gnowing-size---good-or-bad",
+    "title": "Session 2: Corpus as a scientific method",
+    "section": "Gnowing Size - Good or bad?",
+    "text": "Gnowing Size - Good or bad?\nThe corpus is becoming larger and larger.\n\nIs this a good thing?\nAny drawbacks we might foresee?"
   },
   {
     "objectID": "2025/slides/session-2.html#steps-4-6-in-session-3",
@@ -3880,7 +3915,7 @@
     "href": "2025/slides/session-3.html#practice-finding-patterns",
     "title": "Session 3: Hands-on #1",
     "section": "Practice: Finding patterns",
-    "text": "Practice: Finding patterns\nSearch “XXXX” (lemma) and sort by: 1. R1 (what follows “XXXX”?) 2. L1 (what precedes “XXXX”?)\nWhat patterns do you notice?"
+    "text": "Practice: Finding patterns\nSearch “prove” (lemma) and sort by: 1. R1 (what follows “prove”?) 2. L1 (what precedes “prove”?)\nWhat patterns do you notice?"
   },
   {
     "objectID": "2025/slides/session-3.html#chart-function",
@@ -4007,6 +4042,20 @@
     "title": "Session 3: Hands-on #1",
     "section": "Collocation search",
     "text": "Collocation search\n\nSpecify window\n\n\nHow distant do you search for the collocates\n\n\nwindow"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#search-methods-summary",
+    "href": "2025/slides/session-3.html#search-methods-summary",
+    "title": "Session 3: Hands-on #1",
+    "section": "Search Methods Summary",
+    "text": "Search Methods Summary\n\n\n\n\n\n\n\n\n\n\nMethod\nPurpose\nExample\nKey Features\n\n\n\n\nSimple Word\nFind exact word forms\nrun → finds only “run”\n- Case sensitive- Single form only\n\n\nLEMMA\nFind all forms of a word\nRUN → finds “run, runs, ran, running”\n- Use CAPITAL letters- Includes all inflections\n\n\nPOS Tag\nFind words by grammatical category\nrun_N (noun)run_V (verb)\n- Disambiguates word classes- Use underscore + tag"
+  },
+  {
+    "objectID": "2025/slides/session-3.html#search-methods-summary-1",
+    "href": "2025/slides/session-3.html#search-methods-summary-1",
+    "title": "Session 3: Hands-on #1",
+    "section": "Search Methods Summary",
+    "text": "Search Methods Summary\n\n\n\n\n\n\n\n\n\n\nMethod\nPurpose\nExample\nKey Features\n\n\n\n\nKWIC\nView words in context\nAny search term\n- Sort by L1, R1, etc.- Find patterns in usage\n\n\nCHART\nTrack frequency across categories\nlol across time/genres\n- Shows distribution- Genre/time comparisons\n\n\nWildcards\nPattern matching\n*ness → “happiness”a * of the → “a lot of the”\n- * = any characters- Find lexical patterns\n\n\nCollocates\nFind co-occurring words\nWords near target\n- Specify window size- Statistical associations"
   },
   {
     "objectID": "2025/slides/session-3.html#your-assignment-structure",
@@ -5446,7 +5495,7 @@
     "href": "todo.html#day-1",
     "title": "",
     "section": "Day 1",
-    "text": "Day 1\n[ ] Session 1: 前日に最終調整 - [ ] Session 2: - [ ] Session 3: -\n\nhands-on 1\n\nCorpus search results"
+    "text": "Day 1\n[x] Session 1: 前日に最終調整 - [ ] Session 2: - [ ] Session 3: -\n\nhands-on 1\n\nCorpus search results"
   },
   {
     "objectID": "todo.html#day-2",
