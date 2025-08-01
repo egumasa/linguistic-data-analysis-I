@@ -8,7 +8,7 @@
 
 <meta name="author" content="Masaki EGUCHI, Ph.D.">
 
-<title>First text analysis with Python – Linguistic Data Analysis I (Summer 2025)</title>
+<title>First dependency analysis with Python – Linguistic Data Analysis I (Summer 2025)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -178,19 +178,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li><hr class="dropdown-divider"></li>
         <li>
     <a class="dropdown-item" href="../../2025/assignments/hands-on-1/index.html">
- <span class="dropdown-text">Hands-on 1</span></a>
+ <span class="dropdown-text">Corpus Lab 1</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../2025/assignments/hands-on-2/index.html">
- <span class="dropdown-text">Hands-on 2</span></a>
+ <span class="dropdown-text">Corpus Lab 2</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../2025/assignments/hands-on-3/index.html">
- <span class="dropdown-text">Hands-on 3</span></a>
+ <span class="dropdown-text">Corpus Lab 3</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../2025/assignments/hands-on-4/index.html">
- <span class="dropdown-text">Hands-on 4</span></a>
+ <span class="dropdown-text">Corpus Lab 4</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
@@ -248,10 +248,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#print-token" id="toc-print-token" class="nav-link active" data-scroll-target="#print-token">Print token</a></li>
+  <li><a href="#printing-the-result-of-analysis." id="toc-printing-the-result-of-analysis." class="nav-link active" data-scroll-target="#printing-the-result-of-analysis.">Printing the result of analysis.</a></li>
   <li><a href="#print-lemmatized-form" id="toc-print-lemmatized-form" class="nav-link" data-scroll-target="#print-lemmatized-form">Print lemmatized form</a></li>
   <li><a href="#print-part-of-speech-information" id="toc-print-part-of-speech-information" class="nav-link" data-scroll-target="#print-part-of-speech-information">Print Part of Speech information</a></li>
+  <li><a href="#your-turn-print-lemma-pos-and-tag-next-to-token." id="toc-your-turn-print-lemma-pos-and-tag-next-to-token." class="nav-link" data-scroll-target="#your-turn-print-lemma-pos-and-tag-next-to-token.">Your turn: Print lemma, pos and tag next to token.</a></li>
   <li><a href="#spacy-token-information" id="toc-spacy-token-information" class="nav-link" data-scroll-target="#spacy-token-information">spaCy token information</a></li>
+  <li><a href="#define-a-function-to-print-token-information-to-reuse-it-later" id="toc-define-a-function-to-print-token-information-to-reuse-it-later" class="nav-link" data-scroll-target="#define-a-function-to-print-token-information-to-reuse-it-later">Define a function to print token information to reuse it later</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.dev/egumasa/Linguistic-Data-Analysis-I/blob/main/2025/notebooks/session-11.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/egumasa/Linguistic-Data-Analysis-I/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -260,7 +262,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">First text analysis with Python</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">First dependency analysis with Python</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
 </div>
 
 
@@ -278,7 +280,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 26, 2025</p>
+      <p class="date-modified">July 29, 2025</p>
     </div>
   </div>
     
@@ -289,99 +291,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In this notebook, I will show you how to run a simple text analysis with spaCy package in Python.</p>
-<div id="f9125c12" class="cell" data-execution_count="2">
+<p>In this notebook, I will show you how to run a simple dependency analysis with spaCy package in Python.</p>
+<p>First in Python, you will import necessary package.</p>
+<p>In the following, I import a package called <code>spacy</code>.</p>
+<p>After importing it, I will then load English analysis model.</p>
+<div id="f9125c12" class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spacy</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.load(<span class="st">"en_core_web_sm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#importing spacy package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spacy</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#loading en_core_web_sm model for English analysis</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.load(<span class="st">"en_core_web_sm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="bc5197d5" class="cell" data-execution_count="3">
+<p>Great! You have now English analysis model loaded on the system runtime.</p>
+<p>Next, let’s conduct first parsing.</p>
+<p>We will first define example sentence.</p>
+<div id="bc5197d5" class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>example_text <span class="op">=</span> <span class="st">"Hi. This is my first awesome sentence to analyze."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting the example sentence to `example_text`.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>example_text <span class="op">=</span> <span class="st">"Hi. This is my first awesome sentence to analyze."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="ede3993c" class="cell" data-execution_count="4">
+<p>Okay. Now you have the example sentence. You can verify this by running the following <code>print(example_text)</code>.</p>
+<div id="0ea5c22b" class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(example_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(example_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<section id="print-token" class="level2">
-<h2 class="anchored" data-anchor-id="print-token">Print token</h2>
-<p>In the following, you can iterate through the parsed doc and print each token in the <code>doc</code> object.</p>
-<div id="c92469dd" class="cell" data-execution_count="9">
+<p>Awesome! we have confirmed the example_text.</p>
+<p>Now, we will pass this example sentence to the spacy model and parse the sentence.</p>
+<p>The result is then stored in an object <code>doc</code>.</p>
+<div id="ede3993c" class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> doc:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(token)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># this line parses the example sentence.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(example_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hi
-.
-This
-is
-my
-first
-awesome
-sentence
-to
-analyze
-.</code></pre>
 </div>
+<p>Alright then. We have parsed the first example sentence! Let us verify the parse result next.</p>
+<section id="printing-the-result-of-analysis." class="level2">
+<h2 class="anchored" data-anchor-id="printing-the-result-of-analysis.">Printing the result of analysis.</h2>
+<p>Now that we have parsed sentence called <code>doc</code> let’s verify the content.</p>
+<p><code>doc</code> contains multiple <code>token</code>s. this token object has parsed information.</p>
+<p>We can iterate through the doc to return token.</p>
+<div id="c92469dd" class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> doc: <span class="co">#iterate through doc</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(token) <span class="co"># print token</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
+<p>Okay…? we just print it vertical?</p>
 </section>
 <section id="print-lemmatized-form" class="level2">
 <h2 class="anchored" data-anchor-id="print-lemmatized-form">Print lemmatized form</h2>
+<p>Let’s do more.</p>
 <p>You can print lemmatized form by <code>token.lemma_</code> (do not forget <code>_</code> at the end.)</p>
-<div id="da99ecdd" class="cell" data-execution_count="8">
+<div id="da99ecdd" class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lemmatize</span></span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print lemmatized form next to text.</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> doc:</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(token.text, token.lemma_, sep<span class="op">=</span><span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hi  hi
-.   .
-This    this
-is  be
-my  my
-first   first
-awesome awesome
-sentence    sentence
-to  to
-analyze analyze
-.   .</code></pre>
-</div>
 </div>
 </section>
 <section id="print-part-of-speech-information" class="level2">
 <h2 class="anchored" data-anchor-id="print-part-of-speech-information">Print Part of Speech information</h2>
 <p>You can add more information, such as <code>pos_</code></p>
-<div id="996190cb" class="cell" data-execution_count="7">
+<div id="996190cb" class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> doc:</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(token.text, token.pos_, token.tag_, sep<span class="op">=</span><span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> doc:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(token.text, token.pos_, sep<span class="op">=</span><span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hi  INTJ    UH
-.   PUNCT   .
-This    PRON    DT
-is  AUX VBZ
-my  PRON    PRP$
-first   ADJ JJ
-awesome ADJ JJ
-sentence    NOUN    NN
-to  PART    TO
-analyze VERB    VB
-.   PUNCT   .</code></pre>
 </div>
-</div>
+</section>
+<section id="your-turn-print-lemma-pos-and-tag-next-to-token." class="level2">
+<h2 class="anchored" data-anchor-id="your-turn-print-lemma-pos-and-tag-next-to-token.">Your turn: Print lemma, pos and tag next to token.</h2>
 </section>
 <section id="spacy-token-information" class="level2">
 <h2 class="anchored" data-anchor-id="spacy-token-information">spaCy token information</h2>
@@ -422,6 +413,45 @@ analyze VERB    VB
 </tr>
 </tbody>
 </table>
+<div id="655ead17" class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> doc:</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span> <span class="co"># replace this with correct print statement.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="define-a-function-to-print-token-information-to-reuse-it-later" class="level1">
+<h1>Define a function to print token information to reuse it later</h1>
+<p>Now we have learned how to iterate through the parsed doc and print token information.</p>
+<p>We now also feel like it’s not efficient to write the same code.</p>
+<p>Now it’s time to define a function to do the same and reuse it.</p>
+<p>Essentially, what I want here is the following:</p>
+<ul>
+<li>I want to pass example sentence as input</li>
+<li>the code should pass that to spacy and parse</li>
+<li>the code should then print information for each token.</li>
+</ul>
+<div id="f9a91814" class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parse_and_print(text: <span class="bu">str</span>):</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    doc <span class="op">=</span> nlp(text)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> token <span class="kw">in</span> doc:</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(token.text, token.lemma_, token.pos_, token.dep_, token.head.i, sep<span class="op">=</span><span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="2858c3b7" class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>parse_and_print(<span class="st">"This is an example sentence"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>You can now try more examples by using <code>parse_and_print()</code></p>
+<p>Try a few sentence below: - I love beef tongue. - The cat sleeps on the mat. - She quickly reads interesting books.</p>
+<p>You can add <code>code blocks</code> and write <code>parse_and_print()</code> with actual sentences inside.</p>
+<p>Congratulations!!! You are now able to parse the sentence with spacy and print the information!!!</p>
 
 
 </section>

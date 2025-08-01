@@ -1,0 +1,11 @@
+tokens
+
+i_fw
+have_fw
+learn_cw_vb
+
+types
+
+have_fw
+learn_cw_vb
+i_fw

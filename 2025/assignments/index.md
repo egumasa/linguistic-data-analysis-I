@@ -11,26 +11,26 @@ This section contains all course assignments and the final project.
 
 ## Assignments
 
-- [Hands-on Assignment 1](hands-on-1/)
-- [Hands-on Assignment 2](hands-on-2/)
-- [Hands-on Assignment 3](hands-on-3/)
-- [Hands-on Assignment 4](hands-on-4/)
+- [Corpus Lab 1](hands-on-1/)
+- [Corpus Lab 2](hands-on-2/)
+- [Corpus Lab 3](hands-on-3/)
+- [Corpus Lab 4](hands-on-4/)
 - [Final Project](final-project/)
 
 
 
 # Grading systems
 
-## Hands-on activities
+## Corpus Lab
 
-Each of the four hands-on assignments are evaluated by two criteria: **Submission** and **Quality**.
+Each of the four Corpus Lab assignments are evaluated by two criteria: **Submission** and **Quality**.
 
 | Grading Criteria | Details | Score |
 |---------|---------|---------| 
 | Submission on time | The first submission is recieved in time. | 3 points |
 | Quality | The submission meets criteria. **You can resubmit your work by resubmission deadlines.** | 4 points × 3 questions |
 
-## Hands-on activity grading rubrics
+## Corpus Lab activity grading rubrics
 
 | Score | Descriptor |
 |---|-----------------|

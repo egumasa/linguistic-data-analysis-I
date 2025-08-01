@@ -1,0 +1,15 @@
+tokens
+
+a_fw
+Torah_cw_nn
+be_fw
+very_fw
+special_cw
+
+types
+
+Torah_cw_nn
+be_fw
+a_fw
+very_fw
+special_cw

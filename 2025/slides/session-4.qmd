@@ -4,30 +4,6 @@ format: revealjs
 metadata-files:
   - _slides.yml
   - ../../_metadata.yml
-  # html:
-  #   theme: 
-  #     - litera
-  #     - ../../css/style.scss
-  #   toc: true
-  #   toc-depth: 3
-  #   toc-location: left
-  #   toc-title: "Contents"
-  #   number-sections: true
-  #   embed-resources: true
-  #   standalone: true
-  #   code-fold: true
-  #   code-summary: "Show code"
-  #   code-tools: true
-  #   smooth-scroll: true
-  #   link-external-icon: true
-  #   link-external-newwindow: true
-  #   date-format: "MMMM D, YYYY"
-  #   css-min: true
-  #   html-math-method: katex
-  #   highlight-style: github
-  #   anchor-sections: true
-  #   fig-cap-location: bottom
-  #   tbl-cap-location: top
 ---
 
 # Housekeeping

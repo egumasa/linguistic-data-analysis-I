@@ -13,77 +13,214 @@ metadata-files:
 
 # Session overview
 
- 
-## 🎯 Learning Objectives
-
-> By the end of this session, students will be able to:
-> 
-> - Conduct KWIC searches on [English-Corpora.org](https://www.english-corpora.org/)
-> - Sort KWIC search results to obtain qualitative observation about language use
-> - Use advanced search strings such as regular expression to fine-tune the search results
+1. Corpus lab assignment overview
+2. Corpus Research Cycle (Cont'd)
+   1. Operationalization
+   2. Testing
+   3. Interpretation
 
 ---
+
+# Corpus lab 1
+
+## Goals and Overview 
+
+This assignment aims to help you practice the following skills:
+
+- Articulating linguistic research questions for corpus-driven research
+- Explaining corpus choices and analysis approach for basic corpus search
+- Interpreting and describing the basic concordance search results
+
+## Goals and overview
+
+- **Task 1**: Constructing corpus-search research question and hypothesis
+- **Task 2**: Methods
+- **Task 3**: Result
+
+## Task 1: Research question and hypothesis
+
+In this task, you are asked to articulate your research question and hypothesis for your first corpus assignment. 
+
+### Research question:
+
+- Research questions should be answerable. 
+- Write one (or two related) research questions you would like to answer through this assignment.
+
+## Task 1: Research question and hypothesis
+
+### Hypothesis:
+
+- Once you decided on research question, state your hypothesis.
+- Write a short paragraph stating your hypothesis and why you think your research hypotheses may be true.
+
+## Task 2: Methods
+
+In this task, you are asked to describe the methods choice of your corpus search. This should include justifications for the corpora used, type of corpus search used.
+
+### Corpora
+
+- Which corpora or sub-section of a corpus would you conduct a search on? Why? Justify your choice in a paragraph.
+
+## Task 2: Methods (cont'd)
+
+### Search Methods and Plan
+
+- What corpus search methods would you choose and why? In this assignment, search methods mainly include methods available through English-Corpora.org, including `LIST`, `Chart`, `Collocates`, `Compare` and `KWIC`. 
+- In what way are you planning to conduct the search and what kind of information are you expecting from it?
  
-## Task A - Simple word search
+
+## Task 3: Result
+
+In this part of the assignment, you are asked to describe the search results and provide interpretations on the findings.
+
+- **Corpus search results**: Provide some numbers or discourse samples based on your corpus search. This can be frequency list, table with frequency counts, or a copy of KWIC results.
+
+- **Interpretation**: Write a paragraph, providing some interpretations of your findings.
+
+
+## Submission
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes one or two research questions
+- [ ] articulates hypotheses
+- [ ] include a list of corpora used 
+- [ ] justifies the selection of corpus 
+- [ ] outlines the search plan (key phrase, regular expression, sorting, filtering, etc.)
+- [ ] includes results of your search
+- [ ] provides interpretation of the findings.
+
+::: 
+
+
+--- 
+
+
+## Recap: The Scientific Research Cycle
+
+Remember from Session 2:
+
+1. [x] Verbalize your wonder
+2. [x] Formulate research questions  
+3. [x] Formulate hypothesis
+4. [x] Choose appropriate corpus
+5. **→ Operationalize** 
+6. **→ Test & Evaluate** 
+
+
+# Part 2: Operationalizing Your Search
+
+## What does "operationalize" mean?
+
+- Defining exactly WHAT to search
+- Deciding HOW to search it
+- Being explicit about your choices
+
+::: {.callout-note}
+### Measure of height
+- How to operationalize "height"?
+  - Meter? Feet?
+:::
+
+
+# Task A - Simple word search
 
 ## First corpus search
 
-- Let's start our journey.
+- Let's operationalize a foundational concept in linguistic research, word.
 
-- First of all, let's search the following word in COCA.
+- **Concept to operationalize**: The word "run"
+  
+**What is possible operationalization?**
 
-  - run
+That is, what search term would you like to enter below?
 
-## Result of run
-
-* You might get slightly different results.
-
-
-![Search - run](../../assets/session-3/simple-search-run.png)
+![Search field](../../assets/session-3/search-box.png)
 
 
+## Result of the search with `run`
+
+- Yes, you now get the frequency result (= `264014`).
+- You might get slightly different results.
+
+![Search - run](../../assets/session-3/simple-run.png)
+
+
+## Let's look at the context
+
+- Wait a minute... where is `runs`, `ran`, and `running`?
+![`run` in context](../../assets/session-3/run-context.gif)
+
+## Thinking about the operationalization
+
+- Now we recognized that the word `run` was just one of the possible forms of the *headword* run.
+
+- If we were thinking to retrieve all the occurence of the word "run" then we were imprecise. 
+- What should we do?
+
+## Lemma
+
+- **Lemma**: A headword and all the inflected form derived from it.
+
+  RUN: 
+    - run, ran, runs, running... etc.
+
+## Refining our operationalization
+
+- **Concept**: All forms of "run"
+- **Better operationalization**: Search for LEMMA
 
 # Task A.2 - LEMMA search
 
 ## LEMMA search
 
-- Lemma is a group of word form for the headword with grammatical inflection.
 - You can search LEMMA in English-Corpora.org through Capital letters.
 - The search methods will depend on the corpus tool you use.
 
 ## LEMMA search
 
-![Search - consider](../../assets/session-3/lemma-consider.png)
+![Searching lemma - run](../../assets/session-3/run-lemma.png)
+
+## LEMMA search result - run
+
+![Search result](../../assets/session-3/run-lemma-result.png)
 
 
 ## Task A.2 - POS search
 
-## Specifying Part Of Speech (POS)
+Now you might wonder:
 
-- When you want to specify POS, you will need to add the following tags.
+- **Research question**: "How often is 'run' used as a noun vs. verb?"
 
-
-| Category | Simple tag | Symbol | Example |
-|----|----|----|----|
-| Common noun   | NOUN | N | sun |
-| Proper Nouns  | NAME | NP | Sendai |
-| All nouns  | NOUN+ | N+ | sun, Sendai |
-| Lexical verbs | VERB | V | run |
-| All verbs | VERB+ | V | run, do |
+→ This is even more precise operationalization of word by its grammatical category.
 
 ## Specifying Part Of Speech (POS)
 
+- You can use POS tag like the following 
 
 | Category | Simple tag | Symbol | Example |
 |----|----|----|----|
-| Adjectives | ADJ | J | simple |
-| Adverbs | ADV | R | clear |
-| Preposition | PREP | - | in |
-| Articles | ART | - | her | 
-| Determiners | DET | - | these |
-| Conjunctions | CONJ | - | these |
-| Conjunctions | CONJ | - | these |
+| Common noun   | NOUN | N | `run_NOUN` |
+| Proper Nouns  | NAME | NP | `Sendai_NAME` |
+| All nouns  | NOUN+ | N+ | `sun_NOUN+`, `Sendai_NOUN+` |
+| Lexical verbs | VERB | V | `run_VERB` |
+| All verbs | VERB+ | V | `run_VERB+`, `do_VERB+` |
 
+## Specifying Part Of Speech (POS)
+
+| Category | Simple tag | Symbol | Example |
+|----|----|----|----|
+| Adjectives | ADJ | J | `simple_ADJ` |
+| Adverbs | ADV | R | `clear_ADV` |
+| Preposition | PREP | - | `in_PREP` |
+| Articles | ART | - | `her_ART` | 
+| Determiners | DET | - | `these_DET` |
+| Conjunctions | CONJ | - | `because_CONJ` |
+
+See [this page for more information of POS in English-Corpora.org]()
 
 ## the word `run` used as noun
 
@@ -91,19 +228,26 @@ metadata-files:
   
 ## the word `run` used as noun
 
-- Search occurrences of `run` that are used as nouns.
-  
+Search: `run_NOUN`
+
 ![run - as noun](../../assets/session-3/run-noun.png)
+  
+
+## Your turn: Operationalize these concepts
+
+1. All forms of the adjective "exciting"
+2. The word "chair" as a noun only
 
 
 # Task B - Basic KWIC
 
 ## Concordances (or KWIC)
 
-- Now you know how many times XX occurs in COCA, you want to see the context in which XX occur.
+- Now we know frequency of X in COCA, but what about context?
 
-- This goal can be accomplished with KWIC search. 
+**KWIC** = Key Word In Context
 
+KWIC will give us insights into how each word is used in context.
 
 ## KWIC view 
 
@@ -137,6 +281,12 @@ You can sort the words.
 
 ![KWIC search](../../assets/session-3/KWIC-sorting.gif)
 
+## Sorting to find patterns
+
+Sorting helps identify:
+- Common phrases
+- Grammatical patterns  
+- Semantic preferences
 
 ## Let's Try: KWIC
 
@@ -153,15 +303,27 @@ You can sort the words.
 
 ![KWIC search](../../assets/session-3/sorting-options.gif)
 
+## Practice: Finding patterns
 
-# Task C - Chart function
+Search "XXXX" (lemma) and sort by:
+1. R1 (what follows "XXXX"?)
+2. L1 (what precedes "XXXX"?)
+
+What patterns do you notice?
+
+
+# Task C 
+
+**Research question**: How does frequency of `lol` change across time?
 
 ## Chart function
 
-- Now that we learned how to conduct concordance search, let's experiment with some `CHART` function.
+CHART shows frequency across:
+- Genres
+- Time periods
+- Text types
 
 - This allows you to return frequency by sections of of COCA (= conditional frequency).
-
 
 ## Search `lol` using CHART
 
@@ -171,11 +333,30 @@ You can sort the words.
 ## Search `lol` using CHART
 
 - You will get the following:
+- What do you notice here?
 
 ![Search - lol](../../assets/session-3/lol_overview.png)
 
+## Interpreting the distribution
 
-# Task D - Basic Regular Expressions
+What does this tell us about "lol"?
+- Genre preferences?
+- Formality levels?
+- Change over time?
+
+- Describe the frequency pattern looking at `PER MIL` row.
+
+## Summary
+
+CHART function can be used to get frequency across:
+- Genres
+- Time periods
+- Text types
+
+# Task D 
+
+**Research question**: What is most frequent word that ends with derivational mopheme `-ness`?
+
 
 ## Regular expressions
 
@@ -185,7 +366,18 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 - This is one of the regular expression (= wild card)
 
 
-## Using wild card in search
+## Using regular expression to get words with specific morpheme
+
+Any idea for operationalizing derivational morphemes?
+
+- **Operationalization**: `*ness`
+
+## Results of `*ness`
+
+![Search results *ness](../../assets/session-3/ness-derivation.png)
+
+
+## Using wild card for lexicalized pattern
 
 - Let's go back to `List` search.
 - Enter "a * of the"
@@ -197,16 +389,22 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 
 - ![a * of the](../../assets/session-3/search-with-wild-card.png)
 
-## More search methods
+This helps find:
+- Fixed phrases with variable slots
+- Grammatical frames
+- Idiomatic expressions
 
+## More search methods
 
 - You can check how to use other search methods in English-Corpora.org 
   [here](https://www.english-corpora.org/help/word-phrase.asp)
 
 
-## Examples
+## More complex searches
 
-- Which of the following adjectives are more frequent — `exciting` or `excited`? 
+Which is more frequent?
+- `exciting` or `excited`?
+
 - Is there any reletitive phrase with three adjectives?
 
 ## ADJ x 3
@@ -215,16 +413,9 @@ Regular expression (正規表現) allows you to search corpus through "pattern m
 
 - *Note*: Sometimes the search results will contain parsing errors. (We will come back to this topic on Day 4.)
 
-## Constructing questions
-
-Are there any questions you would like to conduct?
-
-
 ---
 
-# Supplementary (If there is still time ...)
-
-# Task E - Collocation
+# Task E - Collocation (Skip if no time)
 
 ## Collocation search
 
@@ -257,3 +448,91 @@ Are there any questions you would like to conduct?
 
 ![window](../../assets/session-3/collocation-search.png)
 
+
+---
+
+# Bringing It All Together: Corpus Lab 1
+
+## Your Assignment Structure
+
+1. **Research Question & Hypothesis** (Sessions 1-2)
+2. **Methods** (Session 2-3)
+   - Choose corpus
+   - Operationalize search methods and terms
+3. **Results** (Session 3)
+   - Conduct searches
+   - Interpret findings
+
+
+## Research question:
+- Should be answerable with corpus data
+- Focus on distribution/frequency/context
+
+## Hypothesis:
+- Make a prediction 
+- Explain your reasoning using the template we have used
+
+
+## Task 2: Methods
+
+### Corpus Selection
+- Which corpus/corpora?
+- Why did you choose it/them?
+- What does it allow you to test?
+
+### Search Plan
+- How will you operationalize your concepts?
+- LIST, CHART, KWIC, or combination?
+- Any special search syntax needed?
+
+## Task 3: Results
+
+### Present your findings:
+- Frequency tables
+- KWIC samples
+- Distribution charts
+
+### Interpret the patterns:
+- What do the numbers mean?
+- What do the contexts reveal?
+- Does this support your hypothesis?
+
+
+## Submission
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes one or two research questions
+- [ ] articulates hypotheses
+- [ ] include a list of corpora used 
+- [ ] justifies the selection of corpus 
+- [ ] outlines the search plan (key phrase, regular expression, sorting, filtering, etc.)
+- [ ] includes results of your search
+- [ ] provides interpretation of the findings.
+
+::: 
+
+
+## Start thinking now!
+
+What patterns in English interest you?
+
+Consider:
+- Words that seem to be changing
+- Regional differences
+- Formal vs. informal patterns
+- New expressions
+- Grammar variations
+
+# Summary
+
+## Today's achievement
+
+-  Operationalize linguistic concepts for corpus search
+- Use different search types (word, LEMMA, POS)
+- Analyze patterns through KWIC
+- Evaluate distributions with CHART
+- Apply the full research cycle

@@ -191,11 +191,68 @@ Try filling in the gap in the following table.
 | 6 | . | punct | 3 |
 
 
+# Using dependency parsers to identify grammatical dependency
+
+## About Google Colab (5 mins)
+
+- 
+
+## Python basics (15 mins)
+
+## First text analysis
+
+1. First thing is to load the package.
+
+```python
+import spacy
+nlp = spacy.load("en_core_web_sm")
+
+```
+
+2. Then you will define a variable `example_text`
+
+```python
+example_text = "Hi. This is my first awesome sentence to analyze."
+```
+
+3. Analyze this using spacy
+
+```python
+doc = nlp(example_text)
+```
+
+## Result of your first text analysis
+
+
+4. Let's print analysis results
+
+```python
+for token in doc:
+    print(token.text, token.pos_, token.tag_, sep="\t")
+```
+
+
 ## Let's parse the sentence.
 
 - Visit our [webapp](https://huggingface.co/spaces/egumasa/simple-text-analyzer) 
 
 - Try the sentences above and analyze their dependencies 
+
+
+## In what way are these sentence complex?
+
+Describe complexification strategies:
+
+- She hopes to join an international research team after graduation.
+- Experts agree that collaboration improves problem-solving efficiency.
+- Students often struggle because they lack sufficient guidance.
+- He succeeded in the most demanding and competitive program at the university.
+- The growing influence of social media on youth behavior is concerning.
+- Policies that encourage innovation are essential for economic growth.
+
+
+## Now try your own examples
+
 
 ## Questions?
 

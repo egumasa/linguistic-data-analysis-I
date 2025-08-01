@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -148,7 +148,12 @@ Masaki EGUCHI, Ph.D.
 <section>
 <section id="session-overview" class="title-slide slide level1 center">
 <h1>Session overview</h1>
-
+<p>We will talk about:</p>
+<ul>
+<li>Why we bother the corpus data?</li>
+<li>What it can tell us?</li>
+<li>How can we describe corpus as a scientific method</li>
+</ul>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>🎯 Learning Objectives</h2>
@@ -167,78 +172,954 @@ Masaki EGUCHI, Ph.D.
 
 </section></section>
 <section>
-<section id="what-corpus-is" class="title-slide slide level1 center">
-<h1>What corpus is</h1>
+<section id="recap" class="title-slide slide level1 center">
+<h1>Recap</h1>
+
+</section>
+<section id="corpus-linguistics" class="slide level2">
+<h2>Corpus linguistics =</h2>
 <ul>
-<li>Searchable digital collection</li>
-<li>Collection of real-world language use</li>
-<li>Often accompanied by meta-data describing the contextual parameters</li>
+<li>the investigation of <strong>linguistic research question</strong></li>
+<li>that have been framed <em>in terms of <strong>the conditional distribution of linguisitc phenomena</strong></em></li>
+<li>in a <em><strong>linguistic corpus</strong></em>.</li>
 </ul>
+<p>(Stefanowitsch, 2020, p.&nbsp;56)</p>
+</section>
+<section id="a-linguistic-corpus-recap" class="slide level2">
+<h2>A linguistic Corpus (Recap)</h2>
+<p>A linguistic corpus is:</p>
+<ul>
+<li>searchable digital collection of</li>
+<li>real-world language use</li>
+<li>often accompanied by meta-data describing the contextual parameters</li>
+</ul>
+<p>→ A corpus documents “recorded observation of language behavior”</p>
+</section></section>
+<section>
+<section id="why-we-bother-with-corpus" class="title-slide slide level1 center">
+<h1>Why we bother with corpus?</h1>
+<p>when we can ask native speakers?</p>
+</section>
+<section id="common-criticism-to-corpus-linguistics" class="slide level2">
+<h2>Common criticism to corpus linguistics</h2>
+<ol type="1">
+<li>Corpus documents performance not competence</li>
+<li>Corpus is incomplete</li>
+<li>It provides language forms but not meaning</li>
+<li>Corpus does not give negative evidence</li>
+</ol>
+<p>→ First two points are worth elaborating.</p>
+</section>
+<section id="some-researchers-particulary-generative-linguists-say" class="slide level2">
+<h2>Some researchers (particulary generative linguists) say…</h2>
+<ol type="1">
+<li>Corpus may not tell us about “competence”</li>
+</ol>
+<ul>
+<li>There is an assumption that “competence” (Language Acquisition Device) exists</li>
+<li>Performance data is too noisy to get to the actual competence</li>
+</ul>
+</section>
+<section id="some-researchers-particulary-generative-linguists-say-1" class="slide level2">
+<h2>Some researchers (particulary generative linguists) say…</h2>
+<ol start="2" type="1">
+<li>Corpus is imcomplete…</li>
+</ol>
+<ul>
+<li>because corpus size is finite we cannot really tap into what native speakers will be able to say about the language</li>
+</ul>
+<p>→ Corpus linguists <strong>respectfully</strong> disagree with these statements.</p>
+</section>
+<section id="why-cant-we-trust-our-intuition" class="slide level2">
+<h2>Why Can’t We Trust Our Intuition?</h2>
+</section>
+<section id="guess-the-frequency-test-your-intuition" class="slide level2">
+<h2>Guess the frequency! Test your intuition</h2>
+<p>Rank the following words by frequency in iWeb (14 billion word Web Corpus):</p>
+<ul>
+<li>the</li>
+<li>obvious</li>
+<li>dog</li>
+<li>absolutely</li>
+<li>meaningful</li>
+<li>chair</li>
+<li>and</li>
+</ul>
+<p>Don’t turn to next slide until you finish sorting!</p>
+</section>
+<section id="the-frequency-rank-in-iweb-corpus" class="slide level2">
+<h2>The frequency rank in iWeb corpus</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>word</th>
+<th>freq</th>
+<th>freq per million</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>the</td>
+<td>746240010</td>
+<td>53,332.79</td>
+</tr>
+<tr class="even">
+<td>and</td>
+<td>387613768</td>
+<td>27,666.94</td>
+</tr>
+<tr class="odd">
+<td>dog</td>
+<td>1447231</td>
+<td>103.30</td>
+</tr>
+<tr class="even">
+<td>absolutely</td>
+<td>1027853</td>
+<td>73.37</td>
+</tr>
+<tr class="odd">
+<td>obvious</td>
+<td>715011</td>
+<td>51.04</td>
+</tr>
+<tr class="even">
+<td>chair</td>
+<td>621975</td>
+<td>44.40</td>
+</tr>
+<tr class="odd">
+<td>meaningful</td>
+<td>297635</td>
+<td>21.24</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-your-intuition---2" class="slide level2">
+<h2>Test Your Intuition - 2</h2>
+<ul>
+<li><p>Is the following expressions grammatical? Yes or No?</p>
+<ul>
+<li>different from</li>
+<li>different than</li>
+<li>different to</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-corpus-has-to-say-about-them" class="slide level2">
+<h2>What corpus has to say about them?</h2>
+<ul>
+<li>Given this data, how would you describe the pattern?</li>
+</ul>
+
+<img data-src="../../assets/session-2/different-fromtothan.png" class="r-stretch quarto-figure-center"><p class="caption">different + from/to/than</p></section>
+<section id="your-intuition-may-have-failed-because" class="slide level2">
+<h2>Your intuition may have failed because:</h2>
+<ul>
+<li>We notice unusual things, not common ones
+<ul>
+<li>Language frequency AND our physical world are different</li>
+<li>Our intuition is also affected by our other sensory modes and cognitive mechanisms</li>
+</ul></li>
+</ul>
+</section>
+<section id="reliability-of-intuited-data" class="slide level2">
+<h2>Reliability of intuited “data”</h2>
+<ul>
+<li>Intuited data is vulnerable
+<ul>
+<li>No one experienced every linguistic varieties spoken in the world.</li>
+<li>The cognitive process to judge grammaticality will be different from usual language processing interpreting the “meaning”.</li>
+</ul></li>
+</ul>
+</section>
+<section id="it-doesnt-matter-the-n" class="slide level2">
+<h2>It doesn’t matter the N</h2>
+<ul>
+<li>I searched this construction over News on the web (NOW) corpus which is 22.5 billion+ corpus across 20 countries.</li>
+<li>It is not actually exclusive to the British construction.</li>
+</ul>
+<p><img data-src="../../assets/session-2/it-doesnt-matter-the.png" alt="Frequency of the construction"> See the result <a href="https://www.english-corpora.org/now/?c=now&amp;q=126887345">here</a></p>
+</section>
+<section id="limitations-of-corpus" class="slide level2">
+<h2>Limitations of corpus</h2>
+<ul>
+<li>corpus is incomplete; impossible to reflect all the linguistic variations.</li>
+<li>provides distributional information, but not interpretation</li>
+<li>limited contextual information</li>
+<li>does not tell us about language processing</li>
+</ul>
+<p>Corpus has to be selected in relation to the purpose of the study</p>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li>Corpus can provide information about how people are actually using the language</li>
+<li>May not be complete; but big enough to tell us something more than a small group of individuals can say about the language use
+<ul>
+<li>Prescriptive vs Descriptive</li>
+</ul></li>
+<li>Corpus also has limitation
+<ul>
+<li>Corpus is finite</li>
+<li>Corpus data needs to be interpreted (but better than intuiting).</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="any-questions" class="title-slide slide level1 center">
+<h1>Any questions?</h1>
+
 </section>
 <section class="slide level2">
 
 </section></section>
 <section>
-<section id="common-criticism-to-corpus-linguistics" class="title-slide slide level1 center">
-<h1>Common criticism to corpus linguistics</h1>
+<section id="part-2-corpus-linguistics-as-a-scientific-method" class="title-slide slide level1 center">
+<h1>Part 2: Corpus linguistics as a scientific method</h1>
 
 </section>
-<section id="common-criticism" class="slide level2">
-<h2>Common criticism</h2>
+<section id="what-do-you-think-is-important-in-scientific-process" class="slide level2">
+<h2>What do you think is important in scientific process?</h2>
+<ul>
+<li>So far we have talked about how corpus can be useful as a method of inquiry.</li>
+<li>We have not talked about how corpus can be integrated in the research process.</li>
+</ul>
+<p>→ Let’s talk about general research cycle then we will go over with corpus examples.</p>
+</section>
+<section id="scientific-research-cycle" class="slide level2">
+<h2>Scientific research cycle</h2>
+
+<img data-src="../../assets/session-2/research-process.png" class="r-stretch quarto-figure-center"><p class="caption">Research Process</p></section>
+<section id="lets-do-it-together" class="slide level2">
+<h2>Let’s do it together</h2>
 <ol type="1">
-<li>corpora are usage data and thus of no use in studying linguistic knowledge;<br>
-</li>
-<li>corpora and the data derived from them are necessarily incomplete;</li>
-<li>corpora contain only linguistic forms (represented as graphemic strings), but no information about the semantics, pragmatics, etc. of these forms; and<br>
-</li>
-<li>corpora do not contain negative evidence, i.e., they can only tell us what is possible in a given language, but not what is not possible.</li>
+<li>Verbalize your initial questions</li>
+<li>Formulate research questions</li>
+<li>Formulate research hypothesis</li>
+<li>Operationalize - defining the construct so we can measure</li>
+<li>Test it</li>
+<li>Evaluate the hypothesis</li>
 </ol>
 </section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
+<section id="step-1-starting-from-question-or-curiosity" class="slide level2">
+<h2>Step 1: Starting from question or curiosity</h2>
+<p>Research is mostly driven by curiosity.</p>
 <ul>
-<li>Intuition data is not as reliable or valid as corpus data.</li>
-<li>However, intuition can provide a hypothesis to test</li>
+<li>Is “sort of” used exclusively in spoken discourse? If not what written genre might include this?</li>
+<li>What adjectives are commonly used to modify “stair”?</li>
+<li>Where is the contraction form “gonna” more likely to be used in English?</li>
 </ul>
+</section>
+<section id="your-turn" class="slide level2">
+<h2>Your turn</h2>
+<ul>
+<li>In pair, exchange what you’ve wondered about the English language use in context.
+<ul>
+<li>Focus on vocabulary, grammar, and possibly discourse</li>
+<li>We cannot unfortunately look at phonetics/phonology in this class…</li>
+</ul></li>
+<li>After sharing your curiosity, we will then use that to frame the research question.</li>
+</ul>
+</section>
+<section id="step-2-turning-curiosity-into-research-question" class="slide level2">
+<h2>Step 2: Turning curiosity into research question</h2>
+<p>A research question often involves <strong>relations</strong> between two or more <strong>constructs</strong>.</p>
+</section>
+<section id="what-are-constructs" class="slide level2">
+<h2>What are constructs?</h2>
+<ul>
+<li><p>Constructs are simply theoretical concepts we are interested in researching.</p></li>
+<li><p>Linguistic constructs</p>
+<ul>
+<li>Words, Grammar, etc.</li>
+</ul></li>
+<li><p>Extra-linguistic constructs</p>
+<ul>
+<li>TIME</li>
+<li>REGION</li>
+<li>GENRE</li>
+<li>PROFICIENCY LEVEL</li>
+</ul></li>
+</ul>
+</section>
+<section id="research-question-templates" class="slide level2">
+<h2>Research question templates</h2>
+<p>In corpus-driven linguistic research, we tend to ask following questions:</p>
+<ul>
+<li>How does the frequency of word X change over time?</li>
+<li>How does the frequency of word X differ across text types Z?</li>
+<li>What is the frequency distribution of grammatical pattern X across different text types?</li>
+<li>What are the typical contexts in which expression X appears based on concordance analysis?</li>
+<li>How do different varieties of language Y (e.g., British vs.&nbsp;American English) differ in frequency and contexts of feature X?</li>
+<li>How does register (formal/informal) affect both the frequency and typical contexts of linguistic feature X?</li>
+</ul>
+</section>
+<section id="your-turn-1" class="slide level2">
+<h2>Your turn:</h2>
+<ul>
+<li>In the same pair, try turning your curiosity into formalized research question.</li>
+<li>Share the research questions to class.</li>
+</ul>
+</section>
+<section id="step-3-turning-question-into-hypothesis" class="slide level2">
+<h2>Step 3: Turning question into hypothesis</h2>
+<p><strong>Research Q</strong>: “Is the expression ‘gonna’ more frequent in informal genres?”</p>
+<p><strong>Hypothesis</strong>: “I expect ‘gonna’ to occur more frequently in TV/Movie subtitles than in Magazine texts because…”</p>
+</section>
+<section id="your-turn---writing-hypothesis" class="slide level2">
+<h2>Your turn - Writing hypothesis</h2>
+<p>In the same pair, you will be writing your hypothesis.</p>
+<p><strong>Template</strong>: “I expect [specific pattern] because [reasoning based on experience/knowledge]”</p>
+</section>
+<section id="step-4-choosing-a-corpus-based-on-your-research-question-and-hypothesis" class="slide level2">
+<h2>Step 4: Choosing a corpus based on your research question and hypothesis</h2>
+<p>How can I select the one for my research?</p>
+</section>
+<section id="three-key-properties-of-corpus" class="slide level2">
+<h2>Three key properties of corpus</h2>
+<ol type="1">
+<li><strong>Authentic</strong>:
+<ul>
+<li>Corpus reflects real-language use</li>
+</ul></li>
+<li><strong>Representative</strong>:
+<ul>
+<li>Corpus should be sampled to reflect some portion of language use.</li>
+</ul></li>
+<li><strong>Large</strong>:
+<ul>
+<li>Corpus should be in sufficient size to allow investigation</li>
+</ul></li>
+</ol>
+</section>
+<section id="authenticity" class="slide level2">
+<h2>Authenticity</h2>
+<ul>
+<li>It has to be authentic language use (= language used for real communication)
+<ul>
+<li>No invented sentences</li>
+<li>No fake data or simulation</li>
+</ul></li>
+<li><strong>BUT</strong>… Debate on authenticity
+<ul>
+<li>How about elicited data?</li>
+<li>Particularly relevant to learner corpora
+<ul>
+<li>Timed essay writing for English exam</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="representativeness" class="slide level2">
+<h2>Representativeness</h2>
+<ul>
+<li>How do researchers try to take representative sample of language use?</li>
+<li>What makes a corpus representative?</li>
+</ul>
+</section>
+<section id="representative-in-relation-to-your-purpose" class="slide level2">
+<h2>Representative in relation to your purpose</h2>
+<ul>
+<li>Representativeness is evaluated based on
+<ul>
+<li>coverage of important situational variables</li>
+<li>relative size in the corpus (balances)</li>
+</ul></li>
+<li>Think of a stratified random sampling approach</li>
+</ul>
+</section>
+<section id="describing-situational-variables" class="slide level2">
+<h2>Describing situational variables</h2>
+<p>Discuss in pair/group:</p>
+<p>If you were to create following corpus, what should you include in your corpus? Choose one and brainstorm the data sources you need to collect.</p>
+<ul>
+<li>how English is currently used in the US</li>
+<li>how English/Japanese is used in US/Japanese universities</li>
+<li>how certain dialect changes overtime</li>
+</ul>
+</section>
+<section id="corpus-of-contemporary-american-coca" class="slide level2">
+<h2>Corpus Of Contemporary American (COCA)</h2>
+<div style="font-size: 50%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Genre</th>
+<th># texts</th>
+<th># words</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Spoken</td>
+<td>44,803</td>
+<td>127,396,932</td>
+<td>Transcripts of unscripted conversation from more than 150 different TV and radio programs (examples: All Things Considered (NPR), Newshour (PBS), Good Morning America (ABC), Oprah)</td>
+</tr>
+<tr class="even">
+<td>Fiction</td>
+<td>25,992</td>
+<td>119,505,305</td>
+<td>Short stories and plays from literary magazines, children’s magazines, popular magazines, first chapters of first edition books 1990-present, and fan fiction.</td>
+</tr>
+<tr class="odd">
+<td>Magazines</td>
+<td>86,292</td>
+<td>127,352,030</td>
+<td>Nearly 100 different magazines, with a good mix between specific domains like news, health, home and gardening, women, financial, religion, sports, etc.</td>
+</tr>
+<tr class="even">
+<td>Newspapers</td>
+<td>90,243</td>
+<td>122,958,016</td>
+<td>Newspapers from across the US, including: USA Today, New York Times, Atlanta Journal Constitution, San Francisco Chronicle, etc. Good mix between different sections of the newspaper, such as local news, opinion, sports, financial, etc.</td>
+</tr>
+<tr class="odd">
+<td>Academic</td>
+<td>26,137</td>
+<td>120,988,361</td>
+<td>More than 200 different peer-reviewed journals. These cover the full range of academic disciplines, with a good balance among education, social sciences, history, humanities, law, medicine, philosophy/religion, science/technology, and business</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="corpus-of-contemporary-american-coca-1" class="slide level2">
+<h2>Corpus of Contemporary American (COCA)</h2>
+<div style="font-size: 50%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Genre</th>
+<th># texts</th>
+<th># words</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Web (Genl)</td>
+<td>88,989</td>
+<td>129,899,427</td>
+<td>Classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages (by Serge Sharoff). Taken from the US portion of the GloWbE corpus.</td>
+</tr>
+<tr class="even">
+<td>Web (Blog)</td>
+<td>98,748</td>
+<td>125,496,216</td>
+<td>Texts that were classified by Google as being blogs. Further classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages. Taken from the US portion of the GloWbE corpus.</td>
+</tr>
+<tr class="odd">
+<td>TV/Movies</td>
+<td>23,975</td>
+<td>129,293,467</td>
+<td>Subtitles from OpenSubtitles.org, and later the TV and Movies corpora. Studies have shown that the language from these shows and movies is even more colloquial / core than the data in actual “spoken corpora”.</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>485,179</strong></td>
+<td><strong>1,002,889,754</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="https://www.english-corpora.org/coca/help/coca2020_overview.pdf">see more details</a></li>
+</ul>
+</div>
+</section>
+<section id="british-academic-written-english-alsop-nesi-2009" class="slide level2">
+<h2>British Academic Written English (Alsop &amp; Nesi, 2009)</h2>
+<p>A excellent example of a specialized corpus.</p>
+<ul>
+<li>A corpus documenting about 2,700 university written assignments in the U.K.</li>
+<li>30 disiplines, 13 genre families</li>
+<li>Four course levels (freshman to MA level)</li>
+<li>Both Distinction (A) and Merit (B)</li>
+</ul>
+</section>
+<section id="bawe-disciplinary-group" class="slide level2">
+<h2>BAWE disciplinary group</h2>
+<div style="font-size: 50%;">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 24%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Disciplinary group</th>
+<th>Disciplines</th>
+<th style="text-align: center;">Level 1</th>
+<th style="text-align: center;">Level 2</th>
+<th style="text-align: center;">Level 3</th>
+<th style="text-align: center;">Level 4</th>
+<th style="text-align: center;">Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arts and Humanities (AH)</td>
+<td>Linguistics, English, Philosophy, History, Classics, Archaeology, Comparative American Studies, Other</td>
+<td style="text-align: center;">231</td>
+<td style="text-align: center;">225</td>
+<td style="text-align: center;">160</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">693</td>
+</tr>
+<tr class="even">
+<td>Life Sciences (LS)</td>
+<td>Biology, Agriculture, Food Sciences, Psychology, Health, Medicine</td>
+<td style="text-align: center;">172</td>
+<td style="text-align: center;">183</td>
+<td style="text-align: center;">106</td>
+<td style="text-align: center;">193</td>
+<td style="text-align: center;">654</td>
+</tr>
+<tr class="odd">
+<td>Physical Sciences (PS)</td>
+<td>Engineering, Chemistry, Computer Science, Physics, Mathematics, Meteorology, Cybernetics &amp; Electronics, Planning, Architecture</td>
+<td style="text-align: center;">181</td>
+<td style="text-align: center;">146</td>
+<td style="text-align: center;">156</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">578</td>
+</tr>
+<tr class="even">
+<td>Social Sciences (SS)</td>
+<td>Business, Law, Sociology, Politics, Economics, Hospitality Leisure &amp; Tourism Management, Anthropology, Publishing</td>
+<td style="text-align: center;">203</td>
+<td style="text-align: center;">196</td>
+<td style="text-align: center;">159</td>
+<td style="text-align: center;">202</td>
+<td style="text-align: center;">760</td>
+</tr>
+<tr class="odd">
+<td><strong>Sum</strong></td>
+<td></td>
+<td style="text-align: center;"><strong>787</strong></td>
+<td style="text-align: center;"><strong>750</strong></td>
+<td style="text-align: center;"><strong>581</strong></td>
+<td style="text-align: center;"><strong>567</strong></td>
+<td style="text-align: center;"><strong>2,685</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="bawe-genre-family" class="slide level2">
+<h2>BAWE genre family</h2>
+<div style="font-size: 50%;">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 23%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Social purpose</th>
+<th>Genre family</th>
+<th style="text-align: center;">Level 1</th>
+<th style="text-align: center;">Level 2</th>
+<th style="text-align: center;">Level 3</th>
+<th style="text-align: center;">Level 4</th>
+<th style="text-align: center;">Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Demonstrating knowledge and understanding</td>
+<td>exercise</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">102</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>explanation</td>
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">185</td>
+</tr>
+<tr class="odd">
+<td>Developing powers of independent reasoning</td>
+<td>critique</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">67</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">307</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>essay</td>
+<td style="text-align: center;">398</td>
+<td style="text-align: center;">357</td>
+<td style="text-align: center;">263</td>
+<td style="text-align: center;">184</td>
+<td style="text-align: center;">1,202</td>
+</tr>
+<tr class="odd">
+<td>Building research skills</td>
+<td>literature survey</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">32</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>methodology recount</td>
+<td style="text-align: center;">106</td>
+<td style="text-align: center;">114</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">323</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>research report</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">61</td>
+</tr>
+<tr class="even">
+<td>Preparing for professional practice</td>
+<td>case study</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">188</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>design specification</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">89</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>problem question</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">37</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>proposal</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">70</td>
+</tr>
+<tr class="even">
+<td>Writing for oneself and others</td>
+<td>empathy writing</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">28</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>narrative recount</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">61</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>Sum</strong></td>
+<td style="text-align: center;"><strong>787</strong></td>
+<td style="text-align: center;"><strong>750</strong></td>
+<td style="text-align: center;"><strong>581</strong></td>
+<td style="text-align: center;"><strong>567</strong></td>
+<td style="text-align: center;"><strong>2,685</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="corpus-representativeness" class="slide level2">
+<h2>Corpus Representativeness</h2>
+<p>Multiple factors affecting linguistic variations can be used to balance corpus sampling:</p>
+<ul>
+<li><strong>Linguistic variation</strong> = “to any form of language delineable from other forms along cultural, linguistic or demographic criteria” (Stefanowitsch, 2020, p.&nbsp;28)
+<ul>
+<li><strong>genre</strong></li>
+<li><strong>register</strong></li>
+<li><strong>style</strong></li>
+</ul></li>
+</ul>
+<p>But see Biber and Conrad (2019) for different definitions of each factor.</p>
+</section>
+<section id="genre" class="slide level2">
+<h2>Genre</h2>
+<ul>
+<li>category of speech event or text defined in terms of their communicative purpose in culture
+<ul>
+<li>recipe</li>
+<li>manuals</li>
+<li>academic paper</li>
+<li>news report</li>
+<li>etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="register" class="slide level2">
+<h2>Register</h2>
+<ul>
+<li>variety in a set of linguistic features associated with a particular situation of language use.
+<ul>
+<li>register of:
+<ul>
+<li>academic paper</li>
+<li>recipe</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="style" class="slide level2">
+<h2>Style</h2>
+<ul>
+<li>Stefanowitsch defines: “the degrees of formality (e.g.&nbsp;formal, informal, colloquial, humorous)</li>
+<li>Biber &amp; Conrad (2019) linguistic variety often associated <em>within</em> a register or genre
+<ul>
+<li>due to the author, specific speech community, etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="in-case-of-learner-corpora" class="slide level2">
+<h2>In case of learner corpora</h2>
+<p>Additional variables such as:</p>
+<ul>
+<li>First language</li>
+<li>Second-language proficiency levels</li>
+<li>Their learning experiences</li>
+</ul>
+</section>
+<section id="international-corpus-network-of-asian-learner-of-english-ishikawa-2013" class="slide level2">
+<h2>International Corpus Network of Asian Learner of English (Ishikawa, 2013)</h2>
+<ul>
+<li>One of the largest learner corpora (EFL learners in Asia)</li>
+<li>Subcorpora for different modalities available
+<ul>
+<li>Monologic speech</li>
+<li>Dialogic speech</li>
+<li>Argumentative essay writing</li>
+</ul></li>
+<li>Extensive rating data is also available for subset of the data (GRA)</li>
+</ul>
+</section>
+<section id="from-question-to-corpus-choice" class="slide level2">
+<h2>From Question to Corpus Choice</h2>
+<p>Let’s say you want to investigate the following question:</p>
+<ul>
+<li>“Is ‘my bad’ more frequent in informal genres?”</li>
+</ul>
+<p><strong>What information do you need in the corpus?</strong></p>
+<p>Try giving some answers in pairs.</p>
+</section>
+<section id="typical-answer" class="slide level2">
+<h2>Typical answer</h2>
+<ul>
+<li>Has multiple genres (formal AND informal)</li>
+<li>Recent enough to include ‘my bad’</li>
+<li>Large enough to compare</li>
+</ul>
+</section>
+<section id="corpora-in-english-corpora.org" class="slide level2">
+<h2>Corpora in English-Corpora.org</h2>
+<div style="font-size:60%">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Corpus</th>
+<th style="text-align: center;">Size</th>
+<th style="text-align: center;">Regions</th>
+<th style="text-align: left;">Time</th>
+<th>Genre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/iweb/">IWEB</a></td>
+<td style="text-align: center;">13.9b</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">2017</td>
+<td>Web</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/now/">NOW</a></td>
+<td style="text-align: center;">16.2b</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: left;">2010-now</td>
+<td>Web: News</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/corona/">CORONA</a></td>
+<td style="text-align: center;">1.58b</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: left;">2020-now</td>
+<td>Web: News</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/glowbe/">GLOWBE</a></td>
+<td style="text-align: center;">1.9b</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: left;">2012-13</td>
+<td>Web/blogs</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/wiki/">WIKI</a></td>
+<td style="text-align: center;">1.9b</td>
+<td style="text-align: center;">(+)</td>
+<td style="text-align: left;">2014</td>
+<td>Wikipedia</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/coca/">COCA</a></td>
+<td style="text-align: center;">1.0b</td>
+<td style="text-align: center;">Am</td>
+<td style="text-align: left;">1990-2019</td>
+<td>Balanced</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/coha/">COHA</a></td>
+<td style="text-align: center;">400m</td>
+<td style="text-align: center;">Am</td>
+<td style="text-align: left;">1810-2009</td>
+<td>Balanced</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/tv/">TV</a></td>
+<td style="text-align: center;">325m</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">1950-2018</td>
+<td>TV shows</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/movies/">MOVIES</a></td>
+<td style="text-align: center;">200m</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">1930-2018</td>
+<td>Movies</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/soap/">SOAP</a></td>
+<td style="text-align: center;">100m</td>
+<td style="text-align: center;">Am</td>
+<td style="text-align: left;">2001-2012</td>
+<td>TV shows</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/hansard/">HANSARD</a></td>
+<td style="text-align: center;">1.6b</td>
+<td style="text-align: center;">Br</td>
+<td style="text-align: left;">1803-2005</td>
+<td>Parliament</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/eebo/">EEBO</a></td>
+<td style="text-align: center;">755m</td>
+<td style="text-align: center;">Br</td>
+<td style="text-align: left;">1470s-1690s</td>
+<td>Various</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/scotus/">SUP CRT</a></td>
+<td style="text-align: center;">130m</td>
+<td style="text-align: center;">Am</td>
+<td style="text-align: left;">1790s-2010s</td>
+<td>Legal</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/time/">TIME</a></td>
+<td style="text-align: center;">100m</td>
+<td style="text-align: center;">Am</td>
+<td style="text-align: left;">1923-2006</td>
+<td>Magazine</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/bnc/">BNC</a></td>
+<td style="text-align: center;">100m</td>
+<td style="text-align: center;">Br</td>
+<td style="text-align: left;">1980s-1993</td>
+<td>Balanced</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.english-corpora.org/can/">CAN</a></td>
+<td style="text-align: center;">50m</td>
+<td style="text-align: center;">Can</td>
+<td style="text-align: left;">1970s-2000s</td>
+<td>Balanced</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.english-corpora.org/core/">CORE</a></td>
+<td style="text-align: center;">50m</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">2014</td>
+<td>Web</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="steps-4-6-in-session-3" class="slide level2">
+<h2>Steps 4-6: In Session 3</h2>
+<ol start="4" type="1">
+<li>Operationalize = Define exactly what to search</li>
+<li>Test = Actually search the corpus</li>
+<li>Evaluate = Interpret your results</li>
+</ol>
+<p>We’ll practice these with real searches in Session 3!</p>
 </section>
 <section class="slide level2">
 
 </section></section>
-<section>
-<section id="test-our-intuitions" class="title-slide slide level1 center">
-<h1>Test our intuitions</h1>
-<p>List the following words in order of the frequency in English</p>
-<ul>
-<li>&lt;List 5 words here; with high, mid, low frequency band&gt;</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<ul>
-<li>Corpus is at least gives you the same answer</li>
-</ul>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="limitations-of-corpus" class="title-slide slide level1 center">
-<h1>Limitations of corpus</h1>
-<ul>
-<li><p>provides distributional information, but not interpretation</p></li>
-<li></li>
-<li><p>Limited contextual information</p></li>
-<li></li>
-</ul>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section id="summary" class="title-slide slide level1 center">
+<section id="summary-1" class="title-slide slide level1 center">
 <h1>Summary</h1>
 
 </section>
@@ -246,12 +1127,74 @@ Masaki EGUCHI, Ph.D.
 <section id="reflection" class="title-slide slide level1 center">
 <h1>Reflection</h1>
 <ul>
-<li>How is the use of speaker knowledge differ in generative linguistic tradition vs the corpus linguistics? Use intuition and interpretation.</li>
+<li>Did your view on the linguistic intuition change? If so how?</li>
+<li>Explain three key property of a linguistic corpus using examples.</li>
 </ul>
-</section>
+<!-- ---
 
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
+## Linguistic phenomena
+
+- We have mostly talked about *word*.
+- However, corpus linguists are interested in more than words.
+
+Examples: 
+
+- Multiword Units (play + role, a number of X, )
+- Grammar (if-clause, relative clause)
+
+## Multiword Units (More on Day 3)
+
+With corpus methods, we can investigate how two or more words co-occur together.
+
+- What does the word "XXX" occur together in English?
+
+- Any guesses?
+
+## Collocates
+
+In COCA, the following word co-occur with "dog":
+(Collocates = words that frequently co-occur with the node word.)
+
+<insert table>
+
+## Fill in the blank
+
+- "On the other _____"
+- 
+
+- How do you know?
+
+
+
+## Corpus gives you some ideas
+
+- **Simple answer**: They are used together so often.
+- **Corpus answer**: Given the sequence "on the other", the probability of seeing the word "hand" next is very high.
+  → Their **Strengths Of Association (SOA)** is high.
+
+<insert >
+
+- We will cover how to calculate simple SOA measures on Day 3.
+
+
+## Grammar (More on Day 4)
+
+We can do similar with grammar (or morpho-syntax).
+
+- How often do we expect "by X" construction in passive construction.
+
+## Frequency of "by X" in passive construction
+
+<insert>
+
+
+## Corpus linguistics =
+
+- the investigation of **linguistic research question**
+
+- that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
+
+- in a _**linguistic corpus**_. -->
 
 
 

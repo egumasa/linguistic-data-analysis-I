@@ -39,7 +39,7 @@ Before Day 4:
 
 ## Assignments
 
-- **Due Tomorrow**: [Hands-on Assignment 4](../../assignments/hands-on-4/)
+- **Due 8/8**: [Corpus Lab Assignment 4](../../assignments/hands-on-4/)
 - Complete grammatical analysis exercises using Python notebooks and TagAnt
 
 

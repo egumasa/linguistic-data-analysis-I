@@ -25,6 +25,7 @@ You will identify fine-grained grammatical features using dependency parser in a
 
 - Kyle, K., Choe, A. T., Eguchi, M., LaFlair, G., & Ziegler, N. (2021). A Comparison of Spoken and Written Language Use in Traditional and Technology‐Mediated Learning Environments. ETS Research Report Series, 2021(1), 1–29. https://doi.org/10.1002/ets2.12329
 
+- Kim, S., Williams, P., & McCallum, L. (2024). Modelling the use of the tool for the automatic analysis of syntactic sophistication and complexity (TAASSC). Research Methods in Applied Linguistics, 3(1), 100087. https://doi.org/10.1016/j.rmal.2023.100087
 
 
 ##  🛠️ Tools Used

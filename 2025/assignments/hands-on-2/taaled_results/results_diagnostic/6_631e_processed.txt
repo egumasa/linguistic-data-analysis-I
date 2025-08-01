@@ -1,0 +1,17 @@
+tokens
+
+lift_cw_vb
+the_fw
+woolly_cw
+mammoth_cw_nn
+with_fw
+crane_cw_nn
+
+types
+
+woolly_cw
+with_fw
+crane_cw_nn
+the_fw
+mammoth_cw_nn
+lift_cw_vb

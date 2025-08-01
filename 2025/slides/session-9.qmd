@@ -1,5 +1,5 @@
 ---
-title: "Session 9: Research Application"
+title: "Session 9: \nLearner Corpus Mini-Research"
 format: revealjs
 metadata-files:
   - _slides.yml
@@ -11,30 +11,128 @@ metadata-files:
 
 ## 🎯 Learning Objectives
 
-By the end of this session, students will be able to:
+::: {style="font-size: 75%"}
 
-> - Justify choices of lexical richness measures to investigate a research questions
-> - Conduct a simple statistical analysis of selected corpus on small sets of lexical measures using JASP software
+As a wrap-up of the vocabulary and multiword sessions, you will be able to:
 
+> - Conduct mini learner corpus research.
+>   - Construct several learner corpus research questions with structured support.
+>   - Choose a learner corpus that suit your research needs
+>   - Justify choices of lexical richness measures to investigate a research questions
+>   - Compute lexical richness indices and analyze the results to answer research questions
+>   - Present the results and interpretation of the findings in a written prose
+
+:::
 ---
 
-## Available corpus
+## Mini-research outline
 
-- Let's use **GiG** corpus by Durrant (2023).
+1. Construct research questions
+2. Understand and choose the learner corpus
+3. Construct hypothesis
+4. Select index
+5. Compute the index
+6. Conduct analysis 
+7. Interpret and write-up the results
 
 
+## Step 1: Construct research questions
 
----
-
-# Hands-on Activity
-
+Researchers typically set RQs about the relationships between lexical characteristncs and variables that defines subsection of the corpus (e.g., grade, genre, or proficieincy score).
 
 
-# Reflection
+## Step 2: Understand and choose the corpus
+
+In this assignment, please choose one of the following corpora:
+
+1. *Growth in Grammar (GiG) corpus* (Durrant, 2023)
+2. *ICNALE corpus* (Edited Essay OR GRA)
+3. Some Japanese corpus here (Ask Masaki about availability).
+
+
+## Let's do Step 1 and 2
+
+### Research questions
+
+What would you like to know? 
+
+- How learners develop their language ability across time?
+- What defines "more proficient" language use?
+- How situational variables of writing/speaking impact the language production?
+- How does production of X change across time/proficiency?
+- Anything else?
+
+## Let's do Step 1 and 2
+
+### Choosing a right corpus
+
+What does each corpus contain as a meta data?
+
+1. *Growth in Grammar (GiG) corpus* (Durrant, 2023)
+2. *ICNALE corpus* (Edited Essay OR GRA)
+3. Some learner corpora for Japanese (More difficult). 
+
+- Understand what it offers and doesn't.
+- Pick one corpus to move forward.
+
+## Step 3: Construct hypothesis
+
+- Once you've identified broad research questions and corpus, speculate on possible results.
+- Use what you've learned so far about lexical richness.
+  - Lexical diversity
+  - Lexical sophistication
+  - Phraseological sophistication
+- Which ones are relevant to your questions?
+
+## Step 4: Select index
+
+Let's keep going!
+
+Specifically, which index may capture the change in the vocabulary use in your context?
+
+- List posssible indices to capture the differences in vocabulary use.
+- Why do you think those are good choices?
+
+## Step 5: Compute the index
+
+Okay now it's time to do some analysis!
+
+- Which one are you going to use:
+  - TAALED
+  - TAALES
+  - Lexical profiler
+  - Custom list in Simple Text Analyzer?
+
+
+## Step 6: Conduct analysis 
+
+Once you obtained the indices, it's time to understand the pattern by plotting.
+
+
+## Step 7: Interpret and write-up the results
+
+Now you understand what is happening in your corpus, you can write that up.
+
+
+## Mini-research outline
+
+1. Construct research questions
+2. Understand and choose the learner corpus
+3. Construct hypothesis
+4. Select index
+5. Compute the index
+6. Conduct analysis 
+7. Interpret and write-up the results
+
+
+# Let's work!
+
+Let us know if you have any questions.
+
+
+## Reflection
 
 - You can now:
   - Provide reasons for your choice of lexical richness measures.
   - Conduct preliminary analysis to understand how text differ from one aother in relation to learner's proficiency, learner groups, etc.
 
-
-# Next step

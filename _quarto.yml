@@ -38,13 +38,13 @@ website:
           - text: "Overview"
             href: 2025/assignments/index.md
           - text: "---"
-          - text: "Hands-on 1"
+          - text: "Corpus Lab 1"
             href: 2025/assignments/hands-on-1/index.md
-          - text: "Hands-on 2"
+          - text: "Corpus Lab 2"
             href: 2025/assignments/hands-on-2/index.md
-          - text: "Hands-on 3"
+          - text: "Corpus Lab 3"
             href: 2025/assignments/hands-on-3/index.md
-          - text: "Hands-on 4"
+          - text: "Corpus Lab 4"
             href: 2025/assignments/hands-on-4/index.md
           - text: "---"
           - text: "Final Project"

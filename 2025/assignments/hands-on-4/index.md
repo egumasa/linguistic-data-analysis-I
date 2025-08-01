@@ -1,13 +1,7 @@
 ---
-title: "Hands-on Assignment 4"
+title: "Corpus Lab 4"
 subtitle: "Analyzing grammatical features"
 ---
-
-
-::: {.callout-warning}
-## Under Construction
-This course website is currently under construction and will be ready for the class starting **August 2nd, 2025**. Content is being actively developed and updated.
-:::
 
 
 # Assignment Overview
@@ -41,9 +35,9 @@ In this task you will describe research questions, hypothesis, and methods.
 ### Definitions and operationalization of grammatical features to extract 
 
 - You must describe the specific grammatical features that you plan to extract.
-- For example, for clausal features you need to specify if:
-  - you are interested in subordinate clauses or embedded clauses
-  - you are interested in particular type of clauses
+- For example, for clausal features you need to specify if you are interested in :
+  - subordinate clauses or embedded clauses
+  - particular type of clauses
 
 - Description of rules to identify desirable linguistic feature.
   - For example, you will need to specify `amod` for dependency label to extract `adjective + noun` phrase.

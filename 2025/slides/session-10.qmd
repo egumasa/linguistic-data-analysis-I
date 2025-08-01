@@ -194,6 +194,9 @@ According to **construction grammar** (Goldberg, 1995, 2006), grammatical constr
 
 In turn, 
 
+| Construction | Structure | Example |
+|------|-------|-------|
+ 
 - Intransitive: 
 - Transitive: 
 

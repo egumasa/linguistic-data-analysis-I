@@ -1,0 +1,13 @@
+tokens
+
+the_fw
+type_cw_nn
+of_fw
+acid_cw_nn
+
+types
+
+acid_cw_nn
+the_fw
+of_fw
+type_cw_nn

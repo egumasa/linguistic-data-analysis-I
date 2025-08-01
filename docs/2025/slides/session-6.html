@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -236,8 +236,8 @@ Masaki EGUCHI, Ph.D.
 
 </section></section>
 <section>
-<section id="review" class="title-slide slide level1 center">
-<h1>Review</h1>
+<section id="recap" class="title-slide slide level1 center">
+<h1>Recap</h1>
 
 </section>
 <section id="terminology" class="slide level2">
@@ -259,6 +259,23 @@ Masaki EGUCHI, Ph.D.
 </ol></li>
 </ul>
 </section>
+<section id="relationships-between-cttr-and-year" class="slide level2">
+<h2>Relationships between CTTR and Year</h2>
+<ul>
+<li>Durrant (2023) introduced:
+<ul>
+<li><span class="math inline">\(CTTR = {nType \over \sqrt{2 * nToken}}\)</span></li>
+</ul></li>
+</ul>
+<figure>
+</figure></section>
+<section id="lexical-diversity-1" class="slide level2">
+<h2>Lexical diversity</h2>
+<ul>
+<li>Learner’s proficiency has positive relations with lexical diversity</li>
+<li>Other features such as genres can also mediate the relationships</li>
+</ul>
+</section>
 <section id="lexical-sophistication" class="slide level2">
 <h2>Lexical Sophistication</h2>
 <ul>
@@ -274,6 +291,13 @@ Masaki EGUCHI, Ph.D.
 </ol></li>
 </ul>
 </section>
+<section id="lexical-sophistication-as-multidimensional-construct" class="slide level2">
+<h2>Lexical sophistication as multidimensional construct</h2>
+<ul>
+<li>Frequency is only one aspect of lexical sophisitication among others.</li>
+<li>We will</li>
+</ul>
+</section>
 <section class="slide level2">
 
 </section></section>
@@ -281,6 +305,14 @@ Masaki EGUCHI, Ph.D.
 <section id="hands-on-activity" class="title-slide slide level1 center">
 <h1>Hands-on Activity</h1>
 
+</section>
+<section id="task-list" class="slide level2">
+<h2>Task list</h2>
+<ol type="1">
+<li>Computing simple Lexical Diversity measures by hand</li>
+<li>Using TAALED desktop version</li>
+<li>Computing simple Lexical Sophisitcation measures</li>
+</ol>
 </section>
 <section id="computing-simple-lexical-diversity-measures-by-hand" class="slide level2">
 <h2>Computing simple Lexical Diversity measures by hand</h2>
@@ -391,10 +423,15 @@ Masaki EGUCHI, Ph.D.
 <section id="lets-calculate-some-classical-lexical-diversity-indices" class="slide level2">
 <h2>Let’s calculate some classical Lexical Diversity indices</h2>
 <ul>
-<li><p>Open Google Spreadsheet</p></li>
+<li><p>Open Google Spreadsheet for <a href="https://docs.google.com/spreadsheets/d/1IJVJVX0ekgHYsblEOyB6cW6gNh_1o7QRwT0n5UrWvKQ/edit?usp=sharing">lexical-diversity-hand-calculation</a></p></li>
+<li><p>Copy the spreadsheet to your Drive before working on it.</p></li>
 <li><p>Calculate the lexical diversity indices on the next page.</p></li>
 </ul>
 </section>
+<section id="speadsheet-looks-like-this" class="slide level2">
+<h2>Speadsheet looks like this</h2>
+
+<img data-src="../../assets/session-6/gs_ld.png" class="r-stretch quarto-figure-center"><p class="caption">Google Spreadsheet</p></section>
 <section id="some-classic-lexical-diversity" class="slide level2">
 <h2>Some classic lexical diversity</h2>
 <p>We calculate this for illustration but <strong>NEVER use these in your study</strong>.</p>
@@ -404,6 +441,26 @@ Masaki EGUCHI, Ph.D.
 <li><p><span class="math inline">\(LogTTR = {\log(nType) \over \log(nToken)}\)</span></p></li>
 <li><p><span class="math inline">\(Maas = {\log(nTokens) - \log(nTypes) \over \log(nToken)^2}\)</span></p></li>
 </ul>
+<aside class="notes">
+<ul>
+<li>use the following
+<ul>
+<li>High: GRA_PTJ0_124_ORIG.txt</li>
+<li>Mid diversity: GRA_PTJ0_070_ORIG.txt</li>
+<li>Low diversity: GRA_PTJ0_112_ORIG.txt</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="what-should-we-actually-use-then" class="slide level2">
 <h2>What should we actually use then?</h2>
@@ -412,6 +469,18 @@ Masaki EGUCHI, Ph.D.
 <li>Moving-Average Type Token Ratio (MATTR)</li>
 </ul>
 <p>→ These are shown as more robust indices of LD.</p>
+</section>
+<section id="the-measure-of-textual-lexical-diversity-mtld" class="slide level2">
+<h2>The Measure of Textual Lexical Diversity (MTLD)</h2>
+<ul>
+<li>insert explanation</li>
+</ul>
+</section>
+<section id="moving-average-type-token-ratio-mattr" class="slide level2">
+<h2>Moving-Average Type Token Ratio (MATTR)</h2>
+<ul>
+<li>insert explanation</li>
+</ul>
 </section>
 <section id="using-taaled-desktop-version" class="slide level2">
 <h2>Using TAALED desktop version</h2>
@@ -433,8 +502,8 @@ Masaki EGUCHI, Ph.D.
 </ul></li>
 </ul>
 </section>
-<section id="selecting-indics" class="slide level2">
-<h2>Selecting indics</h2>
+<section id="selecting-indices" class="slide level2">
+<h2>Selecting indices</h2>
 <p>You can then wait for the TAALED app to start up.</p>
 
 <img data-src="../../assets/session-6/TAALED-landing.png" class="r-stretch quarto-figure-center"><p class="caption">TAALED</p></section>
@@ -591,39 +660,79 @@ Masaki EGUCHI, Ph.D.
 <li>This is generally recommended because the “mean” score behaves well on normally distributed data.</li>
 </ul>
 </section>
-<section id="comparing-two-texts" class="slide level2">
-<h2>Comparing two texts</h2>
-<p>We can also compare two texts in simple text analyzer.</p>
-<p>!<img data-src="../../assets/session-6/Two-text-comparison.png" alt="two-text"></p>
-</section>
-<section id="plots-that-compares-two-lists" class="slide level2">
-<h2>Plots that compares two lists</h2>
-<p>!<img data-src="../../assets/session-6/bigram-freq.png" alt="bigram-comparison"></p>
-</section>
 <section id="uploading-your-frequency-list" class="slide level2">
 <h2>Uploading your frequency list</h2>
 <p>The simple text analyzer can accept a word frequency list.</p>
-<p>!TODO</p>
-<p>[] fix the application then think about</p>
-</section>
-<section id="batch-analysis" class="slide level2">
-<h2>Batch analysis</h2>
-<p>[] fix the application</p>
-</section>
-<section class="slide level2">
-
+<p>Now let’s upload BROWN frequency list.</p>
 </section></section>
-<section id="submission" class="title-slide slide level1 center">
-<h1>Submission</h1>
+<section>
+<section id="assignment" class="title-slide slide level1 center">
+<h1>Assignment</h1>
+
+</section>
+<section id="comparing-lexical-characteristics-of-two-texts" class="slide level2">
+<h2>Comparing lexical characteristics of two texts</h2>
+<h3 id="goals">Goals</h3>
+<ul>
+<li>Compare and contrast two texts along with several lexical diversity metrics</li>
+<li>Observe differences in single-word and multiword sophistication</li>
+</ul>
+<h3 id="data">Data</h3>
+<ul>
+<li>Choose two texts from the ICNALE GRA</li>
+<li>If you are unsure, use choose from the following three files:
+<ul>
+<li>GRA_PTJ0_124_ORIG.txt</li>
+<li>GRA_PTJ0_070_ORIG.txt</li>
+<li>GRA_PTJ0_112_ORIG.txt</li>
+</ul></li>
+</ul>
+</section>
+<section id="step-1-qualitatively-compare-two-files" class="slide level2">
+<h2>Step 1: Qualitatively compare two files</h2>
+<ul>
+<li>Before we actually obtain lexical sophistication measures, compare two texts in terms of their lexical use.</li>
+<li>In pairs, describe the strengths and weakeness in vocabulary use.</li>
+</ul>
+</section>
+<section id="step-2-hypothesis" class="slide level2">
+<h2>Step 2: Hypothesis</h2>
+<ul>
+<li>In what way is one text more lexically sophisticated than the other?
+<ul>
+<li>Try to come up with characteristics that describe the <code>quality words</code> to describe them</li>
+</ul></li>
+</ul>
+</section>
+<section id="step-3-pick-two-or-three-lexical-sophistication-variables" class="slide level2">
+<h2>Step 3: Pick two or three lexical sophistication variables</h2>
+<h3 id="enter-the-text-into-analyzer">Enter the text into analyzer</h3>
+<p>We can also compare two texts in simple text analyzer.</p>
+<p>!<img data-src="../../assets/session-6/Two-text-comparison.png" alt="two-text"></p>
+<h3 id="pick-appropriate-lexical-sophistication-indices">Pick appropriate lexical sophistication indices</h3>
+</section>
+<section id="step-4-run-analyses" class="slide level2">
+<h2>Step 4: Run analyses</h2>
+<h3 id="plots-that-compares-two-lists">Plots that compares two lists</h3>
+<p>!<img data-src="../../assets/session-6/bigram-freq.png" alt="bigram-comparison"></p>
+</section>
+<section id="step-5-interpret-the-findings" class="slide level2">
+<h2>Step 5: Interpret the findings</h2>
+<ul>
+<li>Let’s discuss how the two text differ in lexical use from one another.</li>
+<li>Use the tables with token information and visualization to (dis)confirm your hypothesis</li>
+</ul>
+</section>
+<section id="submission" class="slide level2">
+<h2>Submission</h2>
 <ul>
 <li>Japanese Word Frequency List and small write-up (5 points)</li>
 <li>The Google Spreadsheet with calculation of lexical diversity indices (5 points)</li>
-<li>Write up of Japanese lexical sophistication analysis (5 points)</li>
 </ul>
 
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

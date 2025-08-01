@@ -93,19 +93,19 @@ We have two possible choices for the grade distribution for this course. I will 
 
 | Assignment |   | Percent  |
 |-------|----|----|
-| Hands-on Assignments | (4 × 15%) | 60% |
+| Corpus Lab Assignments | (4 × 15%) | 60% |
 | Class Participation |   | 20% |
 | Final Project | | 20%|
 
 ### Grade Distribution – Option B
 
-- For option B, pairs of students will present on hands-on assignments **on the final day**.
+- For option B, pairs of students will present on Corpus Lab assignments **on the final day**.
 
 | Assignment |   | Percent  |
 |-------|----|----|
-| Hands-on Assignments | (4 × 15%) | 60% |
+| Corpus Lab Assignments | (4 × 15%) | 60% |
 | Class Participation |   | 20% |
-| Final Presentation on Selected Hands-on Assignment | | 20%|
+| Final Presentation on Selected Corpus Lab Assignment | | 20%|
 
 
 ### Grading Scale

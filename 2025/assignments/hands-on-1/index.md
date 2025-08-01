@@ -1,12 +1,7 @@
 ---
-title: "Hands-on Assignment 1"
+title: "Corpus Lab 1"
 subtitle: "Basic Concordancing"
 ---
-
-::: {.callout-warning}
-## Under Construction
-This course website is currently under construction and will be ready for the class starting **August 2nd, 2025**. Content is being actively developed and updated.
-:::
 
 
 # Assignment Overview

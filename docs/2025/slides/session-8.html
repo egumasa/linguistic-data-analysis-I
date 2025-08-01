@@ -6,7 +6,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-305284cd5cd0ab7753652d1bed4524c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
@@ -163,47 +163,92 @@ Masaki EGUCHI, Ph.D.
 
 </blockquote>
 </section>
-<section class="slide level2">
-
-</section></section>
-<section id="generating-n-gram-list-with-antconc" class="title-slide slide level1 center">
-<h1>Generating N-gram list with AntConc</h1>
+<section id="generating-n-gram-list-with-antconc-10-mins" class="slide level2">
+<h2>Generating N-gram list with AntConc (10 mins)</h2>
 <ul>
-<li><p>Let’s generate two list of n-grams.</p></li>
+<li><p>Let’s generate a list of n-grams.</p></li>
 <li><p>You can use either English or Japanese.</p></li>
-<li><p>For Japanese you can use <code>Aozora 1000</code> data we used.</p></li>
-<li><p>For English you can use <code>Aozora 1000</code> data we used.</p></li>
+<li><p>For Japanese you can use <code>Aozora 500</code> data we used.</p></li>
+<li><p>For English you can use <code>BROWN corpus</code> data we used.</p></li>
 </ul>
 </section>
-
-<section id="generating-p-frame-list-with-antconc" class="title-slide slide level1 center">
-<h1>Generating P-frame list with AntConc</h1>
+<section id="generating-p-frame-list-with-antconc" class="slide level2">
+<h2>Generating P-frame list with AntConc</h2>
 <ul>
 <li>Let’s now generate p-frame.</li>
-<li>You can use either English or Japanese. When using Japanese you can use <code>Aozora 1000</code> data we used.</li>
+<li>You can use either English or Japanese.
+<ul>
+<li>When using Japanese you can use <code>Aozora 500</code> data we used.</li>
+</ul></li>
 </ul>
-</section>
-
+</section></section>
 <section>
-<section id="searching-collocations-on-antconc" class="title-slide slide level1 center">
-<h1>Searching collocations on AntConc</h1>
+<section id="searching-collocations-with-antconc-10-15-mins" class="title-slide slide level1 center">
+<h1>Searching collocations with AntConc (10-15 mins)</h1>
 
 </section>
 <section id="recap-what-is-collocation" class="slide level2">
 <h2>Recap: What is collocation?</h2>
 <ul>
 <li>Collocation</li>
+<li>node word: <code>play</code></li>
+<li>collocates: <code>role</code>, <code>game</code>, <code>sports</code>, etc.</li>
 </ul>
 </section>
 <section id="collocation-in-antconc" class="slide level2">
 <h2>Collocation in AntConc</h2>
+<p>You can search collocation by entering <code>node</code> words</p>
 <ul>
-<li>explain</li>
+<li>Open AntConc, load <code>BROWN corpus</code>.</li>
+<li>Go to <code>Collocate</code></li>
+<li>Enter <code>play</code> in search window and hit <code>Start</code></li>
 </ul>
+</section>
+<section id="you-should-get-the-following." class="slide level2">
+<h2>You should get the following.</h2>
+
+<img data-src="../../assets/session-8/antconc-collocation.png" class="r-stretch quarto-figure-center"><p class="caption">Collocation search in AntConc</p></section>
+<section id="try-a-few-different-search-terms." class="slide level2">
+<h2>Try a few different search terms.</h2>
+<ul>
+<li>Any node word you want to search?</li>
+</ul>
+</section>
+<section id="some-options" class="slide level2">
+<h2>Some options</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Window Span</strong></td>
+<td>Specifies how many words on the left or right do you consider as candidates.</td>
+</tr>
+<tr class="even">
+<td><strong>Min. freq</strong></td>
+<td>how many times the collocation must occur</td>
+</tr>
+<tr class="odd">
+<td><strong>Min. Range</strong></td>
+<td>how many document must the collocation occur in</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="any-questions" class="slide level2">
+<h2>Any questions?</h2>
 </section></section>
 <section>
-<section id="calculating-strengths-of-association-soa-measures" class="title-slide slide level1 center">
-<h1>Calculating Strengths of Association (SOA) measures</h1>
+<section id="calculating-strengths-of-association-soa-measures-40-mins" class="title-slide slide level1 center">
+<h1>Calculating Strengths of Association (SOA) measures (40 mins)</h1>
 
 </section>
 <section id="calculating-soa-by-hand" class="slide level2">
@@ -219,8 +264,134 @@ Masaki EGUCHI, Ph.D.
 </ul></li>
 </ul>
 </section>
-<section id="understanding-collocational-characteristics-by-plotting" class="slide level2">
-<h2>Understanding collocational characteristics by plotting</h2>
+<section id="preparation" class="slide level2">
+<h2>Preparation</h2>
+<ul>
+<li>Copy and paste word frequency list in <code>frequency</code> tab</li>
+</ul>
+
+<img data-src="../../assets/session-8/freq-list.png" class="r-stretch quarto-figure-center"><p class="caption">frequency list</p></section>
+<section id="enter-the-node-and-collocates" class="slide level2">
+<h2>Enter the node and collocates</h2>
+<ul>
+<li>Now retrieve word frequencies from the frequency list, using function called <code>vlookup</code>.</li>
+</ul>
+
+<img data-src="../../assets/session-8/enter-freq.gif" class="r-stretch quarto-figure-center"><p class="caption">retrieve frequency</p></section>
+<section id="collocation-frequency-observed" class="slide level2">
+<h2>Collocation frequency (observed)</h2>
+<ul>
+<li>Enter node word in search window and look for FreqLR.</li>
+</ul>
+
+<img data-src="../../assets/session-8/collocate-freq.gif" class="r-stretch quarto-figure-center"><p class="caption">Observed frequency</p></section>
+<section id="enter-observed-frequency-and-window-size" class="slide level2">
+<h2>Enter Observed frequency and window size</h2>
+
+<img data-src="../../assets/session-8/Observed-windowsize.gif" class="r-stretch quarto-figure-center"><p class="caption">Enter O11</p></section>
+<section id="expected-frequency" class="slide level2">
+<h2>Expected frequency</h2>
+<p>Now we will enter formula for the expected frequency.</p>
+<p><span class="math display">\[E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}\]</span></p>
+<ul>
+<li>This formula says:
+<ul>
+<li>The expected frequency of collocation would be joint probability of the two words.</li>
+</ul></li>
+</ul>
+</section>
+<section id="expected-frequency-1" class="slide level2">
+<h2>Expected frequency</h2>
+<ul>
+<li><span class="math inline">\(E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}\)</span></li>
+</ul>
+
+<img data-src="../../assets/session-8/expected-freq.gif" class="r-stretch quarto-figure-center"><p class="caption">expected-frequency</p></section>
+<section id="mutual-information" class="slide level2">
+<h2>Mutual Information</h2>
+<p>Finally, we will enter the following formula.</p>
+<p><span class="math display">\[MI = {log_2{ Observed freq \over Expected frequency }}\]</span></p>
+
+<img data-src="../../assets/session-8/MI.gif" class="r-stretch quarto-figure-center"><p class="caption">Calculating MI</p></section>
+<section id="wait" class="slide level2">
+<h2>Wait …</h2>
+<ul>
+<li>Our calculation shows that MI = 8.69</li>
+<li>AntConc says 5.377 …</li>
+</ul>
+
+<img data-src="../../assets/session-8/MI-AntConc.png" class="r-stretch quarto-figure-center"><p class="caption">AntConc MI</p></section>
+<section id="why-are-the-scores-different" class="slide level2">
+<h2>Why are the scores different?</h2>
+<ul>
+<li>I was also confused…</li>
+<li>It appears based on <a href="https://groups.google.com/g/antconc/c/n_5G6kmj2-8?pli=1">this conversation in google group</a> that corpus tools are adjusting the observed frequency by multiplying <code>window size</code>.</li>
+<li>This means that Expected frequency becomes</li>
+</ul>
+<p><span class="math inline">\(E_{11} = {(freq_{node} * freq_{collocate} * \color{red}{window size}) \over Corpus size}\)</span></p>
+</section>
+<section id="okay..-now-what" class="slide level2">
+<h2>Okay.. now what?</h2>
+<p>Let’s fix the expected frequency count.</p>
+
+<img data-src="../../assets/session-8/fixed-expected.gif" class="r-stretch quarto-figure-center"><p class="caption">Fixed expected frequency</p><ul>
+<li>Okay close enough!</li>
+</ul>
+</section>
+<section id="confirming-with-casual-conc" class="slide level2">
+<h2>Confirming with Casual Conc</h2>
+<ul>
+<li>Our score actually is also close to that of Casual Conc</li>
+</ul>
+
+<img data-src="../../assets/session-8/Casualconc-collocation.gif" class="r-stretch quarto-figure-center"><p class="caption">Collocation</p></section>
+<section id="take-away" class="slide level2">
+<h2>Take-away…</h2>
+<ul>
+<li>Even widely used corpus software may give you slightly different SOA scores, because of possible differences in counting strategies, tokenization, etc..</li>
+<li>AntConc and Casual Conc likely uses:
+<ul>
+<li><span class="math inline">\(E_{11} = {(freq_{node} * freq_{collocate} * \color{red}{window size}) \over Corpus size}\)</span></li>
+</ul></li>
+<li>It is very important to <strong>triple-check your work</strong> and…</li>
+</ul>
+</section>
+<section id="report-exactly-what-you-did" class="slide level2">
+<h2>Report exactly what you did</h2>
+<p>Replicability is key to science.</p>
+<p>For example, you might say.</p>
+<ul>
+<li><p>e.g., I used AntCont version 4.2.x</p></li>
+<li><p>e.g., MI was calculated using the following formula</p>
+<ul>
+<li><span class="math inline">\(MI = {log_2{ Observed freq \over Expected frequency }}\)</span></li>
+<li>where the expected frequency is calculated as:</li>
+<li><span class="math inline">\(E_{11} = {(freq_{node} * freq_{collocate} * \color{red}{window size}) \over Corpus size}\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions?</h2>
+</section>
+<section id="lets-finish-it-up" class="slide level2">
+<h2>Let’s finish it up</h2>
+<ul>
+<li>LogDice:
+<ul>
+<li>Ours: 6.548</li>
+<li>AntConc: 6.551 Likely multiplying window size in the denominator.</li>
+<li>CasualConc: 11.14 ???</li>
+</ul></li>
+<li>T-score:
+<ul>
+<li>Ours: 2.927</li>
+<li>AntConc: 2.928 (Almost identical)</li>
+<li>CasualConc: 2.99 (close)</li>
+</ul></li>
+</ul>
+</section>
+<section id="understanding-collocational-characteristics-by-plotting-20-mins" class="slide level2">
+<h2>Understanding collocational characteristics by plotting (20 mins)</h2>
 <ul>
 <li><p>Let’s make plots based on the calculated</p></li>
 <li><p>Plot 1:</p>
@@ -249,7 +420,7 @@ Masaki EGUCHI, Ph.D.
 <section id="advanced-how-can-i-generate-a-collocation-list" class="slide level2">
 <h2>(Advanced) how can I generate a collocation list?</h2>
 <ul>
-<li>Colab notebook</li>
+<li>You can take a look at <a href="../../resources/code-examples/python/extracting-collocations.html">the following notebook</a></li>
 </ul>
 </section>
 <section class="slide level2">

@@ -1,32 +1,9 @@
 ---
-title: "Session 2: Corpus as a scientific method"
+title: "Session 2: \nCorpus as a scientific method"
 format: revealjs
 metadata-files:
   - _slides.yml
   - ../../_metadata.yml
-  #   theme: 
-  #     - litera
-  #     - ../../css/style.scss
-  #   toc: true
-  #   toc-depth: 3
-  #   toc-location: left
-  #   toc-title: "Contents"
-  #   number-sections: true
-  #   embed-resources: true
-  #   standalone: true
-  #   code-fold: true
-  #   code-summary: "Show code"
-  #   code-tools: true
-  #   smooth-scroll: true
-  #   link-external-icon: true
-  #   link-external-newwindow: true
-  #   date-format: "MMMM D, YYYY"
-  #   css-min: true
-  #   html-math-method: katex
-  #   highlight-style: github
-  #   anchor-sections: true
-  #   fig-cap-location: bottom
-  #   tbl-cap-location: top
 ---
 
 # Housekeeping 
@@ -34,6 +11,11 @@ metadata-files:
  
 # Session overview
 
+We will talk about:
+
+- Why we bother the corpus data?
+- What it can tell us?
+- How can we describe corpus as a scientific method
 
 ## 🎯 Learning Objectives
 
@@ -45,60 +27,469 @@ metadata-files:
 > - Identify and explain the basic steps in corpus-based research
 > - Reflect on their own stance toward data, intuition, and linguistic evidence
 
----
-
-# What corpus is
-
-- Searchable digital collection
-- Collection of real-world language use
-- Often accompanied by meta-data describing the contextual parameters
-
 
 ---
 
-# Common criticism to corpus linguistics
+# Recap
 
-## Common criticism
+## Corpus linguistics =
 
-1. corpora are usage data and thus of no use in studying linguistic knowledge;  
-2. corpora and the data derived from them are necessarily incomplete;
-3. corpora contain only linguistic forms (represented as graphemic strings), but no information about the semantics, pragmatics, etc. of these forms; and  
-4. corpora do not contain negative evidence, i.e., they can only tell us what is possible in a given language, but not what is not possible.
+- the investigation of **linguistic research question**
+- that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
+- in a _**linguistic corpus**_.
+
+(Stefanowitsch, 2020, p. 56)
+
+## A linguistic Corpus (Recap)
+
+A linguistic corpus is:
+
+- searchable digital collection of
+- real-world language use
+- often accompanied by meta-data describing the contextual parameters
+
+→ A corpus documents "recorded observation of language behavior" 
+
+
+# Why we bother with corpus?
+
+when we can ask native speakers?
+
+## Common criticism to corpus linguistics
+
+1. Corpus documents performance not competence
+2. Corpus is incomplete
+3. It provides language forms but not meaning
+4. Corpus does not give negative evidence
+
+→ First two points are worth elaborating.
+
+
+## Some researchers (particulary generative linguists) say...
+
+1. Corpus may not tell us about "competence"
+  - There is an assumption that "competence" (Language Acquisition Device) exists
+  - Performance data is too noisy to get to the actual competence
+
+## Some researchers (particulary generative linguists) say...
+
+2. Corpus is imcomplete...
+  - because corpus size is finite we cannot really tap into what native speakers will be able to say about the language 
+
+→ Corpus linguists **respectfully** disagree with these statements.
 
 ---
 
-# 
-
-- Intuition data is not as reliable or valid as corpus data.
-- However, intuition can provide a hypothesis to test
+## Why Can't We Trust Our Intuition?
 
 
----
+## Guess the frequency! Test your intuition
 
-# Test our intuitions
+Rank the following words by frequency in iWeb (14 billion word Web Corpus): 
 
-List the following words in order of the frequency in English
+- the
+- obvious
+- dog
+- absolutely 
+- meaningful
+- chair
+- and
+
+Don't turn to next slide until you finish sorting!
+
+## The frequency rank in iWeb corpus
+
+| word | freq | freq per million |
+|----|-----|-----|
+| the | 746240010 | 53,332.79 |
+| and | 387613768 | 27,666.94 |
+| dog | 1447231 | 103.30 |
+| absolutely | 1027853 | 73.37 |
+| obvious |715011| 51.04 |
+| chair | 621975 | 44.40 |
+| meaningful | 297635 | 21.24 |
 
 
-- <List 5 words here; with high, mid, low frequency band>
+## Test Your Intuition - 2
 
----
+- Is the following expressions grammatical? Yes or No?
+  
+  - different from
+  - different than
+  - different to
 
-- Corpus is at least gives you the same answer
+## What corpus has to say about them?
+
+- Given this data, how would you describe the pattern?
+
+![different + from/to/than](../../assets/session-2/different-fromtothan.png)
 
 
----
+## Your intuition may have failed because:
 
-# Limitations of corpus
+- We notice unusual things, not common ones
+  - Language frequency AND our physical world are different
+  - Our intuition is also affected by our other sensory modes and cognitive mechanisms
 
+## Reliability of intuited "data"
+
+- Intuited data is vulnerable
+  - No one experienced every linguistic varieties spoken in the world.
+  - The cognitive process to judge grammaticality will be different from usual language processing interpreting the "meaning".
+
+
+## It doesn't matter the N
+
+- I searched this construction over News on the web (NOW) corpus which is 22.5 billion+	corpus across 20 countries.
+- It is not actually exclusive to the British construction.
+
+![Frequency of the construction](../../assets/session-2/it-doesnt-matter-the.png)
+See the result [here](https://www.english-corpora.org/now/?c=now&q=126887345)
+
+
+## Limitations of corpus
+
+- corpus is incomplete; impossible to reflect all the linguistic variations.
 - provides distributional information, but not interpretation
+- limited contextual information
+- does not tell us about language processing
 
-- 
+Corpus has to be selected in relation to the purpose of the study
 
-- Limited contextual information
+## Summary
 
-- 
+- Corpus can provide information about how people are actually using the language
+- May not be complete; but big enough to tell us something more than a small group of individuals can say about the language use
+  - Prescriptive vs Descriptive
+- Corpus also has limitation
+  - Corpus is finite
+  - Corpus data needs to be interpreted (but better than intuiting).
 
+# Any questions?
+
+
+---
+
+# Part 2: Corpus linguistics as a scientific method
+
+## What do you think is important in scientific process?
+
+- So far we have talked about how corpus can be useful as a method of inquiry.
+- We have not talked about how corpus can be integrated in the research process.
+
+→ Let's talk about general research cycle then we will go over with corpus examples.
+
+## Scientific research cycle
+
+![Research Process](../../assets/session-2/research-process.png)
+
+## Let's do it together
+
+1. Verbalize your initial questions
+2. Formulate research questions
+3. Formulate research hypothesis
+4. Operationalize - defining the construct so we can measure
+5. Test it
+6. Evaluate the hypothesis
+
+## Step 1: Starting from question or curiosity
+
+Research is mostly driven by curiosity.
+
+- Is "sort of" used exclusively in spoken discourse? If not what written genre might include this?
+- What adjectives are commonly used to modify "stair"?
+- Where is the contraction form "gonna" more likely to be used in English?
+
+## Your turn
+
+- In pair, exchange what you've wondered about the English language use in context.
+  - Focus on vocabulary, grammar, and possibly discourse
+  - We cannot unfortunately look at phonetics/phonology in this class...
+
+- After sharing your curiosity, we will then use that to frame the research question.
+
+## Step 2: Turning curiosity into research question
+
+A research question often involves **relations** between two or more **constructs**.
+
+## What are constructs?
+
+- Constructs are simply theoretical concepts we are interested in researching.
+
+- Linguistic constructs
+  - Words, Grammar, etc.
+- Extra-linguistic constructs
+  - TIME
+  - REGION
+  - GENRE
+  - PROFICIENCY LEVEL
+
+
+## Research question templates
+
+In corpus-driven linguistic research, we tend to ask following questions:
+
+- How does the frequency of word X change over time?
+- How does the frequency of word X differ across text types Z?
+- What is the frequency distribution of grammatical pattern X across different text types?
+- What are the typical contexts in which expression X appears based on concordance analysis?
+- How do different varieties of language Y (e.g., British vs. American English) differ in frequency and contexts of feature X?
+- How does register (formal/informal) affect both the frequency and typical contexts of linguistic feature X?
+
+## Your turn: 
+
+- In the same pair, try turning your curiosity into formalized research question.
+- Share the research questions to class.
+
+
+## Step 3: Turning question into hypothesis
+
+**Research Q**: "Is the expression 'gonna' more frequent in informal genres?"
+
+**Hypothesis**: "I expect 'gonna' to occur more frequently in TV/Movie subtitles than in Magazine texts because..."
+
+
+## Your turn - Writing hypothesis
+
+In the same pair, you will be writing your hypothesis.
+
+**Template**: "I expect [specific pattern] because [reasoning based on experience/knowledge]"
+
+
+---
+
+## Step 4: Choosing a corpus based on your research question and hypothesis
+
+How can I select the one for my research?
+
+## Three key properties of corpus
+
+1. **Authentic**: 
+   - Corpus reflects real-language use
+   
+2. **Representative**:
+   - Corpus should be sampled to reflect some portion of language use.
+  
+3. **Large**: 
+   - Corpus should be in sufficient size to allow investigation
+   
+
+## Authenticity
+
+- It has to be authentic language use (= language used for real communication)
+  - No invented sentences
+  - No fake data or simulation
+
+- **BUT**... Debate on authenticity
+  - How about elicited data?
+  - Particularly relevant to learner corpora
+    - Timed essay writing for English exam
+
+## Representativeness
+
+- How do researchers try to take representative sample of language use?
+- What makes a corpus representative?
+
+## Representative in relation to your purpose
+
+- Representativeness is evaluated based on
+  - coverage of important situational variables
+  - relative size in the corpus (balances)
+
+- Think of a stratified random sampling approach
+
+## Describing situational variables
+
+Discuss in pair/group:
+
+If you were to create following corpus, what should you include in your corpus?
+Choose one and brainstorm the data sources you need to collect.
+
+- how English is currently used in the US
+- how English/Japanese is used in US/Japanese universities
+- how certain dialect changes overtime
+
+## Corpus Of Contemporary American (COCA)
+
+::: {style="font-size: 50%;"}
+
+| Genre | # texts | # words | Explanation |
+|---|---|----|-------------|
+| Spoken | 44,803 | 127,396,932 | Transcripts of unscripted conversation from more than 150 different TV and radio programs (examples: All Things Considered (NPR), Newshour (PBS), Good Morning America (ABC), Oprah) |
+| Fiction | 25,992 | 119,505,305 | Short stories and plays from literary magazines, children's magazines, popular magazines, first chapters of first edition books 1990-present, and fan fiction. |
+| Magazines | 86,292 | 127,352,030 | Nearly 100 different magazines, with a good mix between specific domains like news, health, home and gardening, women, financial, religion, sports, etc. |
+| Newspapers | 90,243 | 122,958,016 | Newspapers from across the US, including: USA Today, New York Times, Atlanta Journal Constitution, San Francisco Chronicle, etc. Good mix between different sections of the newspaper, such as local news, opinion, sports, financial, etc. |
+| Academic | 26,137 | 120,988,361 | More than 200 different peer-reviewed journals. These cover the full range of academic disciplines, with a good balance among education, social sciences, history, humanities, law, medicine, philosophy/religion, science/technology, and business |
+
+:::
+
+## Corpus of Contemporary American (COCA)
+
+::: {style="font-size: 50%;"}
+
+| Genre | # texts | # words | Explanation |
+|---|---|----|-------------|
+| Web (Genl) | 88,989 | 129,899,427 | Classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages (by Serge Sharoff). Taken from the US portion of the GloWbE corpus. |
+| Web (Blog) | 98,748 | 125,496,216 | Texts that were classified by Google as being blogs. Further classified into the web genres of academic, argument, fiction, info, instruction, legal, news, personal, promotion, review web pages. Taken from the US portion of the GloWbE corpus. |
+| TV/Movies | 23,975 | 129,293,467 | Subtitles from OpenSubtitles.org, and later the TV and Movies corpora. Studies have shown that the language from these shows and movies is even more colloquial / core than the data in actual "spoken corpora". |
+| **Total** | **485,179** | **1,002,889,754** | |
+
+- [see more details](https://www.english-corpora.org/coca/help/coca2020_overview.pdf)
+:::
+
+
+## British Academic Written English (Alsop & Nesi, 2009)
+
+A excellent example of a specialized corpus.
+
+- A corpus documenting about 2,700 university written assignments in the U.K.
+- 30 disiplines, 13 genre families
+- Four course levels (freshman to MA level)
+- Both Distinction (A) and Merit (B)
+
+## BAWE disciplinary group
+
+::: {style="font-size: 50%;"}
+
+| Disciplinary group | Disciplines | Level 1 | Level 2 | Level 3 | Level 4 | Sum |
+|---------|-----------|:---:|:---:|:---:|:---:|:---:|
+| Arts and Humanities (AH) | Linguistics, English, Philosophy, History, Classics, Archaeology, Comparative American Studies, Other | 231 | 225 | 160 | 77 | 693 |
+| Life Sciences (LS) | Biology, Agriculture, Food Sciences, Psychology, Health, Medicine | 172 | 183 | 106 | 193 | 654 |
+| Physical Sciences (PS) | Engineering, Chemistry, Computer Science, Physics, Mathematics, Meteorology, Cybernetics & Electronics, Planning, Architecture | 181 | 146 | 156 | 95 | 578 |
+| Social Sciences (SS) | Business, Law, Sociology, Politics, Economics, Hospitality Leisure & Tourism Management, Anthropology, Publishing | 203 | 196 | 159 | 202 | 760 |
+| **Sum** | | **787** | **750** | **581** | **567** | **2,685** |
+
+:::
+
+## BAWE genre family
+
+::: {style="font-size: 50%;"}
+
+| Social purpose | Genre family | Level 1 | Level 2 | Level 3 | Level 4 | Sum |
+|----------------|--------------|:----:|:----:|:----:|:----:|:----:|
+| Demonstrating knowledge and understanding | exercise | 28 | 20 | 27 | 27 | 102 |
+| | explanation | 72 | 54 | 33 | 26 | 185 |
+| Developing powers of independent reasoning | critique | 75 | 78 | 67 | 87 | 307 |
+| | essay | 398 | 357 | 263 | 184 | 1,202 |
+| Building research skills | literature survey | 10 | 6 | 7 | 9 | 32 |
+| | methodology recount | 106 | 114 | 43 | 60 | 323 |
+| | research report | 7 | 16 | 22 | 16 | 61 |
+| Preparing for professional practice | case study | 26 | 30 | 34 | 98 | 188 |
+| | design specification | 24 | 19 | 35 | 11 | 89 |
+| | problem question | 12 | 18 | 5 | 2 | 37 |
+| | proposal | 10 | 18 | 8 | 34 | 70 |
+| Writing for oneself and others | empathy writing | 4 | 2 | 17 | 5 | 28 |
+| | narrative recount | 15 | 18 | 20 | 8 | 61 |
+| | **Sum** | **787** | **750** | **581** | **567** | **2,685** |
+
+:::
+
+## Corpus Representativeness
+
+Multiple factors affecting linguistic variations can be used to balance corpus sampling:
+
+- **Linguistic variation** = "to any form of language delineable from other forms along cultural, linguistic or demographic criteria" (Stefanowitsch, 2020, p. 28)
+  - **genre**
+  - **register**
+  - **style**
+
+But see Biber and Conrad (2019) for different definitions of each factor.
+
+## Genre
+
+- category of speech event or text defined in terms of their communicative purpose in culture
+  - recipe
+  - manuals 
+  - academic paper 
+  - news report
+  - etc.
+
+## Register 
+
+- variety in a set of linguistic features associated with a particular situation of language use. 
+  - register of: 
+    - academic paper
+    - recipe
+
+## Style 
+
+- Stefanowitsch defines: "the degrees of formality (e.g. formal, informal, colloquial, humorous)
+- Biber & Conrad (2019) linguistic variety often associated *within* a register or genre
+  - due to the author, specific speech community, etc.
+
+
+## In case of learner corpora
+
+Additional variables such as:
+
+- First language
+- Second-language proficiency levels
+- Their learning experiences 
+
+
+## International Corpus Network of Asian Learner of English (Ishikawa, 2013)
+
+- One of the largest learner corpora (EFL learners in Asia)
+- Subcorpora for different modalities available
+  - Monologic speech
+  - Dialogic speech
+  - Argumentative essay writing
+- Extensive rating data is also available for subset of the data (GRA)
+
+
+## From Question to Corpus Choice
+
+Let's say you want to investigate the following question:
+
+- "Is 'my bad' more frequent in informal genres?"
+
+**What information do you need in the corpus?**
+
+Try giving some answers in pairs.
+
+
+## Typical answer
+
+- Has multiple genres (formal AND informal)
+- Recent enough to include 'my bad' 
+- Large enough to compare 
+
+## Corpora in English-Corpora.org
+
+
+::: {style="font-size:60%"}
+
+| Corpus | Size | Regions | Time | Genre |
+|-----------|:--------:|:-----------:|:------|-------|
+| [IWEB](https://www.english-corpora.org/iweb/) | 13.9b | 6 | 2017 | Web |
+| [NOW](https://www.english-corpora.org/now/) | 16.2b | 20 | 2010-now | Web: News |
+| [CORONA](https://www.english-corpora.org/corona/) | 1.58b | 20 | 2020-now | Web: News |
+| [GLOWBE](https://www.english-corpora.org/glowbe/) | 1.9b | 20 | 2012-13 | Web/blogs |
+| [WIKI](https://www.english-corpora.org/wiki/) | 1.9b | (+) | 2014 | Wikipedia |
+| [COCA](https://www.english-corpora.org/coca/) | 1.0b | Am | 1990-2019 | Balanced |
+| [COHA](https://www.english-corpora.org/coha/) | 400m | Am | 1810-2009 | Balanced |
+| [TV](https://www.english-corpora.org/tv/) | 325m | 6 | 1950-2018 | TV shows |
+| [MOVIES](https://www.english-corpora.org/movies/) | 200m | 6 | 1930-2018 | Movies |
+| [SOAP](https://www.english-corpora.org/soap/) | 100m | Am | 2001-2012 | TV shows |
+| [HANSARD](https://www.english-corpora.org/hansard/) | 1.6b | Br | 1803-2005 | Parliament |
+| [EEBO](https://www.english-corpora.org/eebo/) | 755m | Br | 1470s-1690s | Various |
+| [SUP CRT](https://www.english-corpora.org/scotus/) | 130m | Am | 1790s-2010s | Legal |
+| [TIME](https://www.english-corpora.org/time/) | 100m | Am | 1923-2006 | Magazine |
+| [BNC](https://www.english-corpora.org/bnc/) | 100m | Br | 1980s-1993 | Balanced |
+| [CAN](https://www.english-corpora.org/can/) | 50m | Can | 1970s-2000s | Balanced |
+| [CORE](https://www.english-corpora.org/core/) | 50m | 6 | 2014 | Web |
+
+:::
+
+
+
+## Steps 4-6: In Session 3
+
+4. Operationalize = Define exactly what to search
+5. Test = Actually search the corpus
+6. Evaluate = Interpret your results
+
+We'll practice these with real searches in Session 3!
 
 ---
 
@@ -107,8 +498,72 @@ List the following words in order of the frequency in English
 
 # Reflection
 
-- How is the use of speaker knowledge differ in generative linguistic tradition vs the corpus linguistics? Use intuition and interpretation.
+- Did your view on the linguistic intuition change? If so how?
+- Explain three key property of a linguistic corpus using examples.
+
+
+<!-- ---
+
+## Linguistic phenomena
+
+- We have mostly talked about *word*.
+- However, corpus linguists are interested in more than words.
+
+Examples: 
+
+- Multiword Units (play + role, a number of X, )
+- Grammar (if-clause, relative clause)
+
+## Multiword Units (More on Day 3)
+
+With corpus methods, we can investigate how two or more words co-occur together.
+
+- What does the word "XXX" occur together in English?
+
+- Any guesses?
+
+## Collocates
+
+In COCA, the following word co-occur with "dog":
+(Collocates = words that frequently co-occur with the node word.)
+
+<insert table>
+
+## Fill in the blank
+
+- "On the other _____"
+- 
+
+- How do you know?
 
 
 
-# Next step
+## Corpus gives you some ideas
+
+- **Simple answer**: They are used together so often.
+- **Corpus answer**: Given the sequence "on the other", the probability of seeing the word "hand" next is very high.
+  → Their **Strengths Of Association (SOA)** is high.
+
+<insert >
+
+- We will cover how to calculate simple SOA measures on Day 3.
+
+
+## Grammar (More on Day 4)
+
+We can do similar with grammar (or morpho-syntax).
+
+- How often do we expect "by X" construction in passive construction.
+
+## Frequency of "by X" in passive construction
+
+<insert>
+
+
+## Corpus linguistics =
+
+- the investigation of **linguistic research question**
+
+- that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
+
+- in a _**linguistic corpus**_. -->

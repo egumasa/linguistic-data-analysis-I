@@ -22,35 +22,58 @@ By the end of this session, students will be able to:
 
 ---
 
-# Generating N-gram list with AntConc
+## Generating N-gram list with AntConc (10 mins)
 
-- Let's generate two list of n-grams.
+- Let's generate a list of n-grams.
 - You can use either English or Japanese. 
-  
-- For Japanese you can use `Aozora 1000` data we used.
-- For English you can use `Aozora 1000` data we used.
 
+- For Japanese you can use `Aozora 500` data we used.
+- For English you can use `BROWN corpus` data we used.
 
-# Generating P-frame list with AntConc
+## Generating P-frame list with AntConc
 
 - Let's now generate p-frame.
-- You can use either English or Japanese. When using Japanese you can use `Aozora 1000` data we used.
+- You can use either English or Japanese. 
+  - When using Japanese you can use `Aozora 500` data we used.
 
 
-
-# Searching collocations on AntConc
+# Searching collocations with AntConc (10-15 mins)
 
 ## Recap: What is collocation?
 
 - Collocation 
+- node word: `play`
+- collocates:  `role`, `game`, `sports`, etc.
 
 ## Collocation in AntConc
 
-- explain
+You can search collocation by entering `node` words
+
+- Open AntConc, load `BROWN corpus`.
+- Go to `Collocate`
+- Enter `play` in search window and hit `Start`
+
+## You should get the following.
+
+![Collocation search in AntConc](../../assets/session-8/antconc-collocation.png)
 
 
+## Try a few different search terms.
 
-# Calculating Strengths of Association (SOA) measures
+- Any node word you want to search?
+
+
+## Some options
+
+| Option name | Description |
+|----|---------|
+| **Window Span** | Specifies how many words on the left or right do you consider as candidates. |
+| **Min. freq** | how many times the collocation must occur |
+| **Min. Range** | how many document must the collocation occur in |
+
+## Any questions?
+
+# Calculating Strengths of Association (SOA) measures (40 mins)
 
 ## Calculating SOA by hand
 
@@ -61,8 +84,122 @@ By the end of this session, students will be able to:
   - Mutual Information Squared ($MI^2$)
   - LogDice
 
+## Preparation
 
-## Understanding collocational characteristics by plotting
+- Copy and paste word frequency list in `frequency` tab
+
+![frequency list](../../assets/session-8/freq-list.png)
+
+
+## Enter the node and collocates
+
+- Now retrieve word frequencies from the frequency list, using function called `vlookup`.
+
+![retrieve frequency](../../assets/session-8/enter-freq.gif)
+
+## Collocation frequency (observed)
+
+- Enter node word in search window and look for FreqLR.
+  
+![Observed frequency](../../assets/session-8/collocate-freq.gif)
+
+## Enter Observed frequency and window size
+
+![Enter O11](../../assets/session-8/Observed-windowsize.gif)
+
+## Expected frequency
+
+Now we will enter formula for the expected frequency.
+
+
+$$E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}$$
+
+- This formula says:
+  - The expected frequency of collocation would be joint probability of the two words.
+
+## Expected frequency
+
+- $E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}$
+
+![expected-frequency](../../assets/session-8/expected-freq.gif)
+
+
+## Mutual Information
+
+Finally, we will enter the following formula.
+
+$$MI = {log_2{ Observed freq \over Expected frequency }}$$
+
+![Calculating MI](../../assets/session-8/MI.gif)
+
+## Wait ... 
+
+- Our calculation shows that MI = 8.69
+- AntConc says 5.377 ...
+
+![AntConc MI](../../assets/session-8/MI-AntConc.png)
+
+
+## Why are the scores different?
+
+- I was also confused...
+- It appears based on [this conversation in google group](https://groups.google.com/g/antconc/c/n_5G6kmj2-8?pli=1) that corpus tools are adjusting the observed frequency by multiplying `window size`.
+- This means that Expected frequency becomes
+
+$E_{11} = {(freq_{node} * freq_{collocate} * \color{red}{window size}) \over Corpus size}$
+
+## Okay.. now what?
+
+Let's fix the expected frequency count.
+
+![Fixed expected frequency](../../assets/session-8/fixed-expected.gif)
+
+- Okay close enough!
+
+## Confirming with Casual Conc
+
+- Our score actually is also close to that of Casual Conc
+
+![Collocation](../../assets/session-8/Casualconc-collocation.gif)
+
+## Take-away...
+
+- Even widely used corpus software may give you slightly different SOA scores, because of possible differences in counting strategies, tokenization, etc..
+- AntConc and Casual Conc likely uses:
+  - $E_{11} = {(freq_{node} * freq_{collocate} * \color{red}{window size}) \over Corpus size}$
+- It is very important to **triple-check your work** and...
+  
+
+## Report exactly what you did
+
+Replicability is key to science.
+
+For example, you might say.
+
+- e.g., I used AntCont version 4.2.x 
+- e.g., MI was calculated using the following formula
+
+  - $MI = {log_2{ Observed freq \over Expected frequency }}$
+  - where the expected frequency is calculated as:
+  - $E_{11} = {(freq_{node} * freq_{collocate} * \color{red}{window size}) \over Corpus size}$
+
+
+## Questions?
+
+
+## Let's finish it up
+
+- LogDice:
+  - Ours: 6.548
+  - AntConc: 6.551 Likely multiplying window size in the denominator.
+  - CasualConc: 11.14 ???
+- T-score:
+  - Ours: 2.927
+  - AntConc: 2.928 (Almost identical)
+  - CasualConc: 2.99 (close)
+
+
+## Understanding collocational characteristics by plotting (20 mins)
 
 - Let's make plots based on the calculated 
 
@@ -81,11 +218,9 @@ By the end of this session, students will be able to:
   - MI
   - LogDice
 
-
 ## (Advanced) how can I generate a collocation list?
 
-- Colab notebook
-
+- You can take a look at [the following notebook](../../resources/code-examples/python/extracting-collocations.ipynb)
 
 
 ---

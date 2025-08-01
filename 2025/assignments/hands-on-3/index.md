@@ -1,13 +1,7 @@
 ---
-title: "Hands-on Assignment 3"
+title: "Corpus Lab 3"
 subtitle: "Mini-research on vocabulary and multiword units"
 ---
-
-::: {.callout-warning}
-## Under Construction
-This course website is currently under construction and will be ready for the class starting **August 2nd, 2025**. Content is being actively developed and updated.
-:::
-
 
 # Assignment Overview
 
@@ -63,26 +57,46 @@ Specifically, you will:
 - present the results and interpretation in a written prose
 
 
+::: {.callout-note}
+# Submission
+
+The final report are one-to-two page lengths report.
+
+- Short background and Research Questions (one paragraph)
+- Method section
+  - Corpus descriptions (one paragraph)
+  - Index descriptions (one paragraph)
+  - Analysis (one paragraph)
+  - Research hypothesis (one paragraph)
+- Results (data interpretation and commentary)
+  - Figures or statistical report
+- Conclusion
+
+:::
+
+
 ### Assignment Guideline
 
-### Step 1: Understand and choose the corpus
+
+### Step 1: Construct research questions
+
+In this type of research, researchers typically set RQs about the relationships between lexical characteristncs and variables that defines subsection of the corpus (e.g., grade, genre, or proficieincy score).
+
+The following information is available through the GiG corpus:
+
+
+The following information is available through the ICNALE corpus:
+
+- Ratings performed by external raters
+
+
+### Step 2: Understand and choose the corpus
 
 In this assignment, please choose one of the following corpora:
 
 1. *Growth in Grammar (GiG) corpus* (Durrant, 2023)
 2. *ICNALE corpus* (Edited Essay OR GRA)
 3. Some Japanese corpus here (Ask Masaki about availability).
-
-
-### Step 2: Construct research questions
-
-In this type of research, researchers typically set RQs about the relationships between lexical characteristncs and variables that defines subsection of the corpus (e.g., grade, genre, or proficieincy score).
-
-The following information is available through the GiG corpus:
-- 
-
-The following information is available through the ICNALE corpus:
-- Ratings performed by external raters
 
 
 #### Step 3: Construct hypothesis
@@ -110,20 +124,8 @@ To answer the research questions, you may want to do the followings:
 
 #### Step 7: Interpret and write-up the results
 
+You will write-up what you found in your mini research in a one-to-two page short report. 
 
-
-::: {.callout-note}
-
-## Submission
-
-- A word file which 
-  - describe the selected lexical richness and phraseological indices;
-  - briefly explain the content of the corpus you investigated;
-  - provides analysis procesure
-  - provides results of the analysis (e.g., visualization and/or statistical tests)
-  - discusses implication of your analysis 
-
-:::
 
 ::: {.callout-important}
 # Success Criteria

@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/index.html</loc>
-    <lastmod>2025-07-21T07:02:00.695Z</lastmod>
+    <lastmod>2025-08-01T10:02:19.852Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/corpora/learner-corpora.html</loc>
-    <lastmod>2025-07-20T03:31:24.036Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/corpora/available-corpora.html</loc>
+    <lastmod>2025-07-22T15:09:53.437Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/index.html</loc>
-    <lastmod>2025-07-20T06:36:28.936Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/corpora/index.html</loc>
+    <lastmod>2025-07-06T12:29:03.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/tools/python-setup.html</loc>
+    <lastmod>2025-07-20T07:07:30.197Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/tools/index.html</loc>
@@ -29,88 +33,92 @@
     <lastmod>2025-07-21T04:36:24.699Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/code-examples/python/dl_aozorabunko.html</loc>
-    <lastmod>2025-07-26T01:01:59.635Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/code-examples/python/index.html</loc>
+    <lastmod>2025-07-06T12:31:52.467Z</lastmod>
+  </url>
+  <url>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/code-examples/python/ld_parallel_analysis.html</loc>
+    <lastmod>2025-07-27T05:40:09.897Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/notebooks/session-5.html</loc>
     <lastmod>2025-07-20T10:49:52.652Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/notebooks/session-11.html</loc>
-    <lastmod>2025-07-26T02:00:36.044Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/notebooks/session-6.html</loc>
+    <lastmod>2025-07-13T16:47:02.635Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/session3.html</loc>
-    <lastmod>2025-07-26T16:53:54.692Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/session2.html</loc>
+    <lastmod>2025-07-26T16:53:36.547Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/session1.html</loc>
-    <lastmod>2025-07-26T16:53:37.441Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/index.html</loc>
+    <lastmod>2025-08-01T09:59:50.450Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/index.html</loc>
-    <lastmod>2025-07-21T06:38:56.932Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/session13.html</loc>
+    <lastmod>2025-07-26T17:05:28.031Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/session14.html</loc>
-    <lastmod>2025-07-26T16:41:52.084Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/session15.html</loc>
+    <lastmod>2025-07-26T16:53:24.044Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/index.html</loc>
-    <lastmod>2025-07-21T06:44:03.515Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/session6.html</loc>
+    <lastmod>2025-07-26T17:01:14.209Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/session5.html</loc>
-    <lastmod>2025-07-26T17:00:40.355Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/session4.html</loc>
+    <lastmod>2025-07-26T17:00:04.137Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/session8.html</loc>
-    <lastmod>2025-07-26T17:02:40.168Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/session7.html</loc>
+    <lastmod>2025-07-26T17:02:08.131Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/index.html</loc>
-    <lastmod>2025-07-21T06:49:09.380Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/session9.html</loc>
+    <lastmod>2025-07-26T17:02:56.388Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/session12.html</loc>
-    <lastmod>2025-07-26T17:05:18.158Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/index.html</loc>
+    <lastmod>2025-08-01T10:00:39.229Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/session10.html</loc>
-    <lastmod>2025-07-26T17:03:42.528Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/session11.html</loc>
+    <lastmod>2025-07-26T17:04:14.811Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/syllabus/schedule.html</loc>
-    <lastmod>2025-07-21T06:41:24.395Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/syllabus/index.html</loc>
+    <lastmod>2025-08-01T09:59:07.321Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-7.html</loc>
-    <lastmod>2025-07-26T16:24:01.141Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-6.html</loc>
+    <lastmod>2025-07-28T13:17:39.155Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-5.html</loc>
-    <lastmod>2025-07-26T16:23:50.804Z</lastmod>
+    <lastmod>2025-08-01T09:58:36.700Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-1.html</loc>
-    <lastmod>2025-07-26T16:26:52.502Z</lastmod>
+    <lastmod>2025-08-01T09:10:26.367Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-2.html</loc>
-    <lastmod>2025-07-26T16:39:27.183Z</lastmod>
+    <lastmod>2025-08-01T09:54:01.061Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-12.html</loc>
-    <lastmod>2025-07-26T16:24:24.331Z</lastmod>
+    <lastmod>2025-07-30T09:38:44.440Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-11.html</loc>
-    <lastmod>2025-07-26T16:24:20.086Z</lastmod>
+    <lastmod>2025-07-29T12:27:46.334Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-8.html</loc>
-    <lastmod>2025-07-26T16:24:05.916Z</lastmod>
+    <lastmod>2025-07-29T11:36:19.940Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/hands-on-4/draft.html</loc>
@@ -126,7 +134,7 @@
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/hands-on-1/index.html</loc>
-    <lastmod>2025-07-21T08:05:37.919Z</lastmod>
+    <lastmod>2025-08-01T09:55:55.803Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/hands-on-1/draft.html</loc>
@@ -134,7 +142,7 @@
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/final-project/index.html</loc>
-    <lastmod>2025-07-22T14:05:55.651Z</lastmod>
+    <lastmod>2025-08-01T09:59:30.366Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/hands-on-1/answer-key.html</loc>
@@ -142,27 +150,27 @@
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/index.html</loc>
-    <lastmod>2025-07-22T09:34:08.280Z</lastmod>
+    <lastmod>2025-08-01T09:58:12.356Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/hands-on-2/index.html</loc>
-    <lastmod>2025-07-26T08:38:22.311Z</lastmod>
+    <lastmod>2025-08-01T09:55:53.451Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/hands-on-3/index.html</loc>
-    <lastmod>2025-07-26T15:16:18.948Z</lastmod>
+    <lastmod>2025-08-01T09:55:49.238Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/assignments/hands-on-4/index.html</loc>
-    <lastmod>2025-07-26T13:58:03.242Z</lastmod>
+    <lastmod>2025-08-01T09:55:27.301Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-9.html</loc>
-    <lastmod>2025-07-26T16:24:10.216Z</lastmod>
+    <lastmod>2025-07-29T11:37:22.976Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-10.html</loc>
-    <lastmod>2025-07-26T16:24:14.749Z</lastmod>
+    <lastmod>2025-07-29T12:17:42.580Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-13.html</loc>
@@ -170,75 +178,79 @@
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-3.html</loc>
-    <lastmod>2025-07-26T16:23:45.242Z</lastmod>
+    <lastmod>2025-08-01T07:48:21.006Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-4.html</loc>
-    <lastmod>2025-07-26T16:42:45.983Z</lastmod>
+    <lastmod>2025-07-27T03:23:10.265Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/coca_table.html</loc>
-    <lastmod>2025-07-11T23:15:46.217Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-7.html</loc>
+    <lastmod>2025-07-26T16:24:01.141Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/slides/session-6.html</loc>
-    <lastmod>2025-07-26T16:23:56.102Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/syllabus/schedule.html</loc>
+    <lastmod>2025-07-21T06:41:24.395Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/syllabus/index.html</loc>
-    <lastmod>2025-07-21T06:39:46.583Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/session10.html</loc>
+    <lastmod>2025-07-26T17:03:42.528Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/session11.html</loc>
-    <lastmod>2025-07-26T17:04:14.811Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/session12.html</loc>
+    <lastmod>2025-07-27T02:04:16.149Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day4/index.html</loc>
-    <lastmod>2025-07-21T06:38:51.319Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/index.html</loc>
+    <lastmod>2025-08-01T10:02:04.573Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/session9.html</loc>
-    <lastmod>2025-07-26T17:02:56.388Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/session8.html</loc>
+    <lastmod>2025-07-26T17:02:40.168Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day3/session7.html</loc>
-    <lastmod>2025-07-26T17:02:08.131Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/session5.html</loc>
+    <lastmod>2025-07-26T17:00:40.355Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/session4.html</loc>
-    <lastmod>2025-07-26T17:00:04.137Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/index.html</loc>
+    <lastmod>2025-08-01T10:00:52.277Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day2/session6.html</loc>
-    <lastmod>2025-07-26T17:01:14.209Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/session14.html</loc>
+    <lastmod>2025-07-26T16:41:52.084Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/session15.html</loc>
-    <lastmod>2025-07-26T16:53:24.044Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/index.html</loc>
+    <lastmod>2025-07-21T06:38:56.932Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day5/session13.html</loc>
-    <lastmod>2025-07-26T17:05:28.031Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/session1.html</loc>
+    <lastmod>2025-07-26T16:53:37.441Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/index.html</loc>
-    <lastmod>2025-07-21T06:38:29.028Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/session3.html</loc>
+    <lastmod>2025-07-26T16:53:54.692Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/sessions/day1/session2.html</loc>
-    <lastmod>2025-07-26T16:53:36.547Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/notebooks/session-11.html</loc>
+    <lastmod>2025-07-29T13:02:05.150Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/notebooks/session-6.html</loc>
-    <lastmod>2025-07-13T16:47:02.635Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/notebooks/session-12.html</loc>
+    <lastmod>2025-07-31T12:55:58.701Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/2025/notebooks/japanese-nlp-test.html</loc>
     <lastmod>2025-07-21T04:39:09.334Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/code-examples/python/index.html</loc>
-    <lastmod>2025-07-06T12:31:52.467Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/code-examples/python/dl_aozorabunko.html</loc>
+    <lastmod>2025-07-28T12:28:24.268Z</lastmod>
+  </url>
+  <url>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/code-examples/python/extracting-collocations.html</loc>
+    <lastmod>2025-07-29T11:33:52.915Z</lastmod>
   </url>
   <url>
     <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/code-examples/index.html</loc>
@@ -253,15 +265,19 @@
     <lastmod>2025-07-20T07:12:53.650Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/tools/python-setup.html</loc>
-    <lastmod>2025-07-20T07:07:30.197Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/tools/taales-taassc.html</loc>
+    <lastmod>2025-07-28T11:58:45.296Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/corpora/index.html</loc>
-    <lastmod>2025-07-06T12:29:03.198Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/index.html</loc>
+    <lastmod>2025-07-20T06:36:28.936Z</lastmod>
   </url>
   <url>
-    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/corpora/available-corpora.html</loc>
-    <lastmod>2025-07-22T15:09:53.437Z</lastmod>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/resources/corpora/learner-corpora.html</loc>
+    <lastmod>2025-07-20T03:31:24.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://egumasa.github.io/Linguistic-Data-Analysis-I/todo.html</loc>
+    <lastmod>2025-07-29T10:32:09.632Z</lastmod>
   </url>
 </urlset>

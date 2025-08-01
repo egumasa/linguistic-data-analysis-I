@@ -1,0 +1,13 @@
+tokens
+
+secondly_cw
+some_fw
+people_cw_nn
+believe_cw_vb
+
+types
+
+secondly_cw
+some_fw
+believe_cw_vb
+people_cw_nn

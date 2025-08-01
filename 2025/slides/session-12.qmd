@@ -17,70 +17,53 @@ metadata-files:
 
 By the end of this session, students will be able to:
  
-> - Conduct linguistic complexity analysis using a template Python code provided by the instructor.
-> - (Optional) Apply the concept of linguistic complexity to the Japanese language.
+> - Define extraction rules to identify fine-grained grammatical features in language
+> - Conduct analysis using a template Python code or web application provided by the instructor.
 
 
 ---
 
 # Assignment 4
 
-- In assignment 4, you will be 
+In assignment 4, you will conduct a grammatical analysis on a corpus combining POS tagger and dependency parser.
+
+You will be able to:
+- extract fine-grained grammatical features from either a Japanese or an English corpus.
+- write a short report describing the results and interpretation of the analysis results.
 
 
+# Let's start
+
+## Colab Notebook
+
+- Access the notebook here.
 
 
-## Thinking grammartically
+## Introduction
 
-In group, come up with 3-5 grammatical constructions you would like to identify in learner language.
+- The notebook is very basic version of what TAASSC will do
+- This is meant for educational use; for research more rigorous approach may be needed.
 
-- Explain why it is important
-- Give some examples that fall under teh grammatical construction.
+## Algorithm used in the notebook
 
+In this notebook, the following analysis pipeline is implemented for you.
 
-
-# Using dependency parsers to identify 
-
-## About Google Colab (5 mins)
-
-
-## Python basics (15 mins)
+- Your input is `file path` to yout corpus files.
+- The current code loads the corpus files onto colab.
+- It then iterate through the corpus files one by one.
 
 
+## Algorithm used in the notebook (cont'd)
 
-## First text analysis
-
-1. First thing is to load the package.
-
-```python
-import spacy
-nlp = spacy.load("en_core_web_sm")
-
-```
-
-2. Then you will define a variable `example_text`
-
-```python
-example_text = "Hi. This is my first awesome sentence to analyze."
-```
-
-3. Analyze this using spacy
-
-```python
-doc = nlp(example_text)
-```
-
-## Result of your first text analysis
+- Parse the sentence using spacy
+- Conduct basic analysis (such as calculating the number of tokens, sentences, etc.)
+- **Count the number of specific grammatical structures** (**MAIN FEATURE**)
+- Store the results into a Python dictionary
+- After every corpus file is processed, it can create a dataset to export.
+- You can export the results for further analysis
 
 
-4. Let's print analysis results
-
-```python
-for token in doc:
-    print(token.text, token.pos_, token.tag_, sep="\t")
-```
-
-## 
+# Let's now work on the notebook
 
 
 ## spaCy token information
@@ -94,6 +77,28 @@ Some useful token information are following:
 | token.tag_ | fine-grained POS (PennTag set) | NN, JJ, VB, BBZ |
 | token.dep_ | dependency type | amod, advmd |
 | token.head | token information of the head of the dependency | 
+
+
+## Excercise
+
+From Table 5.1 in Durrant (2023, p. 102), pick one or two sentences.
+
+Try to identify that structure using the following extraction pipeline.
+
+## Extraction pipelines.
+
+## Thinking grammartically
+
+In pair, brainstorm 3 - 5 grammatical constructions you would like to identify in your corpus search.
+
+- Describe the grammatical feature
+- Give some examples that fall under the grammatical construction.
+- Explain why you are interested in.
+
+
+# Corpus Lab
+
+## 
 
 
 

@@ -1,13 +1,8 @@
 ---
-title: "Hands-on Assignment 2"
+title: "Corpus Lab 2"
 subtitle: "Frequency lists & Lexical richness"
 ---
 
-::: {.callout-warning}
-## Under Construction
-This course website is currently under construction and will be ready for the class starting **August 2nd, 2025**. Content is being actively developed and updated.
-:::
-  
 # Assignment Overview
 
 This assignment aims to help you practice the following skills:
@@ -29,6 +24,7 @@ Submit the finished assignment through Google Classroom.
 ### Goals
 
 The goal of this task is to:
+
 - Construct a Japanese word frequency list.
 
 ### Instruction
@@ -55,16 +51,18 @@ Your submission ...
 
 :::
 
-## Task 2: Hand-calculated lexical diversity scores and TAALED results
+## Task 2: Hand-calculated lexical diversity scores
 
 ### Goals
+
 The goals of this task are:
+
 - to understand how classical lexical diversity scores behave given the simple textual examples
 - to compute more recent, robust alternatives to classical indices using TAALED.
 - to describe how texts from the *GiG corpus* behave in terms of lexical diversity.
 
 ### Instructions
-- Complete the hand calculation of lexical diversity indices on the spreadsheet 
+- Complete the hand calculation of lexical diversity indices on the spreadsheet
 - Compute recommended lexical diversity indices — MATTR and MTLD Original — using TAALED.
 - Replicate Figure 4.19 in Durrant (2023, p. 72) with the two indices (i.e., MATTR and MTLD Original) 
 - Discuss implication of the findings.
@@ -83,7 +81,7 @@ The goals of this task are:
 
 Your submission ...
 
-- [ ] includes a spreatsheet that contains lexical diversity (i.e., TTR, CTTR, MAAS) scores for the sample texts
+- [ ] includes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts
 - [ ] includes a csv file 
 - [ ] provides two sets of plots that describe trends of lexical diversity across year groups and genre.
 - [ ] provides comparison of the trends of lexical diversities you found against Figure 4.19 in Durrant (2023).

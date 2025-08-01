@@ -25,6 +25,16 @@ By the end of this session, you will be able to:
 
 ---
 
+## Tasks
+
+1. Loading a corpus to AntConc
+2. Creating a frequency list
+3. Visualize frequency distributions
+4. Tokenize non-English language
+5. (If time left) Vocabulary profiling
+
+
+
 ## Introduction
 
 - AntConc is free concordancing tool.
@@ -49,6 +59,8 @@ By the end of this session, you will be able to:
 ## Load a corpus
 
 Now, let's load a corpus.
+
+- We will use BROWN Corpus.
 
 ![Load-corpus](../../assets/session-5/Loading-corpus.gif)
 
@@ -163,13 +175,13 @@ Let's now create a frequency list
 - We will come back to POS tagging on Day 4.
 
 
-## Activity instruction (20 mins)
+## Compiling Japanese Word Frequency list
 
 ### Task
 Compile a Japanese frequency list based on a corpus.
 
 ### Resource
-- Download a Japanese text `Aozora 1000` from Google Drive.
+- Download a Japanese text `Aozora 500` from Google Drive.
 - Use AntConc and TagAnt.
 
 ### Submission
@@ -204,6 +216,3 @@ Compile a Japanese frequency list based on a corpus.
 - [VocabProfiler in LexTutor](https://www.lextutor.ca/vp/)
 - [New Word Levels Checker](https://nwlc.pythonanywhere.com/)
 - AntWordProfiler 
-
-
-## Task 

@@ -1,0 +1,15 @@
+tokens
+
+Potter_cw_nn
+walk_cw_vb
+through_fw
+a_fw
+wall_cw_nn
+
+types
+
+walk_cw_vb
+wall_cw_nn
+Potter_cw_nn
+through_fw
+a_fw
