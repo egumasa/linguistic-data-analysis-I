@@ -30,17 +30,20 @@ We will talk about:
 
 ---
 
-# Recap
+# Corpus linguistics: Definition
 
-## Corpus linguistics =
+## Corpus linguistics 
 
 - the investigation of **linguistic research question**
+
 - that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
+
 - in a _**linguistic corpus**_.
 
 (Stefanowitsch, 2020, p. 56)
 
-## A linguistic Corpus (Recap)
+
+## A linguistic Corpus
 
 A linguistic corpus is:
 
@@ -224,9 +227,9 @@ A research question often involves **relations** between two or more **construct
   - GENRE
   - PROFICIENCY LEVEL
 
-
 ## Research question templates
 
+::: {style = "font-size:'75%'"}
 In corpus-driven linguistic research, we tend to ask following questions:
 
 - How does the frequency of word X change over time?
@@ -235,6 +238,7 @@ In corpus-driven linguistic research, we tend to ask following questions:
 - What are the typical contexts in which expression X appears based on concordance analysis?
 - How do different varieties of language Y (e.g., British vs. American English) differ in frequency and contexts of feature X?
 - How does register (formal/informal) affect both the frequency and typical contexts of linguistic feature X?
+:::
 
 ## Your turn: 
 
@@ -456,24 +460,14 @@ Try giving some answers in pairs.
 
 ## Corpora in English-Corpora.org
 
-
 ::: {style="font-size:60%"}
 
 | Corpus | Size | Regions | Time | Genre |
 |-----------|:--------:|:-----------:|:------|-------|
 | [IWEB](https://www.english-corpora.org/iweb/) | 13.9b | 6 | 2017 | Web |
 | [NOW](https://www.english-corpora.org/now/) | 16.2b | 20 | 2010-now | Web: News |
-| [CORONA](https://www.english-corpora.org/corona/) | 1.58b | 20 | 2020-now | Web: News |
-| [GLOWBE](https://www.english-corpora.org/glowbe/) | 1.9b | 20 | 2012-13 | Web/blogs |
-| [WIKI](https://www.english-corpora.org/wiki/) | 1.9b | (+) | 2014 | Wikipedia |
 | [COCA](https://www.english-corpora.org/coca/) | 1.0b | Am | 1990-2019 | Balanced |
 | [COHA](https://www.english-corpora.org/coha/) | 400m | Am | 1810-2009 | Balanced |
-| [TV](https://www.english-corpora.org/tv/) | 325m | 6 | 1950-2018 | TV shows |
-| [MOVIES](https://www.english-corpora.org/movies/) | 200m | 6 | 1930-2018 | Movies |
-| [SOAP](https://www.english-corpora.org/soap/) | 100m | Am | 2001-2012 | TV shows |
-| [HANSARD](https://www.english-corpora.org/hansard/) | 1.6b | Br | 1803-2005 | Parliament |
-| [EEBO](https://www.english-corpora.org/eebo/) | 755m | Br | 1470s-1690s | Various |
-| [SUP CRT](https://www.english-corpora.org/scotus/) | 130m | Am | 1790s-2010s | Legal |
 | [TIME](https://www.english-corpora.org/time/) | 100m | Am | 1923-2006 | Magazine |
 | [BNC](https://www.english-corpora.org/bnc/) | 100m | Br | 1980s-1993 | Balanced |
 | [CAN](https://www.english-corpora.org/can/) | 50m | Can | 1970s-2000s | Balanced |
@@ -482,6 +476,7 @@ Try giving some answers in pairs.
 :::
 
 
+ 
 
 ## Steps 4-6: In Session 3
 

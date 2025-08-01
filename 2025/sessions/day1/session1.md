@@ -40,11 +40,11 @@ Needs analysis (After giving overview) is conducted at the end of this session.
 
 ### Slides for the session
 
-<!-- <div class="d-flex gap-2 mb-3">
+<div class="d-flex gap-2 mb-3">
   
-[📊 View Interactive Slides (Under construction)](../../slides/session-1.html){.btn .btn-primary .btn-lg target="_blank"} 
+[📊 View Interactive Slides](../../slides/session-1.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-</div>  -->
+</div> 
 
 
 

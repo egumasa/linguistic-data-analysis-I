@@ -37,3 +37,31 @@ You will need a usable account for [english-corpora.org](https://www.english-cor
 - Download capabilities
 - Available through institution
 
+
+
+### Search hints
+
+- [Overall hint](https://www.english-corpora.org/help/word-phrase.asp#pos)
+
+
+## A list of corpora
+
+| Corpus | Size | Regions | Time | Genre |
+|-----------|:--------:|:-----------:|:------|-------|
+| [IWEB](https://www.english-corpora.org/iweb/) | 13.9b | 6 | 2017 | Web |
+| [NOW](https://www.english-corpora.org/now/) | 16.2b | 20 | 2010-now | Web: News |
+| [CORONA](https://www.english-corpora.org/corona/) | 1.58b | 20 | 2020-now | Web: News |
+| [GLOWBE](https://www.english-corpora.org/glowbe/) | 1.9b | 20 | 2012-13 | Web/blogs |
+| [WIKI](https://www.english-corpora.org/wiki/) | 1.9b | (+) | 2014 | Wikipedia |
+| [COCA](https://www.english-corpora.org/coca/) | 1.0b | Am | 1990-2019 | Balanced |
+| [COHA](https://www.english-corpora.org/coha/) | 400m | Am | 1810-2009 | Balanced |
+| [TV](https://www.english-corpora.org/tv/) | 325m | 6 | 1950-2018 | TV shows |
+| [MOVIES](https://www.english-corpora.org/movies/) | 200m | 6 | 1930-2018 | Movies |
+| [SOAP](https://www.english-corpora.org/soap/) | 100m | Am | 2001-2012 | TV shows |
+| [HANSARD](https://www.english-corpora.org/hansard/) | 1.6b | Br | 1803-2005 | Parliament |
+| [EEBO](https://www.english-corpora.org/eebo/) | 755m | Br | 1470s-1690s | Various |
+| [SUP CRT](https://www.english-corpora.org/scotus/) | 130m | Am | 1790s-2010s | Legal |
+| [TIME](https://www.english-corpora.org/time/) | 100m | Am | 1923-2006 | Magazine |
+| [BNC](https://www.english-corpora.org/bnc/) | 100m | Br | 1980s-1993 | Balanced |
+| [CAN](https://www.english-corpora.org/can/) | 50m | Can | 1970s-2000s | Balanced |
+| [CORE](https://www.english-corpora.org/core/) | 50m | 6 | 2014 | Web |

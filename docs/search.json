@@ -445,7 +445,7 @@
     "href": "2025/sessions/day1/session2.html#materials",
     "title": "Session 2",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 1",
@@ -1943,14 +1943,14 @@
     "href": "2025/slides/session-1.html#session-1-agenda",
     "title": "Session 1: Introduction",
     "section": "Session 1 Agenda",
-    "text": "Session 1 Agenda\n\nWelcome & Course Logistics\n\nInstructor introduction\nCourse website & Google Classroom access\n\nIntroduction to Corpus Linguistics\n\nWhat is a corpus?\nTypes of linguistic corpora\nTypical research & teaching use cases"
+    "text": "Session 1 Agenda\n\nWelcome & Course Logistics\n\nCourse website & Google Classroom access\n\nIntroduction to Corpus Linguistics\n\nWhat is a corpus?\nTypes of linguistic corpora\nTypical research use cases"
   },
   {
     "objectID": "2025/slides/session-1.html#session-1-agenda-1",
     "href": "2025/slides/session-1.html#session-1-agenda-1",
     "title": "Session 1: Introduction",
     "section": "Session 1 Agenda",
-    "text": "Session 1 Agenda\n\nHands‑on Mini Demo\n\nLive corpus search (COCA/NOW)\n\nQuick poll: frequency guess\n\nCourse Roadmap\n\nObjectives & learning outcomes\nCourse structure and expectations"
+    "text": "Session 1 Agenda\n\nCourse Roadmap\n\nObjectives & learning outcomes\nCourse structure and expectations"
   },
   {
     "objectID": "2025/slides/session-1.html#learning-objectives",
@@ -1964,14 +1964,21 @@
     "href": "2025/slides/session-1.html#your-instructor",
     "title": "Session 1: Introduction",
     "section": "Your Instructor",
-    "text": "Your Instructor\n\nMasaki Eguchi\nResearch Scientist at Equmenopolis, Inc.\nGuest Research Assistant Professor at Waseda University."
+    "text": "Your Instructor\n\n\nMasaki Eguchi, Ph.D.\n\nDeveloping AI (InteLLA) and Speaking test at Equmenopolis, Inc.\nGuest Research Assistant Professor at Waseda University.\n\n\n\n\n\nPicture\n\n\n\n\n\nInteLLA"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#my-research",
+    "href": "2025/slides/session-1.html#my-research",
+    "title": "Session 1: Introduction",
+    "section": "My research",
+    "text": "My research\nSecond-language writing/speaking assessment using computational techniques\n\n\n\n\n\nEngagement Analyzer\n\n\n\n\n\n\nChatGPT for Essay Scoring"
   },
   {
     "objectID": "2025/slides/session-1.html#introduction",
     "href": "2025/slides/session-1.html#introduction",
     "title": "Session 1: Introduction",
     "section": "Introduction",
-    "text": "Introduction\n\nBriefly introduce yourself\nName, research interests\nFavorite things to do in Sendai."
+    "text": "Introduction\n\nBriefly introduce yourself\nName\nResearch interests/topic\nWhy you decided to take this course.\nFavorite things to do in Sendai."
   },
   {
     "objectID": "2025/slides/session-1.html#what-is-the-first-thing-that-come-to-your-mind-about-corpus",
@@ -2002,25 +2009,25 @@
     "text": "What do corpora contain?\n\n\nlanguage samples produced in the wild for specific communicative purposes\n\nWritten language:\n\nMagazines\nNews Paper\nBlog\n\nSpoken language:\n\ntranscriptions of spoken exchanges\n\nTV or radio shows\nConversations"
   },
   {
-    "objectID": "2025/slides/session-1.html#corpus-can-be-useful-to-answer-research-question-about-language-use",
-    "href": "2025/slides/session-1.html#corpus-can-be-useful-to-answer-research-question-about-language-use",
+    "objectID": "2025/slides/session-1.html#how-do-we-use-corpus",
+    "href": "2025/slides/session-1.html#how-do-we-use-corpus",
     "title": "Session 1: Introduction",
-    "section": "Corpus can be useful to answer research question about language use",
-    "text": "Corpus can be useful to answer research question about language use\nCorpus can give you answers if you have good question and good search strategy.\n\nhow many times X occurs in Corpus A\nhow many times X occures with Y\nhow many times X occurs in the subsections of Corpus B"
+    "section": "How do we use corpus?",
+    "text": "How do we use corpus?\nCorpus can give you answers on how people use language.\n\nHow often does X occur in Corpus A?\nHow often does X occure with Y?\nIn what context does X occur?"
   },
   {
-    "objectID": "2025/slides/session-1.html#come-up-with-several-english-words-for-the-following-category",
-    "href": "2025/slides/session-1.html#come-up-with-several-english-words-for-the-following-category",
+    "objectID": "2025/slides/session-1.html#word-naming-time.-what-is-the-following-object",
+    "href": "2025/slides/session-1.html#word-naming-time.-what-is-the-following-object",
     "title": "Session 1: Introduction",
-    "section": "Come up with several English words for the following category",
-    "text": "Come up with several English words for the following category\n\ncell phone\nmobile phone\nsmart phone"
+    "section": "Word Naming time. What is the following object?",
+    "text": "Word Naming time. What is the following object?\n\n\n\n\n\nWhat’s the name of these?\n\n\n\n\ncell phone\nmobile phone\nsmart phone"
   },
   {
-    "objectID": "2025/slides/session-1.html#you-can-construct-following-research-questions",
-    "href": "2025/slides/session-1.html#you-can-construct-following-research-questions",
+    "objectID": "2025/slides/session-1.html#research-questions-about",
+    "href": "2025/slides/session-1.html#research-questions-about",
     "title": "Session 1: Introduction",
-    "section": "You can construct following research questions",
-    "text": "You can construct following research questions\nOpen-ended question\n\nHow does the frequency of cell phone changed over time?\nWhich region uses cell phone more frequently than others?\n\nClose-end deductive question\n\nDoes British use cell phone more often than mobile phone?"
+    "section": "Research questions about",
+    "text": "Research questions about\n\nOpen-ended question\n\nHow does the frequency of cell phone changed over time?\nWhich region uses cell phone more frequently than mobile phone?\n\nClose-end deductive question\n\nDoes British use cell phone more often than mobile phone?"
   },
   {
     "objectID": "2025/slides/session-1.html#set-up-english-corpora.org-account",
@@ -2048,14 +2055,14 @@
     "href": "2025/slides/session-1.html#comparision",
     "title": "Session 1: Introduction",
     "section": "Comparision",
-    "text": "Comparision\n\n\n\ncell-phone\n\n\n\n\n\nmobile-phone"
+    "text": "Comparision"
   },
   {
-    "objectID": "2025/slides/session-1.html#which-region-uses-cell-phone-more-frequenty-than-mobile-phone",
-    "href": "2025/slides/session-1.html#which-region-uses-cell-phone-more-frequenty-than-mobile-phone",
+    "objectID": "2025/slides/session-1.html#which-region-uses-cell-phone-more-frequenty",
+    "href": "2025/slides/session-1.html#which-region-uses-cell-phone-more-frequenty",
     "title": "Session 1: Introduction",
-    "section": "Which region uses cell phone more frequenty than mobile phone?",
-    "text": "Which region uses cell phone more frequenty than mobile phone?\n\ncell-phone"
+    "section": "Which region uses cell phone more frequenty?",
+    "text": "Which region uses cell phone more frequenty?\n\ncell-phone"
   },
   {
     "objectID": "2025/slides/session-1.html#how-about-mobile-phone",
@@ -2065,46 +2072,39 @@
     "text": "How about mobile phone?\n\nmobile-phone"
   },
   {
-    "objectID": "2025/slides/session-1.html#answer",
-    "href": "2025/slides/session-1.html#answer",
+    "objectID": "2025/slides/session-1.html#answer-to-the-research-questions",
+    "href": "2025/slides/session-1.html#answer-to-the-research-questions",
     "title": "Session 1: Introduction",
-    "section": "Answer",
-    "text": "Answer\n\nHow does the frequency of cell phone changed over time?\n\nThe use of cell phone tends to decline.\n\nWhich region uses cell phone more frequently than others?"
+    "section": "Answer to the research questions",
+    "text": "Answer to the research questions\n\nHow does the frequency of cell phone changed over time?\n\nThe use of cell phone tends to decline.\n\nWhich region uses cell phone more frequently than others?\n\ncell phone: US; Pakistan; Jamaica\nmobile phone: Philippines;\n\n\n→ You can get quantitative insights into how certain language is used"
   },
   {
-    "objectID": "2025/slides/session-1.html#corpus-linguistics",
-    "href": "2025/slides/session-1.html#corpus-linguistics",
+    "objectID": "2025/slides/session-1.html#research-questions-for-corpus-based-research",
+    "href": "2025/slides/session-1.html#research-questions-for-corpus-based-research",
     "title": "Session 1: Introduction",
-    "section": "Corpus linguistics",
-    "text": "Corpus linguistics\nCorpus linguistics = the investigation of linguistic research question that have been framed in terms of the conditional distribution of linguisitc phenomena in a linguistic corpus.\n(Stefanowitsch, 2020, p. 56)"
+    "section": "Research Questions for corpus-based research",
+    "text": "Research Questions for corpus-based research\nWith corpus we can ask questions:\n\nHow does X change over TIME?\nHow does X differ by REGION?\nHow does X vary by GENRE?\n\nWe can learn patterns of language use in relation to extra-linguistic factors."
   },
   {
-    "objectID": "2025/slides/session-1.html#corpus-linguistics-1",
-    "href": "2025/slides/session-1.html#corpus-linguistics-1",
+    "objectID": "2025/slides/session-1.html#the-x-in-corpus-linguistics",
+    "href": "2025/slides/session-1.html#the-x-in-corpus-linguistics",
     "title": "Session 1: Introduction",
-    "section": "Corpus linguistics =",
-    "text": "Corpus linguistics =\n\nthe investigation of linguistic research question\nthat have been framed in terms of the conditional distribution of linguisitc phenomena\n\n\n\nin a linguistic corpus.\n\n\n(Stefanowitsch, 2020, p. 56)"
+    "section": "The X in corpus linguistics",
+    "text": "The X in corpus linguistics\nIn corpus linguistics, we not only identify words but also:\n\nMorphemes (e.g., -ness; pre-; -ed)\nSyntactic constructions (e.g., by AGENT; relativa clauses)\nMultiword sequences (e.g., collocation significant role)\n\n\n\nPronunciation (segmental; prosodic features)\n\n\n→ In this course, we focus on lexico-grammatical features"
   },
   {
-    "objectID": "2025/slides/session-1.html#research-questions",
-    "href": "2025/slides/session-1.html#research-questions",
+    "objectID": "2025/slides/session-1.html#questions",
+    "href": "2025/slides/session-1.html#questions",
     "title": "Session 1: Introduction",
-    "section": "Research Questions",
-    "text": "Research Questions\nWith corpus we can ask questions:\n\nHow does X change over TIME?\nHow does X differ by REGION?\nHow does X vary by GENRE?\nWhat words occur with X?\n\nThese comparisons help us understand language patterns"
+    "section": "Questions?",
+    "text": "Questions?"
   },
   {
-    "objectID": "2025/slides/session-1.html#linguistic-research-questions---examples",
-    "href": "2025/slides/session-1.html#linguistic-research-questions---examples",
+    "objectID": "2025/slides/session-1.html#course-website",
+    "href": "2025/slides/session-1.html#course-website",
     "title": "Session 1: Introduction",
-    "section": "Linguistic Research Questions - Examples",
-    "text": "Linguistic Research Questions - Examples\nCorpus-based linguistic research\n\nWhat are relationships between processing speed and language frequency\n\nLearner Corpus Research:\n\nWhat kind of vocabulary do second-language learners with varying proficiency levels produce?\nWhat grammatical structure emerge later in a longitudinal corpus (as they develop)?"
-  },
-  {
-    "objectID": "2025/slides/session-1.html#assignment-1-preview",
-    "href": "2025/slides/session-1.html#assignment-1-preview",
-    "title": "Session 1: Introduction",
-    "section": "Assignment 1 Preview",
-    "text": "Assignment 1 Preview\nBy the end of today, you’ll be able to:\n\nAsk your own research question\nSearch corpus to find relevant results\nInterpret what you find\nWrite up your discoveries\n\nStart thinking: Are there any English expression or construction you want to learn more?"
+    "section": "Course Website",
+    "text": "Course Website\nWe will use the following two channels\n\n\n\nGithub Page\n\nto communicate course schedules, plans, and slides.\n\nGoogle classroom\n\nPlease do not hesitate to reach out\nfor assignment submission and Readings and Corpus data distribution.\n\n\n\n\n\n\nWebsite QR code"
   },
   {
     "objectID": "2025/slides/session-1.html#course-description",
@@ -2114,53 +2114,74 @@
     "text": "Course description\n\nThis 5-day introduction:\n\ncovers key concepts in corpus linguistics and learner corpus research\nteaches you how to conduct simple corpus searches using Concordance software\ngives you an overview of methods to investigate conditional distributions (e.g., frequency, co-occurrences) of vocabulary, multiword units, and grammatical items.\nintroduces foundational methods to identify linguisitic phenomena using corpus and how to know about their distribution\ndiscusses important applications of corpus methods in applied linguistic (second language) research"
   },
   {
-    "objectID": "2025/slides/session-1.html#about-the-course-website",
-    "href": "2025/slides/session-1.html#about-the-course-website",
+    "objectID": "2025/slides/session-1.html#learning-objectives-1",
+    "href": "2025/slides/session-1.html#learning-objectives-1",
     "title": "Session 1: Introduction",
-    "section": "About the course website",
-    "text": "About the course website\n\nThe course materials are available through the following two:\n\nCourse website\n\nWe use the website to communicate course schedules, plans, and slides.\n\nGoogle Classroom\n\nWe use Google Classroom for assignment submission, and distributing Readings and Corpus data."
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this course, students will be able to:\n\nExplain what corpus linguistics is and how corpus linguistics can help learn linguistic phenomena\nSearch for and select available corpora relevant to their own research\nDiscuss design issues related to language corpora for specific research purposes\nApply introductory corpus linguistic analyses (e.g., frequency analysis, concordancing, collocation analysis, POS tagging, and dependency parsing) to preprocessed corpora\nEvaluate the benefits and drawbacks of a corpus linguistic approach to linguistic analysis"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#course-components",
+    "href": "2025/slides/session-1.html#course-components",
+    "title": "Session 1: Introduction",
+    "section": "Course Components",
+    "text": "Course Components\n\nLectures and tutorials\nDaily Hands-on activities\nMini-corpus labs\nFinal project (will talk more)"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#textbook",
+    "href": "2025/slides/session-1.html#textbook",
+    "title": "Session 1: Introduction",
+    "section": "Textbook",
+    "text": "Textbook\n\nDurrant, P. (2023). Corpus linguistics for writing development: A guide for research. Routledge. https://doi.org/10.4324/9781003152682\nStefanowitsch, A. (2020). Corpus linguistics: A guide to the methodology. Zenodo. https://doi.org/10.5281/ZENODO.3735822 (This is an open source textbook, so it’s freely available online)\n\nOther required/Optional readings are provided through Google Classroom."
+  },
+  {
+    "objectID": "2025/slides/session-1.html#tools-and-softwares",
+    "href": "2025/slides/session-1.html#tools-and-softwares",
+    "title": "Session 1: Introduction",
+    "section": "Tools and Softwares",
+    "text": "Tools and Softwares\n\nSimple Text Analyzer: A web app created for you.\nAntConc: Corpus analysis toolkit for Concordancing\n\nPlease set this up by tomorrow set-up guide\n\nTagAnt:\n\nDownload and get ready to open\n\nGoogle Colaboratory: Follow the instruction here to enable the tool."
   },
   {
     "objectID": "2025/slides/session-1.html#session-overview",
     "href": "2025/slides/session-1.html#session-overview",
     "title": "Session 1: Introduction",
     "section": "Session overview",
-    "text": "Session overview\n\n\n\n\nDay\nTheme\nSessions\n\n\n\n\nDay 1\nIntroduction & Corpus Basics\n\n\n\nDay 2\nAnalysis of Vocabulary & Multiword Units (1)\n\n\n\nDay 3\nAnalysis of Vocabulary & Multiword Units (2)\n\n\n\nDay 4\nAnalysis of Grammar\n\n\n\nDay 5\nAdvanced Topics & Projects"
+    "text": "Session overview\n\n\n\n\n\n\n\n\n\nDay\nTheme\nSessions\n\n\n\n\nDay 1\nIntroduction & Corpus Basics\nSession 1-3\n\n\nDay 2\nAnalysis of Vocabulary & Multiword Units (1)\nSession 4-6\n\n\nDay 3\nAnalysis of Vocabulary & Multiword Units (2)\nSession 7-9\n\n\nDay 4\nAnalysis of Grammar\nSession 10-12\n\n\nDay 5\nAdvanced Topics & Projects\nSession 13-15"
   },
   {
     "objectID": "2025/slides/session-1.html#day-1-today",
     "href": "2025/slides/session-1.html#day-1-today",
     "title": "Session 1: Introduction",
     "section": "Day 1 Today",
-    "text": "Day 1 Today\n\nBasic corpus search\nConstructing Research Questions and hypotheses"
+    "text": "Day 1 Today\n\nBasic corpus search\nConstructing Research Questions and hypotheses\n\n\nsofa - chart"
   },
   {
     "objectID": "2025/slides/session-1.html#day-2-monday",
     "href": "2025/slides/session-1.html#day-2-monday",
     "title": "Session 1: Introduction",
     "section": "Day 2 (Monday)",
-    "text": "Day 2 (Monday)\n\nCreating word frequency list\nCalculating lexical diversity measures\nCalculating lexical sophistication measures"
+    "text": "Day 2 (Monday)\n\nCreating word frequency list\nCalculating lexical diversity measures\nCalculating lexical sophistication measures\n\n\nfreq-distribution"
   },
   {
     "objectID": "2025/slides/session-1.html#day-3-tuesday",
     "href": "2025/slides/session-1.html#day-3-tuesday",
     "title": "Session 1: Introduction",
     "section": "Day 3 (Tuesday)",
-    "text": "Day 3 (Tuesday)\n\nIdentifying multiword units (ngrams and collocations)\nCalculating Strengths of Association Measures"
+    "text": "Day 3 (Tuesday)\n\nIdentifying multiword units (ngrams and collocations)\nCalculating Strengths of Association Measures\n\n\ncollocation"
   },
   {
     "objectID": "2025/slides/session-1.html#day-4-wednesday",
     "href": "2025/slides/session-1.html#day-4-wednesday",
     "title": "Session 1: Introduction",
     "section": "Day 4 (Wednesday)",
-    "text": "Day 4 (Wednesday)\n\nConducting POS tagging and dependency parsing\nWe will experience using Python"
+    "text": "Day 4 (Wednesday)\n\nConducting POS tagging and dependency parsing\nWe will learn how to parse sentence using spaCy package in Python\n\n\ndependency"
   },
   {
     "objectID": "2025/slides/session-1.html#day-5-thursday",
     "href": "2025/slides/session-1.html#day-5-thursday",
     "title": "Session 1: Introduction",
     "section": "Day 5 (Thursday)",
-    "text": "Day 5 (Thursday)\n\nSpecial session on Large-Language Models\n\nAnnotating for\n\nlinguistic accuracy\ndiscourse move (if time allowed)"
+    "text": "Day 5 (Thursday)\n\nSpecial session on linguistic annotation using Large-Language Models\n\nlinguistic accuracy\ndiscourse move (if time allowed)"
   },
   {
     "objectID": "2025/slides/session-1.html#daily-schedule",
@@ -2177,6 +2198,20 @@
     "text": "What We’ve Covered So Far\n\nCorpora = searchable real language\nWe can ask questions about patterns\nCorpus gives us evidence-based answers"
   },
   {
+    "objectID": "2025/slides/session-1.html#assignment-1-preview",
+    "href": "2025/slides/session-1.html#assignment-1-preview",
+    "title": "Session 1: Introduction",
+    "section": "Assignment 1 Preview",
+    "text": "Assignment 1 Preview\nBy the end of today, you’ll be able to:\n\nAsk your own research question\nSearch corpus to find relevant results\nInterpret what you find\nWrite up your discoveries\n\nStart thinking: Are there any English expression or construction you want to learn more?"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#time-to-set-up-the-tools",
+    "href": "2025/slides/session-1.html#time-to-set-up-the-tools",
+    "title": "Session 1: Introduction",
+    "section": "Time to set-up the tools!",
+    "text": "Time to set-up the tools!\n\nAntConc: Corpus analysis toolkit for Concordancing\n\nPlease set this up by tomorrow set-up guide\n\nTagAnt:\n\nDownload and get ready to open\n\nGoogle Colaboratory: Follow the instruction here to enable the tool."
+  },
+  {
     "objectID": "2025/slides/session-2.html#learning-objectives",
     "href": "2025/slides/session-2.html#learning-objectives",
     "title": "Session 2: Corpus as a scientific method",
@@ -2187,15 +2222,15 @@
     "objectID": "2025/slides/session-2.html#corpus-linguistics",
     "href": "2025/slides/session-2.html#corpus-linguistics",
     "title": "Session 2: Corpus as a scientific method",
-    "section": "Corpus linguistics =",
-    "text": "Corpus linguistics =\n\nthe investigation of linguistic research question\nthat have been framed in terms of the conditional distribution of linguisitc phenomena\nin a linguistic corpus.\n\n(Stefanowitsch, 2020, p. 56)"
+    "section": "Corpus linguistics",
+    "text": "Corpus linguistics\n\nthe investigation of linguistic research question\nthat have been framed in terms of the conditional distribution of linguisitc phenomena\nin a linguistic corpus.\n\n(Stefanowitsch, 2020, p. 56)"
   },
   {
-    "objectID": "2025/slides/session-2.html#a-linguistic-corpus-recap",
-    "href": "2025/slides/session-2.html#a-linguistic-corpus-recap",
+    "objectID": "2025/slides/session-2.html#a-linguistic-corpus",
+    "href": "2025/slides/session-2.html#a-linguistic-corpus",
     "title": "Session 2: Corpus as a scientific method",
-    "section": "A linguistic Corpus (Recap)",
-    "text": "A linguistic Corpus (Recap)\nA linguistic corpus is:\n\nsearchable digital collection of\nreal-world language use\noften accompanied by meta-data describing the contextual parameters\n\n→ A corpus documents “recorded observation of language behavior”"
+    "section": "A linguistic Corpus",
+    "text": "A linguistic Corpus\nA linguistic corpus is:\n\nsearchable digital collection of\nreal-world language use\noften accompanied by meta-data describing the contextual parameters\n\n→ A corpus documents “recorded observation of language behavior”"
   },
   {
     "objectID": "2025/slides/session-2.html#common-criticism-to-corpus-linguistics",
@@ -2342,7 +2377,7 @@
     "href": "2025/slides/session-2.html#research-question-templates",
     "title": "Session 2: Corpus as a scientific method",
     "section": "Research question templates",
-    "text": "Research question templates\nIn corpus-driven linguistic research, we tend to ask following questions:\n\nHow does the frequency of word X change over time?\nHow does the frequency of word X differ across text types Z?\nWhat is the frequency distribution of grammatical pattern X across different text types?\nWhat are the typical contexts in which expression X appears based on concordance analysis?\nHow do different varieties of language Y (e.g., British vs. American English) differ in frequency and contexts of feature X?\nHow does register (formal/informal) affect both the frequency and typical contexts of linguistic feature X?"
+    "text": "Research question templates\n\nIn corpus-driven linguistic research, we tend to ask following questions:\n\nHow does the frequency of word X change over time?\nHow does the frequency of word X differ across text types Z?\nWhat is the frequency distribution of grammatical pattern X across different text types?\nWhat are the typical contexts in which expression X appears based on concordance analysis?\nHow do different varieties of language Y (e.g., British vs. American English) differ in frequency and contexts of feature X?\nHow does register (formal/informal) affect both the frequency and typical contexts of linguistic feature X?"
   },
   {
     "objectID": "2025/slides/session-2.html#your-turn-1",
@@ -2503,7 +2538,7 @@
     "href": "2025/slides/session-2.html#corpora-in-english-corpora.org",
     "title": "Session 2: Corpus as a scientific method",
     "section": "Corpora in English-Corpora.org",
-    "text": "Corpora in English-Corpora.org\n\n\n\n\nCorpus\nSize\nRegions\nTime\nGenre\n\n\n\n\nIWEB\n13.9b\n6\n2017\nWeb\n\n\nNOW\n16.2b\n20\n2010-now\nWeb: News\n\n\nCORONA\n1.58b\n20\n2020-now\nWeb: News\n\n\nGLOWBE\n1.9b\n20\n2012-13\nWeb/blogs\n\n\nWIKI\n1.9b\n(+)\n2014\nWikipedia\n\n\nCOCA\n1.0b\nAm\n1990-2019\nBalanced\n\n\nCOHA\n400m\nAm\n1810-2009\nBalanced\n\n\nTV\n325m\n6\n1950-2018\nTV shows\n\n\nMOVIES\n200m\n6\n1930-2018\nMovies\n\n\nSOAP\n100m\nAm\n2001-2012\nTV shows\n\n\nHANSARD\n1.6b\nBr\n1803-2005\nParliament\n\n\nEEBO\n755m\nBr\n1470s-1690s\nVarious\n\n\nSUP CRT\n130m\nAm\n1790s-2010s\nLegal\n\n\nTIME\n100m\nAm\n1923-2006\nMagazine\n\n\nBNC\n100m\nBr\n1980s-1993\nBalanced\n\n\nCAN\n50m\nCan\n1970s-2000s\nBalanced\n\n\nCORE\n50m\n6\n2014\nWeb"
+    "text": "Corpora in English-Corpora.org\n\n\n\n\nCorpus\nSize\nRegions\nTime\nGenre\n\n\n\n\nIWEB\n13.9b\n6\n2017\nWeb\n\n\nNOW\n16.2b\n20\n2010-now\nWeb: News\n\n\nCOCA\n1.0b\nAm\n1990-2019\nBalanced\n\n\nCOHA\n400m\nAm\n1810-2009\nBalanced\n\n\nTIME\n100m\nAm\n1923-2006\nMagazine\n\n\nBNC\n100m\nBr\n1980s-1993\nBalanced\n\n\nCAN\n50m\nCan\n1970s-2000s\nBalanced\n\n\nCORE\n50m\n6\n2014\nWeb"
   },
   {
     "objectID": "2025/slides/session-2.html#steps-4-6-in-session-3",
@@ -3663,7 +3698,7 @@
     "href": "2025/slides/session-3.html#recap-the-scientific-research-cycle",
     "title": "Session 3: Hands-on #1",
     "section": "Recap: The Scientific Research Cycle",
-    "text": "Recap: The Scientific Research Cycle\nRemember from Session 2:\n\nVerbalize your wonder\nFormulate research questions\n\nFormulate hypothesis\nChoose appropriate corpus\n→ Operationalize\n→ Test & Evaluate"
+    "text": "Recap: The Scientific Research Cycle\nRemember from Session 2:\n\nVerbalize your question\nFormulate research questions\n\nFormulate hypothesis\nChoose appropriate corpus\n→ Operationalize\n→ Test & Evaluate"
   },
   {
     "objectID": "2025/slides/session-3.html#what-does-operationalize-mean",
@@ -3747,14 +3782,14 @@
     "href": "2025/slides/session-3.html#specifying-part-of-speech-pos",
     "title": "Session 3: Hands-on #1",
     "section": "Specifying Part Of Speech (POS)",
-    "text": "Specifying Part Of Speech (POS)\n\nYou can use POS tag like the following\n\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nCommon noun\nNOUN\nN\nrun_NOUN\n\n\nProper Nouns\nNAME\nNP\nSendai_NAME\n\n\nAll nouns\nNOUN+\nN+\nsun_NOUN+, Sendai_NOUN+\n\n\nLexical verbs\nVERB\nV\nrun_VERB\n\n\nAll verbs\nVERB+\nV\nrun_VERB+, do_VERB+"
+    "text": "Specifying Part Of Speech (POS)\nYou can use POS tag like the following .\n\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nCommon noun\nNOUN\nN\nrun_N\n\n\nProper Nouns\nNAME\nNP\nSendai_N\n\n\nAll nouns\nNOUN+\nN+\nsun_N+, Sendai_N+\n\n\nLexical verbs\nVERB\nV\nrun_V\n\n\nAll verbs\nVERB+\nV\nrun_V+, do_V+"
   },
   {
     "objectID": "2025/slides/session-3.html#specifying-part-of-speech-pos-1",
     "href": "2025/slides/session-3.html#specifying-part-of-speech-pos-1",
     "title": "Session 3: Hands-on #1",
     "section": "Specifying Part Of Speech (POS)",
-    "text": "Specifying Part Of Speech (POS)\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nAdjectives\nADJ\nJ\nsimple_ADJ\n\n\nAdverbs\nADV\nR\nclear_ADV\n\n\nPreposition\nPREP\n-\nin_PREP\n\n\nArticles\nART\n-\nher_ART\n\n\nDeterminers\nDET\n-\nthese_DET\n\n\nConjunctions\nCONJ\n-\nbecause_CONJ\n\n\n\nSee this page for more information of POS in English-Corpora.org"
+    "text": "Specifying Part Of Speech (POS)\n\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nAdjectives\nADJ\nJ\nsimple_ADJ\n\n\nAdverbs\nADV\nR\nclear_ADV\n\n\nPreposition\nPREP\n-\nin_PREP\n\n\nArticles\nART\n-\nher_ART\n\n\nDeterminers\nDET\n-\nthese_DET\n\n\nConjunctions\nCONJ\n-\nbecause_CONJ\n\n\n\n\nSee this page for more information of POS in English-Corpora.org"
   },
   {
     "objectID": "2025/slides/session-3.html#the-word-run-used-as-noun",
@@ -3768,7 +3803,7 @@
     "href": "2025/slides/session-3.html#the-word-run-used-as-noun-1",
     "title": "Session 3: Hands-on #1",
     "section": "the word run used as noun",
-    "text": "the word run used as noun\nSearch: run_NOUN\n\nrun - as noun"
+    "text": "the word run used as noun\nSearch: run_N\n\nrun - as noun"
   },
   {
     "objectID": "2025/slides/session-3.html#your-turn-operationalize-these-concepts",
@@ -4837,7 +4872,7 @@
     "href": "2025/sessions/day1/session1.html#materials",
     "title": "Session 1",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 1",
@@ -4933,7 +4968,7 @@
     "href": "2025/sessions/day1/session3.html#materials",
     "title": "Session 3",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\nView Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 1",
@@ -5176,7 +5211,19 @@
     "href": "resources/tools/byu-corpora-guide.html#registration-and-access",
     "title": "English Corpora Guide",
     "section": "Registration and Access",
-    "text": "Registration and Access\n\nFree Access\n\nVisit english-corpora.org\nClick on desired corpus\nRegister for free account\nLimited to 20 queries per day\n\n\n\nAcademic License (Do not purchase for this class)\n\nExtended query limits\nDownload capabilities\nAvailable through institution",
+    "text": "Registration and Access\n\nFree Access\n\nVisit english-corpora.org\nClick on desired corpus\nRegister for free account\nLimited to 20 queries per day\n\n\n\nAcademic License (Do not purchase for this class)\n\nExtended query limits\nDownload capabilities\nAvailable through institution\n\n\n\nSearch hints\n\nOverall hint",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "English Corpora Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/byu-corpora-guide.html#a-list-of-corpora",
+    "href": "resources/tools/byu-corpora-guide.html#a-list-of-corpora",
+    "title": "English Corpora Guide",
+    "section": "A list of corpora",
+    "text": "A list of corpora\n\n\n\nCorpus\nSize\nRegions\nTime\nGenre\n\n\n\n\nIWEB\n13.9b\n6\n2017\nWeb\n\n\nNOW\n16.2b\n20\n2010-now\nWeb: News\n\n\nCORONA\n1.58b\n20\n2020-now\nWeb: News\n\n\nGLOWBE\n1.9b\n20\n2012-13\nWeb/blogs\n\n\nWIKI\n1.9b\n(+)\n2014\nWikipedia\n\n\nCOCA\n1.0b\nAm\n1990-2019\nBalanced\n\n\nCOHA\n400m\nAm\n1810-2009\nBalanced\n\n\nTV\n325m\n6\n1950-2018\nTV shows\n\n\nMOVIES\n200m\n6\n1930-2018\nMovies\n\n\nSOAP\n100m\nAm\n2001-2012\nTV shows\n\n\nHANSARD\n1.6b\nBr\n1803-2005\nParliament\n\n\nEEBO\n755m\nBr\n1470s-1690s\nVarious\n\n\nSUP CRT\n130m\nAm\n1790s-2010s\nLegal\n\n\nTIME\n100m\nAm\n1923-2006\nMagazine\n\n\nBNC\n100m\nBr\n1980s-1993\nBalanced\n\n\nCAN\n50m\nCan\n1970s-2000s\nBalanced\n\n\nCORE\n50m\n6\n2014\nWeb",
     "crumbs": [
       "Resources",
       "Tools",

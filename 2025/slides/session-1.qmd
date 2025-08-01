@@ -11,26 +11,21 @@ metadata-files:
 
 ---
 
-# What We'll Cover Today
+# Today's agenda
 
 ## Session 1 Agenda
 
 1. **Welcome & Course Logistics**
-   - Instructor introduction
    - Course website & Google Classroom access
 
 2. **Introduction to Corpus Linguistics**
    - What is a corpus?
    - Types of linguistic corpora 
-   - Typical research & teaching use cases
+   - Typical research use cases
 
 ## Session 1 Agenda
 
-3. **Hands‑on Mini Demo**
-   - Live corpus search (COCA/NOW)  
-   - Quick poll: frequency guess
-
-4. **Course Roadmap**
+3. **Course Roadmap**
    - Objectives & learning outcomes
    - Course structure and expectations
 
@@ -47,14 +42,51 @@ By the end of this session, students will be able to:
 
 ## Your Instructor  
 
-- Masaki Eguchi
-- Research Scientist at Equmenopolis, Inc.
+:::: {.columns}
+::: {.column width = "75%"}
+
+### Masaki Eguchi, Ph.D.
+
+- Developing AI (InteLLA) and Speaking test at Equmenopolis, Inc.
 - Guest Research Assistant Professor at Waseda University.
+  
+
+:::
+
+::: {.column width = "25%"}
+
+![Picture](../../assets/session-1/MasakiEguchi.jpg)
+
+![InteLLA](../../assets/session-1/InteLLA.png)
+
+:::
+
+:::: 
+
+## My research
+
+Second-language writing/speaking assessment using computational techniques
+
+:::: {.columns}
+::: {.column width = "45%"}
+
+![Engagement Analyzer](../../assets/session-1/Engagement.png)
+
+:::
+::: {.column}
+
+![ChatGPT for Essay Scoring](../../assets/session-1/MizumotoEguchi.png)
+
+:::
+:::: 
+
 
 ## Introduction
 
 - Briefly introduce yourself
-- Name, research interests
+- Name 
+- Research interests/topic
+- Why you decided to take this course.
 - Favorite things to do in Sendai.
 
 ---
@@ -72,7 +104,6 @@ A linguistic corpus is:
 - often accompanied by meta-data describing the contextual parameters
 
 (To be explored more in session 2)
-
 
 ## Corpus documents language use in real-world
 
@@ -96,36 +127,52 @@ A linguistic corpus is:
 :::
 
 
-## Corpus can be useful to answer research question about language use
+## How do we use corpus?
 
-Corpus can give you answers if you have good question and good search strategy.
+Corpus can give you **answers** on how people use language.
 
-- how many times X occurs in Corpus A
-- how many times X occures with Y
-- how many times X occurs in the subsections of Corpus B
+::: {.incremental}
+- How often does X occur in Corpus A?
+- How often does X occure with Y?
+- In what context does X occur?
+:::
 
+## Word Naming time. What is the following object?
 
-## Come up with several English words for the following category
-
+::: {.columns}
+::: {.column}
+![What's the name of these?](../../assets/session-1/phone.jpg)
+:::
+::: {.column}
+::: {.incremental}
 - cell phone
 - mobile phone
 - smart phone
+:::
+:::
+:::
 
-## You can construct following research questions
+
+
+## Research questions about 
+
+::: {style = "font-size: 85%"}
 
 ### Open-ended question
 
 - How does the frequency of `cell phone` changed over time?
-- Which region uses `cell phone` more frequently than others? 
+- Which region uses `cell phone` more frequently than `mobile phone`? 
 
 ### Close-end deductive question 
 
 - Does British use `cell phone` more often than `mobile phone`?
 
+:::
 
 ## Set up `English-Corpora.org account`
 
 - Visit [English-Corpora.org](https://www.english-corpora.org/corpora.asp)
+
 
 ---
 
@@ -140,12 +187,12 @@ Corpus can give you answers if you have good question and good search strategy.
 
 ## Comparision
 
-![cell-phone](../../assets/session-1/cell-phone-YEAR2.png)
 
+![cell-phone](../../assets/session-1/cell-phone-YEAR2.png)
 ![mobile-phone](../../assets/session-1/mobile-phone-YEAR2.png)
 
 
-## Which region uses `cell phone` more frequenty than `mobile phone`?
+## Which region uses `cell phone` more frequenty?
 
 ![cell-phone](../../assets/session-1/cell-phone-REGION2.png)
 
@@ -155,71 +202,41 @@ Corpus can give you answers if you have good question and good search strategy.
 ![mobile-phone](../../assets/session-1/mobile-phone-REGION2.png)
 
 
-## Answer
+## Answer to the research questions
 
 - How does the frequency of `cell phone` changed over time?
   - The use of cell phone tends to decline.
 - Which region uses `cell phone` more frequently than others? 
+  - cell phone: US; Pakistan; Jamaica 
+  - mobile phone: Philippines;  
 
----
+→ You can get quantitative insights into how certain language is used
 
-# What is corpus linguistics?
-
-## Corpus linguistics
-
-**Corpus linguistics** = the investigation of linguistic research question that have been framed _in terms of the conditional distribution of linguisitc phenomena_ in a _linguistic corpus_.
-
-(Stefanowitsch, 2020, p. 56)
-
-
-## Corpus linguistics =
-
-- the investigation of **linguistic research question**
-
-- that have been framed _in terms of **the conditional distribution of linguisitc phenomena**_ 
-
-::: {style="color: gray"}
-- in a _**linguistic corpus**_.
-:::
-
-(Stefanowitsch, 2020, p. 56)
-
----
-
-## Research Questions 
+## Research Questions for corpus-based research
 
 With corpus we can ask questions:
 
-- How does X change over TIME?
-- How does X differ by REGION?
-- How does X vary by GENRE?
-- What words occur with X?
+- How does X change over **TIME**?
+- How does X differ by **REGION**?
+- How does X vary by **GENRE**?
 
-These comparisons help us understand language patterns
+We can learn patterns of language use in relation to extra-linguistic factors.
 
+## The X in corpus linguistics
 
-## Linguistic Research Questions - Examples
+In corpus linguistics, we not only identify *words* but also:
 
-Corpus-based linguistic research
+- **Morphemes** (e.g., *-ness;* *pre-*; *-ed*)
+- **Syntactic constructions** (e.g., *by `AGENT`*; relativa clauses)
+- **Multiword sequences** (e.g., collocation *significant role*)
 
-- What are relationships between processing speed and language frequency
+::: {style = "color:gray"}
+- Pronunciation (segmental; prosodic features)
+:::
 
-Learner Corpus Research:
+→ In this course, we focus on lexico-grammatical features
 
-- What kind of vocabulary do second-language learners with varying proficiency levels produce?
-- What grammatical structure emerge later in a longitudinal corpus (as they develop)?
-
-
-## Assignment 1 Preview
-
-By the end of today, you'll be able to:
-
-- Ask your own research question
-- Search corpus to find relevant results
-- Interpret what you find
-- Write up your discoveries
-
-**Start thinking**: Are there any English expression or construction you want to learn more?
+## Questions?
 
 ---
 
@@ -258,7 +275,29 @@ Segment corpus and calculate occurrences by:
 
 ---
 
-# About this course
+# Course Syllabus and Logistics
+
+## Course Website
+
+We will use the following two channels
+
+:::: {.columns}
+::: {.column width = "70%"}
+
+- [Github Page](https://egumasa.github.io/linguistic-data-analysis-I/)
+  - to communicate course schedules, plans, and slides.
+- Google classroom
+  - Please do not hesitate to reach out
+  - for assignment submission and Readings and Corpus data distribution. 
+
+:::
+::: {.column width = "30%"}
+
+![Website QR code](../../assets/session-1/QR_058300.png)
+
+:::
+::::
+
 
 ## Course description
 
@@ -276,21 +315,44 @@ This 5-day introduction:
 
 - discusses important applications of corpus methods in applied linguistic (second language) research
 
-:::
-
-## About the course website
-
-::: {style="font-size: 75%;"}
-
-The course materials are available through the following two:
-
-- Course website
-  - We use the website to communicate course schedules, plans, and slides.
-
-- Google Classroom
-  - We use Google Classroom for assignment submission, and distributing Readings and Corpus data. 
 
 :::
+
+## Learning Objectives
+
+By the end of this course, students will be able to:
+
+- Explain what corpus linguistics is and how corpus linguistics can help learn linguistic phenomena
+- Search for and select available corpora relevant to their own research
+- Discuss design issues related to language corpora for specific research purposes
+- Apply introductory corpus linguistic analyses (e.g., frequency analysis, concordancing, collocation analysis, POS tagging, and dependency parsing) to preprocessed corpora
+- Evaluate the benefits and drawbacks of a corpus linguistic approach to linguistic analysis
+
+## Course Components
+
+- Lectures and tutorials
+- Daily Hands-on activities
+- Mini-corpus labs
+- Final project (will talk more)
+
+
+## Textbook
+
+- Durrant, P. (2023). Corpus linguistics for writing development: A guide for research. Routledge. https://doi.org/10.4324/9781003152682
+
+- Stefanowitsch, A. (2020). Corpus linguistics: A guide to the methodology. Zenodo. https://doi.org/10.5281/ZENODO.3735822 (This is [an open source textbook](https://langsci-press.org/catalog/book/148), so it's freely available online)
+
+Other required/Optional readings are provided through Google Classroom.
+
+## Tools and Softwares 
+
+- **[Simple Text Analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer)**: A web app created for you. 
+- **[AntConc](https://www.laurenceanthony.net/software/antconc/)**: Corpus analysis toolkit for Concordancing
+  - Please set this up by tomorrow [set-up guide](../../resources/tools/antconc-guide.md)
+- **[TagAnt](https://www.laurenceanthony.net/software/tagant/)**: 
+  - Download and get ready to open
+- **Google Colaboratory**: Follow the instruction [here to enable the tool](../../resources/tools/python-setup.md). 
+
 
 ## Session overview
 
@@ -298,11 +360,11 @@ The course materials are available through the following two:
 
 | Day | Theme | Sessions |
 |-----|-------|----------|
-| **Day 1** | Introduction & Corpus Basics |  |
-| **Day 2** | Analysis of Vocabulary & Multiword Units (1) |  |
-| **Day 3** | Analysis of Vocabulary & Multiword Units (2) | |
-| **Day 4** | Analysis of Grammar |  |
-| **Day 5** | Advanced Topics & Projects |  |
+| **Day 1** | Introduction & Corpus Basics | Session 1-3 |
+| **Day 2** | Analysis of Vocabulary & Multiword Units (1) | Session 4-6 |
+| **Day 3** | Analysis of Vocabulary & Multiword Units (2) | Session 7-9 |
+| **Day 4** | Analysis of Grammar | Session 10-12 |
+| **Day 5** | Advanced Topics & Projects | Session 13-15 |
 
 :::
 
@@ -311,6 +373,7 @@ The course materials are available through the following two:
 - Basic corpus search
 - Constructing Research Questions and hypotheses
 
+![sofa - chart](../../assets/session-1/sofa_compare.png)
 
 ## Day 2 (Monday)
 
@@ -318,22 +381,27 @@ The course materials are available through the following two:
 - Calculating lexical diversity measures
 - Calculating lexical sophistication measures
 
+![freq-distribution](../../assets/session-1/frequency_distribution.png)
+
 ## Day 3 (Tuesday)
 
 - Identifying multiword units (ngrams and collocations)
 - Calculating Strengths of Association Measures
 
+![collocation](../../assets/session-8/MI-AntConc.png)
+
 ## Day 4 (Wednesday)
 
 - Conducting POS tagging and dependency parsing
-- We will experience using Python
+- We will learn how to parse sentence using spaCy package in Python
+
+![dependency](../../assets/session-11/dep-1.png)
 
 ## Day 5 (Thursday)
 
-- Special session on Large-Language Models
-  - Annotating for 
-    - linguistic accuracy
-    - discourse move (if time allowed)
+- Special session on linguistic annotation using Large-Language Models
+  - linguistic accuracy
+  - discourse move (if time allowed)
 
 
 ## Daily schedule
@@ -354,4 +422,23 @@ The course materials are available through the following two:
 - Corpora = searchable real language
 - We can ask questions about patterns
 - Corpus gives us evidence-based answers
+
+## Assignment 1 Preview
+
+By the end of today, you'll be able to:
+
+- Ask your own research question
+- Search corpus to find relevant results
+- Interpret what you find
+- Write up your discoveries
+
+**Start thinking**: Are there any English expression or construction you want to learn more?
+
+## Time to set-up the tools!
+
+- **[AntConc](https://www.laurenceanthony.net/software/antconc/)**: Corpus analysis toolkit for Concordancing
+  - Please set this up by tomorrow [set-up guide](../../resources/tools/antconc-guide.md)
+- **[TagAnt](https://www.laurenceanthony.net/software/tagant/)**: 
+  - Download and get ready to open
+- **Google Colaboratory**: Follow the instruction [here to enable the tool](../../resources/tools/python-setup.md). 
 

@@ -103,10 +103,10 @@ Your submission ...
 
 Remember from Session 2:
 
-1. [x] Verbalize your wonder
-2. [x] Formulate research questions  
-3. [x] Formulate hypothesis
-4. [x] Choose appropriate corpus
+1. Verbalize your question
+2. Formulate research questions  
+3. Formulate hypothesis
+4. Choose appropriate corpus
 5. **→ Operationalize** 
 6. **→ Test & Evaluate** 
 
@@ -199,17 +199,23 @@ Now you might wonder:
 
 ## Specifying Part Of Speech (POS)
 
-- You can use POS tag like the following 
+You can use POS tag like the following .
+
+::: {style = "font-size: '85%'"}
 
 | Category | Simple tag | Symbol | Example |
-|----|----|----|----|
-| Common noun   | NOUN | N | `run_NOUN` |
-| Proper Nouns  | NAME | NP | `Sendai_NAME` |
-| All nouns  | NOUN+ | N+ | `sun_NOUN+`, `Sendai_NOUN+` |
-| Lexical verbs | VERB | V | `run_VERB` |
-| All verbs | VERB+ | V | `run_VERB+`, `do_VERB+` |
+|------|----|----|-----|
+| Common noun   | NOUN | N | `run_N` |
+| Proper Nouns  | NAME | NP | `Sendai_N` |
+| All nouns  | NOUN+ | N+ | `sun_N+`, `Sendai_N+` |
+| Lexical verbs | VERB | V | `run_V` |
+| All verbs | VERB+ | V | `run_V+`, `do_V+` |
+
+:::
 
 ## Specifying Part Of Speech (POS)
+
+::: {style = "font-size: '85%'"}
 
 | Category | Simple tag | Symbol | Example |
 |----|----|----|----|
@@ -219,8 +225,9 @@ Now you might wonder:
 | Articles | ART | - | `her_ART` | 
 | Determiners | DET | - | `these_DET` |
 | Conjunctions | CONJ | - | `because_CONJ` |
+:::
 
-See [this page for more information of POS in English-Corpora.org]()
+See [this page for more information of POS in English-Corpora.org](https://www.english-corpora.org/help/word-phrase.asp#pos)
 
 ## the word `run` used as noun
 
@@ -228,7 +235,7 @@ See [this page for more information of POS in English-Corpora.org]()
   
 ## the word `run` used as noun
 
-Search: `run_NOUN`
+Search: `run_N`
 
 ![run - as noun](../../assets/session-3/run-noun.png)
   
@@ -310,7 +317,6 @@ Search "XXXX" (lemma) and sort by:
 2. L1 (what precedes "XXXX"?)
 
 What patterns do you notice?
-
 
 # Task C 
 
