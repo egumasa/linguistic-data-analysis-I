@@ -12,7 +12,7 @@ toc-depth: 2
 **Format**: Intensive 5-day course (15 sessions)  
 **Language**: English  
 <!-- **Prerequisites**: Graduate standing; no programming experience required   -->
-**Classroom**: 113 Lecture room ④
+**Classroom**: 113 Lecture room
 
 ## Instructor Information
 
