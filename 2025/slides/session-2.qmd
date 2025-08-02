@@ -193,9 +193,9 @@ ggplot(corpus_data, aes(x = size, y = corpus)) +
 ```
 
 
-## Limitations of corpus
+## Limitations of Corpus
 
-- corpus is incomplete; impossible to reflect all the linguistic variations.
+- Corpus is incomplete; impossible to reflect all the linguistic variations.
 - provides distributional information, but not interpretation
 - limited contextual information
 - does not tell us about language processing

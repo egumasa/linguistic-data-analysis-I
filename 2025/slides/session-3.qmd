@@ -115,6 +115,12 @@ Remember from Session 2:
 
 ## What does "operationalize" mean?
 
+::: {.callout-important}
+## Operationalization
+
+"an explicit and unambiguous description of a set of operations that are performed to identify and measure that construct." (Stefanowitsch, 2020, p. 77)
+:::
+
 - Defining exactly WHAT to search
 - Deciding HOW to search it
 - Being explicit about your choices
