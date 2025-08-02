@@ -172,8 +172,6 @@ About the use of AI tools such as ChatGPT, do not use it to make drafts. You can
 
 
 
-
-
 ## Technology Policy
 
 ### Required Technology

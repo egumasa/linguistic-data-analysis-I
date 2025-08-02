@@ -19,6 +19,7 @@ We will talk about:
 
 ## 🎯 Learning Objectives
 
+::: {style = "font-size: 80%"}
 > By the end of this session, students will be able to:
 > 
 > - Define corpus linguistics as an empirical methodology
@@ -27,6 +28,7 @@ We will talk about:
 > - Identify and explain the basic steps in corpus-based research
 > - Reflect on their own stance toward data, intuition, and linguistic evidence
 
+::: 
 
 ---
 
@@ -88,6 +90,8 @@ when we can ask native speakers?
 
 ## Guess the frequency! Test your intuition
 
+::: {style = "font-size: 70%"}
+
 Rank the following words by frequency in iWeb (14 billion word Web Corpus): 
 
 - the
@@ -100,7 +104,11 @@ Rank the following words by frequency in iWeb (14 billion word Web Corpus):
 
 Don't turn to next slide until you finish sorting!
 
+:::
+
 ## The frequency rank in iWeb corpus
+
+::: {style = "font-size: 80%"}
 
 | word | freq | freq per million |
 |----|-----|-----|
@@ -112,6 +120,7 @@ Don't turn to next slide until you finish sorting!
 | chair | 621975 | 44.40 |
 | meaningful | 297635 | 21.24 |
 
+:::
 
 ## Test Your Intuition - 2
 
@@ -143,12 +152,15 @@ Don't turn to next slide until you finish sorting!
 
 ## It doesn't matter the N
 
+::: {style = "font-size: 80%"}
+
 - I searched this construction over News on the web (NOW) corpus which is 22.5 billion+	corpus across 20 countries.
 - It is not actually exclusive to the British construction.
 
 ![Frequency of the construction](../../assets/session-2/it-doesnt-matter-the.png)
 See the result [here](https://www.english-corpora.org/now/?c=now&q=126887345)
 
+:::
 
 ## Corpus Size Comparison
 
@@ -271,7 +283,8 @@ A research question often involves **relations** between two or more **construct
 
 ## Research question templates
 
-::: {style = "font-size:'75%'"}
+::: {style = "font-size:75%"}
+
 In corpus-driven linguistic research, we tend to ask following questions:
 
 - How does the frequency of word X change over time?
@@ -280,6 +293,7 @@ In corpus-driven linguistic research, we tend to ask following questions:
 - What are the typical contexts in which expression X appears based on concordance analysis?
 - How do different varieties of language Y (e.g., British vs. American English) differ in frequency and contexts of feature X?
 - How does register (formal/informal) affect both the frequency and typical contexts of linguistic feature X?
+
 :::
 
 ## Your turn: 
@@ -318,7 +332,6 @@ How can I select the one for my research?
   
 3. **Large**: 
    - Corpus should be in sufficient size to allow investigation
-   
 
 ## Authenticity
 
@@ -357,7 +370,7 @@ Choose one and brainstorm the data sources you need to collect.
 
 ## Corpus Of Contemporary American (COCA)
 
-::: {style="font-size: 50%;"}
+::: {style="font-size: 45%;"}
 
 | Genre | # texts | # words | Explanation |
 |---|---|----|-------------|
@@ -371,7 +384,7 @@ Choose one and brainstorm the data sources you need to collect.
 
 ## Corpus of Contemporary American (COCA)
 
-::: {style="font-size: 50%;"}
+::: {style="font-size: 45%;"}
 
 | Genre | # texts | # words | Explanation |
 |---|---|----|-------------|
@@ -409,7 +422,7 @@ A excellent example of a specialized corpus.
 
 ## BAWE genre family
 
-::: {style="font-size: 50%;"}
+::: {style="font-size: 45%;"}
 
 | Social purpose | Genre family | Level 1 | Level 2 | Level 3 | Level 4 | Sum |
 |----------------|--------------|:----:|:----:|:----:|:----:|:----:|
@@ -432,6 +445,7 @@ A excellent example of a specialized corpus.
 
 ## Corpus Representativeness
 
+::: {style="font-size: 80%;"}
 Multiple factors affecting linguistic variations can be used to balance corpus sampling:
 
 - **Linguistic variation** = "to any form of language delineable from other forms along cultural, linguistic or demographic criteria" (Stefanowitsch, 2020, p. 28)
@@ -440,6 +454,7 @@ Multiple factors affecting linguistic variations can be used to balance corpus s
   - **style**
 
 But see Biber and Conrad (2019) for different definitions of each factor.
+:::
 
 ## Genre
 
@@ -459,7 +474,7 @@ But see Biber and Conrad (2019) for different definitions of each factor.
 
 ## Style 
 
-- Stefanowitsch defines: "the degrees of formality (e.g. formal, informal, colloquial, humorous)
+- Stefanowitsch defines: "the degrees of formality" (e.g. formal, informal, colloquial, humorous)
 - Biber & Conrad (2019) linguistic variety often associated *within* a register or genre
   - due to the author, specific speech community, etc.
 
@@ -473,8 +488,10 @@ Additional variables such as:
 - Their learning experiences 
 
 
-## International Corpus Network of Asian Learner of English (Ishikawa, 2013)
+## ICNALE 
 
+::: {style="font-size: 80%;"}
+- International Corpus Network of Asian Learner of English (Ishikawa, 2013)
 - One of the largest learner corpora (EFL learners in Asia)
 - Subcorpora for different modalities available
   - Monologic speech
@@ -482,8 +499,21 @@ Additional variables such as:
   - Argumentative essay writing
 - Extensive rating data is also available for subset of the data (GRA)
 
+:::
 
+## ICNALE
 
+::: {style="font-size: 50%;"}
+
+| Modules                       | Contents                                                                                                                                                               | # of participants | # of samples | # of words |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------------|------------|
+| Spoken Monologues (SM)         | 60-seconds monologues about two ICNALE common topics                                                                                                                   | 1,100             | 4,400        | 500,000    |
+| Spoken Dialogues (SD)          | 30-40-minutes oral interviews including picture descriptions and role plays, and 3-5-minute follow-up L1 reflections. Interview tasks are related to two ICNALE common topics | 425               | 4,250        | 1,600,000  |
+| Written Essays (WE)            | 200-300-word essays about two ICNALE common topics                                                                                                                     | 2,800             | 5,600        | 1,300,000  |
+| Edited Essays (EE)             | Fully edited versions of learner essays about two ICNALE common topics. Rubric-based essay evaluation data is also included                                            | 328               | 1,312        | 150,000    |
+| Written Essays Plus (WEP)      | 200-300-word essays about two ICNALE common topics collected from new Asian countries                                                                                   | 948               | 1,896        | 470,000    |
+| Global Rating Archives (GRA) | + Ratings of 140 speeches and 140 essays by 80 raters with varied L1 and occupational backgrounds.<br>+ Plus fully edited versions of 140 essays | 280 samples × 80 raters          | 22,400       | (Edited essays) 65,000 |
+::: 
 
 ## From Question to Corpus Choice
 
@@ -504,7 +534,7 @@ Try giving some answers in pairs.
 
 ## Corpora in English-Corpora.org
 
-::: {style="font-size:60%"}
+::: {style="font-size:80%"}
 
 | Corpus | Size | Regions | Time | Genre |
 |-----------|:--------:|:-----------:|:------|-------|
@@ -514,7 +544,6 @@ Try giving some answers in pairs.
 | [COHA](https://www.english-corpora.org/coha/) | 400m | Am | 1810-2009 | Balanced |
 | [TIME](https://www.english-corpora.org/time/) | 100m | Am | 1923-2006 | Magazine |
 | [BNC](https://www.english-corpora.org/bnc/) | 100m | Br | 1980s-1993 | Balanced |
-| [CAN](https://www.english-corpora.org/can/) | 50m | Can | 1970s-2000s | Balanced |
 | [CORE](https://www.english-corpora.org/core/) | 50m | 6 | 2014 | Web |
 
 :::

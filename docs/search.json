@@ -2256,7 +2256,7 @@
     "href": "2025/slides/session-2.html#learning-objectives",
     "title": "Session 2: Corpus as a scientific method",
     "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nDefine corpus linguistics as an empirical methodology\nExplain key limitations of introspection in linguistic research\nDescribe the role of frequency data and patterns in corpus analysis\nIdentify and explain the basic steps in corpus-based research\nReflect on their own stance toward data, intuition, and linguistic evidence"
+    "text": "🎯 Learning Objectives\n\n\nBy the end of this session, students will be able to:\n\nDefine corpus linguistics as an empirical methodology\nExplain key limitations of introspection in linguistic research\nDescribe the role of frequency data and patterns in corpus analysis\nIdentify and explain the basic steps in corpus-based research\nReflect on their own stance toward data, intuition, and linguistic evidence"
   },
   {
     "objectID": "2025/slides/session-2.html#corpus-linguistics",
@@ -2305,14 +2305,14 @@
     "href": "2025/slides/session-2.html#guess-the-frequency-test-your-intuition",
     "title": "Session 2: Corpus as a scientific method",
     "section": "Guess the frequency! Test your intuition",
-    "text": "Guess the frequency! Test your intuition\nRank the following words by frequency in iWeb (14 billion word Web Corpus):\n\nthe\nobvious\ndog\nabsolutely\nmeaningful\nchair\nand\n\nDon’t turn to next slide until you finish sorting!"
+    "text": "Guess the frequency! Test your intuition\n\nRank the following words by frequency in iWeb (14 billion word Web Corpus):\n\nthe\nobvious\ndog\nabsolutely\nmeaningful\nchair\nand\n\nDon’t turn to next slide until you finish sorting!"
   },
   {
     "objectID": "2025/slides/session-2.html#the-frequency-rank-in-iweb-corpus",
     "href": "2025/slides/session-2.html#the-frequency-rank-in-iweb-corpus",
     "title": "Session 2: Corpus as a scientific method",
     "section": "The frequency rank in iWeb corpus",
-    "text": "The frequency rank in iWeb corpus\n\n\n\nword\nfreq\nfreq per million\n\n\n\n\nthe\n746240010\n53,332.79\n\n\nand\n387613768\n27,666.94\n\n\ndog\n1447231\n103.30\n\n\nabsolutely\n1027853\n73.37\n\n\nobvious\n715011\n51.04\n\n\nchair\n621975\n44.40\n\n\nmeaningful\n297635\n21.24"
+    "text": "The frequency rank in iWeb corpus\n\n\n\n\nword\nfreq\nfreq per million\n\n\n\n\nthe\n746240010\n53,332.79\n\n\nand\n387613768\n27,666.94\n\n\ndog\n1447231\n103.30\n\n\nabsolutely\n1027853\n73.37\n\n\nobvious\n715011\n51.04\n\n\nchair\n621975\n44.40\n\n\nmeaningful\n297635\n21.24"
   },
   {
     "objectID": "2025/slides/session-2.html#test-your-intuition---2",
@@ -2347,7 +2347,7 @@
     "href": "2025/slides/session-2.html#it-doesnt-matter-the-n",
     "title": "Session 2: Corpus as a scientific method",
     "section": "It doesn’t matter the N",
-    "text": "It doesn’t matter the N\n\nI searched this construction over News on the web (NOW) corpus which is 22.5 billion+ corpus across 20 countries.\nIt is not actually exclusive to the British construction.\n\n See the result here"
+    "text": "It doesn’t matter the N\n\n\nI searched this construction over News on the web (NOW) corpus which is 22.5 billion+ corpus across 20 countries.\nIt is not actually exclusive to the British construction.\n\n See the result here"
   },
   {
     "objectID": "2025/slides/session-2.html#corpus-size-comparison",
@@ -2529,7 +2529,7 @@
     "href": "2025/slides/session-2.html#corpus-representativeness",
     "title": "Session 2: Corpus as a scientific method",
     "section": "Corpus Representativeness",
-    "text": "Corpus Representativeness\nMultiple factors affecting linguistic variations can be used to balance corpus sampling:\n\nLinguistic variation = “to any form of language delineable from other forms along cultural, linguistic or demographic criteria” (Stefanowitsch, 2020, p. 28)\n\ngenre\nregister\nstyle\n\n\nBut see Biber and Conrad (2019) for different definitions of each factor."
+    "text": "Corpus Representativeness\n\nMultiple factors affecting linguistic variations can be used to balance corpus sampling:\n\nLinguistic variation = “to any form of language delineable from other forms along cultural, linguistic or demographic criteria” (Stefanowitsch, 2020, p. 28)\n\ngenre\nregister\nstyle\n\n\nBut see Biber and Conrad (2019) for different definitions of each factor."
   },
   {
     "objectID": "2025/slides/session-2.html#genre",
@@ -2550,7 +2550,7 @@
     "href": "2025/slides/session-2.html#style",
     "title": "Session 2: Corpus as a scientific method",
     "section": "Style",
-    "text": "Style\n\nStefanowitsch defines: “the degrees of formality (e.g. formal, informal, colloquial, humorous)\nBiber & Conrad (2019) linguistic variety often associated within a register or genre\n\ndue to the author, specific speech community, etc."
+    "text": "Style\n\nStefanowitsch defines: “the degrees of formality” (e.g. formal, informal, colloquial, humorous)\nBiber & Conrad (2019) linguistic variety often associated within a register or genre\n\ndue to the author, specific speech community, etc."
   },
   {
     "objectID": "2025/slides/session-2.html#in-case-of-learner-corpora",
@@ -2560,11 +2560,18 @@
     "text": "In case of learner corpora\nAdditional variables such as:\n\nFirst language\nSecond-language proficiency levels\nTheir learning experiences"
   },
   {
-    "objectID": "2025/slides/session-2.html#international-corpus-network-of-asian-learner-of-english-ishikawa-2013",
-    "href": "2025/slides/session-2.html#international-corpus-network-of-asian-learner-of-english-ishikawa-2013",
+    "objectID": "2025/slides/session-2.html#icnale",
+    "href": "2025/slides/session-2.html#icnale",
     "title": "Session 2: Corpus as a scientific method",
-    "section": "International Corpus Network of Asian Learner of English (Ishikawa, 2013)",
-    "text": "International Corpus Network of Asian Learner of English (Ishikawa, 2013)\n\nOne of the largest learner corpora (EFL learners in Asia)\nSubcorpora for different modalities available\n\nMonologic speech\nDialogic speech\nArgumentative essay writing\n\nExtensive rating data is also available for subset of the data (GRA)"
+    "section": "ICNALE",
+    "text": "ICNALE\n\n\nInternational Corpus Network of Asian Learner of English (Ishikawa, 2013)\nOne of the largest learner corpora (EFL learners in Asia)\nSubcorpora for different modalities available\n\nMonologic speech\nDialogic speech\nArgumentative essay writing\n\nExtensive rating data is also available for subset of the data (GRA)"
+  },
+  {
+    "objectID": "2025/slides/session-2.html#icnale-1",
+    "href": "2025/slides/session-2.html#icnale-1",
+    "title": "Session 2: Corpus as a scientific method",
+    "section": "ICNALE",
+    "text": "ICNALE\n\n\n\n\n\n\n\n\n\n\n\nModules\nContents\n# of participants\n# of samples\n# of words\n\n\n\n\nSpoken Monologues (SM)\n60-seconds monologues about two ICNALE common topics\n1,100\n4,400\n500,000\n\n\nSpoken Dialogues (SD)\n30-40-minutes oral interviews including picture descriptions and role plays, and 3-5-minute follow-up L1 reflections. Interview tasks are related to two ICNALE common topics\n425\n4,250\n1,600,000\n\n\nWritten Essays (WE)\n200-300-word essays about two ICNALE common topics\n2,800\n5,600\n1,300,000\n\n\nEdited Essays (EE)\nFully edited versions of learner essays about two ICNALE common topics. Rubric-based essay evaluation data is also included\n328\n1,312\n150,000\n\n\nWritten Essays Plus (WEP)\n200-300-word essays about two ICNALE common topics collected from new Asian countries\n948\n1,896\n470,000\n\n\nGlobal Rating Archives (GRA)\n+ Ratings of 140 speeches and 140 essays by 80 raters with varied L1 and occupational backgrounds.+ Plus fully edited versions of 140 essays\n280 samples × 80 raters\n22,400\n(Edited essays) 65,000"
   },
   {
     "objectID": "2025/slides/session-2.html#from-question-to-corpus-choice",
@@ -2585,7 +2592,7 @@
     "href": "2025/slides/session-2.html#corpora-in-english-corpora.org",
     "title": "Session 2: Corpus as a scientific method",
     "section": "Corpora in English-Corpora.org",
-    "text": "Corpora in English-Corpora.org\n\n\n\n\nCorpus\nSize\nRegions\nTime\nGenre\n\n\n\n\nIWEB\n13.9b\n6\n2017\nWeb\n\n\nNOW\n16.2b\n20\n2010-now\nWeb: News\n\n\nCOCA\n1.0b\nAm\n1990-2019\nBalanced\n\n\nCOHA\n400m\nAm\n1810-2009\nBalanced\n\n\nTIME\n100m\nAm\n1923-2006\nMagazine\n\n\nBNC\n100m\nBr\n1980s-1993\nBalanced\n\n\nCAN\n50m\nCan\n1970s-2000s\nBalanced\n\n\nCORE\n50m\n6\n2014\nWeb"
+    "text": "Corpora in English-Corpora.org\n\n\n\n\nCorpus\nSize\nRegions\nTime\nGenre\n\n\n\n\nIWEB\n13.9b\n6\n2017\nWeb\n\n\nNOW\n16.2b\n20\n2010-now\nWeb: News\n\n\nCOCA\n1.0b\nAm\n1990-2019\nBalanced\n\n\nCOHA\n400m\nAm\n1810-2009\nBalanced\n\n\nTIME\n100m\nAm\n1923-2006\nMagazine\n\n\nBNC\n100m\nBr\n1980s-1993\nBalanced\n\n\nCORE\n50m\n6\n2014\nWeb"
   },
   {
     "objectID": "2025/slides/session-2.html#corpus-size-comparison-1",
