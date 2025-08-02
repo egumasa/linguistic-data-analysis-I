@@ -27,3 +27,10 @@ Please complete the following steps **before Day 2**.
 
 
 If you are unsure about these steps, do not hesitate to reach out to me through google classroom or through email.
+
+
+## TagAnt
+
+We will use another tool called, TagAnt. Please download this from the following website. 
+
+- [TagAnt Website](https://www.laurenceanthony.net/software/tagant/); download the software to your computer.

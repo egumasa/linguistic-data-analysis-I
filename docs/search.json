@@ -264,7 +264,7 @@
     "href": "resources/tools/index.html",
     "title": "Tools and Software",
     "section": "",
-    "text": "BYU Corpora Guide\nAntConc Guide\nPython (google colab) Setup\nJASP Guide",
+    "text": "English-Corpora.org Guide\nAntConc Guide\nPython (google colab) Setup\nJASP Guide",
     "crumbs": [
       "Resources",
       "Tools",
@@ -276,7 +276,7 @@
     "href": "resources/tools/index.html#available-guides",
     "title": "Tools and Software",
     "section": "",
-    "text": "BYU Corpora Guide\nAntConc Guide\nPython (google colab) Setup\nJASP Guide",
+    "text": "English-Corpora.org Guide\nAntConc Guide\nPython (google colab) Setup\nJASP Guide",
     "crumbs": [
       "Resources",
       "Tools",
@@ -313,6 +313,18 @@
     "title": "AntConc Guide",
     "section": "",
     "text": "We will use AntConc, a one of the most widely used corpus tool developed by Laurence ANTHONY (Waseda University).\nThanksfully, Laurence has shared tutorials on basic features of AntConc on Youtube.\nYou will need AntConc on Day 2 and 3.\nPlease complete the following steps before Day 2.\n\nDownload AntConc\n\n\nVisit AntConc Website; download the software to your computer.\n\n\nWatch the following tutorial videos\n\n\nLaurence Anthony’s intro to AntConc\n\nGetting started (10 mins)\nCorpus manager Basics (18 mins)\nKWIC tool basics (17 mins)\n\n\nIf you are unsure about these steps, do not hesitate to reach out to me through google classroom or through email.",
+    "crumbs": [
+      "Resources",
+      "Tools",
+      "AntConc Guide"
+    ]
+  },
+  {
+    "objectID": "resources/tools/antconc-guide.html#tagant",
+    "href": "resources/tools/antconc-guide.html#tagant",
+    "title": "AntConc Guide",
+    "section": "TagAnt",
+    "text": "TagAnt\nWe will use another tool called, TagAnt. Please download this from the following website.\n\nTagAnt Website; download the software to your computer.",
     "crumbs": [
       "Resources",
       "Tools",
@@ -5181,7 +5193,7 @@
     "href": "resources/code-examples/index.html",
     "title": "Code Examples",
     "section": "",
-    "text": "Python Notebooks\nSpreadsheet Templates",
+    "text": "Downloading Aozora Bunko\nExtracting Collocations\nConducting Parallel Analysis for lexical diversity measurement",
     "crumbs": [
       "Resources",
       "Code Examples"
@@ -5192,7 +5204,7 @@
     "href": "resources/code-examples/index.html#available-resources",
     "title": "Code Examples",
     "section": "",
-    "text": "Python Notebooks\nSpreadsheet Templates",
+    "text": "Downloading Aozora Bunko\nExtracting Collocations\nConducting Parallel Analysis for lexical diversity measurement",
     "crumbs": [
       "Resources",
       "Code Examples"

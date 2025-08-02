@@ -5,7 +5,7 @@ subtitle: "Installation and Usage Guides"
 
 ## Available Guides
 
-- [BYU Corpora Guide](byu-corpora-guide.md)
+- [English-Corpora.org Guide](byu-corpora-guide.md)
 
 - [AntConc Guide](antconc-guide.md)
 
