@@ -242,8 +242,7 @@ Search: `run_N`
 
 ## Your turn: Operationalize these concepts
 
-1. All forms of the adjective "exciting"
-2. The word "chair" as a noun only
+- The word "chair" as a verb only
 
 
 # Task B - Basic KWIC

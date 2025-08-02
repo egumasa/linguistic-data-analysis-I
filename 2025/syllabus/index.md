@@ -154,11 +154,24 @@ Each day follows this general pattern:
 - Acceptable formats: `.docx`, `.pdf`, `.ipynb` (for Python notebooks)
 
 
+
+### Collaboration 
+
+- As this is a very intensive course, collaboration is encouraged to gain most out of the time we spend. I will help each of you during the class time and office hours, but I encourage you to also help each other in:
+  - setting up the tools
+  - recalling class materials
+  - thinking about the approaches to corpus lab
+- However, you MUST write your own write-up of the assignments, meaning that you MUST make outlines, draft, and finalize the written submission by yourselves.
+
 ### Plagiarism
 
-### Collaboration
+You must present your own write-up. Do not copy each other's work or ask someone to write for you. 
 
-- 
+About the use of AI tools such as ChatGPT, do not use it to make drafts. You can use it to polish your language.
+
+
+
+
 
 
 ## Technology Policy

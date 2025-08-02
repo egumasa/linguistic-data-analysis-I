@@ -1395,7 +1395,7 @@
     "href": "2025/syllabus/index.html#assignment-submission",
     "title": "Course Syllabus",
     "section": "Assignment Submission",
-    "text": "Assignment Submission\n\nDeadlines\n\nAll assignments are due at 10:30 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies.\n\n\n\nSubmission Format\n\nSubmit all assignments via the course management system (Google Classroom)\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)\n\n\n\nPlagiarism\n\n\nCollaboration",
+    "text": "Assignment Submission\n\nDeadlines\n\nAll assignments are due at 10:30 AM on the specified day\nLate submissions will receive a 10% penalty per day\nExtensions may be granted for documented emergencies.\n\n\n\nSubmission Format\n\nSubmit all assignments via the course management system (Google Classroom)\nUse the provided templates when available\nFile naming convention: LastName_Assignment#.ext\nAcceptable formats: .docx, .pdf, .ipynb (for Python notebooks)\n\n\n\nCollaboration\n\nAs this is a very intensive course, collaboration is encouraged to gain most out of the time we spend. I will help each of you during the class time and office hours, but I encourage you to also help each other in:\n\nsetting up the tools\nrecalling class materials\nthinking about the approaches to corpus lab\n\nHowever, you MUST write your own write-up of the assignments, meaning that you MUST make outlines, draft, and finalize the written submission by yourselves.\n\n\n\nPlagiarism\nYou must present your own write-up. Do not copy each other’s work or ask someone to write for you.\nAbout the use of AI tools such as ChatGPT, do not use it to make drafts. You can use it to polish your language.",
     "crumbs": [
       "Syllabus",
       "Course Syllabus"
@@ -3845,7 +3845,7 @@
     "href": "2025/slides/session-3.html#your-turn-operationalize-these-concepts",
     "title": "Session 3: Hands-on #1",
     "section": "Your turn: Operationalize these concepts",
-    "text": "Your turn: Operationalize these concepts\n\nAll forms of the adjective “exciting”\nThe word “chair” as a noun only"
+    "text": "Your turn: Operationalize these concepts\n\nThe word “chair” as a verb only"
   },
   {
     "objectID": "2025/slides/session-3.html#concordances-or-kwic",
