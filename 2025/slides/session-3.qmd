@@ -225,12 +225,9 @@ You can use POS tag like the following .
 
 | Category | Simple tag | Symbol | Example |
 |----|----|----|----|
-| Adjectives | ADJ | J | `simple_ADJ` |
-| Adverbs | ADV | R | `clear_ADV` |
-| Preposition | PREP | - | `in_PREP` |
-| Articles | ART | - | `her_ART` | 
-| Determiners | DET | - | `these_DET` |
-| Conjunctions | CONJ | - | `because_CONJ` |
+| Adjectives | ADJ | J | `simple_J` |
+| Adverbs | ADV | R | `clear_R` |
+
 :::
 
 See [this page for more information of POS in English-Corpora.org](https://www.english-corpora.org/help/word-phrase.asp#pos)
@@ -416,13 +413,15 @@ This helps find:
 Which is more frequent?
 - `exciting` or `excited`?
 
-- Is there any reletitive phrase with three adjectives?
+- **RQ**: Is there any reletitive phrase with three adjectives?
 
 ## ADJ x 3
 
+::: {.incremental}
 ![three adjectives](../../assets/session-3/three-adjectives.png)
 
 - *Note*: Sometimes the search results will contain parsing errors. (We will come back to this topic on Day 4.)
+:::
 
 ---
 
@@ -461,7 +460,7 @@ Which is more frequent?
 
 ## Search Methods Summary
 
-::: {style = "font-size:'60%'"}
+::: {style="font-size:75%"}
 
 | Method | Purpose | Example | Key Features |
 |--------|---------|---------|--------------|
@@ -473,7 +472,7 @@ Which is more frequent?
 
 ## Search Methods Summary
 
-::: {style = "font-size:'60%'"}
+::: {style="font-size:75%"}
 
 | Method | Purpose | Example | Key Features |
 |--------|---------|---------|--------------|

@@ -2217,6 +2217,20 @@
     "text": "Daily schedule\n\n\n\nTime\nActivity\n\n\n\n\n10:30-12:00\nSession 1\n\n\n12:00-13:00\nLunch break\n\n\n13:00-14:30\nSession 2\n\n\n14:30-14:40\nBreak\n\n\n14:40-16:10\nSession 3\n\n\n16:15-17:00\nOffice hour"
   },
   {
+    "objectID": "2025/slides/session-1.html#option-a---conducting-a-separate-mini-project",
+    "href": "2025/slides/session-1.html#option-a---conducting-a-separate-mini-project",
+    "title": "Session 1: Introduction",
+    "section": "Option A - Conducting a separate mini-project",
+    "text": "Option A - Conducting a separate mini-project\n\nOption A is more extensive in that you will be asked to conduct a new mini-project using the toolkit you have learned throughout the course.\nGiven the limited time, however, this plan requires a lot of commitment to the present course and may not be feasible, (but we can try if you’d like!).\nWe will discuss possible alternatives (like Option B below)"
+  },
+  {
+    "objectID": "2025/slides/session-1.html#option-b---revisiting-one-of-the-completed-corpus-lab-assignments",
+    "href": "2025/slides/session-1.html#option-b---revisiting-one-of-the-completed-corpus-lab-assignments",
+    "title": "Session 1: Introduction",
+    "section": "Option B - Revisiting one of the completed Corpus Lab assignments",
+    "text": "Option B - Revisiting one of the completed Corpus Lab assignments\n\nAs this 5-day intensive course teaches you a lot of new techniques and approaches to analyze lingusitic data, it is important for us to revisit the already completed assignments and consolidate our skills.\nIn Option B, you will be asked to make a presentation on one of your previously completed Corpus Lab assignments, clearly articulating the thinking process as well as potential extension of your approach.\nMore details will be provided on the first day of the course."
+  },
+  {
     "objectID": "2025/slides/session-1.html#what-weve-covered-so-far",
     "href": "2025/slides/session-1.html#what-weve-covered-so-far",
     "title": "Session 1: Introduction",
@@ -2346,8 +2360,8 @@
     "objectID": "2025/slides/session-2.html#limitations-of-corpus",
     "href": "2025/slides/session-2.html#limitations-of-corpus",
     "title": "Session 2: Corpus as a scientific method",
-    "section": "Limitations of corpus",
-    "text": "Limitations of corpus\n\ncorpus is incomplete; impossible to reflect all the linguistic variations.\nprovides distributional information, but not interpretation\nlimited contextual information\ndoes not tell us about language processing\n\nCorpus has to be selected in relation to the purpose of the study"
+    "section": "Limitations of Corpus",
+    "text": "Limitations of Corpus\n\nCorpus is incomplete; impossible to reflect all the linguistic variations.\nprovides distributional information, but not interpretation\nlimited contextual information\ndoes not tell us about language processing\n\nCorpus has to be selected in relation to the purpose of the study"
   },
   {
     "objectID": "2025/slides/session-2.html#summary",
@@ -3752,7 +3766,7 @@
     "href": "2025/slides/session-3.html#what-does-operationalize-mean",
     "title": "Session 3: Hands-on #1",
     "section": "What does “operationalize” mean?",
-    "text": "What does “operationalize” mean?\n\nDefining exactly WHAT to search\nDeciding HOW to search it\nBeing explicit about your choices\n\n\n\n\n\n\n\nMeasure of height\n\n\n\nHow to operationalize “height”?\n\nMeter? Feet?"
+    "text": "What does “operationalize” mean?\n\n\n\n\n\n\nOperationalization\n\n\n“an explicit and unambiguous description of a set of operations that are performed to identify and measure that construct.” (Stefanowitsch, 2020, p. 77)\n\n\n\n\nDefining exactly WHAT to search\nDeciding HOW to search it\nBeing explicit about your choices\n\n\n\n\n\n\n\nMeasure of height\n\n\n\nHow to operationalize “height”?\n\nMeter? Feet?"
   },
   {
     "objectID": "2025/slides/session-3.html#first-corpus-search",
@@ -3836,7 +3850,7 @@
     "href": "2025/slides/session-3.html#specifying-part-of-speech-pos-1",
     "title": "Session 3: Hands-on #1",
     "section": "Specifying Part Of Speech (POS)",
-    "text": "Specifying Part Of Speech (POS)\n\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nAdjectives\nADJ\nJ\nsimple_ADJ\n\n\nAdverbs\nADV\nR\nclear_ADV\n\n\nPreposition\nPREP\n-\nin_PREP\n\n\nArticles\nART\n-\nher_ART\n\n\nDeterminers\nDET\n-\nthese_DET\n\n\nConjunctions\nCONJ\n-\nbecause_CONJ\n\n\n\n\nSee this page for more information of POS in English-Corpora.org"
+    "text": "Specifying Part Of Speech (POS)\n\n\n\n\nCategory\nSimple tag\nSymbol\nExample\n\n\n\n\nAdjectives\nADJ\nJ\nsimple_J\n\n\nAdverbs\nADV\nR\nclear_R\n\n\n\n\nSee this page for more information of POS in English-Corpora.org"
   },
   {
     "objectID": "2025/slides/session-3.html#the-word-run-used-as-noun",
@@ -4011,7 +4025,7 @@
     "href": "2025/slides/session-3.html#more-complex-searches",
     "title": "Session 3: Hands-on #1",
     "section": "More complex searches",
-    "text": "More complex searches\nWhich is more frequent? - exciting or excited?\n\nIs there any reletitive phrase with three adjectives?"
+    "text": "More complex searches\nWhich is more frequent? - exciting or excited?\n\nRQ: Is there any reletitive phrase with three adjectives?"
   },
   {
     "objectID": "2025/slides/session-3.html#adj-x-3",
