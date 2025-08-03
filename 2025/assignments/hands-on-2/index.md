@@ -51,17 +51,17 @@ Your submission ...
 
 :::
 
-## Task 2: Hand-calculated lexical diversity scores
+## Task 2: Replication of Figure 4.16 from Durrant with two more recent lexical diversity indices
 
 ### Goals
 
 The goals of this task are:
 
-- to understand how classical lexical diversity scores behave given the simple textual examples
-- to compute more recent, robust alternatives to classical indices using TAALED.
-- to describe how texts from the *GiG corpus* behave in terms of lexical diversity.
+- to compute more recent, robust alternatives to classical indices using TAALED
+- to replicate Durrant's analysis with two more recent lexical diversity indices
 
 ### Instructions
+
 - Complete the hand calculation of lexical diversity indices on the spreadsheet
 - Compute recommended lexical diversity indices — MATTR and MTLD Original — using TAALED.
 - Replicate Figure 4.19 in Durrant (2023, p. 72) with the two indices (i.e., MATTR and MTLD Original) 
@@ -71,8 +71,11 @@ The goals of this task are:
 ## Submission: 
 
 - Spreadsheet file containing hand-calculated lexical diversity scores.
-- Plots that contain results of the lexical diversity analysis.
-- Descriptive paragraphs explaining the trends of lexical diversity (200-300 words).
+- Descriptive paragraphs explaining the replication of Durrant's analysis (300 words).
+  - Research question
+  - Your hypothesis regarding the replication
+  - Plots (one for MTLD; the other for MATTR)
+  - Results and interpretation
 
 :::
 
@@ -84,7 +87,7 @@ Your submission ...
 - [ ] includes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts
 - [ ] includes a csv file 
 - [ ] provides two sets of plots that describe trends of lexical diversity across year groups and genre.
-- [ ] provides comparison of the trends of lexical diversities you found against Figure 4.19 in Durrant (2023).
+- [ ] provides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).
 
 :::
 
@@ -100,9 +103,9 @@ The goals of this task are to:
 
 ### Instructions
 
-- Two texts from 
+- Two texts from the example used in the classroom
 - Using the simple text analyzer, compare two texts based on two indices that you select.
-- Select one frequency-based index and aother type of index.
+- Select one frequency-based index and another type of index.
 - Interpret the results of the analysis and describe the difference in a (few) paragraph(s).
 
 ::: {.callout-note}

@@ -170,18 +170,13 @@ Masaki EGUCHI, Ph.D.
 <li>(If time left) Vocabulary profiling</li>
 </ol>
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
-<ul>
-<li>AntConc is free concordancing tool.</li>
-<li>Developed by Laurence ANTHONY.</li>
-</ul>
-</section>
-<section id="hands-on-activity" class="slide level2">
-<h2>Hands-on Activity</h2>
-</section>
-<section id="task-1-loading-a-corpus-to-antconc" class="slide level2">
-<h2>Task 1: Loading a corpus to AntConc</h2>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="task-1-loading-a-corpus-to-antconc" class="title-slide slide level1 center">
+<h1>Task 1: Loading a corpus to AntConc</h1>
+
 </section>
 <section id="open-antconc" class="slide level2">
 <h2>Open AntConc</h2>
@@ -199,12 +194,17 @@ Masaki EGUCHI, Ph.D.
 </ul>
 
 <img data-src="../../assets/session-5/Loading-corpus.gif" class="r-stretch quarto-figure-center"><p class="caption">Load-corpus</p></section>
-<section id="task-1-creating-a-frequency-list" class="slide level2">
-<h2>Task 1: Creating a frequency list</h2>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="task-2-creating-a-frequency-list" class="title-slide slide level1 center">
+<h1>Task 2: Creating a frequency list</h1>
+
 </section>
-<section id="word" class="slide level2">
-<h2>Word</h2>
-<p>Let’s now create a frequency list</p>
+<section id="word-frequency" class="slide level2">
+<h2>Word Frequency</h2>
+<p>Let’s now create a word frequency list from a corpus</p>
 <ol type="1">
 <li><p>Select <code>Word</code> analysis option</p></li>
 <li><p>Set <code>Min. Freq</code> and <code>Min. Range</code></p></li>
@@ -235,46 +235,81 @@ Masaki EGUCHI, Ph.D.
 <ul>
 <li>We will use the BROWN frequency list in the next session.</li>
 </ul>
+</section></section>
+<section>
+<section id="task-3-plot-frequencies" class="title-slide slide level1 center">
+<h1>Task 3: Plot frequencies</h1>
 
-<img data-src="../../assets/session-5/Freq-list.png" class="r-stretch quarto-figure-center"><p class="caption">save-list</p></section>
-<section id="task-2-plot-frequencies" class="slide level2">
-<h2>Task 2: Plot frequencies</h2>
+</section>
+<section id="visualizing-frequency-distributions" class="slide level2">
+<h2>Visualizing frequency distributions</h2>
 <ul>
-<li>Let’s now understand the distributions of words in language.</li>
+<li>Let’s now understand the distributions of words in BROWN corpus.</li>
 <li>Visit our <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">simple-text-analyzer tool</a>.</li>
 <li>Hit Frequency analysis and upload the frequency list.</li>
-<li>What did you notice?</li>
 </ul>
 </section>
 <section id="frequency-plot" class="slide level2">
 <h2>Frequency Plot</h2>
+<div style="font-size:70%">
 <ul>
-<li>Very few words occupy most of the corpus.</li>
+<li>X-Axis = Group of 500/1,000/2,000 words</li>
+<li>Y-Axis = Average Frequency across all words in the band</li>
 </ul>
+</div>
 
 <img data-src="../../assets/session-5/Frequency-plot.png" class="r-stretch quarto-figure-center"><p class="caption">BROWN frequency</p></section>
 <section id="discussion" class="slide level2">
 <h2>Discussion</h2>
 <ul>
-<li>What did you notice in the plot? What are the characteristics of words?</li>
-<li>What are the characteristics of frequent words? What about infrequent words?</li>
+<li>What do you learn from the previous bar graph?</li>
+<li>For each frequency band, what are the characteristics of the sample words you see?</li>
+</ul>
+</section></section>
+<section>
+<section id="task-4-creating-frequency-lists-of-japanese" class="title-slide slide level1 center">
+<h1>Task 4: Creating frequency lists of Japanese</h1>
+
+</section>
+<section id="so-far" class="slide level2">
+<h2>So far…</h2>
+<ul>
+<li>Up to this point, we only dealt with the English language.</li>
+<li>Let’s try doing the same for Japanese.</li>
+<li>But we need to do something extra…</li>
+<li>Can you guess what that is?</li>
+</ul>
+<ul>
+<li class="fragment">I am planning to eat Oysters after this intensive course.</li>
+<li class="fragment">この短期集中講座が終わったら、カキを食べたいと思っています。</li>
 </ul>
 </section>
-<section id="task-3-tokenizing-non-english-languages-for-frequency-analysis" class="slide level2">
-<h2>Task 3: Tokenizing non-English languages for frequency analysis</h2>
+<section id="tokenization" class="slide level2">
+<h2>Tokenization</h2>
 <ul>
-<li><p>Up to this point, we only dealt with English.</p></li>
-<li><p>English is very convenient in corpus analysis because of the white spaces.</p></li>
-<li><p>Asian languages have completely different writing system from Indo-European language, and it makes it difficult to <code>tokenize</code> texts in to words.</p>
+<li>English is very convenient in corpus analysis because of the white spaces.</li>
+<li>Asian languages have completely different writing system from Indo-European language, and it makes it difficult to <code>tokenize</code> texts into words.</li>
+</ul>
+<p><strong>English text</strong></p>
 <pre><code>I am planning to eat Oysters after this intensive course.</code></pre>
+<p><strong>Japanese text</strong></p>
+<pre><code>この短期集中講座が終わったら、カキを食べたいと思っています。</code></pre>
+</section>
+<section id="tokenization-1" class="slide level2">
+<h2>Tokenization</h2>
+<ul>
+<li><p><code>Tokenization</code> = segmenting running text into words</p></li>
+<li><p>It needs more advanced statistical algorithms for Asian languages.</p>
+<ul>
+<li>How would you chunk these</li>
+</ul>
 <pre><code>この短期集中講座が終わったら、カキを食べたいと思っています。</code></pre></li>
 </ul>
 </section>
-<section id="tagant" class="slide level2">
-<h2>TagAnt</h2>
+<section id="tokenization-with-tagant" class="slide level2">
+<h2>Tokenization with TagAnt</h2>
 <ul>
-<li><code>Tokenization</code> (segmenting running text into words) needs more advanced statistical algorithms.</li>
-<li>TagAnt is a free tool (again developped by Laurence ANTHONY).</li>
+<li>TagAnt is a free tool (again developped by Laurence ANTHONY) to conduct tokenization (and POS tagging).</li>
 <li>It uses modern natural language processing tool (called spaCy) to tokenize input texts.</li>
 </ul>
 </section>
@@ -294,6 +329,7 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section id="result-of-tagant-segmentation" class="slide level2">
 <h2>Result of TagAnt segmentation</h2>
+<p>You can choose from two output formats.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -310,36 +346,113 @@ Masaki EGUCHI, Ph.D.
 </figure>
 </div>
 </div></div>
+</section>
+<section id="part-of-speech-tagging-in-tagant" class="slide level2">
+<h2>Part-Of-Speech Tagging in TagAnt</h2>
 <ul>
-<li>TagAnt can do more than this.</li>
-<li>We will come back to POS tagging on Day 4.</li>
+<li><p>TagAnt can do more than tokenization.</p></li>
+<li><p>It allows you to automatically annotate the token for Part-Of-Speech (POS).</p></li>
+<li><p>POS = Grammatical category of lexical items (NOUN, VERB, etc.)</p></li>
 </ul>
 </section>
-<section id="compiling-japanese-word-frequency-list" class="slide level2">
-<h2>Compiling Japanese Word Frequency list</h2>
+<section id="choosing-the-right-format-for-pos-representation" class="slide level2">
+<h2>Choosing the right format for POS representation</h2>
+<ul>
+<li><p>You can ask TagAnt for different output formats.</p></li>
+<li><p>For now, let’s choose <code>word+POS</code>.</p></li>
+</ul>
+<ul>
+<li class="fragment"><p><code>この短期集中講座が終わったら、カキを食べたいと思っています。</code></p></li>
+<li class="fragment"><p><code>この_DET 短期_NOUN 集中_NOUN 講座_NOUN が_ADP 終わっ_VERB たら_AUX 、_PUNCT カキ_NOUN を_ADP 食べ_VERB たい_AUX と_ADP 思っ_VERB て_SCONJ い_VERB ます_AUX 。_PUNCT</code></p></li>
+</ul>
+</section>
+<section id="now-try-different-options" class="slide level2">
+<h2>Now try different options…</h2>
+<ul>
+<li>Let’s analyze your own example with the following:
+<ul>
+<li><code>word+pos</code></li>
+<li><code>word+pos_tag</code></li>
+<li><code>word+lemma</code></li>
+<li><code>word+pos+lemma</code></li>
+</ul></li>
+<li>What do these choice give you? Share it with your neighbor.</li>
+</ul>
+</section>
+<section id="other-choices-and-expected-results" class="slide level2">
+<h2>Other choices and expected results</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Display Information</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>word</td>
+<td><code>カキ を 食べ たい</code></td>
+</tr>
+<tr class="even">
+<td>word+pos</td>
+<td><code>カキ_NOUN を_ADP 食べ_VERB たい_AUX</code></td>
+</tr>
+<tr class="odd">
+<td>word+pos_tag</td>
+<td><code>カキ_名詞-普通名詞-一般 を_助詞-格助詞 食べ_動詞-一般 たい_助動詞</code></td>
+</tr>
+<tr class="even">
+<td>word+lemma</td>
+<td><code>カキ_カキ を_を 食べ_食べる たい_たい</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="questions" class="slide level2 center">
+<h2>Questions?</h2>
+</section></section>
+<section>
+<section id="corpus-lab-2-task-1" class="title-slide slide level1 center">
+<h1>Corpus Lab 2: Task 1</h1>
+<div style="color:gray">
+<p>Instruction</p>
+</div>
+</section>
+<section id="task-1-compile-a-japanese-word-frequency-list" class="slide level2">
+<h2>Task 1: Compile a Japanese Word Frequency list</h2>
+<div style="font-size:80%">
 <h3 id="task">Task</h3>
 <p>Compile a Japanese frequency list based on a corpus.</p>
 <h3 id="resource">Resource</h3>
 <ul>
 <li>Download a Japanese text <code>Aozora 500</code> from Google Drive.</li>
-<li>Use AntConc and TagAnt.</li>
+<li>Use AntConc, TagAnt, and Simple Text Analyzer.</li>
 </ul>
 <h3 id="submission">Submission</h3>
 <ul>
 <li>Submit a frequency list</li>
 <li>Description of word frequency pattern in Japanese.</li>
 </ul>
+</div>
 </section>
-<section id="task-4-vocabulary-profiling" class="slide level2">
-<h2>Task 4: Vocabulary Profiling</h2>
-</section>
-<section id="frequency-information" class="slide level2">
-<h2>Frequency information</h2>
-<ul>
-<li><p>We are familiar with the notion of frequency in language.</p></li>
-<li><p>Frequency is one important driving force of human cognition and language processing.</p></li>
-<li><p>Profiling text using corpus frequency information is one important approach to understand textual characteristics.</p></li>
-</ul>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="task-4-vocabulary-profiling" class="title-slide slide level1 center">
+<h1>Task 4: Vocabulary Profiling</h1>
+<p><strong>Due to possible time limitation, let’s come back to this if we have time at the end of session 6.</strong></p>
+<!-- ## Frequency information
+
+- Frequency is one important driving force of human cognition and language processing.
+
+- Profiling is one important approach to understand textual characteristics.
+  - LFP (Laufer & Nation, 1995)
+  - Lexical coverage  -->
 </section>
 <section id="vocabulary-profiling" class="slide level2">
 <h2>Vocabulary Profiling</h2>
@@ -347,7 +460,7 @@ Masaki EGUCHI, Ph.D.
 <li>Vocabulary profiling is a technique to use corpus frequency to understand characteristics of vocabulary use in the input text</li>
 <li>For lexical sophistication measure
 <ul>
-<li>How much of the learner produced vocabulary is e.g., beyond 2000 word level (LFP; Laufer and Nation, 1995) ?</li>
+<li>LFP, Beyond 2000</li>
 </ul></li>
 <li>For lexical coverage
 <ul>
@@ -360,9 +473,10 @@ Masaki EGUCHI, Ph.D.
 <ul>
 <li>RANGE program</li>
 <li><a href="https://www.lextutor.ca/vp/">VocabProfiler in LexTutor</a></li>
+<li>AntWordProfiler (desktop; multi-language)</li>
 <li><a href="https://nwlc.pythonanywhere.com/">New Word Levels Checker</a></li>
-<li>AntWordProfiler</li>
 </ul>
+<!-- ## Using AntWordProfiler for simple lexical profiling -->
 
 
 

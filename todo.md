@@ -3,11 +3,13 @@
 ## Day 1
 
 [x] Session 1: 前日に最終調整
-    - 
-[ ] Session 2: 
-    - 
-[ ] Session 3: 
-    - 
+[x] Session 2: 
+[x] Session 3: 
+
+### Reflection
+
+- Session 3 could have had a bit more guidance on 
+
 
 ### hands-on 1
 - Corpus search results
@@ -15,11 +17,18 @@
 ## Day 2
 
 [ ] Session 4:
-  - [] Lexical Richness (conceptual introduction)
-  - [] lexical diversity
-  - [] lexical sophistication
-    - [ ] lexical frequency profile
+  - [x] Lexical Richness (conceptual introduction)
+  - [x] lexical diversity
+  - [x] lexical sophistication
+    - [x] lexical frequency profile
     - [ ] Eguchi & Kyle (2020) 
+
+1. Incomplete Content
+Several sections are marked but not filled:
+
+- MTLD and MATTR explanations in Session 6
+- The Eguchi & Kyle (2020) study in Session 4
+- The vocabulary profiling section in Session 5
 
 [ ] (**80% done**) Session 5: 
     - The most important thing is to tokenize the text and make frequency lists.

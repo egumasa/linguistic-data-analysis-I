@@ -327,6 +327,7 @@ What patterns do you notice?
 ## Chart function
 
 CHART shows frequency across:
+
 - Genres
 - Time periods
 - Text types
@@ -348,6 +349,7 @@ CHART shows frequency across:
 ## Interpreting the distribution
 
 What does this tell us about "lol"?
+
 - Genre preferences?
 - Formality levels?
 - Change over time?
@@ -357,6 +359,7 @@ What does this tell us about "lol"?
 ## Summary
 
 CHART function can be used to get frequency across:
+
 - Genres
 - Time periods
 - Text types
@@ -398,6 +401,7 @@ Any idea for operationalizing derivational morphemes?
 - ![a * of the](../../assets/session-3/search-with-wild-card.png)
 
 This helps find:
+
 - Fixed phrases with variable slots
 - Grammatical frames
 - Idiomatic expressions
@@ -411,6 +415,7 @@ This helps find:
 ## More complex searches
 
 Which is more frequent?
+
 - `exciting` or `excited`?
 
 - **RQ**: Is there any reletitive phrase with three adjectives?
@@ -502,6 +507,7 @@ Which is more frequent?
 - Focus on distribution/frequency/context
 
 ## Hypothesis:
+
 - Make a prediction 
 - Explain your reasoning using the template we have used
 
@@ -521,11 +527,13 @@ Which is more frequent?
 ## Task 3: Results
 
 ### Present your findings:
+
 - Frequency tables
 - KWIC samples
 - Distribution charts
 
 ### Interpret the patterns:
+
 - What do the numbers mean?
 - What do the contexts reveal?
 - Does this support your hypothesis?
@@ -554,16 +562,12 @@ Your submission ...
 What patterns in English interest you?
 
 Consider:
+
 - Words that seem to be changing
 - Regional differences
 - Formal vs. informal patterns
 - New expressions
 - Grammar variations
-
-# Summary
-
-
-
 
 ## Today's achievement
 

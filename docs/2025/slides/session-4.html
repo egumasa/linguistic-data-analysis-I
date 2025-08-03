@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-ef4f24e61c4c7987b8d5ba256652937e.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -142,19 +208,72 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section id="housekeeping" class="title-slide slide level1 center">
 <h1>Housekeeping</h1>
+<ul>
+<li>Corpus Lab 1 Due 8/5 (Tue) 10:30</li>
+</ul>
+</section>
+
+<section id="session-overview" class="title-slide slide level1 center">
+<h1>Session overview</h1>
 
 </section>
 
 <section>
-<section id="session-overview" class="title-slide slide level1 center">
-<h1>Session overview</h1>
+<section id="introduction-to-learner-corpus-research" class="title-slide slide level1 center">
+<h1>Introduction to Learner Corpus Research</h1>
 
+</section>
+<section id="learner-corpus-research" class="slide level2">
+<h2>Learner Corpus Research</h2>
+<p>A strand of research investigating:</p>
+<ol type="1">
+<li>What language varieties are present among non-native speaker</li>
+<li>How their native language varieties influence their production</li>
+<li>What constitutes second-language <em>proficiency</em></li>
+<li>How learners <em>develop</em> their language skills</li>
+</ol>
+<p>In this course, we will mostly focus on <strong>question 3 and 4</strong>.</p>
+</section>
+<section id="goals-of-sla-research" class="slide level2">
+<h2>Goals of SLA Research</h2>
+<p>To make a somewhat bold statement, many SLA researchers are interested in describing:</p>
+<ul>
+<li><strong>patterns</strong> and <strong>rates</strong> of L2 development (Ortega &amp; Iberri-Shea, 2005)</li>
+<li>features that distinguishes more or less <strong>successful</strong> communication (Isaacs &amp; Trofimovich, 2012; Revesz et al., 2014)</li>
+</ul>
+<div style="font-size:40%">
+<ul>
+<li>Isaacs, T., &amp; Trofimovich, P. (2012). DECONSTRUCTING COMPREHENSIBILITY: Identifying the Linguistic Influences on Listeners’ L2 Comprehensibility Ratings. Studies in Second Language Acquisition, 34(3), 475–505. https://doi.org/10.1017/s0272263112000150</li>
+<li>Ortega, L., &amp; Iberri-Shea, G. (2005). LONGITUDINAL RESEARCH IN SECOND LANGUAGE ACQUISITION: RECENT TRENDS AND FUTURE DIRECTIONS. Annual Review of Applied Linguistics, 25, 26–45. https://doi.org/10.1017/S0267190505000024</li>
+<li>Revesz, A., Ekiert, M., &amp; Torgersen, E. N. (2014). The Effects of Complexity, Accuracy, and Fluency on Communicative Adequacy in Oral Task Performance. Applied Linguistics, amu069. https://doi.org/10.1093/applin/amu069</li>
+</ul>
+</div>
+</section>
+<section id="the-interface-between-sla-and-corpus-methods" class="slide level2">
+<h2>The interface between SLA and corpus methods</h2>
+<ul>
+<li><p><strong>Goal</strong>: Revealing development paces and patterns</p></li>
+<li><p>We can use corpus linguistic methods to help us identify the features of language use to understand constructs of our interest.</p></li>
+</ul>
+<p>→ More and more SLA researchers rely on corpus methods.</p>
+</section>
+<section id="benefits-and-caveats" class="slide level2">
+<h2>Benefits and Caveats</h2>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>We can calculate measures more easily.</li>
+</ul>
+<p><strong>Caveats:</strong></p>
+<ul>
+<li>Researchers tend to use “simple measures to calculate”</li>
+</ul>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>🎯 Learning Objectives</h2>
 <blockquote>
 <p>By the end of this session, students will be able to:</p>
 <ul>
+<li>Discuss measurement issues in SLA</li>
 <li>Explain the purposes of linguistic measures</li>
 <li>List commonly used lexical measures in second language acquisition research</li>
 <li>Explain sub-constructs of lexical richness measures
@@ -169,27 +288,561 @@ Masaki EGUCHI, Ph.D.
 
 </section></section>
 <section>
-<section id="lexical-richness" class="title-slide slide level1 center">
-<h1>Lexical richness</h1>
+<section id="measurement-in-sla" class="title-slide slide level1 center">
+<h1>Measurement in SLA</h1>
 
+</section>
+<section id="measurement---what-is-it" class="slide level2">
+<h2>Measurement - What is it?</h2>
+<ul>
+<li>We talked about: scientific research cycle.
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-2/research-process.png"></p>
+<figcaption>research cycle</figcaption>
+</figure>
+</div></li>
+</ul></li>
+<li>As expansion, we add one more term, <strong>measurement</strong>.</li>
+</ul>
+</section>
+<section id="the-measurement-process" class="slide level2">
+<h2>The measurement Process</h2>
+
+<img data-src="../../assets/session-4/measurement-process.png" class="r-stretch quarto-figure-center"><p class="caption">The Measurement process</p></section>
+<section id="construct-definition-and-measurement" class="slide level2">
+<h2>Construct definition and measurement</h2>
+<p><strong>Conceptual work</strong></p>
+<ul>
+<li><p><strong>Construct definition</strong>: delineates the theoretical interpretation that can be attached to the observation data (or a measure).</p>
+<ul>
+<li>Do you want to know about <strong>motivation</strong> or <strong>engagement</strong>?</li>
+</ul></li>
+<li><p><strong>Behavior identification</strong>: What kind of behavior do you need to observe?</p></li>
+<li><p><strong>Task specification</strong>: In what condition do you need to set up to observe the intended behavior?</p></li>
+</ul>
+</section>
+<section id="construct-definition-and-measurement-1" class="slide level2">
+<h2>Construct definition and measurement</h2>
+<p><strong>Procedual work</strong></p>
+<ul>
+<li><p><strong>Behavior elicitation</strong>: Target behavior is elicited, observed and recorded.</p></li>
+<li><p><strong>Observation scoring</strong>: Classifying or coding observed behavior into categories or values to link them to theoretically meaningful interpretation.</p></li>
+<li><p><strong>Data analysis</strong>: Scores are summarized and patterns are described to provide probablistic evaluation of the data.</p></li>
+</ul>
+</section>
+<section id="compare-and-contrast-the-two-framework" class="slide level2">
+<h2>Compare and contrast the two framework</h2>
+<div style="font-size: 75%">
+<ul>
+<li>What are the relationships between the two?</li>
+<li>What do you think are the key points extracted from the two approaches?</li>
+</ul>
+</div>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-2/research-process.png"></p>
+<figcaption>Research process (Stefanowtisch, 2020)</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-4/measurement-process.png"></p>
+<figcaption>The Measurement process (Norris &amp; Ortega, 2003, p.&nbsp;720)</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="interrim-summary" class="slide level2">
+<h2>Interrim Summary</h2>
+<ul>
+<li>In this course, we emphasize <strong>the measurement process</strong> of the corpus-based linguistic measures.
+<ul>
+<li>Critical evaluation of measures/indices</li>
+<li>Justified choice of measures/indices</li>
+<li>cautionary interpretation of measures/indices</li>
+</ul></li>
+</ul>
 </section>
 <section class="slide level2">
 
 </section></section>
+<section>
+<section id="vocabulary-measurement" class="title-slide slide level1 center">
+<h1>Vocabulary Measurement</h1>
+<div style="color:gray">
+<p><em>Assessing Lexical Richness in Learner Language</em></p>
+</div>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<ul>
+<li>Vocabulary knowledge is usually conceptualized as:
+<ul>
+<li><strong>Breadth</strong>,</li>
+<li><strong>Depth</strong>, and</li>
+<li><strong>Fluency</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="compare-the-two-texts." class="slide level2">
+<h2>Compare the two texts.</h2>
+<div style="font-size:80%">
+<p><strong>Which one do you think reflect “better” vocabulary use?</strong></p>
+<div class="columns">
+<div class="column">
+<p>Is important for college students to have a part-time job? I think that has much opinion to answer it. The part-time job is a job that can do in partial time. So the college student can do part-time job when they has spare time (if they want). There are many reasons why the college student do part-time job (if they do).</p>
+</div><div class="column">
+<p>I find it hard to make a generalisation on whether it’s important or not for college students to have a part-time job, because this seems like something very individual and highly dependent on the individual student and their circumstances. Jobs serve a few main functions: to earn money, to gain experience, to get a head-start in a career, and to have something to do.</p>
+</div></div>
+</div>
+</section>
+<section id="lexical-richness" class="slide level2">
+<h2>Lexical Richness</h2>
+<ul>
+<li>Vocabulary use is usually conceptualized as:
+<ul>
+<li><strong>lexical richness</strong> (Read, 2000)
+<ul>
+<li><strong>lexical diversity (LD)</strong> and</li>
+<li><strong>lexical sophistication (LS)</strong></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="lexical-diversity" class="slide level2 center">
+<h2>Lexical diversity</h2>
+</section>
+<section id="definition-of-lexical-diversity-ld" class="slide level2">
+<h2>Definition of lexical diversity (LD)</h2>
+<ul>
+<li>LD: “the range of different words used in a text” (Durrant, 2023, p.&nbsp;37)</li>
+<li>The more different words a learner use, the more lexically diverse.</li>
+</ul>
+<p><strong>Assumption</strong></p>
+<ul>
+<li>The more vocabulary they know, the more diverse their vocabulary use is.</li>
+</ul>
+</section>
+<section id="complicating-factor" class="slide level2">
+<h2>Complicating factor</h2>
+<ul>
+<li>Lexical diversity can be affected <strong>not only</strong> by proficiency or vocabulary breadth <strong>but also</strong>:
+<ul>
+<li>text genre they write in</li>
+<li>local cohesion</li>
+</ul></li>
+</ul>
+</section>
+<section id="lexical-sophistication" class="slide level2 center">
+<h2>Lexical sophistication</h2>
+</section>
+<section id="definition-of-lexical-sophistication-ls" class="slide level2">
+<h2>Definition of lexical sophistication (LS)</h2>
+<ul>
+<li>LS is a bit more difficult to define:
+<ul>
+<li>It attempts to describe <strong>qualities</strong> of items being used</li>
+<li>Sometimes defined as “relative <em>difficulty</em>” (Kyle, 2020)</li>
+<li>“semantic specificity” or “pragmatic appropriateness”</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="operationalizing-lexical-richness" class="title-slide slide level1 center">
+<h1>Operationalizing Lexical Richness</h1>
+
+</section>
+<section id="text-internal-vs-external-measures" class="slide level2">
+<h2>Text-internal vs external measures</h2>
+<p>Skehan (2009) distinguished:</p>
+<div style="font-size:70%">
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Text-internal</td>
+<td>The (learner-produced) text is sufficient for calculation</td>
+<td>Lexical Diversity, Lexical Density</td>
+</tr>
+<tr class="even">
+<td>Text-external</td>
+<td>Reference corpus is needed to derive score</td>
+<td>Lexical Sophistication, Phraseological Sophistication</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size:40%">
+<p>Skehan, P. (2009). Modelling Second Language Performance: Integrating Complexity, Accuracy, Fluency, and Lexis. Applied Linguistics, 30(4), 510–532. https://doi.org/10.1093/applin/amp047</p>
+</div>
+</section>
+<section id="operationalizing-lexical-diversity" class="slide level2 center">
+<h2>Operationalizing lexical diversity</h2>
+</section>
+<section id="operationalizing-ld" class="slide level2">
+<h2>Operationalizing LD</h2>
+<ul>
+<li>Typically LD is operationalized by observing <strong>the proportion of unique words in a text</strong> (Jarvis, 2013, p.&nbsp;88)</li>
+</ul>
+<div style="font-size:40%">
+<p>Jarvis, S. (2013). Capturing the Diversity in Lexical Diversity. Language Learning, 63(s1), 87–106. https://doi.org/10.1111/j.1467-9922.2012.00739.x</p>
+</div>
+</section>
+<section id="lexical-diversity-indices" class="slide level2">
+<h2>Lexical diversity indices</h2>
+<p>Old LD measures include:</p>
+<ul>
+<li class="fragment"><p><span class="math inline">\(TTR = {nType \over nToken}\)</span></p></li>
+<li class="fragment"><p><span class="math inline">\(RootTTR (Guiraud Index) = {nType \over \sqrt{nToken}}\)</span></p></li>
+<li class="fragment"><p><span class="math inline">\(LogTTR = {\log(nType) \over \log(nToken)}\)</span></p></li>
+<li class="fragment"><p><span class="math inline">\(Maas = {\log(nTokens) - \log(nTypes) \over \log(nToken)^2}\)</span></p>
+<p>→ Never use <code>TTR</code>, <code>RootTTR</code>, <code>LogTTR</code></p></li>
+</ul>
+</section>
+<section id="a-major-problem-with-old-lexical-diversity-measures" class="slide level2">
+<h2>A major problem with old lexical diversity measures</h2>
+<ul>
+<li>The old LD indices is <strong>inherently</strong> related to text-lengths (Zenker &amp; Kyle, 2020; Kyle et al., 2024).</li>
+</ul>
+
+<img data-src="../../assets/session-4/parallel-analysis-ttr.png" class="r-stretch quarto-figure-center"><p class="caption">Relationship between text-lengths and LD measures</p><div style="font-size:40%">
+<p>Kyle, K., Sung, H., Eguchi, M., &amp; Zenker, F. (2024). Evaluating evidence for the reliability and validity of lexical diversity indices in L2 oral task responses. Studies in Second Language Acquisition, 46(1), 278–299. https://doi.org/10.1017/S0272263123000402</p>
+<p>Zenker &amp; Kyle</p>
+</div>
+</section>
+<section id="recent-ld-indices-that-overcame-text-lengths-issue" class="slide level2">
+<h2>Recent LD indices that overcame text-lengths issue</h2>
+<ul>
+<li>Mean-Average Type Token Ratio (MATTR)</li>
+<li>The measure of textual lexical diversity (MTLD)</li>
+</ul>
+</section>
+<section id="mattr" class="slide level2">
+<h2>MATTR</h2>
+<ul>
+<li>Calculating TTRs multiple times with sliding windows</li>
+</ul>
+<p><strong>Process</strong>:</p>
+<ul>
+<li>Calculate TTR for words 1-50</li>
+<li>Calculate TTR for words 2-51</li>
+<li>Calculate TTR for words 3-52</li>
+<li>Continue to end of text</li>
+<li>Average all TTR values</li>
+</ul>
+</section>
+<section id="mattr-example" class="slide level2">
+<h2>MATTR example</h2>
+<p>Text with 100 words:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>Window 1: [1-50] → TTR = 0.68</span>
+<span id="cb1-2"><a></a>Window 2: [2-51] → TTR = 0.69</span>
+<span id="cb1-3"><a></a>Window 3: [3-52] → TTR = 0.67</span>
+<span id="cb1-4"><a></a>...</span>
+<span id="cb1-5"><a></a>Window 51: [51-100] → TTR = 0.70</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then by taking average of all windows = 0.685</p>
+</section>
+<section id="mtld" class="slide level2">
+<h2>MTLD</h2>
+<ul>
+<li><p>Measures how many words it takes for lexical diversity to “stabilize”</p></li>
+<li><p><strong>Process</strong>:</p>
+<ul>
+<li>Reads through text sequentially</li>
+<li>Calculates TTR as it goes</li>
+<li>When TTR drops to threshold (traditionally 0.72), marks a “factor”</li>
+<li>Starts counting again for next factor</li>
+</ul></li>
+<li><p><strong>Score</strong>: Average factor length (higher = more diverse)</p></li>
+</ul>
+</section>
+<section id="mtld-example" class="slide level2">
+<h2>MTLD Example</h2>
+<p>In the following MTLD was calculated as:</p>
+<ul>
+<li>(32 + 45) / 2 = 38</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>Text: "The cat sat on the mat... The cat was happy. ... The bird flew by."</span>
+<span id="cb2-2"><a></a>       |--- Factor 1: 32 words ----------||---- Factor 2: 44 words-----|</span>
+<span id="cb2-3"><a></a>        (TTR drops to 0.72)                (TTR drops to 0.72)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>MTLD does this process both forward and backward.</li>
+</ul>
+</section>
+<section id="any-questions" class="slide level2">
+<h2>Any questions?</h2>
+</section>
+<section id="operationalizing-lexical-sophistication" class="slide level2 center">
+<h2>Operationalizing Lexical Sophistication</h2>
+</section>
+<section id="operationalizing-ls" class="slide level2">
+<h2>Operationalizing LS</h2>
+<ul>
+<li>Historically, <code>word frequency</code> information in reference corpora has been used to operationalize LS</li>
+</ul>
+<p><strong>Example 1</strong>: The big company bought the small business.</p>
+<p><strong>Example 2</strong>: The major corporation acquired the diminutive enterprise.</p>
+</section>
+<section id="lexical-frequency-profile-lfp" class="slide level2">
+<h2>Lexical Frequency Profile (LFP)</h2>
+<p>In LFP, words in learner text are categorized into different frequency bands in the reference corpus.</p>
+<div style="font-size:75%">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Band</th>
+<th>Proportion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First 1000</td>
+<td>75%</td>
+</tr>
+<tr class="even">
+<td>Second 2000</td>
+<td>10%</td>
+</tr>
+<tr class="odd">
+<td>Academic Word List</td>
+<td>10%</td>
+</tr>
+<tr class="even">
+<td>Others</td>
+<td>5%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>This gives you four scores: 75%, 10%, 10%, 5%.</li>
+<li>A simpler version <code>Beyond 2000</code> (Laufer, 1995) is used more often
+<ul>
+<li><span class="math inline">\(\text{Beyond 2000} = \frac{\text{Number of beyond-2000 word types}}{\text{Total number of word types}}\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div style="font-size:40%">
+<ul>
+<li>Laufer, B. (1995). Beyond 2000: A measure of productive lexicon in a second language. In L. Eubank, L. Selinker, &amp; M. Sharwood Smith (Eds.), The Current State of Interlanguage: Studies in honor of William E. Rutherford (p.&nbsp;265). John Benjamins Publishing Company. https://doi.org/10.1075/z.73.21lau</li>
+<li>Laufer, B., &amp; Nation, P. (1995). Vocabulary Size and Use: Lexical Richness in L2 Written Production.</li>
+<li>Lu, X. (2012). The Relationship of Lexical Richness to the Quality of ESL Learners’ Oral Narratives. The Modern Language Journal, 96(2), 190–208. https://doi.org/10.1111/j.1540-4781.2011.01232_1.x</li>
+</ul>
+</div>
+</section>
+<section id="other-frequency-based-measures" class="slide level2">
+<h2>Other frequency-based measures</h2>
+<ul>
+<li>P_lex (Meara &amp; Bell, 2000)</li>
+<li>S (Kojima &amp; Yamashita, 2014)</li>
+<li>Count-based measures (Crossley et al., 2014)</li>
+</ul>
+<div style="font-size:40%">
+<ul>
+<li>Crossley, S. A., Cobb, T., &amp; McNamara, D. S. (2013). Comparing count-based and band-based indices of word frequency: Implications for active vocabulary research and pedagogical applications. System, 41(4), 965–981. https://doi.org/10.1016/j.system.2013.08.002</li>
+<li>Kojima, M., &amp; Yamashita, J. (2014). Reliability of lexical richness measures based on word lists in short second language productions. System, 42, 23–33. https://doi.org/10.1016/j.system.2013.10.019</li>
+<li>Meara, P., &amp; Bell, H. (2001). P-Lex: A Simple and Effective Way of Describing the lexical Characteristics of Short L2 Tests. Prospect, 16(3), 5–19.</li>
+</ul>
+</div>
+</section>
+<section id="towards-multidimensional-lexical-sophistication" class="slide level2">
+<h2>Towards multidimensional lexical sophistication</h2>
+<ul>
+<li><p>More recent research recognizes <strong>multidimensionality</strong> in conceptualize and operationalize LS.</p></li>
+<li><p>Kyle &amp; Crossley (2015) proposed the Tool of Automated Analysis of Lexical Sophistication (TAALES).</p></li>
+<li><p>Kim, Crossley &amp; Kyle (2018): proposed multidimensional LS for writing.</p></li>
+<li><p>Eguchi &amp; Kyle (2020): followed up the concept in L2 speaking.</p></li>
+</ul>
+</section>
+<section id="categories-of-lexical-sophistication" class="slide level2">
+<h2>Categories of lexical sophistication</h2>
+<p>Durrant (2023) highlighted several categories:</p>
+<ul>
+<li>Word lengths</li>
+<li>Word frequency</li>
+<li>Register-based measures</li>
+<li>Contextual distinctiveness</li>
+<li>Semantic Measures</li>
+<li>Psycholinguistic measures</li>
+</ul>
+</section>
+<section id="register-based-measures" class="slide level2">
+<h2>Register-based measures</h2>
+<p>LS should also tap into the extent to which the text uses <strong>items that are characteristics of the target register</strong></p>
+<ul>
+<li>Proportion of words in Academic Word List (Coxhead, 2000)
+<ul>
+<li>low score: I <em>saw</em> that …</li>
+<li>high score: I <em>observed</em> that …</li>
+</ul></li>
+</ul>
+</section>
+<section id="contextual-distinctiveness" class="slide level2">
+<h2>Contextual distinctiveness</h2>
+<p>A word used in <strong>a narrower context </strong>(specific situation) should be considered more sophisticated.</p>
+<ul>
+<li>Semantic Diversity (SemD; Hoffman et al., 2013) <img data-src="../../assets/session-4/semD.png" alt="Semantic Diversity"></li>
+</ul>
+<div style="font-size:40%">
+<ul>
+<li>Hoffman, P., Lambon Ralph, M. A., &amp; Rogers, T. T. (2013). Semantic diversity: A measure of semantic ambiguity based on variability in the contextual usage of words. Behavior Research Methods, 45(3), 718–730. https://doi.org/10.3758/s13428-012-0278-x</li>
+</ul>
+</div>
+</section>
+<section id="semantic-measures---concrete-vs-abstract-referents" class="slide level2">
+<h2>Semantic Measures - Concrete vs Abstract referents</h2>
+<p>A word that involke more abstract concepts should be considered more sophisticated.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Concrete</th>
+<th>Abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Frequent</strong></td>
+<td>dog, car</td>
+<td>love, idea</td>
+</tr>
+<tr class="even">
+<td><strong>Infrequent</strong></td>
+<td>charger, helmet</td>
+<td>empathy, hypothesis</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="semantic-measures---hypernymy" class="slide level2">
+<h2>Semantic Measures - Hypernymy</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>A word that have a larger set of superordinate terms should be considered more sophisticated.</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-4/wordnet-fig1.png"></p>
+<figcaption>Word Net</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions?</h2>
+</section></section>
+<section>
+<section id="representative-study" class="title-slide slide level1 center">
+<h1>Representative Study</h1>
+
+</section>
+<section id="eguchi-kyle-2020" class="slide level2">
+<h2>Eguchi &amp; Kyle (2020)</h2>
+<ul>
+<li><p><strong>Goal</strong>: Investigate multidimensional nature of lexical sophistication in L2 oral proficiency interviews (OPIs)</p></li>
+<li><p><strong>Corpus</strong>: NICT JLE corpus (1,281 Japanese L2 English OPIs)</p></li>
+<li><p><strong>Method</strong>: Exploratory Factor Analysis (EFA) + regression analysis</p></li>
+</ul>
+</section>
+<section id="ls-measures" class="slide level2">
+<h2>LS Measures</h2>
+<div style="font-size:80%">
+<div class="columns">
+<div class="column">
+<ul>
+<li><strong>Frequency</strong> (e.g., COCA-Spoken, BNC-Spoken)</li>
+<li><strong>Range</strong> (e.g., COCA)</li>
+<li><strong>Psycholinguistic norms</strong> (concreteness, imageability)</li>
+<li><strong>Age of acquisition/exposure</strong></li>
+<li><strong>Semantic networks</strong> (hypernymy, polysemy)</li>
+<li><strong>Word recognition</strong> (lexical decision times)</li>
+</ul>
+</div><div class="column">
+<ul>
+<li><strong>Contextual distinctiveness</strong> (semantic diversity)</li>
+<li><strong>Word neighborhood</strong> (orthographic/phonological)</li>
+<li><strong>Academic language</strong> (AWL membership)</li>
+<li><strong>N-gram frequency</strong></li>
+<li><strong>N-gram range</strong></li>
+<li><strong>N-gram association</strong> (MI, MI2, T-score)</li>
+</ul>
+</div></div>
+</div>
+</section>
+<section id="sample-dimensions" class="slide level2">
+<h2>Sample dimensions</h2>
+
+<img data-src="../../assets/session-4/EK_factor1.png" class="r-stretch quarto-figure-center"><p class="caption">Factor 1</p></section>
+<section id="sample-dimensions-1" class="slide level2">
+<h2>Sample dimensions</h2>
+
+<img data-src="../../assets/session-4/EK_factor4.png" class="r-stretch quarto-figure-center"><p class="caption">Factor 4</p></section>
+<section id="final-regression-models" class="slide level2">
+<h2>Final regression models</h2>
+
+<img data-src="../../assets/session-4/EK_final.png" class="r-stretch quarto-figure-center"><p class="caption">final regression to predict OPI</p></section>
+<section class="slide level2">
+
+</section></section>
+<section>
 <section id="summary" class="title-slide slide level1 center">
 <h1>Summary</h1>
 
 </section>
+<section id="the-measurement-process-in-sla" class="slide level2">
+<h2>The Measurement Process in SLA</h2>
 
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
+<img data-src="../../assets/session-4/measurement-process.png" class="r-stretch quarto-figure-center"><p class="caption">The measurement process</p></section>
+<section id="lexical-richness-two-main-components" class="slide level2">
+<h2>Lexical Richness: Two Main Components</h2>
+<div style="font-size:80%">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Lexical Diversity (LD)</strong></p>
 <ul>
-<li>How is the use of speaker knowledge differ in generative linguistic tradition vs the corpus linguistics? Use intuition and interpretation.</li>
+<li>Range of different words used</li>
+<li>Text-internal measure</li>
+<li>Avoid TTR; use MTLD/MATTR</li>
+<li>Affected by text length</li>
 </ul>
-</section>
-
+</div><div class="column" style="width:50%;">
+<p><strong>Lexical Sophistication (LS)</strong></p>
+<ul>
+<li>Quality/difficulty of words used</li>
+<li>Requires reference corpus</li>
+<li>Multidimensional construct</li>
+</ul>
+</div></div>
+</div>
+</section></section>
 <section id="next-step" class="title-slide slide level1 center">
 <h1>Next step</h1>
+<p>You’ll learn to:</p>
+<ul>
+<li>Create frequency lists using AntConc</li>
+<li>Understand frequency distributions</li>
+<li>Work with non-English texts (tokenization)</li>
+<li>Apply frequency-based sophistication measures</li>
+</ul>
 
 
 

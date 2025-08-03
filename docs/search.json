@@ -1451,7 +1451,7 @@
     "href": "2025/slides/session-6.html#learning-objectives",
     "title": "Session 6: Hands-on activity #3",
     "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\nBy the end of this session, you will be able to:\n\n\n\nCompute simple lexical diversity measures using spreadsheet software\nCompute advanced lexical diversity measures using TAALED\nExplain how modern lexical diversity measures are calculated\nCalculate simple lexical sophistication measures using dedicated web application\nDescribe how lexical sophistication measures behave on a single input text.\nDiscuss benefits and drawbacks of lexical richness measures."
+    "text": "🎯 Learning Objectives\n\nBy the end of this session, you will be able to:\n\n\n\nCompute simple lexical diversity measures using spreadsheet software\nCompute advanced lexical diversity measures using TAALED\nExplain how modern lexical diversity measures are calculated\nCalculate simple lexical sophistication measures using dedicated web application\nDescribe how lexical sophistication measures behave on a single input text.\nDiscuss benefits and drawbacks of lexical richness measures."
   },
   {
     "objectID": "2025/slides/session-6.html#terminology",
@@ -1461,67 +1461,53 @@
     "text": "Terminology\nIn this presentation, I will use the following terms:\n\nInput text: The text you want to analyze (e.g., learner produce text)."
   },
   {
-    "objectID": "2025/slides/session-6.html#lexical-diversity",
-    "href": "2025/slides/session-6.html#lexical-diversity",
+    "objectID": "2025/slides/session-6.html#lexical-diversity-ld",
+    "href": "2025/slides/session-6.html#lexical-diversity-ld",
     "title": "Session 6: Hands-on activity #3",
-    "section": "Lexical Diversity",
-    "text": "Lexical Diversity\n\nLexical Diversity is computed internally to text.\ne.g., Type-Token Ratio:\n\nCount the number of unique word (Type) in the input text\nCount the number of total word (Token) in the input text\nDevide Type by token."
+    "section": "Lexical Diversity (LD)",
+    "text": "Lexical Diversity (LD)\n\nLexical Diversity is computed internally to text.\ne.g., Type-Token Ratio:\n\nCount the number of unique word (Type) in the input text\nCount the number of total word (Token) in the input text\nDevide Type by token."
   },
   {
     "objectID": "2025/slides/session-6.html#relationships-between-cttr-and-year",
     "href": "2025/slides/session-6.html#relationships-between-cttr-and-year",
     "title": "Session 6: Hands-on activity #3",
     "section": "Relationships between CTTR and Year",
-    "text": "Relationships between CTTR and Year\n\nDurrant (2023) introduced:\n\n\\(CTTR = {nType \\over \\sqrt{2 * nToken}}\\)"
+    "text": "Relationships between CTTR and Year\n\nDurrant (2023) introduced:\n\n\\(CTTR = {nType \\over \\sqrt{2 * nToken}}\\)\n\n\n\n\nFigure 4.19"
   },
   {
-    "objectID": "2025/slides/session-6.html#lexical-diversity-1",
-    "href": "2025/slides/session-6.html#lexical-diversity-1",
+    "objectID": "2025/slides/session-6.html#lexical-diversity",
+    "href": "2025/slides/session-6.html#lexical-diversity",
     "title": "Session 6: Hands-on activity #3",
     "section": "Lexical diversity",
     "text": "Lexical diversity\n\nLearner’s proficiency has positive relations with lexical diversity\nOther features such as genres can also mediate the relationships"
   },
   {
-    "objectID": "2025/slides/session-6.html#lexical-sophistication",
-    "href": "2025/slides/session-6.html#lexical-sophistication",
+    "objectID": "2025/slides/session-6.html#lexical-sophistication-ls",
+    "href": "2025/slides/session-6.html#lexical-sophistication-ls",
     "title": "Session 6: Hands-on activity #3",
-    "section": "Lexical Sophistication",
-    "text": "Lexical Sophistication\n\nLexical Sophistication requires external resources to compute.\nTo derive a frequency index:\n\nCompile a frequency list\nFor each word in the input text, retrieve frequency score from the list\n\ne.g., tree –&gt; 1,0000\n\nAverage the frequency scores (out of item awarded the score)"
+    "section": "Lexical sophistication (LS)",
+    "text": "Lexical sophistication (LS)\n\nLexical Sophistication requires external resources to compute.\n\ne.g., Corpus frequency lists, SemD score, etc.\n\nTo derive an LS index:\n\nCompile a reference word list\nFor each word in the input text, retrieve index score from the reference list\nAverage the scores (out of item awarded the score)"
   },
   {
-    "objectID": "2025/slides/session-6.html#lexical-sophistication-as-multidimensional-construct",
-    "href": "2025/slides/session-6.html#lexical-sophistication-as-multidimensional-construct",
+    "objectID": "2025/slides/session-6.html#instruction-for-task-2",
+    "href": "2025/slides/session-6.html#instruction-for-task-2",
     "title": "Session 6: Hands-on activity #3",
-    "section": "Lexical sophistication as multidimensional construct",
-    "text": "Lexical sophistication as multidimensional construct\n\nFrequency is only one aspect of lexical sophisitication among others.\nWe will"
-  },
-  {
-    "objectID": "2025/slides/session-6.html#task-list",
-    "href": "2025/slides/session-6.html#task-list",
-    "title": "Session 6: Hands-on activity #3",
-    "section": "Task list",
-    "text": "Task list\n\nComputing simple Lexical Diversity measures by hand\nUsing TAALED desktop version\nComputing simple Lexical Sophisitcation measures"
-  },
-  {
-    "objectID": "2025/slides/session-6.html#computing-simple-lexical-diversity-measures-by-hand",
-    "href": "2025/slides/session-6.html#computing-simple-lexical-diversity-measures-by-hand",
-    "title": "Session 6: Hands-on activity #3",
-    "section": "Computing simple Lexical Diversity measures by hand",
-    "text": "Computing simple Lexical Diversity measures by hand"
+    "section": "Instruction for Task 2",
+    "text": "Instruction for Task 2\n\nYour task is to replicate Durrant’s Figure 4.19 with two different indices – MTLD and MATTR.\n\n\nFigure 4.19"
   },
   {
     "objectID": "2025/slides/session-6.html#simple-text-example",
     "href": "2025/slides/session-6.html#simple-text-example",
     "title": "Session 6: Hands-on activity #3",
     "section": "Simple Text Example",
-    "text": "Simple Text Example\nCound the type and token of the following texts.\n\n\n\n\n\n\n\nID\nText\n\n\n\n\nText 1\n“The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.”\n\n\nText 2\n“A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.”\n\n\n\nNote : Texts were generated by GPT for illustration purposes."
+    "text": "Simple Text Example\nCound the type and token of the following texts.\n\n\n\n\n\n\n\n\nID\nText\n\n\n\n\nText 1\n“The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.”\n\n\nText 2\n“A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.”\n\n\n\n\nNote : Texts were generated by GPT for illustration purposes."
   },
   {
     "objectID": "2025/slides/session-6.html#simple-text-example-1",
     "href": "2025/slides/session-6.html#simple-text-example-1",
     "title": "Session 6: Hands-on activity #3",
     "section": "Simple Text Example",
-    "text": "Simple Text Example\n\n\n\n\n\n\n\n\n\nID\nText\nToken\nType\n\n\n\n\nText 1\n“The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.”\n19\n8\n\n\nText 2\n“A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.”\n19\n19\n\n\n\nNote : Texts were generated by GPT for illustration purposes."
+    "text": "Simple Text Example\n\n\n\n\n\n\n\n\n\n\nID\nText\nToken\nType\n\n\n\n\nText 1\n“The dog ran. The dog jumped. The dog played. The dog barked. The dog ran again and jumped again.”\n19\n8\n\n\nText 2\n“A curious fox trotted briskly through the meadow, leaping over mossy logs, sniffing wildflowers, and vanishing into golden twilight.”\n19\n19\n\n\n\n\nNote : Texts were generated by GPT for illustration purposes."
   },
   {
     "objectID": "2025/slides/session-6.html#impact-of-text-lengths",
@@ -1545,11 +1531,25 @@
     "text": "Speadsheet looks like this\n\nGoogle Spreadsheet"
   },
   {
+    "objectID": "2025/slides/session-6.html#parallel-analysis",
+    "href": "2025/slides/session-6.html#parallel-analysis",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Parallel Analysis",
+    "text": "Parallel Analysis\n\nThrough this worksheet, we will look at how Kyle et al. showcased the impact of text lengths on lexical sophistication indices.\nParallel analysis is a technique to investigate the impact of text length\n\nChunking texts into smaller lengths (20, 40, 60 etc.)\nCalculate index for each sliding window with same lengths\nAverage them into a single value\n\nbecause the original texts are the same, the values should NOT change due to different text lengths."
+  },
+  {
     "objectID": "2025/slides/session-6.html#some-classic-lexical-diversity",
     "href": "2025/slides/session-6.html#some-classic-lexical-diversity",
     "title": "Session 6: Hands-on activity #3",
     "section": "Some classic lexical diversity",
     "text": "Some classic lexical diversity\nWe calculate this for illustration but NEVER use these in your study.\n\n\\(TTR = {nType \\over nToken}\\)\n\\(RootTTR = {nType \\over \\sqrt{nToken}}\\)\n\\(LogTTR = {\\log(nType) \\over \\log(nToken)}\\)\n\\(Maas = {\\log(nTokens) - \\log(nTypes) \\over \\log(nToken)^2}\\)\n\n\n\nuse the following\n\nHigh: GRA_PTJ0_124_ORIG.txt\nMid diversity: GRA_PTJ0_070_ORIG.txt\nLow diversity: GRA_PTJ0_112_ORIG.txt"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#summary",
+    "href": "2025/slides/session-6.html#summary",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Summary",
+    "text": "Summary\n\nThrough worksheet example of parallel analysis, we demonstrated that the old indices of LD is flawed."
   },
   {
     "objectID": "2025/slides/session-6.html#what-should-we-actually-use-then",
@@ -1559,18 +1559,11 @@
     "text": "What should we actually use then?\n\nThe Measure of Textual Lexical Diversity (MTLD)\nMoving-Average Type Token Ratio (MATTR)\n\n→ These are shown as more robust indices of LD."
   },
   {
-    "objectID": "2025/slides/session-6.html#the-measure-of-textual-lexical-diversity-mtld",
-    "href": "2025/slides/session-6.html#the-measure-of-textual-lexical-diversity-mtld",
+    "objectID": "2025/slides/session-6.html#operationalization-of-mtld-and-mattr",
+    "href": "2025/slides/session-6.html#operationalization-of-mtld-and-mattr",
     "title": "Session 6: Hands-on activity #3",
-    "section": "The Measure of Textual Lexical Diversity (MTLD)",
-    "text": "The Measure of Textual Lexical Diversity (MTLD)\n\ninsert explanation"
-  },
-  {
-    "objectID": "2025/slides/session-6.html#moving-average-type-token-ratio-mattr",
-    "href": "2025/slides/session-6.html#moving-average-type-token-ratio-mattr",
-    "title": "Session 6: Hands-on activity #3",
-    "section": "Moving-Average Type Token Ratio (MATTR)",
-    "text": "Moving-Average Type Token Ratio (MATTR)\n\ninsert explanation"
+    "section": "Operationalization of MTLD and MATTR",
+    "text": "Operationalization of MTLD and MATTR\nIn pair, recall how MTLD and MATTR is operationalized."
   },
   {
     "objectID": "2025/slides/session-6.html#using-taaled-desktop-version",
@@ -1636,6 +1629,34 @@
     "text": "Opening csv file in a spreadsheet software\n\nYou can open csv file in Excel (or any other spreadsheet software)"
   },
   {
+    "objectID": "2025/slides/session-6.html#plotting-the-gig-corpus",
+    "href": "2025/slides/session-6.html#plotting-the-gig-corpus",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Plotting the GiG corpus",
+    "text": "Plotting the GiG corpus\nThe goal of the Corpus Lab, Task 2, is to replicate analysis on GiG.\nYou will need to have access to both metadata file.\nThe corpus data is here."
+  },
+  {
+    "objectID": "2025/slides/session-6.html#gig-meta-data",
+    "href": "2025/slides/session-6.html#gig-meta-data",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "GiG meta data",
+    "text": "GiG meta data\n\nGiG metadata documents the necessary data to use for plotting\n\nYear Group (X-axis in Figure 4.19)\nGenre (grouping variable in Figure 4.19)\n\n\n\nGiG Metadata"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#using-corpus-data-visualizer-for-plotting",
+    "href": "2025/slides/session-6.html#using-corpus-data-visualizer-for-plotting",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Using Corpus Data Visualizer for plotting",
+    "text": "Using Corpus Data Visualizer for plotting\nSee in-class demonstration."
+  },
+  {
+    "objectID": "2025/slides/session-6.html#writing-up-research-question-hypothesis-and-results",
+    "href": "2025/slides/session-6.html#writing-up-research-question-hypothesis-and-results",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "Writing up research question, hypothesis, and results",
+    "text": "Writing up research question, hypothesis, and results\n\nResearch question?\nHypothesis: Write your own.\nResults: Write your own."
+  },
+  {
     "objectID": "2025/slides/session-6.html#questions",
     "href": "2025/slides/session-6.html#questions",
     "title": "Session 6: Hands-on activity #3",
@@ -1643,22 +1664,8 @@
     "text": "Questions?"
   },
   {
-    "objectID": "2025/slides/session-6.html#lemmatize",
-    "href": "2025/slides/session-6.html#lemmatize",
-    "title": "Session 6: Hands-on activity #3",
-    "section": "Lemmatize?",
-    "text": "Lemmatize?\n\nWhat do you think is the effect of lemmatization on the lexical diversity measures?\nShould we lemmatize? Why or why not?"
-  },
-  {
-    "objectID": "2025/slides/session-6.html#computing-simple-lexical-sophisitcation-measures",
-    "href": "2025/slides/session-6.html#computing-simple-lexical-sophisitcation-measures",
-    "title": "Session 6: Hands-on activity #3",
-    "section": "Computing simple Lexical Sophisitcation measures",
-    "text": "Computing simple Lexical Sophisitcation measures"
-  },
-  {
-    "objectID": "2025/slides/session-6.html#lexical-sophistication-1",
-    "href": "2025/slides/session-6.html#lexical-sophistication-1",
+    "objectID": "2025/slides/session-6.html#lexical-sophistication",
+    "href": "2025/slides/session-6.html#lexical-sophistication",
     "title": "Session 6: Hands-on activity #3",
     "section": "Lexical sophistication",
     "text": "Lexical sophistication\nThere are a number of lexical sophistication measures for English (+ 300).\n\n12 categories of measures (Eguchi & Kyle, 2020)\n\nFrequency\nRange\nPsycholinguistic Norm\nHypernymy\nN-gram Frequency/Range/SOA\netc."
@@ -1762,11 +1769,11 @@
     "text": "Step 5: Interpret the findings\n\nLet’s discuss how the two text differ in lexical use from one another.\nUse the tables with token information and visualization to (dis)confirm your hypothesis"
   },
   {
-    "objectID": "2025/slides/session-6.html#submission",
-    "href": "2025/slides/session-6.html#submission",
+    "objectID": "2025/slides/session-6.html#corpus-lab-2-submission",
+    "href": "2025/slides/session-6.html#corpus-lab-2-submission",
     "title": "Session 6: Hands-on activity #3",
-    "section": "Submission",
-    "text": "Submission\n\nJapanese Word Frequency List and small write-up (5 points)\nThe Google Spreadsheet with calculation of lexical diversity indices (5 points)"
+    "section": "Corpus Lab 2: Submission",
+    "text": "Corpus Lab 2: Submission\n\nJapanese Word Frequency List and small write-up (5 points)\nReplication of Durrant’s analysis from Figure 4.16 (5 points)\n\nresearch question,\nhypothesis,\nplots, and\nresults\n\nComparison of two texts in terms of lexical sophistication (5 points)"
   },
   {
     "objectID": "2025/slides/session-5.html#learning-objectives",
@@ -1781,27 +1788,6 @@
     "title": "Session 5: Hands-on activity #2",
     "section": "Tasks",
     "text": "Tasks\n\nLoading a corpus to AntConc\nCreating a frequency list\nVisualize frequency distributions\nTokenize non-English language\n(If time left) Vocabulary profiling"
-  },
-  {
-    "objectID": "2025/slides/session-5.html#introduction",
-    "href": "2025/slides/session-5.html#introduction",
-    "title": "Session 5: Hands-on activity #2",
-    "section": "Introduction",
-    "text": "Introduction\n\nAntConc is free concordancing tool.\nDeveloped by Laurence ANTHONY."
-  },
-  {
-    "objectID": "2025/slides/session-5.html#hands-on-activity",
-    "href": "2025/slides/session-5.html#hands-on-activity",
-    "title": "Session 5: Hands-on activity #2",
-    "section": "Hands-on Activity",
-    "text": "Hands-on Activity"
-  },
-  {
-    "objectID": "2025/slides/session-5.html#task-1-loading-a-corpus-to-antconc",
-    "href": "2025/slides/session-5.html#task-1-loading-a-corpus-to-antconc",
-    "title": "Session 5: Hands-on activity #2",
-    "section": "Task 1: Loading a corpus to AntConc",
-    "text": "Task 1: Loading a corpus to AntConc"
   },
   {
     "objectID": "2025/slides/session-5.html#open-antconc",
@@ -1825,18 +1811,11 @@
     "text": "Load a corpus\nNow, let’s load a corpus.\n\nWe will use BROWN Corpus.\n\n\nLoad-corpus"
   },
   {
-    "objectID": "2025/slides/session-5.html#task-1-creating-a-frequency-list",
-    "href": "2025/slides/session-5.html#task-1-creating-a-frequency-list",
+    "objectID": "2025/slides/session-5.html#word-frequency",
+    "href": "2025/slides/session-5.html#word-frequency",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Task 1: Creating a frequency list",
-    "text": "Task 1: Creating a frequency list"
-  },
-  {
-    "objectID": "2025/slides/session-5.html#word",
-    "href": "2025/slides/session-5.html#word",
-    "title": "Session 5: Hands-on activity #2",
-    "section": "Word",
-    "text": "Word\nLet’s now create a frequency list\n\nSelect Word analysis option\nSet Min. Freq and Min. Range\n\n\nMin. Freq = the number of times the word should occur in the corpus\nMin. Range = the number of files in which the word should occur\n\n\nHit Start"
+    "section": "Word Frequency",
+    "text": "Word Frequency\nLet’s now create a word frequency list from a corpus\n\nSelect Word analysis option\nSet Min. Freq and Min. Range\n\n\nMin. Freq = the number of times the word should occur in the corpus\nMin. Range = the number of files in which the word should occur\n\n\nHit Start"
   },
   {
     "objectID": "2025/slides/session-5.html#lets-try",
@@ -1857,42 +1836,56 @@
     "href": "2025/slides/session-5.html#frequency-list",
     "title": "Session 5: Hands-on activity #2",
     "section": "Frequency list",
-    "text": "Frequency list\n\nWe will use the BROWN frequency list in the next session.\n\n\nsave-list"
+    "text": "Frequency list\n\nWe will use the BROWN frequency list in the next session."
   },
   {
-    "objectID": "2025/slides/session-5.html#task-2-plot-frequencies",
-    "href": "2025/slides/session-5.html#task-2-plot-frequencies",
+    "objectID": "2025/slides/session-5.html#visualizing-frequency-distributions",
+    "href": "2025/slides/session-5.html#visualizing-frequency-distributions",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Task 2: Plot frequencies",
-    "text": "Task 2: Plot frequencies\n\nLet’s now understand the distributions of words in language.\nVisit our simple-text-analyzer tool.\nHit Frequency analysis and upload the frequency list.\nWhat did you notice?"
+    "section": "Visualizing frequency distributions",
+    "text": "Visualizing frequency distributions\n\nLet’s now understand the distributions of words in BROWN corpus.\nVisit our simple-text-analyzer tool.\nHit Frequency analysis and upload the frequency list."
   },
   {
     "objectID": "2025/slides/session-5.html#frequency-plot",
     "href": "2025/slides/session-5.html#frequency-plot",
     "title": "Session 5: Hands-on activity #2",
     "section": "Frequency Plot",
-    "text": "Frequency Plot\n\nVery few words occupy most of the corpus.\n\n\nBROWN frequency"
+    "text": "Frequency Plot\n\n\nX-Axis = Group of 500/1,000/2,000 words\nY-Axis = Average Frequency across all words in the band\n\n\n\nBROWN frequency"
   },
   {
     "objectID": "2025/slides/session-5.html#discussion",
     "href": "2025/slides/session-5.html#discussion",
     "title": "Session 5: Hands-on activity #2",
     "section": "Discussion",
-    "text": "Discussion\n\nWhat did you notice in the plot? What are the characteristics of words?\nWhat are the characteristics of frequent words? What about infrequent words?"
+    "text": "Discussion\n\nWhat do you learn from the previous bar graph?\nFor each frequency band, what are the characteristics of the sample words you see?"
   },
   {
-    "objectID": "2025/slides/session-5.html#task-3-tokenizing-non-english-languages-for-frequency-analysis",
-    "href": "2025/slides/session-5.html#task-3-tokenizing-non-english-languages-for-frequency-analysis",
+    "objectID": "2025/slides/session-5.html#so-far",
+    "href": "2025/slides/session-5.html#so-far",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Task 3: Tokenizing non-English languages for frequency analysis",
-    "text": "Task 3: Tokenizing non-English languages for frequency analysis\n\nUp to this point, we only dealt with English.\nEnglish is very convenient in corpus analysis because of the white spaces.\nAsian languages have completely different writing system from Indo-European language, and it makes it difficult to tokenize texts in to words.\nI am planning to eat Oysters after this intensive course.\nこの短期集中講座が終わったら、カキを食べたいと思っています。"
+    "section": "So far…",
+    "text": "So far…\n\nUp to this point, we only dealt with the English language.\nLet’s try doing the same for Japanese.\nBut we need to do something extra…\nCan you guess what that is?\n\n\nI am planning to eat Oysters after this intensive course.\nこの短期集中講座が終わったら、カキを食べたいと思っています。"
   },
   {
-    "objectID": "2025/slides/session-5.html#tagant",
-    "href": "2025/slides/session-5.html#tagant",
+    "objectID": "2025/slides/session-5.html#tokenization",
+    "href": "2025/slides/session-5.html#tokenization",
     "title": "Session 5: Hands-on activity #2",
-    "section": "TagAnt",
-    "text": "TagAnt\n\nTokenization (segmenting running text into words) needs more advanced statistical algorithms.\nTagAnt is a free tool (again developped by Laurence ANTHONY).\nIt uses modern natural language processing tool (called spaCy) to tokenize input texts."
+    "section": "Tokenization",
+    "text": "Tokenization\n\nEnglish is very convenient in corpus analysis because of the white spaces.\nAsian languages have completely different writing system from Indo-European language, and it makes it difficult to tokenize texts into words.\n\nEnglish text\nI am planning to eat Oysters after this intensive course.\nJapanese text\nこの短期集中講座が終わったら、カキを食べたいと思っています。"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#tokenization-1",
+    "href": "2025/slides/session-5.html#tokenization-1",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Tokenization",
+    "text": "Tokenization\n\nTokenization = segmenting running text into words\nIt needs more advanced statistical algorithms for Asian languages.\n\nHow would you chunk these\n\nこの短期集中講座が終わったら、カキを食べたいと思っています。"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#tokenization-with-tagant",
+    "href": "2025/slides/session-5.html#tokenization-with-tagant",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Tokenization with TagAnt",
+    "text": "Tokenization with TagAnt\n\nTagAnt is a free tool (again developped by Laurence ANTHONY) to conduct tokenization (and POS tagging).\nIt uses modern natural language processing tool (called spaCy) to tokenize input texts."
   },
   {
     "objectID": "2025/slides/session-5.html#tokenizing-japanese",
@@ -1913,42 +1906,63 @@
     "href": "2025/slides/session-5.html#result-of-tagant-segmentation",
     "title": "Session 5: Hands-on activity #2",
     "section": "Result of TagAnt segmentation",
-    "text": "Result of TagAnt segmentation\n\n\n\n\n\nHorizontal display\n\n\n\n\n\n\nVertical display\n\n\n\n\nTagAnt can do more than this.\nWe will come back to POS tagging on Day 4."
+    "text": "Result of TagAnt segmentation\nYou can choose from two output formats.\n\n\n\n\n\nHorizontal display\n\n\n\n\n\n\nVertical display"
   },
   {
-    "objectID": "2025/slides/session-5.html#compiling-japanese-word-frequency-list",
-    "href": "2025/slides/session-5.html#compiling-japanese-word-frequency-list",
+    "objectID": "2025/slides/session-5.html#part-of-speech-tagging-in-tagant",
+    "href": "2025/slides/session-5.html#part-of-speech-tagging-in-tagant",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Compiling Japanese Word Frequency list",
-    "text": "Compiling Japanese Word Frequency list\nTask\nCompile a Japanese frequency list based on a corpus.\nResource\n\nDownload a Japanese text Aozora 500 from Google Drive.\nUse AntConc and TagAnt.\n\nSubmission\n\nSubmit a frequency list\nDescription of word frequency pattern in Japanese."
+    "section": "Part-Of-Speech Tagging in TagAnt",
+    "text": "Part-Of-Speech Tagging in TagAnt\n\nTagAnt can do more than tokenization.\nIt allows you to automatically annotate the token for Part-Of-Speech (POS).\nPOS = Grammatical category of lexical items (NOUN, VERB, etc.)"
   },
   {
-    "objectID": "2025/slides/session-5.html#task-4-vocabulary-profiling",
-    "href": "2025/slides/session-5.html#task-4-vocabulary-profiling",
+    "objectID": "2025/slides/session-5.html#choosing-the-right-format-for-pos-representation",
+    "href": "2025/slides/session-5.html#choosing-the-right-format-for-pos-representation",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Task 4: Vocabulary Profiling",
-    "text": "Task 4: Vocabulary Profiling"
+    "section": "Choosing the right format for POS representation",
+    "text": "Choosing the right format for POS representation\n\nYou can ask TagAnt for different output formats.\nFor now, let’s choose word+POS.\n\n\nこの短期集中講座が終わったら、カキを食べたいと思っています。\nこの_DET 短期_NOUN 集中_NOUN 講座_NOUN が_ADP 終わっ_VERB たら_AUX 、_PUNCT カキ_NOUN を_ADP 食べ_VERB たい_AUX と_ADP 思っ_VERB て_SCONJ い_VERB ます_AUX 。_PUNCT"
   },
   {
-    "objectID": "2025/slides/session-5.html#frequency-information",
-    "href": "2025/slides/session-5.html#frequency-information",
+    "objectID": "2025/slides/session-5.html#now-try-different-options",
+    "href": "2025/slides/session-5.html#now-try-different-options",
     "title": "Session 5: Hands-on activity #2",
-    "section": "Frequency information",
-    "text": "Frequency information\n\nWe are familiar with the notion of frequency in language.\nFrequency is one important driving force of human cognition and language processing.\nProfiling text using corpus frequency information is one important approach to understand textual characteristics."
+    "section": "Now try different options…",
+    "text": "Now try different options…\n\nLet’s analyze your own example with the following:\n\nword+pos\nword+pos_tag\nword+lemma\nword+pos+lemma\n\nWhat do these choice give you? Share it with your neighbor."
+  },
+  {
+    "objectID": "2025/slides/session-5.html#other-choices-and-expected-results",
+    "href": "2025/slides/session-5.html#other-choices-and-expected-results",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Other choices and expected results",
+    "text": "Other choices and expected results\n\n\n\n\n\n\n\nDisplay Information\nExample\n\n\n\n\nword\nカキ を 食べ たい\n\n\nword+pos\nカキ_NOUN を_ADP 食べ_VERB たい_AUX\n\n\nword+pos_tag\nカキ_名詞-普通名詞-一般 を_助詞-格助詞 食べ_動詞-一般 たい_助動詞\n\n\nword+lemma\nカキ_カキ を_を 食べ_食べる たい_たい"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#questions",
+    "href": "2025/slides/session-5.html#questions",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Questions?",
+    "text": "Questions?"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#task-1-compile-a-japanese-word-frequency-list",
+    "href": "2025/slides/session-5.html#task-1-compile-a-japanese-word-frequency-list",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "Task 1: Compile a Japanese Word Frequency list",
+    "text": "Task 1: Compile a Japanese Word Frequency list\n\nTask\nCompile a Japanese frequency list based on a corpus.\nResource\n\nDownload a Japanese text Aozora 500 from Google Drive.\nUse AntConc, TagAnt, and Simple Text Analyzer.\n\nSubmission\n\nSubmit a frequency list\nDescription of word frequency pattern in Japanese."
   },
   {
     "objectID": "2025/slides/session-5.html#vocabulary-profiling",
     "href": "2025/slides/session-5.html#vocabulary-profiling",
     "title": "Session 5: Hands-on activity #2",
     "section": "Vocabulary Profiling",
-    "text": "Vocabulary Profiling\n\nVocabulary profiling is a technique to use corpus frequency to understand characteristics of vocabulary use in the input text\nFor lexical sophistication measure\n\nHow much of the learner produced vocabulary is e.g., beyond 2000 word level (LFP; Laufer and Nation, 1995) ?\n\nFor lexical coverage\n\nHow many words do readers/listeners need to know in order to comprehend the text (90, 95, or 98% coverage)"
+    "text": "Vocabulary Profiling\n\nVocabulary profiling is a technique to use corpus frequency to understand characteristics of vocabulary use in the input text\nFor lexical sophistication measure\n\nLFP, Beyond 2000\n\nFor lexical coverage\n\nHow many words do readers/listeners need to know in order to comprehend the text (90, 95, or 98% coverage)"
   },
   {
     "objectID": "2025/slides/session-5.html#vocabulary-profiling-tools",
     "href": "2025/slides/session-5.html#vocabulary-profiling-tools",
     "title": "Session 5: Hands-on activity #2",
     "section": "Vocabulary Profiling tools",
-    "text": "Vocabulary Profiling tools\n\nRANGE program\nVocabProfiler in LexTutor\nNew Word Levels Checker\nAntWordProfiler"
+    "text": "Vocabulary Profiling tools\n\nRANGE program\nVocabProfiler in LexTutor\nAntWordProfiler (desktop; multi-language)\nNew Word Levels Checker"
   },
   {
     "objectID": "2025/slides/session-1.html#session-1-agenda",
@@ -3376,11 +3390,11 @@
     ]
   },
   {
-    "objectID": "2025/assignments/hands-on-2/index.html#task-2-hand-calculated-lexical-diversity-scores",
-    "href": "2025/assignments/hands-on-2/index.html#task-2-hand-calculated-lexical-diversity-scores",
+    "objectID": "2025/assignments/hands-on-2/index.html#task-2-replication-of-figure-4.16-from-durrant-with-two-more-recent-lexical-diversity-indices",
+    "href": "2025/assignments/hands-on-2/index.html#task-2-replication-of-figure-4.16-from-durrant-with-two-more-recent-lexical-diversity-indices",
     "title": "Corpus Lab 2",
-    "section": "Task 2: Hand-calculated lexical diversity scores",
-    "text": "Task 2: Hand-calculated lexical diversity scores\n\nGoals\nThe goals of this task are:\n\nto understand how classical lexical diversity scores behave given the simple textual examples\nto compute more recent, robust alternatives to classical indices using TAALED.\nto describe how texts from the GiG corpus behave in terms of lexical diversity.\n\n\n\nInstructions\n\nComplete the hand calculation of lexical diversity indices on the spreadsheet\nCompute recommended lexical diversity indices — MATTR and MTLD Original — using TAALED.\nReplicate Figure 4.19 in Durrant (2023, p. 72) with the two indices (i.e., MATTR and MTLD Original)\nDiscuss implication of the findings.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nPlots that contain results of the lexical diversity analysis.\nDescriptive paragraphs explaining the trends of lexical diversity (200-300 words).\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts\nincludes a csv file\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides comparison of the trends of lexical diversities you found against Figure 4.19 in Durrant (2023).",
+    "section": "Task 2: Replication of Figure 4.16 from Durrant with two more recent lexical diversity indices",
+    "text": "Task 2: Replication of Figure 4.16 from Durrant with two more recent lexical diversity indices\n\nGoals\nThe goals of this task are:\n\nto compute more recent, robust alternatives to classical indices using TAALED\nto replicate Durrant’s analysis with two more recent lexical diversity indices\n\n\n\nInstructions\n\nComplete the hand calculation of lexical diversity indices on the spreadsheet\nCompute recommended lexical diversity indices — MATTR and MTLD Original — using TAALED.\nReplicate Figure 4.19 in Durrant (2023, p. 72) with the two indices (i.e., MATTR and MTLD Original)\nDiscuss implication of the findings.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nDescriptive paragraphs explaining the replication of Durrant’s analysis (300 words).\n\nResearch question\nYour hypothesis regarding the replication\nPlots (one for MTLD; the other for MATTR)\nResults and interpretation\n\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts\nincludes a csv file\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).",
     "crumbs": [
       "Assignments",
       "Corpus Lab 2"
@@ -3391,7 +3405,7 @@
     "href": "2025/assignments/hands-on-2/index.html#task-3-qualitative-analysis-of-lexical-sophistication",
     "title": "Corpus Lab 2",
     "section": "Task 3: Qualitative analysis of lexical sophistication",
-    "text": "Task 3: Qualitative analysis of lexical sophistication\n\nGoal\nThe goals of this task are to:\n\ncompute several important lexical sophistication indices\ncompare and contrast two texts using the selected indices\ndescribe the use of vocabulary in the two text based on the quantitative and qualitative information\n\n\n\nInstructions\n\nTwo texts from\nUsing the simple text analyzer, compare two texts based on two indices that you select.\nSelect one frequency-based index and aother type of index.\nInterpret the results of the analysis and describe the difference in a (few) paragraph(s).\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nPlots that contains results of the lexical sophistication analysis.\nDescriptive paragraph(s) contrasting two texts based on lexical sophistication (200-300 words).\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes plots from one frequency index and one other type of index\nprovides desciption of how two texts differ in terms of the selected lexical sophistication indices.",
+    "text": "Task 3: Qualitative analysis of lexical sophistication\n\nGoal\nThe goals of this task are to:\n\ncompute several important lexical sophistication indices\ncompare and contrast two texts using the selected indices\ndescribe the use of vocabulary in the two text based on the quantitative and qualitative information\n\n\n\nInstructions\n\nTwo texts from the example used in the classroom\nUsing the simple text analyzer, compare two texts based on two indices that you select.\nSelect one frequency-based index and another type of index.\nInterpret the results of the analysis and describe the difference in a (few) paragraph(s).\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nPlots that contains results of the lexical sophistication analysis.\nDescriptive paragraph(s) contrasting two texts based on lexical sophistication (200-300 words).\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes plots from one frequency index and one other type of index\nprovides desciption of how two texts differ in terms of the selected lexical sophistication indices.",
     "crumbs": [
       "Assignments",
       "Corpus Lab 2"
@@ -3955,7 +3969,7 @@
     "href": "2025/slides/session-3.html#chart-function",
     "title": "Session 3: Hands-on #1",
     "section": "Chart function",
-    "text": "Chart function\nCHART shows frequency across: - Genres - Time periods - Text types\n\nThis allows you to return frequency by sections of of COCA (= conditional frequency)."
+    "text": "Chart function\nCHART shows frequency across:\n\nGenres\nTime periods\nText types\nThis allows you to return frequency by sections of of COCA (= conditional frequency)."
   },
   {
     "objectID": "2025/slides/session-3.html#search-lol-using-chart",
@@ -3976,14 +3990,14 @@
     "href": "2025/slides/session-3.html#interpreting-the-distribution",
     "title": "Session 3: Hands-on #1",
     "section": "Interpreting the distribution",
-    "text": "Interpreting the distribution\nWhat does this tell us about “lol”? - Genre preferences? - Formality levels? - Change over time?\n\nDescribe the frequency pattern looking at PER MIL row."
+    "text": "Interpreting the distribution\nWhat does this tell us about “lol”?\n\nGenre preferences?\nFormality levels?\nChange over time?\nDescribe the frequency pattern looking at PER MIL row."
   },
   {
     "objectID": "2025/slides/session-3.html#summary",
     "href": "2025/slides/session-3.html#summary",
     "title": "Session 3: Hands-on #1",
     "section": "Summary",
-    "text": "Summary\nCHART function can be used to get frequency across: - Genres - Time periods - Text types"
+    "text": "Summary\nCHART function can be used to get frequency across:\n\nGenres\nTime periods\nText types"
   },
   {
     "objectID": "2025/slides/session-3.html#regular-expressions",
@@ -4018,7 +4032,7 @@
     "href": "2025/slides/session-3.html#result-with-a-of-the",
     "title": "Session 3: Hands-on #1",
     "section": "Result with a * of the",
-    "text": "Result with a * of the\n\n\n\n\na * of the\n\n\n\nThis helps find: - Fixed phrases with variable slots - Grammatical frames - Idiomatic expressions"
+    "text": "Result with a * of the\n\n\n\n\na * of the\n\n\n\nThis helps find:\n\nFixed phrases with variable slots\nGrammatical frames\nIdiomatic expressions"
   },
   {
     "objectID": "2025/slides/session-3.html#more-search-methods",
@@ -4032,7 +4046,7 @@
     "href": "2025/slides/session-3.html#more-complex-searches",
     "title": "Session 3: Hands-on #1",
     "section": "More complex searches",
-    "text": "More complex searches\nWhich is more frequent? - exciting or excited?\n\nRQ: Is there any reletitive phrase with three adjectives?"
+    "text": "More complex searches\nWhich is more frequent?\n\nexciting or excited?\nRQ: Is there any reletitive phrase with three adjectives?"
   },
   {
     "objectID": "2025/slides/session-3.html#adj-x-3",
@@ -4137,7 +4151,7 @@
     "href": "2025/slides/session-3.html#start-thinking-now",
     "title": "Session 3: Hands-on #1",
     "section": "Start thinking now!",
-    "text": "Start thinking now!\nWhat patterns in English interest you?\nConsider: - Words that seem to be changing - Regional differences - Formal vs. informal patterns - New expressions - Grammar variations"
+    "text": "Start thinking now!\nWhat patterns in English interest you?\nConsider:\n\nWords that seem to be changing\nRegional differences\nFormal vs. informal patterns\nNew expressions\nGrammar variations"
   },
   {
     "objectID": "2025/slides/session-3.html#todays-achievement",
@@ -4147,11 +4161,340 @@
     "text": "Today’s achievement\n\nOperationalize linguistic concepts for corpus search\nUse different search types (word, LEMMA, POS)\nAnalyze patterns through KWIC\nEvaluate distributions with CHART\nApply the full research cycle"
   },
   {
+    "objectID": "2025/slides/session-4.html#learner-corpus-research",
+    "href": "2025/slides/session-4.html#learner-corpus-research",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Learner Corpus Research",
+    "text": "Learner Corpus Research\nA strand of research investigating:\n\nWhat language varieties are present among non-native speaker\nHow their native language varieties influence their production\nWhat constitutes second-language proficiency\nHow learners develop their language skills\n\nIn this course, we will mostly focus on question 3 and 4."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#goals-of-sla-research",
+    "href": "2025/slides/session-4.html#goals-of-sla-research",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Goals of SLA Research",
+    "text": "Goals of SLA Research\nTo make a somewhat bold statement, many SLA researchers are interested in describing:\n\npatterns and rates of L2 development (Ortega & Iberri-Shea, 2005)\nfeatures that distinguishes more or less successful communication (Isaacs & Trofimovich, 2012; Revesz et al., 2014)\n\n\n\nIsaacs, T., & Trofimovich, P. (2012). DECONSTRUCTING COMPREHENSIBILITY: Identifying the Linguistic Influences on Listeners’ L2 Comprehensibility Ratings. Studies in Second Language Acquisition, 34(3), 475–505. https://doi.org/10.1017/s0272263112000150\nOrtega, L., & Iberri-Shea, G. (2005). LONGITUDINAL RESEARCH IN SECOND LANGUAGE ACQUISITION: RECENT TRENDS AND FUTURE DIRECTIONS. Annual Review of Applied Linguistics, 25, 26–45. https://doi.org/10.1017/S0267190505000024\nRevesz, A., Ekiert, M., & Torgersen, E. N. (2014). The Effects of Complexity, Accuracy, and Fluency on Communicative Adequacy in Oral Task Performance. Applied Linguistics, amu069. https://doi.org/10.1093/applin/amu069"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#the-interface-between-sla-and-corpus-methods",
+    "href": "2025/slides/session-4.html#the-interface-between-sla-and-corpus-methods",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "The interface between SLA and corpus methods",
+    "text": "The interface between SLA and corpus methods\n\nGoal: Revealing development paces and patterns\nWe can use corpus linguistic methods to help us identify the features of language use to understand constructs of our interest.\n\n→ More and more SLA researchers rely on corpus methods."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#benefits-and-caveats",
+    "href": "2025/slides/session-4.html#benefits-and-caveats",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Benefits and Caveats",
+    "text": "Benefits and Caveats\nBenefits:\n\nWe can calculate measures more easily.\n\nCaveats:\n\nResearchers tend to use “simple measures to calculate”"
+  },
+  {
     "objectID": "2025/slides/session-4.html#learning-objectives",
     "href": "2025/slides/session-4.html#learning-objectives",
     "title": "Session 4: Analyzing Vocabulary",
     "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nExplain the purposes of linguistic measures\nList commonly used lexical measures in second language acquisition research\nExplain sub-constructs of lexical richness measures\n\nLexical Diversity\nLexical Sophistication"
+    "text": "🎯 Learning Objectives\n\nBy the end of this session, students will be able to:\n\nDiscuss measurement issues in SLA\nExplain the purposes of linguistic measures\nList commonly used lexical measures in second language acquisition research\nExplain sub-constructs of lexical richness measures\n\nLexical Diversity\nLexical Sophistication"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#measurement---what-is-it",
+    "href": "2025/slides/session-4.html#measurement---what-is-it",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Measurement - What is it?",
+    "text": "Measurement - What is it?\n\nWe talked about: scientific research cycle.\n\n\n\n\nresearch cycle\n\n\n\nAs expansion, we add one more term, measurement."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#the-measurement-process",
+    "href": "2025/slides/session-4.html#the-measurement-process",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "The measurement Process",
+    "text": "The measurement Process\n\nThe Measurement process"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#construct-definition-and-measurement",
+    "href": "2025/slides/session-4.html#construct-definition-and-measurement",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Construct definition and measurement",
+    "text": "Construct definition and measurement\nConceptual work\n\nConstruct definition: delineates the theoretical interpretation that can be attached to the observation data (or a measure).\n\nDo you want to know about motivation or engagement?\n\nBehavior identification: What kind of behavior do you need to observe?\nTask specification: In what condition do you need to set up to observe the intended behavior?"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#construct-definition-and-measurement-1",
+    "href": "2025/slides/session-4.html#construct-definition-and-measurement-1",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Construct definition and measurement",
+    "text": "Construct definition and measurement\nProcedual work\n\nBehavior elicitation: Target behavior is elicited, observed and recorded.\nObservation scoring: Classifying or coding observed behavior into categories or values to link them to theoretically meaningful interpretation.\nData analysis: Scores are summarized and patterns are described to provide probablistic evaluation of the data."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#compare-and-contrast-the-two-framework",
+    "href": "2025/slides/session-4.html#compare-and-contrast-the-two-framework",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Compare and contrast the two framework",
+    "text": "Compare and contrast the two framework\n\n\nWhat are the relationships between the two?\nWhat do you think are the key points extracted from the two approaches?\n\n\n\n\n\n\n\nResearch process (Stefanowtisch, 2020)\n\n\n\n\n\n\nThe Measurement process (Norris & Ortega, 2003, p. 720)"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#interrim-summary",
+    "href": "2025/slides/session-4.html#interrim-summary",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Interrim Summary",
+    "text": "Interrim Summary\n\nIn this course, we emphasize the measurement process of the corpus-based linguistic measures.\n\nCritical evaluation of measures/indices\nJustified choice of measures/indices\ncautionary interpretation of measures/indices"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#overview",
+    "href": "2025/slides/session-4.html#overview",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Overview",
+    "text": "Overview\n\nVocabulary knowledge is usually conceptualized as:\n\nBreadth,\nDepth, and\nFluency"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#compare-the-two-texts.",
+    "href": "2025/slides/session-4.html#compare-the-two-texts.",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Compare the two texts.",
+    "text": "Compare the two texts.\n\nWhich one do you think reflect “better” vocabulary use?\n\n\nIs important for college students to have a part-time job? I think that has much opinion to answer it. The part-time job is a job that can do in partial time. So the college student can do part-time job when they has spare time (if they want). There are many reasons why the college student do part-time job (if they do).\n\nI find it hard to make a generalisation on whether it’s important or not for college students to have a part-time job, because this seems like something very individual and highly dependent on the individual student and their circumstances. Jobs serve a few main functions: to earn money, to gain experience, to get a head-start in a career, and to have something to do."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#lexical-richness",
+    "href": "2025/slides/session-4.html#lexical-richness",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Lexical Richness",
+    "text": "Lexical Richness\n\nVocabulary use is usually conceptualized as:\n\nlexical richness (Read, 2000)\n\nlexical diversity (LD) and\nlexical sophistication (LS)"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#lexical-diversity",
+    "href": "2025/slides/session-4.html#lexical-diversity",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Lexical diversity",
+    "text": "Lexical diversity"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#definition-of-lexical-diversity-ld",
+    "href": "2025/slides/session-4.html#definition-of-lexical-diversity-ld",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Definition of lexical diversity (LD)",
+    "text": "Definition of lexical diversity (LD)\n\nLD: “the range of different words used in a text” (Durrant, 2023, p. 37)\nThe more different words a learner use, the more lexically diverse.\n\nAssumption\n\nThe more vocabulary they know, the more diverse their vocabulary use is."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#complicating-factor",
+    "href": "2025/slides/session-4.html#complicating-factor",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Complicating factor",
+    "text": "Complicating factor\n\nLexical diversity can be affected not only by proficiency or vocabulary breadth but also:\n\ntext genre they write in\nlocal cohesion"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#lexical-sophistication",
+    "href": "2025/slides/session-4.html#lexical-sophistication",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Lexical sophistication",
+    "text": "Lexical sophistication"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#definition-of-lexical-sophistication-ls",
+    "href": "2025/slides/session-4.html#definition-of-lexical-sophistication-ls",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Definition of lexical sophistication (LS)",
+    "text": "Definition of lexical sophistication (LS)\n\nLS is a bit more difficult to define:\n\nIt attempts to describe qualities of items being used\nSometimes defined as “relative difficulty” (Kyle, 2020)\n“semantic specificity” or “pragmatic appropriateness”"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#text-internal-vs-external-measures",
+    "href": "2025/slides/session-4.html#text-internal-vs-external-measures",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Text-internal vs external measures",
+    "text": "Text-internal vs external measures\nSkehan (2009) distinguished:\n\n\n\n\n\n\n\n\n\nType\nDescription\nExample\n\n\n\n\nText-internal\nThe (learner-produced) text is sufficient for calculation\nLexical Diversity, Lexical Density\n\n\nText-external\nReference corpus is needed to derive score\nLexical Sophistication, Phraseological Sophistication\n\n\n\n\n\nSkehan, P. (2009). Modelling Second Language Performance: Integrating Complexity, Accuracy, Fluency, and Lexis. Applied Linguistics, 30(4), 510–532. https://doi.org/10.1093/applin/amp047"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#operationalizing-lexical-diversity",
+    "href": "2025/slides/session-4.html#operationalizing-lexical-diversity",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Operationalizing lexical diversity",
+    "text": "Operationalizing lexical diversity"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#operationalizing-ld",
+    "href": "2025/slides/session-4.html#operationalizing-ld",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Operationalizing LD",
+    "text": "Operationalizing LD\n\nTypically LD is operationalized by observing the proportion of unique words in a text (Jarvis, 2013, p. 88)\n\n\nJarvis, S. (2013). Capturing the Diversity in Lexical Diversity. Language Learning, 63(s1), 87–106. https://doi.org/10.1111/j.1467-9922.2012.00739.x"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#lexical-diversity-indices",
+    "href": "2025/slides/session-4.html#lexical-diversity-indices",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Lexical diversity indices",
+    "text": "Lexical diversity indices\nOld LD measures include:\n\n\\(TTR = {nType \\over nToken}\\)\n\\(RootTTR (Guiraud Index) = {nType \\over \\sqrt{nToken}}\\)\n\\(LogTTR = {\\log(nType) \\over \\log(nToken)}\\)\n\\(Maas = {\\log(nTokens) - \\log(nTypes) \\over \\log(nToken)^2}\\)\n→ Never use TTR, RootTTR, LogTTR"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#a-major-problem-with-old-lexical-diversity-measures",
+    "href": "2025/slides/session-4.html#a-major-problem-with-old-lexical-diversity-measures",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "A major problem with old lexical diversity measures",
+    "text": "A major problem with old lexical diversity measures\n\nThe old LD indices is inherently related to text-lengths (Zenker & Kyle, 2020; Kyle et al., 2024).\n\n\nRelationship between text-lengths and LD measures\nKyle, K., Sung, H., Eguchi, M., & Zenker, F. (2024). Evaluating evidence for the reliability and validity of lexical diversity indices in L2 oral task responses. Studies in Second Language Acquisition, 46(1), 278–299. https://doi.org/10.1017/S0272263123000402\nZenker & Kyle"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#recent-ld-indices-that-overcame-text-lengths-issue",
+    "href": "2025/slides/session-4.html#recent-ld-indices-that-overcame-text-lengths-issue",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Recent LD indices that overcame text-lengths issue",
+    "text": "Recent LD indices that overcame text-lengths issue\n\nMean-Average Type Token Ratio (MATTR)\nThe measure of textual lexical diversity (MTLD)"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#mattr",
+    "href": "2025/slides/session-4.html#mattr",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "MATTR",
+    "text": "MATTR\n\nCalculating TTRs multiple times with sliding windows\n\nProcess:\n\nCalculate TTR for words 1-50\nCalculate TTR for words 2-51\nCalculate TTR for words 3-52\nContinue to end of text\nAverage all TTR values"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#mattr-example",
+    "href": "2025/slides/session-4.html#mattr-example",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "MATTR example",
+    "text": "MATTR example\nText with 100 words:\nWindow 1: [1-50] → TTR = 0.68\nWindow 2: [2-51] → TTR = 0.69\nWindow 3: [3-52] → TTR = 0.67\n...\nWindow 51: [51-100] → TTR = 0.70\nThen by taking average of all windows = 0.685"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#mtld",
+    "href": "2025/slides/session-4.html#mtld",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "MTLD",
+    "text": "MTLD\n\nMeasures how many words it takes for lexical diversity to “stabilize”\nProcess:\n\nReads through text sequentially\nCalculates TTR as it goes\nWhen TTR drops to threshold (traditionally 0.72), marks a “factor”\nStarts counting again for next factor\n\nScore: Average factor length (higher = more diverse)"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#mtld-example",
+    "href": "2025/slides/session-4.html#mtld-example",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "MTLD Example",
+    "text": "MTLD Example\nIn the following MTLD was calculated as:\n\n(32 + 45) / 2 = 38\n\nText: \"The cat sat on the mat... The cat was happy. ... The bird flew by.\"\n       |--- Factor 1: 32 words ----------||---- Factor 2: 44 words-----|\n        (TTR drops to 0.72)                (TTR drops to 0.72)\n\nMTLD does this process both forward and backward."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#any-questions",
+    "href": "2025/slides/session-4.html#any-questions",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Any questions?",
+    "text": "Any questions?"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#operationalizing-lexical-sophistication",
+    "href": "2025/slides/session-4.html#operationalizing-lexical-sophistication",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Operationalizing Lexical Sophistication",
+    "text": "Operationalizing Lexical Sophistication"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#operationalizing-ls",
+    "href": "2025/slides/session-4.html#operationalizing-ls",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Operationalizing LS",
+    "text": "Operationalizing LS\n\nHistorically, word frequency information in reference corpora has been used to operationalize LS\n\nExample 1: The big company bought the small business.\nExample 2: The major corporation acquired the diminutive enterprise."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#lexical-frequency-profile-lfp",
+    "href": "2025/slides/session-4.html#lexical-frequency-profile-lfp",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Lexical Frequency Profile (LFP)",
+    "text": "Lexical Frequency Profile (LFP)\nIn LFP, words in learner text are categorized into different frequency bands in the reference corpus.\n\n\n\n\nBand\nProportion\n\n\n\n\nFirst 1000\n75%\n\n\nSecond 2000\n10%\n\n\nAcademic Word List\n10%\n\n\nOthers\n5%\n\n\n\n\nThis gives you four scores: 75%, 10%, 10%, 5%.\nA simpler version Beyond 2000 (Laufer, 1995) is used more often\n\n\\(\\text{Beyond 2000} = \\frac{\\text{Number of beyond-2000 word types}}{\\text{Total number of word types}}\\)\n\n\n\n\n\nLaufer, B. (1995). Beyond 2000: A measure of productive lexicon in a second language. In L. Eubank, L. Selinker, & M. Sharwood Smith (Eds.), The Current State of Interlanguage: Studies in honor of William E. Rutherford (p. 265). John Benjamins Publishing Company. https://doi.org/10.1075/z.73.21lau\nLaufer, B., & Nation, P. (1995). Vocabulary Size and Use: Lexical Richness in L2 Written Production.\nLu, X. (2012). The Relationship of Lexical Richness to the Quality of ESL Learners’ Oral Narratives. The Modern Language Journal, 96(2), 190–208. https://doi.org/10.1111/j.1540-4781.2011.01232_1.x"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#other-frequency-based-measures",
+    "href": "2025/slides/session-4.html#other-frequency-based-measures",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Other frequency-based measures",
+    "text": "Other frequency-based measures\n\nP_lex (Meara & Bell, 2000)\nS (Kojima & Yamashita, 2014)\nCount-based measures (Crossley et al., 2014)\n\n\n\nCrossley, S. A., Cobb, T., & McNamara, D. S. (2013). Comparing count-based and band-based indices of word frequency: Implications for active vocabulary research and pedagogical applications. System, 41(4), 965–981. https://doi.org/10.1016/j.system.2013.08.002\nKojima, M., & Yamashita, J. (2014). Reliability of lexical richness measures based on word lists in short second language productions. System, 42, 23–33. https://doi.org/10.1016/j.system.2013.10.019\nMeara, P., & Bell, H. (2001). P-Lex: A Simple and Effective Way of Describing the lexical Characteristics of Short L2 Tests. Prospect, 16(3), 5–19."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#towards-multidimensional-lexical-sophistication",
+    "href": "2025/slides/session-4.html#towards-multidimensional-lexical-sophistication",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Towards multidimensional lexical sophistication",
+    "text": "Towards multidimensional lexical sophistication\n\nMore recent research recognizes multidimensionality in conceptualize and operationalize LS.\nKyle & Crossley (2015) proposed the Tool of Automated Analysis of Lexical Sophistication (TAALES).\nKim, Crossley & Kyle (2018): proposed multidimensional LS for writing.\nEguchi & Kyle (2020): followed up the concept in L2 speaking."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#categories-of-lexical-sophistication",
+    "href": "2025/slides/session-4.html#categories-of-lexical-sophistication",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Categories of lexical sophistication",
+    "text": "Categories of lexical sophistication\nDurrant (2023) highlighted several categories:\n\nWord lengths\nWord frequency\nRegister-based measures\nContextual distinctiveness\nSemantic Measures\nPsycholinguistic measures"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#register-based-measures",
+    "href": "2025/slides/session-4.html#register-based-measures",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Register-based measures",
+    "text": "Register-based measures\nLS should also tap into the extent to which the text uses items that are characteristics of the target register\n\nProportion of words in Academic Word List (Coxhead, 2000)\n\nlow score: I saw that …\nhigh score: I observed that …"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#contextual-distinctiveness",
+    "href": "2025/slides/session-4.html#contextual-distinctiveness",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Contextual distinctiveness",
+    "text": "Contextual distinctiveness\nA word used in a narrower context (specific situation) should be considered more sophisticated.\n\nSemantic Diversity (SemD; Hoffman et al., 2013) \n\n\n\nHoffman, P., Lambon Ralph, M. A., & Rogers, T. T. (2013). Semantic diversity: A measure of semantic ambiguity based on variability in the contextual usage of words. Behavior Research Methods, 45(3), 718–730. https://doi.org/10.3758/s13428-012-0278-x"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#semantic-measures---concrete-vs-abstract-referents",
+    "href": "2025/slides/session-4.html#semantic-measures---concrete-vs-abstract-referents",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Semantic Measures - Concrete vs Abstract referents",
+    "text": "Semantic Measures - Concrete vs Abstract referents\nA word that involke more abstract concepts should be considered more sophisticated.\n\n\n\n\nConcrete\nAbstract\n\n\n\n\nFrequent\ndog, car\nlove, idea\n\n\nInfrequent\ncharger, helmet\nempathy, hypothesis"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#semantic-measures---hypernymy",
+    "href": "2025/slides/session-4.html#semantic-measures---hypernymy",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Semantic Measures - Hypernymy",
+    "text": "Semantic Measures - Hypernymy\n\n\n\nA word that have a larger set of superordinate terms should be considered more sophisticated.\n\n\n\n\n\nWord Net"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#questions",
+    "href": "2025/slides/session-4.html#questions",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Questions?",
+    "text": "Questions?"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#eguchi-kyle-2020",
+    "href": "2025/slides/session-4.html#eguchi-kyle-2020",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Eguchi & Kyle (2020)",
+    "text": "Eguchi & Kyle (2020)\n\nGoal: Investigate multidimensional nature of lexical sophistication in L2 oral proficiency interviews (OPIs)\nCorpus: NICT JLE corpus (1,281 Japanese L2 English OPIs)\nMethod: Exploratory Factor Analysis (EFA) + regression analysis"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#ls-measures",
+    "href": "2025/slides/session-4.html#ls-measures",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "LS Measures",
+    "text": "LS Measures\n\n\n\n\nFrequency (e.g., COCA-Spoken, BNC-Spoken)\nRange (e.g., COCA)\nPsycholinguistic norms (concreteness, imageability)\nAge of acquisition/exposure\nSemantic networks (hypernymy, polysemy)\nWord recognition (lexical decision times)\n\n\n\nContextual distinctiveness (semantic diversity)\nWord neighborhood (orthographic/phonological)\nAcademic language (AWL membership)\nN-gram frequency\nN-gram range\nN-gram association (MI, MI2, T-score)"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#sample-dimensions",
+    "href": "2025/slides/session-4.html#sample-dimensions",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Sample dimensions",
+    "text": "Sample dimensions\n\nFactor 1"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#sample-dimensions-1",
+    "href": "2025/slides/session-4.html#sample-dimensions-1",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Sample dimensions",
+    "text": "Sample dimensions\n\nFactor 4"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#final-regression-models",
+    "href": "2025/slides/session-4.html#final-regression-models",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Final regression models",
+    "text": "Final regression models\n\nfinal regression to predict OPI"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#the-measurement-process-in-sla",
+    "href": "2025/slides/session-4.html#the-measurement-process-in-sla",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "The Measurement Process in SLA",
+    "text": "The Measurement Process in SLA\n\nThe measurement process"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#lexical-richness-two-main-components",
+    "href": "2025/slides/session-4.html#lexical-richness-two-main-components",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Lexical Richness: Two Main Components",
+    "text": "Lexical Richness: Two Main Components\n\n\n\nLexical Diversity (LD)\n\nRange of different words used\nText-internal measure\nAvoid TTR; use MTLD/MATTR\nAffected by text length\n\n\nLexical Sophistication (LS)\n\nQuality/difficulty of words used\nRequires reference corpus\nMultidimensional construct"
   },
   {
     "objectID": "2025/slides/session-7.html#learning-objectives",
@@ -4159,6 +4502,139 @@
     "title": "Session 7: Multiword Units",
     "section": "🎯 Learning Objectives",
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nExplain different types of multiword units: collocation, n-grams, lexical bundles\nDemonstrate how major association strengths measures (t-score, Mutual Information, and LogDice) are calculated using examples"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#warm-up-discussion",
+    "href": "2025/slides/session-7.html#warm-up-discussion",
+    "title": "Session 7: Multiword Units",
+    "section": "Warm-up discussion",
+    "text": "Warm-up discussion\n\nWhy do you think multiword sequences are important?"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#usage-based-learning",
+    "href": "2025/slides/session-7.html#usage-based-learning",
+    "title": "Session 7: Multiword Units",
+    "section": "Usage based learning",
+    "text": "Usage based learning"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#some-statistical-models",
+    "href": "2025/slides/session-7.html#some-statistical-models",
+    "title": "Session 7: Multiword Units",
+    "section": "Some statistical models",
+    "text": "Some statistical models\n\nPhraseology is considered important"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#collocations",
+    "href": "2025/slides/session-7.html#collocations",
+    "title": "Session 7: Multiword Units",
+    "section": "Collocations",
+    "text": "Collocations\nWhat are the differences between the following two terms?\n\nPhraseological approach\nFrequency-based approach"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#lexical-bundles",
+    "href": "2025/slides/session-7.html#lexical-bundles",
+    "title": "Session 7: Multiword Units",
+    "section": "Lexical bundles",
+    "text": "Lexical bundles\n\n“Fixed sequence of words that recur frequently”\nBiber et al. (2004) found three important “functions” of\n\nReferential\nStance\nDiscoursal"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#referential-bundles",
+    "href": "2025/slides/session-7.html#referential-bundles",
+    "title": "Session 7: Multiword Units",
+    "section": "Referential bundles",
+    "text": "Referential bundles"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#stance-bundles",
+    "href": "2025/slides/session-7.html#stance-bundles",
+    "title": "Session 7: Multiword Units",
+    "section": "Stance bundles",
+    "text": "Stance bundles"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#discourse-bundles",
+    "href": "2025/slides/session-7.html#discourse-bundles",
+    "title": "Session 7: Multiword Units",
+    "section": "Discourse bundles",
+    "text": "Discourse bundles"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#classify-the-following-bundles-into-three-categories",
+    "href": "2025/slides/session-7.html#classify-the-following-bundles-into-three-categories",
+    "title": "Session 7: Multiword Units",
+    "section": "Classify the following bundles into three categories",
+    "text": "Classify the following bundles into three categories\n\n\n\nBundle\nCategory\n\n\n\n\nif you say so"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#n-grams",
+    "href": "2025/slides/session-7.html#n-grams",
+    "title": "Session 7: Multiword Units",
+    "section": "N-grams",
+    "text": "N-grams"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#window-based-approach",
+    "href": "2025/slides/session-7.html#window-based-approach",
+    "title": "Session 7: Multiword Units",
+    "section": "Window-based approach",
+    "text": "Window-based approach"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#dependency-parsing",
+    "href": "2025/slides/session-7.html#dependency-parsing",
+    "title": "Session 7: Multiword Units",
+    "section": "Dependency Parsing",
+    "text": "Dependency Parsing"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#strengths-of-association-measures",
+    "href": "2025/slides/session-7.html#strengths-of-association-measures",
+    "title": "Session 7: Multiword Units",
+    "section": "Strengths Of Association Measures",
+    "text": "Strengths Of Association Measures"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#why-frequency-is-not-sufficient",
+    "href": "2025/slides/session-7.html#why-frequency-is-not-sufficient",
+    "title": "Session 7: Multiword Units",
+    "section": "Why frequency is not sufficient?",
+    "text": "Why frequency is not sufficient?\nDiscuss: - Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#expected-ocurrences",
+    "href": "2025/slides/session-7.html#expected-ocurrences",
+    "title": "Session 7: Multiword Units",
+    "section": "Expected Ocurrences",
+    "text": "Expected Ocurrences\n\\[E_{11} = {(freq_{node} * freq_{collocate} ) \\over Corpus size}\\]"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#mutual-information",
+    "href": "2025/slides/session-7.html#mutual-information",
+    "title": "Session 7: Multiword Units",
+    "section": "Mutual Information",
+    "text": "Mutual Information\n\\[MI = {log_2{ Observed freq \\over Expected frequency }}\\]"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#t-score",
+    "href": "2025/slides/session-7.html#t-score",
+    "title": "Session 7: Multiword Units",
+    "section": "T-score",
+    "text": "T-score"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#logdice",
+    "href": "2025/slides/session-7.html#logdice",
+    "title": "Session 7: Multiword Units",
+    "section": "LogDice",
+    "text": "LogDice"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#pros-and-cons-of-different-association-measures",
+    "href": "2025/slides/session-7.html#pros-and-cons-of-different-association-measures",
+    "title": "Session 7: Multiword Units",
+    "section": "pros and cons of different association measures",
+    "text": "pros and cons of different association measures\n\nYou will examine this in session 8, but"
   },
   {
     "objectID": "2025/syllabus/schedule.html",
@@ -5528,14 +6004,14 @@
     "href": "todo.html#day-1",
     "title": "",
     "section": "Day 1",
-    "text": "Day 1\n[x] Session 1: 前日に最終調整 - [ ] Session 2: - [ ] Session 3: -\n\nhands-on 1\n\nCorpus search results"
+    "text": "Day 1\n[x] Session 1: 前日に最終調整 [x] Session 2: [x] Session 3:\n\nReflection\n\nSession 3 could have had a bit more guidance on\n\n\n\nhands-on 1\n\nCorpus search results"
   },
   {
     "objectID": "todo.html#day-2",
     "href": "todo.html#day-2",
     "title": "",
     "section": "Day 2",
-    "text": "Day 2\n[ ] Session 4: - [] Lexical Richness (conceptual introduction) - [] lexical diversity - [] lexical sophistication - [ ] lexical frequency profile - [ ] Eguchi & Kyle (2020)\n[ ] (80% done) Session 5: - The most important thing is to tokenize the text and make frequency lists. - [x] Loading a corpus to AntConc - [x] Creating a frequency list - [x] Visualize frequency distributions - [x] Tokenize non-English language - [x] (If time left) Vocabulary profiling\nFor Hands on - Frequency list of Japanese - TagAntでtokenize - 21:19 - 21:24 (5 mins) - AntConcでfrequency listを作る。 - Simple text analyzerで理解して記述する -&gt; 提出\n[ ] (80% done) Session 6: - Let’s calculate lexical diversity and sophistication - Operationalization - Lexical diversity by hand - [x] create spreadsheet - Lexical diversity using TAALED - [x] students run TAALED analysis with gig corpus - [x] web app to accept TAALED results - Lexical sophistication - [x]\nFor hands on - lexical diversity - Google spreadsheetでIndexの長所と短所を理解する。 - 案1: Parallel analysis の結果をまとめてもらう - TAALEDでlexical diversityを算出 - Simple text analyzerでplotして理解する -&gt; 提出\n\nlexical sophistication\n\n何を理解してもらうか。 -&gt; Depends on the web app -&gt; Choose three texts; run sophistication analysis; -&gt; Use ICNALE\n\n\n-&gt; この日に何を提出してもらうかもう少し考える必要あり。"
+    "text": "Day 2\n[ ] Session 4: - [x] Lexical Richness (conceptual introduction) - [x] lexical diversity - [x] lexical sophistication - [x] lexical frequency profile - [ ] Eguchi & Kyle (2020)\n\nIncomplete Content Several sections are marked but not filled:\n\n\nMTLD and MATTR explanations in Session 6\nThe Eguchi & Kyle (2020) study in Session 4\nThe vocabulary profiling section in Session 5\n\n[ ] (80% done) Session 5: - The most important thing is to tokenize the text and make frequency lists. - [x] Loading a corpus to AntConc - [x] Creating a frequency list - [x] Visualize frequency distributions - [x] Tokenize non-English language - [x] (If time left) Vocabulary profiling\nFor Hands on - Frequency list of Japanese - TagAntでtokenize - 21:19 - 21:24 (5 mins) - AntConcでfrequency listを作る。 - Simple text analyzerで理解して記述する -&gt; 提出\n[ ] (80% done) Session 6: - Let’s calculate lexical diversity and sophistication - Operationalization - Lexical diversity by hand - [x] create spreadsheet - Lexical diversity using TAALED - [x] students run TAALED analysis with gig corpus - [x] web app to accept TAALED results - Lexical sophistication - [x]\nFor hands on - lexical diversity - Google spreadsheetでIndexの長所と短所を理解する。 - 案1: Parallel analysis の結果をまとめてもらう - TAALEDでlexical diversityを算出 - Simple text analyzerでplotして理解する -&gt; 提出\n\nlexical sophistication\n\n何を理解してもらうか。 -&gt; Depends on the web app -&gt; Choose three texts; run sophistication analysis; -&gt; Use ICNALE\n\n\n-&gt; この日に何を提出してもらうかもう少し考える必要あり。"
   },
   {
     "objectID": "todo.html#day-3",

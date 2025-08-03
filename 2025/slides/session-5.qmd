@@ -31,21 +31,11 @@ By the end of this session, you will be able to:
 2. Creating a frequency list
 3. Visualize frequency distributions
 4. Tokenize non-English language
-5. (If time left) Vocabulary profiling
-
-
-
-## Introduction
-
-- AntConc is free concordancing tool.
-- Developed by Laurence ANTHONY.
- 
+5. (If time left) Vocabulary profiling 
 
 ---
 
-## Hands-on Activity 
-
-## Task 1: Loading a corpus to AntConc
+# Task 1: Loading a corpus to AntConc
 
 ## Open AntConc
 
@@ -65,13 +55,14 @@ Now, let's load a corpus.
 ![Load-corpus](../../assets/session-5/Loading-corpus.gif)
 
 
-
 ---
 
-## Task 1: Creating a frequency list
+# Task 2: Creating a frequency list {.center} 
 
-## Word
-Let's now create a frequency list 
+
+## Word Frequency
+
+Let's now create a word frequency list from a corpus
 
 1. Select `Word` analysis option
 
@@ -96,48 +87,78 @@ Let's now create a frequency list
 
 - We will use the BROWN frequency list in the next session.
 
-![save-list](../../assets/session-5/Freq-list.png)
 
+# Task 3: Plot frequencies
 
-## Task 2: Plot frequencies
+## Visualizing frequency distributions
 
-- Let's now understand the distributions of words in language.
+- Let's now understand the distributions of words in BROWN corpus.
 - Visit our [simple-text-analyzer tool](https://huggingface.co/spaces/egumasa/simple-text-analyzer).
 - Hit Frequency analysis and upload the frequency list.
-- What did you notice?
+
 
 ## Frequency Plot
 
-- Very few words occupy most of the corpus.
+::: {style = "font-size:70%"}
+- X-Axis = Group of 500/1,000/2,000 words
+- Y-Axis = Average Frequency across all words in the band
+:::
 
 ![BROWN frequency](../../assets/session-5/Frequency-plot.png)
 
 
 ## Discussion 
 
-- What did you notice in the plot? What are the characteristics of words?
-- What are the characteristics of frequent words? What about infrequent words?
+- What do you learn from the previous bar graph?
+- For each frequency band, what are the characteristics of the sample words you see? 
 
----
 
-## Task 3: Tokenizing non-English languages for frequency analysis
+# Task 4: Creating frequency lists of Japanese {.center}
 
-- Up to this point, we only dealt with English.
+## So far...
+
+- Up to this point, we only dealt with the English language.
+- Let's try doing the same for Japanese.
+- But we need to do something extra... 
+- Can you guess what that is?
+
+::: {.incremental}
+- I am planning to eat Oysters after this intensive course.
+- この短期集中講座が終わったら、カキを食べたいと思っています。
+:::
+
+
+## Tokenization
+
 - English is very convenient in corpus analysis because of the white spaces.
-- Asian languages have completely different writing system from Indo-European language, and it makes it difficult to `tokenize` texts in to words.
+- Asian languages have completely different writing system from Indo-European language, and it makes it difficult to `tokenize` texts into words.
   
+**English text**
+
   ```
   I am planning to eat Oysters after this intensive course.
   ```
+
+**Japanese text**
+
   ```
   この短期集中講座が終わったら、カキを食べたいと思っています。
   ```
 
+## Tokenization
 
-## TagAnt
+- `Tokenization` =  segmenting running text into words 
+- It needs more advanced statistical algorithms for Asian languages.
+  
+  - How would you chunk these
 
-- `Tokenization` (segmenting running text into words) needs more advanced statistical algorithms.
-- TagAnt is a free tool (again developped by Laurence ANTHONY).
+  ```
+  この短期集中講座が終わったら、カキを食べたいと思っています。
+  ```
+
+## Tokenization with TagAnt
+
+- TagAnt is a free tool (again developped by Laurence ANTHONY) to conduct tokenization (and POS tagging).
 - It uses modern natural language processing tool (called spaCy) to tokenize input texts.
 
 
@@ -155,6 +176,9 @@ Let's now create a frequency list
 
 ## Result of TagAnt segmentation
 
+You can choose from two output formats. 
+
+
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -171,41 +195,93 @@ Let's now create a frequency list
 
 ::::
 
-- TagAnt can do more than this. 
-- We will come back to POS tagging on Day 4.
+## Part-Of-Speech Tagging in TagAnt
+
+- TagAnt can do more than tokenization. 
+
+- It allows you to automatically annotate the token for Part-Of-Speech (POS).
+
+- POS = Grammatical category of lexical items (NOUN, VERB, etc.)
+
+## Choosing the right format for POS representation
+
+- You can ask TagAnt for different output formats.
+
+- For now, let's choose `word+POS`.
+
+::: {.incremental}
+
+- ```この短期集中講座が終わったら、カキを食べたいと思っています。```
+
+- ```この_DET 短期_NOUN 集中_NOUN 講座_NOUN が_ADP 終わっ_VERB たら_AUX 、_PUNCT カキ_NOUN を_ADP 食べ_VERB たい_AUX と_ADP 思っ_VERB て_SCONJ い_VERB ます_AUX 。_PUNCT```
+
+:::
+
+## Now try different options...
+
+- Let's analyze your own example with the following:
+  - `word+pos`
+  - `word+pos_tag`
+  - `word+lemma`
+  - `word+pos+lemma`
+- What do these choice give you? Share it with your neighbor.
+
+## Other choices and expected results
+
+| Display Information | Example |
+|-----|------------|
+| word | `カキ を 食べ たい` |
+| word+pos | `カキ_NOUN を_ADP 食べ_VERB たい_AUX` |
+| word+pos_tag | `カキ_名詞-普通名詞-一般 を_助詞-格助詞 食べ_動詞-一般 たい_助動詞` |
+| word+lemma | `カキ_カキ を_を 食べ_食べる たい_たい` |
+
+## Questions? {.center}
 
 
-## Compiling Japanese Word Frequency list
+# Corpus Lab 2: Task 1 {.center}
+
+::: {style = "color:gray"}
+Instruction
+:::
+
+## Task 1: Compile a Japanese Word Frequency list
+
+::: {style = "font-size:80%"}
 
 ### Task
 Compile a Japanese frequency list based on a corpus.
 
 ### Resource
 - Download a Japanese text `Aozora 500` from Google Drive.
-- Use AntConc and TagAnt.
+- Use AntConc, TagAnt, and Simple Text Analyzer.
 
 ### Submission
 
 - Submit a frequency list
 - Description of word frequency pattern in Japanese.
 
+:::
+
 ---
 
-## Task 4: Vocabulary Profiling
+# Task 4: Vocabulary Profiling
 
-## Frequency information
+**Due to possible time limitation, let's come back to this if we have time at the end of session 6.**
 
-- We are familiar with the notion of frequency in language.
+<!-- ## Frequency information
+
 - Frequency is one important driving force of human cognition and language processing.
 
-- Profiling text using corpus frequency information is one important approach to understand textual characteristics.
+- Profiling is one important approach to understand textual characteristics.
+  - LFP (Laufer & Nation, 1995)
+  - Lexical coverage  -->
 
 
 ## Vocabulary Profiling
 
 - Vocabulary profiling is a technique to use corpus frequency to understand characteristics of vocabulary use in the input text
 - For lexical sophistication measure
-  - How much of the learner produced vocabulary is e.g., beyond 2000 word level (LFP; Laufer and Nation, 1995) ?
+  - LFP, Beyond 2000
 
 - For lexical coverage
   - How many words do readers/listeners need to know in order to comprehend the text (90, 95, or 98% coverage)
@@ -214,5 +290,9 @@ Compile a Japanese frequency list based on a corpus.
 
 - RANGE program
 - [VocabProfiler in LexTutor](https://www.lextutor.ca/vp/)
+- AntWordProfiler (desktop; multi-language)
 - [New Word Levels Checker](https://nwlc.pythonanywhere.com/)
-- AntWordProfiler 
+
+
+<!-- ## Using AntWordProfiler for simple lexical profiling -->
+

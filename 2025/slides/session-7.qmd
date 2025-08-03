@@ -8,7 +8,7 @@ metadata-files:
 
 # Housekeeping
 
-
+ 
 # Session overview
 
 
@@ -22,11 +22,121 @@ By the end of this session, students will be able to:
 
 ---
 
+# Multiword sequences
+
+
+
+# Why important?
+
+## Warm-up discussion
+
+- Why do you think multiword sequences are important?
+- 
+
+## Usage based learning
+
+## Some statistical models 
+
+- Phraseology is considered important
+
+# Type of sequences
+
+- Collocation: 
+- Lexical bundles: 
+
+## Collocations
+
+What are the differences between the following two terms?
+
+- Phraseological approach
+- Frequency-based approach
+
+## Lexical bundles
+
+- "Fixed sequence of words that recur frequently"
+
+- Biber et al. (2004) found three important "functions" of 
+  - Referential
+  - Stance
+  - Discoursal
+
+## Referential bundles
+
+
+## Stance bundles
+
+
+## Discourse bundles
+
+
+## Classify the following bundles into three categories
+
+| Bundle | Category |
+|-------|----------|
+| if you say so |              |
+
+
+
+# Extracting multiword sequences
+
+- Recurrence vs co-occurrence
+
+## N-grams
+
+
+
+
+## Window-based approach
+
+
+## Dependency Parsing
+
+
+
+
+# Operationalizing association
+
+## Strengths Of Association Measures
+
+
+## Why frequency is not sufficient?
+
+Discuss: 
+- Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?
+
+## 
+
+## Expected Ocurrences
+
+$$E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}$$
+
+## Mutual Information
+
+$$MI = {log_2{ Observed freq \over Expected frequency }}$$
+
+## T-score
+
+<will insert formula>
+
+## LogDice
+
+<will insert formula>
+
+
+## pros and cons of different association measures
+
+
+- You will examine this in session 8, but 
+
+
+
+
+
+
+
+
 
 ---
-
-# Hands-on Activity
-
 
 
 # Reflection
