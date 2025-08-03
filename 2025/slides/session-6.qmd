@@ -284,6 +284,16 @@ See in-class demonstration.
 - **Hypothesis**: Write your own.
 - **Results**: Write your own.
 
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts
+- [ ] provides two sets of plots that describe trends of lexical diversity across year groups and genre.
+- [ ] provides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).
+
+:::
 
 ## Questions?
 
@@ -423,12 +433,24 @@ We can also compare two texts in simple text analyzer.
 - Let's discuss how the two text differ in lexical use from one another.
 - Use the tables with token information and visualization to (dis)confirm your hypothesis
 
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes plots from one frequency index and one other type of index
+- [ ] provides desciption of how two texts differ in terms of the selected lexical sophistication indices.
+
+:::
+
 --- 
+
 
 ## Corpus Lab 2: Submission
 
 - Japanese Word Frequency List and small write-up (5 points)
-- Replication of Durrant's analysis from Figure 4.16 (5 points)
+- Replication of Durrant's analysis from Figure 4.19 (5 points)
   - research question, 
   - hypothesis, 
   - plots, and 

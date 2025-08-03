@@ -25,6 +25,12 @@ Before Day 5:
 - Skim:
     - Kim, M., & Lu, X. (2024). Exploring the potential of using ChatGPT for rhetorical move-step analysis. Journal of English for Academic Purposes, 71, 101422.
 
+- Download 
+  - [FCE dataset](https://ilexir.co.uk/datasets/index.html)
+
+We will also use [source codes from Mizumoto et al. (2024)](https://osf.io/teu5w/files/osfstorage)
+
+
 ## Schedule
 
 | Time | Activity |

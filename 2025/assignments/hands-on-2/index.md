@@ -29,7 +29,7 @@ The goal of this task is to:
 
 ### Instruction
 
-- Use `Aozora 1000` corpus.
+- Use `Aozora 500` corpus.
 - Create frequency list using `TagAnt` and `AntConc`
 - Understand frequency distributions using simple text analyzer.
 
@@ -46,12 +46,12 @@ The goal of this task is to:
 
 Your submission ...
 
-- [ ] includes a frequency list of Japanese words based on Aozora 1000
-- [ ] provides a description of word-frequency patterns in Aozora 1000 using example words from each frequency bins
+- [ ] includes a frequency list of Japanese words based on Aozora 500
+- [ ] provides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins
 
 :::
 
-## Task 2: Replication of Figure 4.16 from Durrant with two more recent lexical diversity indices
+## Task 2: Replication of Figure 4.19 from Durrant with two more recent lexical diversity indices
 
 ### Goals
 

@@ -46,7 +46,7 @@ Before Day 2:
 
 ## Assignments
 
-- **Due 8/6**: [Corpus Lab Assignment 2](../../assignments/hands-on-2/)
+- **Due 8/6 (Wed)**: [Corpus Lab Assignment 2](../../assignments/hands-on-2/)
 - Complete lexical analysis exercises using AntConc and web applications
 
 

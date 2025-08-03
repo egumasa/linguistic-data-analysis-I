@@ -541,7 +541,7 @@
     "href": "2025/sessions/day1/index.html#assignments",
     "title": "Day 1: Introduction and Foundations",
     "section": "Assignments",
-    "text": "Assignments\n\nDue On Monday: Corpus Lab Assignment 1\nComplete basic corpus search exercise",
+    "text": "Assignments\n\nDue On 8/5 Tuesday: Corpus Lab Assignment 1\nComplete basic corpus search exercise",
     "crumbs": [
       "Sessions",
       "Day 1",
@@ -769,7 +769,7 @@
     "href": "2025/sessions/day2/session6.html#materials",
     "title": "Session 6",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -865,7 +865,7 @@
     "href": "2025/sessions/day2/session4.html#materials",
     "title": "Session 4",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -1141,7 +1141,7 @@
     "href": "2025/sessions/day4/index.html#assignments",
     "title": "Day 4: Analyzing Grammar",
     "section": "Assignments",
-    "text": "Assignments\n\nDue 8/8: Corpus Lab Assignment 4\nComplete grammatical analysis exercises using Python notebooks and TagAnt",
+    "text": "Assignments\n\nDue 8/8 (Fri): Corpus Lab Assignment 4\nComplete grammatical analysis exercises using Python notebooks and TagAnt",
     "crumbs": [
       "Sessions",
       "Day 4",
@@ -1654,7 +1654,7 @@
     "href": "2025/slides/session-6.html#writing-up-research-question-hypothesis-and-results",
     "title": "Session 6: Hands-on activity #3",
     "section": "Writing up research question, hypothesis, and results",
-    "text": "Writing up research question, hypothesis, and results\n\nResearch question?\nHypothesis: Write your own.\nResults: Write your own."
+    "text": "Writing up research question, hypothesis, and results\n\nResearch question?\nHypothesis: Write your own.\nResults: Write your own.\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023)."
   },
   {
     "objectID": "2025/slides/session-6.html#questions",
@@ -1766,14 +1766,14 @@
     "href": "2025/slides/session-6.html#step-5-interpret-the-findings",
     "title": "Session 6: Hands-on activity #3",
     "section": "Step 5: Interpret the findings",
-    "text": "Step 5: Interpret the findings\n\nLet’s discuss how the two text differ in lexical use from one another.\nUse the tables with token information and visualization to (dis)confirm your hypothesis"
+    "text": "Step 5: Interpret the findings\n\nLet’s discuss how the two text differ in lexical use from one another.\nUse the tables with token information and visualization to (dis)confirm your hypothesis\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes plots from one frequency index and one other type of index\nprovides desciption of how two texts differ in terms of the selected lexical sophistication indices."
   },
   {
     "objectID": "2025/slides/session-6.html#corpus-lab-2-submission",
     "href": "2025/slides/session-6.html#corpus-lab-2-submission",
     "title": "Session 6: Hands-on activity #3",
     "section": "Corpus Lab 2: Submission",
-    "text": "Corpus Lab 2: Submission\n\nJapanese Word Frequency List and small write-up (5 points)\nReplication of Durrant’s analysis from Figure 4.16 (5 points)\n\nresearch question,\nhypothesis,\nplots, and\nresults\n\nComparison of two texts in terms of lexical sophistication (5 points)"
+    "text": "Corpus Lab 2: Submission\n\nJapanese Word Frequency List and small write-up (5 points)\nReplication of Durrant’s analysis from Figure 4.19 (5 points)\n\nresearch question,\nhypothesis,\nplots, and\nresults\n\nComparison of two texts in terms of lexical sophistication (5 points)"
   },
   {
     "objectID": "2025/slides/session-5.html#learning-objectives",
@@ -1948,7 +1948,7 @@
     "href": "2025/slides/session-5.html#task-1-compile-a-japanese-word-frequency-list",
     "title": "Session 5: Hands-on activity #2",
     "section": "Task 1: Compile a Japanese Word Frequency list",
-    "text": "Task 1: Compile a Japanese Word Frequency list\n\nTask\nCompile a Japanese frequency list based on a corpus.\nResource\n\nDownload a Japanese text Aozora 500 from Google Drive.\nUse AntConc, TagAnt, and Simple Text Analyzer.\n\nSubmission\n\nSubmit a frequency list\nDescription of word frequency pattern in Japanese."
+    "text": "Task 1: Compile a Japanese Word Frequency list\n\nTask\nCompile a Japanese frequency list based on a corpus.\nResource\n\nDownload a Japanese text Aozora 500 from Google Drive.\nUse AntConc, TagAnt, and Simple Text Analyzer.\n\nSubmission\n\nSubmit a frequency list .tsv or .txt.\nDescription of word frequency pattern in Japanese.\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes a frequency list of Japanese words based on Aozora 500\nprovides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins"
   },
   {
     "objectID": "2025/slides/session-5.html#vocabulary-profiling",
@@ -3383,18 +3383,18 @@
     "href": "2025/assignments/hands-on-2/index.html#task-1-a-japanese-word-frequency-list",
     "title": "Corpus Lab 2",
     "section": "Task 1: A Japanese word frequency List",
-    "text": "Task 1: A Japanese word frequency List\n\nGoals\nThe goal of this task is to:\n\nConstruct a Japanese word frequency list.\n\n\n\nInstruction\n\nUse Aozora 1000 corpus.\nCreate frequency list using TagAnt and AntConc\nUnderstand frequency distributions using simple text analyzer.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nA Japanese word frequency list (.txt or .tsv format)\nDescriptive paragraphs explaining the frequency distributions of Japanese language.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a frequency list of Japanese words based on Aozora 1000\nprovides a description of word-frequency patterns in Aozora 1000 using example words from each frequency bins",
+    "text": "Task 1: A Japanese word frequency List\n\nGoals\nThe goal of this task is to:\n\nConstruct a Japanese word frequency list.\n\n\n\nInstruction\n\nUse Aozora 500 corpus.\nCreate frequency list using TagAnt and AntConc\nUnderstand frequency distributions using simple text analyzer.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nA Japanese word frequency list (.txt or .tsv format)\nDescriptive paragraphs explaining the frequency distributions of Japanese language.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a frequency list of Japanese words based on Aozora 500\nprovides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins",
     "crumbs": [
       "Assignments",
       "Corpus Lab 2"
     ]
   },
   {
-    "objectID": "2025/assignments/hands-on-2/index.html#task-2-replication-of-figure-4.16-from-durrant-with-two-more-recent-lexical-diversity-indices",
-    "href": "2025/assignments/hands-on-2/index.html#task-2-replication-of-figure-4.16-from-durrant-with-two-more-recent-lexical-diversity-indices",
+    "objectID": "2025/assignments/hands-on-2/index.html#task-2-replication-of-figure-4.19-from-durrant-with-two-more-recent-lexical-diversity-indices",
+    "href": "2025/assignments/hands-on-2/index.html#task-2-replication-of-figure-4.19-from-durrant-with-two-more-recent-lexical-diversity-indices",
     "title": "Corpus Lab 2",
-    "section": "Task 2: Replication of Figure 4.16 from Durrant with two more recent lexical diversity indices",
-    "text": "Task 2: Replication of Figure 4.16 from Durrant with two more recent lexical diversity indices\n\nGoals\nThe goals of this task are:\n\nto compute more recent, robust alternatives to classical indices using TAALED\nto replicate Durrant’s analysis with two more recent lexical diversity indices\n\n\n\nInstructions\n\nComplete the hand calculation of lexical diversity indices on the spreadsheet\nCompute recommended lexical diversity indices — MATTR and MTLD Original — using TAALED.\nReplicate Figure 4.19 in Durrant (2023, p. 72) with the two indices (i.e., MATTR and MTLD Original)\nDiscuss implication of the findings.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nDescriptive paragraphs explaining the replication of Durrant’s analysis (300 words).\n\nResearch question\nYour hypothesis regarding the replication\nPlots (one for MTLD; the other for MATTR)\nResults and interpretation\n\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts\nincludes a csv file\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).",
+    "section": "Task 2: Replication of Figure 4.19 from Durrant with two more recent lexical diversity indices",
+    "text": "Task 2: Replication of Figure 4.19 from Durrant with two more recent lexical diversity indices\n\nGoals\nThe goals of this task are:\n\nto compute more recent, robust alternatives to classical indices using TAALED\nto replicate Durrant’s analysis with two more recent lexical diversity indices\n\n\n\nInstructions\n\nComplete the hand calculation of lexical diversity indices on the spreadsheet\nCompute recommended lexical diversity indices — MATTR and MTLD Original — using TAALED.\nReplicate Figure 4.19 in Durrant (2023, p. 72) with the two indices (i.e., MATTR and MTLD Original)\nDiscuss implication of the findings.\n\n\n\n\n\n\n\nSubmission:\n\n\n\n\nSpreadsheet file containing hand-calculated lexical diversity scores.\nDescriptive paragraphs explaining the replication of Durrant’s analysis (300 words).\n\nResearch question\nYour hypothesis regarding the replication\nPlots (one for MTLD; the other for MATTR)\nResults and interpretation\n\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts\nincludes a csv file\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).",
     "crumbs": [
       "Assignments",
       "Corpus Lab 2"
@@ -4242,7 +4242,7 @@
     "href": "2025/slides/session-4.html#overview",
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Overview",
-    "text": "Overview\n\nVocabulary knowledge is usually conceptualized as:\n\nBreadth,\nDepth, and\nFluency"
+    "text": "Overview\n\nVocabulary knowledge is usually conceptualized as:\n\nBreadth,\nDepth, and\nFluency\n\nCan anyone explain what these are?"
   },
   {
     "objectID": "2025/slides/session-4.html#compare-the-two-texts.",
@@ -4483,6 +4483,13 @@
     "text": "Final regression models\n\nfinal regression to predict OPI"
   },
   {
+    "objectID": "2025/slides/session-4.html#summary",
+    "href": "2025/slides/session-4.html#summary",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Summary",
+    "text": "Summary\n\nThe final regression model explained 57% of scores in OPI.\nFactor analysis revealed 10 different dimensions: CW, FW, and N-grams."
+  },
+  {
     "objectID": "2025/slides/session-4.html#the-measurement-process-in-sla",
     "href": "2025/slides/session-4.html#the-measurement-process-in-sla",
     "title": "Session 4: Analyzing Vocabulary",
@@ -4495,6 +4502,13 @@
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Lexical Richness: Two Main Components",
     "text": "Lexical Richness: Two Main Components\n\n\n\nLexical Diversity (LD)\n\nRange of different words used\nText-internal measure\nAvoid TTR; use MTLD/MATTR\nAffected by text length\n\n\nLexical Sophistication (LS)\n\nQuality/difficulty of words used\nRequires reference corpus\nMultidimensional construct"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#download-tagant-and-taaled",
+    "href": "2025/slides/session-4.html#download-tagant-and-taaled",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Download TagAnt and TAALED",
+    "text": "Download TagAnt and TAALED\n\nDownload TagAnt\nDownload Tool for the Automatic Analysis of Lexical Diversity (TAALED)\n\n\nTAALED"
   },
   {
     "objectID": "2025/slides/session-7.html#learning-objectives",
@@ -4926,7 +4940,7 @@
     "href": "2025/sessions/day3/index.html#assignments",
     "title": "Day 3: Multiword Units and Collocations",
     "section": "Assignments",
-    "text": "Assignments\n\nDue 8/7: Corpus Lab Assignment 3\nPrepare mini-project research topic and questions for presentation",
+    "text": "Assignments\n\nDue 8/7 (Thu): Corpus Lab Assignment 3\nPrepare mini-project research topic and questions for presentation",
     "crumbs": [
       "Sessions",
       "Day 3",
@@ -5118,7 +5132,7 @@
     "href": "2025/sessions/day2/session5.html#materials",
     "title": "Session 5",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -5238,7 +5252,7 @@
     "href": "2025/sessions/day2/index.html#assignments",
     "title": "Day 2: Analyzing Vocabulary",
     "section": "Assignments",
-    "text": "Assignments\n\nDue 8/6: Corpus Lab Assignment 2\nComplete lexical analysis exercises using AntConc and web applications",
+    "text": "Assignments\n\nDue 8/6 (Wed): Corpus Lab Assignment 2\nComplete lexical analysis exercises using AntConc and web applications",
     "crumbs": [
       "Sessions",
       "Day 2",
@@ -5334,7 +5348,7 @@
     "href": "2025/sessions/day5/index.html#preparation",
     "title": "Day 5: Advanced Topics and Final Project",
     "section": "Preparation",
-    "text": "Preparation\nBefore Day 5:\n\nRead:\n\nMizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116.\n\nSkim:\n\nKim, M., & Lu, X. (2024). Exploring the potential of using ChatGPT for rhetorical move-step analysis. Journal of English for Academic Purposes, 71, 101422.",
+    "text": "Preparation\nBefore Day 5:\n\nRead:\n\nMizumoto, A., Shintani, N., Sasaki, M., & Teng, M. F. (2024). Testing the viability of ChatGPT as a companion in L2 writing accuracy assessment. Research Methods in Applied Linguistics, 3(2), 100116.\n\nSkim:\n\nKim, M., & Lu, X. (2024). Exploring the potential of using ChatGPT for rhetorical move-step analysis. Journal of English for Academic Purposes, 71, 101422.\n\nDownload\n\nFCE dataset\n\n\nWe will also use source codes from Mizumoto et al. (2024)",
     "crumbs": [
       "Sessions",
       "Day 5",

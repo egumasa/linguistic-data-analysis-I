@@ -37,7 +37,7 @@ Before Day 1:
 
 ## Assignments
 
-- **Due On Monday**: [Corpus Lab Assignment 1](../../assignments/hands-on-1/)
+- **Due On 8/5 Tuesday**: [Corpus Lab Assignment 1](../../assignments/hands-on-1/)
 - Complete basic corpus search exercise
 
 

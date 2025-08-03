@@ -39,7 +39,7 @@ Before Day 3:
 
 ## Assignments
 
-- **Due 8/7**: [Corpus Lab Assignment 3](../../assignments/hands-on-3/)
+- **Due 8/7 (Thu)**: [Corpus Lab Assignment 3](../../assignments/hands-on-3/)
 - Prepare mini-project research topic and questions for presentation
 
 

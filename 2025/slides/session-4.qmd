@@ -8,10 +8,15 @@ metadata-files:
 
 # Housekeeping
 
-- Corpus Lab 1 Due 8/5 (Tue) 10:30
+- Corpus Lab 1 Due 8/5 (Tue) 10:30 am
 
+- Any questions?
 
 # Session overview
+
+- Intro to Learner Corpus Research
+- Measurement in SLA
+- Vocabulary Measurement
 
 
 # Introduction to Learner Corpus Research
@@ -144,6 +149,7 @@ To make a somewhat bold statement, many SLA researchers are interested in descri
   - **Breadth**, 
   - **Depth**, and 
   - **Fluency**
+- Can anyone explain what these are?
 
 ## Compare the two texts.
 
@@ -435,7 +441,7 @@ A word that involke more abstract concepts should be considered more sophisticat
 ## Questions?
 
 
-# Representative Study
+# Sample Study
 
 ## Eguchi & Kyle (2020)
 
@@ -486,6 +492,10 @@ A word that involke more abstract concepts should be considered more sophisticat
 
 ![final regression to predict OPI](../../assets/session-4/EK_final.png)
 
+## Summary
+
+- The final regression model explained 57% of scores in OPI.
+- Factor analysis revealed 10 different dimensions: CW, FW, and N-grams.
 
 
 ---
@@ -533,3 +543,10 @@ You'll learn to:
 - Understand frequency distributions
 - Work with non-English texts (tokenization)
 - Apply frequency-based sophistication measures
+
+## Download TagAnt and TAALED
+
+- Download [`TagAnt`](https://laurenceanthony.net/software/tagant/) 
+- Download [Tool for the Automatic Analysis of Lexical Diversity (TAALED)](https://www.linguisticanalysistools.org/taaled.html)
+
+![TAALED](../../assets/session-6/taaled_orig.png)

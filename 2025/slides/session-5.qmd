@@ -257,10 +257,21 @@ Compile a Japanese frequency list based on a corpus.
 
 ### Submission
 
-- Submit a frequency list
+- Submit a frequency list `.tsv` or `.txt`.
 - Description of word frequency pattern in Japanese.
 
 :::
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes a frequency list of Japanese words based on Aozora 500
+- [ ] provides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins
+
+:::
+
 
 ---
 
