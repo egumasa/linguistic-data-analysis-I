@@ -11,6 +11,7 @@ metadata-files:
 
 # Session overview
 
+- 
 
 ## 🎯 Learning Objectives
 
@@ -28,14 +29,36 @@ By the end of this session, students will be able to:
 - You can use either English or Japanese. 
 
 - For Japanese you can use `Aozora 500` data we used.
-- For English you can use `BROWN corpus` data we used.
+- For English you can use `Ame06` or `B06` data in AntConc.
+
+## three-word sequences
+
+- You can (a) load corpus, (b) go to N-gram, (c) apply settings, and (d) hit start.
+
+![Trigram in BE06](../../assets/session-8/trigram_BE06.gif)
+
+## five-word sequences
+
+- Now let's examine 5 word sequences
+
+![Quintgram in BE06](../../assets/session-8/5-grams.gif)
+
+## Jumping to KWIC view from the list
+
+In AntConc, we can jump from the item in the list to show KWIC.
+
+![KWIC](../../assets/session-8/KWIC.gif)
+
 
 ## Generating P-frame list with AntConc
 
 - Let's now generate p-frame.
-- You can use either English or Japanese. 
-  - When using Japanese you can use `Aozora 500` data we used.
+- Set openslot to 1. Hit start. What do you see?
 
+![P-frames](../../assets/session-8/p-frame-ame.png)
+
+
+## Questions?
 
 # Searching collocations with AntConc (10-15 mins)
 
@@ -49,7 +72,7 @@ By the end of this session, students will be able to:
 
 You can search collocation by entering `node` words
 
-- Open AntConc, load `BROWN corpus`.
+- Open AntConc, load `BROWN` corpus.
 - Go to `Collocate`
 - Enter `play` in search window and hit `Start`
 
@@ -189,6 +212,16 @@ For example, you might say.
 
 ## Let's finish it up
 
+- R1 = Frequency of node word
+- C1 = Frequency of collocate
+
+- $MI = {log_2{ Observed freq \over Expected frequency }}$
+- $\text{T-score} = {\text{Observed}  - \text{Expected}  \over \sqrt{Observed}}$
+- $\text{log Dice} = 14 + \log_2( {{2 \times Observed} \over {R_1 + C_1}})$
+
+
+## Results should look like something
+
 - LogDice:
   - Ours: 6.548
   - AntConc: 6.551 Likely multiplying window size in the denominator.
@@ -218,22 +251,18 @@ For example, you might say.
   - MI
   - LogDice
 
-## (Advanced) how can I generate a collocation list?
+
+## (If time allowed) how can I generate a collocation list?
 
 - You can take a look at [the following notebook](../../resources/code-examples/python/extracting-collocations.ipynb)
 
 
----
-
-# Hands-on Activity
-
-
-# Reflection
+## Reflection
 
 - You can now do the followings:
-  - Generate lists of n-grams using AntConc.
+  - Generate lists of **n-grams** and **p-frames** using AntConc.
   - Search for collocates with AntConc.
   - Calculate major Strengths of Association (SOA) measures by hand.
 
 
-# Next step
+# Congratulations!!

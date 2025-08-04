@@ -47,13 +47,32 @@ In this assignment, please choose one of the following corpora:
 
 1. *Growth in Grammar (GiG) corpus* (Durrant, 2023)
 2. *ICNALE corpus* (Edited Essay OR GRA)
-3. Some Japanese corpus here (Ask Masaki about availability).
+3. If you have a corpus you want to analyze, let Masaki know!
+
+## Understanding the corpus contents
+
+- You can look at followings:
+  - meta-data (the additional information about the corpus files)
+  - several text files
+
+## GiG corpus
+
+- For detailed information, see Table 2.1 in Durrant (2023)
+
+![GiG metadata](../../assets/session-9/GiG_meta.png)
+
+## ICNALE GRA
+
+ICNALE GRA documents 120 essays evaluated by 80 people.
+- These 80 people are from different backgrounds.
+- You can basically use average essay ratings.
+
+![ICNALE metadata](../../assets/session-9/ICNALE-meta.png)
 
 
-## Let's do Step 1 and 2
+## Step 1 & 2: Formluating research questions
 
-### Research questions
-
+:::{style="font-size:75%"}
 What would you like to know? 
 
 - How learners develop their language ability across time?
@@ -62,26 +81,26 @@ What would you like to know?
 - How does production of X change across time/proficiency?
 - Anything else?
 
-## Let's do Step 1 and 2
+- Do not forget to specify **constructs**!
+:::
 
-### Choosing a right corpus
+## Step 2: Choosing a right corpus
 
-What does each corpus contain as a meta data?
+Based on the research question, which corpus should you choose?
 
 1. *Growth in Grammar (GiG) corpus* (Durrant, 2023)
 2. *ICNALE corpus* (Edited Essay OR GRA)
-3. Some learner corpora for Japanese (More difficult). 
 
 - Understand what it offers and doesn't.
 - Pick one corpus to move forward.
 
 ## Step 3: Construct hypothesis
 
-- Once you've identified broad research questions and corpus, speculate on possible results.
+- Once you've articulated broad research questions and chose a corpus, speculate on possible results.
 - Use what you've learned so far about lexical richness.
   - Lexical diversity
   - Lexical sophistication
-  - Phraseological sophistication
+  - Phraseological complexity
 - Which ones are relevant to your questions?
 
 ## Step 4: Select index
@@ -97,7 +116,7 @@ Specifically, which index may capture the change in the vocabulary use in your c
 
 Okay now it's time to do some analysis!
 
-- Which one are you going to use:
+- Which ones are you going to use:
   - TAALED
   - TAALES
   - Lexical profiler
@@ -108,6 +127,10 @@ Okay now it's time to do some analysis!
 
 Once you obtained the indices, it's time to understand the pattern by plotting.
 
+- Use simple analyzer to plot data from:
+  - GiG corpus
+  - ICNALE
+- The simple text analyzer is made for that purpose.
 
 ## Step 7: Interpret and write-up the results
 
@@ -123,7 +146,6 @@ Now you understand what is happening in your corpus, you can write that up.
 5. Compute the index
 6. Conduct analysis 
 7. Interpret and write-up the results
-
 
 # Let's work!
 

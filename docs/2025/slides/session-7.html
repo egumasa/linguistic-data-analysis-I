@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-ef4f24e61c4c7987b8d5ba256652937e.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -145,10 +211,202 @@ Masaki EGUCHI, Ph.D.
 
 </section>
 
-<section>
 <section id="session-overview" class="title-slide slide level1 center">
 <h1>Session overview</h1>
+<ul>
+<li>Recap for Corpus Lab 2</li>
+<li>Multiword Units - Definition and Operationalization</li>
+<li>Strengths of Association (SOA) measures</li>
+<li>Phraseological Complexity</li>
+</ul>
+</section>
 
+<section>
+<section id="corpus-lab-2" class="title-slide slide level1 center">
+<h1>Corpus Lab 2</h1>
+
+</section>
+<section id="corpus-lab-2-submission" class="slide level2">
+<h2>Corpus Lab 2: Submission</h2>
+<div style="font-size:85%">
+<ul>
+<li><strong>Task 1</strong>: Japanese Word Frequency List and small write-up (5 points)</li>
+<li><strong>Task 2</strong>: Replication of Durrant’s analysis from Figure 4.19 (5 points)
+<ul>
+<li>research question,</li>
+<li>hypothesis,</li>
+<li>plots, and</li>
+<li>results</li>
+</ul></li>
+<li><strong>Task 3</strong>: Comparison of two texts in terms of lexical sophistication (5 points)</li>
+</ul>
+</div>
+</section>
+<section id="corpus-lab-2-task-1" class="slide level2 center">
+<h2>Corpus Lab 2: Task 1</h2>
+<div style="color:gray">
+<p>Instruction</p>
+</div>
+</section>
+<section id="task-1-compile-a-japanese-word-frequency-list" class="slide level2">
+<h2>Task 1: Compile a Japanese Word Frequency list</h2>
+<div style="font-size:80%">
+<h3 id="task">Task</h3>
+<p>Compile a Japanese frequency list based on a corpus.</p>
+<h3 id="resource">Resource</h3>
+<ul>
+<li>Download a Japanese text <code>Aozora 500</code> from Google Drive.</li>
+<li>Use AntConc, TagAnt, and Simple Text Analyzer.</li>
+</ul>
+</div>
+</section>
+<section id="submission-for-task-1" class="slide level2">
+<h2>Submission for task 1</h2>
+<div style="font-size:80%">
+<ul>
+<li>Submit a frequency list <code>.tsv</code> or <code>.txt</code>.</li>
+<li>A short description of word frequency pattern in Japanese.</li>
+</ul>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Success Criteria</strong></p>
+</div>
+<div class="callout-content">
+<p>Your submission …</p>
+<ul class="task-list">
+<li><label><input type="checkbox">includes a frequency list of Japanese words based on Aozora 500</label></li>
+<li><label><input type="checkbox">provides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins</label></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="corpus-lab-2-task-2" class="slide level2 center">
+<h2>Corpus Lab 2: Task 2</h2>
+</section>
+<section id="instruction" class="slide level2">
+<h2>Instruction</h2>
+<p><strong>Goal</strong>: to replicate analysis on GiG.</p>
+<p>You will need to have access to both metadata file.</p>
+<p>The corpus data is <a href="https://drive.google.com/drive/folders/1TqtY2KVe5H_zScAYJ8VPoIjWYIryrcMU?usp=drive_link">here</a>.</p>
+</section>
+<section id="about-gig-meta-data" class="slide level2">
+<h2>About GiG meta data</h2>
+<ul>
+<li>GiG metadata documents the necessary data to use for plotting
+<ul>
+<li>Year Group (X-axis in Figure 4.19)</li>
+<li>Genre (grouping variable in Figure 4.19)</li>
+</ul></li>
+</ul>
+
+<img data-src="../../assets/session-6/GiG_meta.png" class="r-stretch quarto-figure-center"><p class="caption">GiG Metadata</p></section>
+<section id="writing-up-research-question-hypothesis-and-results" class="slide level2">
+<h2>Writing up research question, hypothesis, and results</h2>
+<div style="font-size:75%">
+<ul>
+<li><strong>Research question?</strong></li>
+<li><strong>Hypothesis</strong>: Write your own.</li>
+<li><strong>Results</strong>: Write your own.</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Success Criteria</strong></p>
+</div>
+<div class="callout-content">
+<p>Your submission …</p>
+<ul class="task-list">
+<li><label><input type="checkbox">includes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts</label></li>
+<li><label><input type="checkbox">provides two sets of plots that describe trends of lexical diversity across year groups and genre.</label></li>
+<li><label><input type="checkbox">provides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).</label></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="corpus-lab-2-task-3" class="slide level2 center">
+<h2>Corpus Lab 2: Task 3</h2>
+</section>
+<section id="comparing-lexical-characteristics-of-two-texts" class="slide level2">
+<h2>Comparing lexical characteristics of two texts</h2>
+<div style="font-size:75%">
+<h3 id="goals">Goals</h3>
+<ul>
+<li>Compare and contrast two texts along with several lexical diversity metrics</li>
+<li>Observe differences in single-word and multiword sophistication</li>
+</ul>
+<h3 id="data">Data</h3>
+<ul>
+<li>Choose two texts from the ICNALE GRA</li>
+<li>If you are unsure, use choose from the following three files:
+<ul>
+<li>GRA_PTJ0_124_ORIG.txt</li>
+<li>GRA_PTJ0_070_ORIG.txt</li>
+<li>GRA_PTJ0_112_ORIG.txt</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="step-1-qualitatively-compare-two-files" class="slide level2">
+<h2>Step 1: Qualitatively compare two files</h2>
+<ul>
+<li>Before we actually obtain lexical sophistication measures, compare two texts in terms of their lexical use.</li>
+<li>In pairs, describe the strengths and weakeness in vocabulary use.</li>
+</ul>
+</section>
+<section id="step-2-hypothesis" class="slide level2">
+<h2>Step 2: Hypothesis</h2>
+<ul>
+<li>In what way is one text more lexically sophisticated than the other?
+<ul>
+<li>Try to come up with characteristics that describe the <code>quality of word use</code> in each text</li>
+</ul></li>
+</ul>
+</section>
+<section id="step-3-pick-two-or-three-lexical-sophistication-variables" class="slide level2">
+<h2>Step 3: Pick two or three lexical sophistication variables</h2>
+<h3 id="enter-the-text-into-analyzer">Enter the text into analyzer</h3>
+<p>We can also compare two texts in simple text analyzer.</p>
+
+<img data-src="../../assets/session-6/Two-text-comparison.png" class="r-stretch quarto-figure-center"><p class="caption">two-text</p></section>
+<section id="step-4-run-analyses" class="slide level2">
+<h2>Step 4: Run analyses</h2>
+<h3 id="plots-that-compares-two-lists">Plots that compares two lists</h3>
+<p>!<img data-src="../../assets/session-6/bigram-freq.png" alt="bigram-comparison"></p>
+</section>
+<section id="step-5-interpret-the-findings" class="slide level2">
+<h2>Step 5: Interpret the findings</h2>
+<ul>
+<li>Let’s discuss how the two text differ in lexical use from one another.</li>
+<li>Use the tables with token information and visualization to (dis)confirm your hypothesis</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Success Criteria</strong></p>
+</div>
+<div class="callout-content">
+<p>Your submission …</p>
+<ul class="task-list">
+<li><label><input type="checkbox">includes plots from one frequency index and one other type of index</label></li>
+<li><label><input type="checkbox">provides desciption of how two texts differ in terms of the selected lexical sophistication indices.</label></li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>🎯 Learning Objectives</h2>
@@ -162,49 +420,92 @@ Masaki EGUCHI, Ph.D.
 
 </blockquote>
 </section>
-<section class="slide level2">
-
-</section></section>
-<section id="multiword-sequences" class="title-slide slide level1 center">
-<h1>Multiword sequences</h1>
+<section id="lexical-richness" class="slide level2">
+<h2>Lexical Richness</h2>
 <ul>
-<li><p>Day 2 focused on <strong>individual words</strong></p></li>
-<li><p>More and more research focus on so called <strong>“Multi-Word” Units/Sequences</strong></p></li>
+<li>Lexical Diversity</li>
+<li>Lexical Sophistication</li>
 </ul>
+<p>→ These are not sufficient for complete analysis of learner language.</p>
 </section>
-
-<section>
-<section id="why-important" class="title-slide slide level1 center">
-<h1>Why important?</h1>
-
+<section id="remember-the-comparisons" class="slide level2">
+<h2>Remember the comparisons?</h2>
+<div style="font-size:80%">
+<p><strong>Which one do you think reflect “better” vocabulary use?</strong></p>
+<div class="columns">
+<div class="column">
+<p>Is important for college students to have a part-time job? I think that has much opinion to answer it. The part-time job is a job that can do in partial time. So the college student can do part-time job when they has spare time (if they want). There are many reasons why the college student do part-time job (if they do).</p>
+</div><div class="column">
+<p>I find it hard to make a generalisation on whether it’s important or not for college students to have a part-time job, because this seems like something very individual and highly dependent on the individual student and their circumstances. Jobs serve a few main functions: to earn money, to gain experience, to get a head-start in a career, and to have something to do.</p>
+</div></div>
+</div>
 </section>
-<section id="warm-up-discussion" class="slide level2">
-<h2>Warm-up discussion</h2>
+<section id="rich-vocabulary-use" class="slide level2">
+<h2>Rich vocabulary use?</h2>
+<div style="font-size:75%">
+<div class="columns">
+<div class="column">
 <ul>
-<li>Why do you think multiword sequences are important?</li>
+<li>college students</li>
+<li>have a part-time job</li>
+<li>much opinion to answer</li>
+<li>partial time</li>
+<li>spare time<br>
+</li>
+<li>many reasons</li>
 </ul>
+</div><div class="column">
+<ul>
+<li>make a generalisation on</li>
+<li>this seems like</li>
+<li>something very individual</li>
+<li>highly dependent on</li>
+<li>circumstances.</li>
+<li>serve functions</li>
+</ul>
+</div></div>
+</div>
+</section>
+<section id="phraseology-is-an-important-addition" class="slide level2">
+<h2>Phraseology is an important addition</h2>
+<ul>
+<li class="fragment">Research suggests that learners need to know “how to combine words”.</li>
+<li class="fragment">Phraseological complexity (Paquot, 2019)
+<ul>
+<li class="fragment">We will talk about it more later…</li>
+</ul></li>
+</ul>
+<div style="font-size:40%">
+<ul>
+<li>Paquot, M. (2018). Phraseological Competence: A Missing Component in University Entrance Language Tests? Insights From a Study of EFL Learners’ Use of Statistical Collocations. Language Assessment Quarterly, 15(1), 29–43. https://doi.org/10.1080/15434303.2017.1405421</li>
+<li>Paquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221</li>
+</ul>
+</div>
 </section>
 <section id="usage-based-learning" class="slide level2">
 <h2>Usage-based learning</h2>
 <ul>
-<li>The idea that <strong>item-based learning</strong> facilitate learning of systematic rules.</li>
-<li>So <strong>usage/exposure in communicative contexts</strong> allows the learner to extract grammatical rules/learn how to express certain things.</li>
-</ul>
-</section>
-<section id="assessment-research-also-says" class="slide level2">
-<h2>Assessment research also says…</h2>
+<li>The idea that <strong>item-based learning</strong> facilitate acquisition of systematic aspects of language.
 <ul>
-<li>Phraseology is considered important</li>
+<li>Repeated exposure leads to abstraction of the schematic language unit.</li>
+</ul></li>
+<li>So <strong>usage/exposure in communicative contexts</strong> allows the learner to extract grammatical rules/learn how to express a concept.</li>
 </ul>
+</section></section>
+<section>
+<section id="definitions-and-types-of-multiword-sequences" class="title-slide slide level1 center">
+<h1>Definitions and types of multiword sequences</h1>
+
 </section>
 <section id="definitions" class="slide level2">
 <h2>Definitions</h2>
-<p>Multiword Units/Sequences is a cover term for different things.</p>
+<div style="font-size:70%">
+<p>Multiword Unit/Sequence is a cover term for different things.</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 16%">
+<col style="width: 55%">
+<col style="width: 27%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -229,22 +530,101 @@ Masaki EGUCHI, Ph.D.
 <td>recurrent conventional phrase of two words from the same POS, connected by a conjunction</td>
 <td><em>black and white</em></td>
 </tr>
+<tr class="even">
+<td>Pragmatic formulas</td>
+<td>context-bound phrases that are characteristic of a particular speech community</td>
+<td><em>thank you</em>, <em>bless you</em></td>
+</tr>
 </tbody>
 </table>
-<p>etc.</p>
+</div>
 </section>
-<section id="type-of-sequences" class="slide level2">
-<h2>Type of sequences</h2>
+<section id="definitions-1" class="slide level2">
+<h2>Definitions</h2>
+<div style="font-size:70%">
+<table class="caption-top">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 55%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Formula type</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Collocations</td>
+<td>Pairs of words that are syntagmatically associated</td>
+<td><em>take time</em>, <em>young people</em></td>
+</tr>
+<tr class="even">
+<td>Lexical bundles</td>
+<td>Contiguous word combinations which occur very frequently in language</td>
+<td><em>in other words</em></td>
+</tr>
+<tr class="odd">
+<td>Lexicalized sentence stems</td>
+<td>A conventional expression in whih some elements are fixed and others allow for a range of possibilities</td>
+<td>**</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="approaches-to-define-and-operationalize-mwus" class="slide level2">
+<h2>Approaches to define and operationalize MWUs</h2>
+<p>We have two major approaches to define MWUs:</p>
+<div style="font-size:70%">
+<table class="caption-top">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frequency-based</td>
+<td>Quantifies the degree of associations between component words</td>
+</tr>
+<tr class="even">
+<td>Phraseological</td>
+<td>Involves human judgement to focus on semantic transparency, non-compositionality, and/or fixedness.</td>
+</tr>
+</tbody>
+</table>
+</div>
 <ul>
-<li>Collocation:</li>
-<li>Lexical bundles:</li>
+<li>We will follow <code>frequency-based approach</code> in this course.</li>
 </ul>
 </section>
-<section id="extracting-multiword-sequences" class="slide level2">
-<h2>Extracting multiword sequences</h2>
+<section id="preview-discussion" class="slide level2">
+<h2>Preview discussion</h2>
 <ul>
-<li>Recurrence vs co-occurrence</li>
+<li>Which of the following type of MWUs are more challenging to identify from the frequency-based approach?
+<ul>
+<li>Collocation: <code>play + role</code>, <code>meet + expectation</code></li>
+<li>Binomials: <code>by and large</code>, <code>black and white</code></li>
+<li>Idiom: <code>kick the bucket</code>, <code>over the moon</code></li>
+<li>Lexical bundles: <code>in terms of the</code>, <code>the extent to which</code></li>
+</ul></li>
 </ul>
+</section>
+<section id="questions" class="slide level2 center">
+<h2>Questions?</h2>
+</section></section>
+<section>
+<section id="extracting-multiword-sequences" class="title-slide slide level1 center">
+<h1>Extracting multiword sequences</h1>
+<p><em>Recurrence and co-occurrence</em></p>
 </section>
 <section class="slide level2">
 
@@ -256,46 +636,176 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section id="extracting-recurrent-units" class="slide level2">
 <h2>Extracting recurrent units</h2>
+<p>We can extract recurrent units by:</p>
+<ul>
+<li>Counting the number of contigous sequences over a reference corpus</li>
+<li>Manually filter them OR measuring Strengths Of Association</li>
+</ul>
 </section>
 <section id="n-grams" class="slide level2">
 <h2>N-grams</h2>
 <ul>
-<li>N-grams: contiguous sequences of n words</li>
-</ul>
-<p><strong>Example</strong>: I have not had Gyutan yet this time.</p>
-<p><strong>Bigram</strong>: [I have] [have not] [not had] … [this time].</p>
-<p><strong>Trigram</strong>: [I have not] [have not had] [not had Gyutan] …</p>
+<li>N-grams: contiguous sequences of n words
 <ul>
-<li>What do you think this contains?</li>
-</ul>
-</section>
-<section id="pos-sensitive-n-grams" class="slide level2">
-<h2>POS sensitive N-grams</h2>
-</section>
-<section id="lexical-bundles" class="slide level2">
-<h2>Lexical bundles</h2>
-<ul>
-<li><p>“Fixed sequence of words that recur frequently”</p></li>
-<li><p>N-gram plus manual filtering</p></li>
-<li><p>Biber et al.&nbsp;(2004) found three important “functions” of</p>
-<ul>
-<li>Referential</li>
-<li>Stance</li>
-<li>Discoursal</li>
+<li>Take N-words using a sliding window approach.</li>
 </ul></li>
 </ul>
+<p><strong>Example</strong>: <code>I have not had Gyutan yet this time.</code></p>
+<p><strong>Bigram</strong>: <code>[I have] [have not] [not had] ... [this time].</code></p>
+<p><strong>Trigram</strong>: <code>[I have not] [have not had] [not had Gyutan] ...</code></p>
 </section>
-<section id="referential-bundles" class="slide level2">
-<h2>Referential bundles</h2>
+<section id="top-12-n-grams-in-brown-corpus" class="slide level2">
+<h2>Top 12 N-grams in BROWN corpus</h2>
+
+<img data-src="../../assets/session-7/n-grams.png" class="r-stretch quarto-figure-center"><p class="caption">4-grams corpus</p></section>
+<section id="n-grams-in-brown-corpus-111th---122nd" class="slide level2">
+<h2>N-grams in BROWN corpus (111th - 122nd)</h2>
+
+<img data-src="../../assets/session-7/n-grams_111.png" class="r-stretch quarto-figure-center"><p class="caption">4-grams from 111-122</p></section>
+<section id="lexical-bundles" class="slide level2">
+<h2>Lexical bundles</h2>
+<div style="font-size:60%">
+<ul>
+<li>“Fixed sequence of words that recur frequently”
+<ul>
+<li>Essentially, N-grams plus manual filtering and categorization</li>
+</ul></li>
+<li>Biber (2004) identified lexical bundles from <code>Classroom teaching</code>, <code>Textbooks</code>, <code>Conversation</code> and <code>Academic prose</code>
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../assets/session-7/T2K-SWAL.png"></p>
+<figcaption>T2K-SWAL</figcaption>
+</figure>
+</div></li>
+</ul></li>
+</ul>
+</div>
+<div style="font-size:40%">
+<ul>
+<li>Biber, D. (2004). If you look at …: Lexical Bundles in University Teaching and Textbooks. Applied Linguistics, 25(3), 371–405. https://doi.org/10.1093/applin/25.3.371</li>
+</ul>
+</div>
 </section>
-<section id="stance-bundles" class="slide level2">
-<h2>Stance bundles</h2>
+<section id="t2k-swal-corpus" class="slide level2">
+<h2>T2K-SWAL corpus</h2>
+<div style="font-size:70%">
+<ul>
+<li>Attempts to represent <strong>university language</strong></li>
+</ul>
+<table class="caption-top">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Perspective</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Genre representation</strong></td>
+<td>“<code>classroom teaching</code>, <code>office hours</code>, <code>study groups</code>, <code>on-campus service encounters</code>, <code>textbooks</code>, <code>course packs</code>, and other written materials e.g.&nbsp;<code>university catalogues</code>, <code>brochures</code>.” (Biber et al., 2004)</td>
+</tr>
+<tr class="even">
+<td><strong>Disciplines</strong></td>
+<td><code>Business</code>, <code>Education</code>, <code>Engineering</code>, <code>Humanities</code>, <code>Natural Science</code>, and <code>Social Science</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Educational level</strong></td>
+<td><code>Lower devision undergrad</code>, <code>Upper devision undergrad</code>, and <code>Graduate</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Regional variation</strong></td>
+<td><code>Northern Arizona University</code>, <code>Iowa State University</code>, <code>California State University at Sacramento</code>, <code>Georgia State University</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- ## Categorizing lexical bundles
+
+Look at the following list of lexical bundles, try to classify them into different categories.
+
+::: {style="font-size:80%"}
+
+::: {.columns}
+::: {.column}
+
+-  you don't have to
+-  what I want to
+-  is based on the
+-  at the end of
+-  when we get to
+
+
+:::
+::: {.column}
+
+- I would like to
+- does that make sense
+- as a result of
+- it is important to
+- the end of the
+:::
+::: 
+
+::: -->
 </section>
-<section id="discourse-bundles" class="slide level2">
-<h2>Discourse bundles</h2>
+<section id="methods-to-identify-lexical-bundles" class="slide level2">
+<h2>Methods to identify lexical bundles</h2>
+<ul>
+<li>Used n-grams to compile a first list.</li>
+<li>Filtered the list with <strong>40 times per million</strong> threshold.</li>
+<li>Kept four-word sequences</li>
+<li>Range requirements was set to 5 texts.</li>
+</ul>
+</section>
+<section id="communicative-functions" class="slide level2">
+<h2>Communicative Functions</h2>
+<div style="font-size:75%">
+<ul>
+<li>Biber et al.&nbsp;(2004) presented three important “functions” of bundles</li>
+</ul>
+<table class="caption-top">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 43%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Referential</td>
+<td>Sequences that “makes direct referents to physical or abstract entities”.</td>
+<td><code>there's a lot of</code>, <code>a little bit of</code>, <code>in terms of the</code>, <code>as a result of</code></td>
+</tr>
+<tr class="even">
+<td>Stance</td>
+<td>“expresses attitudes or assessments of certainty that frame some other proposition”</td>
+<td><code>I don't know if</code>, <code>are more likely</code>, <code>you might want to</code>, <code>it is important to</code></td>
+</tr>
+<tr class="odd">
+<td>Discourse organizer</td>
+<td>signals textual relations between current and previous/upcoming discourse</td>
+<td><code>if you look at</code>, <code>let's have a look</code>, <code>I mean you know</code></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="classify-the-following-bundles-into-three-categories" class="slide level2">
 <h2>Classify the following bundles into three categories</h2>
+<ul>
+<li><strong>Choice</strong>: <code>Referential</code>, <code>Stance</code>, <code>Discourse</code></li>
+</ul>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -305,11 +815,46 @@ Masaki EGUCHI, Ph.D.
 </thead>
 <tbody>
 <tr class="odd">
-<td>if you say so</td>
+<td>greater than or equal</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>I don’t know how</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>you have to be</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>on the other hand</td>
 <td></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="practical-considerations" class="slide level2">
+<h2>Practical considerations</h2>
+<p>To be able to identify interesting <strong>recurrent patterns</strong></p>
+<ul>
+<li>The size of the corpus;</li>
+<li>lengths of each text in corpuss</li>
+<li>Representation of <strong>genre</strong>, <strong>topic</strong>, <strong>register</strong></li>
+<li>Reliability issue of manual classification of functions</li>
+</ul>
+</section>
+<section id="summary-of-recurrent-units" class="slide level2">
+<h2>Summary of recurrent units</h2>
+<ul>
+<li><em>N</em>-gram search (counting contiguous sequences of <em>n</em>-words) allows recurrent linguistic patterns to emerge.
+<ul>
+<li>N-grams serve as first list for lexical bundle.</li>
+</ul></li>
+<li>Lexical bundles are automatically identified, then filtered with frequency.
+<ul>
+<li>They are manually classified into functional categories.</li>
+</ul></li>
+</ul>
 </section></section>
 <section>
 <section id="co-occurrence" class="title-slide slide level1 center">
@@ -318,31 +863,122 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section id="extracting-co-occurring-units-or-collocations" class="slide level2">
 <h2>Extracting co-occurring units OR Collocations</h2>
-<p>What are the differences between the following two terms?</p>
+<p>When we talk about co-occurrence, things are a bit more complex.</p>
 <ul>
-<li>Phraseological approach</li>
-<li>Frequency-based approach</li>
+<li>Let’s consider <code>meet + expectation</code></li>
+<li>Can you make 3 sentences using this collocation?</li>
+</ul>
+</section>
+<section id="examples-from-you" class="slide level2">
+<h2>Examples from you</h2>
+</section>
+<section id="the-nature-of-collocation" class="slide level2">
+<h2>The nature of collocation</h2>
+<ul>
+<li>As collocation is about “preferences based on conventional uses”, or more precisely,</li>
 </ul>
 </section>
 <section id="window-based-approach-basic" class="slide level2">
 <h2>Window-based approach (Basic)</h2>
+<ul>
+<li>Window-based approach is most widely used (including AntConc).
+<ul>
+<li><p>It counts the number of words within <strong>a specified window</strong></p></li>
+<li><p>e.g., +/- 4 words window = counts items 4 words <strong>before</strong> and <strong>after</strong> the node word.</p>
+<pre><code>I    strongly  think  the  expectation  was  met   for  the  ...
+[L4]   [L3]    [L2]  [L1]   [ node ]   [R1]  [R2] [R3]  [R4]</code></pre></li>
+</ul></li>
+<li>This is called <strong>surface-level</strong> co-occurrences (Evert, 2008)</li>
+</ul>
+</section>
+<section id="window-based-approach" class="slide level2">
+<h2>Window-based approach</h2>
+<ul>
+<li class="fragment"><p>Sometimes, the collocates can be more distant.</p>
+<pre><code>I    strongly  think  the  expectation  for  the  final exam  was  met ....
+[L4]   [L3]    [L2]  [L1]   [ node ]   [R1]  [R2] [R3]  [R4]      [???]</code></pre></li>
+<li class="fragment"><p>Cannot capture this unless we expand the window….</p></li>
+<li class="fragment"><p>But this raises trade-off between noises and more accurate retrieval.</p></li>
+</ul>
 </section>
 <section id="dependency-parsing-advanced" class="slide level2">
 <h2>Dependency Parsing (Advanced)</h2>
+<ul>
+<li>More recent research uses <strong>Syntactic co-occurrences</strong></li>
+<li>We can parse grammatical relations using <strong>dependency parsing</strong></li>
+<li><strong>Dependency parsing (係受け解析)</strong> (more details tomorrow) can indicate grammatical relations between words.</li>
+</ul>
+</section>
+<section id="dependency-parsing-advanced-1" class="slide level2">
+<h2>Dependency Parsing (Advanced)</h2>
+<ul>
+<li>With dependency, we can capture <code>meet + expectation</code> accurately (even if they are far away).</li>
+</ul>
+
+<img data-src="../../assets/session-7/distant-col.png" class="r-stretch quarto-figure-center"><p class="caption">Dependency Parsing example</p></section>
+<section id="typical-dependency-relations-for-lexical-collocations" class="slide level2">
+<h2>Typical dependency relations for lexical collocations</h2>
+<div style="font-size:75%">
+<p>A few depedency labels are useful to identify collocations</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 28%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dependency label</th>
+<th>Name</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>amod</code></td>
+<td>Adjectival Modifier</td>
+<td><code>significant + change</code></td>
+</tr>
+<tr class="even">
+<td><code>dobj</code></td>
+<td>Direct Object</td>
+<td><code>play + role</code> in active voice (<em>play a role</em>)</td>
+</tr>
+<tr class="odd">
+<td><code>nsubjpass</code></td>
+<td>Nominal subject of a passive construction</td>
+<td><code>play + role</code> in passive voice (<em>role is played</em>)</td>
+</tr>
+<tr class="even">
+<td><code>advmod</code></td>
+<td>Adverbial modifier</td>
+<td><code>change + incrementally</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="summary-for-co-occurrence" class="slide level2">
+<h2>Summary for co-occurrence</h2>
+<p>There are two main ways to capture co-occurrence - Window-based approach (AntConc) - Dependency-based approach (needs advanced NLP tools; but we will cover).</p>
 </section></section>
 <section>
 <section id="operationalizing-association" class="title-slide slide level1 center">
 <h1>Operationalizing association</h1>
 
 </section>
-<section id="why-frequency-is-not-sufficient" class="slide level2">
-<h2>Why frequency is not sufficient?</h2>
-<p>Discuss: - Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?</p>
-<example of="" highly="" frequent="" ngrams="" here="">
-</example></section>
+<section id="why-is-frequency-not-sufficient" class="slide level2">
+<h2>Why is frequency not sufficient?</h2>
+<p><strong>Discuss</strong>:</p>
+<ul>
+<li>Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?</li>
+</ul>
+
+<img data-src="../../assets/session-7/collocation-freq.png" class="r-stretch quarto-figure-center"><p class="caption">collocation-freq</p></section>
 <section id="strengths-of-association-measures" class="slide level2">
 <h2>Strengths Of Association Measures</h2>
 <ul>
+<li><p><strong>The issue</strong>: A word can co-occur just because they are frequent by default.</p></li>
 <li><p>Strengths Of Association (SOA) provides ways to take “frequency” of individual words account.</p></li>
 <li><p>Several SOA measures are commonly used (Gablasova et al., 2017).</p>
 <ul>
@@ -353,54 +989,271 @@ Masaki EGUCHI, Ph.D.
 <li><p>Now let’s first look at expected cooccurrences.</p></li>
 </ul>
 </section>
+<section id="mathematical-look-into-collocational-association" class="slide level2">
+<h2>Mathematical look into collocational association</h2>
+<p>When we think about “association”, we can think about it from a probability perspective.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th># with word 1</th>
+<th># without word 1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td># with word 2</td>
+<td>Frequency of collocation</td>
+<td>Remaining frequency of word 2</td>
+</tr>
+<tr class="even">
+<td># without word 2</td>
+<td>Remaining frequency of word 1</td>
+<td>Rest of corpus size</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="suppose-we-have-following" class="slide level2">
+<h2>Suppose we have following</h2>
+<div style="font-size:75%">
+<ul>
+<li><strong>Collocation freq</strong>: 50</li>
+<li><strong>Word 1</strong>: 500</li>
+<li><strong>Word 2</strong>: 500</li>
+<li><strong>Entire corpus</strong>: 1,000,000</li>
+</ul>
+</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th># with word 1</th>
+<th># without word 1</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td># with word 2</td>
+<td>50</td>
+<td>450</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td># without word 2</td>
+<td>450</td>
+<td>999,050</td>
+<td>999,500</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>500</td>
+<td>999,500</td>
+<td>1,000,000</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="expected-ocurrences" class="slide level2">
 <h2>Expected Ocurrences</h2>
 <ul>
 <li>Expected co-occurrences are usually calculated as joint probability of words in the corpus.</li>
 </ul>
-<p><span class="math display">\[E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}\]</span></p>
+<p><span class="math display">\[E_{11} = {(\text{freq of node word} * \text{freq of collocate } ) \over Corpus size}\]</span></p>
+<p>Let’s calculate the expected frequency.</p>
+<ul>
+<li>If word1 and word 2 occur 500 times each in a million word corpus…</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>(<span class="dv">500</span> <span class="sc">*</span> <span class="dv">500</span>) <span class="sc">/</span> <span class="dv">1000000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.25</code></pre>
+</div>
+</div>
 </section>
 <section id="mutual-information" class="slide level2">
 <h2>Mutual Information</h2>
-<p><span class="math display">\[MI = {log_2{ Observed freq \over Expected frequency }}\]</span></p>
+<p>Now we are ready to calculate MI.</p>
+<ul>
+<li>The expected frequency = .25</li>
+<li>The observed frequency = 500</li>
+</ul>
+<p><span class="math display">\[MI = {log_2{ \text{Observed freq} \over \text{Expected frequency} }}\]</span></p>
+<p>Let’s do this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>MI <span class="ot">=</span> <span class="fu">log</span>(<span class="dv">500</span><span class="sc">/</span><span class="fl">0.25</span>, <span class="at">base =</span> <span class="dv">2</span>)</span>
+<span id="cb5-2"><a></a>MI</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10.96578</code></pre>
+</div>
+</div>
+</section>
+<section id="mutual-information-1" class="slide level2">
+<h2>Mutual Information</h2>
+<p>MI is the ratio between observed and expected frequency in logarithmic scale.</p>
+<p><span class="math display">\[MI = {log_2{ \text{Observed freq} \over \text{Expected frequency} }}\]</span></p>
 </section>
 <section id="t-score" class="slide level2">
 <h2>T-score</h2>
-<p><will insert="" formula=""></will></p>
+<p>T-score is calculated as follows:</p>
+<ul>
+<li><span class="math inline">\(\text{T-score} = {\text{Observed}  - \text{Expected}  \over \sqrt{Observed}}\)</span></li>
+</ul>
+<p>Using the same numbers:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>tscore <span class="ot">=</span> (<span class="dv">50</span> <span class="sc">-</span> <span class="fl">0.25</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="dv">50</span>)</span>
+<span id="cb7-2"><a></a>tscore</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.035712</code></pre>
+</div>
+</div>
 </section>
 <section id="logdice" class="slide level2">
 <h2>LogDice</h2>
-<p><will insert="" formula=""></will></p>
-</section>
-<section id="pros-and-cons-of-different-association-measures" class="slide level2">
-<h2>pros and cons of different association measures</h2>
 <ul>
-<li>You will examine this in session 8, but</li>
+<li>LogDice is somewhat different in calculation.</li>
+<li>It does not use <strong>Expected frequency</strong></li>
+<li>That is, it does not rely on “corpus size” normalization.</li>
 </ul>
+<p><span class="math inline">\(\text{log Dice} = 14 + \log_2( {{2 \times Observed} \over {R_1 + C_1}})\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>logdice <span class="ot">=</span> <span class="dv">14</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">2</span> <span class="sc">*</span> <span class="dv">50</span> <span class="sc">/</span> (<span class="dv">500</span> <span class="sc">+</span> <span class="dv">500</span>), <span class="at">base =</span> <span class="dv">2</span>)</span>
+<span id="cb9-2"><a></a>logdice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10.67807</code></pre>
+</div>
+</div>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li>Major association measures are MI, T-score, and LogDice.</li>
+<li>We covered how to calculate each.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>MI; tscore; logdice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10.96578</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.035712</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10.67807</code></pre>
+</div>
+</div>
 </section></section>
 <section>
-<section id="operationalizing-text-level-measures" class="title-slide slide level1 center">
-<h1>Operationalizing text-level measures</h1>
+<section id="phraseological-complexity" class="title-slide slide level1 center">
+<h1>Phraseological complexity</h1>
+
+</section>
+<section id="phraseological-complexity-1" class="slide level2">
+<h2>Phraseological complexity</h2>
+<div style="font-size:70%">
+<p>Paquot (2019): “the range of phraseological units that surface in language production and the degree of sophistication of such phraseological units” (p.&nbsp;124)</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Constructs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Phraseological diversity</td>
+<td>“a (derived) type–token ratio representing <strong>the number of unique phraseological units</strong> to the total number of phraseological units, by analogy with the measurement of lexical diversity.” (p.&nbsp;125)</td>
+</tr>
+<tr class="even">
+<td>Phraseological sophistication</td>
+<td>“the selection of word combinations that are ‘<strong>appropriate</strong> to the topic and style of writing, rather than just general, everyday vocabulary’” (p.&nbsp;125)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size:40%">
 <ul>
-<li><p>When we derive text-level measures, we often take the average.</p></li>
-<li><p>However, by doing so, we might lose important information about the details.</p></li>
-<li><p>Eguchi &amp; Kyle tried to use band-based operationalization to describe the pattern.</p></li>
+<li>Paquot, M. (2018). Phraseological Competence: A Missing Component in University Entrance Language Tests? Insights From a Study of EFL Learners’ Use of Statistical Collocations. Language Assessment Quarterly, 15(1), 29–43. https://doi.org/10.1080/15434303.2017.1405421</li>
+<li>Paquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221</li>
+</ul>
+</div>
+</section>
+<section id="operationalizing-phraseological-diversity" class="slide level2">
+<h2>Operationalizing Phraseological Diversity</h2>
+<div style="font-size: 80%">
+<ul>
+<li>Not much progress compared to lexical diversity.</li>
+<li>Paquot (2019) uses <strong>RootTTR</strong> for operationalization
+<ul>
+<li>PU = Phraseological unit</li>
+</ul></li>
+</ul>
+<p><span class="math inline">\(\text{Diversity of PU} = {\text{Type of PU} \over \sqrt{\text{Token of PU}}}\)</span></p>
+<ul>
+<li>Given the findings on lexical sophistication, an application of Moving-Average could be interesting.</li>
+</ul>
+</div>
+</section>
+<section id="operationalizing-phraseological-sophistication" class="slide level2">
+<h2>Operationalizing Phraseological Sophistication</h2>
+<ul>
+<li>As with lexical sophistication measures, typically <code>Mean</code> is typically used.</li>
+</ul>
+<p><span class="math inline">\(\text{Sophistication of PU} = {\text{Total score for SOAs} \over \text{# of Token with SOA values}}\)</span></p>
+<ul>
+<li>e.g.,<span class="math inline">\(\text{Mean MI for amod} = {\text{Total MI score for amod} \over \text{# of amod pairs with MI}}\)</span></li>
 </ul>
 </section>
-<section class="slide level2">
+<section id="basic-findings" class="slide level2">
+<h2>Basic findings</h2>
+<div style="font-size:70%">
+<ul>
+<li><strong>Recent studies demonstrate benefits</strong> of adding <em>phraseological complexity</em> measures to explain second language proficiency:
+<ul>
+<li>Eguchi &amp; Kyle (2020) in Oral Proficieincy Interview</li>
+<li>Paquot (2019): Dependency collocation explained more variance than syntactic complexity</li>
+<li>Kyle &amp; Eguchi (2021): Dependency-based collocation explained TOEFL speaking scores more than n-gram measures.</li>
+</ul></li>
+<li>More research should integrate <em>Phraseological Complexity</em> more in explaining <strong>developmental patterns</strong>
+<ul>
+<li>e.g., Siyanova &amp; Spina (2020)</li>
+</ul></li>
+</ul>
+</div>
+<div style="font-size:40%">
+<ul>
+<li>Paquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221</li>
+<li>Eguchi, M., &amp; Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637</li>
+<li>Kyle, K., &amp; Eguchi, M. (2021). Automatically assessing lexical sophistication using word, bigram, and dependency indices. In Perspectives on the L2 phrasicon: The view from learner corpora (pp.&nbsp;126–151).</li>
+<li>Siyanova‐Chanturia, A., &amp; Spina, S. (2020). Multi‐Word Expressions in Second Language Writing: A Large‐Scale Longitudinal Learner Corpus Study. Language Learning, 70(2), 420–463. https://doi.org/10.1111/lang.12383</li>
+</ul>
+</div>
+</section>
+<section id="summary-1" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li>Corpus-based approach can look at <strong>recurrence</strong> and <strong>co-occurrence</strong></li>
+<li>A central methods to the recurrence is <strong>n-gram search</strong></li>
+<li>For co-occurence, we have window-based (surface) and dependency-based (syntactic) collocations.</li>
+<li>SOA allows you to quantify how strongly associated two words are</li>
+</ul>
+</section>
+<section id="what-questions-do-you-have" class="slide level2 center">
+<h2>What questions do you have?</h2>
+
+
 
 </section></section>
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
-
-</section>
-
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
-
-
-
-</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -618,6 +1471,44 @@ Masaki EGUCHI, Ph.D.
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

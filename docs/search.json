@@ -961,7 +961,7 @@
     "href": "2025/sessions/day3/session7.html#materials",
     "title": "Session 7",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 3",
@@ -1045,7 +1045,7 @@
     "href": "2025/sessions/day3/session9.html#dive-deeper---recommended-readings",
     "title": "Session 9",
     "section": "🌊 Dive Deeper - Recommended Readings",
-    "text": "🌊 Dive Deeper - Recommended Readings\n\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221\nEguchi, M., & Kyle, K. (2023). L2 collocation profiles and their relationship with vocabulary proficiency: A learner corpus approach. Journal of Second Language Writing, 60, 100975. https://doi.org/10.1016/j.jslw.2023.100975",
+    "text": "🌊 Dive Deeper - Recommended Readings\n\nEguchi, M., & Kyle, K. (2023). L2 collocation profiles and their relationship with vocabulary proficiency: A learner corpus approach. Journal of Second Language Writing, 60, 100975. https://doi.org/10.1016/j.jslw.2023.100975\nKyle, K., & Eguchi, M. (2023). Assessing spoken lexical and lexicogrammatical proficiency using features of word, bigram, and dependency bigram use. The Modern Language Journal, 107(2), 531–564. https://doi.org/10.1111/modl.12845\nKyle, K., Crossley, S. A., & Jarvis, S. (2021). Assessing the Validity of Lexical Diversity Indices Using Direct Judgements. Language Assessment Quarterly, 18(2), 154–170. https://doi.org/10.1080/15434303.2020.1844205\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221\nSiyanova‐Chanturia, A., & Spina, S. (2020). Multi‐Word Expressions in Second Language Writing: A Large‐Scale Longitudinal Learner Corpus Study. Language Learning, 70(2), 420–463. https://doi.org/10.1111/lang.12383",
     "crumbs": [
       "Sessions",
       "Day 3",
@@ -1057,7 +1057,7 @@
     "href": "2025/sessions/day3/session9.html#materials",
     "title": "Session 9",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 3",
@@ -2921,14 +2921,42 @@
     "href": "2025/slides/session-8.html#generating-n-gram-list-with-antconc-10-mins",
     "title": "Session 8: Hands-on activity #4",
     "section": "Generating N-gram list with AntConc (10 mins)",
-    "text": "Generating N-gram list with AntConc (10 mins)\n\nLet’s generate a list of n-grams.\nYou can use either English or Japanese.\nFor Japanese you can use Aozora 500 data we used.\nFor English you can use BROWN corpus data we used."
+    "text": "Generating N-gram list with AntConc (10 mins)\n\nLet’s generate a list of n-grams.\nYou can use either English or Japanese.\nFor Japanese you can use Aozora 500 data we used.\nFor English you can use Ame06 or B06 data in AntConc."
+  },
+  {
+    "objectID": "2025/slides/session-8.html#three-word-sequences",
+    "href": "2025/slides/session-8.html#three-word-sequences",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "three-word sequences",
+    "text": "three-word sequences\n\nYou can (a) load corpus, (b) go to N-gram, (c) apply settings, and (d) hit start.\n\n\nTrigram in BE06"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#five-word-sequences",
+    "href": "2025/slides/session-8.html#five-word-sequences",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "five-word sequences",
+    "text": "five-word sequences\n\nNow let’s examine 5 word sequences\n\n\nQuintgram in BE06"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#jumping-to-kwic-view-from-the-list",
+    "href": "2025/slides/session-8.html#jumping-to-kwic-view-from-the-list",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Jumping to KWIC view from the list",
+    "text": "Jumping to KWIC view from the list\nIn AntConc, we can jump from the item in the list to show KWIC.\n\nKWIC"
   },
   {
     "objectID": "2025/slides/session-8.html#generating-p-frame-list-with-antconc",
     "href": "2025/slides/session-8.html#generating-p-frame-list-with-antconc",
     "title": "Session 8: Hands-on activity #4",
     "section": "Generating P-frame list with AntConc",
-    "text": "Generating P-frame list with AntConc\n\nLet’s now generate p-frame.\nYou can use either English or Japanese.\n\nWhen using Japanese you can use Aozora 500 data we used."
+    "text": "Generating P-frame list with AntConc\n\nLet’s now generate p-frame.\nSet openslot to 1. Hit start. What do you see?\n\n\nP-frames"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#questions",
+    "href": "2025/slides/session-8.html#questions",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Questions?",
+    "text": "Questions?"
   },
   {
     "objectID": "2025/slides/session-8.html#recap-what-is-collocation",
@@ -3071,8 +3099,8 @@
     "text": "Report exactly what you did\nReplicability is key to science.\nFor example, you might say.\n\ne.g., I used AntCont version 4.2.x\ne.g., MI was calculated using the following formula\n\n\\(MI = {log_2{ Observed freq \\over Expected frequency }}\\)\nwhere the expected frequency is calculated as:\n\\(E_{11} = {(freq_{node} * freq_{collocate} * \\color{red}{window size}) \\over Corpus size}\\)"
   },
   {
-    "objectID": "2025/slides/session-8.html#questions",
-    "href": "2025/slides/session-8.html#questions",
+    "objectID": "2025/slides/session-8.html#questions-1",
+    "href": "2025/slides/session-8.html#questions-1",
     "title": "Session 8: Hands-on activity #4",
     "section": "Questions?",
     "text": "Questions?"
@@ -3082,7 +3110,14 @@
     "href": "2025/slides/session-8.html#lets-finish-it-up",
     "title": "Session 8: Hands-on activity #4",
     "section": "Let’s finish it up",
-    "text": "Let’s finish it up\n\nLogDice:\n\nOurs: 6.548\nAntConc: 6.551 Likely multiplying window size in the denominator.\nCasualConc: 11.14 ???\n\nT-score:\n\nOurs: 2.927\nAntConc: 2.928 (Almost identical)\nCasualConc: 2.99 (close)"
+    "text": "Let’s finish it up\n\nR1 = Frequency of node word\nC1 = Frequency of collocate\n\\(MI = {log_2{ Observed freq \\over Expected frequency }}\\)\n\\(\\text{T-score} = {\\text{Observed}  - \\text{Expected}  \\over \\sqrt{Observed}}\\)\n\\(\\text{log Dice} = 14 + \\log_2( {{2 \\times Observed} \\over {R_1 + C_1}})\\)"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#results-should-look-like-something",
+    "href": "2025/slides/session-8.html#results-should-look-like-something",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Results should look like something",
+    "text": "Results should look like something\n\nLogDice:\n\nOurs: 6.548\nAntConc: 6.551 Likely multiplying window size in the denominator.\nCasualConc: 11.14 ???\n\nT-score:\n\nOurs: 2.927\nAntConc: 2.928 (Almost identical)\nCasualConc: 2.99 (close)"
   },
   {
     "objectID": "2025/slides/session-8.html#understanding-collocational-characteristics-by-plotting-20-mins",
@@ -3099,11 +3134,18 @@
     "text": "Discussion: Describe the characteristics of each index\n\nWhat are the characteristics of SOA indices?\n\nT-score\nMI\nLogDice"
   },
   {
-    "objectID": "2025/slides/session-8.html#advanced-how-can-i-generate-a-collocation-list",
-    "href": "2025/slides/session-8.html#advanced-how-can-i-generate-a-collocation-list",
+    "objectID": "2025/slides/session-8.html#if-time-allowed-how-can-i-generate-a-collocation-list",
+    "href": "2025/slides/session-8.html#if-time-allowed-how-can-i-generate-a-collocation-list",
     "title": "Session 8: Hands-on activity #4",
-    "section": "(Advanced) how can I generate a collocation list?",
-    "text": "(Advanced) how can I generate a collocation list?\n\nYou can take a look at the following notebook"
+    "section": "(If time allowed) how can I generate a collocation list?",
+    "text": "(If time allowed) how can I generate a collocation list?\n\nYou can take a look at the following notebook"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#reflection",
+    "href": "2025/slides/session-8.html#reflection",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Reflection",
+    "text": "Reflection\n\nYou can now do the followings:\n\nGenerate lists of n-grams and p-frames using AntConc.\nSearch for collocates with AntConc.\nCalculate major Strengths of Association (SOA) measures by hand."
   },
   {
     "objectID": "2025/assignments/hands-on-4/draft.html",
@@ -3535,28 +3577,49 @@
     "href": "2025/slides/session-9.html#step-2-understand-and-choose-the-corpus",
     "title": "Session 9: Learner Corpus Mini-Research",
     "section": "Step 2: Understand and choose the corpus",
-    "text": "Step 2: Understand and choose the corpus\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant, 2023)\nICNALE corpus (Edited Essay OR GRA)\nSome Japanese corpus here (Ask Masaki about availability)."
+    "text": "Step 2: Understand and choose the corpus\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant, 2023)\nICNALE corpus (Edited Essay OR GRA)\nIf you have a corpus you want to analyze, let Masaki know!"
   },
   {
-    "objectID": "2025/slides/session-9.html#lets-do-step-1-and-2",
-    "href": "2025/slides/session-9.html#lets-do-step-1-and-2",
+    "objectID": "2025/slides/session-9.html#understanding-the-corpus-contents",
+    "href": "2025/slides/session-9.html#understanding-the-corpus-contents",
     "title": "Session 9: Learner Corpus Mini-Research",
-    "section": "Let’s do Step 1 and 2",
-    "text": "Let’s do Step 1 and 2\nResearch questions\nWhat would you like to know?\n\nHow learners develop their language ability across time?\nWhat defines “more proficient” language use?\nHow situational variables of writing/speaking impact the language production?\nHow does production of X change across time/proficiency?\nAnything else?"
+    "section": "Understanding the corpus contents",
+    "text": "Understanding the corpus contents\n\nYou can look at followings:\n\nmeta-data (the additional information about the corpus files)\nseveral text files"
   },
   {
-    "objectID": "2025/slides/session-9.html#lets-do-step-1-and-2-1",
-    "href": "2025/slides/session-9.html#lets-do-step-1-and-2-1",
+    "objectID": "2025/slides/session-9.html#gig-corpus",
+    "href": "2025/slides/session-9.html#gig-corpus",
     "title": "Session 9: Learner Corpus Mini-Research",
-    "section": "Let’s do Step 1 and 2",
-    "text": "Let’s do Step 1 and 2\nChoosing a right corpus\nWhat does each corpus contain as a meta data?\n\nGrowth in Grammar (GiG) corpus (Durrant, 2023)\nICNALE corpus (Edited Essay OR GRA)\nSome learner corpora for Japanese (More difficult).\n\n\nUnderstand what it offers and doesn’t.\nPick one corpus to move forward."
+    "section": "GiG corpus",
+    "text": "GiG corpus\n\nFor detailed information, see Table 2.1 in Durrant (2023)\n\n\nGiG metadata"
+  },
+  {
+    "objectID": "2025/slides/session-9.html#icnale-gra",
+    "href": "2025/slides/session-9.html#icnale-gra",
+    "title": "Session 9: Learner Corpus Mini-Research",
+    "section": "ICNALE GRA",
+    "text": "ICNALE GRA\nICNALE GRA documents 120 essays evaluated by 80 people. - These 80 people are from different backgrounds. - You can basically use average essay ratings.\n\nICNALE metadata"
+  },
+  {
+    "objectID": "2025/slides/session-9.html#step-1-2-formluating-research-questions",
+    "href": "2025/slides/session-9.html#step-1-2-formluating-research-questions",
+    "title": "Session 9: Learner Corpus Mini-Research",
+    "section": "Step 1 & 2: Formluating research questions",
+    "text": "Step 1 & 2: Formluating research questions\n\nWhat would you like to know?\n\nHow learners develop their language ability across time?\nWhat defines “more proficient” language use?\nHow situational variables of writing/speaking impact the language production?\nHow does production of X change across time/proficiency?\nAnything else?\nDo not forget to specify constructs!"
+  },
+  {
+    "objectID": "2025/slides/session-9.html#step-2-choosing-a-right-corpus",
+    "href": "2025/slides/session-9.html#step-2-choosing-a-right-corpus",
+    "title": "Session 9: Learner Corpus Mini-Research",
+    "section": "Step 2: Choosing a right corpus",
+    "text": "Step 2: Choosing a right corpus\nBased on the research question, which corpus should you choose?\n\nGrowth in Grammar (GiG) corpus (Durrant, 2023)\nICNALE corpus (Edited Essay OR GRA)\n\n\nUnderstand what it offers and doesn’t.\nPick one corpus to move forward."
   },
   {
     "objectID": "2025/slides/session-9.html#step-3-construct-hypothesis",
     "href": "2025/slides/session-9.html#step-3-construct-hypothesis",
     "title": "Session 9: Learner Corpus Mini-Research",
     "section": "Step 3: Construct hypothesis",
-    "text": "Step 3: Construct hypothesis\n\nOnce you’ve identified broad research questions and corpus, speculate on possible results.\nUse what you’ve learned so far about lexical richness.\n\nLexical diversity\nLexical sophistication\nPhraseological sophistication\n\nWhich ones are relevant to your questions?"
+    "text": "Step 3: Construct hypothesis\n\nOnce you’ve articulated broad research questions and chose a corpus, speculate on possible results.\nUse what you’ve learned so far about lexical richness.\n\nLexical diversity\nLexical sophistication\nPhraseological complexity\n\nWhich ones are relevant to your questions?"
   },
   {
     "objectID": "2025/slides/session-9.html#step-4-select-index",
@@ -3570,14 +3633,14 @@
     "href": "2025/slides/session-9.html#step-5-compute-the-index",
     "title": "Session 9: Learner Corpus Mini-Research",
     "section": "Step 5: Compute the index",
-    "text": "Step 5: Compute the index\nOkay now it’s time to do some analysis!\n\nWhich one are you going to use:\n\nTAALED\nTAALES\nLexical profiler\nCustom list in Simple Text Analyzer?"
+    "text": "Step 5: Compute the index\nOkay now it’s time to do some analysis!\n\nWhich ones are you going to use:\n\nTAALED\nTAALES\nLexical profiler\nCustom list in Simple Text Analyzer?"
   },
   {
     "objectID": "2025/slides/session-9.html#step-6-conduct-analysis",
     "href": "2025/slides/session-9.html#step-6-conduct-analysis",
     "title": "Session 9: Learner Corpus Mini-Research",
     "section": "Step 6: Conduct analysis",
-    "text": "Step 6: Conduct analysis\nOnce you obtained the indices, it’s time to understand the pattern by plotting."
+    "text": "Step 6: Conduct analysis\nOnce you obtained the indices, it’s time to understand the pattern by plotting.\n\nUse simple analyzer to plot data from:\n\nGiG corpus\nICNALE\n\nThe simple text analyzer is made for that purpose."
   },
   {
     "objectID": "2025/slides/session-9.html#step-7-interpret-and-write-up-the-results",
@@ -4553,6 +4616,111 @@
     "text": "Download TagAnt and TAALED\n\nDownload TagAnt\nDownload Tool for the Automatic Analysis of Lexical Diversity (TAALED)\n\n\nTAALED"
   },
   {
+    "objectID": "2025/slides/session-7.html#corpus-lab-2-submission",
+    "href": "2025/slides/session-7.html#corpus-lab-2-submission",
+    "title": "Session 7: Multiword Units",
+    "section": "Corpus Lab 2: Submission",
+    "text": "Corpus Lab 2: Submission\n\n\nTask 1: Japanese Word Frequency List and small write-up (5 points)\nTask 2: Replication of Durrant’s analysis from Figure 4.19 (5 points)\n\nresearch question,\nhypothesis,\nplots, and\nresults\n\nTask 3: Comparison of two texts in terms of lexical sophistication (5 points)"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#corpus-lab-2-task-1",
+    "href": "2025/slides/session-7.html#corpus-lab-2-task-1",
+    "title": "Session 7: Multiword Units",
+    "section": "Corpus Lab 2: Task 1",
+    "text": "Corpus Lab 2: Task 1\n\nInstruction"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#task-1-compile-a-japanese-word-frequency-list",
+    "href": "2025/slides/session-7.html#task-1-compile-a-japanese-word-frequency-list",
+    "title": "Session 7: Multiword Units",
+    "section": "Task 1: Compile a Japanese Word Frequency list",
+    "text": "Task 1: Compile a Japanese Word Frequency list\n\nTask\nCompile a Japanese frequency list based on a corpus.\nResource\n\nDownload a Japanese text Aozora 500 from Google Drive.\nUse AntConc, TagAnt, and Simple Text Analyzer."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#submission-for-task-1",
+    "href": "2025/slides/session-7.html#submission-for-task-1",
+    "title": "Session 7: Multiword Units",
+    "section": "Submission for task 1",
+    "text": "Submission for task 1\n\n\nSubmit a frequency list .tsv or .txt.\nA short description of word frequency pattern in Japanese.\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes a frequency list of Japanese words based on Aozora 500\nprovides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#corpus-lab-2-task-2",
+    "href": "2025/slides/session-7.html#corpus-lab-2-task-2",
+    "title": "Session 7: Multiword Units",
+    "section": "Corpus Lab 2: Task 2",
+    "text": "Corpus Lab 2: Task 2"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#instruction",
+    "href": "2025/slides/session-7.html#instruction",
+    "title": "Session 7: Multiword Units",
+    "section": "Instruction",
+    "text": "Instruction\nGoal: to replicate analysis on GiG.\nYou will need to have access to both metadata file.\nThe corpus data is here."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#about-gig-meta-data",
+    "href": "2025/slides/session-7.html#about-gig-meta-data",
+    "title": "Session 7: Multiword Units",
+    "section": "About GiG meta data",
+    "text": "About GiG meta data\n\nGiG metadata documents the necessary data to use for plotting\n\nYear Group (X-axis in Figure 4.19)\nGenre (grouping variable in Figure 4.19)\n\n\n\nGiG Metadata"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#writing-up-research-question-hypothesis-and-results",
+    "href": "2025/slides/session-7.html#writing-up-research-question-hypothesis-and-results",
+    "title": "Session 7: Multiword Units",
+    "section": "Writing up research question, hypothesis, and results",
+    "text": "Writing up research question, hypothesis, and results\n\n\nResearch question?\nHypothesis: Write your own.\nResults: Write your own.\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023)."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#corpus-lab-2-task-3",
+    "href": "2025/slides/session-7.html#corpus-lab-2-task-3",
+    "title": "Session 7: Multiword Units",
+    "section": "Corpus Lab 2: Task 3",
+    "text": "Corpus Lab 2: Task 3"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#comparing-lexical-characteristics-of-two-texts",
+    "href": "2025/slides/session-7.html#comparing-lexical-characteristics-of-two-texts",
+    "title": "Session 7: Multiword Units",
+    "section": "Comparing lexical characteristics of two texts",
+    "text": "Comparing lexical characteristics of two texts\n\nGoals\n\nCompare and contrast two texts along with several lexical diversity metrics\nObserve differences in single-word and multiword sophistication\n\nData\n\nChoose two texts from the ICNALE GRA\nIf you are unsure, use choose from the following three files:\n\nGRA_PTJ0_124_ORIG.txt\nGRA_PTJ0_070_ORIG.txt\nGRA_PTJ0_112_ORIG.txt"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#step-1-qualitatively-compare-two-files",
+    "href": "2025/slides/session-7.html#step-1-qualitatively-compare-two-files",
+    "title": "Session 7: Multiword Units",
+    "section": "Step 1: Qualitatively compare two files",
+    "text": "Step 1: Qualitatively compare two files\n\nBefore we actually obtain lexical sophistication measures, compare two texts in terms of their lexical use.\nIn pairs, describe the strengths and weakeness in vocabulary use."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#step-2-hypothesis",
+    "href": "2025/slides/session-7.html#step-2-hypothesis",
+    "title": "Session 7: Multiword Units",
+    "section": "Step 2: Hypothesis",
+    "text": "Step 2: Hypothesis\n\nIn what way is one text more lexically sophisticated than the other?\n\nTry to come up with characteristics that describe the quality of word use in each text"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#step-3-pick-two-or-three-lexical-sophistication-variables",
+    "href": "2025/slides/session-7.html#step-3-pick-two-or-three-lexical-sophistication-variables",
+    "title": "Session 7: Multiword Units",
+    "section": "Step 3: Pick two or three lexical sophistication variables",
+    "text": "Step 3: Pick two or three lexical sophistication variables\nEnter the text into analyzer\nWe can also compare two texts in simple text analyzer.\n\ntwo-text"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#step-4-run-analyses",
+    "href": "2025/slides/session-7.html#step-4-run-analyses",
+    "title": "Session 7: Multiword Units",
+    "section": "Step 4: Run analyses",
+    "text": "Step 4: Run analyses\nPlots that compares two lists\n!"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#step-5-interpret-the-findings",
+    "href": "2025/slides/session-7.html#step-5-interpret-the-findings",
+    "title": "Session 7: Multiword Units",
+    "section": "Step 5: Interpret the findings",
+    "text": "Step 5: Interpret the findings\n\nLet’s discuss how the two text differ in lexical use from one another.\nUse the tables with token information and visualization to (dis)confirm your hypothesis\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes plots from one frequency index and one other type of index\nprovides desciption of how two texts differ in terms of the selected lexical sophistication indices."
+  },
+  {
     "objectID": "2025/slides/session-7.html#learning-objectives",
     "href": "2025/slides/session-7.html#learning-objectives",
     "title": "Session 7: Multiword Units",
@@ -4560,172 +4728,326 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nExplain different types of multiword units: collocation, n-grams, lexical bundles\nDemonstrate how major association strengths measures (t-score, Mutual Information, and LogDice) are calculated using examples"
   },
   {
-    "objectID": "2025/slides/session-7.html#warm-up-discussion",
-    "href": "2025/slides/session-7.html#warm-up-discussion",
+    "objectID": "2025/slides/session-7.html#lexical-richness",
+    "href": "2025/slides/session-7.html#lexical-richness",
     "title": "Session 7: Multiword Units",
-    "section": "Warm-up discussion",
-    "text": "Warm-up discussion\n\nWhy do you think multiword sequences are important?"
+    "section": "Lexical Richness",
+    "text": "Lexical Richness\n\nLexical Diversity\nLexical Sophistication\n\n→ These are not sufficient for complete analysis of learner language."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#remember-the-comparisons",
+    "href": "2025/slides/session-7.html#remember-the-comparisons",
+    "title": "Session 7: Multiword Units",
+    "section": "Remember the comparisons?",
+    "text": "Remember the comparisons?\n\nWhich one do you think reflect “better” vocabulary use?\n\n\nIs important for college students to have a part-time job? I think that has much opinion to answer it. The part-time job is a job that can do in partial time. So the college student can do part-time job when they has spare time (if they want). There are many reasons why the college student do part-time job (if they do).\n\nI find it hard to make a generalisation on whether it’s important or not for college students to have a part-time job, because this seems like something very individual and highly dependent on the individual student and their circumstances. Jobs serve a few main functions: to earn money, to gain experience, to get a head-start in a career, and to have something to do."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#rich-vocabulary-use",
+    "href": "2025/slides/session-7.html#rich-vocabulary-use",
+    "title": "Session 7: Multiword Units",
+    "section": "Rich vocabulary use?",
+    "text": "Rich vocabulary use?\n\n\n\n\ncollege students\nhave a part-time job\nmuch opinion to answer\npartial time\nspare time\n\nmany reasons\n\n\n\nmake a generalisation on\nthis seems like\nsomething very individual\nhighly dependent on\ncircumstances.\nserve functions"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#phraseology-is-an-important-addition",
+    "href": "2025/slides/session-7.html#phraseology-is-an-important-addition",
+    "title": "Session 7: Multiword Units",
+    "section": "Phraseology is an important addition",
+    "text": "Phraseology is an important addition\n\nResearch suggests that learners need to know “how to combine words”.\nPhraseological complexity (Paquot, 2019)\n\nWe will talk about it more later…\n\n\n\n\nPaquot, M. (2018). Phraseological Competence: A Missing Component in University Entrance Language Tests? Insights From a Study of EFL Learners’ Use of Statistical Collocations. Language Assessment Quarterly, 15(1), 29–43. https://doi.org/10.1080/15434303.2017.1405421\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221"
   },
   {
     "objectID": "2025/slides/session-7.html#usage-based-learning",
     "href": "2025/slides/session-7.html#usage-based-learning",
     "title": "Session 7: Multiword Units",
     "section": "Usage-based learning",
-    "text": "Usage-based learning\n\nThe idea that item-based learning facilitate learning of systematic rules.\nSo usage/exposure in communicative contexts allows the learner to extract grammatical rules/learn how to express certain things."
-  },
-  {
-    "objectID": "2025/slides/session-7.html#assessment-research-also-says",
-    "href": "2025/slides/session-7.html#assessment-research-also-says",
-    "title": "Session 7: Multiword Units",
-    "section": "Assessment research also says…",
-    "text": "Assessment research also says…\n\nPhraseology is considered important"
+    "text": "Usage-based learning\n\nThe idea that item-based learning facilitate acquisition of systematic aspects of language.\n\nRepeated exposure leads to abstraction of the schematic language unit.\n\nSo usage/exposure in communicative contexts allows the learner to extract grammatical rules/learn how to express a concept."
   },
   {
     "objectID": "2025/slides/session-7.html#definitions",
     "href": "2025/slides/session-7.html#definitions",
     "title": "Session 7: Multiword Units",
     "section": "Definitions",
-    "text": "Definitions\nMultiword Units/Sequences is a cover term for different things.\n\n\n\n\n\n\n\n\nFormula type\nDescription\nExamples\n\n\n\n\nPhrasal verbs\nverbs followed by an adverbial particle, where the phrase as a whole is used with a non-literal meaning\nblow up, shut down\n\n\nIdioms\na relatively fixed sequence of words with a non-literal, typically metaphorical meaning\nkick the bucket\n\n\nBinomials\nrecurrent conventional phrase of two words from the same POS, connected by a conjunction\nblack and white\n\n\n\netc."
+    "text": "Definitions\n\nMultiword Unit/Sequence is a cover term for different things.\n\n\n\n\n\n\n\n\nFormula type\nDescription\nExamples\n\n\n\n\nPhrasal verbs\nverbs followed by an adverbial particle, where the phrase as a whole is used with a non-literal meaning\nblow up, shut down\n\n\nIdioms\na relatively fixed sequence of words with a non-literal, typically metaphorical meaning\nkick the bucket\n\n\nBinomials\nrecurrent conventional phrase of two words from the same POS, connected by a conjunction\nblack and white\n\n\nPragmatic formulas\ncontext-bound phrases that are characteristic of a particular speech community\nthank you, bless you"
   },
   {
-    "objectID": "2025/slides/session-7.html#type-of-sequences",
-    "href": "2025/slides/session-7.html#type-of-sequences",
+    "objectID": "2025/slides/session-7.html#definitions-1",
+    "href": "2025/slides/session-7.html#definitions-1",
     "title": "Session 7: Multiword Units",
-    "section": "Type of sequences",
-    "text": "Type of sequences\n\nCollocation:\nLexical bundles:"
+    "section": "Definitions",
+    "text": "Definitions\n\n\n\n\n\n\n\n\n\nFormula type\nDescription\nExamples\n\n\n\n\nCollocations\nPairs of words that are syntagmatically associated\ntake time, young people\n\n\nLexical bundles\nContiguous word combinations which occur very frequently in language\nin other words\n\n\nLexicalized sentence stems\nA conventional expression in whih some elements are fixed and others allow for a range of possibilities\n**"
   },
   {
-    "objectID": "2025/slides/session-7.html#extracting-multiword-sequences",
-    "href": "2025/slides/session-7.html#extracting-multiword-sequences",
+    "objectID": "2025/slides/session-7.html#approaches-to-define-and-operationalize-mwus",
+    "href": "2025/slides/session-7.html#approaches-to-define-and-operationalize-mwus",
     "title": "Session 7: Multiword Units",
-    "section": "Extracting multiword sequences",
-    "text": "Extracting multiword sequences\n\nRecurrence vs co-occurrence"
+    "section": "Approaches to define and operationalize MWUs",
+    "text": "Approaches to define and operationalize MWUs\nWe have two major approaches to define MWUs:\n\n\n\n\n\n\n\n\nApproach\nDescription\n\n\n\n\nFrequency-based\nQuantifies the degree of associations between component words\n\n\nPhraseological\nInvolves human judgement to focus on semantic transparency, non-compositionality, and/or fixedness.\n\n\n\n\n\nWe will follow frequency-based approach in this course."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#preview-discussion",
+    "href": "2025/slides/session-7.html#preview-discussion",
+    "title": "Session 7: Multiword Units",
+    "section": "Preview discussion",
+    "text": "Preview discussion\n\nWhich of the following type of MWUs are more challenging to identify from the frequency-based approach?\n\nCollocation: play + role, meet + expectation\nBinomials: by and large, black and white\nIdiom: kick the bucket, over the moon\nLexical bundles: in terms of the, the extent to which"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#questions",
+    "href": "2025/slides/session-7.html#questions",
+    "title": "Session 7: Multiword Units",
+    "section": "Questions?",
+    "text": "Questions?"
   },
   {
     "objectID": "2025/slides/session-7.html#extracting-recurrent-units",
     "href": "2025/slides/session-7.html#extracting-recurrent-units",
     "title": "Session 7: Multiword Units",
     "section": "Extracting recurrent units",
-    "text": "Extracting recurrent units"
+    "text": "Extracting recurrent units\nWe can extract recurrent units by:\n\nCounting the number of contigous sequences over a reference corpus\nManually filter them OR measuring Strengths Of Association"
   },
   {
     "objectID": "2025/slides/session-7.html#n-grams",
     "href": "2025/slides/session-7.html#n-grams",
     "title": "Session 7: Multiword Units",
     "section": "N-grams",
-    "text": "N-grams\n\nN-grams: contiguous sequences of n words\n\nExample: I have not had Gyutan yet this time.\nBigram: [I have] [have not] [not had] … [this time].\nTrigram: [I have not] [have not had] [not had Gyutan] …\n\nWhat do you think this contains?"
+    "text": "N-grams\n\nN-grams: contiguous sequences of n words\n\nTake N-words using a sliding window approach.\n\n\nExample: I have not had Gyutan yet this time.\nBigram: [I have] [have not] [not had] ... [this time].\nTrigram: [I have not] [have not had] [not had Gyutan] ..."
   },
   {
-    "objectID": "2025/slides/session-7.html#pos-sensitive-n-grams",
-    "href": "2025/slides/session-7.html#pos-sensitive-n-grams",
+    "objectID": "2025/slides/session-7.html#top-12-n-grams-in-brown-corpus",
+    "href": "2025/slides/session-7.html#top-12-n-grams-in-brown-corpus",
     "title": "Session 7: Multiword Units",
-    "section": "POS sensitive N-grams",
-    "text": "POS sensitive N-grams"
+    "section": "Top 12 N-grams in BROWN corpus",
+    "text": "Top 12 N-grams in BROWN corpus\n\n4-grams corpus"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#n-grams-in-brown-corpus-111th---122nd",
+    "href": "2025/slides/session-7.html#n-grams-in-brown-corpus-111th---122nd",
+    "title": "Session 7: Multiword Units",
+    "section": "N-grams in BROWN corpus (111th - 122nd)",
+    "text": "N-grams in BROWN corpus (111th - 122nd)\n\n4-grams from 111-122"
   },
   {
     "objectID": "2025/slides/session-7.html#lexical-bundles",
     "href": "2025/slides/session-7.html#lexical-bundles",
     "title": "Session 7: Multiword Units",
     "section": "Lexical bundles",
-    "text": "Lexical bundles\n\n“Fixed sequence of words that recur frequently”\nN-gram plus manual filtering\nBiber et al. (2004) found three important “functions” of\n\nReferential\nStance\nDiscoursal"
+    "text": "Lexical bundles\n\n\n“Fixed sequence of words that recur frequently”\n\nEssentially, N-grams plus manual filtering and categorization\n\nBiber (2004) identified lexical bundles from Classroom teaching, Textbooks, Conversation and Academic prose\n\n\n\n\nT2K-SWAL\n\n\n\n\n\n\n\nBiber, D. (2004). If you look at …: Lexical Bundles in University Teaching and Textbooks. Applied Linguistics, 25(3), 371–405. https://doi.org/10.1093/applin/25.3.371"
   },
   {
-    "objectID": "2025/slides/session-7.html#referential-bundles",
-    "href": "2025/slides/session-7.html#referential-bundles",
+    "objectID": "2025/slides/session-7.html#t2k-swal-corpus",
+    "href": "2025/slides/session-7.html#t2k-swal-corpus",
     "title": "Session 7: Multiword Units",
-    "section": "Referential bundles",
-    "text": "Referential bundles"
+    "section": "T2K-SWAL corpus",
+    "text": "T2K-SWAL corpus\n\n\nAttempts to represent university language\n\n\n\n\n\n\n\n\nPerspective\nExample\n\n\n\n\nGenre representation\n“classroom teaching, office hours, study groups, on-campus service encounters, textbooks, course packs, and other written materials e.g. university catalogues, brochures.” (Biber et al., 2004)\n\n\nDisciplines\nBusiness, Education, Engineering, Humanities, Natural Science, and Social Science\n\n\nEducational level\nLower devision undergrad, Upper devision undergrad, and Graduate.\n\n\nRegional variation\nNorthern Arizona University, Iowa State University, California State University at Sacramento, Georgia State University"
   },
   {
-    "objectID": "2025/slides/session-7.html#stance-bundles",
-    "href": "2025/slides/session-7.html#stance-bundles",
+    "objectID": "2025/slides/session-7.html#methods-to-identify-lexical-bundles",
+    "href": "2025/slides/session-7.html#methods-to-identify-lexical-bundles",
     "title": "Session 7: Multiword Units",
-    "section": "Stance bundles",
-    "text": "Stance bundles"
+    "section": "Methods to identify lexical bundles",
+    "text": "Methods to identify lexical bundles\n\nUsed n-grams to compile a first list.\nFiltered the list with 40 times per million threshold.\nKept four-word sequences\nRange requirements was set to 5 texts."
   },
   {
-    "objectID": "2025/slides/session-7.html#discourse-bundles",
-    "href": "2025/slides/session-7.html#discourse-bundles",
+    "objectID": "2025/slides/session-7.html#communicative-functions",
+    "href": "2025/slides/session-7.html#communicative-functions",
     "title": "Session 7: Multiword Units",
-    "section": "Discourse bundles",
-    "text": "Discourse bundles"
+    "section": "Communicative Functions",
+    "text": "Communicative Functions\n\n\nBiber et al. (2004) presented three important “functions” of bundles\n\n\n\n\n\n\n\n\n\nFunction\nDescription\nExample\n\n\n\n\nReferential\nSequences that “makes direct referents to physical or abstract entities”.\nthere's a lot of, a little bit of, in terms of the, as a result of\n\n\nStance\n“expresses attitudes or assessments of certainty that frame some other proposition”\nI don't know if, are more likely, you might want to, it is important to\n\n\nDiscourse organizer\nsignals textual relations between current and previous/upcoming discourse\nif you look at, let's have a look, I mean you know"
   },
   {
     "objectID": "2025/slides/session-7.html#classify-the-following-bundles-into-three-categories",
     "href": "2025/slides/session-7.html#classify-the-following-bundles-into-three-categories",
     "title": "Session 7: Multiword Units",
     "section": "Classify the following bundles into three categories",
-    "text": "Classify the following bundles into three categories\n\n\n\nBundle\nCategory\n\n\n\n\nif you say so"
+    "text": "Classify the following bundles into three categories\n\nChoice: Referential, Stance, Discourse\n\n\n\n\nBundle\nCategory\n\n\n\n\ngreater than or equal\n\n\n\nI don’t know how\n\n\n\nyou have to be\n\n\n\non the other hand"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#practical-considerations",
+    "href": "2025/slides/session-7.html#practical-considerations",
+    "title": "Session 7: Multiword Units",
+    "section": "Practical considerations",
+    "text": "Practical considerations\nTo be able to identify interesting recurrent patterns\n\nThe size of the corpus;\nlengths of each text in corpuss\nRepresentation of genre, topic, register\nReliability issue of manual classification of functions"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#summary-of-recurrent-units",
+    "href": "2025/slides/session-7.html#summary-of-recurrent-units",
+    "title": "Session 7: Multiword Units",
+    "section": "Summary of recurrent units",
+    "text": "Summary of recurrent units\n\nN-gram search (counting contiguous sequences of n-words) allows recurrent linguistic patterns to emerge.\n\nN-grams serve as first list for lexical bundle.\n\nLexical bundles are automatically identified, then filtered with frequency.\n\nThey are manually classified into functional categories."
   },
   {
     "objectID": "2025/slides/session-7.html#extracting-co-occurring-units-or-collocations",
     "href": "2025/slides/session-7.html#extracting-co-occurring-units-or-collocations",
     "title": "Session 7: Multiword Units",
     "section": "Extracting co-occurring units OR Collocations",
-    "text": "Extracting co-occurring units OR Collocations\nWhat are the differences between the following two terms?\n\nPhraseological approach\nFrequency-based approach"
+    "text": "Extracting co-occurring units OR Collocations\nWhen we talk about co-occurrence, things are a bit more complex.\n\nLet’s consider meet + expectation\nCan you make 3 sentences using this collocation?"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#examples-from-you",
+    "href": "2025/slides/session-7.html#examples-from-you",
+    "title": "Session 7: Multiword Units",
+    "section": "Examples from you",
+    "text": "Examples from you"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#the-nature-of-collocation",
+    "href": "2025/slides/session-7.html#the-nature-of-collocation",
+    "title": "Session 7: Multiword Units",
+    "section": "The nature of collocation",
+    "text": "The nature of collocation\n\nAs collocation is about “preferences based on conventional uses”, or more precisely,"
   },
   {
     "objectID": "2025/slides/session-7.html#window-based-approach-basic",
     "href": "2025/slides/session-7.html#window-based-approach-basic",
     "title": "Session 7: Multiword Units",
     "section": "Window-based approach (Basic)",
-    "text": "Window-based approach (Basic)"
+    "text": "Window-based approach (Basic)\n\nWindow-based approach is most widely used (including AntConc).\n\nIt counts the number of words within a specified window\ne.g., +/- 4 words window = counts items 4 words before and after the node word.\nI    strongly  think  the  expectation  was  met   for  the  ...\n[L4]   [L3]    [L2]  [L1]   [ node ]   [R1]  [R2] [R3]  [R4]\n\nThis is called surface-level co-occurrences (Evert, 2008)"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#window-based-approach",
+    "href": "2025/slides/session-7.html#window-based-approach",
+    "title": "Session 7: Multiword Units",
+    "section": "Window-based approach",
+    "text": "Window-based approach\n\nSometimes, the collocates can be more distant.\nI    strongly  think  the  expectation  for  the  final exam  was  met ....\n[L4]   [L3]    [L2]  [L1]   [ node ]   [R1]  [R2] [R3]  [R4]      [???]\nCannot capture this unless we expand the window….\nBut this raises trade-off between noises and more accurate retrieval."
   },
   {
     "objectID": "2025/slides/session-7.html#dependency-parsing-advanced",
     "href": "2025/slides/session-7.html#dependency-parsing-advanced",
     "title": "Session 7: Multiword Units",
     "section": "Dependency Parsing (Advanced)",
-    "text": "Dependency Parsing (Advanced)"
+    "text": "Dependency Parsing (Advanced)\n\nMore recent research uses Syntactic co-occurrences\nWe can parse grammatical relations using dependency parsing\nDependency parsing (係受け解析) (more details tomorrow) can indicate grammatical relations between words."
   },
   {
-    "objectID": "2025/slides/session-7.html#why-frequency-is-not-sufficient",
-    "href": "2025/slides/session-7.html#why-frequency-is-not-sufficient",
+    "objectID": "2025/slides/session-7.html#dependency-parsing-advanced-1",
+    "href": "2025/slides/session-7.html#dependency-parsing-advanced-1",
     "title": "Session 7: Multiword Units",
-    "section": "Why frequency is not sufficient?",
-    "text": "Why frequency is not sufficient?\nDiscuss: - Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?"
+    "section": "Dependency Parsing (Advanced)",
+    "text": "Dependency Parsing (Advanced)\n\nWith dependency, we can capture meet + expectation accurately (even if they are far away).\n\n\nDependency Parsing example"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#typical-dependency-relations-for-lexical-collocations",
+    "href": "2025/slides/session-7.html#typical-dependency-relations-for-lexical-collocations",
+    "title": "Session 7: Multiword Units",
+    "section": "Typical dependency relations for lexical collocations",
+    "text": "Typical dependency relations for lexical collocations\n\nA few depedency labels are useful to identify collocations\n\n\n\n\n\n\n\n\nDependency label\nName\nExample\n\n\n\n\namod\nAdjectival Modifier\nsignificant + change\n\n\ndobj\nDirect Object\nplay + role in active voice (play a role)\n\n\nnsubjpass\nNominal subject of a passive construction\nplay + role in passive voice (role is played)\n\n\nadvmod\nAdverbial modifier\nchange + incrementally"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#summary-for-co-occurrence",
+    "href": "2025/slides/session-7.html#summary-for-co-occurrence",
+    "title": "Session 7: Multiword Units",
+    "section": "Summary for co-occurrence",
+    "text": "Summary for co-occurrence\nThere are two main ways to capture co-occurrence - Window-based approach (AntConc) - Dependency-based approach (needs advanced NLP tools; but we will cover)."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#why-is-frequency-not-sufficient",
+    "href": "2025/slides/session-7.html#why-is-frequency-not-sufficient",
+    "title": "Session 7: Multiword Units",
+    "section": "Why is frequency not sufficient?",
+    "text": "Why is frequency not sufficient?\nDiscuss:\n\nResearchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?\n\n\ncollocation-freq"
   },
   {
     "objectID": "2025/slides/session-7.html#strengths-of-association-measures",
     "href": "2025/slides/session-7.html#strengths-of-association-measures",
     "title": "Session 7: Multiword Units",
     "section": "Strengths Of Association Measures",
-    "text": "Strengths Of Association Measures\n\nStrengths Of Association (SOA) provides ways to take “frequency” of individual words account.\nSeveral SOA measures are commonly used (Gablasova et al., 2017).\n\nT-score\nMutual Information\nLogDice\n\nNow let’s first look at expected cooccurrences."
+    "text": "Strengths Of Association Measures\n\nThe issue: A word can co-occur just because they are frequent by default.\nStrengths Of Association (SOA) provides ways to take “frequency” of individual words account.\nSeveral SOA measures are commonly used (Gablasova et al., 2017).\n\nT-score\nMutual Information\nLogDice\n\nNow let’s first look at expected cooccurrences."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#mathematical-look-into-collocational-association",
+    "href": "2025/slides/session-7.html#mathematical-look-into-collocational-association",
+    "title": "Session 7: Multiword Units",
+    "section": "Mathematical look into collocational association",
+    "text": "Mathematical look into collocational association\nWhen we think about “association”, we can think about it from a probability perspective.\n\n\n\n\n\n\n\n\n\n# with word 1\n# without word 1\n\n\n\n\n# with word 2\nFrequency of collocation\nRemaining frequency of word 2\n\n\n# without word 2\nRemaining frequency of word 1\nRest of corpus size"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#suppose-we-have-following",
+    "href": "2025/slides/session-7.html#suppose-we-have-following",
+    "title": "Session 7: Multiword Units",
+    "section": "Suppose we have following",
+    "text": "Suppose we have following\n\n\nCollocation freq: 50\nWord 1: 500\nWord 2: 500\nEntire corpus: 1,000,000\n\n\n\n\n\n\n# with word 1\n# without word 1\n\n\n\n\n\n# with word 2\n50\n450\n500\n\n\n# without word 2\n450\n999,050\n999,500\n\n\n\n500\n999,500\n1,000,000"
   },
   {
     "objectID": "2025/slides/session-7.html#expected-ocurrences",
     "href": "2025/slides/session-7.html#expected-ocurrences",
     "title": "Session 7: Multiword Units",
     "section": "Expected Ocurrences",
-    "text": "Expected Ocurrences\n\nExpected co-occurrences are usually calculated as joint probability of words in the corpus.\n\n\\[E_{11} = {(freq_{node} * freq_{collocate} ) \\over Corpus size}\\]"
+    "text": "Expected Ocurrences\n\nExpected co-occurrences are usually calculated as joint probability of words in the corpus.\n\n\\[E_{11} = {(\\text{freq of node word} * \\text{freq of collocate } ) \\over Corpus size}\\]\nLet’s calculate the expected frequency.\n\nIf word1 and word 2 occur 500 times each in a million word corpus…\n\n\n(500 * 500) / 1000000\n\n[1] 0.25"
   },
   {
     "objectID": "2025/slides/session-7.html#mutual-information",
     "href": "2025/slides/session-7.html#mutual-information",
     "title": "Session 7: Multiword Units",
     "section": "Mutual Information",
-    "text": "Mutual Information\n\\[MI = {log_2{ Observed freq \\over Expected frequency }}\\]"
+    "text": "Mutual Information\nNow we are ready to calculate MI.\n\nThe expected frequency = .25\nThe observed frequency = 500\n\n\\[MI = {log_2{ \\text{Observed freq} \\over \\text{Expected frequency} }}\\]\nLet’s do this:\n\nMI = log(500/0.25, base = 2)\nMI\n\n[1] 10.96578"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#mutual-information-1",
+    "href": "2025/slides/session-7.html#mutual-information-1",
+    "title": "Session 7: Multiword Units",
+    "section": "Mutual Information",
+    "text": "Mutual Information\nMI is the ratio between observed and expected frequency in logarithmic scale.\n\\[MI = {log_2{ \\text{Observed freq} \\over \\text{Expected frequency} }}\\]"
   },
   {
     "objectID": "2025/slides/session-7.html#t-score",
     "href": "2025/slides/session-7.html#t-score",
     "title": "Session 7: Multiword Units",
     "section": "T-score",
-    "text": "T-score"
+    "text": "T-score\nT-score is calculated as follows:\n\n\\(\\text{T-score} = {\\text{Observed}  - \\text{Expected}  \\over \\sqrt{Observed}}\\)\n\nUsing the same numbers:\n\ntscore = (50 - 0.25) / sqrt(50)\ntscore\n\n[1] 7.035712"
   },
   {
     "objectID": "2025/slides/session-7.html#logdice",
     "href": "2025/slides/session-7.html#logdice",
     "title": "Session 7: Multiword Units",
     "section": "LogDice",
-    "text": "LogDice"
+    "text": "LogDice\n\nLogDice is somewhat different in calculation.\nIt does not use Expected frequency\nThat is, it does not rely on “corpus size” normalization.\n\n\\(\\text{log Dice} = 14 + \\log_2( {{2 \\times Observed} \\over {R_1 + C_1}})\\)\n\nlogdice = 14 + log(2 * 50 / (500 + 500), base = 2)\nlogdice\n\n[1] 10.67807"
   },
   {
-    "objectID": "2025/slides/session-7.html#pros-and-cons-of-different-association-measures",
-    "href": "2025/slides/session-7.html#pros-and-cons-of-different-association-measures",
+    "objectID": "2025/slides/session-7.html#summary",
+    "href": "2025/slides/session-7.html#summary",
     "title": "Session 7: Multiword Units",
-    "section": "pros and cons of different association measures",
-    "text": "pros and cons of different association measures\n\nYou will examine this in session 8, but"
+    "section": "Summary",
+    "text": "Summary\n\nMajor association measures are MI, T-score, and LogDice.\nWe covered how to calculate each.\n\n\nMI; tscore; logdice\n\n[1] 10.96578\n\n\n[1] 7.035712\n\n\n[1] 10.67807"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#phraseological-complexity-1",
+    "href": "2025/slides/session-7.html#phraseological-complexity-1",
+    "title": "Session 7: Multiword Units",
+    "section": "Phraseological complexity",
+    "text": "Phraseological complexity\n\nPaquot (2019): “the range of phraseological units that surface in language production and the degree of sophistication of such phraseological units” (p. 124)\n\n\n\n\n\n\n\nConstructs\nDescription\n\n\n\n\nPhraseological diversity\n“a (derived) type–token ratio representing the number of unique phraseological units to the total number of phraseological units, by analogy with the measurement of lexical diversity.” (p. 125)\n\n\nPhraseological sophistication\n“the selection of word combinations that are ‘appropriate to the topic and style of writing, rather than just general, everyday vocabulary’” (p. 125)\n\n\n\n\n\n\nPaquot, M. (2018). Phraseological Competence: A Missing Component in University Entrance Language Tests? Insights From a Study of EFL Learners’ Use of Statistical Collocations. Language Assessment Quarterly, 15(1), 29–43. https://doi.org/10.1080/15434303.2017.1405421\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#operationalizing-phraseological-diversity",
+    "href": "2025/slides/session-7.html#operationalizing-phraseological-diversity",
+    "title": "Session 7: Multiword Units",
+    "section": "Operationalizing Phraseological Diversity",
+    "text": "Operationalizing Phraseological Diversity\n\n\nNot much progress compared to lexical diversity.\nPaquot (2019) uses RootTTR for operationalization\n\nPU = Phraseological unit\n\n\n\\(\\text{Diversity of PU} = {\\text{Type of PU} \\over \\sqrt{\\text{Token of PU}}}\\)\n\nGiven the findings on lexical sophistication, an application of Moving-Average could be interesting."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#operationalizing-phraseological-sophistication",
+    "href": "2025/slides/session-7.html#operationalizing-phraseological-sophistication",
+    "title": "Session 7: Multiword Units",
+    "section": "Operationalizing Phraseological Sophistication",
+    "text": "Operationalizing Phraseological Sophistication\n\nAs with lexical sophistication measures, typically Mean is typically used.\n\n\\(\\text{Sophistication of PU} = {\\text{Total score for SOAs} \\over \\text{# of Token with SOA values}}\\)\n\ne.g.,\\(\\text{Mean MI for amod} = {\\text{Total MI score for amod} \\over \\text{# of amod pairs with MI}}\\)"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#basic-findings",
+    "href": "2025/slides/session-7.html#basic-findings",
+    "title": "Session 7: Multiword Units",
+    "section": "Basic findings",
+    "text": "Basic findings\n\n\nRecent studies demonstrate benefits of adding phraseological complexity measures to explain second language proficiency:\n\nEguchi & Kyle (2020) in Oral Proficieincy Interview\nPaquot (2019): Dependency collocation explained more variance than syntactic complexity\nKyle & Eguchi (2021): Dependency-based collocation explained TOEFL speaking scores more than n-gram measures.\n\nMore research should integrate Phraseological Complexity more in explaining developmental patterns\n\ne.g., Siyanova & Spina (2020)\n\n\n\n\n\nPaquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221\nEguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637\nKyle, K., & Eguchi, M. (2021). Automatically assessing lexical sophistication using word, bigram, and dependency indices. In Perspectives on the L2 phrasicon: The view from learner corpora (pp. 126–151).\nSiyanova‐Chanturia, A., & Spina, S. (2020). Multi‐Word Expressions in Second Language Writing: A Large‐Scale Longitudinal Learner Corpus Study. Language Learning, 70(2), 420–463. https://doi.org/10.1111/lang.12383"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#summary-1",
+    "href": "2025/slides/session-7.html#summary-1",
+    "title": "Session 7: Multiword Units",
+    "section": "Summary",
+    "text": "Summary\n\nCorpus-based approach can look at recurrence and co-occurrence\nA central methods to the recurrence is n-gram search\nFor co-occurence, we have window-based (surface) and dependency-based (syntactic) collocations.\nSOA allows you to quantify how strongly associated two words are"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#what-questions-do-you-have",
+    "href": "2025/slides/session-7.html#what-questions-do-you-have",
+    "title": "Session 7: Multiword Units",
+    "section": "What questions do you have?",
+    "text": "What questions do you have?"
   },
   {
     "objectID": "2025/syllabus/schedule.html",
@@ -5113,7 +5435,7 @@
     "href": "2025/sessions/day3/session8.html#materials",
     "title": "Session 8",
     "section": "Materials",
-    "text": "Materials\n\nSlides for the session",
+    "text": "Materials\n\nSlides for the session\n\n📊 View Interactive Slides",
     "crumbs": [
       "Sessions",
       "Day 3",

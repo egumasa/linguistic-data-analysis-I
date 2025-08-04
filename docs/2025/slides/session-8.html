@@ -148,7 +148,9 @@ Masaki EGUCHI, Ph.D.
 <section>
 <section id="session-overview" class="title-slide slide level1 center">
 <h1>Session overview</h1>
-
+<ul>
+<li></li>
+</ul>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>🎯 Learning Objectives</h2>
@@ -169,18 +171,38 @@ Masaki EGUCHI, Ph.D.
 <li><p>Let’s generate a list of n-grams.</p></li>
 <li><p>You can use either English or Japanese.</p></li>
 <li><p>For Japanese you can use <code>Aozora 500</code> data we used.</p></li>
-<li><p>For English you can use <code>BROWN corpus</code> data we used.</p></li>
+<li><p>For English you can use <code>Ame06</code> or <code>B06</code> data in AntConc.</p></li>
 </ul>
 </section>
+<section id="three-word-sequences" class="slide level2">
+<h2>three-word sequences</h2>
+<ul>
+<li>You can (a) load corpus, (b) go to N-gram, (c) apply settings, and (d) hit start.</li>
+</ul>
+
+<img data-src="../../assets/session-8/trigram_BE06.gif" class="r-stretch quarto-figure-center"><p class="caption">Trigram in BE06</p></section>
+<section id="five-word-sequences" class="slide level2">
+<h2>five-word sequences</h2>
+<ul>
+<li>Now let’s examine 5 word sequences</li>
+</ul>
+
+<img data-src="../../assets/session-8/5-grams.gif" class="r-stretch quarto-figure-center"><p class="caption">Quintgram in BE06</p></section>
+<section id="jumping-to-kwic-view-from-the-list" class="slide level2">
+<h2>Jumping to KWIC view from the list</h2>
+<p>In AntConc, we can jump from the item in the list to show KWIC.</p>
+
+<img data-src="../../assets/session-8/KWIC.gif" class="r-stretch quarto-figure-center"><p class="caption">KWIC</p></section>
 <section id="generating-p-frame-list-with-antconc" class="slide level2">
 <h2>Generating P-frame list with AntConc</h2>
 <ul>
 <li>Let’s now generate p-frame.</li>
-<li>You can use either English or Japanese.
-<ul>
-<li>When using Japanese you can use <code>Aozora 500</code> data we used.</li>
-</ul></li>
+<li>Set openslot to 1. Hit start. What do you see?</li>
 </ul>
+
+<img data-src="../../assets/session-8/p-frame-ame.png" class="r-stretch quarto-figure-center"><p class="caption">P-frames</p></section>
+<section id="questions" class="slide level2">
+<h2>Questions?</h2>
 </section></section>
 <section>
 <section id="searching-collocations-with-antconc-10-15-mins" class="title-slide slide level1 center">
@@ -199,7 +221,7 @@ Masaki EGUCHI, Ph.D.
 <h2>Collocation in AntConc</h2>
 <p>You can search collocation by entering <code>node</code> words</p>
 <ul>
-<li>Open AntConc, load <code>BROWN corpus</code>.</li>
+<li>Open AntConc, load <code>BROWN</code> corpus.</li>
 <li>Go to <code>Collocate</code></li>
 <li>Enter <code>play</code> in search window and hit <code>Start</code></li>
 </ul>
@@ -370,11 +392,21 @@ Masaki EGUCHI, Ph.D.
 </ul></li>
 </ul>
 </section>
-<section id="questions" class="slide level2">
+<section id="questions-1" class="slide level2">
 <h2>Questions?</h2>
 </section>
 <section id="lets-finish-it-up" class="slide level2">
 <h2>Let’s finish it up</h2>
+<ul>
+<li><p>R1 = Frequency of node word</p></li>
+<li><p>C1 = Frequency of collocate</p></li>
+<li><p><span class="math inline">\(MI = {log_2{ Observed freq \over Expected frequency }}\)</span></p></li>
+<li><p><span class="math inline">\(\text{T-score} = {\text{Observed}  - \text{Expected}  \over \sqrt{Observed}}\)</span></p></li>
+<li><p><span class="math inline">\(\text{log Dice} = 14 + \log_2( {{2 \times Observed} \over {R_1 + C_1}})\)</span></p></li>
+</ul>
+</section>
+<section id="results-should-look-like-something" class="slide level2">
+<h2>Results should look like something</h2>
 <ul>
 <li>LogDice:
 <ul>
@@ -417,34 +449,25 @@ Masaki EGUCHI, Ph.D.
 </ul></li>
 </ul>
 </section>
-<section id="advanced-how-can-i-generate-a-collocation-list" class="slide level2">
-<h2>(Advanced) how can I generate a collocation list?</h2>
+<section id="if-time-allowed-how-can-i-generate-a-collocation-list" class="slide level2">
+<h2>(If time allowed) how can I generate a collocation list?</h2>
 <ul>
 <li>You can take a look at <a href="../../resources/code-examples/python/extracting-collocations.html">the following notebook</a></li>
 </ul>
 </section>
-<section class="slide level2">
-
-</section></section>
-<section id="hands-on-activity" class="title-slide slide level1 center">
-<h1>Hands-on Activity</h1>
-
-</section>
-
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
+<section id="reflection" class="slide level2">
+<h2>Reflection</h2>
 <ul>
 <li>You can now do the followings:
 <ul>
-<li>Generate lists of n-grams using AntConc.</li>
+<li>Generate lists of <strong>n-grams</strong> and <strong>p-frames</strong> using AntConc.</li>
 <li>Search for collocates with AntConc.</li>
 <li>Calculate major Strengths of Association (SOA) measures by hand.</li>
 </ul></li>
 </ul>
-</section>
-
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
+</section></section>
+<section id="congratulations" class="title-slide slide level1 center">
+<h1>Congratulations!!</h1>
 
 
 
