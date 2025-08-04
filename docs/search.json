@@ -4462,8 +4462,22 @@
     "text": "Semantic Measures - Hypernymy\n\n\n\nA word that have a larger set of superordinate terms are high in hypernymy value.\n\n\n\n\n\nWord Net"
   },
   {
+    "objectID": "2025/slides/session-4.html#hypernymy",
+    "href": "2025/slides/session-4.html#hypernymy",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Hypernymy",
+    "text": "Hypernymy\n\n\nResources: WordNet\nOperationalization: The distance (how many layers) to traceback to “entity”.\n\n\n\n\nHypernymy value\nExample words\n\n\n\n\n3 – 4\npart, group\n\n\n5 – 6\nway, thing\n\n\n7 – 8\nhouse, site\n\n\n9 – 11\ncar, city\n\n\n12 – 14\ndog, cancer\n\n\n15 – 17\nbuffalo, stallion\n\n\n18 – 19\nbulls, gaur"
+  },
+  {
     "objectID": "2025/slides/session-4.html#questions",
     "href": "2025/slides/session-4.html#questions",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Questions",
+    "text": "Questions\n\nHow useful is Hypernymy is?\nWhich lexical sophistication measures are you interested in?"
+  },
+  {
+    "objectID": "2025/slides/session-4.html#questions-1",
+    "href": "2025/slides/session-4.html#questions-1",
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Questions?",
     "text": "Questions?"
