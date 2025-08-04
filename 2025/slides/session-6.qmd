@@ -288,6 +288,8 @@ See in-class demonstration.
 
 ## Writing up research question, hypothesis, and results
 
+::: {style="font-size:75%"}
+
 - **Research question?**
 - **Hypothesis**: Write your own.
 - **Results**: Write your own.
@@ -300,6 +302,8 @@ Your submission ...
 - [ ] includes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts
 - [ ] provides two sets of plots that describe trends of lexical diversity across year groups and genre.
 - [ ] provides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).
+
+:::
 
 :::
 
