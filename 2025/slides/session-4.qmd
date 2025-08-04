@@ -94,6 +94,8 @@ To make a somewhat bold statement, many SLA researchers are interested in descri
 
 ## Construct definition and measurement
 
+:::{style="font-size:75%"}
+
 **Conceptual work**
 
 - **Construct definition**: delineates the theoretical interpretation that can be attached to the observation data (or a measure).
@@ -101,9 +103,11 @@ To make a somewhat bold statement, many SLA researchers are interested in descri
 - **Behavior identification**: What kind of behavior do you need to observe?
 
 - **Task specification**: In what condition do you need to set up to observe the intended behavior?
+:::
 
 ## Construct definition and measurement
 
+:::{style="font-size:75%"}
 **Procedual work**
 
 - **Behavior elicitation**: Target behavior is elicited, observed and recorded.
@@ -111,6 +115,8 @@ To make a somewhat bold statement, many SLA researchers are interested in descri
 - **Observation scoring**: Classifying or coding observed behavior into categories or values to link them to theoretically meaningful interpretation.
 
 - **Data analysis**: Scores are summarized and patterns are described to provide probablistic evaluation of the data.
+
+:::
 
 ## Compare and contrast the two framework
 
@@ -167,6 +173,32 @@ I find it hard to make a generalisation on whether it's important or not for col
 :::: 
 
 :::
+
+## Rich vocabulary use?
+
+:::{style="font-size:75%"}
+
+:::: {.columns}
+::: {.column}
+- college students 
+- have a part-time job? 
+- much opinion to answer
+- partial time. 
+- spare time  
+- many reasons
+:::
+::: {.column}
+- make a generalisation on 
+- this seems like 
+- something very individual 
+- highly dependent on 
+- circumstances. 
+- serve functions
+:::
+:::: 
+
+:::
+
 
 ## Lexical Richness
 
@@ -242,6 +274,7 @@ Jarvis, S. (2013). Capturing the Diversity in Lexical Diversity. Language Learni
 Old LD measures include: 
 
 ::: {.incremental}
+
 - $TTR = {nType \over nToken}$
   
 - $RootTTR (Guiraud Index) = {nType \over \sqrt{nToken}}$
@@ -417,7 +450,7 @@ A word used in **a narrower context **(specific situation) should be considered 
 
 ## Semantic Measures - Concrete vs Abstract referents
 
-A word that involke more abstract concepts should be considered more sophisticated.
+A word that involke more concrete concepts recieve higher score in concreteness.
 
 |                | Concrete | Abstract |
 |----------------|----------|----------|
@@ -429,7 +462,7 @@ A word that involke more abstract concepts should be considered more sophisticat
 
 :::: {.columns}
 ::: {.column width=40%}
-- A word that have a larger set of superordinate terms should be considered more sophisticated.
+- A word that have a larger set of superordinate terms are high in hypernymy value.
 :::
 
 ::: {.column width=60%}

@@ -307,3 +307,8 @@ Your submission ...
 
 <!-- ## Using AntWordProfiler for simple lexical profiling -->
 
+## What we've covered
+
+- Creating frequency list
+- Tokenizing Japanese texts
+- Conducting Part-Of-Speech tagging

@@ -1531,6 +1531,13 @@
     "text": "Speadsheet looks like this\n\nGoogle Spreadsheet"
   },
   {
+    "objectID": "2025/slides/session-6.html#these-are-real-example-from-icnale",
+    "href": "2025/slides/session-6.html#these-are-real-example-from-icnale",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "These are real example from ICNALE",
+    "text": "These are real example from ICNALE\n\n\n\n\nICNALE data here"
+  },
+  {
     "objectID": "2025/slides/session-6.html#parallel-analysis",
     "href": "2025/slides/session-6.html#parallel-analysis",
     "title": "Session 6: Hands-on activity #3",
@@ -1963,6 +1970,13 @@
     "title": "Session 5: Hands-on activity #2",
     "section": "Vocabulary Profiling tools",
     "text": "Vocabulary Profiling tools\n\nRANGE program\nVocabProfiler in LexTutor\nAntWordProfiler (desktop; multi-language)\nNew Word Levels Checker"
+  },
+  {
+    "objectID": "2025/slides/session-5.html#what-weve-covered",
+    "href": "2025/slides/session-5.html#what-weve-covered",
+    "title": "Session 5: Hands-on activity #2",
+    "section": "What we’ve covered",
+    "text": "What we’ve covered\n\nCreating frequency list\nTokenizing Japanese texts\nConducting Part-Of-Speech tagging"
   },
   {
     "objectID": "2025/slides/session-1.html#session-1-agenda",
@@ -4214,14 +4228,14 @@
     "href": "2025/slides/session-4.html#construct-definition-and-measurement",
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Construct definition and measurement",
-    "text": "Construct definition and measurement\nConceptual work\n\nConstruct definition: delineates the theoretical interpretation that can be attached to the observation data (or a measure).\n\nDo you want to know about motivation or engagement?\n\nBehavior identification: What kind of behavior do you need to observe?\nTask specification: In what condition do you need to set up to observe the intended behavior?"
+    "text": "Construct definition and measurement\n\nConceptual work\n\nConstruct definition: delineates the theoretical interpretation that can be attached to the observation data (or a measure).\n\nDo you want to know about motivation or engagement?\n\nBehavior identification: What kind of behavior do you need to observe?\nTask specification: In what condition do you need to set up to observe the intended behavior?"
   },
   {
     "objectID": "2025/slides/session-4.html#construct-definition-and-measurement-1",
     "href": "2025/slides/session-4.html#construct-definition-and-measurement-1",
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Construct definition and measurement",
-    "text": "Construct definition and measurement\nProcedual work\n\nBehavior elicitation: Target behavior is elicited, observed and recorded.\nObservation scoring: Classifying or coding observed behavior into categories or values to link them to theoretically meaningful interpretation.\nData analysis: Scores are summarized and patterns are described to provide probablistic evaluation of the data."
+    "text": "Construct definition and measurement\n\nProcedual work\n\nBehavior elicitation: Target behavior is elicited, observed and recorded.\nObservation scoring: Classifying or coding observed behavior into categories or values to link them to theoretically meaningful interpretation.\nData analysis: Scores are summarized and patterns are described to provide probablistic evaluation of the data."
   },
   {
     "objectID": "2025/slides/session-4.html#compare-and-contrast-the-two-framework",
@@ -4250,6 +4264,13 @@
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Compare the two texts.",
     "text": "Compare the two texts.\n\nWhich one do you think reflect “better” vocabulary use?\n\n\nIs important for college students to have a part-time job? I think that has much opinion to answer it. The part-time job is a job that can do in partial time. So the college student can do part-time job when they has spare time (if they want). There are many reasons why the college student do part-time job (if they do).\n\nI find it hard to make a generalisation on whether it’s important or not for college students to have a part-time job, because this seems like something very individual and highly dependent on the individual student and their circumstances. Jobs serve a few main functions: to earn money, to gain experience, to get a head-start in a career, and to have something to do."
+  },
+  {
+    "objectID": "2025/slides/session-4.html#rich-vocabulary-use",
+    "href": "2025/slides/session-4.html#rich-vocabulary-use",
+    "title": "Session 4: Analyzing Vocabulary",
+    "section": "Rich vocabulary use?",
+    "text": "Rich vocabulary use?\n\n\n\n\ncollege students\nhave a part-time job?\nmuch opinion to answer\npartial time.\nspare time\n\nmany reasons\n\n\n\nmake a generalisation on\nthis seems like\nsomething very individual\nhighly dependent on\ncircumstances.\nserve functions"
   },
   {
     "objectID": "2025/slides/session-4.html#lexical-richness",
@@ -4431,14 +4452,14 @@
     "href": "2025/slides/session-4.html#semantic-measures---concrete-vs-abstract-referents",
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Semantic Measures - Concrete vs Abstract referents",
-    "text": "Semantic Measures - Concrete vs Abstract referents\nA word that involke more abstract concepts should be considered more sophisticated.\n\n\n\n\nConcrete\nAbstract\n\n\n\n\nFrequent\ndog, car\nlove, idea\n\n\nInfrequent\ncharger, helmet\nempathy, hypothesis"
+    "text": "Semantic Measures - Concrete vs Abstract referents\nA word that involke more concrete concepts recieve higher score in concreteness.\n\n\n\n\nConcrete\nAbstract\n\n\n\n\nFrequent\ndog, car\nlove, idea\n\n\nInfrequent\ncharger, helmet\nempathy, hypothesis"
   },
   {
     "objectID": "2025/slides/session-4.html#semantic-measures---hypernymy",
     "href": "2025/slides/session-4.html#semantic-measures---hypernymy",
     "title": "Session 4: Analyzing Vocabulary",
     "section": "Semantic Measures - Hypernymy",
-    "text": "Semantic Measures - Hypernymy\n\n\n\nA word that have a larger set of superordinate terms should be considered more sophisticated.\n\n\n\n\n\nWord Net"
+    "text": "Semantic Measures - Hypernymy\n\n\n\nA word that have a larger set of superordinate terms are high in hypernymy value.\n\n\n\n\n\nWord Net"
   },
   {
     "objectID": "2025/slides/session-4.html#questions",
@@ -4528,29 +4549,64 @@
     "objectID": "2025/slides/session-7.html#usage-based-learning",
     "href": "2025/slides/session-7.html#usage-based-learning",
     "title": "Session 7: Multiword Units",
-    "section": "Usage based learning",
-    "text": "Usage based learning"
+    "section": "Usage-based learning",
+    "text": "Usage-based learning\n\nThe idea that item-based learning facilitate learning of systematic rules.\nSo usage/exposure in communicative contexts allows the learner to extract grammatical rules/learn how to express certain things."
   },
   {
-    "objectID": "2025/slides/session-7.html#some-statistical-models",
-    "href": "2025/slides/session-7.html#some-statistical-models",
+    "objectID": "2025/slides/session-7.html#assessment-research-also-says",
+    "href": "2025/slides/session-7.html#assessment-research-also-says",
     "title": "Session 7: Multiword Units",
-    "section": "Some statistical models",
-    "text": "Some statistical models\n\nPhraseology is considered important"
+    "section": "Assessment research also says…",
+    "text": "Assessment research also says…\n\nPhraseology is considered important"
   },
   {
-    "objectID": "2025/slides/session-7.html#collocations",
-    "href": "2025/slides/session-7.html#collocations",
+    "objectID": "2025/slides/session-7.html#definitions",
+    "href": "2025/slides/session-7.html#definitions",
     "title": "Session 7: Multiword Units",
-    "section": "Collocations",
-    "text": "Collocations\nWhat are the differences between the following two terms?\n\nPhraseological approach\nFrequency-based approach"
+    "section": "Definitions",
+    "text": "Definitions\nMultiword Units/Sequences is a cover term for different things.\n\n\n\n\n\n\n\n\nFormula type\nDescription\nExamples\n\n\n\n\nPhrasal verbs\nverbs followed by an adverbial particle, where the phrase as a whole is used with a non-literal meaning\nblow up, shut down\n\n\nIdioms\na relatively fixed sequence of words with a non-literal, typically metaphorical meaning\nkick the bucket\n\n\nBinomials\nrecurrent conventional phrase of two words from the same POS, connected by a conjunction\nblack and white\n\n\n\netc."
+  },
+  {
+    "objectID": "2025/slides/session-7.html#type-of-sequences",
+    "href": "2025/slides/session-7.html#type-of-sequences",
+    "title": "Session 7: Multiword Units",
+    "section": "Type of sequences",
+    "text": "Type of sequences\n\nCollocation:\nLexical bundles:"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#extracting-multiword-sequences",
+    "href": "2025/slides/session-7.html#extracting-multiword-sequences",
+    "title": "Session 7: Multiword Units",
+    "section": "Extracting multiword sequences",
+    "text": "Extracting multiword sequences\n\nRecurrence vs co-occurrence"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#extracting-recurrent-units",
+    "href": "2025/slides/session-7.html#extracting-recurrent-units",
+    "title": "Session 7: Multiword Units",
+    "section": "Extracting recurrent units",
+    "text": "Extracting recurrent units"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#n-grams",
+    "href": "2025/slides/session-7.html#n-grams",
+    "title": "Session 7: Multiword Units",
+    "section": "N-grams",
+    "text": "N-grams\n\nN-grams: contiguous sequences of n words\n\nExample: I have not had Gyutan yet this time.\nBigram: [I have] [have not] [not had] … [this time].\nTrigram: [I have not] [have not had] [not had Gyutan] …\n\nWhat do you think this contains?"
+  },
+  {
+    "objectID": "2025/slides/session-7.html#pos-sensitive-n-grams",
+    "href": "2025/slides/session-7.html#pos-sensitive-n-grams",
+    "title": "Session 7: Multiword Units",
+    "section": "POS sensitive N-grams",
+    "text": "POS sensitive N-grams"
   },
   {
     "objectID": "2025/slides/session-7.html#lexical-bundles",
     "href": "2025/slides/session-7.html#lexical-bundles",
     "title": "Session 7: Multiword Units",
     "section": "Lexical bundles",
-    "text": "Lexical bundles\n\n“Fixed sequence of words that recur frequently”\nBiber et al. (2004) found three important “functions” of\n\nReferential\nStance\nDiscoursal"
+    "text": "Lexical bundles\n\n“Fixed sequence of words that recur frequently”\nN-gram plus manual filtering\nBiber et al. (2004) found three important “functions” of\n\nReferential\nStance\nDiscoursal"
   },
   {
     "objectID": "2025/slides/session-7.html#referential-bundles",
@@ -4581,32 +4637,25 @@
     "text": "Classify the following bundles into three categories\n\n\n\nBundle\nCategory\n\n\n\n\nif you say so"
   },
   {
-    "objectID": "2025/slides/session-7.html#n-grams",
-    "href": "2025/slides/session-7.html#n-grams",
+    "objectID": "2025/slides/session-7.html#extracting-co-occurring-units-or-collocations",
+    "href": "2025/slides/session-7.html#extracting-co-occurring-units-or-collocations",
     "title": "Session 7: Multiword Units",
-    "section": "N-grams",
-    "text": "N-grams"
+    "section": "Extracting co-occurring units OR Collocations",
+    "text": "Extracting co-occurring units OR Collocations\nWhat are the differences between the following two terms?\n\nPhraseological approach\nFrequency-based approach"
   },
   {
-    "objectID": "2025/slides/session-7.html#window-based-approach",
-    "href": "2025/slides/session-7.html#window-based-approach",
+    "objectID": "2025/slides/session-7.html#window-based-approach-basic",
+    "href": "2025/slides/session-7.html#window-based-approach-basic",
     "title": "Session 7: Multiword Units",
-    "section": "Window-based approach",
-    "text": "Window-based approach"
+    "section": "Window-based approach (Basic)",
+    "text": "Window-based approach (Basic)"
   },
   {
-    "objectID": "2025/slides/session-7.html#dependency-parsing",
-    "href": "2025/slides/session-7.html#dependency-parsing",
+    "objectID": "2025/slides/session-7.html#dependency-parsing-advanced",
+    "href": "2025/slides/session-7.html#dependency-parsing-advanced",
     "title": "Session 7: Multiword Units",
-    "section": "Dependency Parsing",
-    "text": "Dependency Parsing"
-  },
-  {
-    "objectID": "2025/slides/session-7.html#strengths-of-association-measures",
-    "href": "2025/slides/session-7.html#strengths-of-association-measures",
-    "title": "Session 7: Multiword Units",
-    "section": "Strengths Of Association Measures",
-    "text": "Strengths Of Association Measures"
+    "section": "Dependency Parsing (Advanced)",
+    "text": "Dependency Parsing (Advanced)"
   },
   {
     "objectID": "2025/slides/session-7.html#why-frequency-is-not-sufficient",
@@ -4616,11 +4665,18 @@
     "text": "Why frequency is not sufficient?\nDiscuss: - Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?"
   },
   {
+    "objectID": "2025/slides/session-7.html#strengths-of-association-measures",
+    "href": "2025/slides/session-7.html#strengths-of-association-measures",
+    "title": "Session 7: Multiword Units",
+    "section": "Strengths Of Association Measures",
+    "text": "Strengths Of Association Measures\n\nStrengths Of Association (SOA) provides ways to take “frequency” of individual words account.\nSeveral SOA measures are commonly used (Gablasova et al., 2017).\n\nT-score\nMutual Information\nLogDice\n\nNow let’s first look at expected cooccurrences."
+  },
+  {
     "objectID": "2025/slides/session-7.html#expected-ocurrences",
     "href": "2025/slides/session-7.html#expected-ocurrences",
     "title": "Session 7: Multiword Units",
     "section": "Expected Ocurrences",
-    "text": "Expected Ocurrences\n\\[E_{11} = {(freq_{node} * freq_{collocate} ) \\over Corpus size}\\]"
+    "text": "Expected Ocurrences\n\nExpected co-occurrences are usually calculated as joint probability of words in the corpus.\n\n\\[E_{11} = {(freq_{node} * freq_{collocate} ) \\over Corpus size}\\]"
   },
   {
     "objectID": "2025/slides/session-7.html#mutual-information",

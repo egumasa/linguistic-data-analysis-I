@@ -167,7 +167,10 @@ Masaki EGUCHI, Ph.D.
 </section></section>
 <section id="multiword-sequences" class="title-slide slide level1 center">
 <h1>Multiword sequences</h1>
-
+<ul>
+<li><p>Day 2 focused on <strong>individual words</strong></p></li>
+<li><p>More and more research focus on so called <strong>“Multi-Word” Units/Sequences</strong></p></li>
+</ul>
 </section>
 
 <section>
@@ -179,38 +182,101 @@ Masaki EGUCHI, Ph.D.
 <h2>Warm-up discussion</h2>
 <ul>
 <li>Why do you think multiword sequences are important?</li>
-<li></li>
 </ul>
 </section>
 <section id="usage-based-learning" class="slide level2">
-<h2>Usage based learning</h2>
+<h2>Usage-based learning</h2>
+<ul>
+<li>The idea that <strong>item-based learning</strong> facilitate learning of systematic rules.</li>
+<li>So <strong>usage/exposure in communicative contexts</strong> allows the learner to extract grammatical rules/learn how to express certain things.</li>
+</ul>
 </section>
-<section id="some-statistical-models" class="slide level2">
-<h2>Some statistical models</h2>
+<section id="assessment-research-also-says" class="slide level2">
+<h2>Assessment research also says…</h2>
 <ul>
 <li>Phraseology is considered important</li>
 </ul>
-</section></section>
-<section>
-<section id="type-of-sequences" class="title-slide slide level1 center">
-<h1>Type of sequences</h1>
+</section>
+<section id="definitions" class="slide level2">
+<h2>Definitions</h2>
+<p>Multiword Units/Sequences is a cover term for different things.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Formula type</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Phrasal verbs</td>
+<td>verbs followed by an adverbial particle, where the phrase as a whole is used with a non-literal meaning</td>
+<td><em>blow up</em>, <em>shut down</em></td>
+</tr>
+<tr class="even">
+<td>Idioms</td>
+<td>a relatively fixed sequence of words with a non-literal, typically metaphorical meaning</td>
+<td><em>kick the bucket</em></td>
+</tr>
+<tr class="odd">
+<td>Binomials</td>
+<td>recurrent conventional phrase of two words from the same POS, connected by a conjunction</td>
+<td><em>black and white</em></td>
+</tr>
+</tbody>
+</table>
+<p>etc.</p>
+</section>
+<section id="type-of-sequences" class="slide level2">
+<h2>Type of sequences</h2>
 <ul>
 <li>Collocation:</li>
 <li>Lexical bundles:</li>
 </ul>
 </section>
-<section id="collocations" class="slide level2">
-<h2>Collocations</h2>
-<p>What are the differences between the following two terms?</p>
+<section id="extracting-multiword-sequences" class="slide level2">
+<h2>Extracting multiword sequences</h2>
 <ul>
-<li>Phraseological approach</li>
-<li>Frequency-based approach</li>
+<li>Recurrence vs co-occurrence</li>
 </ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="recurrence" class="title-slide slide level1 center">
+<h1>Recurrence</h1>
+
+</section>
+<section id="extracting-recurrent-units" class="slide level2">
+<h2>Extracting recurrent units</h2>
+</section>
+<section id="n-grams" class="slide level2">
+<h2>N-grams</h2>
+<ul>
+<li>N-grams: contiguous sequences of n words</li>
+</ul>
+<p><strong>Example</strong>: I have not had Gyutan yet this time.</p>
+<p><strong>Bigram</strong>: [I have] [have not] [not had] … [this time].</p>
+<p><strong>Trigram</strong>: [I have not] [have not had] [not had Gyutan] …</p>
+<ul>
+<li>What do you think this contains?</li>
+</ul>
+</section>
+<section id="pos-sensitive-n-grams" class="slide level2">
+<h2>POS sensitive N-grams</h2>
 </section>
 <section id="lexical-bundles" class="slide level2">
 <h2>Lexical bundles</h2>
 <ul>
 <li><p>“Fixed sequence of words that recur frequently”</p></li>
+<li><p>N-gram plus manual filtering</p></li>
 <li><p>Biber et al.&nbsp;(2004) found three important “functions” of</p>
 <ul>
 <li>Referential</li>
@@ -246,38 +312,52 @@ Masaki EGUCHI, Ph.D.
 </table>
 </section></section>
 <section>
-<section id="extracting-multiword-sequences" class="title-slide slide level1 center">
-<h1>Extracting multiword sequences</h1>
+<section id="co-occurrence" class="title-slide slide level1 center">
+<h1>Co-occurrence</h1>
+
+</section>
+<section id="extracting-co-occurring-units-or-collocations" class="slide level2">
+<h2>Extracting co-occurring units OR Collocations</h2>
+<p>What are the differences between the following two terms?</p>
 <ul>
-<li>Recurrence vs co-occurrence</li>
+<li>Phraseological approach</li>
+<li>Frequency-based approach</li>
 </ul>
 </section>
-<section id="n-grams" class="slide level2">
-<h2>N-grams</h2>
+<section id="window-based-approach-basic" class="slide level2">
+<h2>Window-based approach (Basic)</h2>
 </section>
-<section id="window-based-approach" class="slide level2">
-<h2>Window-based approach</h2>
-</section>
-<section id="dependency-parsing" class="slide level2">
-<h2>Dependency Parsing</h2>
+<section id="dependency-parsing-advanced" class="slide level2">
+<h2>Dependency Parsing (Advanced)</h2>
 </section></section>
 <section>
 <section id="operationalizing-association" class="title-slide slide level1 center">
 <h1>Operationalizing association</h1>
 
 </section>
-<section id="strengths-of-association-measures" class="slide level2">
-<h2>Strengths Of Association Measures</h2>
-</section>
 <section id="why-frequency-is-not-sufficient" class="slide level2">
 <h2>Why frequency is not sufficient?</h2>
 <p>Discuss: - Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?</p>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
+<example of="" highly="" frequent="" ngrams="" here="">
+</example></section>
+<section id="strengths-of-association-measures" class="slide level2">
+<h2>Strengths Of Association Measures</h2>
+<ul>
+<li><p>Strengths Of Association (SOA) provides ways to take “frequency” of individual words account.</p></li>
+<li><p>Several SOA measures are commonly used (Gablasova et al., 2017).</p>
+<ul>
+<li>T-score</li>
+<li>Mutual Information</li>
+<li>LogDice</li>
+</ul></li>
+<li><p>Now let’s first look at expected cooccurrences.</p></li>
+</ul>
 </section>
 <section id="expected-ocurrences" class="slide level2">
 <h2>Expected Ocurrences</h2>
+<ul>
+<li>Expected co-occurrences are usually calculated as joint probability of words in the corpus.</li>
+</ul>
 <p><span class="math display">\[E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}\]</span></p>
 </section>
 <section id="mutual-information" class="slide level2">
@@ -296,6 +376,15 @@ Masaki EGUCHI, Ph.D.
 <h2>pros and cons of different association measures</h2>
 <ul>
 <li>You will examine this in session 8, but</li>
+</ul>
+</section></section>
+<section>
+<section id="operationalizing-text-level-measures" class="title-slide slide level1 center">
+<h1>Operationalizing text-level measures</h1>
+<ul>
+<li><p>When we derive text-level measures, we often take the average.</p></li>
+<li><p>However, by doing so, we might lose important information about the details.</p></li>
+<li><p>Eguchi &amp; Kyle tried to use band-based operationalization to describe the pattern.</p></li>
 </ul>
 </section>
 <section class="slide level2">

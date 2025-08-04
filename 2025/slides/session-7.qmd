@@ -24,36 +24,81 @@ By the end of this session, students will be able to:
 
 # Multiword sequences
 
+- Day 2 focused on **individual words**
+
+- More and more research focus on so called **"Multi-Word" Units/Sequences**
+
 
 
 # Why important?
 
+
 ## Warm-up discussion
 
 - Why do you think multiword sequences are important?
-- 
 
-## Usage based learning
 
-## Some statistical models 
+## Usage-based learning
+
+- The idea that **item-based learning** facilitate learning of systematic rules.
+- So **usage/exposure in communicative contexts** allows the learner to extract grammatical rules/learn how to express certain things.
+
+## Assessment research also says...
 
 - Phraseology is considered important
 
-# Type of sequences
+
+## Definitions
+
+Multiword Units/Sequences is a cover term for different things.
+
+| Formula type | Description | Examples |
+|-----|-----|-----|
+| Phrasal verbs | verbs followed by an adverbial particle, where the phrase as a whole is used with a non-literal meaning | *blow up*, *shut down* |
+| Idioms | a relatively fixed sequence of words with a non-literal, typically metaphorical meaning | *kick the bucket* |
+| Binomials | recurrent conventional phrase of two words from the same POS, connected by a conjunction | *black and white* |
+etc.
+
+
+## Type of sequences
 
 - Collocation: 
 - Lexical bundles: 
 
-## Collocations
+## Extracting multiword sequences
 
-What are the differences between the following two terms?
+- Recurrence vs co-occurrence
 
-- Phraseological approach
-- Frequency-based approach
+
+---
+
+# Recurrence
+
+## Extracting recurrent units 
+
+
+## N-grams
+
+- N-grams: contiguous sequences of n words
+
+**Example**: I have not had Gyutan yet this time.
+
+**Bigram**: [I have] [have not] [not had] ... [this time].
+
+**Trigram**: [I have not] [have not had] [not had Gyutan] ...
+
+- What do you think this contains?
+
+
+## POS sensitive N-grams
+
+
+
 
 ## Lexical bundles
 
 - "Fixed sequence of words that recur frequently"
+- N-gram plus manual filtering
 
 - Biber et al. (2004) found three important "functions" of 
   - Referential
@@ -77,26 +122,27 @@ What are the differences between the following two terms?
 
 
 
-# Extracting multiword sequences
+# Co-occurrence
 
-- Recurrence vs co-occurrence
+## Extracting co-occurring units OR Collocations
 
-## N-grams
+What are the differences between the following two terms?
+
+- Phraseological approach
+- Frequency-based approach
+
+## Window-based approach (Basic)
 
 
 
 
-## Window-based approach
-
-
-## Dependency Parsing
+## Dependency Parsing (Advanced)
 
 
 
 
 # Operationalizing association
 
-## Strengths Of Association Measures
 
 
 ## Why frequency is not sufficient?
@@ -104,9 +150,24 @@ What are the differences between the following two terms?
 Discuss: 
 - Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?
 
-## 
+<Example of highly frequent ngrams here>
+
+
+## Strengths Of Association Measures
+
+- Strengths Of Association (SOA) provides ways to take "frequency" of individual words account.
+
+- Several SOA measures are commonly used (Gablasova et al., 2017).
+  - T-score
+  - Mutual Information
+  - LogDice
+- Now let's first look at expected cooccurrences.
+
 
 ## Expected Ocurrences
+
+- Expected co-occurrences are usually calculated as joint probability of words in the corpus.
+
 
 $$E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}$$
 
@@ -129,10 +190,12 @@ $$MI = {log_2{ Observed freq \over Expected frequency }}$$
 - You will examine this in session 8, but 
 
 
+# Operationalizing text-level measures 
 
+- When we derive text-level measures, we often take the average.
+- However, by doing so, we might lose important information about the details.
 
-
-
+- Eguchi & Kyle tried to use band-based operationalization to describe the pattern.
 
 
 
