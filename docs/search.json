@@ -1472,7 +1472,7 @@
     "href": "2025/slides/session-6.html#relationships-between-cttr-and-year",
     "title": "Session 6: Hands-on activity #3",
     "section": "Relationships between CTTR and Year",
-    "text": "Relationships between CTTR and Year\n\nDurrant (2023) introduced:\n\n\\(CTTR = {nType \\over \\sqrt{2 * nToken}}\\)\n\n\n\n\nFigure 4.19"
+    "text": "Relationships between CTTR and Year\n\nDurrant (2023) introduced:\n\n\\(CTTR = {nType \\over \\sqrt{2 * nToken}}\\)"
   },
   {
     "objectID": "2025/slides/session-6.html#lexical-diversity",
@@ -1535,14 +1535,14 @@
     "href": "2025/slides/session-6.html#these-are-real-example-from-icnale",
     "title": "Session 6: Hands-on activity #3",
     "section": "These are real example from ICNALE",
-    "text": "These are real example from ICNALE\n\n\n\n\nICNALE data here"
+    "text": "These are real example from ICNALE\n\nDownload ICNALE data here"
   },
   {
     "objectID": "2025/slides/session-6.html#parallel-analysis",
     "href": "2025/slides/session-6.html#parallel-analysis",
     "title": "Session 6: Hands-on activity #3",
     "section": "Parallel Analysis",
-    "text": "Parallel Analysis\n\nThrough this worksheet, we will look at how Kyle et al. showcased the impact of text lengths on lexical sophistication indices.\nParallel analysis is a technique to investigate the impact of text length\n\nChunking texts into smaller lengths (20, 40, 60 etc.)\nCalculate index for each sliding window with same lengths\nAverage them into a single value\n\nbecause the original texts are the same, the values should NOT change due to different text lengths."
+    "text": "Parallel Analysis\n\n\nThrough this worksheet, we will look at how Kyle et al. showcased the impact of text lengths on lexical sophistication indices.\nParallel analysis is a technique to investigate the impact of text length\n\nChunking texts into smaller lengths (20, 40, 60 etc.)\nCalculate index for each sliding window with same lengths\nAverage them into a single value\n\nbecause the original texts are the same, the values should NOT change due to different text lengths."
   },
   {
     "objectID": "2025/slides/session-6.html#some-classic-lexical-diversity",
@@ -1738,7 +1738,7 @@
     "href": "2025/slides/session-6.html#comparing-lexical-characteristics-of-two-texts",
     "title": "Session 6: Hands-on activity #3",
     "section": "Comparing lexical characteristics of two texts",
-    "text": "Comparing lexical characteristics of two texts\nGoals\n\nCompare and contrast two texts along with several lexical diversity metrics\nObserve differences in single-word and multiword sophistication\n\nData\n\nChoose two texts from the ICNALE GRA\nIf you are unsure, use choose from the following three files:\n\nGRA_PTJ0_124_ORIG.txt\nGRA_PTJ0_070_ORIG.txt\nGRA_PTJ0_112_ORIG.txt"
+    "text": "Comparing lexical characteristics of two texts\n\nGoals\n\nCompare and contrast two texts along with several lexical diversity metrics\nObserve differences in single-word and multiword sophistication\n\nData\n\nChoose two texts from the ICNALE GRA\nIf you are unsure, use choose from the following three files:\n\nGRA_PTJ0_124_ORIG.txt\nGRA_PTJ0_070_ORIG.txt\nGRA_PTJ0_112_ORIG.txt"
   },
   {
     "objectID": "2025/slides/session-6.html#step-1-qualitatively-compare-two-files",
@@ -6117,5 +6117,12 @@
     "title": "",
     "section": "Day 5",
     "text": "Day 5\n[ ] Session 13 [ ] Session 14 [ ] Session 15"
+  },
+  {
+    "objectID": "2025/slides/session-6.html#new-slide",
+    "href": "2025/slides/session-6.html#new-slide",
+    "title": "Session 6: Hands-on activity #3",
+    "section": "new slide",
+    "text": "new slide\n\nFigure 4.19"
   }
 ]
