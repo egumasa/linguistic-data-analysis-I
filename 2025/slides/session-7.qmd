@@ -305,7 +305,7 @@ We have two major approaches to define MWUs:
 
 - Which of the following type of MWUs are more challenging to identify from the frequency-based approach?
   - Collocation: `play + role`, `meet + expectation`
-  - Binomials: `by and large`, `black and white`
+  - Binomials: `black and white`
   - Idiom: `kick the bucket`, `over the moon`
   - Lexical bundles: `in terms of the`, `the extent to which`
 
@@ -474,11 +474,18 @@ When we talk about co-occurrence, things are a bit more complex.
 
 ## Examples from you
 
+- The results of the experiment didn't meet my expectation.
+- The results met the expectation that I have made before the experiment.
+- We hope the new policy will meet the public expectation.
+- The expectation of the univerity was met.
 
 
 ## The nature of collocation
 
-- As collocation is about "preferences based on conventional uses", or more precisely, 
+- Collocation is about "preferences based on conventional uses" 
+  - "Semantic priming" (Hoey, 2005)
+
+
 
 ## Window-based approach (Basic)
 
@@ -603,11 +610,9 @@ When we think about "association", we can think about it from a probability pers
 
 :::
 
-## Expected Ocurrences
+## Expected Ocurrences (Corrected)
 
-- Expected co-occurrences are usually calculated as joint probability of words in the corpus.
-
-
+- Expected co-occurrences are usually calculated as follows:
 $$E_{11} = {(\text{freq of node word} * \text{freq of collocate } ) \over Corpus size}$$
 
 Let's calculate the expected frequency.
@@ -621,13 +626,12 @@ Let's calculate the expected frequency.
 (500 * 500) / 1000000
 ```
 
-
 ## Mutual Information
 
 Now we are ready to calculate MI.
 
 - The expected frequency = .25
-- The observed frequency = 500
+- The observed frequency = 50
 
 $$MI = {log_2{ \text{Observed freq} \over \text{Expected frequency} }}$$
 
@@ -637,7 +641,7 @@ Let's do this:
 #| echo: true      # Show code (default)
 #| eval: true      # Run code (default)
 
-MI = log(500/0.25, base = 2)
+MI = log(50/0.25, base = 2)
 MI
 ```
 
@@ -736,6 +740,7 @@ $\text{Sophistication of PU} = {\text{Total score for SOAs} \over \text{# of Tok
 ## Basic findings
 
 ::: {style = "font-size:70%"}
+
 - **Recent studies demonstrate benefits** of adding *phraseological complexity* measures to explain second language proficiency:
   - Eguchi & Kyle (2020) in Oral Proficieincy Interview
   - Paquot (2019): Dependency collocation explained more variance than syntactic complexity
@@ -747,6 +752,7 @@ $\text{Sophistication of PU} = {\text{Total score for SOAs} \over \text{# of Tok
 
 
 ::: {style = "font-size:40%"}
+
 - Paquot, M. (2019). The phraseological dimension in interlanguage complexity research. Second Language Research, 35(1), 121–145. https://doi.org/10.1177/0267658317694221
 - Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637
 - Kyle, K., & Eguchi, M. (2021). Automatically assessing lexical sophistication using word, bigram, and dependency indices. In Perspectives on the L2 phrasicon: The view from learner corpora (pp. 126–151).

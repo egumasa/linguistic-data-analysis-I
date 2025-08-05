@@ -2917,6 +2917,125 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nSearch for window-based collocations and n-grams in AntConc\nCalculate commonly used strengths of association measures by hand using spreadsheet software\nDiscuss benefits and drawbacks of different strength of association measures"
   },
   {
+    "objectID": "2025/slides/session-8.html#corpus-lab-2-submission",
+    "href": "2025/slides/session-8.html#corpus-lab-2-submission",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Corpus Lab 2: Submission",
+    "text": "Corpus Lab 2: Submission\n\n\nTask 1: Japanese Word Frequency List and small write-up (5 points)\nTask 2: Replication of Durrant’s analysis from Figure 4.19 (5 points)\n\nresearch question,\nhypothesis,\nplots, and\nresults\n\nTask 3: Comparison of two texts in terms of lexical sophistication (5 points)"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#corpus-lab-2-task-1",
+    "href": "2025/slides/session-8.html#corpus-lab-2-task-1",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Corpus Lab 2: Task 1",
+    "text": "Corpus Lab 2: Task 1\n\nInstruction"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#task-1-compile-a-japanese-word-frequency-list",
+    "href": "2025/slides/session-8.html#task-1-compile-a-japanese-word-frequency-list",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Task 1: Compile a Japanese Word Frequency list",
+    "text": "Task 1: Compile a Japanese Word Frequency list\n\nTask\nCompile a Japanese frequency list based on a corpus.\nResource\n\nDownload a Japanese text Aozora 500 from Google Drive.\nUse AntConc, TagAnt, and Simple Text Analyzer."
+  },
+  {
+    "objectID": "2025/slides/session-8.html#submission-for-task-1",
+    "href": "2025/slides/session-8.html#submission-for-task-1",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Submission for task 1",
+    "text": "Submission for task 1\n\n\nSubmit a frequency list .tsv or .txt.\nA short description of word frequency pattern in Japanese.\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes a frequency list of Japanese words based on Aozora 500\nprovides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#corpus-lab-2-task-2",
+    "href": "2025/slides/session-8.html#corpus-lab-2-task-2",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Corpus Lab 2: Task 2",
+    "text": "Corpus Lab 2: Task 2"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#instruction",
+    "href": "2025/slides/session-8.html#instruction",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Instruction",
+    "text": "Instruction\nGoal: to replicate analysis on GiG.\nYou will need to have access to both metadata file.\nThe corpus data is here."
+  },
+  {
+    "objectID": "2025/slides/session-8.html#about-gig-meta-data",
+    "href": "2025/slides/session-8.html#about-gig-meta-data",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "About GiG meta data",
+    "text": "About GiG meta data\n\nGiG metadata documents the necessary data to use for plotting\n\nYear Group (X-axis in Figure 4.19)\nGenre (grouping variable in Figure 4.19)\n\n\n\nGiG Metadata"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#writing-up-research-question-hypothesis-and-results",
+    "href": "2025/slides/session-8.html#writing-up-research-question-hypothesis-and-results",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Writing up research question, hypothesis, and results",
+    "text": "Writing up research question, hypothesis, and results\n\n\nResearch question?\nHypothesis: Write your own.\nResults: Write your own.\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts\nprovides two sets of plots that describe trends of lexical diversity across year groups and genre.\nprovides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023)."
+  },
+  {
+    "objectID": "2025/slides/session-8.html#corpus-lab-2-task-3",
+    "href": "2025/slides/session-8.html#corpus-lab-2-task-3",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Corpus Lab 2: Task 3",
+    "text": "Corpus Lab 2: Task 3"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#comparing-lexical-characteristics-of-two-texts",
+    "href": "2025/slides/session-8.html#comparing-lexical-characteristics-of-two-texts",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Comparing lexical characteristics of two texts",
+    "text": "Comparing lexical characteristics of two texts\n\nGoals\n\nCompare and contrast two texts along with several lexical diversity metrics\nObserve differences in single-word and multiword sophistication\n\nData\n\nChoose two texts from the ICNALE GRA\nIf you are unsure, use choose from the following three files:\n\nGRA_PTJ0_124_ORIG.txt\nGRA_PTJ0_070_ORIG.txt\nGRA_PTJ0_112_ORIG.txt"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#step-1-qualitatively-compare-two-files",
+    "href": "2025/slides/session-8.html#step-1-qualitatively-compare-two-files",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Step 1: Qualitatively compare two files",
+    "text": "Step 1: Qualitatively compare two files\n\nBefore we actually obtain lexical sophistication measures, compare two texts in terms of their lexical use.\nIn pairs, describe the strengths and weakeness in vocabulary use."
+  },
+  {
+    "objectID": "2025/slides/session-8.html#step-2-hypothesis",
+    "href": "2025/slides/session-8.html#step-2-hypothesis",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Step 2: Hypothesis",
+    "text": "Step 2: Hypothesis\n\nIn what way is one text more lexically sophisticated than the other?\n\nTry to come up with characteristics that describe the quality of word use in each text"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#step-3-pick-two-or-three-lexical-sophistication-variables",
+    "href": "2025/slides/session-8.html#step-3-pick-two-or-three-lexical-sophistication-variables",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Step 3: Pick two or three lexical sophistication variables",
+    "text": "Step 3: Pick two or three lexical sophistication variables\nEnter the text into analyzer\nWe can also compare two texts in simple text analyzer.\n\ntwo-text"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#step-4-run-analyses",
+    "href": "2025/slides/session-8.html#step-4-run-analyses",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Step 4: Run analyses",
+    "text": "Step 4: Run analyses\nPlots that compares two lists\n!"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#step-5-interpret-the-findings",
+    "href": "2025/slides/session-8.html#step-5-interpret-the-findings",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Step 5: Interpret the findings",
+    "text": "Step 5: Interpret the findings\n\nLet’s discuss how the two text differ in lexical use from one another.\nUse the tables with token information and visualization to (dis)confirm your hypothesis\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\nincludes plots from one frequency index and one other type of index\nprovides desciption of how two texts differ in terms of the selected lexical sophistication indices."
+  },
+  {
+    "objectID": "2025/slides/session-8.html#expected-ocurrences-correction",
+    "href": "2025/slides/session-8.html#expected-ocurrences-correction",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Expected Ocurrences (Correction)",
+    "text": "Expected Ocurrences (Correction)\n\nExpected frequency tries to get “number of times two words occur together if they were truly independent at chance level.”\nExpected frequency are usually calculated as follows: \\[E_{11} = {(\\text{freq of node word} * \\text{freq of collocate } ) \\over Corpus size}\\]\nIf word1 and word 2 occur 500 times each in a million word corpus…\n\n\n(500 * 500) / 1000000\n\n[1] 0.25"
+  },
+  {
+    "objectID": "2025/slides/session-8.html#differences-between-expected-frequency-joint-probability",
+    "href": "2025/slides/session-8.html#differences-between-expected-frequency-joint-probability",
+    "title": "Session 8: Hands-on activity #4",
+    "section": "Differences between expected frequency & Joint probability",
+    "text": "Differences between expected frequency & Joint probability\nThey are mathematical conversion between the two.\n$ = {500 } $\nThis is probability, to convert back to COUNT over all corpus, you multiply the corpus size\n\\(\\text{Expected frequency} = {500 \\over 1000000} \\times {500 \\over 1000000} \\times 1000000\\)"
+  },
+  {
     "objectID": "2025/slides/session-8.html#generating-n-gram-list-with-antconc-10-mins",
     "href": "2025/slides/session-8.html#generating-n-gram-list-with-antconc-10-mins",
     "title": "Session 8: Hands-on activity #4",
@@ -3092,11 +3211,11 @@
     "text": "Take-away…\n\nEven widely used corpus software may give you slightly different SOA scores, because of possible differences in counting strategies, tokenization, etc..\nAntConc and Casual Conc likely uses:\n\n\\(E_{11} = {(freq_{node} * freq_{collocate} * \\color{red}{window size}) \\over Corpus size}\\)\n\nIt is very important to triple-check your work and…"
   },
   {
-    "objectID": "2025/slides/session-8.html#report-exactly-what-you-did",
-    "href": "2025/slides/session-8.html#report-exactly-what-you-did",
+    "objectID": "2025/slides/session-8.html#report-exactly-what-you-did-for-replication",
+    "href": "2025/slides/session-8.html#report-exactly-what-you-did-for-replication",
     "title": "Session 8: Hands-on activity #4",
-    "section": "Report exactly what you did",
-    "text": "Report exactly what you did\nReplicability is key to science.\nFor example, you might say.\n\ne.g., I used AntCont version 4.2.x\ne.g., MI was calculated using the following formula\n\n\\(MI = {log_2{ Observed freq \\over Expected frequency }}\\)\nwhere the expected frequency is calculated as:\n\\(E_{11} = {(freq_{node} * freq_{collocate} * \\color{red}{window size}) \\over Corpus size}\\)"
+    "section": "Report exactly what you did (for replication)",
+    "text": "Report exactly what you did (for replication)\nReplicability is key to science.\nFor example, you might say.\n\ne.g., I used AntCont version 4.2.x\ne.g., MI was calculated using the following formula\n\n\\(MI = {log_2{ Observed freq \\over Expected frequency }}\\)\nwhere the expected frequency is calculated as:\n\\(E_{11} = {(freq_{node} * freq_{collocate} * \\color{red}{window size}) \\over Corpus size}\\)"
   },
   {
     "objectID": "2025/slides/session-8.html#questions-1",
@@ -3118,20 +3237,6 @@
     "title": "Session 8: Hands-on activity #4",
     "section": "Results should look like something",
     "text": "Results should look like something\n\nLogDice:\n\nOurs: 6.548\nAntConc: 6.551 Likely multiplying window size in the denominator.\nCasualConc: 11.14 ???\n\nT-score:\n\nOurs: 2.927\nAntConc: 2.928 (Almost identical)\nCasualConc: 2.99 (close)"
-  },
-  {
-    "objectID": "2025/slides/session-8.html#understanding-collocational-characteristics-by-plotting-20-mins",
-    "href": "2025/slides/session-8.html#understanding-collocational-characteristics-by-plotting-20-mins",
-    "title": "Session 8: Hands-on activity #4",
-    "section": "Understanding collocational characteristics by plotting (20 mins)",
-    "text": "Understanding collocational characteristics by plotting (20 mins)\n\nLet’s make plots based on the calculated\nPlot 1:\n\nX-Axis: T-score\nY-Axis: MI\n\nPlot 2:\n\nX-Axis: LogDice\nY-Axis: MI"
-  },
-  {
-    "objectID": "2025/slides/session-8.html#discussion-describe-the-characteristics-of-each-index",
-    "href": "2025/slides/session-8.html#discussion-describe-the-characteristics-of-each-index",
-    "title": "Session 8: Hands-on activity #4",
-    "section": "Discussion: Describe the characteristics of each index",
-    "text": "Discussion: Describe the characteristics of each index\n\nWhat are the characteristics of SOA indices?\n\nT-score\nMI\nLogDice"
   },
   {
     "objectID": "2025/slides/session-8.html#if-time-allowed-how-can-i-generate-a-collocation-list",
@@ -4788,7 +4893,7 @@
     "href": "2025/slides/session-7.html#preview-discussion",
     "title": "Session 7: Multiword Units",
     "section": "Preview discussion",
-    "text": "Preview discussion\n\nWhich of the following type of MWUs are more challenging to identify from the frequency-based approach?\n\nCollocation: play + role, meet + expectation\nBinomials: by and large, black and white\nIdiom: kick the bucket, over the moon\nLexical bundles: in terms of the, the extent to which"
+    "text": "Preview discussion\n\nWhich of the following type of MWUs are more challenging to identify from the frequency-based approach?\n\nCollocation: play + role, meet + expectation\nBinomials: black and white\nIdiom: kick the bucket, over the moon\nLexical bundles: in terms of the, the extent to which"
   },
   {
     "objectID": "2025/slides/session-7.html#questions",
@@ -4886,14 +4991,14 @@
     "href": "2025/slides/session-7.html#examples-from-you",
     "title": "Session 7: Multiword Units",
     "section": "Examples from you",
-    "text": "Examples from you"
+    "text": "Examples from you\n\nThe results of the experiment didn’t meet my expectation.\nThe results met the expectation that I have made before the experiment.\nWe hope the new policy will meet the public expectation.\nThe expectation of the univerity was met."
   },
   {
     "objectID": "2025/slides/session-7.html#the-nature-of-collocation",
     "href": "2025/slides/session-7.html#the-nature-of-collocation",
     "title": "Session 7: Multiword Units",
     "section": "The nature of collocation",
-    "text": "The nature of collocation\n\nAs collocation is about “preferences based on conventional uses”, or more precisely,"
+    "text": "The nature of collocation\n\nCollocation is about “preferences based on conventional uses”\n\n“Semantic priming” (Hoey, 2005)"
   },
   {
     "objectID": "2025/slides/session-7.html#window-based-approach-basic",
@@ -4966,18 +5071,18 @@
     "text": "Suppose we have following\n\n\nCollocation freq: 50\nWord 1: 500\nWord 2: 500\nEntire corpus: 1,000,000\n\n\n\n\n\n\n\n# with word 1\n# without word 1\nTotal\n\n\n\n\n# with word 2\n50\n450\n500\n\n\n# without word 2\n450\n999,050\n999,500\n\n\nTotal\n500\n999,500\n1,000,000"
   },
   {
-    "objectID": "2025/slides/session-7.html#expected-ocurrences",
-    "href": "2025/slides/session-7.html#expected-ocurrences",
+    "objectID": "2025/slides/session-7.html#expected-ocurrences-corrected",
+    "href": "2025/slides/session-7.html#expected-ocurrences-corrected",
     "title": "Session 7: Multiword Units",
-    "section": "Expected Ocurrences",
-    "text": "Expected Ocurrences\n\nExpected co-occurrences are usually calculated as joint probability of words in the corpus.\n\n\\[E_{11} = {(\\text{freq of node word} * \\text{freq of collocate } ) \\over Corpus size}\\]\nLet’s calculate the expected frequency.\n\nIf word1 and word 2 occur 500 times each in a million word corpus…\n\n\n(500 * 500) / 1000000\n\n[1] 0.25"
+    "section": "Expected Ocurrences (Corrected)",
+    "text": "Expected Ocurrences (Corrected)\n\nExpected co-occurrences are usually calculated as follows: \\[E_{11} = {(\\text{freq of node word} * \\text{freq of collocate } ) \\over Corpus size}\\]\n\nLet’s calculate the expected frequency.\n\nIf word1 and word 2 occur 500 times each in a million word corpus…\n\n\n(500 * 500) / 1000000\n\n[1] 0.25"
   },
   {
     "objectID": "2025/slides/session-7.html#mutual-information",
     "href": "2025/slides/session-7.html#mutual-information",
     "title": "Session 7: Multiword Units",
     "section": "Mutual Information",
-    "text": "Mutual Information\nNow we are ready to calculate MI.\n\nThe expected frequency = .25\nThe observed frequency = 500\n\n\\[MI = {log_2{ \\text{Observed freq} \\over \\text{Expected frequency} }}\\]\nLet’s do this:\n\nMI = log(500/0.25, base = 2)\nMI\n\n[1] 10.96578"
+    "text": "Mutual Information\nNow we are ready to calculate MI.\n\nThe expected frequency = .25\nThe observed frequency = 50\n\n\\[MI = {log_2{ \\text{Observed freq} \\over \\text{Expected frequency} }}\\]\nLet’s do this:\n\nMI = log(50/0.25, base = 2)\nMI\n\n[1] 7.643856"
   },
   {
     "objectID": "2025/slides/session-7.html#mutual-information-1",
@@ -5005,7 +5110,7 @@
     "href": "2025/slides/session-7.html#summary",
     "title": "Session 7: Multiword Units",
     "section": "Summary",
-    "text": "Summary\n\nMajor association measures are MI, T-score, and LogDice.\nWe covered how to calculate each.\n\n\nMI; tscore; logdice\n\n[1] 10.96578\n\n\n[1] 7.035712\n\n\n[1] 10.67807"
+    "text": "Summary\n\nMajor association measures are MI, T-score, and LogDice.\nWe covered how to calculate each.\n\n\nMI; tscore; logdice\n\n[1] 7.643856\n\n\n[1] 7.035712\n\n\n[1] 10.67807"
   },
   {
     "objectID": "2025/slides/session-7.html#phraseological-complexity-1",

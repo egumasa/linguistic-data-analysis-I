@@ -11,7 +11,7 @@ metadata-files:
 
 # Session overview
 
-- 
+
 
 ## 🎯 Learning Objectives
 
@@ -22,6 +22,196 @@ By the end of this session, students will be able to:
 > - Discuss benefits and drawbacks of different strength of association measures
 
 ---
+
+# Corpus Lab 2
+
+## Corpus Lab 2: Submission
+
+::: {style="font-size:85%"}
+- **Task 1**: Japanese Word Frequency List and small write-up (5 points)
+- **Task 2**: Replication of Durrant's analysis from Figure 4.19 (5 points)
+  - research question, 
+  - hypothesis, 
+  - plots, and 
+  - results 
+- **Task 3**: Comparison of two texts in terms of lexical sophistication (5 points)
+:::
+
+## Corpus Lab 2: Task 1 {.center}
+
+::: {style = "color:gray"}
+Instruction
+:::
+
+## Task 1: Compile a Japanese Word Frequency list
+
+::: {style = "font-size:80%"}
+
+### Task
+Compile a Japanese frequency list based on a corpus.
+
+### Resource
+- Download a Japanese text `Aozora 500` from Google Drive.
+- Use AntConc, TagAnt, and Simple Text Analyzer.
+
+:::
+
+
+## Submission for task 1
+
+::: {style = "font-size:80%"}
+- Submit a frequency list `.tsv` or `.txt`.
+- A short description of word frequency pattern in Japanese.
+
+:::
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes a frequency list of Japanese words based on Aozora 500
+- [ ] provides a description of word-frequency patterns in Aozora 500 using example words from each frequency bins
+
+:::
+
+
+## Corpus Lab 2: Task 2 {.center}
+
+## Instruction
+
+**Goal**:  to replicate analysis on GiG.
+
+You will need to have access to both metadata file.
+
+The corpus data is [here](https://drive.google.com/drive/folders/1TqtY2KVe5H_zScAYJ8VPoIjWYIryrcMU?usp=drive_link).
+
+
+## About GiG meta data
+
+- GiG metadata documents the necessary data to use for plotting
+  - Year Group (X-axis in Figure 4.19)
+  - Genre (grouping variable in Figure 4.19)
+
+![GiG Metadata](../../assets/session-6/GiG_meta.png)
+
+## Writing up research question, hypothesis, and results
+
+::: {style="font-size:75%"}
+
+- **Research question?**
+- **Hypothesis**: Write your own.
+- **Results**: Write your own.
+
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes a spreatsheet that contains lexical diversity (i.e., TTR, Root TTR, Log TTR, MAAS) scores for the sample texts
+- [ ] provides two sets of plots that describe trends of lexical diversity across year groups and genre.
+- [ ] provides 200-300 word replication report on lexical diversity trends in GiG corpus, presented as Figure 4.19 in Durrant (2023).
+
+:::
+:::
+
+
+## Corpus Lab 2: Task 3 {.center}
+
+## Comparing lexical characteristics of two texts
+
+::: {style="font-size:75%"}
+### Goals
+
+- Compare and contrast two texts along with several lexical diversity metrics
+- Observe differences in single-word and multiword sophistication
+
+### Data
+
+- Choose two texts from the ICNALE GRA
+- If you are unsure, use choose from the following three files:
+  - GRA_PTJ0_124_ORIG.txt
+  - GRA_PTJ0_070_ORIG.txt
+  - GRA_PTJ0_112_ORIG.txt
+:::
+
+## Step 1: Qualitatively compare two files
+
+- Before we actually obtain lexical sophistication measures, compare two texts in terms of their lexical use.
+- In pairs, describe the strengths and weakeness in vocabulary use.
+
+
+## Step 2: Hypothesis
+
+- In what way is one text more lexically sophisticated than the other?
+  - Try to come up with characteristics that describe the `quality of word use` in each text 
+
+
+## Step 3: Pick two or three lexical sophistication variables
+
+### Enter the text into analyzer
+
+We can also compare two texts in simple text analyzer.
+
+![two-text](../../assets/session-6/Two-text-comparison.png)
+
+
+
+## Step 4: Run analyses
+
+### Plots that compares two lists
+
+!![bigram-comparison](../../assets/session-6/bigram-freq.png)
+
+
+## Step 5: Interpret the findings
+
+- Let's discuss how the two text differ in lexical use from one another.
+- Use the tables with token information and visualization to (dis)confirm your hypothesis
+
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] includes plots from one frequency index and one other type of index
+- [ ] provides desciption of how two texts differ in terms of the selected lexical sophistication indices.
+
+:::
+
+
+# Correction about expected frequency
+
+## Expected Ocurrences (Correction)
+
+- Expected frequency tries to get "number of times two words occur together if they were truly independent at chance level."
+- **Expected frequency** are usually calculated **as follows**:
+$$E_{11} = {(\text{freq of node word} * \text{freq of collocate } ) \over Corpus size}$$
+
+- If word1 and word 2 occur 500 times each in a million word corpus...
+
+```{r}
+#| echo: true      # Show code (default)
+#| eval: true      # Run code (default)
+
+(500 * 500) / 1000000
+```
+
+
+## Differences between expected frequency & Joint probability
+
+They are mathematical conversion between the two.
+
+$\text{Joint Probability} = {500 \over 1000000} \times {500 \over 1000000} $
+
+This is probability, to convert back to `COUNT` over all corpus, you multiply the corpus size
+
+$\text{Expected frequency} = {500 \over 1000000} \times {500 \over 1000000} \times 1000000$
+
+
+# Generating N-gram list
 
 ## Generating N-gram list with AntConc (10 mins)
 
@@ -134,7 +324,6 @@ You can search collocation by entering `node` words
 
 Now we will enter formula for the expected frequency.
 
-
 $$E_{11} = {(freq_{node} * freq_{collocate} ) \over Corpus size}$$
 
 - This formula says:
@@ -193,7 +382,7 @@ Let's fix the expected frequency count.
 - It is very important to **triple-check your work** and...
   
 
-## Report exactly what you did
+## Report exactly what you did (for replication)
 
 Replicability is key to science.
 
@@ -230,26 +419,6 @@ For example, you might say.
   - Ours: 2.927
   - AntConc: 2.928 (Almost identical)
   - CasualConc: 2.99 (close)
-
-
-## Understanding collocational characteristics by plotting (20 mins)
-
-- Let's make plots based on the calculated 
-
-- Plot 1: 
-  - X-Axis: T-score
-  - Y-Axis: MI
-- Plot 2:
-  - X-Axis: LogDice
-  - Y-Axis: MI
-
-
-## Discussion: Describe the characteristics of each index
-
-- What are the characteristics of SOA indices?
-  - T-score
-  - MI
-  - LogDice
 
 
 ## (If time allowed) how can I generate a collocation list?

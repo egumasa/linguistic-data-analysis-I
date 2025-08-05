@@ -612,7 +612,7 @@ Masaki EGUCHI, Ph.D.
 <li>Which of the following type of MWUs are more challenging to identify from the frequency-based approach?
 <ul>
 <li>Collocation: <code>play + role</code>, <code>meet + expectation</code></li>
-<li>Binomials: <code>by and large</code>, <code>black and white</code></li>
+<li>Binomials: <code>black and white</code></li>
 <li>Idiom: <code>kick the bucket</code>, <code>over the moon</code></li>
 <li>Lexical bundles: <code>in terms of the</code>, <code>the extent to which</code></li>
 </ul></li>
@@ -871,11 +871,20 @@ Look at the following list of lexical bundles, try to classify them into differe
 </section>
 <section id="examples-from-you" class="slide level2">
 <h2>Examples from you</h2>
+<ul>
+<li>The results of the experiment didn’t meet my expectation.</li>
+<li>The results met the expectation that I have made before the experiment.</li>
+<li>We hope the new policy will meet the public expectation.</li>
+<li>The expectation of the univerity was met.</li>
+</ul>
 </section>
 <section id="the-nature-of-collocation" class="slide level2">
 <h2>The nature of collocation</h2>
 <ul>
-<li>As collocation is about “preferences based on conventional uses”, or more precisely,</li>
+<li>Collocation is about “preferences based on conventional uses”
+<ul>
+<li>“Semantic priming” (Hoey, 2005)</li>
+</ul></li>
 </ul>
 </section>
 <section id="window-based-approach-basic" class="slide level2">
@@ -1068,12 +1077,11 @@ Look at the following list of lexical bundles, try to classify them into differe
 </table>
 </div>
 </section>
-<section id="expected-ocurrences" class="slide level2">
-<h2>Expected Ocurrences</h2>
+<section id="expected-ocurrences-corrected" class="slide level2">
+<h2>Expected Ocurrences (Corrected)</h2>
 <ul>
-<li>Expected co-occurrences are usually calculated as joint probability of words in the corpus.</li>
+<li>Expected co-occurrences are usually calculated as follows: <span class="math display">\[E_{11} = {(\text{freq of node word} * \text{freq of collocate } ) \over Corpus size}\]</span></li>
 </ul>
-<p><span class="math display">\[E_{11} = {(\text{freq of node word} * \text{freq of collocate } ) \over Corpus size}\]</span></p>
 <p>Let’s calculate the expected frequency.</p>
 <ul>
 <li>If word1 and word 2 occur 500 times each in a million word corpus…</li>
@@ -1090,15 +1098,15 @@ Look at the following list of lexical bundles, try to classify them into differe
 <p>Now we are ready to calculate MI.</p>
 <ul>
 <li>The expected frequency = .25</li>
-<li>The observed frequency = 500</li>
+<li>The observed frequency = 50</li>
 </ul>
 <p><span class="math display">\[MI = {log_2{ \text{Observed freq} \over \text{Expected frequency} }}\]</span></p>
 <p>Let’s do this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>MI <span class="ot">=</span> <span class="fu">log</span>(<span class="dv">500</span><span class="sc">/</span><span class="fl">0.25</span>, <span class="at">base =</span> <span class="dv">2</span>)</span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>MI <span class="ot">=</span> <span class="fu">log</span>(<span class="dv">50</span><span class="sc">/</span><span class="fl">0.25</span>, <span class="at">base =</span> <span class="dv">2</span>)</span>
 <span id="cb5-2"><a></a>MI</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 10.96578</code></pre>
+<pre><code>[1] 7.643856</code></pre>
 </div>
 </div>
 </section>
@@ -1147,7 +1155,7 @@ Look at the following list of lexical bundles, try to classify them into differe
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>MI; tscore; logdice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 10.96578</code></pre>
+<pre><code>[1] 7.643856</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 7.035712</code></pre>
