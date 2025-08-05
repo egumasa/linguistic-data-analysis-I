@@ -176,17 +176,24 @@ Masaki EGUCHI, Ph.D.
 <h1>Let’s start</h1>
 
 </section>
+<section id="preparation" class="slide level2">
+<h2>Preparation</h2>
+<ul>
+<li>Create <code>corpus_data</code> under <code>MyDrive</code></li>
+<li>Put <code>ICNALE</code> corpus under <code>MyDrive/corpus_file</code></li>
+</ul>
+</section>
 <section id="colab-notebook" class="slide level2">
 <h2>Colab Notebook</h2>
 <ul>
-<li>Access the notebook here.</li>
+<li>Access the notebook from <a href="https://drive.google.com/drive/folders/1iPwW-lj81LcTpjjieGNly59UB27A_Hjs?usp=drive_link">the folder</a>.</li>
 </ul>
 </section>
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
 <ul>
-<li>The notebook is very basic version of what TAASSC will do</li>
-<li>This is meant for educational use; for research more rigorous approach may be needed.</li>
+<li>The notebook is very basic version of what TAASSC can do for you in Kyle &amp; Crossley (2018).</li>
+<li>This is meant for educational use; for research more rigorous approach may be needed to identify T-units more consistently.</li>
 </ul>
 </section>
 <section id="algorithm-used-in-the-notebook" class="slide level2">
@@ -212,7 +219,17 @@ Masaki EGUCHI, Ph.D.
 <section>
 <section id="lets-now-work-on-the-notebook" class="title-slide slide level1 center">
 <h1>Let’s now work on the notebook</h1>
-
+<ul>
+<li>Let’s first identify <code>adjectival modifier (amod)</code></li>
+</ul>
+</section>
+<section id="coming-up-with-extraction-rules" class="slide level2">
+<h2>coming up with extraction rules</h2>
+<p>From Table 5.1 in Durrant (2023, p.&nbsp;102), pick one or two sentences.</p>
+<ul>
+<li>Using POS/ Dependency parsing option in simple text analyzer, <strong>try to describe how to identify those structure</strong>.</li>
+<li>For example, to identify <code>that-clause complement</code>, you will first look for <code>ccomp</code> and look if the <code>ccomp</code> has <code>mark</code> that is <code>that</code>.</li>
+</ul>
 </section>
 <section id="spacy-token-information" class="slide level2">
 <h2>spaCy token information</h2>
@@ -254,17 +271,9 @@ Masaki EGUCHI, Ph.D.
 </tbody>
 </table>
 </section>
-<section id="excercise" class="slide level2">
-<h2>Excercise</h2>
-<p>From Table 5.1 in Durrant (2023, p.&nbsp;102), pick one or two sentences.</p>
-<p>Try to identify that structure using the following extraction pipeline.</p>
-</section>
-<section id="extraction-pipelines." class="slide level2">
-<h2>Extraction pipelines.</h2>
-</section>
 <section id="thinking-grammartically" class="slide level2">
 <h2>Thinking grammartically</h2>
-<p>In pair, brainstorm 3 - 5 grammatical constructions you would like to identify in your corpus search.</p>
+<p>In pair, brainstorm 3 - 5 grammatical constructions you would like to identify in your Corpus Lab.</p>
 <ul>
 <li>Describe the grammatical feature</li>
 <li>Give some examples that fall under the grammatical construction.</li>
@@ -272,32 +281,118 @@ Masaki EGUCHI, Ph.D.
 </ul>
 </section></section>
 <section>
-<section id="corpus-lab" class="title-slide slide level1 center">
-<h1>Corpus Lab</h1>
+<section id="corpus-lab-4" class="title-slide slide level1 center">
+<h1>Corpus Lab 4</h1>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<p>The final corpus lab is about syntactic features.</p>
+<ul>
+<li>Using the colab notebook and python, you will extract fine-grained grammatical features that might distinguish scores in ICNALE.</li>
+<li>You will extract the features on colab notebook.</li>
+<li>Then you export the dataset and plot the relationships with the ICNALE score.</li>
+</ul>
 </section>
-<section class="slide level2">
+<section id="task-1-research-questions-hypotheses-and-methods" class="slide level2">
+<h2>Task 1: Research questions, Hypotheses and Methods</h2>
+<div style="font-size:60%">
+<p>In this task you will describe research questions, hypothesis, and methods.</p>
+<h3 id="research-questions">Research questions</h3>
+<ul>
+<li>Research questions should include:
+<ul>
+<li>type of features you are looking at (e.g., adverbial clauses)</li>
+<li>situational variables that defines your sub-corpora (e.g., grade, genre, proficiency)</li>
+</ul></li>
+</ul>
+<h3 id="hypothesis">Hypothesis</h3>
+<ul>
+<li>Your research hypothesis should:
+<ul>
+<li>describe your predictions in terms of:
+<ul>
+<li>quantitative trends of the feature in relation to the factor you are interested in.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="task-2-definitions-and-operationalization-of-grammatical-features-to-extract" class="slide level2">
+<h2>Task 2: Definitions and operationalization of grammatical features to extract</h2>
+<ul>
+<li>You must describe the specific grammatical features that you plan to extract.</li>
+<li>For example, for clausal features you need to specify if you are interested in :
+<ul>
+<li>subordinate clauses or embedded clauses</li>
+<li>particular type of clauses</li>
+</ul></li>
+<li>Description of rules to identify desirable linguistic feature.
+<ul>
+<li>For example, you will need to specify <code>amod</code> for dependency label to extract <code>adjective + noun</code> phrase.</li>
+</ul></li>
+</ul>
+</section>
+<section id="fine-grained-descriptive-grammatical-features" class="slide level2">
+<h2>Fine-grained Descriptive grammatical features</h2>
+<ul>
+<li><p>Once you articulated the information above, you will now conduct a search over the corpus.</p></li>
+<li><p>You should use either <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">simple text analyzer</a> or your own Colab Notebook.</p>
+<ul>
+<li>I will specify which option should be used <strong>by the time we start working on this assignment</strong> (that is, this depends on your progress as a group.)</li>
+</ul></li>
+</ul>
+</section>
+<section id="task-3-results-and-interpretation" class="slide level2">
+<h2>Task 3: Results and interpretation</h2>
+<ul>
+<li>Provide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.</li>
+<li>Provide descriptive paragraphs to walk the reader through the results and how to interprete that results.</li>
+</ul>
+<div style="font-size:50%">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Submission</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>A word file (<code>.docx</code> file) that addresses requirements in a written format (one or two pages depending on your analysis results.).
+<ul>
+<li>Screenshots of your search settings on the <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">simple text analyzer</a> tool.</li>
+</ul></li>
+<li><strong>IF you use colab</strong>, Google Colab notebook (<code>.ipynb</code> file) with extraction code and results.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Success Criteria</strong></p>
+</div>
+<div class="callout-content">
+<p>Your submission …</p>
+<ul class="task-list">
+<li><label><input type="checkbox">outlines research questions and hypotheses</label></li>
+<li><label><input type="checkbox">selected syntactic feature and why you think that distinguishes the proficiency score</label></li>
+<li><label><input type="checkbox">provide description of your approach (algorithms and rules) to identify the desired linguistic structure</label></li>
+<li><label><input type="checkbox">provides scatter plot examining the relationships and their interpretations in relation to the research questions</label></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
 
 </section></section>
-<section id="hands-on-activity" class="title-slide slide level1 center">
-<h1>Hands-on Activity</h1>
-
-</section>
-
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
-
-</section>
-
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
-
-
-
-</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

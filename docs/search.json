@@ -2658,18 +2658,25 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nDefine extraction rules to identify fine-grained grammatical features in language\nConduct analysis using a template Python code or web application provided by the instructor."
   },
   {
+    "objectID": "2025/slides/session-12.html#preparation",
+    "href": "2025/slides/session-12.html#preparation",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Preparation",
+    "text": "Preparation\n\nCreate corpus_data under MyDrive\nPut ICNALE corpus under MyDrive/corpus_file"
+  },
+  {
     "objectID": "2025/slides/session-12.html#colab-notebook",
     "href": "2025/slides/session-12.html#colab-notebook",
     "title": "Session 12: Hands-on Activity",
     "section": "Colab Notebook",
-    "text": "Colab Notebook\n\nAccess the notebook here."
+    "text": "Colab Notebook\n\nAccess the notebook from the folder."
   },
   {
     "objectID": "2025/slides/session-12.html#introduction",
     "href": "2025/slides/session-12.html#introduction",
     "title": "Session 12: Hands-on Activity",
     "section": "Introduction",
-    "text": "Introduction\n\nThe notebook is very basic version of what TAASSC will do\nThis is meant for educational use; for research more rigorous approach may be needed."
+    "text": "Introduction\n\nThe notebook is very basic version of what TAASSC can do for you in Kyle & Crossley (2018).\nThis is meant for educational use; for research more rigorous approach may be needed to identify T-units more consistently."
   },
   {
     "objectID": "2025/slides/session-12.html#algorithm-used-in-the-notebook",
@@ -2686,6 +2693,13 @@
     "text": "Algorithm used in the notebook (cont’d)\n\nParse the sentence using spacy\nConduct basic analysis (such as calculating the number of tokens, sentences, etc.)\nCount the number of specific grammatical structures (MAIN FEATURE)\nStore the results into a Python dictionary\nAfter every corpus file is processed, it can create a dataset to export.\nYou can export the results for further analysis"
   },
   {
+    "objectID": "2025/slides/session-12.html#coming-up-with-extraction-rules",
+    "href": "2025/slides/session-12.html#coming-up-with-extraction-rules",
+    "title": "Session 12: Hands-on Activity",
+    "section": "coming up with extraction rules",
+    "text": "coming up with extraction rules\nFrom Table 5.1 in Durrant (2023, p. 102), pick one or two sentences.\n\nUsing POS/ Dependency parsing option in simple text analyzer, try to describe how to identify those structure.\nFor example, to identify that-clause complement, you will first look for ccomp and look if the ccomp has mark that is that."
+  },
+  {
     "objectID": "2025/slides/session-12.html#spacy-token-information",
     "href": "2025/slides/session-12.html#spacy-token-information",
     "title": "Session 12: Hands-on Activity",
@@ -2693,25 +2707,46 @@
     "text": "spaCy token information\nSome useful token information are following:\n\n\n\ncode\nwhat it does\nexample\n\n\n\n\ntoken.lemma_\nlemmatized form\nbe, child\n\n\ntoken.pos_\nsimple POS (Universal Dependency)\nNOUN, VERB\n\n\ntoken.tag_\nfine-grained POS (PennTag set)\nNN, JJ, VB, BBZ\n\n\ntoken.dep_\ndependency type\namod, advmd\n\n\ntoken.head\ntoken information of the head of the dependency"
   },
   {
-    "objectID": "2025/slides/session-12.html#excercise",
-    "href": "2025/slides/session-12.html#excercise",
-    "title": "Session 12: Hands-on Activity",
-    "section": "Excercise",
-    "text": "Excercise\nFrom Table 5.1 in Durrant (2023, p. 102), pick one or two sentences.\nTry to identify that structure using the following extraction pipeline."
-  },
-  {
-    "objectID": "2025/slides/session-12.html#extraction-pipelines.",
-    "href": "2025/slides/session-12.html#extraction-pipelines.",
-    "title": "Session 12: Hands-on Activity",
-    "section": "Extraction pipelines.",
-    "text": "Extraction pipelines."
-  },
-  {
     "objectID": "2025/slides/session-12.html#thinking-grammartically",
     "href": "2025/slides/session-12.html#thinking-grammartically",
     "title": "Session 12: Hands-on Activity",
     "section": "Thinking grammartically",
-    "text": "Thinking grammartically\nIn pair, brainstorm 3 - 5 grammatical constructions you would like to identify in your corpus search.\n\nDescribe the grammatical feature\nGive some examples that fall under the grammatical construction.\nExplain why you are interested in."
+    "text": "Thinking grammartically\nIn pair, brainstorm 3 - 5 grammatical constructions you would like to identify in your Corpus Lab.\n\nDescribe the grammatical feature\nGive some examples that fall under the grammatical construction.\nExplain why you are interested in."
+  },
+  {
+    "objectID": "2025/slides/session-12.html#overview",
+    "href": "2025/slides/session-12.html#overview",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Overview",
+    "text": "Overview\nThe final corpus lab is about syntactic features.\n\nUsing the colab notebook and python, you will extract fine-grained grammatical features that might distinguish scores in ICNALE.\nYou will extract the features on colab notebook.\nThen you export the dataset and plot the relationships with the ICNALE score."
+  },
+  {
+    "objectID": "2025/slides/session-12.html#task-1-research-questions-hypotheses-and-methods",
+    "href": "2025/slides/session-12.html#task-1-research-questions-hypotheses-and-methods",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Task 1: Research questions, Hypotheses and Methods",
+    "text": "Task 1: Research questions, Hypotheses and Methods\n\nIn this task you will describe research questions, hypothesis, and methods.\nResearch questions\n\nResearch questions should include:\n\ntype of features you are looking at (e.g., adverbial clauses)\nsituational variables that defines your sub-corpora (e.g., grade, genre, proficiency)\n\n\nHypothesis\n\nYour research hypothesis should:\n\ndescribe your predictions in terms of:\n\nquantitative trends of the feature in relation to the factor you are interested in."
+  },
+  {
+    "objectID": "2025/slides/session-12.html#task-2-definitions-and-operationalization-of-grammatical-features-to-extract",
+    "href": "2025/slides/session-12.html#task-2-definitions-and-operationalization-of-grammatical-features-to-extract",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Task 2: Definitions and operationalization of grammatical features to extract",
+    "text": "Task 2: Definitions and operationalization of grammatical features to extract\n\nYou must describe the specific grammatical features that you plan to extract.\nFor example, for clausal features you need to specify if you are interested in :\n\nsubordinate clauses or embedded clauses\nparticular type of clauses\n\nDescription of rules to identify desirable linguistic feature.\n\nFor example, you will need to specify amod for dependency label to extract adjective + noun phrase."
+  },
+  {
+    "objectID": "2025/slides/session-12.html#fine-grained-descriptive-grammatical-features",
+    "href": "2025/slides/session-12.html#fine-grained-descriptive-grammatical-features",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Fine-grained Descriptive grammatical features",
+    "text": "Fine-grained Descriptive grammatical features\n\nOnce you articulated the information above, you will now conduct a search over the corpus.\nYou should use either simple text analyzer or your own Colab Notebook.\n\nI will specify which option should be used by the time we start working on this assignment (that is, this depends on your progress as a group.)"
+  },
+  {
+    "objectID": "2025/slides/session-12.html#task-3-results-and-interpretation",
+    "href": "2025/slides/session-12.html#task-3-results-and-interpretation",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Task 3: Results and interpretation",
+    "text": "Task 3: Results and interpretation\n\nProvide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.\nProvide descriptive paragraphs to walk the reader through the results and how to interprete that results.\n\n\n\n\n\n\n\n\nSubmission\n\n\n\nA word file (.docx file) that addresses requirements in a written format (one or two pages depending on your analysis results.).\n\nScreenshots of your search settings on the simple text analyzer tool.\n\nIF you use colab, Google Colab notebook (.ipynb file) with extraction code and results.\n\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\noutlines research questions and hypotheses\nselected syntactic feature and why you think that distinguishes the proficiency score\nprovide description of your approach (algorithms and rules) to identify the desired linguistic structure\nprovides scatter plot examining the relationships and their interpretations in relation to the research questions"
   },
   {
     "objectID": "2025/slides/session-11.html#learning-objectives",
@@ -2903,13 +2938,6 @@
     "text": "Now try your own examples"
   },
   {
-    "objectID": "2025/slides/session-11.html#questions",
-    "href": "2025/slides/session-11.html#questions",
-    "title": "Session 11: Hands-on Activity",
-    "section": "Questions?",
-    "text": "Questions?"
-  },
-  {
     "objectID": "2025/slides/session-8.html#learning-objectives",
     "href": "2025/slides/session-8.html#learning-objectives",
     "title": "Session 8: Hands-on activity #4",
@@ -3033,7 +3061,7 @@
     "href": "2025/slides/session-8.html#differences-between-expected-frequency-joint-probability",
     "title": "Session 8: Hands-on activity #4",
     "section": "Differences between expected frequency & Joint probability",
-    "text": "Differences between expected frequency & Joint probability\nThey are mathematical conversion between the two.\n$ = {500 } $\nThis is probability, to convert back to COUNT over all corpus, you multiply the corpus size\n\\(\\text{Expected frequency} = {500 \\over 1000000} \\times {500 \\over 1000000} \\times 1000000\\)"
+    "text": "Differences between expected frequency & Joint probability\nThey are mathematical conversion between the two.\n\\(\\text{Joint Probability} = {500 \\over 1000000} \\times {500 \\over 1000000}\\)\nThis is probability, to convert back to COUNT over all corpus, you multiply the corpus size\n\\(\\text{Expected frequency} = {500 \\over 1000000} \\times {500 \\over 1000000} \\times 1000000\\)"
   },
   {
     "objectID": "2025/slides/session-8.html#generating-n-gram-list-with-antconc-10-mins",
@@ -3595,18 +3623,18 @@
     "href": "2025/assignments/hands-on-3/index.html#task-1-describing-statistical-characteristics-of-collocations-4-points",
     "title": "Corpus Lab 3",
     "section": "Task 1: Describing statistical characteristics of collocations (4 points)",
-    "text": "Task 1: Describing statistical characteristics of collocations (4 points)\nIn the first task, I would like you to calculate major Strengths Of Association (SOA) measures to quantify the association between two words (node words and their collocates.)\nThe frequency of node words, their collocates and entire corpus size will be given to you.\nYour task is to calculate T-score, MI, MI^2, and LogDice.\n\n\n\n\n\n\nSubmission\n\n\n\n\nA spreadsheet file with SOA values.\nA word file (.docx) for plots and prose descriptions.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\ncontains accurate T-score, MI, MI^2 and LogDice scores\nprovides visualization of the relations between SOA indices\ndescribe the relationships among SOA indices and typical collocations",
+    "text": "Task 1: Describing statistical characteristics of collocations (4 points)\nIn the first task, I would like you to calculate major Strengths Of Association (SOA) measures to quantify the association between two words (node words and their collocates.)\nThe frequency of node words, their collocates and entire corpus size will be given to you.\nYour task is to calculate T-score, MI, MI^2, and LogDice.\n\n\n\n\n\n\nSubmission (This task was canceled)\n\n\n\n\nA spreadsheet file with SOA values.\nA word file (.docx) for plots and prose descriptions.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\ncontains accurate T-score, MI, MI^2 and LogDice scores\nprovides visualization of the relations between SOA indices\ndescribe the relationships among SOA indices and typical collocations",
     "crumbs": [
       "Assignments",
       "Corpus Lab 3"
     ]
   },
   {
-    "objectID": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether",
-    "href": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether",
+    "objectID": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether-12-points-altogether",
+    "href": "2025/assignments/hands-on-3/index.html#task-2-3-mini-research-project-8-points-altogether-12-points-altogether",
     "title": "Corpus Lab 3",
-    "section": "Task 2 & 3: Mini-research project (8 points altogether)",
-    "text": "Task 2 & 3: Mini-research project (8 points altogether)\nThe task 2 and 3 are related to the mini-research project.\nIn this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.\nSpecifically, you will:\n\nselect lexical richness or phraseological sophistication indices to answer a set of research questions\nanalyze the chosen corpus with the selected indices\npresent the results and interpretation in a written prose\n\n\n\n\n\n\n\nSubmission\n\n\n\nThe final report are one-to-two page lengths report.\n\nShort background and Research Questions (one paragraph)\nMethod section\n\nCorpus descriptions (one paragraph)\nIndex descriptions (one paragraph)\nAnalysis (one paragraph)\nResearch hypothesis (one paragraph)\n\nResults (data interpretation and commentary)\n\nFigures or statistical report\n\nConclusion\n\n\n\n\nAssignment Guideline\n\n\nStep 1: Construct research questions\nIn this type of research, researchers typically set RQs about the relationships between lexical characteristncs and variables that defines subsection of the corpus (e.g., grade, genre, or proficieincy score).\nThe following information is available through the GiG corpus:\nThe following information is available through the ICNALE corpus:\n\nRatings performed by external raters\n\n\n\nStep 2: Understand and choose the corpus\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant, 2023)\nICNALE corpus (Edited Essay OR GRA)\nSome Japanese corpus here (Ask Masaki about availability).\n\n\nStep 3: Construct hypothesis\nBased on what you’ve learned about the vocabulary use of learner, state several hypotheses that you expect as the findings for the research question.\nIn other words, what do you expect as the relationship between lexical characteristics X and external variable Y?\n\n\nStep 4: Select index\nBased on the RQs and hypotheses, you will select indices that can capture the lexical characteristics X in your corpus.\n\n\nStep 5: Compute the index\nYou will now use the tools we have covered in this course to derive lexical richness scores for the text.\n\n\nStep 6: Conduct analysis\nTo answer the research questions, you may want to do the followings: - Obtain descriptive statistics of the lexical richness indices - Visualize the relationship between variables - Optionally run statistical analyses\n\n\nStep 7: Interpret and write-up the results\nYou will write-up what you found in your mini research in a one-to-two page short report.\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\noutlines research questions and hypotheses\nprovide description of lexical richness measures that you used and how you calculated the measures\nprovides analysis results and their interpretations in relation to the research questions",
+    "section": "Task 2 & 3: Mini-research project (8 points altogether 12 points altogether)",
+    "text": "Task 2 & 3: Mini-research project (8 points altogether 12 points altogether)\nThe task 2 and 3 are related to the mini-research project.\nIn this part of the assignment, you will conduct a mini-research project to describe uses of single- and multi-word units in a corpus you choose.\nSpecifically, you will:\n\nselect lexical richness or phraseological sophistication indices to answer a set of research questions\nanalyze the chosen corpus with the selected indices\npresent the results and interpretation in a written prose\n\n\n\n\n\n\n\nSubmission\n\n\n\nThe final report are one-to-two page lengths report.\n\nShort background and Research Questions (one paragraph)\nMethod section\n\nCorpus descriptions (one paragraph)\nIndex descriptions (one paragraph)\nAnalysis (one paragraph)\nResearch hypothesis (one paragraph)\n\nResults (data interpretation and commentary)\n\nFigures or statistical report\n\nConclusion\n\n\n\n\nAssignment Guideline\n\n\nStep 1: Construct research questions\nIn this type of research, researchers typically set RQs about the relationships between lexical characteristncs and variables that defines subsection of the corpus (e.g., grade, genre, or proficieincy score).\nThe following information is available through the GiG corpus:\nThe following information is available through the ICNALE corpus:\n\nRatings performed by external raters\n\n\n\nStep 2: Understand and choose the corpus\nIn this assignment, please choose one of the following corpora:\n\nGrowth in Grammar (GiG) corpus (Durrant, 2023)\nICNALE corpus (Edited Essay OR GRA)\nSome Japanese corpus here (Ask Masaki about availability).\n\n\nStep 3: Construct hypothesis\nBased on what you’ve learned about the vocabulary use of learner, state several hypotheses that you expect as the findings for the research question.\nIn other words, what do you expect as the relationship between lexical characteristics X and external variable Y?\n\n\nStep 4: Select index\nBased on the RQs and hypotheses, you will select indices that can capture the lexical characteristics X in your corpus.\n\n\nStep 5: Compute the index\nYou will now use the tools we have covered in this course to derive lexical richness scores for the text.\n\n\nStep 6: Conduct analysis\nTo answer the research questions, you may want to do the followings: - Obtain descriptive statistics of the lexical richness indices - Visualize the relationship between variables - Optionally run statistical analyses\n\n\nStep 7: Interpret and write-up the results\nYou will write-up what you found in your mini research in a one-to-two page short report.\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\noutlines research questions and hypotheses\nprovide description of lexical richness measures that you used and how you calculated the measures\nprovides analysis results and their interpretations in relation to the research questions",
     "crumbs": [
       "Assignments",
       "Corpus Lab 3"
@@ -3650,7 +3678,7 @@
     "href": "2025/assignments/hands-on-4/index.html#task-3-results-and-interpretation",
     "title": "Corpus Lab 4",
     "section": "Task 3: Results and interpretation",
-    "text": "Task 3: Results and interpretation\n\nProvide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.\nProvide descriptive paragraphs to walk the reader through the results and how to interprete that results.\n\n\n\n\n\n\n\nSubmission\n\n\n\n\nA word file (.docx file) that addresses requirements in a written format (one or two pages depending on your analysis results.).\n\nScreenshots of your search settings on the simple text analyzer tool.\n\nIF you use colab, Google Colab notebook (.ipynb file) with extraction code and results.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\noutlines research questions and hypotheses\nprovide description of your approach (algorithms and rules) to identify the desired linguistic structure.\nprovides analysis results and their interpretations in relation to the research questions",
+    "text": "Task 3: Results and interpretation\n\nProvide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.\nProvide descriptive paragraphs to walk the reader through the results and how to interprete that results.\n\n\n\n\n\n\n\nSubmission\n\n\n\n\nA word file (.docx file) that addresses requirements in a written format (one or two pages depending on your analysis results.).\n\nScreenshots of your search settings on the simple text analyzer tool.\n\nIF you use colab, Google Colab notebook (.ipynb file) with extraction code and results.\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\n\nYour submission …\n\noutlines research questions and hypotheses\nselected syntactic feature and why you think that distinguishes the proficiency score\nprovide description of your approach (algorithms and rules) to identify the desired linguistic structure.\nprovides scatter plot examining the relationships and their interpretations in relation to the research questions",
     "crumbs": [
       "Assignments",
       "Corpus Lab 4"
@@ -3703,7 +3731,7 @@
     "href": "2025/slides/session-9.html#icnale-gra",
     "title": "Session 9: Learner Corpus Mini-Research",
     "section": "ICNALE GRA",
-    "text": "ICNALE GRA\nICNALE GRA documents 120 essays evaluated by 80 people. - These 80 people are from different backgrounds. - You can basically use average essay ratings.\n\nICNALE metadata"
+    "text": "ICNALE GRA\nICNALE GRA documents 120 essays evaluated by 80 people. - These 80 people are from different backgrounds. - You can basically use average essay ratings.\nICNALE paper\n\nICNALE metadata"
   },
   {
     "objectID": "2025/slides/session-9.html#step-1-2-formluating-research-questions",
@@ -3769,60 +3797,165 @@
     "text": "Reflection\n\nYou can now:\n\nProvide reasons for your choice of lexical richness measures.\nConduct preliminary analysis to understand how text differ from one aother in relation to learner’s proficiency, learner groups, etc."
   },
   {
+    "objectID": "2025/slides/session-10.html#corpus-labs",
+    "href": "2025/slides/session-10.html#corpus-labs",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Corpus Labs",
+    "text": "Corpus Labs"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#due-dates",
+    "href": "2025/slides/session-10.html#due-dates",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Due dates",
+    "text": "Due dates\n\n\n\nCorpus Lab\nContent\nDue\n\n\n\n\nCorpus Lab 1\nBasic Concordancing\nFinished\n\n\nCorpus Lab 2\nLexical diversity, Lexical Sophistication\nFinished\n\n\nCorpus Lab 3\nMini-search\n8/8 (Friday)\n\n\nCorpus Lab 4\nFine-grained syntactic complexity\n8/12 (Tuesday)\n\n\n\nThe final submission of all the four Corpus lab is on 18th."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#on-final-presentation",
+    "href": "2025/slides/session-10.html#on-final-presentation",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "On Final Presentation",
+    "text": "On Final Presentation\n\nYou can choose your work from Lab 1, 3, or 4.\n10 mins presentation\nCover\n\nResearch question\nMethods (corpus data, operationalization)\nResults\nInterpretation"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#on-corpus-lab-2",
+    "href": "2025/slides/session-10.html#on-corpus-lab-2",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "On Corpus Lab 2",
+    "text": "On Corpus Lab 2"
+  },
+  {
     "objectID": "2025/slides/session-10.html#learning-objectives",
     "href": "2025/slides/session-10.html#learning-objectives",
     "title": "Session 10: Analyzing Grammar",
     "section": "🎯 Learning Objectives",
-    "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nProvide historical overview of the syntactic complexity research\nDescribe different approaches to grammatical features:\n\nGrammatical complexity strand\nFine-grained grammatical complexity strand\nDescriptive (register-based analysis) strand\nVerb Argument Construction (VAC) strand\n\nUnderstand current trends of syntactic complexity research"
+    "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nProvide historical overview of the syntactic complexity research\nDescribe different approaches to grammatical features:\n\nSyntactic complexity strand\nFine-grained syntactic complexity strand\nDescriptive (register-based analysis) strand\nVerb Argument Construction (VAC) strand\n\nUnderstand current trends of syntactic complexity research"
   },
   {
-    "objectID": "2025/slides/session-10.html#grammatical-complexity",
-    "href": "2025/slides/session-10.html#grammatical-complexity",
+    "objectID": "2025/slides/session-10.html#warm-up-question-1",
+    "href": "2025/slides/session-10.html#warm-up-question-1",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Grammatical complexity",
-    "text": "Grammatical complexity\n\nIndicators of\n\nproficiency\ndevelopment"
+    "section": "Warm-up question",
+    "text": "Warm-up question\n\nWhen you learned Grammar in your second language, was it difficult?\n\nWhich rule was easy for you to learn to use?\nWhich rule was challenging for you to learn to use?"
   },
   {
-    "objectID": "2025/slides/session-10.html#grammatical-complexity-strand",
-    "href": "2025/slides/session-10.html#grammatical-complexity-strand",
+    "objectID": "2025/slides/session-10.html#overview",
+    "href": "2025/slides/session-10.html#overview",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Grammatical complexity strand",
-    "text": "Grammatical complexity strand\n\nLength-based indices\n\nNumber of words per T-unit\n\nSubordination"
+    "section": "Overview",
+    "text": "Overview\n\nGrammatical complexity strand\nFine-grained grammatical feature strand\nRegister-based / Multi-Dimensional Analysis strand\nSyntactic Sophistication strand"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#syntactic-complexity",
+    "href": "2025/slides/session-10.html#syntactic-complexity",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Syntactic complexity",
+    "text": "Syntactic complexity\nIn much SLA research, syntactic complexity has been used.\n\nIndicators of proficiency and development"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#syntactic-complexity-strand",
+    "href": "2025/slides/session-10.html#syntactic-complexity-strand",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Syntactic complexity strand",
+    "text": "Syntactic complexity strand\nSyntactic complexity measures are categorized into:\n\nType 1: lengths of production\nType 2: Sentence complexity\nType 3: Subordination\nType 4: Coordination\nType 5: Particular structures\n\nBut before talking about each, we need to define units we use."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#unit-of-analysis",
+    "href": "2025/slides/session-10.html#unit-of-analysis",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Unit Of Analysis",
+    "text": "Unit Of Analysis\nUnit of analysis is a terminology to indicate at which level you will conduct your analysis\n\nLexical richness: word as unit of analysis\nPhraseological complexity: collocation, phrasal verb, etc.\nSyntactic complexity: Sentence, clause, etc."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#sentence",
+    "href": "2025/slides/session-10.html#sentence",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Sentence",
+    "text": "Sentence\n\nA sentence (in English) is a unit starting with a capital letter and ends with a punctuation mark such as period, question mark, and exclamation mark."
   },
   {
     "objectID": "2025/slides/session-10.html#t-unit",
     "href": "2025/slides/session-10.html#t-unit",
     "title": "Session 10: Analyzing Grammar",
     "section": "T-unit",
-    "text": "T-unit\n\nWhen it comes to measuring grammatical complexity, one important consideration is how to define linguistic unit.\nWriting researchers use T-Unit (Hunt, 1966)\n\nT-unit: “Independent clause plus any subordinate clauses attached to it”"
+    "text": "T-unit\n\nWriting researchers often use Terminal-Unit (T-unit; Hunt, 1965) as unit of analysis.\n\nT-unit: An independent clause plus any dependent clauses attached to it\n\n\n2 T-units: [The researcher loves vocabulary too much] [and he loves coffee too.]\n1 T-units: [The researcher loves vocabulary and coffee too much because they have much in common.]"
   },
   {
-    "objectID": "2025/slides/session-10.html#typical-grammatical-complexity-measures",
-    "href": "2025/slides/session-10.html#typical-grammatical-complexity-measures",
+    "objectID": "2025/slides/session-10.html#how-many-t-units-do-the-following-example-have",
+    "href": "2025/slides/session-10.html#how-many-t-units-do-the-following-example-have",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Typical grammatical complexity measures",
-    "text": "Typical grammatical complexity measures\n\ncomplexity measures reported in Kyle & Crossley (2018)"
+    "section": "How many T-units do the following example have?",
+    "text": "How many T-units do the following example have?\n\nBecause I was tired, I decided to take a break and watch a movie.\nI completed my assignment early, so I helped my friend review his draft, and we both felt more confident about our work."
   },
   {
-    "objectID": "2025/slides/session-10.html#findings",
-    "href": "2025/slides/session-10.html#findings",
+    "objectID": "2025/slides/session-10.html#syntactic-complexity-measures---length-and-sentence",
+    "href": "2025/slides/session-10.html#syntactic-complexity-measures---length-and-sentence",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Findings",
-    "text": "Findings"
+    "section": "Syntactic complexity measures - Length and Sentence",
+    "text": "Syntactic complexity measures - Length and Sentence\n\nI completed my assignment early, so I helped my friend review his draft, and we both felt more confident about our work.\n\n\n\nType\nMeasure\nCode\nScore\n\n\n\n\nLengths\nMean length of clause\nMLC\n(5+8+9) / 3 = 7.333\n\n\nLengths\nMean length of sentence\nMLS\n22 /1 = 22\n\n\nLengths\nMean lengths of T-unit\nMLT\n(5+8+9) / 3 = 7.333\n\n\nSentence\nClause per sentence\nC/S\n3 / 1 = 3"
   },
   {
-    "objectID": "2025/slides/session-10.html#organic-approach-norris-ortega-2009",
-    "href": "2025/slides/session-10.html#organic-approach-norris-ortega-2009",
+    "objectID": "2025/slides/session-10.html#syntactic-complexity-measures---clausal",
+    "href": "2025/slides/session-10.html#syntactic-complexity-measures---clausal",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Organic approach (Norris & Ortega, 2009)",
-    "text": "Organic approach (Norris & Ortega, 2009)"
+    "section": "Syntactic complexity measures - Clausal",
+    "text": "Syntactic complexity measures - Clausal\n\nBecause I was tired, I decided to take a break and watch a movie.\n\n\n\nType\nMeasure\nCode\nScore\n\n\n\n\n\nSubordination\nClauses per T-unit\nC/T\n2 / 1 = 2\n\n\n\nSubordination\nComplex T-units per T-unit\nCT/T\n1/1 = 1\n\n\n\nSubordination\nDependent clauses per clause\nDC/C\n1/2 = 0.5\n\n\n\nSubordination\nDependent clauses per T-unit\nDC/T\n1/1 = 1\n\n\n\nCoordination\nCoordinate phrases per clause\nCP/C\n1/2 = 0.5\n\n\n\nCoordination\nCoordinate phrases per T-unit\nCP/T\n1/1 = 1\n\n\n\nCoordination\nT-units per sentence\nT/S\n1/1 = 1"
   },
   {
-    "objectID": "2025/slides/session-10.html#fine-grained-grammatical-complexity-strand",
-    "href": "2025/slides/session-10.html#fine-grained-grammatical-complexity-strand",
+    "objectID": "2025/slides/session-10.html#syntactic-complexity-measures---phrasal",
+    "href": "2025/slides/session-10.html#syntactic-complexity-measures---phrasal",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Fine-grained grammatical complexity strand",
-    "text": "Fine-grained grammatical complexity strand\nCriticism on the (largely) length-based grammatical complexity:\n\nDoes not tell us about how sentence structures are elaborated"
+    "section": "Syntactic complexity measures - Phrasal",
+    "text": "Syntactic complexity measures - Phrasal\nSome complexity measures are at phrasal levels.\n\n\n\n\nType\nMeasure\nCode\n\n\n\n\nPhrasal\nComplex nominals per clause\nCN/C\n\n\nPhrasal\nComplex nominals per T-unit\nCN/T\n\n\nPhrasal\nVerb phrases per T-unit\nVP/T\n\n\n\n\nComplex nominals:\n\nnouns plus adjective, posessive, prepositional phrase, adjective clause, participle or appositive\nnominal clauses\ngerunds and infinitives in subject, but not object position\n\n\n\n\n\nLu, X. (2011). A Corpus‐Based Evaluation of Syntactic Complexity Measures as Indices of College‐Level ESL Writers’ Language Development. TESOL Quarterly, 45(1), 36–62. https://doi.org/10.5054/tq.2011.240859"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#organic-approaches",
+    "href": "2025/slides/session-10.html#organic-approaches",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Organic approaches",
+    "text": "Organic approaches\n\n\nNorris & Ortega (2009) proposed an organic approach to look at the syntactic complexity.\n\nCritisized over-reliance on small number of measures (e.g., length-based measures)\nMove beyond whether or not complex; ask HOW.\n\nResearchers should select measures that reflect developmentally sensitive measures (Lambert & Kormos, 2014)\n\n\n\n\nNorris, J. M., & Ortega, L. (2009). Towards an Organic Approach to Investigating CAF in Instructed SLA: The Case of Complexity. Applied Linguistics, 30(4), 555–578. https://doi.org/10.1093/applin/amp044\nLambert, C., & Kormos, J. (2014). Complexity, Accuracy, and Fluency in Task-based L2 Research: Toward More Developmentally Based Measures of Second Language Acquisition. Applied Linguistics, 35(5), 607–614. https://doi.org/10.1093/applin/amu047"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#impact-of-situational-variable-on-complexification",
+    "href": "2025/slides/session-10.html#impact-of-situational-variable-on-complexification",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Impact of situational variable on complexification",
+    "text": "Impact of situational variable on complexification\n\n\nTraditionally, researchers relied on Subordinate clauses .\nHowever, Biber showed that subordination is a characteristics of oral langauge.\nInstead, nominalization is one important feature of complexity in written language.\n\n\n\n\nBiber, D., Gray, B., & Poonpon, K. (2011). Should We Use Characteristics of Conversation to Measure Grammatical Complexity in L2 Writing Development? TESOL Quarterly, 45(1), 5–35. https://doi.org/10.5054/tq.2011.244483"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#complexity-features-in-conversation-vs-academic-writing",
+    "href": "2025/slides/session-10.html#complexity-features-in-conversation-vs-academic-writing",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Complexity features in Conversation vs academic writing",
+    "text": "Complexity features in Conversation vs academic writing\n\n\n\n\n\nClausal complexity\n\n\n\n\n\n\nPhrasal complexity"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#complexity-in-conversation",
+    "href": "2025/slides/session-10.html#complexity-in-conversation",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Complexity in conversation",
+    "text": "Complexity in conversation\n\nExample from conversation"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#complexity-in-academic-paper",
+    "href": "2025/slides/session-10.html#complexity-in-academic-paper",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Complexity in academic paper",
+    "text": "Complexity in academic paper\n\nExample from academic paper"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#discussion",
+    "href": "2025/slides/session-10.html#discussion",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Discussion",
+    "text": "Discussion\n\nAny clarification questions?\nHave you thought of using any syntactic complexity measures in your study?"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#fine-grained-syntactic-complexity-strand-1",
+    "href": "2025/slides/session-10.html#fine-grained-syntactic-complexity-strand-1",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Fine-grained syntactic complexity strand",
+    "text": "Fine-grained syntactic complexity strand\nCriticism on the (largely) length-based grammatical complexity:\n\nDoes not tell us about how sentence structures are elaborated"
   },
   {
     "objectID": "2025/slides/session-10.html#length-based-indices-does-not-tell-elaboration-strategy",
@@ -3888,18 +4021,46 @@
     "text": "Kyle & Crossley (2018)\n\nThe fine-grained indices:\n\nexplained more variances (~ 20%) than traditional complexity measures (~ 5%)\nprovides more insights into what structure the learners tend to use\n\nIn hands-on activity, we will talk more about how to identify fine-grained grammatical features."
   },
   {
+    "objectID": "2025/slides/session-10.html#register-multi-dimensional-analysis-strand-1",
+    "href": "2025/slides/session-10.html#register-multi-dimensional-analysis-strand-1",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Register / Multi-Dimensional Analysis strand",
+    "text": "Register / Multi-Dimensional Analysis strand\n\nThis approach dates back to Biber (1988)\nHe compared written and spoken language\nHe developed Multidimensional Analysis\n\nApproach to characterize the grammatical features that distinguish registers using factor analysis."
+  },
+  {
+    "objectID": "2025/slides/session-10.html#multidimensional-analysis",
+    "href": "2025/slides/session-10.html#multidimensional-analysis",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Multidimensional analysis",
+    "text": "Multidimensional analysis\n\nPrepare corpora from different textual genres (conversation, essay, recipe, etc.)\nExtract over 100 grammatical features (see next slide)\nThrough factor analysis, examine how many groups of features (= dimension) can explain the linguistic variation in the corpus.\nCalculate dimension scores for each text"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#examples-of-linguistic-features",
+    "href": "2025/slides/session-10.html#examples-of-linguistic-features",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Examples of linguistic features",
+    "text": "Examples of linguistic features\n\n\n\n\n\n\n\n\nLarge Category\nList of features\n\n\n\n\nPronouns and Proverbs\nFirst person, Second person, Pronoun it, Proverb do\n\n\nReduced Forms\ncontractions, complementizer that-deletion\n\n\nPrepositional phrases\nAll prepositional phrases\n\n\nNouns and noun types\nConcrete noun, Cognitive noun, place noun, group noun, etc.\n\n\nVerbs and verb types\ntense aspect, modal verbs, mental verbs, causative verb, etc.\n\n\ncomplement clauses\nthat complement, wh-complement\n\n\nNominal Postmodifying clauses\nThat relative clauses, wh-relative clauses"
+  },
+  {
     "objectID": "2025/slides/session-10.html#syntactic-sophistication-or-vac-strand",
     "href": "2025/slides/session-10.html#syntactic-sophistication-or-vac-strand",
     "title": "Session 10: Analyzing Grammar",
     "section": "Syntactic sophistication (or VAC) strand",
-    "text": "Syntactic sophistication (or VAC) strand\nAccording to construction grammar (Goldberg, 1995, 2006), grammatical construction (structure) convey abstract linguistic meaning.\nIn turn,\n\n\n\nConstruction\nStructure\nExample\n\n\n\n\n\n\nIntransitive:\nTransitive:"
+    "text": "Syntactic sophistication (or VAC) strand\n\nAccording to construction grammar (Goldberg, 1995, 2006), grammatical construction (structure) convey abstract linguistic meaning.\n\n\n\n\n\n\n\n\n\nConstruction\nSyntactic Frame\nSemantic Frame\nExamples\n\n\n\n\ntransitive\nnsubj-root-dobj\nagent-V-theme\nHe loves coffee and skill acquisition theory.\n\n\nditransitive\nnsubj-root-iobj-dobj\nagent-V-recipient-theme\nI teach you NLP.\n\n\ncaused motion\nnsubj-root-dobj-obl\nagent-V-theme-destination\nPat sneezed the foam off the cappuccino.\n\n\nresultative\nnsubj-root-dobj-xcomp\nagent-V-theme-result\nShe kissed him unconscious.\n\n\n\n\n\n\nGoldberg, A. E. (2006). Constructions at work: The nature of generalization in language. Oxford University Press."
   },
   {
-    "objectID": "2025/slides/session-10.html#descriptive-register-based-feature-strand",
-    "href": "2025/slides/session-10.html#descriptive-register-based-feature-strand",
+    "objectID": "2025/slides/session-10.html#approximating-verb-argument-construction-vac",
+    "href": "2025/slides/session-10.html#approximating-verb-argument-construction-vac",
     "title": "Session 10: Analyzing Grammar",
-    "section": "Descriptive (register-based feature) strand",
-    "text": "Descriptive (register-based feature) strand"
+    "section": "Approximating Verb Argument Construction (VAC)",
+    "text": "Approximating Verb Argument Construction (VAC)\n\n\nKyle (2016) used “syntactic frame” based on dependency parsing to approximate VAC.\nHe calculated frequency and SOA between main verb and syntactic frame.\n\n\n\nVAC example"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#some-vac-examples",
+    "href": "2025/slides/session-10.html#some-vac-examples",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Some VAC examples",
+    "text": "Some VAC examples\n\n\n\n\n\n\n\n\n\n\nMain verb lemma\nVerb Argument Construction\nExample\nFreq (PMW) in COCA\n\n\n\n\nbe\nsubject-verb-nominal complement\nIt is an indication of the ways…\n34,517.41\n\n\nsay\nsubject – verb - clausal complement\nHe said [that health decisions should be made by patients and doctors]\n3865.16\n\n\nrefuse\nsubject - verb - xcomp\nHe refused to brew a coffee to me.\n5540.0\n\n\nsuppose\nnsubj-v-ccomp\nI suppose that the theory might be wrong.\n3016.0　\n\n\nsuppose"
   },
   {
     "objectID": "2025/slides/session-13.html#learning-objectives",
@@ -6127,6 +6288,13 @@
     "text": "What you are expected to do\nYou are expected to do the following:\n\nArticulate extraction rules that can be used to identify desired grammatical structure\nIdentify which extraction template functions to use in order to extract the grammatical structure\nFollow the instruction of the current notebook to run the analysis."
   },
   {
+    "objectID": "2025/notebooks/session-12.html#loading-google-drive",
+    "href": "2025/notebooks/session-12.html#loading-google-drive",
+    "title": "Extracting fine-grained grammatical feature with POS and dependency information",
+    "section": "Loading Google Drive",
+    "text": "Loading Google Drive\n\nWe need to access to your google drive, let’s mount it now.\n\n\n\nShow code\nfrom google.colab import drive\ndrive.mount('/content/drive')\n\n\n\n\nShow code\nimport glob # grabbing files\ncorpus_files = glob.glob(\"/content/drive/MyDrive/corpus_file/BROWN_Corpus/*.txt\")"
+  },
+  {
     "objectID": "2025/notebooks/session-12.html#define-functions",
     "href": "2025/notebooks/session-12.html#define-functions",
     "title": "Extracting fine-grained grammatical feature with POS and dependency information",
@@ -6145,7 +6313,7 @@
     "href": "2025/notebooks/session-12.html#wanna-test",
     "title": "Extracting fine-grained grammatical feature with POS and dependency information",
     "section": "Wanna test?",
-    "text": "Wanna test?\nYou can test if you will get the desired result by passing example sentence and your rules.\n\nRun the main analysis loop\nThis where the processing happens.\n\n\nShow code\n# Main processing loop\ndef main(CORPUS_FILES):\n    results = {}\n\n    for file in CORPUS_FILES:  # Process first 5 files for testing\n        global extraction_results\n        # 1. Load the corpus file\n        text = load_file(file)\n        filename = find_filename(file)\n        \n        # 2. Parse the sentences\n        doc = nlp(text)\n        \n        # 3. run extraction pipeline\n        basic_stats = run_basic_stats(doc)\n        result = run_grammar_extraction(doc, filename)\n        \n        # 4. Append results\n        results[filename] = basic_stats\n        results[filename].update(result)\n        \n        print(f\"Processed: {file}\")\n    return results\n\n\n\n\nShow code\nCORPUS_FILES = [\"../../corpus_data/brown_single/ca_ca01.txt\"]\nresults = main(CORPUS_FILES)\n\n\nProcessed: ../../corpus_data/brown_single/ca_ca01.txt\n\n\nCheck the results\n\n\nShow code\nresults\n\n\n{'ca_ca01.txt': {'nToken': 2376,\n  'nSentence': 88,\n  'Nouns': 458,\n  'adjectival_modifier': 112,\n  'direct_object': 95,\n  'Third-Person Singular Verbs': 34}}"
+    "text": "Wanna test?\nYou can test if you will get the desired result by passing example sentence and your rules.\n\nRun the main analysis loop\nThis where the processing happens.\n\n\nShow code\n# Main processing loop\ndef main(CORPUS_FILES):\n    results = {}\n\n    for file in CORPUS_FILES:  # Process first 5 files for testing\n        global extraction_results\n        # 1. Load the corpus file\n        text = load_file(file)\n        filename = find_filename(file)\n        \n        # 2. Parse the sentences\n        doc = nlp(text)\n        \n        # 3. run extraction pipeline\n        basic_stats = run_basic_stats(doc)\n        result = run_grammar_extraction(doc, filename)\n        \n        # 4. Append results\n        results[filename] = basic_stats\n        results[filename].update(result)\n        \n        print(f\"Processed: {file}\")\n    return results\n\n\n\n\nShow code\n\nresults = main(corpus_files)\n\n\nProcessed: ../../corpus_data/brown_single/ca_ca01.txt\n\n\nCheck the results\n\n\nShow code\nresults\n\n\n{'ca_ca01.txt': {'nToken': 2376,\n  'nSentence': 88,\n  'Nouns': 458,\n  'adjectival_modifier': 112,\n  'direct_object': 95,\n  'Third-Person Singular Verbs': 34}}"
   },
   {
     "objectID": "2025/notebooks/session-12.html#write-the-results-into-dataset",
@@ -6153,6 +6321,13 @@
     "title": "Extracting fine-grained grammatical feature with POS and dependency information",
     "section": "Write the results into dataset",
     "text": "Write the results into dataset\n\n\nShow code\ndef results_to_dataframe(results):\n    \"\"\"\n    Convert results dictionary to pandas DataFrame with additional options\n    \n    Parameters:\n    - results: dictionary with corpus_size, unigram, and bigram data\n    - min_freq: minimum collocation frequency to include (default: 1)\n    - include_dep_rel: whether to include dependency relation in output (default: True)\n    \"\"\"\n    rows = []\n    \n    for filename, grammar_info in results.items():\n            \n        row = {\n            \"filename\": filename,\n              }\n        \n        for key, value in grammar_info.items():\n            print(key, value)\n            row.update({key:value})\n        \n        rows.append(row)\n    \n    # Create DataFrame and sort by collocation frequency\n    df = pd.DataFrame(rows)\n    \n    return df\n\n\n\n\nShow code\ndf = results_to_dataframe(results)\ndf\n\n\nnToken 2376\nnSentence 88\nNouns 458\nadjectival_modifier 112\ndirect_object 95\nThird-Person Singular Verbs 34\n\n\n\n\n\n\n\n\n\nfilename\nnToken\nnSentence\nNouns\nadjectival_modifier\ndirect_object\nThird-Person Singular Verbs\n\n\n\n\n0\nca_ca01.txt\n2376\n88\n458\n112\n95\n34"
+  },
+  {
+    "objectID": "2025/notebooks/session-12.html#output-the-results",
+    "href": "2025/notebooks/session-12.html#output-the-results",
+    "title": "Extracting fine-grained grammatical feature with POS and dependency information",
+    "section": "Output the results",
+    "text": "Output the results\nYou can name the file and save it.\n\n\nShow code\noutputname = \"grammar_output\"\n\n\n\n\nShow code\ndf.to_csv(f\"/content/drive/MyDrive/{outputname}.csv\", index=False)"
   },
   {
     "objectID": "2025/notebooks/japanese-nlp-test.html",

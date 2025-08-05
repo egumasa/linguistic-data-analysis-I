@@ -254,11 +254,3 @@ Describe complexification strategies:
 ## Now try your own examples
 
 
-## Questions?
-
-
-# Reflection
-
-
-
-# Next step

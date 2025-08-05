@@ -67,6 +67,8 @@ ICNALE GRA documents 120 essays evaluated by 80 people.
 - These 80 people are from different backgrounds.
 - You can basically use average essay ratings.
 
+ [ICNALE paper](https://da.lib.kobe-u.ac.jp/da/kernel/0100487713/0100487713.pdf)
+
 ![ICNALE metadata](../../assets/session-9/ICNALE-meta.png)
 
 

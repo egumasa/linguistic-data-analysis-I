@@ -7,27 +7,26 @@ subtitle: "Mini-research on vocabulary and multiword units"
 
 This assignment aims to help you practice the following skills:
 
-- Constructing lists of formulaic language through concordance software
+- ~~Constructing lists of formulaic language through concordance software~~
 - Planning and conducting a small-scale corpus study using single- and multi-word indices
 
 
 # Assignment Details
 
+## ~~Task 1: Describing statistical characteristics of collocations (4 points)~~ 
 
-## Task 1: Describing statistical characteristics of collocations (4 points)
+~~In the first task, I would like you to calculate major Strengths Of Association (SOA) measures to quantify the association between two words (`node words` and `their collocates`.)~~
 
-In the first task, I would like you to calculate major Strengths Of Association (SOA) measures to quantify the association between two words (`node words` and `their collocates`.)
+~~The frequency of node words, their collocates and entire corpus size will be given to you.~~
 
-The frequency of node words, their collocates and entire corpus size will be given to you.
-
-Your task is to calculate T-score, MI, MI^2, and LogDice.
+~~Your task is to calculate T-score, MI, MI^2, and LogDice.~~
 
 ::: {.callout-note}
 
-## Submission
+## ~~Submission~~ (This task was canceled)
 
-- A spreadsheet file with SOA values.
-- A word file (`.docx`) for plots and prose descriptions.
+- ~~A spreadsheet file with SOA values.~~
+- ~~A word file (`.docx`) for plots and prose descriptions.~~
 
 :::
 
@@ -35,16 +34,16 @@ Your task is to calculate T-score, MI, MI^2, and LogDice.
 ::: {.callout-important}
 # Success Criteria
 
-Your submission ...
+~~Your submission ...~~
 
-- [ ] contains accurate T-score, MI, MI^2 and LogDice scores
-- [ ] provides visualization of the relations between SOA indices
-- [ ] describe the relationships among SOA indices and typical collocations
+- ~~contains accurate T-score, MI, MI^2 and LogDice scores~~
+- ~~provides visualization of the relations between SOA indices~~
+- ~~describe the relationships among SOA indices and typical collocations~~
 
 :::
 
 
-## Task 2 & 3: Mini-research project (8 points altogether)
+## Task 2 & 3: Mini-research project (~~8 points altogether~~ 12 points altogether)
 
 The task 2 and 3 are related to the mini-research project.
 

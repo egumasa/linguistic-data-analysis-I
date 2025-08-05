@@ -204,7 +204,7 @@ $$E_{11} = {(\text{freq of node word} * \text{freq of collocate } ) \over Corpus
 
 They are mathematical conversion between the two.
 
-$\text{Joint Probability} = {500 \over 1000000} \times {500 \over 1000000} $
+$\text{Joint Probability} = {500 \over 1000000} \times {500 \over 1000000}$
 
 This is probability, to convert back to `COUNT` over all corpus, you multiply the corpus size
 

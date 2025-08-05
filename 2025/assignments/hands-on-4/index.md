@@ -73,8 +73,8 @@ In this task you will describe research questions, hypothesis, and methods.
 Your submission ...
 
 - [ ] outlines research questions and hypotheses
+- [ ] selected syntactic feature and why you think that distinguishes the proficiency score
 - [ ] provide description of your approach (algorithms and rules) to identify the desired linguistic structure.
-- [ ] provides analysis results and their interpretations in relation to the research questions
+- [ ] provides scatter plot examining the relationships and their interpretations in relation to the research questions
 
 :::
-

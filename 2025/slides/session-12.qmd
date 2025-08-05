@@ -20,7 +20,6 @@ By the end of this session, students will be able to:
 > - Define extraction rules to identify fine-grained grammatical features in language
 > - Conduct analysis using a template Python code or web application provided by the instructor.
 
-
 ---
 
 # Assignment 4
@@ -34,15 +33,21 @@ You will be able to:
 
 # Let's start
 
+## Preparation
+
+- Create `corpus_data` under `MyDrive`
+- Put `ICNALE` corpus under `MyDrive/corpus_file`
+
+
 ## Colab Notebook
 
-- Access the notebook here.
+- Access the notebook from [the folder](https://drive.google.com/drive/folders/1iPwW-lj81LcTpjjieGNly59UB27A_Hjs?usp=drive_link).
 
 
 ## Introduction
 
-- The notebook is very basic version of what TAASSC will do
-- This is meant for educational use; for research more rigorous approach may be needed.
+- The notebook is very basic version of what TAASSC can do for you in Kyle & Crossley (2018).
+- This is meant for educational use; for research more rigorous approach may be needed to identify T-units more consistently.
 
 ## Algorithm used in the notebook
 
@@ -51,7 +56,6 @@ In this notebook, the following analysis pipeline is implemented for you.
 - Your input is `file path` to yout corpus files.
 - The current code loads the corpus files onto colab.
 - It then iterate through the corpus files one by one.
-
 
 ## Algorithm used in the notebook (cont'd)
 
@@ -62,8 +66,19 @@ In this notebook, the following analysis pipeline is implemented for you.
 - After every corpus file is processed, it can create a dataset to export.
 - You can export the results for further analysis
 
-
 # Let's now work on the notebook
+
+- Let's first identify `adjectival modifier (amod)`
+   
+
+## coming up with extraction rules
+
+From Table 5.1 in Durrant (2023, p. 102), pick one or two sentences.
+
+- Using POS/ Dependency parsing option in simple text analyzer, **try to describe how to identify those structure**.
+- For example, to identify `that-clause complement`, you will first look for `ccomp` and look if the `ccomp` has `mark` that is `that`.
+
+
 
 
 ## spaCy token information
@@ -78,39 +93,85 @@ Some useful token information are following:
 | token.dep_ | dependency type | amod, advmd |
 | token.head | token information of the head of the dependency | 
 
-
-## Excercise
-
-From Table 5.1 in Durrant (2023, p. 102), pick one or two sentences.
-
-Try to identify that structure using the following extraction pipeline.
-
-## Extraction pipelines.
-
 ## Thinking grammartically
 
-In pair, brainstorm 3 - 5 grammatical constructions you would like to identify in your corpus search.
+In pair, brainstorm 3 - 5 grammatical constructions you would like to identify in your Corpus Lab.
 
 - Describe the grammatical feature
 - Give some examples that fall under the grammatical construction.
 - Explain why you are interested in.
 
+# Corpus Lab 4
 
-# Corpus Lab
+## Overview
 
-## 
+The final corpus lab is about syntactic features.
 
+- Using the colab notebook and python, you will extract fine-grained grammatical features that might distinguish scores in ICNALE.
+- You will extract the features on colab notebook.
+- Then you export the dataset and plot the relationships with the ICNALE score.
 
+## Task 1: Research questions, Hypotheses and Methods
 
+::: {style="font-size:60%"}
+In this task you will describe research questions, hypothesis, and methods.
 
----
+### Research questions
 
-# Hands-on Activity
+- Research questions should include:
+  - type of features you are looking at (e.g., adverbial clauses)
+  - situational variables that defines your sub-corpora (e.g., grade, genre, proficiency)
 
+### Hypothesis
 
+- Your research hypothesis should:
+  - describe your predictions in terms of:
+    - quantitative trends of the feature in relation to the factor you are interested in.
+:::
 
-# Reflection
+## Task 2: Definitions and operationalization of grammatical features to extract 
 
+- You must describe the specific grammatical features that you plan to extract.
+- For example, for clausal features you need to specify if you are interested in :
+  - subordinate clauses or embedded clauses
+  - particular type of clauses
 
+- Description of rules to identify desirable linguistic feature.
+  - For example, you will need to specify `amod` for dependency label to extract `adjective + noun` phrase.
 
-# Next step
+## Fine-grained Descriptive grammatical features
+
+- Once you articulated the information above, you will now conduct a search over the corpus.
+
+- You should use either [simple text analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer) or your own Colab Notebook.
+  - I will specify which option should be used **by the time we start working on this assignment** (that is, this depends on your progress as a group.)
+  
+## Task 3: Results and interpretation
+
+- Provide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.
+- Provide descriptive paragraphs to walk the reader through the results and how to interprete that results.
+
+::: {style="font-size:50%"}
+
+::: {.callout-note}
+## Submission
+
+- A word file (`.docx` file) that addresses requirements in a written format (one or two pages depending on your analysis results.).
+  - Screenshots of your search settings on the [simple text analyzer](https://huggingface.co/spaces/egumasa/simple-text-analyzer) tool.
+- **IF you use colab**, Google Colab notebook (`.ipynb` file) with extraction code and results.
+
+:::
+
+::: {.callout-important}
+# Success Criteria
+
+Your submission ...
+
+- [ ] outlines research questions and hypotheses
+- [ ] selected syntactic feature and why you think that distinguishes the proficiency score
+- [ ] provide description of your approach (algorithms and rules) to identify the desired linguistic structure
+- [ ] provides scatter plot examining the relationships and their interpretations in relation to the research questions
+
+:::
+
+:::
