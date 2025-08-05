@@ -569,7 +569,7 @@ Masaki EGUCHI, Ph.D.
 <tr class="odd">
 <td>Lexicalized sentence stems</td>
 <td>A conventional expression in whih some elements are fixed and others allow for a range of possibilities</td>
-<td>**</td>
+<td><em>what I want you to do is</em></td>
 </tr>
 </tbody>
 </table>
@@ -815,7 +815,7 @@ Look at the following list of lexical bundles, try to classify them into differe
 </thead>
 <tbody>
 <tr class="odd">
-<td>greater than or equal</td>
+<td>on the other hand</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -823,11 +823,11 @@ Look at the following list of lexical bundles, try to classify them into differe
 <td></td>
 </tr>
 <tr class="odd">
-<td>you have to be</td>
+<td>greater than or equal</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>on the other hand</td>
+<td>you have to be</td>
 <td></td>
 </tr>
 </tbody>
@@ -838,7 +838,7 @@ Look at the following list of lexical bundles, try to classify them into differe
 <p>To be able to identify interesting <strong>recurrent patterns</strong></p>
 <ul>
 <li>The size of the corpus;</li>
-<li>lengths of each text in corpuss</li>
+<li>lengths of each text in your corpus</li>
 <li>Representation of <strong>genre</strong>, <strong>topic</strong>, <strong>register</strong></li>
 <li>Reliability issue of manual classification of functions</li>
 </ul>
@@ -960,7 +960,11 @@ Look at the following list of lexical bundles, try to classify them into differe
 </section>
 <section id="summary-for-co-occurrence" class="slide level2">
 <h2>Summary for co-occurrence</h2>
-<p>There are two main ways to capture co-occurrence - Window-based approach (AntConc) - Dependency-based approach (needs advanced NLP tools; but we will cover).</p>
+<p>There are two main ways to capture co-occurrence</p>
+<ul>
+<li>Window-based approach (AntConc)</li>
+<li>Dependency-based approach (needs advanced NLP tools; but we will cover).</li>
+</ul>
 </section></section>
 <section>
 <section id="operationalizing-association" class="title-slide slide level1 center">
@@ -992,6 +996,7 @@ Look at the following list of lexical bundles, try to classify them into differe
 <section id="mathematical-look-into-collocational-association" class="slide level2">
 <h2>Mathematical look into collocational association</h2>
 <p>When we think about “association”, we can think about it from a probability perspective.</p>
+<div style="font-size:80%">
 <table class="caption-top">
 <colgroup>
 <col style="width: 33%">
@@ -1018,6 +1023,7 @@ Look at the following list of lexical bundles, try to classify them into differe
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="suppose-we-have-following" class="slide level2">
 <h2>Suppose we have following</h2>
@@ -1029,13 +1035,14 @@ Look at the following list of lexical bundles, try to classify them into differe
 <li><strong>Entire corpus</strong>: 1,000,000</li>
 </ul>
 </div>
+<div style="font-size:80%">
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th></th>
 <th># with word 1</th>
 <th># without word 1</th>
-<th></th>
+<th><strong>Total</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -1052,13 +1059,14 @@ Look at the following list of lexical bundles, try to classify them into differe
 <td>999,500</td>
 </tr>
 <tr class="odd">
-<td></td>
+<td><strong>Total</strong></td>
 <td>500</td>
 <td>999,500</td>
 <td>1,000,000</td>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="expected-ocurrences" class="slide level2">
 <h2>Expected Ocurrences</h2>

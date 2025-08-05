@@ -4774,7 +4774,7 @@
     "href": "2025/slides/session-7.html#definitions-1",
     "title": "Session 7: Multiword Units",
     "section": "Definitions",
-    "text": "Definitions\n\n\n\n\n\n\n\n\n\nFormula type\nDescription\nExamples\n\n\n\n\nCollocations\nPairs of words that are syntagmatically associated\ntake time, young people\n\n\nLexical bundles\nContiguous word combinations which occur very frequently in language\nin other words\n\n\nLexicalized sentence stems\nA conventional expression in whih some elements are fixed and others allow for a range of possibilities\n**"
+    "text": "Definitions\n\n\n\n\n\n\n\n\n\nFormula type\nDescription\nExamples\n\n\n\n\nCollocations\nPairs of words that are syntagmatically associated\ntake time, young people\n\n\nLexical bundles\nContiguous word combinations which occur very frequently in language\nin other words\n\n\nLexicalized sentence stems\nA conventional expression in whih some elements are fixed and others allow for a range of possibilities\nwhat I want you to do is"
   },
   {
     "objectID": "2025/slides/session-7.html#approaches-to-define-and-operationalize-mwus",
@@ -4858,14 +4858,14 @@
     "href": "2025/slides/session-7.html#classify-the-following-bundles-into-three-categories",
     "title": "Session 7: Multiword Units",
     "section": "Classify the following bundles into three categories",
-    "text": "Classify the following bundles into three categories\n\nChoice: Referential, Stance, Discourse\n\n\n\n\nBundle\nCategory\n\n\n\n\ngreater than or equal\n\n\n\nI don’t know how\n\n\n\nyou have to be\n\n\n\non the other hand"
+    "text": "Classify the following bundles into three categories\n\nChoice: Referential, Stance, Discourse\n\n\n\n\nBundle\nCategory\n\n\n\n\non the other hand\n\n\n\nI don’t know how\n\n\n\ngreater than or equal\n\n\n\nyou have to be"
   },
   {
     "objectID": "2025/slides/session-7.html#practical-considerations",
     "href": "2025/slides/session-7.html#practical-considerations",
     "title": "Session 7: Multiword Units",
     "section": "Practical considerations",
-    "text": "Practical considerations\nTo be able to identify interesting recurrent patterns\n\nThe size of the corpus;\nlengths of each text in corpuss\nRepresentation of genre, topic, register\nReliability issue of manual classification of functions"
+    "text": "Practical considerations\nTo be able to identify interesting recurrent patterns\n\nThe size of the corpus;\nlengths of each text in your corpus\nRepresentation of genre, topic, register\nReliability issue of manual classification of functions"
   },
   {
     "objectID": "2025/slides/session-7.html#summary-of-recurrent-units",
@@ -4935,7 +4935,7 @@
     "href": "2025/slides/session-7.html#summary-for-co-occurrence",
     "title": "Session 7: Multiword Units",
     "section": "Summary for co-occurrence",
-    "text": "Summary for co-occurrence\nThere are two main ways to capture co-occurrence - Window-based approach (AntConc) - Dependency-based approach (needs advanced NLP tools; but we will cover)."
+    "text": "Summary for co-occurrence\nThere are two main ways to capture co-occurrence\n\nWindow-based approach (AntConc)\nDependency-based approach (needs advanced NLP tools; but we will cover)."
   },
   {
     "objectID": "2025/slides/session-7.html#why-is-frequency-not-sufficient",
@@ -4956,14 +4956,14 @@
     "href": "2025/slides/session-7.html#mathematical-look-into-collocational-association",
     "title": "Session 7: Multiword Units",
     "section": "Mathematical look into collocational association",
-    "text": "Mathematical look into collocational association\nWhen we think about “association”, we can think about it from a probability perspective.\n\n\n\n\n\n\n\n\n\n# with word 1\n# without word 1\n\n\n\n\n# with word 2\nFrequency of collocation\nRemaining frequency of word 2\n\n\n# without word 2\nRemaining frequency of word 1\nRest of corpus size"
+    "text": "Mathematical look into collocational association\nWhen we think about “association”, we can think about it from a probability perspective.\n\n\n\n\n\n\n\n\n\n\n# with word 1\n# without word 1\n\n\n\n\n# with word 2\nFrequency of collocation\nRemaining frequency of word 2\n\n\n# without word 2\nRemaining frequency of word 1\nRest of corpus size"
   },
   {
     "objectID": "2025/slides/session-7.html#suppose-we-have-following",
     "href": "2025/slides/session-7.html#suppose-we-have-following",
     "title": "Session 7: Multiword Units",
     "section": "Suppose we have following",
-    "text": "Suppose we have following\n\n\nCollocation freq: 50\nWord 1: 500\nWord 2: 500\nEntire corpus: 1,000,000\n\n\n\n\n\n\n# with word 1\n# without word 1\n\n\n\n\n\n# with word 2\n50\n450\n500\n\n\n# without word 2\n450\n999,050\n999,500\n\n\n\n500\n999,500\n1,000,000"
+    "text": "Suppose we have following\n\n\nCollocation freq: 50\nWord 1: 500\nWord 2: 500\nEntire corpus: 1,000,000\n\n\n\n\n\n\n\n# with word 1\n# without word 1\nTotal\n\n\n\n\n# with word 2\n50\n450\n500\n\n\n# without word 2\n450\n999,050\n999,500\n\n\nTotal\n500\n999,500\n1,000,000"
   },
   {
     "objectID": "2025/slides/session-7.html#expected-ocurrences",

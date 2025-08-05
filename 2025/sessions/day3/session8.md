@@ -1,6 +1,6 @@
 ---
 title: "Session 8"
-subtitle: ""
+subtitle: "Calculating SOA"
 ---
 
 ## One-liner

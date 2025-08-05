@@ -281,7 +281,7 @@ Multiword Unit/Sequence is a cover term for different things.
 |---|----------|-----|
 | Collocations | Pairs of words that are syntagmatically associated | *take time*, *young people* |
 | Lexical bundles | Contiguous word combinations which occur very frequently in language | *in other words* |
-| Lexicalized sentence stems | A conventional expression in whih some elements are fixed and others allow for a range of possibilities |  ** |
+| Lexicalized sentence stems | A conventional expression in whih some elements are fixed and others allow for a range of possibilities |  *what I want you to do is* |
 
 :::
 
@@ -440,10 +440,11 @@ Look at the following list of lexical bundles, try to classify them into differe
 
 | Bundle | Category |
 |-------|---------------|
-| greater than or equal | |
-| I don't know how ||
-| you have to be | |
 | on the other hand | |
+| I don't know how ||
+| greater than or equal | |
+| you have to be | |
+
 
 
 ## Practical considerations
@@ -451,7 +452,7 @@ Look at the following list of lexical bundles, try to classify them into differe
 To be able to identify interesting **recurrent patterns**
 
 - The size of the corpus; 
-- lengths of each text in corpuss
+- lengths of each text in your corpus
 - Representation of **genre**, **topic**, **register**
 - Reliability issue of manual classification of functions
 
@@ -540,6 +541,7 @@ A few depedency labels are useful to identify collocations
 ## Summary for co-occurrence
 
 There are two main ways to capture co-occurrence
+
 - Window-based approach (AntConc)
 - Dependency-based approach (needs advanced NLP tools; but we will cover).
 
@@ -551,8 +553,11 @@ There are two main ways to capture co-occurrence
 
 - Researchers say that frequency alone is not sufficient to identify useful multiword sequences. Why?
 
+::: {.incremental}
+
 ![collocation-freq](../../assets/session-7/collocation-freq.png)
 
+:::
 
 ## Strengths Of Association Measures
 
@@ -569,10 +574,14 @@ There are two main ways to capture co-occurrence
 
 When we think about "association", we can think about it from a probability perspective.
 
+:::{style="font-size:80%"}
+
 |             | # with word 1 | # without word 1| 
 |---------------|---------------|---------------|
 | # with word 2 | Frequency of collocation | Remaining frequency of word 2 |
 | # without word 2 | Remaining frequency of word 1 | Rest of corpus size |
+
+:::
 
 ## Suppose we have following 
 
@@ -584,12 +593,15 @@ When we think about "association", we can think about it from a probability pers
 - **Entire corpus**: 1,000,000
 :::
 
-|             | # with word 1 | # without word 1|     |
+:::{style="font-size:80%"}
+
+|             | # with word 1 | # without word 1| **Total**    |
 |---------------|---------------|---------------|-----|
 | # with word 2 | 50 | 450 | 500 |
 | # without word 2 | 450 | 999,050 | 999,500 |
-| | 500 | 999,500 | 1,000,000 |
+| **Total** | 500 | 999,500 | 1,000,000 |
 
+:::
 
 ## Expected Ocurrences
 
@@ -739,7 +751,7 @@ $\text{Sophistication of PU} = {\text{Total score for SOAs} \over \text{# of Tok
 - Eguchi, M., & Kyle, K. (2020). Continuing to Explore the Multidimensional Nature of Lexical Sophistication: The Case of Oral Proficiency Interviews. The Modern Language Journal, 104(2), 381–400. https://doi.org/10.1111/modl.12637
 - Kyle, K., & Eguchi, M. (2021). Automatically assessing lexical sophistication using word, bigram, and dependency indices. In Perspectives on the L2 phrasicon: The view from learner corpora (pp. 126–151).
 - Siyanova‐Chanturia, A., & Spina, S. (2020). Multi‐Word Expressions in Second Language Writing: A Large‐Scale Longitudinal Learner Corpus Study. Language Learning, 70(2), 420–463. https://doi.org/10.1111/lang.12383
-
+ 
 :::
 
 ## Summary
