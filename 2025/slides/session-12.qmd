@@ -19,6 +19,35 @@ By the end of this session, students will be able to:
 
 ---
 
+## In what way are these sentence complex?
+
+Describe complexification strategies:
+
+- She hopes to join an international research team after graduation.
+- Experts agree that collaboration improves problem-solving efficiency.
+- Students often struggle because they lack sufficient guidance.
+- He succeeded in the most demanding and competitive program at the university.
+- The growing influence of social media on youth behavior is concerning.
+- Policies that encourage innovation are essential for economic growth.
+
+
+## Let's parse the sentence.
+
+- Visit our [webapp](https://huggingface.co/spaces/egumasa/simple-text-analyzer) 
+
+- Try the sentences above and analyze their dependencies 
+
+
+
+# Dependency collocation
+
+## Dependency-based collocation
+
+- Let's talk about how to use dependency to extract collocations
+- [Google Colab Notebook](https://drive.google.com/file/d/1tGGp4fHOPYnUoOJbmmAHtzL2VWFG-mjD/view?usp=drive_link)
+
+
+
 # Assignment 4
 
 In assignment 4, you will conduct a grammatical analysis on a corpus combining POS tagger and dependency parser.

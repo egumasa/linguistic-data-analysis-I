@@ -2658,6 +2658,27 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nDefine extraction rules to identify fine-grained grammatical features in language\nConduct analysis using a template Python code or web application provided by the instructor."
   },
   {
+    "objectID": "2025/slides/session-12.html#in-what-way-are-these-sentence-complex",
+    "href": "2025/slides/session-12.html#in-what-way-are-these-sentence-complex",
+    "title": "Session 12: Hands-on Activity",
+    "section": "In what way are these sentence complex?",
+    "text": "In what way are these sentence complex?\nDescribe complexification strategies:\n\nShe hopes to join an international research team after graduation.\nExperts agree that collaboration improves problem-solving efficiency.\nStudents often struggle because they lack sufficient guidance.\nHe succeeded in the most demanding and competitive program at the university.\nThe growing influence of social media on youth behavior is concerning.\nPolicies that encourage innovation are essential for economic growth."
+  },
+  {
+    "objectID": "2025/slides/session-12.html#lets-parse-the-sentence.",
+    "href": "2025/slides/session-12.html#lets-parse-the-sentence.",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Let’s parse the sentence.",
+    "text": "Let’s parse the sentence.\n\nVisit our webapp\nTry the sentences above and analyze their dependencies"
+  },
+  {
+    "objectID": "2025/slides/session-12.html#dependency-based-collocation",
+    "href": "2025/slides/session-12.html#dependency-based-collocation",
+    "title": "Session 12: Hands-on Activity",
+    "section": "Dependency-based collocation",
+    "text": "Dependency-based collocation\n\nLet’s talk about how to use dependency to extract collocations\nGoogle Colab Notebook"
+  },
+  {
     "objectID": "2025/slides/session-12.html#colab-notebook",
     "href": "2025/slides/session-12.html#colab-notebook",
     "title": "Session 12: Hands-on Activity",
@@ -2823,7 +2844,7 @@
     "href": "2025/slides/session-11.html#task-2-key",
     "title": "Session 11: Hands-on Activity",
     "section": "Task 2: Key",
-    "text": "Task 2: Key\n\n非自立可能動詞"
+    "text": "Task 2: Key\n*_動詞-非自立可能\n\n非自立可能動詞"
   },
   {
     "objectID": "2025/slides/session-11.html#advanced-options-in-tagant",
@@ -2966,11 +2987,11 @@
     "text": "Let’s parse the sentence.\n\nVisit our webapp\nTry the sentences above and analyze their dependencies"
   },
   {
-    "objectID": "2025/slides/session-11.html#dependency-grammar",
-    "href": "2025/slides/session-11.html#dependency-grammar",
+    "objectID": "2025/slides/session-11.html#dependency-based-collocation",
+    "href": "2025/slides/session-11.html#dependency-based-collocation",
     "title": "Session 11: Hands-on Activity",
-    "section": "Dependency grammar",
-    "text": "Dependency grammar\n\nLet’s talk about how to use dependency to extract collocations\nGoogle Colab Notebook"
+    "section": "Dependency-based collocation",
+    "text": "Dependency-based collocation\n\nLet’s talk about how to use dependency to extract collocations\nGoogle Colab Notebook"
   },
   {
     "objectID": "2025/slides/session-8.html#learning-objectives",

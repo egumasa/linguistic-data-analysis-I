@@ -106,6 +106,8 @@ Followings are basic selection in TagAnt.
 
 ## Task 2: Key
 
+*_動詞-非自立可能
+
 ![非自立可能動詞](../../assets/session-11/%E9%9D%9E%E8%87%AA%E7%AB%8B%E5%8F%AF%E8%83%BD%E5%8B%95%E8%A9%9E.png)
 
 
@@ -298,7 +300,7 @@ Describe complexification strategies:
 
 - Try the sentences above and analyze their dependencies 
 
-## Dependency grammar
+## Dependency-based collocation
 
 - Let's talk about how to use dependency to extract collocations
 - [Google Colab Notebook](https://drive.google.com/file/d/1tGGp4fHOPYnUoOJbmmAHtzL2VWFG-mjD/view?usp=drive_link)
