@@ -3797,13 +3797,6 @@
     "text": "Reflection\n\nYou can now:\n\nProvide reasons for your choice of lexical richness measures.\nConduct preliminary analysis to understand how text differ from one aother in relation to learner’s proficiency, learner groups, etc."
   },
   {
-    "objectID": "2025/slides/session-10.html#corpus-labs",
-    "href": "2025/slides/session-10.html#corpus-labs",
-    "title": "Session 10: Analyzing Grammar",
-    "section": "Corpus Labs",
-    "text": "Corpus Labs"
-  },
-  {
     "objectID": "2025/slides/session-10.html#due-dates",
     "href": "2025/slides/session-10.html#due-dates",
     "title": "Session 10: Analyzing Grammar",
@@ -3969,7 +3962,7 @@
     "href": "2025/slides/session-10.html#kyle-crossley-2018",
     "title": "Session 10: Analyzing Grammar",
     "section": "Kyle & Crossley (2018)",
-    "text": "Kyle & Crossley (2018)\n\nKyle & Crossley (2018) proposed fine-grained clausal & phrasal complexity indices\nThey used dependency parsing to identify fine-grained features of grammar."
+    "text": "Kyle & Crossley (2018)\n\n\nKyle & Crossley (2018) proposed fine-grained clausal & phrasal complexity indices\nThey used dependency parsing to identify fine-grained features of grammar.\n\nSee Universal Dependencies project\n\n\n\n\nDependency Parsing"
   },
   {
     "objectID": "2025/slides/session-10.html#clausal-indices",
@@ -4042,6 +4035,34 @@
     "text": "Examples of linguistic features\n\n\n\n\n\n\n\n\nLarge Category\nList of features\n\n\n\n\nPronouns and Proverbs\nFirst person, Second person, Pronoun it, Proverb do\n\n\nReduced Forms\ncontractions, complementizer that-deletion\n\n\nPrepositional phrases\nAll prepositional phrases\n\n\nNouns and noun types\nConcrete noun, Cognitive noun, place noun, group noun, etc.\n\n\nVerbs and verb types\ntense aspect, modal verbs, mental verbs, causative verb, etc.\n\n\ncomplement clauses\nthat complement, wh-complement\n\n\nNominal Postmodifying clauses\nThat relative clauses, wh-relative clauses"
   },
   {
+    "objectID": "2025/slides/session-10.html#typical-result-of-mda",
+    "href": "2025/slides/session-10.html#typical-result-of-mda",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Typical Result of MDA",
+    "text": "Typical Result of MDA\n\nMDA"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#dimension-4-information-elaboration",
+    "href": "2025/slides/session-10.html#dimension-4-information-elaboration",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Dimension 4 Information elaboration",
+    "text": "Dimension 4 Information elaboration\n\nMDA - Dimension 4"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#high-in-information-elaboration",
+    "href": "2025/slides/session-10.html#high-in-information-elaboration",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "High in information elaboration",
+    "text": "High in information elaboration\n\ndiscourse in text"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#low-in-information-elaboration",
+    "href": "2025/slides/session-10.html#low-in-information-elaboration",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Low in information elaboration",
+    "text": "Low in information elaboration\n\ndiscourse in text"
+  },
+  {
     "objectID": "2025/slides/session-10.html#syntactic-sophistication-or-vac-strand",
     "href": "2025/slides/session-10.html#syntactic-sophistication-or-vac-strand",
     "title": "Session 10: Analyzing Grammar",
@@ -4061,6 +4082,13 @@
     "title": "Session 10: Analyzing Grammar",
     "section": "Some VAC examples",
     "text": "Some VAC examples\n\n\n\n\n\n\n\n\n\n\nMain verb lemma\nVerb Argument Construction\nExample\nFreq (PMW) in COCA\n\n\n\n\nbe\nsubject-verb-nominal complement\nIt is an indication of the ways…\n34,517.41\n\n\nsay\nsubject – verb - clausal complement\nHe said [that health decisions should be made by patients and doctors]\n3865.16\n\n\nrefuse\nsubject - verb - xcomp\nHe refused to brew a coffee to me.\n5540.0\n\n\nsuppose\nnsubj-v-ccomp\nI suppose that the theory might be wrong.\n3016.0　\n\n\nsuppose"
+  },
+  {
+    "objectID": "2025/slides/session-10.html#summary",
+    "href": "2025/slides/session-10.html#summary",
+    "title": "Session 10: Analyzing Grammar",
+    "section": "Summary",
+    "text": "Summary\nWe covered four different ways to look at grammar:\n\nSyntactic complexity\nFine-grained syntactic complexity\nRegister / MDA approach\nSyntactic sophistication"
   },
   {
     "objectID": "2025/slides/session-13.html#learning-objectives",

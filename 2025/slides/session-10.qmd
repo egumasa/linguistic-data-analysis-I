@@ -11,9 +11,6 @@ metadata-files:
 # Important announcement about class schedule
 
 
-## Corpus Labs
-
-
 ## Due dates
 
 
@@ -258,8 +255,14 @@ Example from Kyle & Crossley (2018)
 
 ## Kyle & Crossley (2018)
 
+::: {style="font-size:80%"}
 - Kyle & Crossley (2018) proposed fine-grained clausal & phrasal complexity indices
 - They used `dependency` parsing to identify fine-grained features of grammar.
+  - See [Universal Dependencies project](https://universaldependencies.org/)
+
+:::
+
+![Dependency Parsing](../../assets/session-10/ud.png)
 
 ## Clausal indices
 
@@ -388,6 +391,21 @@ The followings are example:
 
 :::
 
+## Typical Result of MDA
+
+![MDA](../../assets/session-10/LaFlair.png)
+
+## Dimension 4 Information elaboration
+
+![MDA - Dimension 4](../../assets/session-10/LaFlair_D2.png)
+
+## High in information elaboration
+
+![discourse in text](../../assets/session-10/D4_ex1.png)
+
+## Low in information elaboration
+
+![discourse in text](../../assets/session-10/D4_ex2.png)
 
 # Syntactic sophistication strand
 
@@ -438,13 +456,11 @@ According to **construction grammar** (Goldberg, 1995, 2006), grammatical constr
 :::
 
 
+## Summary
 
+We covered four different ways to look at grammar:
 
----
-
-
-# Reflection
-
-
-
-# Next step
+- Syntactic complexity
+- Fine-grained syntactic complexity
+- Register / MDA approach
+- Syntactic sophistication
