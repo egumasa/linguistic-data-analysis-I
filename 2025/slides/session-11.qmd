@@ -8,9 +8,10 @@ metadata-files:
 
 # Housekeeping
 
+## Preparation
 
-# Session overview
-
+- Create `corpus_data` under `MyDrive`
+- Put `ICNALE` corpus under `MyDrive/corpus_file`
 
 ## 🎯 Learning Objectives
 
@@ -54,12 +55,23 @@ Followings are basic selection in TagAnt.
 | pos_tag | POS tag (detailed) | NNS, VBD |
 | lemma | lemmatized word  | dog, run |
 
-## Other Diaplay settings
+## Now try different options...
 
-| Menu | Function | Example |
-|---|------|------|
-| word+pos | tokenization and POS | dogs_NOUN, ran_VERB|
-| word+lemma +pos_tag | token+lemma+POS | dogs_dog_NN, ran_run_VERB |
+- Let's analyze your own example with the following:
+  - `word+pos`
+  - `word+pos_tag`
+  - `word+lemma`
+  - `word+pos+lemma`
+- What do these choice give you? Share it with your neighbor.
+
+## Other choices and expected results
+
+| Display Information | Example |
+|-----|------------|
+| word | `カキ を 食べ たい` |
+| word+pos | `カキ_NOUN を_ADP 食べ_VERB たい_AUX` |
+| word+pos_tag | `カキ_名詞-普通名詞-一般 を_助詞-格助詞 食べ_動詞-一般 たい_助動詞` |
+| word+lemma | `カキ_カキ を_を 食べ_食べる たい_たい` |
 
 
 ## Task 1: Annotating Japanese text (10 mins)
@@ -107,9 +119,6 @@ Followings are basic selection in TagAnt.
 
 - Now you can parse multilingual text with TagAnt.
 
-
----
-
 # Understanding dependency grammar
 
 ## Goals
@@ -138,6 +147,7 @@ The following is a dependency for `I play baseball`.
 ![simple-dependency](../../assets/session-11/dep-1.png)
 
 
+
 ## In table format
 
 The same sentence, `I play baseball` can be expressed in the following format
@@ -150,6 +160,48 @@ The same sentence, `I play baseball` can be expressed in the following format
 | 4 | . | punct | 2 |
 
 This type of vertical format is often used to represent multi-layered token information. 
+
+
+## Typical dependency labels
+
+- They used `dependency` parsing to identify fine-grained features of grammar.
+  - See [Universal Dependencies project](https://universaldependencies.org/)
+
+Note that spaCy English model is trained on  [ClearNLP tag set](https://github.com/clir/clearnlp-guidelines/blob/master/md/specifications/dependency_labels.md)
+
+                                     
+## Core Dependency relations
+
+::: {style="font-size:75%"}
+
+|                           | **Nominals**        | **Clauses**        | **Modifier words** | **Function Words** |
+|---------------------------|--------------------|--------------------|--------------------|--------------------|
+| **Core arguments**        | `nsubj`, `obj`, `iobj` | `csubj`, `ccomp`, `xcomp` |                    |                    |
+| **Non-core dependents**   | `obl`, `vocative`, `expl`, `dislocated` | `advcl`            | `advmod`, `discourse` | `aux`, `cop`, `mark` |
+| **Nominal dependents**    | `nmod`, `appos`, `nummod` | `acl`              | `amod`            | `det`, `clf`, `case` |
+
+:::
+
+## Additional Relations
+
+::: {style="font-size:75%"}
+
+| **Coordination** | **Headless** | **Loose**      | **Special**        | **Other**        |
+|------------------|-------------|----------------|--------------------|------------------|
+| `conj`, `cc`   | `fixed`, `flat` | `list`, `parataxis` | `compound`, `orphan`, `goeswith`, `reparandum` | `punct`, `root`, `dep` |
+
+:::
+
+## Example 1
+
+![xcomp](../../assets/session-11/xcomp.png)
+
+
+## Example 2
+
+![conj](../../assets/session-11/conj.png)
+
+
 
 ## Some excercise - Problem 1
 
@@ -195,11 +247,10 @@ Try filling in the gap in the following table.
 
 ## About Google Colab (5 mins)
 
-- 
+- Open [the Python notebook](https://drive.google.com/file/d/1Kw6nX4xSNiRzz_Kh_TfWlJdL1BhITV_9/view?usp=drive_link)
+
 
 ## Python basics (15 mins)
-
-## First text analysis
 
 1. First thing is to load the package.
 
@@ -223,21 +274,12 @@ doc = nlp(example_text)
 
 ## Result of your first text analysis
 
-
 4. Let's print analysis results
 
 ```python
 for token in doc:
     print(token.text, token.pos_, token.tag_, sep="\t")
 ```
-
-
-## Let's parse the sentence.
-
-- Visit our [webapp](https://huggingface.co/spaces/egumasa/simple-text-analyzer) 
-
-- Try the sentences above and analyze their dependencies 
-
 
 ## In what way are these sentence complex?
 
@@ -250,7 +292,15 @@ Describe complexification strategies:
 - The growing influence of social media on youth behavior is concerning.
 - Policies that encourage innovation are essential for economic growth.
 
+## Let's parse the sentence.
 
-## Now try your own examples
+- Visit our [webapp](https://huggingface.co/spaces/egumasa/simple-text-analyzer) 
+
+- Try the sentences above and analyze their dependencies 
+
+## Dependency grammar
+
+- Let's talk about how to use dependency to extract collocations
+- [Google Colab Notebook](https://drive.google.com/file/d/1tGGp4fHOPYnUoOJbmmAHtzL2VWFG-mjD/view?usp=drive_link)
 
 

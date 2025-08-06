@@ -2658,13 +2658,6 @@
     "text": "🎯 Learning Objectives\nBy the end of this session, students will be able to:\n\n\n\nDefine extraction rules to identify fine-grained grammatical features in language\nConduct analysis using a template Python code or web application provided by the instructor."
   },
   {
-    "objectID": "2025/slides/session-12.html#preparation",
-    "href": "2025/slides/session-12.html#preparation",
-    "title": "Session 12: Hands-on Activity",
-    "section": "Preparation",
-    "text": "Preparation\n\nCreate corpus_data under MyDrive\nPut ICNALE corpus under MyDrive/corpus_file"
-  },
-  {
     "objectID": "2025/slides/session-12.html#colab-notebook",
     "href": "2025/slides/session-12.html#colab-notebook",
     "title": "Session 12: Hands-on Activity",
@@ -2749,6 +2742,13 @@
     "text": "Task 3: Results and interpretation\n\nProvide the results of your corpus analysis in a way you think is most effective to address your research questions. Make effective use of tables, plots, or other data presentation technique as you think.\nProvide descriptive paragraphs to walk the reader through the results and how to interprete that results.\n\n\n\n\n\n\n\n\nSubmission\n\n\n\nA word file (.docx file) that addresses requirements in a written format (one or two pages depending on your analysis results.).\n\nScreenshots of your search settings on the simple text analyzer tool.\n\nIF you use colab, Google Colab notebook (.ipynb file) with extraction code and results.\n\n\n\n\n\n\n\n\n\n\nSuccess Criteria\n\n\nYour submission …\n\noutlines research questions and hypotheses\nselected syntactic feature and why you think that distinguishes the proficiency score\nprovide description of your approach (algorithms and rules) to identify the desired linguistic structure\nprovides scatter plot examining the relationships and their interpretations in relation to the research questions"
   },
   {
+    "objectID": "2025/slides/session-11.html#preparation",
+    "href": "2025/slides/session-11.html#preparation",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Preparation",
+    "text": "Preparation\n\nCreate corpus_data under MyDrive\nPut ICNALE corpus under MyDrive/corpus_file"
+  },
+  {
     "objectID": "2025/slides/session-11.html#learning-objectives",
     "href": "2025/slides/session-11.html#learning-objectives",
     "title": "Session 11: Hands-on Activity",
@@ -2784,11 +2784,18 @@
     "text": "Display setting info in TagAnt\nFollowings are basic selection in TagAnt.\n\n\n\nMenu\nFunction\nExample\n\n\n\n\nword\ntokenization\ndogs, ran\n\n\npos\nPOS tag (simple)\nNOUN, VERB\n\n\npos_tag\nPOS tag (detailed)\nNNS, VBD\n\n\nlemma\nlemmatized word\ndog, run"
   },
   {
-    "objectID": "2025/slides/session-11.html#other-diaplay-settings",
-    "href": "2025/slides/session-11.html#other-diaplay-settings",
+    "objectID": "2025/slides/session-11.html#now-try-different-options",
+    "href": "2025/slides/session-11.html#now-try-different-options",
     "title": "Session 11: Hands-on Activity",
-    "section": "Other Diaplay settings",
-    "text": "Other Diaplay settings\n\n\n\nMenu\nFunction\nExample\n\n\n\n\nword+pos\ntokenization and POS\ndogs_NOUN, ran_VERB\n\n\nword+lemma +pos_tag\ntoken+lemma+POS\ndogs_dog_NN, ran_run_VERB"
+    "section": "Now try different options…",
+    "text": "Now try different options…\n\nLet’s analyze your own example with the following:\n\nword+pos\nword+pos_tag\nword+lemma\nword+pos+lemma\n\nWhat do these choice give you? Share it with your neighbor."
+  },
+  {
+    "objectID": "2025/slides/session-11.html#other-choices-and-expected-results",
+    "href": "2025/slides/session-11.html#other-choices-and-expected-results",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Other choices and expected results",
+    "text": "Other choices and expected results\n\n\n\n\n\n\n\nDisplay Information\nExample\n\n\n\n\nword\nカキ を 食べ たい\n\n\nword+pos\nカキ_NOUN を_ADP 食べ_VERB たい_AUX\n\n\nword+pos_tag\nカキ_名詞-普通名詞-一般 を_助詞-格助詞 食べ_動詞-一般 たい_助動詞\n\n\nword+lemma\nカキ_カキ を_を 食べ_食べる たい_たい"
   },
   {
     "objectID": "2025/slides/session-11.html#task-1-annotating-japanese-text-10-mins",
@@ -2868,6 +2875,41 @@
     "text": "In table format\nThe same sentence, I play baseball can be expressed in the following format\n\n\n\ntid\ntoken\ndep\nhead\n\n\n\n\n1\nI\nnsubj\n2\n\n\n2\nplay\nROOT\n\n\n\n3\nbaseball\ndobj\n2\n\n\n4\n.\npunct\n2\n\n\n\nThis type of vertical format is often used to represent multi-layered token information."
   },
   {
+    "objectID": "2025/slides/session-11.html#typical-dependency-labels",
+    "href": "2025/slides/session-11.html#typical-dependency-labels",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Typical dependency labels",
+    "text": "Typical dependency labels\n\nThey used dependency parsing to identify fine-grained features of grammar.\n\nSee Universal Dependencies project\n\n\nNote that spaCy English model is trained on ClearNLP tag set"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#core-dependency-relations",
+    "href": "2025/slides/session-11.html#core-dependency-relations",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Core Dependency relations",
+    "text": "Core Dependency relations\n\n\n\n\n\n\n\n\n\n\n\n\nNominals\nClauses\nModifier words\nFunction Words\n\n\n\n\nCore arguments\nnsubj, obj, iobj\ncsubj, ccomp, xcomp\n\n\n\n\nNon-core dependents\nobl, vocative, expl, dislocated\nadvcl\nadvmod, discourse\naux, cop, mark\n\n\nNominal dependents\nnmod, appos, nummod\nacl\namod\ndet, clf, case"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#additional-relations",
+    "href": "2025/slides/session-11.html#additional-relations",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Additional Relations",
+    "text": "Additional Relations\n\n\n\n\n\n\n\n\n\n\n\nCoordination\nHeadless\nLoose\nSpecial\nOther\n\n\n\n\nconj, cc\nfixed, flat\nlist, parataxis\ncompound, orphan, goeswith, reparandum\npunct, root, dep"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#example-1",
+    "href": "2025/slides/session-11.html#example-1",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Example 1",
+    "text": "Example 1\n\nxcomp"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#example-2",
+    "href": "2025/slides/session-11.html#example-2",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Example 2",
+    "text": "Example 2\n\nconj"
+  },
+  {
     "objectID": "2025/slides/session-11.html#some-excercise---problem-1",
     "href": "2025/slides/session-11.html#some-excercise---problem-1",
     "title": "Session 11: Hands-on Activity",
@@ -2893,21 +2935,14 @@
     "href": "2025/slides/session-11.html#about-google-colab-5-mins",
     "title": "Session 11: Hands-on Activity",
     "section": "About Google Colab (5 mins)",
-    "text": "About Google Colab (5 mins)"
+    "text": "About Google Colab (5 mins)\n\nOpen the Python notebook"
   },
   {
     "objectID": "2025/slides/session-11.html#python-basics-15-mins",
     "href": "2025/slides/session-11.html#python-basics-15-mins",
     "title": "Session 11: Hands-on Activity",
     "section": "Python basics (15 mins)",
-    "text": "Python basics (15 mins)"
-  },
-  {
-    "objectID": "2025/slides/session-11.html#first-text-analysis",
-    "href": "2025/slides/session-11.html#first-text-analysis",
-    "title": "Session 11: Hands-on Activity",
-    "section": "First text analysis",
-    "text": "First text analysis\n\nFirst thing is to load the package.\n\nimport spacy\nnlp = spacy.load(\"en_core_web_sm\")\n\nThen you will define a variable example_text\n\nexample_text = \"Hi. This is my first awesome sentence to analyze.\"\n\nAnalyze this using spacy\n\ndoc = nlp(example_text)"
+    "text": "Python basics (15 mins)\n\nFirst thing is to load the package.\n\nimport spacy\nnlp = spacy.load(\"en_core_web_sm\")\n\nThen you will define a variable example_text\n\nexample_text = \"Hi. This is my first awesome sentence to analyze.\"\n\nAnalyze this using spacy\n\ndoc = nlp(example_text)"
   },
   {
     "objectID": "2025/slides/session-11.html#result-of-your-first-text-analysis",
@@ -2917,13 +2952,6 @@
     "text": "Result of your first text analysis\n\nLet’s print analysis results\n\nfor token in doc:\n    print(token.text, token.pos_, token.tag_, sep=\"\\t\")"
   },
   {
-    "objectID": "2025/slides/session-11.html#lets-parse-the-sentence.",
-    "href": "2025/slides/session-11.html#lets-parse-the-sentence.",
-    "title": "Session 11: Hands-on Activity",
-    "section": "Let’s parse the sentence.",
-    "text": "Let’s parse the sentence.\n\nVisit our webapp\nTry the sentences above and analyze their dependencies"
-  },
-  {
     "objectID": "2025/slides/session-11.html#in-what-way-are-these-sentence-complex",
     "href": "2025/slides/session-11.html#in-what-way-are-these-sentence-complex",
     "title": "Session 11: Hands-on Activity",
@@ -2931,11 +2959,18 @@
     "text": "In what way are these sentence complex?\nDescribe complexification strategies:\n\nShe hopes to join an international research team after graduation.\nExperts agree that collaboration improves problem-solving efficiency.\nStudents often struggle because they lack sufficient guidance.\nHe succeeded in the most demanding and competitive program at the university.\nThe growing influence of social media on youth behavior is concerning.\nPolicies that encourage innovation are essential for economic growth."
   },
   {
-    "objectID": "2025/slides/session-11.html#now-try-your-own-examples",
-    "href": "2025/slides/session-11.html#now-try-your-own-examples",
+    "objectID": "2025/slides/session-11.html#lets-parse-the-sentence.",
+    "href": "2025/slides/session-11.html#lets-parse-the-sentence.",
     "title": "Session 11: Hands-on Activity",
-    "section": "Now try your own examples",
-    "text": "Now try your own examples"
+    "section": "Let’s parse the sentence.",
+    "text": "Let’s parse the sentence.\n\nVisit our webapp\nTry the sentences above and analyze their dependencies"
+  },
+  {
+    "objectID": "2025/slides/session-11.html#dependency-grammar",
+    "href": "2025/slides/session-11.html#dependency-grammar",
+    "title": "Session 11: Hands-on Activity",
+    "section": "Dependency grammar",
+    "text": "Dependency grammar\n\nLet’s talk about how to use dependency to extract collocations\nGoogle Colab Notebook"
   },
   {
     "objectID": "2025/slides/session-8.html#learning-objectives",
@@ -4081,7 +4116,7 @@
     "href": "2025/slides/session-10.html#some-vac-examples",
     "title": "Session 10: Analyzing Grammar",
     "section": "Some VAC examples",
-    "text": "Some VAC examples\n\n\n\n\n\n\n\n\n\n\nMain verb lemma\nVerb Argument Construction\nExample\nFreq (PMW) in COCA\n\n\n\n\nbe\nsubject-verb-nominal complement\nIt is an indication of the ways…\n34,517.41\n\n\nsay\nsubject – verb - clausal complement\nHe said [that health decisions should be made by patients and doctors]\n3865.16\n\n\nrefuse\nsubject - verb - xcomp\nHe refused to brew a coffee to me.\n5540.0\n\n\nsuppose\nnsubj-v-ccomp\nI suppose that the theory might be wrong.\n3016.0　\n\n\nsuppose"
+    "text": "Some VAC examples\n\n\n\n\n\n\n\n\n\n\nMain verb lemma\nVerb Argument Construction\nExample\nFreq (PMW) in COCA\n\n\n\n\nbe\nsubject-verb-nominal complement\nIt is an indication of the ways…\n34,517.41\n\n\nsay\nsubject – verb - clausal complement\nHe said [that health decisions should be made by patients and doctors]\n3865.16\n\n\nrefuse\nsubject - verb - xcomp\nHe refused to brew a coffee to me.\n5540.0\n\n\nsuppose\nnsubj-v-ccomp\nI suppose that the theory might be wrong.\n3016.0"
   },
   {
     "objectID": "2025/slides/session-10.html#summary",

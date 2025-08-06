@@ -206,15 +206,17 @@ Masaki EGUCHI, Ph.D.
 </div>
 
 </section>
+<section>
 <section id="housekeeping" class="title-slide slide level1 center">
 <h1>Housekeeping</h1>
 
 </section>
-
-<section>
-<section id="session-overview" class="title-slide slide level1 center">
-<h1>Session overview</h1>
-
+<section id="preparation" class="slide level2">
+<h2>Preparation</h2>
+<ul>
+<li>Create <code>corpus_data</code> under <code>MyDrive</code></li>
+<li>Put <code>ICNALE</code> corpus under <code>MyDrive/corpus_file</code></li>
+</ul>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>🎯 Learning Objectives</h2>
@@ -284,26 +286,48 @@ Masaki EGUCHI, Ph.D.
 </tbody>
 </table>
 </section>
-<section id="other-diaplay-settings" class="slide level2">
-<h2>Other Diaplay settings</h2>
+<section id="now-try-different-options" class="slide level2">
+<h2>Now try different options…</h2>
+<ul>
+<li>Let’s analyze your own example with the following:
+<ul>
+<li><code>word+pos</code></li>
+<li><code>word+pos_tag</code></li>
+<li><code>word+lemma</code></li>
+<li><code>word+pos+lemma</code></li>
+</ul></li>
+<li>What do these choice give you? Share it with your neighbor.</li>
+</ul>
+</section>
+<section id="other-choices-and-expected-results" class="slide level2">
+<h2>Other choices and expected results</h2>
 <table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Menu</th>
-<th>Function</th>
+<th>Display Information</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>word+pos</td>
-<td>tokenization and POS</td>
-<td>dogs_NOUN, ran_VERB</td>
+<td>word</td>
+<td><code>カキ を 食べ たい</code></td>
 </tr>
 <tr class="even">
-<td>word+lemma +pos_tag</td>
-<td>token+lemma+POS</td>
-<td>dogs_dog_NN, ran_run_VERB</td>
+<td>word+pos</td>
+<td><code>カキ_NOUN を_ADP 食べ_VERB たい_AUX</code></td>
+</tr>
+<tr class="odd">
+<td>word+pos_tag</td>
+<td><code>カキ_名詞-普通名詞-一般 を_助詞-格助詞 食べ_動詞-一般 たい_助動詞</code></td>
+</tr>
+<tr class="even">
+<td>word+lemma</td>
+<td><code>カキ_カキ を_を 食べ_食べる たい_たい</code></td>
 </tr>
 </tbody>
 </table>
@@ -352,9 +376,6 @@ Masaki EGUCHI, Ph.D.
 <ul>
 <li>Now you can parse multilingual text with TagAnt.</li>
 </ul>
-</section>
-<section class="slide level2">
-
 </section></section>
 <section>
 <section id="understanding-dependency-grammar" class="title-slide slide level1 center">
@@ -434,6 +455,102 @@ Masaki EGUCHI, Ph.D.
 </table>
 <p>This type of vertical format is often used to represent multi-layered token information.</p>
 </section>
+<section id="typical-dependency-labels" class="slide level2">
+<h2>Typical dependency labels</h2>
+<ul>
+<li>They used <code>dependency</code> parsing to identify fine-grained features of grammar.
+<ul>
+<li>See <a href="https://universaldependencies.org/">Universal Dependencies project</a></li>
+</ul></li>
+</ul>
+<p>Note that spaCy English model is trained on <a href="https://github.com/clir/clearnlp-guidelines/blob/master/md/specifications/dependency_labels.md">ClearNLP tag set</a></p>
+</section>
+<section id="core-dependency-relations" class="slide level2">
+<h2>Core Dependency relations</h2>
+<div style="font-size:75%">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Nominals</strong></th>
+<th><strong>Clauses</strong></th>
+<th><strong>Modifier words</strong></th>
+<th><strong>Function Words</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Core arguments</strong></td>
+<td><code>nsubj</code>, <code>obj</code>, <code>iobj</code></td>
+<td><code>csubj</code>, <code>ccomp</code>, <code>xcomp</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Non-core dependents</strong></td>
+<td><code>obl</code>, <code>vocative</code>, <code>expl</code>, <code>dislocated</code></td>
+<td><code>advcl</code></td>
+<td><code>advmod</code>, <code>discourse</code></td>
+<td><code>aux</code>, <code>cop</code>, <code>mark</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Nominal dependents</strong></td>
+<td><code>nmod</code>, <code>appos</code>, <code>nummod</code></td>
+<td><code>acl</code></td>
+<td><code>amod</code></td>
+<td><code>det</code>, <code>clf</code>, <code>case</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="additional-relations" class="slide level2">
+<h2>Additional Relations</h2>
+<div style="font-size:75%">
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 23%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Coordination</strong></th>
+<th><strong>Headless</strong></th>
+<th><strong>Loose</strong></th>
+<th><strong>Special</strong></th>
+<th><strong>Other</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>conj</code>, <code>cc</code></td>
+<td><code>fixed</code>, <code>flat</code></td>
+<td><code>list</code>, <code>parataxis</code></td>
+<td><code>compound</code>, <code>orphan</code>, <code>goeswith</code>, <code>reparandum</code></td>
+<td><code>punct</code>, <code>root</code>, <code>dep</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="example-1" class="slide level2">
+<h2>Example 1</h2>
+
+<img data-src="../../assets/session-11/xcomp.png" class="r-stretch quarto-figure-center"><p class="caption">xcomp</p></section>
+<section id="example-2" class="slide level2">
+<h2>Example 2</h2>
+
+<img data-src="../../assets/session-11/conj.png" class="r-stretch quarto-figure-center"><p class="caption">conj</p></section>
 <section id="some-excercise---problem-1" class="slide level2">
 <h2>Some excercise - Problem 1</h2>
 <p>Try filling in the gap in the following table.</p>
@@ -598,14 +715,11 @@ Masaki EGUCHI, Ph.D.
 <section id="about-google-colab-5-mins" class="slide level2">
 <h2>About Google Colab (5 mins)</h2>
 <ul>
-<li></li>
+<li>Open <a href="https://drive.google.com/file/d/1Kw6nX4xSNiRzz_Kh_TfWlJdL1BhITV_9/view?usp=drive_link">the Python notebook</a></li>
 </ul>
 </section>
 <section id="python-basics-15-mins" class="slide level2">
 <h2>Python basics (15 mins)</h2>
-</section>
-<section id="first-text-analysis" class="slide level2">
-<h2>First text analysis</h2>
 <ol type="1">
 <li>First thing is to load the package.</li>
 </ol>
@@ -628,13 +742,6 @@ Masaki EGUCHI, Ph.D.
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="cf">for</span> token <span class="kw">in</span> doc:</span>
 <span id="cb6-2"><a></a>    <span class="bu">print</span>(token.text, token.pos_, token.tag_, sep<span class="op">=</span><span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="lets-parse-the-sentence." class="slide level2">
-<h2>Let’s parse the sentence.</h2>
-<ul>
-<li><p>Visit our <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">webapp</a></p></li>
-<li><p>Try the sentences above and analyze their dependencies</p></li>
-</ul>
-</section>
 <section id="in-what-way-are-these-sentence-complex" class="slide level2">
 <h2>In what way are these sentence complex?</h2>
 <p>Describe complexification strategies:</p>
@@ -647,8 +754,19 @@ Masaki EGUCHI, Ph.D.
 <li>Policies that encourage innovation are essential for economic growth.</li>
 </ul>
 </section>
-<section id="now-try-your-own-examples" class="slide level2">
-<h2>Now try your own examples</h2>
+<section id="lets-parse-the-sentence." class="slide level2">
+<h2>Let’s parse the sentence.</h2>
+<ul>
+<li><p>Visit our <a href="https://huggingface.co/spaces/egumasa/simple-text-analyzer">webapp</a></p></li>
+<li><p>Try the sentences above and analyze their dependencies</p></li>
+</ul>
+</section>
+<section id="dependency-grammar" class="slide level2">
+<h2>Dependency grammar</h2>
+<ul>
+<li>Let’s talk about how to use dependency to extract collocations</li>
+<li><a href="https://drive.google.com/file/d/1tGGp4fHOPYnUoOJbmmAHtzL2VWFG-mjD/view?usp=drive_link">Google Colab Notebook</a></li>
+</ul>
 
 
 

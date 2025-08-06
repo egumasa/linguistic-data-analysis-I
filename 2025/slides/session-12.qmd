@@ -7,9 +7,6 @@ metadata-files:
 
 ---
 
-# Housekeeping
-
-
 # Session overview
 
 
@@ -32,12 +29,6 @@ You will be able to:
 
 
 # Let's start
-
-## Preparation
-
-- Create `corpus_data` under `MyDrive`
-- Put `ICNALE` corpus under `MyDrive/corpus_file`
-
 
 ## Colab Notebook
 

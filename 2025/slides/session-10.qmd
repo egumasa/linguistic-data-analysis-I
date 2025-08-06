@@ -452,7 +452,7 @@ According to **construction grammar** (Goldberg, 1995, 2006), grammatical constr
 | say | subject – verb - clausal complement | **He** said **[that health decisions should be made by patients and doctors]** | 3865.16 |
 | refuse | subject - verb - xcomp | He refused to brew a coffee to me. | 5540.0 |
 | suppose | nsubj-v-ccomp | I suppose that the theory might be wrong. | 3016.0　|
-| suppose | |  |  |
+
 :::
 
 
