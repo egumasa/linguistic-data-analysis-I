@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Masaki EGUCHI, Ph.D.">
-  <title>Linguistic Data Analysis I (Summer 2025) – Session 12: Hands-on Activity</title>
+  <title>Linguistic Data Analysis I (Summer 2025) – Session 13: Special Session on LLM</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-ef4f24e61c4c7987b8d5ba256652937e.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -129,7 +195,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Session 12: Hands-on Activity</h1>
+  <h1 class="title">Session 13: Special Session on LLM</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -140,15 +206,12 @@ Masaki EGUCHI, Ph.D.
 </div>
 
 </section>
+<section>
 <section id="housekeeping" class="title-slide slide level1 center">
 <h1>Housekeeping</h1>
-
-</section>
-
-<section>
-<section id="session-overview" class="title-slide slide level1 center">
-<h1>Session overview</h1>
-
+<ul>
+<li>We will spend afternoon to focus on the projects.</li>
+</ul>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>🎯 Learning Objectives</h2>
@@ -166,26 +229,342 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section class="slide level2">
 
+</section></section>
+<section>
+<section id="large-language-models" class="title-slide slide level1 center">
+<h1>Large Language Models</h1>
+
 </section>
-<section class="slide level2">
+<section id="chatting-about-chatgpt" class="slide level2">
+<h2>Chatting about ChatGPT</h2>
+<ul>
+<li>Have you ever used ChatGPT or any other kind of LLM?</li>
+<li>What do you ask it to do?</li>
+</ul>
+</section>
+<section id="question" class="slide level2">
+<h2>Question!</h2>
+<p>What word would be suitable in the context?</p>
+
+<img data-src="../../assets/session-13/chocolate.png" class="r-stretch quarto-figure-center"><p class="caption">Fill in the blank</p></section>
+<section id="how-does-it-work" class="slide level2">
+<h2>How does it work?</h2>
+<ul>
+<li>(Large) Language Models are statistical model.</li>
+</ul>
+
+<img data-src="../../assets/session-13/general-workflow-for-prompt.png" class="r-stretch quarto-figure-center"><p class="caption">Predicting next word</p><ul>
+<li>Essentially, what it does is predicting the next word given the preceeding context.</li>
+<li>They are gigantic model (3-70B parameters for example; parameters analogous to neurons)</li>
+</ul>
+<div style="font-size:40">
+<p>The picture taken from the following <a href="https://developer.nvidia.com/blog/how-to-get-better-outputs-from-your-large-language-model/?utm_source=blog.tobiaszwingmann.com&amp;utm_medium=referral&amp;utm_campaign=how-does-a-large-language-model-really-work">NVIDIA blog</a></p>
+</div>
+</section>
+<section id="how-is-it-trained" class="slide level2">
+<h2>How is it trained?</h2>
+<p>Why is it so intelligent…? - Gigantic neural network (1B-70B) - Gigantic corpus (Over 500GB - 2TB of texts; 35,000 times bigger than BROWN corpus) - meaning roughly 300,000 different contexts of <code>chocolate</code> it learns. - dog: 79 times * 35,000 = 23,700,000 occurrences</p>
+</section>
+<section id="prompt-strategies" class="slide level2">
+<h2>Prompt strategies</h2>
+<ul>
+<li>Essentially, LLM produces next tokens given the preceding contexts.</li>
+<li>Looking at LLM this way, <code>prompt</code> (the written instruction) conditions LLM to perform certain tasks.</li>
+</ul>
+<p>→ Effective prompting approach may help LLM achieve higher performances</p>
+</section>
+<section id="in-context-learning" class="slide level2">
+<h2>In-context learning</h2>
+<p><strong>In-context learning</strong> refers to the use of examples embedded in the prompt as a way to augment the responses of LLM. - Zero-shot: prompt without example - One-shot: prompt with one example - Few-short: prompt with a few examples</p>
+<p>→ in-context learning, or few-shot prompting, can help us achieve better results without further “training” of the model.</p>
+</section>
+<section id="llms-strengths-and-weeknesses-in-applied-linguistics-domain" class="slide level2">
+<h2>LLM’s strengths and weeknesses in applied linguistics domain</h2>
+<ul>
+<li>Scoring may not be a strengths (Mizumoto &amp; Eguchi, 2023)</li>
+<li>However, <strong>annotation</strong> could be done better
+<ul>
+<li>Move-step analysis (Kim &amp; Lu, 2024)</li>
+<li>Linguistic accuracy analysis (Mizumoto et al., 2024)</li>
+</ul></li>
+</ul>
+</section>
+<section id="annotating-move-steps-in-academic-paper-introduction" class="slide level2">
+<h2>Annotating move-steps in academic paper introduction</h2>
+<div style="font-size: 80%">
+<p>Kim &amp; Lu (2024) examined the use of GPT to annotate discourse move.</p>
+<p>What is discourse move and steps?</p>
+<ul>
+<li>Conventional rhetorical stages in writing:</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Move</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Move 1</td>
+<td>Establishing a research territory</td>
+</tr>
+<tr class="even">
+<td>Move 2</td>
+<td>Establishing a niche</td>
+</tr>
+<tr class="odd">
+<td>Move 3</td>
+<td>Presenting the present work via some steps</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="kim-lus-validation-process" class="slide level2">
+<h2>Kim &amp; Lu’s validation process</h2>
+
+<img data-src="../../assets/session-13/Evaluation-Procedure.png" class="r-stretch quarto-figure-center"><p class="caption">validation-process</p></section>
+<section id="precision-recall-and-f1" class="slide level2">
+<h2>Precision, Recall, and F1</h2>
+<p>Remember COVID test…</p>
+<ul>
+<li>You have <code>True Positive (TP)</code>, <code>True Negative (TN)</code>, <code>False Positive (FP)</code>, and <code>False Negative (FN)</code>.</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><span class="math inline">\(Yes_{pred}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(No_{pred}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(Yes_{true}\)</span></td>
+<td style="text-align: center;"><strong>TP</strong></td>
+<td style="text-align: center;">FN</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(No_{true}\)</span></td>
+<td style="text-align: center;">FP</td>
+<td style="text-align: center;"><strong>TN</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="precision-recall-and-f1-1" class="slide level2">
+<h2>Precision, Recall, and F1</h2>
+<ul>
+<li><strong>Precision</strong> = <span class="math inline">\(TP \over TP + FP\)</span>
+<ul>
+<li>(How much of retrieved YES actually YES?)</li>
+</ul></li>
+<li><strong>Recall</strong> = <span class="math inline">\(TP \over TP + FN\)</span>
+<ul>
+<li>(How much of actual YES is retrieved?)</li>
+</ul></li>
+<li><strong>F1 score</strong> = <span class="math inline">\({ (2 \times \text{Precision} \times \text{Recall})} \over {\text{Precision} + \text{Recall}}\)</span></li>
+</ul>
+</section>
+<section id="result---move" class="slide level2">
+<h2>Result - Move</h2>
+
+<img data-src="../../assets/session-13/move-result.png" class="r-stretch quarto-figure-center"><p class="caption">Almost perfect when fine-tuned</p></section>
+<section id="result---step" class="slide level2">
+<h2>Result - Step</h2>
+
+<img data-src="../../assets/session-13/step-result.png" class="r-stretch quarto-figure-center"><p class="caption">step analysis can be difficult</p></section>
+<section id="mizumoto-et-al.-2024" class="slide level2">
+<h2>Mizumoto et al.&nbsp;(2024)</h2>
+<p><strong>RQ1</strong>: To what extent is the accuracy evaluation by ChatGPT comparable to that conducted by human evaluators?</p>
+<p><strong>RQ2</strong>: How does the accuracy evaluation by ChatGPT compare to Grammarly?</p>
+</section>
+<section id="corpus" class="slide level2">
+<h2>Corpus</h2>
+<ul>
+<li>the Cambridge Learner Corpus First Certificate in English (CLC FCE) dataset (Yannakoudakis et al., 2011).</li>
+<li>Freely available corpus with error tags and metadata:
+<ul>
+<li>L1 (first language)</li>
+<li>age</li>
+<li>the overall score</li>
+</ul></li>
+</ul>
+</section>
+<section id="why-this-corpus" class="slide level2">
+<h2>Why this corpus?</h2>
+<ul>
+<li>One of the few openly available error tagged corpus.</li>
+<li>Making it a “gold standard” for evaluating accuracy.</li>
+</ul>
+</section>
+<section id="error-tagged-corpus" class="slide level2">
+<h2>Error tagged corpus</h2>
+<ul>
+<li>80 types of errors were tagged</li>
+</ul>
+<div style="font-size:60%">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Code</th>
+<th>Error Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6</td>
+<td><code>&lt;AGV&gt;</code></td>
+<td>Verb agreement</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td><code>&lt;AS&gt;</code></td>
+<td>Argument structure</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td><code>&lt;CL&gt;</code></td>
+<td>Collocation</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td><code>&lt;CN&gt;</code></td>
+<td>Noun countability</td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td><code>&lt;FV&gt;</code></td>
+<td>Verb form</td>
+</tr>
+<tr class="even">
+<td>31</td>
+<td><code>&lt;ID&gt;</code></td>
+<td>Idiom</td>
+</tr>
+<tr class="odd">
+<td>37</td>
+<td><code>&lt;L&gt;</code></td>
+<td>Register</td>
+</tr>
+<tr class="even">
+<td>64</td>
+<td><code>&lt;TV&gt;</code></td>
+<td>Verb tense</td>
+</tr>
+<tr class="odd">
+<td>76</td>
+<td><code>&lt;W&gt;</code></td>
+<td>Word order</td>
+</tr>
+<tr class="even">
+<td>61</td>
+<td><code>&lt;S&gt;</code></td>
+<td>Spelling (non-word)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="xml-format" class="slide level2">
+<h2>XML format</h2>
+<ul>
+<li>The corpus is provided in XML (Extensible Markup Language) format</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource xml number-lines code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
+<span id="cb1-2"><a></a>&lt;<span class="kw">learner</span>&gt;&lt;<span class="kw">head</span><span class="ot"> sortkey=</span><span class="st">"TR160*0100*2000*01"</span>&gt;</span>
+<span id="cb1-3"><a></a>  &lt;<span class="kw">candidate</span>&gt;&lt;<span class="kw">personnel</span>&gt;&lt;<span class="kw">language</span>&gt;Chinese&lt;/<span class="kw">language</span>&gt;&lt;<span class="kw">age</span>&gt;21-25&lt;/<span class="kw">age</span>&gt;&lt;/<span class="kw">personnel</span>&gt;&lt;<span class="kw">score</span>&gt;17.0&lt;/<span class="kw">score</span>&gt;&lt;/<span class="kw">candidate</span>&gt;</span>
+<span id="cb1-4"><a></a>  &lt;<span class="kw">text</span>&gt;</span>
+<span id="cb1-5"><a></a>     &lt;<span class="kw">answer1</span>&gt;</span>
+<span id="cb1-6"><a></a>       &lt;<span class="kw">question_number</span>&gt;1&lt;/<span class="kw">question_number</span>&gt;</span>
+<span id="cb1-7"><a></a>       &lt;<span class="kw">exam_score</span>&gt;2.2&lt;/<span class="kw">exam_score</span>&gt;</span>
+<span id="cb1-8"><a></a>         &lt;<span class="kw">coded_answer</span>&gt;</span>
+<span id="cb1-9"><a></a>          &lt;<span class="kw">p</span>&gt;Dear &lt;<span class="kw">NS</span><span class="ot"> type=</span><span class="st">"RN"</span>&gt;&lt;<span class="kw">i</span>&gt;Madam&lt;/<span class="kw">i</span>&gt;&lt;<span class="kw">c</span>&gt;Ms&lt;/<span class="kw">c</span>&gt;&lt;/<span class="kw">NS</span>&gt; Helen Ryan,&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb1-10"><a></a>          ... (More text here)</span>
+<span id="cb1-11"><a></a>         &lt;/<span class="kw">coded_answer</span>&gt;</span>
+<span id="cb1-12"><a></a>     &lt;/<span class="kw">answer1</span>&gt;</span>
+<span id="cb1-13"><a></a>  &lt;/<span class="kw">text</span>&gt;</span>
+<span id="cb1-14"><a></a>&lt;/<span class="kw">head</span>&gt;&lt;/<span class="kw">learner</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="participants" class="slide level2">
+<h2>Participants</h2>
+<ul>
+<li>232 learners
+<ul>
+<li>86 Korean</li>
+<li>80 Japanese</li>
+<li>66 Chinese</li>
+</ul></li>
+</ul>
+</section>
+<section id="text-cleaning" class="slide level2">
+<h2>Text cleaning</h2>
+<ul>
+<li>They focused on Task 1 (letter writing)</li>
+<li>Etracted each sentence as one row in a data</li>
+<li>Removed metadata and error tags</li>
+</ul>
+</section>
+<section id="the-dataset" class="slide level2">
+<h2>The dataset</h2>
+<p>The dataset looked as follows:</p>
+<ul>
+<li>you have hand-tagged dataset</li>
+<li>clean dataset without any correction</li>
+</ul>
+
+<img data-src="../../assets/session-13/dataset.png" class="r-stretch quarto-figure-center"><p class="caption">Dataset view</p></section>
+<section id="measures-for-accuracy" class="slide level2">
+<h2>Measures for accuracy</h2>
+<ul>
+<li>Counted errors and words from the human-annotated corpus</li>
+<li>Accuracy is operationally defined as <strong>errors per 100 words</strong></li>
+</ul>
+</section>
+<section id="evaluation-of-gpt-4-correction" class="slide level2">
+<h2>Evaluation of GPT-4 correction</h2>
+<ul>
+<li>Sent each sentence with following prompt:</li>
+</ul>
+<pre><code>Reply with a corrected version of the input sentence with all grammatical, spelling, and punctuation errors fixed. Be strict about the possible errors. If there are no errors, reply with a copy of the original sentence. Then, provide the number of errors. 
+
+Input sentence: {each line of sentence} 
+
+Corrected sentence: 
+Number of errors:</code></pre>
+</section>
+<section id="distribution-of-error-per-100-words" class="slide level2">
+<h2>Distribution of error per 100 words</h2>
+
+<img data-src="../../assets/session-13/error-per-100.png" class="r-stretch quarto-figure-center"><p class="caption">Errors per 100 words</p></section>
+<section id="correlations-among-human-gpt-and-grammarly" class="slide level2">
+<h2>Correlations among human, GPT, and Grammarly</h2>
+
+<img data-src="../../assets/session-13/correlations.png" class="r-stretch quarto-figure-center"><p class="caption">Correlations</p></section>
+<section id="summary-of-findings" class="slide level2">
+<h2>Summary of findings</h2>
+<ul>
+<li>Correlation with manual error tag: GPT &gt; Grammarly</li>
+<li>Correlation with proficiency score: GPT &gt; Grammarly</li>
+</ul>
+</section>
+<section id="take-away" class="slide level2">
+<h2>Take-away</h2>
+<ul>
+<li>Corpus research requires cleaning of the corpus.</li>
+</ul>
+</section>
+<section id="lets-try" class="slide level2">
+<h2>Let’s try</h2>
+<ul>
+<li>First, download <a href="https://ilexir.co.uk/datasets/index.html">the CLC FCE dataset</a>.</li>
+</ul>
+
+
 
 </section></section>
-<section id="hands-on-activity" class="title-slide slide level1 center">
-<h1>Hands-on Activity</h1>
-
-</section>
-
-<section id="reflection" class="title-slide slide level1 center">
-<h1>Reflection</h1>
-
-</section>
-
-<section id="next-step" class="title-slide slide level1 center">
-<h1>Next step</h1>
-
-
-
-</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

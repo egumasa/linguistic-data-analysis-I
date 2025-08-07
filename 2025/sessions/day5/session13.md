@@ -41,11 +41,11 @@ We will explore how powerful and limited Large Language Models (LLMs) can be at 
 
 ### Slides for the session
 
-<!-- <div class="d-flex gap-2 mb-3">
+<div class="d-flex gap-2 mb-3">
   
-[📊 View Interactive Slides (Under construction)](../../slides/session-13.html){.btn .btn-primary .btn-lg target="_blank"} 
+[📊 View Interactive Slides](../../slides/session-13.html){.btn .btn-primary .btn-lg target="_blank"} 
 
-</div>  -->
+</div> 
 
 ### Other resources
 
