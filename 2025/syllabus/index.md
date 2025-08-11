@@ -195,5 +195,3 @@ About the use of AI tools such as ChatGPT, do not use it to make drafts. You can
 - Materials (e.g., slides) are shared through this website.
 
 ## Accommodations
-
-
