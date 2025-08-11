@@ -44,6 +44,9 @@ What word would be suitable in the context?
 
 ![Predicting next word](../../assets/session-13/general-workflow-for-prompt.png)
 
+
+##  How does it work?
+
 - Essentially, what it does is predicting the next word given the preceeding context.
 - They are gigantic model (3-70B parameters for example; parameters analogous to neurons)
 
@@ -54,6 +57,7 @@ The picture taken from the following [NVIDIA blog](https://developer.nvidia.com/
 ## How is it trained?
 
 Why is it so intelligent...? 
+
 - Gigantic neural network (1B-70B)
 - Gigantic corpus (Over 500GB - 2TB of texts; 35,000 times bigger than BROWN corpus)
   - meaning roughly 300,000 different contexts of `chocolate` it learns. 
@@ -69,6 +73,7 @@ Why is it so intelligent...?
 ## In-context learning
 
 **In-context learning** refers to the use of examples embedded in the prompt as a way to augment the responses of LLM.
+
 - Zero-shot: prompt without example
 - One-shot: prompt with one example
 - Few-short: prompt with a few examples

@@ -2743,14 +2743,14 @@
     "href": "2025/slides/session-13.html#how-does-it-work",
     "title": "Session 13: Special Session on LLM",
     "section": "How does it work?",
-    "text": "How does it work?\n\n(Large) Language Models are statistical model.\n\n\nPredicting next word\nEssentially, what it does is predicting the next word given the preceeding context.\nThey are gigantic model (3-70B parameters for example; parameters analogous to neurons)\n\n\nThe picture taken from the following NVIDIA blog"
+    "text": "How does it work?\n\n(Large) Language Models are statistical model.\n\n\nPredicting next word"
   },
   {
     "objectID": "2025/slides/session-13.html#how-is-it-trained",
     "href": "2025/slides/session-13.html#how-is-it-trained",
     "title": "Session 13: Special Session on LLM",
     "section": "How is it trained?",
-    "text": "How is it trained?\nWhy is it so intelligent…? - Gigantic neural network (1B-70B) - Gigantic corpus (Over 500GB - 2TB of texts; 35,000 times bigger than BROWN corpus) - meaning roughly 300,000 different contexts of chocolate it learns. - dog: 79 times * 35,000 = 23,700,000 occurrences"
+    "text": "How is it trained?\nWhy is it so intelligent…?\n\nGigantic neural network (1B-70B)\nGigantic corpus (Over 500GB - 2TB of texts; 35,000 times bigger than BROWN corpus)\n\nmeaning roughly 300,000 different contexts of chocolate it learns.\ndog: 79 times * 35,000 = 23,700,000 occurrences"
   },
   {
     "objectID": "2025/slides/session-13.html#prompt-strategies",
@@ -2764,7 +2764,7 @@
     "href": "2025/slides/session-13.html#in-context-learning",
     "title": "Session 13: Special Session on LLM",
     "section": "In-context learning",
-    "text": "In-context learning\nIn-context learning refers to the use of examples embedded in the prompt as a way to augment the responses of LLM. - Zero-shot: prompt without example - One-shot: prompt with one example - Few-short: prompt with a few examples\n→ in-context learning, or few-shot prompting, can help us achieve better results without further “training” of the model."
+    "text": "In-context learning\nIn-context learning refers to the use of examples embedded in the prompt as a way to augment the responses of LLM.\n\nZero-shot: prompt without example\nOne-shot: prompt with one example\nFew-short: prompt with a few examples\n\n→ in-context learning, or few-shot prompting, can help us achieve better results without further “training” of the model."
   },
   {
     "objectID": "2025/slides/session-13.html#llms-strengths-and-weeknesses-in-applied-linguistics-domain",
@@ -7167,5 +7167,12 @@
     "title": "",
     "section": "Day 5",
     "text": "Day 5\n[ ] Session 13 [ ] Session 14 [ ] Session 15"
+  },
+  {
+    "objectID": "2025/slides/session-13.html#how-does-it-work-1",
+    "href": "2025/slides/session-13.html#how-does-it-work-1",
+    "title": "Session 13: Special Session on LLM",
+    "section": "How does it work?",
+    "text": "How does it work?\n\nEssentially, what it does is predicting the next word given the preceeding context.\nThey are gigantic model (3-70B parameters for example; parameters analogous to neurons)\n\n\nThe picture taken from the following NVIDIA blog"
   }
 ]

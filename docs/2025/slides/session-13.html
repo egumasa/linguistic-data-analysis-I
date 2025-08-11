@@ -253,7 +253,10 @@ Masaki EGUCHI, Ph.D.
 <li>(Large) Language Models are statistical model.</li>
 </ul>
 
-<img data-src="../../assets/session-13/general-workflow-for-prompt.png" class="r-stretch quarto-figure-center"><p class="caption">Predicting next word</p><ul>
+<img data-src="../../assets/session-13/general-workflow-for-prompt.png" class="r-stretch quarto-figure-center"><p class="caption">Predicting next word</p></section>
+<section id="how-does-it-work-1" class="slide level2">
+<h2>How does it work?</h2>
+<ul>
 <li>Essentially, what it does is predicting the next word given the preceeding context.</li>
 <li>They are gigantic model (3-70B parameters for example; parameters analogous to neurons)</li>
 </ul>
@@ -263,7 +266,15 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section id="how-is-it-trained" class="slide level2">
 <h2>How is it trained?</h2>
-<p>Why is it so intelligent…? - Gigantic neural network (1B-70B) - Gigantic corpus (Over 500GB - 2TB of texts; 35,000 times bigger than BROWN corpus) - meaning roughly 300,000 different contexts of <code>chocolate</code> it learns. - dog: 79 times * 35,000 = 23,700,000 occurrences</p>
+<p>Why is it so intelligent…?</p>
+<ul>
+<li>Gigantic neural network (1B-70B)</li>
+<li>Gigantic corpus (Over 500GB - 2TB of texts; 35,000 times bigger than BROWN corpus)
+<ul>
+<li>meaning roughly 300,000 different contexts of <code>chocolate</code> it learns.</li>
+<li>dog: 79 times * 35,000 = 23,700,000 occurrences</li>
+</ul></li>
+</ul>
 </section>
 <section id="prompt-strategies" class="slide level2">
 <h2>Prompt strategies</h2>
@@ -275,7 +286,12 @@ Masaki EGUCHI, Ph.D.
 </section>
 <section id="in-context-learning" class="slide level2">
 <h2>In-context learning</h2>
-<p><strong>In-context learning</strong> refers to the use of examples embedded in the prompt as a way to augment the responses of LLM. - Zero-shot: prompt without example - One-shot: prompt with one example - Few-short: prompt with a few examples</p>
+<p><strong>In-context learning</strong> refers to the use of examples embedded in the prompt as a way to augment the responses of LLM.</p>
+<ul>
+<li>Zero-shot: prompt without example</li>
+<li>One-shot: prompt with one example</li>
+<li>Few-short: prompt with a few examples</li>
+</ul>
 <p>→ in-context learning, or few-shot prompting, can help us achieve better results without further “training” of the model.</p>
 </section>
 <section id="llms-strengths-and-weeknesses-in-applied-linguistics-domain" class="slide level2">
